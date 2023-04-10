@@ -1,7 +1,7 @@
 ---
-title: "Say hello to Doks 👋"
-description: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-excerpt: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+title: "Come costruire un rover guidato dalla Intelligenza Artificiale pt.2"
+description: "La scelta dei motori per il nostro rover."
+excerpt: "Il nostro rover richiede due motori di azionamento principali. All’inizio abbiamo considerato la ipotesi dei motori passo-passo, che si muovono di pochissimo ogni volta che vengono azionati dal driver, sono una soluzione sofisticata ma per la versione iniziale del nostro rover li abbiamo scartati; pensiamo di usarli in una una prossima evoluzione.."
 date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
 draft: false
@@ -14,10 +14,10 @@ pinned: false
 homepage: false
 ---
 
-Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default.
+Un momento interessante nello sviluppo del rover: la scelta dei motori.
 
 
-# Come costruire un rover guidato dalla Intelligenza Artificiale pt.1
+# Come costruire un rover guidato dalla Intelligenza Artificiale pt.2
 
 ## In questa primo articolo di una serie piuttosto lunga vedremo come costruire un rover guidato dalla intelligenza artificiale destinato a compiti di sorveglianza "reale".
 
