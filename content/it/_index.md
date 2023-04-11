@@ -1,7 +1,7 @@
 ---
 title : "Progettiamo da zero apparati tecnologici per promuovere uno sviluppo sostenibile"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "Abbiamo progettato e costruito dispositivi per Internet of Things dall'esordio di Arduino. Inizia il tuo progetto con le idee giuste e fai funzionare il tuo hardware con il nostro software free."
+lead: "Abbiamo progettato e costruito dispositivi per Internet of Things dall'esordio di Arduino. Inizia il tuo progetto con le idee giuste e fai funzionare il tuo hardware con il nostro software free."
 date: 2020-10-06T08:47:36+00:00
 lastmod: 2020-10-06T08:47:36+00:00
 draft: false
