@@ -1,0 +1,17 @@
+- id: get-started
+  translation: "Come iniziare"
+
+- id: on-this-page
+  translation: "In questa pagina"
+
+- id: search-text
+  translation: "Cerca..."
+
+- id: 404-title
+  translation: "Pagina non trovata"
+
+- id: 404-text
+  translation: "La pagina che stai cercando non esiste o è stata spostata."
+
+- id: browse
+  translation: "Browse"
