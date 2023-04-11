@@ -6,6 +6,14 @@
     languageISO = "EN"
     languageTag = "en-US"
 
+[it]
+  languageName = "Italiano"
+  contentDir = "content/it"
+  weight = 15
+  [it.params]
+    languageISO = "IT"
+    languageTag = "it-IT"
+
 [de]
   languageName = "German"
   contentDir = "content/de"
