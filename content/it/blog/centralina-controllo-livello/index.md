@@ -16,7 +16,9 @@ homepage: false
 
 <br>
 
-#### Un semplice progetto con ESP32 o Arduino per leggere in tempo reale il livello dei liquidi in un serbatoio. Useremo un sensore ad ultrasuoni ANGEEK JSN-SR04T con portata max di circa 3.5 mt e un normale display LCD. Per blindare il box commerciale useremo una cornicetta stampata in PETG 3D e collegheremo i dispositivi usando la interfaccia di "rete" I2C dell'ESP32. Il progetto completo è disponibile in kit oppure già montato e collaudato nel nostro ecommerce
+#### Un semplice progetto con ESP32 o Arduino per leggere in tempo reale il livello dei liquidi in un serbatoio. Useremo un sensore ad ultrasuoni ANGEEK JSN-SR04T con portata max di circa 3.5 mt e un normale display LCD. 
+
+Per impermeabilizzare il box in plastica di provenienza commerciale useremo una cornicetta stampata in PETG 3D e collegheremo i dispositivi usando la interfaccia di "rete" I2C dell'ESP32. Il progetto completo è disponibile in kit oppure già montato e collaudato nel nostro ecommerce
 
 <br>
 <br>
