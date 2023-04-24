@@ -26,7 +26,7 @@ homepage: false
 
 ##### Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
 
-Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
+Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
 <br>
 
@@ -34,7 +34,7 @@ Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplic
 
 ##### Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog.
 
-Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la velocità del motorino usando la tecnica <a href = "https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso">PWM </a> o Modulazione a larghezza di impulso. Per applicare la PWM al nostro controller useremo la piccola tensione proveniente dal pin 9 di Arduino per attivare il Tip 120 in modo discontinuo. Con delle pause sempre più lunghe tra un impulso e l’altro possiamo rallentare la velocità del motorino, mentre con pause ridotte a zero possiamo mandarlo al massimo.
+Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la velocità del motorino usando la tecnica <a  target="_blank" href = "https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso">PWM </a> o Modulazione a larghezza di impulso. Per applicare la PWM al nostro controller useremo la piccola tensione proveniente dal pin 9 di Arduino per attivare il Tip 120 in modo discontinuo. Con delle pause sempre più lunghe tra un impulso e l’altro possiamo rallentare la velocità del motorino, mentre con pause ridotte a zero possiamo mandarlo al massimo.
 
 <br>
 
@@ -47,7 +47,7 @@ Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la ve
 
 <br>
 
-Nel circuito useremo anche un piccolo diodo, l'<a href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode">N4001</a> destinato a proteggere il transistor dalle correnti prodotte dal motorino quando, ad esempio, lo fai girare manualmente: il diodo serve appunto come una “conduttore a senso unico” e impedirà alle correnti parassite o in “reverse” di danneggiare il TIP120.
+Nel circuito useremo anche un piccolo diodo, l'<a  target="_blank" href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode">N4001</a> destinato a proteggere il transistor dalle correnti prodotte dal motorino quando, ad esempio, lo fai girare manualmente: il diodo serve appunto come una “conduttore a senso unico” e impedirà alle correnti parassite o in “reverse” di danneggiare il TIP120.
 
 ##### Ho scelto il terminale 9 di Arduino non a caso ma perchè facilissimo da inviduare sulla scheda: se guardi altri progetti vedrai come molti abbiano fatto la stessa scelta. Non per esigenze tecniche dunque, ma solo per comodità.
 
