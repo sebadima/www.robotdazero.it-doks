@@ -21,11 +21,16 @@ homepage: false
 
 **Nelle** applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120.
 
+<br>
+
 > Uno dei malintesi più comuni tra chi inizia con la microelettronica è l’idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite di Arduino. Purtroppo tutte queste e molte altre applicazioni richiedono correnti e tensioni molto più alte di quelle disponibili su Arduino (40mA ~ 5.0V).
+
+<br>
 
 Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
 
 Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
+
 <br>
 
 > Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
@@ -51,7 +56,7 @@ Nel circuito useremo anche un piccolo diodo, l'<a href="https://en.wikipedia.org
 
 ##### Ho scelto il terminale 9 di Arduino non a caso ma perchè facilissimo da inviduare sulla scheda: se guardi altri progetti vedrai come molti abbiano fatto la stessa scelta. Non per esigenze tecniche dunque, ma solo per comodità.
 
-### Lo schema grafico {#lo-schema}
+#### Lo schema grafico:
 
 Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** al tuo Arduino in pochi minuti.
 
@@ -60,18 +65,16 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <br>
 <br>
 
-#### tabella delle connessioni:
-<pre class="prettyprint" style="border: 2px solid #d6d4d4;">     Breadboard               Arduino
+#### La tabella delle connessioni:
+<pre class="prettyprint" style="border: 1px solid #d6d4d4;">     Breadboard               Arduino
   -  VCC            &lt;------&gt;  5V
   -  base Tip 120   &lt;------&gt;  Pin 9
   -  GND            &lt;------&gt;  GND
 </pre>
 
-&nbsp;
+#### E infine il codice completo:
 
-#### e infine Il codice completo… {#e-infine-il-codice-completo}
-
-<pre>
+<pre  class="prettyprint" style="border: 1px solid #d6d4d4;">
 /* 
   Driver per motore elettrico brushed
   - pin 9 di Arduino collegato alla base del TIP120
@@ -92,8 +95,6 @@ void loop() {
     }    
   delay(1);
 }
-
 </pre>
 
-Questo post è stato scritto usando Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivi semplicissimo: se devo programmare delle schede di tipo Raspberry o  delle potenti CPU BeagleBone non è possibile installarci Windows neppure in linea di principio. 
-Per questo motivo ti consiglio di installare subito Linux Debian o Ubuntu 22.04 se non altro che per conoscere il terminale a “Linea di Comando”.
+Questo programmino è stato scritto usando Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivi semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare subito Linux Debian o Ubuntu 22.04 se non altro che per conoscere il terminale a Linea di Comando.
