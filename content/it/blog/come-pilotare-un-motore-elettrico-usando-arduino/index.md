@@ -17,7 +17,6 @@ homepage: false
 ### Come azionare Robot, servomandi e luci ad alto assorbimento usando un semplice transistor di tipo darlington, il TIP120 collegato al tuo Arduino.
 
 <br>
-<br>
 
 **Nelle** applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120.
 
