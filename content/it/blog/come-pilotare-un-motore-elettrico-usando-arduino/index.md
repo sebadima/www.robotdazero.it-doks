@@ -71,4 +71,5 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 
 <script src="https://gist.github.com/sebadima/cf418c42cd9f90387c242b468ea3af1c.js"></script>
 
+<br>
 Questo programma è stato scritto in ambiente Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivo semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare Ubuntu 22.04 sul tuo PC desktop e iniziare ad usare il terminale a linea di comando con la shell "Bash".
