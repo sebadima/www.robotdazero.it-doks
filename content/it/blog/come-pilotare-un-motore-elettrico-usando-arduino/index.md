@@ -24,9 +24,7 @@ homepage: false
 
 > Uno dei malintesi più comuni tra chi inizia con la microelettronica è l’idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite di Arduino. Purtroppo tutte queste e molte altre applicazioni richiedono correnti e tensioni molto più alte di quelle disponibili su Arduino (40mA ~ 5.0V).
 
-<br>
-
-Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
+##### Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
 
 Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
@@ -34,9 +32,7 @@ Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplic
 
 > Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
 
-<br>
-
-**Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog.**
+##### Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog.
 
 Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la velocità del motorino usando la tecnica <a href = "https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso">PWM </a> o Modulazione a larghezza di impulso. Per applicare la PWM al nostro controller useremo la piccola tensione proveniente dal pin 9 di Arduino per attivare il Tip 120 in modo discontinuo. Con delle pause sempre più lunghe tra un impulso e l’altro possiamo rallentare la velocità del motorino, mentre con pause ridotte a zero possiamo mandarlo al massimo.
 
@@ -73,27 +69,6 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 
 #### E infine il codice completo:
 
-<pre  class="prettyprint" style="border: 1px solid #d6d4d4;">
-/* 
-  Driver per motore elettrico brushed
-  - pin 9 di Arduino collegato alla base del TIP120
-*/
-int pinMotorino = 9;
+<script src="https://gist.github.com/sebadima/cf418c42cd9f90387c242b468ea3af1c.js"></script>
 
-void setup() {
-  Serial.begin(9600);
-  pinMode(pinMotorino, OUTPUT);  
-}
-
-void loop() {
-  Serial.print("LOOP\n");
-    // accelerazione progressiva del motore
-    for(int x = 0; x <= 255; x++)
-      analogWrite(pinMotorino, x); delay(10); 
-      delay(10);
-    }    
-  delay(1);
-}
-</pre>
-
-Questo programmino è stato scritto usando Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivi semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare subito Linux Debian o Ubuntu 22.04 se non altro che per conoscere il terminale a Linea di Comando.
+Questo programma è stato scritto in ambiente Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivo semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare Ubuntu 22.04 sul tuo PC desktop e iniziare ad usare il terminale a linea di comando con la shell "Bash".
