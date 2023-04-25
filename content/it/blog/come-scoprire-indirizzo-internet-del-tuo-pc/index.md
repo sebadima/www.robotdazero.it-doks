@@ -69,7 +69,7 @@ curl ifconfig.me/ip
 nella versione con wget:
   
 ```bash
-wget -qO- icanhazip.com
+wget ifconfig.me/ip
 ```
   
 Ti consiglio di usare sempre questi comandi che si appoggiano a dei <strong>siti internet</strong> e di salvare il comando in un file script dandogli il nome “ipp” o un altro nome che ti riesce facile da ricordare.
