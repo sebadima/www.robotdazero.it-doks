@@ -9,7 +9,7 @@ weight: 50
 images: ["images/indirizzo internet del pc.webp"]
 categories: ["News"]
 tags: ["ESP32", "teoria", "alimentazione"]
-contributors: ["sebadima"]
+contributors: ["sergio rame"]
 pinned: false
 homepage: false
 ---
