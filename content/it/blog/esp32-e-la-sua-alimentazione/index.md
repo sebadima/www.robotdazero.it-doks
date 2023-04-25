@@ -1,5 +1,5 @@
 ---
-title: ESP32 e la sua alimentazionexxxxxxxxxxxxxxxxx
+title: ESP32 e la sua alimentazione
 description: "xxxxxxxxxxxxlo dei liquidi in un serbatoio usando gli ultrasuoni."
 excerpt: "Un semplice progetto con ESP32 o Arduino per leggere in tempo reale il livello dei liquidi in un serbatoio. Useremo un sensore ad ultrasuoni ANGEEK JSN-SR04T con portata max di circa 3.5 mt e un normale display LCD. Per impermeabilizzare il box useremo una cornicetta personalizzata stampata in 3D ... "
 date: 2020-11-04T09:19:42+01:00
@@ -37,88 +37,33 @@ Per capire il voltaggio delle prese USB, è possibile utilizzare un voltmetro. U
 
 In conclusione, il voltaggio delle prese USB può avere un impatto significativo sui dispositivi collegati ad esse. È sapere esattamente il voltaggio per evitare danni ai dispositivi e garantire un funzionamento corretto. Inoltre, è consigliabile utilizzare un voltmetro di alta qualità per misurare la tensione.
 
-<div class="flex flex-grow flex-col gap-3">
-  <div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-    <div class="markdown prose w-full break-words dark:prose-invert light">
-      <h2>
-        2. Alimentazione tramite il pin Vin
-      </h2>
+## Alimentazione tramite il pin Vin
+Un altro modo per alimentare ESP32 è utilizzando il pin Vin, comunemente conosciuto come pin 5V. Il pin Vin in ESP32 e in altre schede microcontroller come Arduino è collegato a un regolatore di tensione a bordo. Qualsiasi tensione collegata al pin Vin passa prima attraverso il regolatore, che la riduce a 3,3 V e la alimenta ai periferici della scheda ESP32.
       
-      <p>
-        Un altro modo per alimentare ESP32 è utilizzando il pin Vin, comunemente conosciuto come pin 5V. Il pin Vin in ESP32 e in altre schede microcontroller come Arduino è collegato a un regolatore di tensione a bordo. Qualsiasi tensione collegata al pin Vin passa prima attraverso il regolatore, che la riduce a 3,3 V e la alimenta ai periferici della scheda ESP32.
-      </p>
-      
-      <p>
-        Utilizzando un&#8217;alimentazione esterna regolata da 5V, possiamo alimentare ESP32 attraverso il pin Vin, collegando la GND di ESP32 con la GND esterna dell&#8217;alimentazione. Qualsiasi tensione compresa tra 5V e 12V può essere collegata al pin Vin di ESP32, tuttavia non è consigliabile utilizzare più di 6V o 7V. Poiché ESP32 ha bisogno solo di 3,3 V per funzionare, le restanti tensioni vengono dissipate dal regolatore di tensione LDO sotto forma di calore.
-      </p>
-    </div>
-  </div>
-</div>
+Utilizzando una alimentazione esterna regolata da 5V, possiamo alimentare ESP32 attraverso il pin Vin, collegando la GND di ESP32 con la GND esterna dell&#8217;alimentazione. Qualsiasi tensione compresa tra 5V e 12V può essere collegata al pin Vin di ESP32, tuttavia non è consigliabile utilizzare più di 6V o 7V. Poiché ESP32 ha bisogno solo di 3,3 V per funzionare, le restanti tensioni vengono dissipate dal regolatore di tensione LDO sotto forma di calore.
 
 ## 3. Alimentazione con batterie ricaricabili
 
-<div class="flex flex-grow flex-col gap-3">
-  <div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-    <div class="markdown prose w-full break-words dark:prose-invert light">
-      <p>
-        <img decoding="async" loading="lazy" class="aligncenter wp-image-7701 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png" alt="esp32 alimentato con batterie ricaricabili" width="1024" height="527" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-300x154.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-768x395.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-600x309.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" />
-      </p>
+<img decoding="async" loading="lazy" class="aligncenter wp-image-7701 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png" alt="esp32 alimentato con batterie ricaricabili" width="1024" height="527" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-300x154.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-768x395.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-600x309.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" />
+
+La ultima opzione sulla lista per alimentare l&#8217;ESP32 è l&#8217;utilizzo di batterie esterne. L&#8217;ESP32 funziona a 3,3 V, quindi può essere facilmente alimentato utilizzando le batterie esterne. Mentre si alimenta l&#8217;ESP32 con una batteria esterna, utilizzare sempre il pin Vin poiché è collegato a un regolatore di tensione integrato che protegge da qualsiasi tipo di danni all&#8217;ESP32.
       
-      <p>
-        &nbsp;
-      </p>
+ Ecco un elenco di tutte le batterie che possono essere utilizzate per alimentare l&#8217;ESP32:
+     
+Utilizzo di una power bank
+Utilizzo di batterie NiMH o batterie standard (2 x 1,5 V)
+Batterie al litio
+Batterie LiFePO4
+Batterie al litio polimero
       
-      <p>
-        L&#8217;ultima opzione sulla lista per alimentare l&#8217;ESP32 è l&#8217;utilizzo di batterie esterne. L&#8217;ESP32 funziona a 3,3 V, quindi può essere facilmente alimentato utilizzando le batterie esterne. Mentre si alimenta l&#8217;ESP32 con una batteria esterna, utilizzare sempre il pin Vin poiché è collegato a un regolatore di tensione integrato che protegge da qualsiasi tipo di danni all&#8217;ESP32.
-      </p>
+### Avvertenze
       
-      <p>
-        Ecco un elenco di tutte le batterie che possono essere utilizzate per alimentare l&#8217;ESP32:
-      </p>
-      
-      <ul>
-        <li>
-          Utilizzo di una power bank
-        </li>
-        <li>
-          Utilizzo di batterie NiMH o batterie standard (2 x 1,5 V)
-        </li>
-        <li>
-          Batterie al litio
-        </li>
-        <li>
-          Batterie LiFePO4
-        </li>
-        <li>
-          Batterie al litio polimero
-        </li>
-      </ul>
-      
-      <h4>
-        Avvertenze
-      </h4>
-      
-      <p>
-        Ecco alcune avvertenze da tenere a mente durante l&#8217;alimentazione dell&#8217;ESP32 con una fonte di alimentazione esterna:
-      </p>
-      
-      <ul>
-        <li>
-          Utilizzare sempre una fonte di alimentazione a tensione regolata
-        </li>
-        <li>
-          Non collegare dispositivi all&#8217;ESP32 che richiedono più corrente, come i motori
-        </li>
-        <li>
-          Non utilizzare più di una fonte di alimentazione contemporaneamente
-        </li>
-        <li>
-          Se il regolatore di tensione si surriscalda, spegnere la scheda ESP32.
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+Ecco alcune avvertenze da tenere a mente durante l&#8217;alimentazione dell&#8217;ESP32 con una fonte di alimentazione esterna:
+     
+Utilizzare sempre una fonte di alimentazione a tensione regolata
+Non collegare dispositivi all&#8217;ESP32 che richiedono più corrente, come i motori
+Non utilizzare più di una fonte di alimentazione contemporaneamente
+Se il regolatore di tensione si surriscalda, spegnere la scheda ESP32.
 
 #### Le batterie ricaricabili LIPO
 
@@ -128,7 +73,7 @@ Gli accumulatori al litio sono utilizzati in una vasta gamma di dispositivi elet
 
 Come funzionano gli accumulatori al litio?
 
-Gli accumulatori al litio funzionano attraverso il processo di ioni di litio che si spostano attraverso l&#8217;elettrolita tra gli elettrodi positivi e negativi. Quando gli ioni di litio si spostano verso l&#8217;elettrodo positivo, si verifica una reazione chimica che rilascia energia elettrica. Quando gli ioni di litio si spostano verso l&#8217;elettrodo negativo, la batteria viene ricaricata.
+> Gli accumulatori al litio funzionano attraverso il processo di ioni di litio che si spostano attraverso l&#8217;elettrolita tra gli elettrodi positivi e negativi. Quando gli ioni di litio si spostano verso l&#8217;elettrodo positivo, si verifica una reazione chimica che rilascia energia elettrica. Quando gli ioni di litio si spostano verso l&#8217;elettrodo negativo, la batteria viene ricaricata.
 
 Gli accumulatori al litio hanno molte caratteristiche positive rispetto ad altri tipi di batterie. In primo luogo, sono leggeri e compatti, il che li rende adatti per l&#8217;uso in dispositivi portatili. In secondo luogo, hanno una durata della vita più lunga rispetto ad altre batterie. Infine, gli accumulatori al litio sono in grado di mantenere una tensione costante durante la maggior parte della loro scarica, il che significa che possono fornire una potenza costante ai dispositivi.
 
@@ -158,49 +103,18 @@ L&#8217;alimentazione tramite alimentatore esterno è un&#8217;altra opzione che
 
 <img decoding="async" loading="lazy" class="aligncenter wp-image-7708 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image8.png" alt="alimentatore da laboratorio con tensione di 3.3V fino a 12V per alimentare l'ESP32" width="1753" height="923" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image8.png 1753w, https://www.robotdazero.it/wp-content/uploads/2023/03/image8-300x158.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image8-1024x539.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image8-768x404.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image8-1536x809.png 1536w, https://www.robotdazero.it/wp-content/uploads/2023/03/image8-600x316.png 600w" sizes="(max-width: 1753px) 100vw, 1753px" /> 
 
-<div class="flex flex-grow flex-col gap-3">
-  <div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-    <div class="markdown prose w-full break-words dark:prose-invert light">
-      <p>
-        Gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. In questo articolo, esploreremo come funzionano gli alimentatori elettrici da laboratorio e quali sono le loro caratteristiche principali.
-      </p>
-      
-      <p>
-        Come funzionano gli alimentatori elettrici da laboratorio?
-      </p>
-      
-      <p>
-        Gli alimentatori elettrici da laboratorio funzionano mediante la conversione di tensione alternata (AC) in tensione continua (DC). L&#8217;alimentatore dispone di un trasformatore che converte la tensione alternata della presa a muro in una tensione alternata di bassa frequenza, che viene quindi raddrizzata e filtrata per ottenere una tensione continua. Questa tensione continua viene quindi regolata e controllata mediante circuiti di regolazione per fornire alla uscita dell&#8217;alimentatore una tensione e una corrente costanti e regolabili.
-      </p>
-      
-      <h4>
+##### Gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. In questo articolo, esploreremo come funzionano gli alimentatori elettrici da laboratorio e quali sono le loro caratteristiche principali.
+
+##### Come funzionano gli alimentatori elettrici da laboratorio?
+Gli alimentatori elettrici da laboratorio funzionano mediante la conversione di tensione alternata (AC) in tensione continua (DC). L&#8217;alimentatore dispone di un trasformatore che converte la tensione alternata della presa a muro in una tensione alternata di bassa frequenza, che viene quindi raddrizzata e filtrata per ottenere una tensione continua. Questa tensione continua viene quindi regolata e controllata mediante circuiti di regolazione per fornire alla uscita dell&#8217;alimentatore una tensione e una corrente costanti e regolabili.
         Quali sono le caratteristiche principali degli alimentatori elettrici da laboratorio?
-      </h4>
-      
-      <ol>
-        <li>
           <strong>Tensione e corrente regolabili</strong>: la capacità di regolare la tensione e la corrente dell&#8217;alimentatore è fondamentale per adattarsi alle esigenze specifiche del circuito elettronico in fase di test o sperimentazione.
-        </li>
-        <li>
           <strong>Stabilità</strong>: la tensione e la corrente devono essere stabili per evitare danni al circuito in fase di test. L&#8217;alimentatore deve mantenere una tensione e una corrente costante anche in presenza di carichi variabili.
-        </li>
-        <li>
           <strong>Protezioni</strong>: l&#8217;alimentatore deve essere dotato di protezioni come cortocircuiti, sovraccarichi e surriscaldamenti per evitare danni al circuito in fase di test e prevenire il rischio di incendi.
-        </li>
-        <li>
           <strong>Display</strong>: gli alimentatori moderni sono dotati di display LCD che forniscono informazioni sulla tensione e la corrente in uscita, consentendo un controllo accurato dei valori.
-        </li>
-        <li>
           <strong>Interfaccia</strong> <strong>utente</strong>: gli alimentatori moderni possono essere dotati di un&#8217;interfaccia utente facile da usare, composta da pulsanti e manopole per la regolazione dei valori di tensione e corrente.
-        </li>
-      </ol>
       
-      <p>
         In conclusione, gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. Quando si sceglie un alimentatore elettrico da laboratorio, è importante valutare le caratteristiche principali come la regolazione della tensione e della corrente, la stabilità, le protezioni, il display e l&#8217;interfaccia utente per garantire un funzionamento sicuro ed efficace.
-      </p>
-    </div>
-  </div>
-</div>
 
 > Indipendentemente dalla fonte di alimentazione scelta, **è importante assicurarsi che la tensione di alimentazione fornita sia stabile e costante**. Inoltre, è importante scegliere la giusta tensione di alimentazione in base alle <a href="https://www.mischianti.org/it/2020/05/30/esp32-piedinatura-specifiche-e-configurazione-dellarduino-ide-parte-1/" target="_blank" rel="noopener">specifiche</a> dell&#8217;ESP32.
 
