@@ -47,7 +47,7 @@ oppure usando wget:
 wget -qO- icanhazip.com
 ```
 
-##### Altro sistema per sapere il tuo indirizzo IP in rete:
+##### Ecco un sito alternativo per sapere il tuo indirizzo IP in rete:
   
 ```bash
 curl ifconfig.me/ip
