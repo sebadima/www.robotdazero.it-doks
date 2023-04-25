@@ -22,7 +22,7 @@ homepage: false
 
 <br>
 
-> Uno dei malintesi più comuni tra chi inizia con la microelettronica è l’idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite di Arduino. Purtroppo tutte queste e molte altre applicazioni richiedono correnti e tensioni molto più alte di quelle disponibili su Arduino (40mA ~ 5.0V).
+> Uno dei malintesi più comuni tra chi inizia con la microelettronica è l’idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite di Arduino. Purtroppo questi e svariati altri dispositivi richiedono correnti e tensioni molto più alte di quelle erogabili da Arduino (40mA ~ 5.0V).
 
 ##### Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
 
@@ -72,4 +72,4 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <script src="https://gist.github.com/sebadima/cf418c42cd9f90387c242b468ea3af1c.js"></script>
 
 <br>
-Questo programma è stato scritto in ambiente Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivo semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare Ubuntu 22.04 sul tuo PC desktop e iniziare ad usare il terminale a linea di comando con la shell "Bash".
+Questo programma è stato scritto in ambiente Windows 10. In genere utilizzo solo Linux nei miei progetti per un motivo semplicissimo: se devo programmare delle schede di tipo Raspberry o BeagleBone non è possibile installare Windows. Per questo motivo ti consiglio di installare subito Ubuntu 22.04 sul tuo PC desktop e iniziare ad usare il terminale a linea di comando con la shell "Bash".
