@@ -26,9 +26,14 @@ Per scoprire l’indirizzo internet del nostro computer in linea di massima potr
   
 per avere un quadro completo della situazione, ma questo è il risultato che ci potrebbe fornire la shell del nostro PC Linux:
   
-> docker0 Link encap:Ethernet HWaddr inet addr:172.17.0.1 Bcast:172.17.255.255 Mask:255.255.0.0 UP BROADCAST MULTICAST MTU:1500 Metric:1 RX packets:0 errors:0 dropped:0 overruns:0 frame:0 TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:0 RX bytes:0 (0.0 B) TX bytes:0 (0.0 B)
-    enp7s0 Link encap:Ethernet HWaddr UP BROADCAST MULTICAST MTU:1500 Metric:1 RX packets:0 errors:0 dropped:0 overruns:0 frame:0 TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:1000 RX bytes:0 (0.0 B) TX bytes:0 (0.0 B)
-    lo Link encap:Local 
+> lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 94260  bytes 151349678 (151.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 94260  bytes 151349678 (151.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 ##### Se cerchi su Google questa è probabilmente la prima soluzione che ti appare.  Come vedi districarsi tra tante righe di output è davvero complicato. Il risultato è così confuso da lasciare un poco interdetti. Io ti consiglio di usare questi metodi alternativi, molto piu semplici:
   
@@ -55,3 +60,4 @@ wget ifconfig.me/ip
 ```
 
 Ti consiglio di usare sempre questi comandi che si appoggiano a dei <strong>siti internet</strong> e di salvare il comando in un file script dandogli il nome “ipp” o un altro nome che ti riesce facile da ricordare.
+
