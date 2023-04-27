@@ -20,7 +20,7 @@ L&#8217;ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in
 
 ## 1. Alimentazione con presa USB
 
-<img decoding="async" loading="lazy" class="aligncenter wp-image-7703 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image6.png" alt="esp32 alimentato con cavo USB " width="1024" height="539" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image6.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image6-300x158.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image6-768x404.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image6-600x316.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+<img src="images/img1.webp" alt="esp32 alimentato con cavo USB" width="1024"> 
 
 <br>
 <br>
