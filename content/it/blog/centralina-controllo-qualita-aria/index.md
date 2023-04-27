@@ -4,7 +4,7 @@ description: "Come controllare la qualità dell’aria, l’abuso dell’aria co
 excerpt: "Come controllare la qualità dell’aria, l’abuso dell’aria condizionata, le fughe di tutti i gas infiammabili con un singolo prodotto accessibile da telefonino e da PC in ogni momento e in ogni luogo."
 date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
-draft: false
+draft: true
 weight: 50
 images: ["centralina-controllo-qualità-aria.jpg"]
 categories: ["News"]

@@ -4,7 +4,7 @@ description: "Un articolo uscito su Instructables.com ci permette di scoprire il
 excerpt: "Un articolo uscito su Instructables.com ci permette di scoprire il potente Raspberry PI. Scoprirai come collegarlo ad Arduino in un articolo dettagliatissimo e con istruzioni passo passo.."
 date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
-draft: false
+draft: true
 weight: 50
 images: ["images/arduino-per-il-commodore-64.jpg"]
 categories: ["News"]

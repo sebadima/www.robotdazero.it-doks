@@ -138,3 +138,6 @@ Completing these action items will result in a functioning AI-guided rover capab
 This project requires a significant amount of technical knowledge and expertise, but it is an excellent opportunity to learn about the integration of AI and Machine Learning in robotics. Moreover, it is a chance to create a unique and exciting project that can be used in various applications, such as security, exploration, and research.
 
 In conclusion, building an AI-guided rover for surveillance tasks is a challenging but rewarding project. The process involves several action items, including selecting appropriate sensors, processing sensor data, implementing PID control, and testing and calibration. Completing these action items will result in a functional and advanced robotics project that can be used in various applications.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NOZZMsMAGh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
