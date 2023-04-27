@@ -20,9 +20,8 @@ L&#8217;ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in
 
 ## 1. Alimentazione con presa USB
 
-<img src="images/img1.webp" alt="esp32 alimentato con cavo USB" width="1024"> 
+![esp32 alimentato con cavo USB](images/img1.webp)
 
-<br>
 <br>
 
 ##### L&#8217;alimentazione tramite USB è una delle opzioni più comuni per l&#8217;ESP32. In questo caso, l&#8217;ESP32 viene alimentato direttamente tramite il cavo USB che viene collegato alla scheda. Questa opzione è molto conveniente e facile da utilizzare, ma non è sempre la soluzione migliore. L&#8217;alimentazione tramite USB può limitare la quantità di corrente disponibile per l&#8217;ESP32, il che può influire sulla sua capacità di funzionare in modo efficiente, soprattutto quando si utilizzano sensori o componenti esterni.
@@ -46,9 +45,8 @@ Utilizzando una alimentazione esterna regolata da 5V, possiamo alimentare ESP32 
 
 ## 3. Alimentazione con batterie ricaricabili
 
-<img decoding="async" loading="lazy" class="aligncenter wp-image-7701 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png" alt="esp32 alimentato con batterie ricaricabili" width="1024" height="527" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image5.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-300x154.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-768x395.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image5-600x309.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" />
+![esp32 alimentato con batterie ricaricabili](images/img2.webp)
 
-<br>
 <br>
 
 La ultima opzione sulla lista per alimentare l&#8217;ESP32 è l&#8217;utilizzo di batterie esterne. L&#8217;ESP32 funziona a 3,3 V, quindi può essere facilmente alimentato utilizzando le batterie esterne. Mentre si alimenta l&#8217;ESP32 con una batteria esterna, utilizzare sempre il pin Vin poiché è collegato a un regolatore di tensione integrato che protegge da qualsiasi tipo di danni all&#8217;ESP32.
@@ -72,9 +70,8 @@ Se il regolatore di tensione si surriscalda, spegnere la scheda ESP32.
 
 #### Le batterie ricaricabili LIPO
 
-<img decoding="async" loading="lazy" class="aligncenter wp-image-7706 size-full" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image7.png" alt="batterie 18650 ai polimeri di litio per alimentare l'ESP32" width="1024" height="539" srcset="https://www.robotdazero.it/wp-content/uploads/2023/03/image7.png 1024w, https://www.robotdazero.it/wp-content/uploads/2023/03/image7-300x158.png 300w, https://www.robotdazero.it/wp-content/uploads/2023/03/image7-768x404.png 768w, https://www.robotdazero.it/wp-content/uploads/2023/03/image7-600x316.png 600w" sizes="(max-width: 1024px) 100vw, 1024px" /> 
+![esp32 alimentato con  batterie ricaricabili LIPO](images/img3.webp)
 
-<br>
 <br>
 
 Gli accumulatori al litio sono utilizzati in una vasta gamma di dispositivi elettronici, come telefoni cellulari, computer portatili, tablet, droni elettrici, automobili elettriche e molto altro ancora. In questo articolo, vedremo come funzionano gli accumulatori al litio e quali sono i loro vantaggi e svantaggi.
