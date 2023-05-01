@@ -25,21 +25,14 @@ img:hover {
 }
 </style>
 
-Stavolta ci occupiamo della scelta della CPU
+### Stavolta ci occupiamo della scelta della CPU
 
-
-# Come costruire un rover guidato dalla Intelligenza Artificiale pt.2
-
-
-
-
-<img  width="800" title="" alt="" src="./images/consumi celeron.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-51-38.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-56-04.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 18-06-55.resized.png">
-<img  width="800" title="" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
-
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-51-38.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-56-04.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-06-55.resized.png">
+<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
