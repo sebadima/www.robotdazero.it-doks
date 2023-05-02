@@ -15,11 +15,11 @@ homepage: false
 ---
 
 <style>
-img {
+.x {
     transition:transform 0.50s ease;
 }
 
-img:hover {
+.x:hover {
     -webkit-transform:scale(1.25); /* or some other value */
     transform:scale(1.25);
 }
@@ -27,10 +27,10 @@ img:hover {
 
 ### Stavolta ci occupiamo della scelta della CPU
 
-<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
-<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
-<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
-<img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
 <img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-51-38.resized.png">
 <img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-56-04.resized.png">
 <img class="figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
