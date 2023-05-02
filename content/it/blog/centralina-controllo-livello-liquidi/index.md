@@ -6,7 +6,7 @@ date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:0
 draft: false
 weight: 50
-images: ["images/IMG_20230422_164742.273.jpg"]
+images: ["images/IMG_20230422_164742.273.resized.jpg"]
 categories: ["News"]
 tags: ["ESP32", "centraline", "automazione"]
 contributors: ["sebadima"]
