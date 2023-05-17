@@ -1,0 +1,222 @@
+---
+title: Usare gli ultrasuoni con i Robot
+description: "Usare gli ultrasuoni con i Robot"
+excerpt: "Cosa sono i sensori a ultrasuoni?  sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi...."
+date: 2023-05-15T09:19:42+01:00
+lastmod: 2023-05-15T09:19:42+01:00
+draft: false
+weight: 50
+images: ["usare-gli-ultrasuoni-con-i-robot.webp"]
+categories: ["News"]
+tags: ["ultrasuoni", "HC-SR04", "progetti", "Arduino"]
+contributors: ["sergio rame "]
+pinned: false
+homepage: false
+---
+## Cosa sono i sensori a ultrasuoni? {#cosa-sono-i-sensori-a-ultrasuoni}
+
+In breve sono l’equivalente elettronico delle **orecchie dei pipistrelli**, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
+
+La versione elettronica del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo tre in questo progetto e avrai con poca spesa e un software molto semplice il tuo primo Robot capace di movimento autonomo.
+
+## Come usare il sensore a ultrasuoni HC-SR04 con Arduino {#come-usare-il-sensore-a-ultrasuoni-hc-sr04-con-arduino}
+
+In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
+
+<img src="https://res.cloudinary.com/sebadima/image/upload/c_scale,w_980/v1581691565/001/HC-SR04_bepinv.jpg">
+
+###### Il sensore HC-SR04 montato su una Breadboard per Arduino
+
+#### Descrizione {#descrizione}
+
+Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanza da un oggetto e dunque sfrutta la riflessione del suono sugli ostacoli solidi e la costanza della velocità del suono. Riesce a fornire con buona esattezza la distanza da un oggetto e restituisce dei valori costanti e progressivi, senza ritardi.
+
+> Fisicamente è piccolo, seppure non minuscolo e nella parte anteriore presenta due tronchi di cono in plastica. Uno si limita a trasmettere il segnale mentre l’altro lo riceve. Il sensore rileva il segnale e crea un impulso elettrico di durata proporzionale al ritardo.
+
+#### Caratteristiche elettriche e dinamiche {#caratteristiche-elettriche-e-dinamiche}
+
+Le specifiche tecniche del sensore [HC-SR04][1]:
+
+1. Alimentazione       : +5V DC
+2. Corrente a riposo   : &lt;2mA
+3. Corrente di lavoro  : 15mA
+4. Angolo panoramico   : &lt;15°
+5. Distanza di rilevazione : 2cm – 400 cm
+6. Risoluzione : 0.3 cm
+7. Angolo di misurazione: 30 gradi
+8. Durata del segnale di trigger: 10uS
+9. Dimensioni: 45mm x 20mm x 15mm
+
+
+#### Come funziona? {#come-funziona}
+
+Nel dettaglio in sensore opera in questo modo:
+
+1. &#8211; Il trasmettitore manda un impulso ad ultrasuoni,
+2. &#8211; Il segnale sonoro incontra un oggetto solido,
+3. &#8211; Il ricevitore riceva l’onda riflessa (l’impulso riflesso).
+
+Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di calcolare la distanza reale di un oggetto. Come è possibile? Perchè sappiamo con precisione la velocità del suono a livello del mare che è circa 330 mt al secondo e basta fare una proporzione per avere la distanza in centimetri, la risoluzione che verosimilmente ci servirà con i Robot mobili.
+
+#### La disposizione dei pin dell’ HC-SR04 {#la-disposizione-dei-pin-dell-hc-sr04}
+
+<img decoding="async" src="https://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultra.png?resize=297%2C349&ssl=1" alt="Notebook" /> 
+
+- VCC  : +5VDC
+-  Trig : Trigger (INPUT)
+-  Echo : Echo (OUTPUT)
+-  GND  : GND
+
+#### Dove comprarlo su Internet: {#dove-comprarlo-su-internet}
+
+<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1582288321/001/Screenshot_from_2020-02-21_13-31-32_gx5bdi.png" alt="51tbSvuOcAL" /> 
+
+Ti consiglio di aquistare il sensore ultrasonico [HC-SR04][1] su [Amazon][1] cercando il prezzo più basso tra i prodotti con almeno 4 stelle. In alternativa puoi cercare su banggood.com.
+
+## Come fanno i Robot a calcolare le distanze usando il sensore HCSR04 e Arduino {#come-fanno-i-robot-a-calcolare-le-distanze-usando-il-sensore-hcsr04-e-arduino}
+
+In questi progetto il sensore legge e scrive la distanza da un oggetto nel monitor serial del tuo IDE Arduino. L’obiettivo del progetto è iniziare a capire come funziona il sensore, poi nella parte centrale di questo post costruiremo un vero Robot, con una logica di funzionamento “complessa” e capacità dinamiche.
+
+**Nota:** Esiste una libreria per Arduino chiamata [NewPing][2] che ci renderà il lavoro molto più semplice.
+
+### Le parti richieste {#le-parti-richieste}
+
+Ecco una lista delle cose che vi serviranno:
+
+- Arduino UNO
+- Sensore Ultrasonico (HCSR04)
+- Breadboard
+- Jumper
+- Batteria 9V
+- Portabatteria con Jack standard 9V
+
+### Lo schema {#lo-schema}
+
+Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il sensore ultrasonico HC-SR04 al tuo Arduino in pochi minuti.
+
+<img decoding="async" src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=701%2C327&ssl=1" alt="" /> 
+
+### Come collegare Arduino al sensore HC-SR04 {#come-collegare-arduino-al-sensore-hc-sr04}
+
+nella parte sinistra i pin del sensore, a destra quelli di Arduino
+
+- VCC    &lt;——&gt;  5V
+- Trig   &lt;——&gt;  Pin 11
+- Echo   &lt;——&gt;  Pin 12
+- GND    &lt;——&gt;  GND</pre>
+
+
+### e infine Il codice completo… {#e-infine-il-codice-completo}
+
+<script src="https://gist.github.com/sebadima/b5511ce27b5be7aa0930b9dce4da3c57.js"></script>
+
+Copia e incolla questo programma nel tuo IDE di arduino, fai l’upload con la compilazione automatica, **ignora i warning** e fai attenzione ai messaggi di errore.
+
+
+
+#### Come funziona il codice in dettaglio {#come-funziona-il-codice-in-dettaglio}
+
+Per prima cosa dobbiamo creare le variabili per il pin di trasmissione e per quello di ricezione. Il pin di trasmissione è connesso al Pin digitale 11, mentre quello di Ricezione va al Pin digitale 12:
+
+    int PinTrasmissione = 11; 
+    int PinRicezione    = 12;
+    
+
+Poi serve creare due variabili del tipo **long** per conservare i valori di durata e centimetri. La variabile “durata” conserva il tempo tra trasmissione e ricezione del segnale, la variabile “cm” conserva la distanza in centimetri.
+
+    long durata, cm;
+    
+
+Nella fase di setup(), la porta seriale viene inizializzata a 9600 di baud rate, e vengono settati i pin di Output e Input.
+
+    Serial.begin (9600);
+    pinMode(PinTrasmissione, OUTPUT);
+    pinMode(PinRicezione, INPUT );
+    
+
+Nel loop() inneschiamo il sensore mandando un impulso HIGH di 10 microsecondi. Ma prima mandiamo un breve impulso LOW per resettare il sensore e ottenere un impuso HIGH più pulito:
+
+    digitalWrite(PinTrasmissione, LOW);
+    delayMicroseconds(5);
+    digitalWrite(PinTrasmissione, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(PinTrasmissione, LOW);
+    
+
+Fatto questo possiamo leggere il segnale dal sensore, un impulso HIGH la cui durata esprime il tempo in microsecondi passato fra la tramissione dell’impulso e la sua ricezione.
+
+In poche parole il sensore **invia un impulso elettrico più lungo** a secondo della distanza, in questo modo il calcolo aritmetico diventa quindi una semplice moltiplicazione.
+
+    durata = pulseIn(PinTrasmissione, HIGH);
+    
+
+Adesso dobbiamo convertire la durata dell’ **impulso elettrico** del sensore in una vera distanza in centimetri. La calcoliamo in questo modo solo apparentemente complesso:
+
+    prima versione:
+    distanza = (durata/2) x (la velocità del suono)
+       e poichè la velocità è esattamente: 0.0343 cm/microsecondo...
+    
+    seconda versione:
+    distanza = (durata/2)  x 0.0343
+       e visto che 1/0.0343 equivale a 29.1 avremo*
+    
+    terza versione:
+    distanza = (durata /2) / 29.1 
+    
+    *moltiplicare per 0.343 è come dividere per l'inverso (cioè 29.1)
+    
+
+Inoltre dobbiamo dividere per due perchè **il sensore non distingue tra andata e ritorno** ed emette un valore complessivo errato, per così dire, ma facile da correggere.
+
+> Ma alla fine tutto si riduce a questa semplice operazione: distanza = (durata /2) / 29.1 e per ora questo ci basta!
+
+A fine programma scriviamo il risultato su Monitor Seriale dell’ IDE:
+
+    Serial.print("cm:");
+    Serial.print(cm);
+    Serial.println();
+    
+
+**Poichè siamo dentro a loop() non ci serve usare istruzioni “FOR” o “WHILE”: la logica interna del software di Arduino ci risparmia questa operazione**. Con altri linguaggi senza il costrutto sintattico “loop()” dovremmo arrangiarci scrivendo altre linee di codice.
+
+&nbsp;
+
+### Il programma per Arduino modificato con l’uso di NewPing: una libreria alternativa per Robot terrestri {#il-programma-per-arduino-modificato-con-l-uso-di-newping-una-libreria-alternativa-per-robot-terrestri}
+
+Semplice da usare NewPing in certe occasioni **risulta consigliabile quando dobbiamo limitarci a calcolare distanze in modo diretto**, senza elaborare il segnale di ritorno. La libreria si trova a questo indirizzo in **formato zippato** [clicca qui][3]. Dopo avere scaricato e installato la libreria puoi usare il codice sottostante:
+
+<script src="https://gist.github.com/sebadima/65897569ffbb6807346600031611dbf6.js"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></script>
+
+#### Come funziona il programma con NewPing {#come-funziona-il-programma-con-newping}
+
+Calcolare la distanza di un oggetto con NewPing è molto semplice. Innanzitutto devi includere la la libreria nel programma:
+
+    #include <NewPing.h>
+    
+
+Poi come al solito devi definire i Pin di Trasmissione e di ricezione. Il Pin di trasmissione del sensore viene connesso al Pin 11 di Arduino mentre quello di Ricezione finisce sul Pin 12. Bisogna inoltre definire una distanza massima.
+
+    #define PIN_TRASMISSIONE 11
+    #define PIN_RICEZIONE 12
+    #define DISTANZA_MAX 200
+    
+
+Adesso possiamo **chiamare** la libreria dal programma:
+
+    NewPing sonar(PIN_TRASMISSIONE, PIN_RICEZIONE, DISTANZA_MAX); 
+    
+
+Nel setup(), come al solito bisogna settare la Porta Seriale allavelocità di 9600 baud (bit al secondo).
+
+    Serial.begin(9600);
+    
+
+In fine nel loop(), per avere la distanza in cm basta usare la chiamata di funzione ping_cm(). In questo caso possiamo parlare di **metodo** perchè il linguaggio C++ da cui deriva il linguaggio di Arduino è un linguaggio di programmazione **ad oggetti**. Noi ci adeguiamo alla terminologia e invece di chiamata a funzione parliamo di **metodo**.
+
+    unsigned int distanza = sonar.ping_cm();
+    Serial.print(distanza);
+    Serial.println(" cm");
+    
+
+Le solite istruzioni di **print** permettono di vedere sull’IDE di Arduino le distanza dagli oggetti anche in movimento. Provate a vedere la differenza di comportamento con il programma precedente. Se tutto ha funzionato correttamente non dovremmo avere differenze.
+
