@@ -26,6 +26,9 @@ mermaid: true
 }
 </style>
 
+
+
+
 ## La scelta della CPU
 
 In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
@@ -54,3 +57,9 @@ graph TD
   C -->|Two| E[Result 2]
 {{< /mermaid >}}
 
+
+
+<div id="my-store-87199052"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?87199052&data_platform=code&data_date=2023-05-08" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-87199052");</script>
+</div>
