@@ -23,33 +23,15 @@ Per impermeabilizzare il box in plastica di provenienza commerciale useremo una 
 <br>
 <br>
 
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.455.jpg">
-jjjjj
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164743.095.jpg">
-bb
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164743.077.jpg">
-cc
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164743.109.jpg">
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.671.jpg">
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.273.jpg">
-dd
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.337.jpg">
-ee
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.400.jpg">
-ff
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.525.jpg">
-<br>
-<br>
-Dettaglio dell'ESP32 con la nostra basetta in colore rosso con connessioni I2C e mammut per collegare la alimentazione ed eventualmente un partitore di tensione. I minuscoli led gialli (spenti nella foto) sono in formato SMD da montare con una pistola ad aria calda e flussante. 
-<br>
-<br>
-<br>
-<br>
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.603.jpg">
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.753.jpg">
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.930.jpg">
-<img  width="800" title="" alt="" src="./images/IMG_20230422_164742.993.jpg">
-
-
-
-
+<img class = "x"  width="800" title="" alt="" src="./images/img1.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img2.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img3.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img4.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img5.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img6.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img7.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img8.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img9.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img10.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img11.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img12.jpg">
