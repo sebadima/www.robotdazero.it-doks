@@ -125,19 +125,4 @@ In sintesi, la crittografia dei file sul disco rigido è un'importante misura di
 
 Questo documento descrive come costruire un rover guidato dall'intelligenza artificiale per compiti di sorveglianza, con la capacità di muoversi autonomamente, ricaricarsi, scattare foto, riconoscere volti e inviare notifiche. Il documento fornisce una panoramica dei passaggi necessari per costruire il rover, inclusa la scelta delle librerie di Machine Learning e l'implementazione di un sistema di controllo PID. Viene inoltre discusso l'utilizzo di Raspberry PI e ESP32 come hardware per il controllo dei sensori e dei motori.
 
-This guide provides a step-by-step approach to building an AI-guided rover for surveillance tasks. The rover will have the ability to move autonomously, recharge itself, take photos, recognize faces, and send notifications.
-
-To begin, the first action item is to acquire suitable sensors for detecting the rover's position. The selection of appropriate sensors will depend on the specific requirements of the project. Once the sensors are in place, the next step is to process the sensor data and control the wheel motors. This can be achieved by using a microcontroller or microprocessor.
-
-After the processing and control systems are in place, an algorithm for PID control needs to be implemented. The PID control system will regulate the rover's speed and direction based on the position detected by the sensors. This will ensure that the rover moves smoothly and accurately.
-
-Once the hardware and software components are in place, the system must be tested. During the testing phase, the parameters of the PID control system should be adjusted to improve the performance of the rover. This will require careful calibration and fine-tuning to ensure optimal performance.
-
-Completing these action items will result in a functioning AI-guided rover capable of performing surveillance tasks. Overall, this guide provides a valuable resource for anyone looking to build an advanced robotics project with the integration of AI and Machine Learning.
-
-This project requires a significant amount of technical knowledge and expertise, but it is an excellent opportunity to learn about the integration of AI and Machine Learning in robotics. Moreover, it is a chance to create a unique and exciting project that can be used in various applications, such as security, exploration, and research.
-
-In conclusion, building an AI-guided rover for surveillance tasks is a challenging but rewarding project. The process involves several action items, including selecting appropriate sensors, processing sensor data, implementing PID control, and testing and calibration. Completing these action items will result in a functional and advanced robotics project that can be used in various applications.
-
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NOZZMsMAGh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
