@@ -4,7 +4,7 @@ description: "Come controllare la qualità dell’aria, l’abuso dell’aria co
 excerpt: "Come controllare la qualità dell’aria, l’abuso dell’aria condizionata, le fughe di tutti i gas infiammabili con un singolo prodotto accessibile da telefonino e da PC in ogni momento e in ogni luogo."
 date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["centralina-controllo-qualità-aria.jpg"]
 categories: ["News"]
@@ -14,7 +14,7 @@ pinned: false
 homepage: false
 ---
 
-Come controllare la qualità dell&#8217;aria, l&#8217;abuso dell&#8217;aria condizionata, le fughe di tutti i gas infiammabili con un singolo prodotto accessibile da telefonino e da PC in ogni momento e in ogni luogo.
+##### Come controllare la qualità dell&#8217;aria, l&#8217;abuso dell&#8217;aria condizionata, le fughe di tutti i gas infiammabili con un singolo prodotto accessibile da telefonino e da PC in ogni momento e in ogni luogo.
 
 ## Come la nostra scheda può migliorare la tua sicurezza
 
@@ -38,7 +38,7 @@ Esiste un modo preciso di capirlo&#8230;
 
 E inoltre come potresti  controllare se qualcuno sta usando l&#8217;aria condizionata a 18 gradi quando le temperatura ottimale non è mai inferiore ai 22 gradi? E soprattutto come controllare se lo ha fatto nei giorni o mesi precedenti?
 
-<figure id="attachment_3270" aria-describedby="caption-attachment-3270" style="width: 368px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-3270 size-full" src="https://www.robotdazero.it/wp-content/uploads/2022/09/104.png" alt="" width="368" height="264" srcset="https://www.robotdazero.it/wp-content/uploads/2022/09/104.png 368w, https://www.robotdazero.it/wp-content/uploads/2022/09/104-300x215.png 300w" sizes="(max-width: 368px) 100vw, 368px" /><figcaption id="caption-attachment-3270" class="wp-caption-text">il grafico storico delle temperature della nostra App. Una &#8220;feature&#8221; in genere non disponibile sulle centraline a basso costo.</figcaption></figure>
+<img class="x" src="images/centralina-controllo-qualità-aria-img1.webp" alt="">
 
 **Fino ad oggi non hai potuto controllare tutto questo  a prezzi ragionevoli**, ma dal 2022 con i nuovi microsensori a basso costo e bassissimo consumo puoi farlo. E seppure non siamo i soli ad averli adottati (su Amazon trovi alternative similari) crediamo di poterti offrire dei vantaggi irrinunciabili!
 
@@ -61,9 +61,9 @@ Perché &#8220;fabbrichiamo&#8221; letteralmente le nostre schede e aggiungiamo 
   * Idrocarburi aromatici,
   * Monossido di Carbonio
 
-<figure id="attachment_3264" aria-describedby="caption-attachment-3264" style="width: 150px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-3264 size-full" src="https://www.robotdazero.it/wp-content/uploads/2022/09/download.jpeg" alt="" width="150" height="147" /><figcaption id="caption-attachment-3264" class="wp-caption-text">il sensore MQ5</figcaption></figure>
+<img class="x" src="images/centralina-controllo-qualità-aria-img2.jpg" alt="">
 
-<figure id="attachment_3267" aria-describedby="caption-attachment-3267" style="width: 473px" class="wp-caption aligncenter"><img decoding="async" loading="lazy" class="wp-image-3267 size-large" src="https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-473x1024.jpg" alt="" width="473" height="1024" srcset="https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-473x1024.jpg 473w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-600x1300.jpg 600w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-138x300.jpg 138w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-768x1664.jpg 768w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-709x1536.jpg 709w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed-945x2048.jpg 945w, https://www.robotdazero.it/wp-content/uploads/2022/09/unnamed.jpg 1080w" sizes="(max-width: 473px) 100vw, 473px" /><figcaption id="caption-attachment-3267" class="wp-caption-text">la App con alcuni valori in tempo reale e i dati meteo del comune di pertinenza (come forniti da <a href="https://wttr.in/" target="_blank" rel="noopener">wttr.in</a> )</figcaption></figure>
+<img class="x" src="images/centralina-controllo-qualità-aria-img3.webp" alt="">
 
 E INOLTRE:  
 Vuoi controllare se qualcuno fuma nella tua azienda o istituto in barba a ogni regolamento e magari vorresti scoprire in quale locale ci sono state le maggiori violazioni?

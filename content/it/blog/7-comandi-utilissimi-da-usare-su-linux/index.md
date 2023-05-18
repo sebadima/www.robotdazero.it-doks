@@ -4,7 +4,7 @@ description: "Se sviluppi progetti informatici in maniera professionale o come h
 excerpt: "Se sviluppi progetti informatici in maniera professionale o come hobbista evoluto, conoscere Linux e la sua shell (Bash) ti darà enormi vantaggi rispetto al command prompt di Windows e per velocizzare il suo utilizzo ti propongo 7 comandi utilissimi da usare su Linux sin dall’inizio."
 date: 2020-08-02T09:19:42+01:00
 lastmod: 2020-08-02T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["image.jpg"]
 categories: ["News"]
