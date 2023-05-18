@@ -4,7 +4,7 @@ description: "Come scoprire l'indirizzo internet del tuo PC"
 excerpt: "Conoscere l’indirizzo IP del nostro computer è molto facile usando il browser ma sulla shell di Linux dobbiamo imparare altri sistemi. Scopriamo alcuni dei metodi più comuni ... "
 date: 2019-03-12T09:19:42+01:00
 lastmod: 2019-03-12T09:19:42+01:0
-draft: true
+draft: false
 weight: 50
 images: ["images/indirizzo internet del pc.webp"]
 categories: ["News"]

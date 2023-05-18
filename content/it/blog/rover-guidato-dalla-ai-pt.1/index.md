@@ -2,8 +2,8 @@
 title: "Come costruire un rover guidato dalla Intelligenza Artificiale pt.1"
 description: "La scelta dei motori per il nostro rover."
 excerpt: "Il nostro rover richiede due motori di azionamento principali. All’inizio abbiamo considerato la ipotesi dei motori passo-passo, che si muovono di pochissimo ogni volta che vengono azionati dal driver, sono una soluzione sofisticata ma per la versione iniziale del nostro rover li abbiamo scartati; pensiamo di usarli in una una prossima evoluzione.."
-date: 2020-11-04T09:19:42+01:00
-lastmod: 2020-11-04T09:19:42+01:00
+date: 2023-05-18T06:19:42+01:00
+lastmod: 2023-05-18T06:19:42+01:00
 draft: false
 weight: 50
 images: ["ati-nasa-Perseverance-with-Adaptive-Caching-Assembly.jpg"]

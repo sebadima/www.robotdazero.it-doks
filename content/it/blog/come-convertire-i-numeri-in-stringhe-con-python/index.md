@@ -4,7 +4,7 @@ description: "Convertire i numeri in stringhe con Python è una delle operazioni
 excerpt: "Convertire i numeri in stringhe con Python è una delle operazioni più comuni della scrittura di un programma, eppure in alcuni casi può suscitare perplessità e incertezze."
 date:    2018-07-03T09:19:42+01:00
 lastmod: 2018-07-03T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["images/Convertire-in-numeri-interi-in-stringhe-usando-Python.jpg"]
 categories: ["News"]
