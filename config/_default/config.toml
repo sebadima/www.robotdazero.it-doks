@@ -1,4 +1,4 @@
-baseurl = "https://www.robotdazero.site/"
+baseurl = "https://www.robotdazero.it/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
