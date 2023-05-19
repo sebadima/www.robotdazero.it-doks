@@ -12,8 +12,8 @@
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-lg-nowrap" aria-label="Main navigation">
 	  
     <a href="https://www.robotdazero.it/"> 
-    <img src="https://res.cloudinary.com/sebadima/image/upload/v1684405834/t-logo_cgd5dm.png"  style="width:48px;" alt="logo"> &nbsp;
-    </a>
+    <img src="https://res.cloudinary.com/sebadima/image/upload/v1684428735/logo-_F8507A_bl6jtw.svg" width="48" height="48" alt="logo">
+    </a>&nbsp;
 
     <a class="navbar-brand order-0" href="{{ .Site.BaseURL | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
       {{ .Site.Params.Title }}
@@ -100,7 +100,7 @@
         <ul class="nav flex-column flex-lg-row">
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
-              <a class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 d-lg-none">{{ .Name | safeHTML }}</small></a>
+              <a aria-label="my social" class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 d-lg-none">{{ .Name | safeHTML }}</small></a>
             </li>
           {{ end -}}
         </ul>
