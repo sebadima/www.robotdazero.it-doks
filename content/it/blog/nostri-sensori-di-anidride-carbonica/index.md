@@ -112,8 +112,3 @@ Unendo i sensori con ventilazione controllata a richiesta (DCV), un’organizzaz
 
 Per riassumere: l’anidride carbonica è un gas potenzialmente pericoloso quando è presente in percentuali elevate. La sua misurazione e scoperta precoce con dei sensori efficaci basati su Arduino, Esp32 e IOT in genere permette di rispondere rapidamente livelli di protezione consistenti prima si manifestino danni a livello fisiologico.
 
-
-
-
-
-<div style="position: relative; width: 1024; padding-top: 75.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;"><iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.robotdazero.it/wp-content/uploads/2023/03/image.png" allowfullscreen"> </iframe></div>
