@@ -1,7 +1,7 @@
 ---
 title: "Come collegare un LED esterno ad Arduino"
 description: "Come collegare un LED esterno ad Arduino"
-excerpt: "..."
+excerpt: "Una guida dettagliata su come collegare LED e altri dispositivi passivi al tuo Arduino Uno e sui semplicissimi circuiti che dovresti conoscere per partire con il piede giusto.In particolare vedremo come gestire le operazioni di input e output con le porte digitali di Arduino..."
 date: 2023-05-04T09:19:42+01:00
 lastmod: 2023-05-04T09:19:42+01:00
 draft: false
@@ -152,8 +152,7 @@ _digitalWrite(led, LOW)_ mette in **LOW** cioè a **0 V** il pin 13 e quind
 
 E&#8217; lo stesso ritardo di prima 1000 millisecondi e lascerà in pin in **OFF** per un secondo.
 
-### `<br />
-` **Come installare il programma**
+##### Come installare il programma
 
 Per caricare il programma su Arduino devi andare su **File/Nuovo**, incollare il programma copiato dal post, andare su **File/Salva con nome** e scrivere “**led10**”. Quindi devi andare su **Sketch**, **Compila/Upload** e aspettare che l’IDE di Arduino finisca il suo lavoro.
 
@@ -161,11 +160,6 @@ Per caricare il programma su Arduino devi andare su **File/Nuovo**, incollare i
 
 Avendo testato l’hardware _a parte_ e copiato il programma, a questo punto tutto dovrebbe essere Ok. Se ti senti pronto a provare delle modifiche, prova a cambiare la resistenza di **220** Ω con una da **2.2 k**Ω e cioè con 4 strisce **rosso, rosso, rosso, oro**.
 
-> e quindi dai una occhiata al LED!     🙂
+> e quindi dai una occhiata al LED!  🙂
 
 #### Cosa succede? Si accende? Prova tu stesso! {#cosa-succede-si-accende-prova-tu-stesso}
-
-Ricorda che l’obiettivo di questo blog è quello di farti appassionare all’argomento e darti **gli strumenti di base per lavorare da adesso come tecnico**, senza impegnare anni di studio all’università!
-
- [1]: https://www.robotdazero.it/blog/iniziare-con-le-breadboard/
- [2]: https://res.cloudinary.com/sebadima/image/upload/v1607693937/001/codice-colore-resistenze_v5sjs6.jpg
