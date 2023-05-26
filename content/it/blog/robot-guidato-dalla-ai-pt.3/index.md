@@ -21,14 +21,69 @@ mermaid: true
 }
 
 .x:hover {
-    -webkit-transform:scale(1.75); /* or some other value */
-    transform:scale(1.75);
+    -webkit-transform:scale(1.30); /* or some other value */
+    transform:scale(1.30);
 }
 </style>
 
 
 
 
+
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006214.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006220.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006227.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006233.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006239.jpg">
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006244.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006249.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006254.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006258.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006263.jpg">
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006268.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006281.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006293.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006298.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006313.jpg">
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006319.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006337.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006363.jpg">
+
+fine dall'articolo
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
 ## La scelta della CPU
 
 In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
@@ -37,9 +92,8 @@ In genere nella costuzione di robot mobili o di rover ci si orienta come prima s
 
 A darci una prima intuizione è stato questo video su YT con poche centinaia di visualizzazioni che cmunque spiega benissmo la strada che vogliamo intraprendere. La CPU è un laptop Intel con lo schermo aperto!.
 <br >
-<br >
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
 
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
@@ -48,6 +102,8 @@ A darci una prima intuizione è stato questo video su YT con poche centinaia di 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-56-04.resized.png">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-06-55.resized.png">
+
+++++++++++++++++
 
 {{< mermaid class="bg-light text-center" >}}
 graph TD
