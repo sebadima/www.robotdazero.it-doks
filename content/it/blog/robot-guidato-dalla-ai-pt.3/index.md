@@ -28,34 +28,39 @@ mermaid: true
 
 
 
+#### Costruire un pacco di batterie LIPO: lo schema teorico
 
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/01.png">
 
+#### Costruire un pacco di batterie LIPO: la costruzione in sequenza
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006214.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006220.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006227.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006233.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006239.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/02.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/03.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/04.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/05.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/06.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/07.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/sequenza/08.png">
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006244.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006249.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006254.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006258.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006263.jpg">
+<br>
+<br>
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006268.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006281.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006293.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006298.jpg">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006313.jpg">
+#### L'assemblaggio finale del nostro pacco batterie
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006319.jpg">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006337.jpg">
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006363.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006281.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006298.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006313.jpg">
 
-fine dall'articolo
-<br >
-<br >
+#### Il caricabatterie LIPO che abbiamo scelto
+###### HTRC iMAX B6 80W utilizzabile con batterie Lipo, NiMh, li-ion, Ni-Cd
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006214.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006233.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006220.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/1685116006268.jpg">
+
 <br >
 <br >
 <br >
