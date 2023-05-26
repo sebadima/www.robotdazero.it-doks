@@ -12,12 +12,14 @@
   <nav class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} flex-wrap flex-lg-nowrap" aria-label="Main navigation">
 	  
     <a href="https://www.robotdazero.it/"> 
-    <img src="https://res.cloudinary.com/sebadima/image/upload/v1684428735/logo-_F8507A_bl6jtw.svg" width="48" height="48" alt="logo">
-    </a>&nbsp;
+    <img src="https://res.cloudinary.com/sebadima/image/upload/v1684428735/logo-_F8507A_bl6jtw.svg" width="42" height="42" alt="logo">
+    </a>
 
+    &nbsp;
     <a class="navbar-brand order-0" href="{{ .Site.BaseURL | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
       {{ .Site.Params.Title }}
     </a>
+    &nbsp;
 
     {{ if (in .Site.Params.sections.sectionNav .Section) -}}
     <button class="btn btn-link order-0 ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">

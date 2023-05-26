@@ -6,7 +6,7 @@ date: 2019-03-12T09:19:42+01:00
 lastmod: 2019-03-12T09:19:42+01:0
 draft: false
 weight: 50
-images: ["images/indirizzo internet del pc.webp"]
+images: ["images/indirizzo internet del pc.jpg"]
 categories: ["News"]
 tags: ["linux", "shell", "networking"]
 contributors: ["sergio rame"]
