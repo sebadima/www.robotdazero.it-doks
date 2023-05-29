@@ -14,6 +14,20 @@ pinned: false
 homepage: false
 ---
 
+
+<style>
+.x {
+    transition:transform 0.40s ease;
+    transition-delay: 0.60s;
+}
+
+.x:hover {
+    -webkit-transform:scale(1.70); /* or some other value */
+    transform:scale(1.70);
+}
+</style>
+
+
 <h2>In questa primo articolo di una serie piuttosto lunga vedremo come costruire un rover guidato dalla intelligenza artificiale destinato a compiti di sorveglianza "reale".</h2>
 quindi con la capacità di:
 <ol>
@@ -74,8 +88,33 @@ con controllo PID per il rover, seguiremo questi passaggi:
  	<li>Implementare un algoritmo di controllo PID per regolare la velocità e la direzione del rover in base alla posizione rilevata dai sensori.</li>
  	<li>Testare il sistema di guida e regolare i parametri del controllo PID per migliorare le prestazioni.</li>
 </ol>
-<h3>Perchè abbiamo sceltro <a href="https://www.raspberrypi.org/">Raspberry PI</a> per il controllo dei sensori e la intelligenza artificiale e il controller ESP32 per la gestione dei motori e il sistema di guida</h3>
+
+
+
+## La scelta della CPU
+
+In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
+
+
+### La soluzione Intel 
+
+A darci una prima intuizione è stato questo video su YT con poche centinaia di visualizzazioni che cmunque spiega benissmo la strada che vogliamo intraprendere. La CPU è un laptop Intel con lo schermo aperto!.
+<br >
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-51-38.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
+
+
+
+<h3>Perchè abbiamo scelto <a href="https://www.raspberrypi.org/">Raspberry PI</a> per il controllo dei sensori e la intelligenza artificiale e il controller ESP32 per la gestione dei motori e il sistema di guida</h3>
 La ESP32-CAM (un controller ESP32S con una Cam OV2640)
+
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Raspberry-Pi-4B-Power-Usage-table-1024x184.png">
 
 riesce perfettamente a rilevare ostacoli negli spazi aperti usando una versione ridotta di un <a href="https://en.wikipedia.org/wiki/Computer_vision">sistema</a> di riconoscimento delle immagini, ma non può gestire altri compiti di ML o tantomeno far girare programmi in <a href="https://docs.micropython.org/en/latest/library/index.html">MicroPython</a> a velocità accettabile. Durante le nostre <a href="https://www.hackster.io/mjrobot/esp32-cam-tinyml-image-classification-fruits-vs-veggies-4ab970">prove</a> condotte con Tiny ML siamo riusciti a riconoscere volti, animali e oggetti precisi senza ncecessità di extra RAM o di risorse di CPU aggiuntive, ma
 <blockquote>allenare la ESP32 con molteplici modelli e immagini à semplicemente aldilà degli scopi di un controller</blockquote>

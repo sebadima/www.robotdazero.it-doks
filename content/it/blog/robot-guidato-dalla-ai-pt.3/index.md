@@ -18,11 +18,12 @@ mermaid: true
 <style>
 .x {
     transition:transform 0.50s ease;
+    transition-delay: 1s;
 }
 
 .x:hover {
     -webkit-transform:scale(1.30); /* or some other value */
-    transform:scale(1.30);
+    transform:scale(1.50);
 }
 </style>
 
@@ -64,34 +65,8 @@ mermaid: true
 <br >
 <br >
 <br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-<br >
-## La scelta della CPU
 
-In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
+<!--
 
 #### Una soluzione estrema ma funzionante...
 
@@ -118,7 +93,7 @@ graph TD
   C -->|Two| E[Result 2]
 {{< /mermaid >}}
 
-
+-->
 
 <div id="my-store-87199052"></div>
 <div>
