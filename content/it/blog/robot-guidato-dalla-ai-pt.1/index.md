@@ -1,5 +1,5 @@
 ---
-title: "Come costruire un Robot guidato dalla Intelligenza Artificiale pt.1"
+title: "Come costruire un Robot guidato dalla Intelligenza Artificiale pt.1 - La CPU"
 description: "La scelta dei motori per il nostro rover."
 excerpt: "Il nostro rover richiede due motori di azionamento principali. All’inizio abbiamo considerato la ipotesi dei motori passo-passo, che si muovono di pochissimo ogni volta che vengono azionati dal driver, sono una soluzione sofisticata ma per la versione iniziale del nostro rover li abbiamo scartati; pensiamo di usarli in una una prossima evoluzione..."
 date: 2023-05-18T06:19:42+01:00
@@ -127,3 +127,145 @@ i link utili che abbiamo usato per scegliere la tipologia di hardware:
 <a href="https://www.researchgate.net/publication/259487884_Hardware_and_software_architecture_for_a_Rover_robot">researchgate - Hardware and software architecture for a Rover robot</a>
 
 <a href="https://dronebotworkshop.com/esp32cam-robot-car/">dronebotworkshop.com - robocar</a>
+
+https://www.blackmoreops.com/2023/05/19/boot-ubuntu-server-22-04-lts-from-usb-ssd-on-raspberry-pi-4/
+https://www.blackmoreops.com/2023/05/19/boot-ubuntu-server-22-04-lts-from-usb-ssd-on-raspberry-pi-4/
+
+
+per installare ubutnu
+
+
+
+1 create una mini SD CARD per installare rasbpberry OS e lanciate il computer
+
+
+
+2
+ dopo il login accedete con utente PI e password raspberry
+
+
+
+3
+ acdettate e seguire questo posat per abilitare IL BIOS del Rasberry e quinfi create un utnete del tipo mioutente
+https://www.blackmoreops.com/2023/05/19/boot-ubuntu-server-22-04-lts-from-usb-ssd-on-raspberry-pi-4/
+
+
+
+
+4 assegnate privilegi di password
+
+5 caricatae il file id_rsa.pub nella directory .ssh
+6
+
+vi authorized keys e quindi 
+fate shotdown
+il comouter
+
+
+++++++++++++++++++++++++++++
+Requisito
+
+Hardware utilizzato in questa guida
+
+    Raspberry Pi 4 con 8 GB di RAM
+    Scheda micro SD da 32 GB
+    Kingston A400 120 GB SSD
+    Adattatore da SATA a USB StarTech
+    Eluteng SATA a USB adattatore
+    Alimentazione adeguata a causa del consumo di energia SSD aggiuntivo. (3.5 A raccomandato)
+
+Software utilizzato:
+
+    Windows 10 o Windows 11 PC tuttavia guida sarà simile per gli utenti MAC e Linux.
+    Raspberry Pi Imager (Balena Etcher è anche un buon strumento per la scrittura su schede SD)
+
+NOTA: Si scopre che ci sono un sacco di SATA a USB adattatori che non funzionano correttamente quando viene utilizzato per avviare il Raspberry Pi. Dopo molte ore perse cercando di far funzionare un cavo incompatibile, ho trovato questa grande risorsa su questo argomento con un database di cavi funzionanti.
+
+Il blog di James Chambers è stato anche una grande risorsa per scrivere altre parti di questa guida.
+1. Aggiornamento del firmware del bootloader su Raspberry Pi 4
+
+È necessario assicurarsi che il vostro Raspberry Pi 4 è in esecuzione l'ultimo firmware bootloader disponibile. La funzione di avvio USB è stata abilitata sul bootloader Pi 4 nell'autunno del 2020.
+
+    Utilizzare Raspberry Pi Imager V1. 6 per installare Raspberry Pi OS (versione lite senza desktop è meglio) su scheda SD
+    Copia il file di testo vuoto chiamato ssh.txt sulla partizione di avvio del sistema della scheda SD. Rimuovere la scheda SD dal PC e inserire in Raspberry Pi
+    SSH in Pi
+    Utente predefinito: pi
+    password predefinita: lampone
+    Assicurati di avere gli ultimi aggiornamenti kernal. Questo richiederà diversi minuti
+    sudo apt update & & sudo apt full-upgrade-y
+    Riavvia Pi per applicare gli aggiornamenti
+    sudo reboot
+    SSH in Pi
+    Il tuo Pi potrebbe essere attualmente configurato per utilizzare rilasci di bootloader critici o stabili. Normalmente lo configuro per utilizzare le versioni stabili. Aprire il file e modificare la voce FIRMWARE_RELEASE_STATUS in stabile.
+    sudo nano/etc/default / rpi-eeprom-aggiornamento
+    Controllare la versione del firmware del bootloader
+    sudo rpi-eeprom-aggiornamento
+
+Se il bootloader non è aggiornato vedrai qualcosa di simile:
+
+BCM2711 rilevato
+EEPROM dedicato VL805 rilevato
+*** AGGIORNAMENTO DISPONIBILE ***
+BOOTLOADER: aggiornamento disponibile
+CORRENTE: Gio 16 Apr 17:11: 26 UTC 2020 (1587057086)
+ ULTIMO: Gio 3 Set 12:11: 43 UTC 2020 (1599135103)
+ FW DIR: / lib / firmware / raspberrypi / bootloader / stabile
+VL805: aggiornamento disponibile
+CORRENTE: 000137ad
+ ULTIMO: 000138a1
+
+Se il bootloader è aggiornato vedrai qualcosa di simile:
+
+pi @ raspberrypi: ~ su sudo rpi-eeprom-aggiornamento
+BCM2711 rilevato
+EEPROM dedicato VL805 rilevato
+BOOTLOADER: aggiornato
+CORRENTE: Gio 3 Set 12: 11: 43 UTC 2020 (1599135103)
+ ULTIMO: Gio 3 Set 12:11: 43 UTC 2020 (1599135103)
+ FW DIR: / lib / firmware / raspberrypi / bootloader / critico
+VL805: aggiornato
+CORRENTE: 000138a1
+ ULTIMO: 000138a1
+
+    Aggiorna il bootloader se non è aggiornato
+    sudo rpi-eeprom-aggiornamento-a
+    Riavvia Pi per applicare gli aggiornamenti
+    sudo reboot 
+    Controlla se l'aggiornamento è stato applicato
+    sudo rpi-eeprom-aggiornamento
+
+2. Seleziona la preferenza del dispositivo di avvio
+
+È probabile che l'impostazione di avvio predefinita sul nostro Pi si avvii solo su SDcard. Ci accingiamo a cambiare questo in modo che cicli tra il tentativo di avvio da SDcard prima e poi da un'unità USB esterna se l'avvio della scheda SD non riesce.
+
+SSH nell'installazione del sistema operativo Pi utilizzata per aggiornare il bootloader nel passaggio 1.
+
+    eseguire raspi-config utility
+    sudo raspi-config
+    Seleziona l'opzione 6 Opzioni avanzate
+    Seleziona l'opzione A6 Ordine di avvio
+    Seleziona l'opzione B1 Avvio USB
+    Dovresti ottenere una finestra pop-up che dice " Il dispositivo USB è il dispositivo di avvio predefinito”
+    seleziona ok
+    selezionare Fine e selezionare Sì quando viene chiesto se si desidera riavviare ora.
+    il Pi dovrebbe riavviarsi come normale. Avvia la sessione SSH per confermare
+    arresto Pi
+    sudo shutdown ora
+
+3. Installare Ubuntu Server 22.04 LTS su SSD USB 3.0
+
+Avvio USB Ubuntu Server 22.04 LTS è molto semplice ora con l'ultimo bootloader Pi.
+
+    Collegare SSD al PC tramite SATA - > cavo USB
+    Scarica Ubuntu Server 22.04 LTS 64bit
+    https://ubuntu.com/download/raspberry-pi
+    Utilizzare Raspberry Pi Imager V1.6 o Balena Etcher per scrivere Ubuntu Server 22.04 LTS sul SSD esterno.
+    Essere molto attenti quando si seleziona il numero di unità che si sceglie l'unità esterna corretta e non il vostro hardrive computer interno!
+    Collegare l'SSD alla porta USB3 (blu) sul Pi4.
+    Assicurarsi che SDcard utilizzato in precedenza per aggiornare il bootloader è stato rimosso
+    Accendi il Pi. Se tutto è buono l'avvio USB dovrebbe funzionare.
+    SSH in Pi per confermare l'avvio
+    Utente predefinito: ubuntu
+    password predefinita: ubuntu
+
++++++++++++++++++++++++
