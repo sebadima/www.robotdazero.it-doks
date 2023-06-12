@@ -14,7 +14,6 @@ pinned: false
 homepage: false
 ---
 
-
 <style>
 .x {
     transition:transform 0.40s ease;
@@ -102,11 +101,6 @@ A darci una prima intuizione è stato questo video su YT con poche centinaia di 
 <br >
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-50-34.resized.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-51-38.resized.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-47-37.resized.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/consumi celeron.png">
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 17-26-25.resized.png">
 
 
 
@@ -268,4 +262,3 @@ Avvio USB Ubuntu Server 22.04 LTS è molto semplice ora con l'ultimo bootloader 
     Utente predefinito: ubuntu
     password predefinita: ubuntu
 
-+++++++++++++++++++++++
