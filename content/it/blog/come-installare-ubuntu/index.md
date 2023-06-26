@@ -13,7 +13,7 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-# <span style="font-size: 1rem; color: #464646;">Una semplice guida in 8 passi che ti guiderà nella installazione di Ubuntu.</span> {.f2.lh-title.b.mb3}
+# <span style="font-size: 1rem; color: #464646;">Una semplice guida in 8 step che ti guiderà nella installazione di Ubuntu.</span> {.f2.lh-title.b.mb3}
 
 <div class="cms mw6">
   <h4 id="con-ubuntu-in-versione-server-puoi-raccogliere-il-flusso-di-dati-fornito-da-cam-di-sorveglianza-e-sensori-di-controllo-riciclando-vecchi-pc-da-1-o-2-gb-di-ram-praticamente-a-costo-zero">
@@ -141,7 +141,11 @@ homepage: false
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602783971/001/Desktop-Ubuntu-Live_fb53ji.jpg" alt="Schermata di installazione live di Ubuntu" /><br /> Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune opzioni fondamentali come la lingua e il layout della tastiera: usa quelli più appropriate per il tuo sistema.
+    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602783971/001/Desktop-Ubuntu-Live_fb53ji.jpg" alt="Schermata di installazione live di Ubuntu" />
+
+<br /> 
+
+Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune opzioni fondamentali come la lingua e il layout della tastiera: usa quelli più appropriate per il tuo sistema.
   </p>
   
   <p>
