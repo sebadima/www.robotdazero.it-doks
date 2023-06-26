@@ -235,6 +235,6 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
   </p>
   
   <p>
-    Ricorda comunque che, in generale, <strong>tutte le distro sono simili</strong> e cambiano soltanto la modalità di installazione e i pacchetti di aggiornamento. La procedura mostrata in questo post funziona per Ubuntu e tutte le altre distribuzioni basate su di essa come <a href="https://kubuntu.org/">Kubuntu</a> , Xubuntu, Lubuntu, Linux Mint.<br /> In alternativa ad Ubuntu io ti suggerisco, al limite, di pensare a <a href="https://getfedora.org/">Fedora</a> o <a href="ihttps://www.centos.org/">CentOS</a> oppure <a href="https://www.opensuse.org/">OpenSuse</a>. A te la scelta!
+    Ricorda comunque che, in generale, <strong>tutte le distro sono simili</strong> e cambiano soltanto la modalità di installazione e i pacchetti di aggiornamento. La procedura mostrata in questo post funziona per Ubuntu e tutte le altre distribuzioni basate su di essa come <a href="https://kubuntu.org/">Kubuntu</a>, Xubuntu, Lubuntu, Linux Mint. In alternativa ad Ubuntu ti suggerisco di provare <a href="https://getfedora.org/">Fedora</a> o <a href="ihttps://www.centos.org/">CentOS</a>.
   </p>
 </div>
