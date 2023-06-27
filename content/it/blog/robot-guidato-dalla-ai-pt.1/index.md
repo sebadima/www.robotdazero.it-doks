@@ -139,20 +139,9 @@ Per avere un termine di paragone un portatile Intel con un CPU i3 e disco SSD in
 
 Il dato viene da un sito autorevole come [energit.it](https://energit.it/quale-e-il-consumo-medio-di-un-pc/) che vi consigliamo di leggere per approfondire l'argomento.
 
-<h3>Perchè abbiamo scelto <a href="https://www.raspberrypi.org/">Raspberry PI</a> per il controllo dei sensori e la intelligenza artificiale e il controller ESP32 per la gestione dei motori e il sistema di guida</h3>
-
+### Perchè non potevamo usare ESP32 o Arduino per la elaborazione delle immagini in machine learning
 
 
 Il controller ESP32 riesce a rilevare ostacoli negli spazi aperti usando una versione ridotta di un <a href="https://en.wikipedia.org/wiki/Computer_vision">sistema</a> di riconoscimento delle immagini, ma non può gestire altri compiti di ML o tantomeno far girare programmi in <a href="https://docs.micropython.org/en/latest/library/index.html">MicroPython</a> a velocità accettabile. Durante le nostre <a href="https://www.hackster.io/mjrobot/esp32-cam-tinyml-image-classification-fruits-vs-veggies-4ab970">prove</a> condotte con Tiny ML siamo riusciti a riconoscere volti, animali e oggetti precisi senza ncecessità di extra RAM o di risorse di CPU aggiuntive, ma
 <blockquote>allenare la ESP32 con molteplici modelli e immagini à semplicemente aldilà degli scopi di un controller</blockquote>
 Il controllo PID è un algoritmo di controllo di feedback che utilizza la regolazione proporzionale integrale e derivata per mantenere un valore di uscita vicino a un valore di riferimento desiderato. Nel caso di un sistema di guida per il rover, il valore di riferimento sarebbe la posizione desiderata del rover e il valore di uscita sarebbe la velocità e la direzione del rover.
-
-
-#### I 3 articoli che abbiamo usato per scegliere la tipologia di hardware:
-
-<a href="https://www.researchgate.net/publication/259487884_Hardware_and_software_architecture_for_a_Rover_robot">researchgate - Hardware and software architecture for a Rover robot</a>
-
-<a href="https://dronebotworkshop.com/esp32cam-robot-car/">dronebotworkshop.com - Robocar</a>
-
-[blackmoreops - Boot ubuntu server](ihttps://www.blackmoreops.com/2023/05/19/boot-ubuntu-server-22-04-lts-from-usb-ssd-on-raspberry-pi-4/)
-
