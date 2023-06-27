@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["come-installare-ubuntu.webp"]
+images: ["800px-201002_6x2_synaptic.png"]
 categories: ["News"]
 tags: ["ubuntu", "software", "sistemi"]
 contributors: ["sergio rame "]
@@ -213,28 +213,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
   </p>
   
   <p>
-    Dopo il riavvio potrebbe apparire una scritta che ti chiede di rimuovere il supporto di installazione e di premere Invio. <strong>Rimuovi la chiavetta USB e premi Invio</strong>. Il tuo sistema si riavvierà docilmente e questa volta con Ubuntu invece di Windows.
+    Dopo il riavvio potrebbe apparire una scritta che ti chiede di rimuovere il supporto di installazione e di premere Invio. <strong>Rimuovi la chiavetta USB e premi Invio</strong>. Il tuo sistema si riavvierà con Ubuntu al posto di di Windows.
   </p>
   
-  <h3 id="fare-elettronica-digitale-con-ubuntu">
-    Fare Elettronica Digitale con Ubuntu
-  </h3>
-  
-  <p>
-    Se vuoi fare Elettronica Digitale, come ti auguro, <strong>userai continuamente dei server</strong> per salvare le foto dalle Webcam o i log dei sensori. Ti sconsiglio di usare il tuo normale PC Windows perchè i soliti <strong>riavvii dopo gli aggiornamenti</strong> bloccheranno la raccolta dei dati o il controllo dei <a href="https://en.wikipedia.org/wiki/Servomotor">servocomandi</a> con conseguenze che non voglio neppure descriverti.
-  </p>
-  
-  <blockquote>
-    <p>
-      Sui server usa solo e sempre Linux e in particolare UBUNTU. I continui riavvii di Windows non sono accettabili, a meno di comprare “Windows Server 2019” con costi superiori ai 500 euro. Più di un PC!
-    </p>
-  </blockquote>
-  
-  <p>
-    Se vuoi avere dunque un server affidabile a bassissimo costo parti con Linux e fra le varie distro ti consiglio proprio quella che abbiamo scelto per questa guida: <a href="https://ubuntu.com/download">Ubuntu</a> per la sua buona diffusione e per i molti appassionati che sono in grado di aiutarti sui forum. Imoltre la useremo sempre nelle nostre installazioni con Django Python e server REST.
-  </p>
-  
-  <p>
-    Ricorda comunque che, in generale, <strong>tutte le distro sono simili</strong> e cambiano soltanto la modalità di installazione e i pacchetti di aggiornamento. La procedura mostrata in questo post funziona per Ubuntu e tutte le altre distribuzioni basate su di essa come <a href="https://kubuntu.org/">Kubuntu</a>, Xubuntu, Lubuntu, Linux Mint. In alternativa ad Ubuntu ti suggerisco di provare <a href="https://getfedora.org/">Fedora</a> o <a href="ihttps://www.centos.org/">CentOS</a>.
-  </p>
 </div>
