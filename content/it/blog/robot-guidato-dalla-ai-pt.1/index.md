@@ -87,7 +87,23 @@ Tutte sono in grado di girare sulla piattaforma hardware che abbiamo deciso di p
 7. usare un driver economico come il <a href="https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/">L298N</a> DC Motor Driver
 
 
-#### Perchè non possiamo usare soltanto la CPU principale per guidare i motori...
+### I fattori da considerare quando si sceglie la CPU...
+
+1. Dimensioni e peso del robot: la CPU dovrebbe essere abbastanza piccola da adattarsi al corpo del robot e abbastanza leggera da non appesantire il robot.
+2. Requisiti di alimentazione del robot: la CPU dovrebbe consumare una quantità ragionevole di energia in modo che il robot possa funzionare a lungo con una batteria.
+3. Capacità del robot: la CPU dovrebbe essere abbastanza potente da gestire i compiti del robot. Ad esempio, se il robot verrà utilizzato per compiti complessi come il riconoscimento di oggetti o la navigazione, avrà bisogno di una CPU più potente di un robot che verrà utilizzato solo per compiti semplici come muoversi ed evitare gli ostacoli.
+4. Sistema operativo del robot: La CPU deve essere compatibile con il sistema operativo del robot. La maggior parte dei piccoli robot usano Linux, ma alcuni possono utilizzare altri sistemi operativi come Windows o Android.
+
+#### ALcune delle alternative che abbiamo considerato:
+
+**Raspberry Pi**: Il Raspberry Pi è una scelta popolare per i piccoli robot perché è conveniente, piccolo e potente. È compatibile con una vasta gamma di sensori e attuatori e può eseguire una varietà di sistemi operativi, tra cui Linux che useremo nel nostro progetto.
+
+**Arduino**: Arduino è un'altra scelta popolare per i piccoli robot. È un microcontrollore, il che significa che è meno potente di una CPU come il Raspberry Pi, ma è anche molto più piccolo ed economico. Arduino è compatibile con una vasta gamma di sensori e attuatori, e può eseguire una varietà di linguaggi di programmazione, tra cui C e C++.
+
+**Nvidia Jetson Nano**: Nvidia Jetson Nano è una potente CPU progettata per applicazioni AI. È compatibile con una vasta gamma di sensori e attuatori e può eseguire Linux e Jetpack, la piattaforma di sviluppo AI di Nvidia.
+
+
+#### E inoltre, perchè non possiamo usare soltanto la CPU principale per guidare i motori...
 Il nostro Rover dovrà regolare continuamente la velocità dei motori in base alle esigenze di sterzata. La architettura a 6 ruote che abbiano scelto ha bisogno di sterzare cambiando la velocità delle singole ruotei e deve farlo in maniera precisa con ritardi minimi, pena vedere il over ondeggiare o durante le manovre.
 Perchè ci serve un sistema PID?
 <blockquote>Il sistema di controllo PID (Proportional-Integral-Derivative) è un algoritmo di controllo automatico utilizzato per regolare un processo in modo preciso e affidabile. Questo sistema utilizza una combinazione di tre elementi di controllo: il termine proporzionale (P), il termine integrale (I) e il termine derivativo (D).</blockquote>
