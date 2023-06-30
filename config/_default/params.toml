@@ -65,7 +65,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "©2023 Robotdazero.it - P.IVA IT00378808885 - info@robotdazero.it"
+footer = "©2023 Robotdazero.it - P.IVA IT00378808885"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
