@@ -1,0 +1,27 @@
+---
+title: Perchè abbiamo abbandonato il tracciamento sul nostro Blog
+description: "Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
+excerpt: "Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
+date: 2023-06-02T09:19:42+01:00
+lastmod: 2020-08-02T09:19:42+01:00
+draft: false
+weight: 50
+images: ["image.jpg"]
+categories: ["News"]
+tags: ["blog", "comunicazioni"]
+contributors: ["sergio rame "]
+pinned: false
+homepage: false
+---
+
+Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di "dati utente" si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018.
+
+Agli esordi di rbt0 avevamo deciso di concentrarci più sul discordo della affiliazione e di sfruttare il canale Amazon per la maggior parte dei nostri prodotti. Da quest'anno ci siamo concentrati invece sulla Dashboard di RBT0 e sulla integrazione di sensori, telecamere e Machine Learning.
+
+Non ci serve più un tracciamento accurato delle visite e abbiano deciso di abolire ogni "snippet" di tracciamento, pixel di Facebook etc e di aumentare nel contempo la velocità del Blog.
+
+
+Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una pagina dove descriviamo le nostre policy per la privacy.
+
+
+Un risultato inatteso ma gradito è stato vedere le prestazioni del Blog passare da una buona valutazione su Google Speed Insight a un poker di [100+100+100+100](https://pagespeed.web.dev/analysis/https-www-robotdazero-it/y2yp1eooyr?form_factor=mobile) nella versione Mobile e Desktop. Se avete un Blog questo dato potrebbe darvi qualche ispirazione...
