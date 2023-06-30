@@ -1,5 +1,5 @@
 ---
-title: Perchè abbiamo abbandonato il tracciamento sul nostro Blog
+title: Perche abbiamo abbandonato il tracciamento sul nostro Blog
 description: "Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
 excerpt: "Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
 date: 2023-06-02T09:19:42+01:00
@@ -17,9 +17,9 @@ homepage: false
 ### Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
 
 
-Abbiamo cercato di ridurre al minimo la presenza di codice javascript che rallenta il blog e abbiamo cercato servizi di "user tracking" che non raccogliessero in modo "silente" i cookie dei nostri visitatori. E selezionato due servizi alternativi a Google/Facebook che promettevano il rispetto assoluto della privacy secondo le norme della UE e non usassero il nostro (minimo) traffico per alimentare i loro algoritmi di Machine Learning.
+Abbiamo cercato di ridurre al minimo la presenza di codice javascript che rallentasse il blog e abbiamo cercato servizi di "user tracking" che non raccogliessero in modo silente i cookie dei nostri visitatori. E abbiamo selezionato due servizi alternativi a Google/Facebook che promettevano il rispetto assoluto della privacy secondo le norme della UE e non usassero il nostro (minimo) traffico per alimentare i loro algoritmi di Machine Learning.
 
-Dopo avere controllato con la console di Firefox/Network che uno dei servizi di tracking si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto al tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con i nostri clienti/followers.
+Dopo avere controllato con la console di Firefox/Network che uno dei servizi di tracking si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto al tracciamento degli utenti e di usare solo la [newsletter](https://www.robotdazero.it/newsletter/) per tenerci in contatto con i nostri clienti/followers.
 
 ### Ed inoltre abbiamo cambiato modello di business
 
