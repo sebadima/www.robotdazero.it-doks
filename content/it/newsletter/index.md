@@ -1,5 +1,5 @@
 ---
-title: "Iscriviti alla Newsletter e ricevi il tuo bonus!"
+title: "Tra gli articoli del nostro ecommerce potrai trovare anche..."
 description: "We do not use cookies and we do not collect any personal data."
 date: 2020-08-27T19:23:18+02:00
 lastmod: 2020-08-27T19:23:18+02:00
@@ -37,16 +37,16 @@ images: []
     <div class="ml-form-embedWrapper embedForm">
       <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
         <div class="ml-form-embedContent" style="">
-          <h4>Circuito Stampato</h4>
+          <h2></h2>
           <figure>
             <img src="https://hostedimages-cdn.aweber-static.com/MTk4MDE5Ng==/optimized/5c02b62d85824ddda468d2ce7e45fd9f.png" alt="Girl in a jacket">
           </figure>
           <p></p>
-          <h2>MULTIFUNZIONE per ESP32 con fori metallizzati e maschera per saldature, ideale per sostituire le Breadboard - (€ 2.70)</h2>
+          <h2>Scheda MULTIFUNZIONE per ESP32 con fori metallizzati e maschera per saldature, ideale per sostituire le Breadboard - (€ 2.70)</h2>
           <p>Questo circuito stampato (PCB) fatto su misura per l’<strong>ESP32 </strong>ti permette di realizzare la maggior parte dei prototipi che troverai su internet e che altrimenti dovresti abbozzare con la solita <strong>breadboard </strong>con fili volanti.</p>
           <p>Con la nostra <strong>scheda multifunzione </strong>puoi costruire i nostri progetti Open Source con programmi che puoi copiare liberamente dal sito.</p>
           <p>Fra questi ti segnalo: <strong>rilevatori </strong>di Gas, <strong>centraline </strong>Meteo con accesso alle API di OpenWeatherMap, sistemi di <strong>sicurezza </strong>con <strong>riconoscimento </strong>dei volti e molto altro ancora.</p>
-          <p><strong>Usa&nbsp;la tua email per ricevere un coupon con il 20% di sconto!</strong></p>
+          <p><strong>Usa&nbsp;la tua email per ricevere un coupon con il 10% di sconto!</strong></p>
           <p></p>
           <p></p>
         </div>
