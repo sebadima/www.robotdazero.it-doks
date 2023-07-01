@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["ati-nasa-Perseverance-with-Adaptive-Caching-Assembly.jpg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["rover", "CPU", "raspberry"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
@@ -121,12 +121,12 @@ con controllo PID per il rover, seguiremo questi passaggi:
 
 
 
-## Perchè abbiamo scelto la piattaforma Raspberry
+## Perchè abbiamo scelto Raspberry...
 
 
 ### Le prestazioni sono il principale parametro per scegliere la CPU?
 
-E' innegabile che le prestazioni siano un punto chiave nella sceltai, perchè gli algoritmi di ML impongono la elaborazione di miliardi di singole operazione al secondo (pensiamo alla chiavette TPU come Google Coral o Orange PI). Tale carico di lavoro ci propone un serio dubbio da risolvere in fase di pianificazione: La nostra CPU dovrà elaborare in toto i dati (immagini e video ) o deve appogiarsi ad unita' di calcolo esterno?
+E' innegabile che le prestazioni siano un punto chiave nella scelta, perchè gli algoritmi di ML impongono la elaborazione di miliardi di singole operazione al secondo (pensiamo alla chiavette TPU come Google Coral o Orange PI). Tale carico di lavoro ci propone un serio dubbio da risolvere in fase di pianificazione: La nostra CPU dovrà elaborare in toto i dati (immagini e video ) o deve appogiarsi ad unita' di calcolo esterno?
 
 Nel nostro caso abbiamo deciso di scegliere la seconda strada e ricorrere alla unita di elaborazione esterna con Tensorfklow e quindi abbiamo optato per l'ecosistema Google Coral e Tensorflow.
 
@@ -137,17 +137,20 @@ In genere nella costuzione di robot mobili o di rover ci si orienta come prima s
 ### Potevamo usare una CPU Intel per il Rover?
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
-A suggerirci questa alternativa è stato questo video su YT con un Rover a 6 ruote e un laptop Intel letteralmente appoggiato sopra lo chassis. I vantaggi di una soluzione simile sono ovvi, primo fra tutti poter usare un PC ad alte prestazioni spendendo 100 euro su ebay. Gli svantaggi però secondo noi sono maggiori dei vantaggi, primo fra tutti il consumo di una CPU I3/5/7
 
 <br >
 <br >
+A suggerirci questa alternativa è stato questo <a href="https://www.youtube.com/watch?v=yrI_C9hVV4M&t=5s" target="_blank" rel="noopener">video</a> su YT con un Rover a 6 ruote e un laptop Intel letteralmente appoggiato sopra lo chassis. I vantaggi di una soluzione simile sono ovvi, primo fra tutti poter usare un PC ad alte prestazioni spendendo 100 euro su ebay. Gli svantaggi però secondo noi sono maggiori dei vantaggi, primo fra tutti il consumo di una CPU I3/5/7
 
+<br >
+
+#### Quanto consuma una CPU Raspberry?
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="./images/Raspberry-Pi-4B-Power-Usage-table-1024x184.png">
 
 <br >
 <br >
 
-Nella tabella sopra vediamo i consumi della gamma RPI a partire dal modello minore RPI0 fino al PI4B (il 400 è equivalente) in varie situazioni di utilizzo. Come possiamo notare anche sotto condizioni di forte carico l'assorbimento di corrente non supera gli 885mA. Quindi ammettendo un assorbimento di circa 1A a 5V staremo sempre comodamente sotto i 5W di consumo. 
+Nella tabella sopra vediamo i consumi della gamma RPI a partire dal modello minore Zero fino al PI4B+ (il 400 è equivalente) in varie situazioni di utilizzo. Come possiamo notare anche sotto condizioni di forte carico l'assorbimento di corrente non supera gli 885mA. Quindi ammettendo un assorbimento di circa 1A a 5V staremo sempre comodamente sotto i 5W di consumo. 
 
 Per avere un termine di paragone un portatile Intel con un CPU i3 e disco SSD interno può consumare 4/10 volte tanto:
 
