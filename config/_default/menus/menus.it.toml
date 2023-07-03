@@ -22,22 +22,12 @@
   identifier = "lorem"
   url = "/guide/lorem/"
 
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
-
 [[main]]
   name = "Documentazione"
   url = "/docs/prologue/introduction/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
-# [[main]]
-#   name = "Tutorial"
-#   url = "/tutorial/lorem/ipsum/"
-#   weight = 15
 
 [[main]]
   name = "Blog"
@@ -58,10 +48,17 @@
   parent = "get-started"
 
 [[main]]
-  name = "Tutorial"
+  name = "Newsletter"
   weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
+  identifier = "newsletter"
+  url = "/newsletter"
+  parent = "get-started"
+
+[[main]]
+  name = "Privacy"
+  weight = 60
+  identifier = "privacy"
+  url = "/privacy"
   parent = "get-started"
 
 [[social]]
