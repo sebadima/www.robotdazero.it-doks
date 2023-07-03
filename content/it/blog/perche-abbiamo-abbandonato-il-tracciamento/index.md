@@ -14,7 +14,7 @@ pinned: false
 homepage: false
 ---
 
-### Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
+## Dall'inizio del blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
 
 
 Abbiamo cercato di ridurre al minimo la presenza di codice javascript che rallentasse il blog e abbiamo cercato servizi di "user tracking" che non raccogliessero in modo silente i cookie dei nostri visitatori. E abbiamo selezionato due servizi alternativi a Google/Facebook che promettevano il rispetto assoluto della privacy secondo le norme della UE e non usassero il nostro (minimo) traffico per alimentare i loro algoritmi di Machine Learning.
@@ -27,6 +27,6 @@ Dopo avere controllato con la console di Firefox/Network che uno dei servizi di 
 
 Non ci serviva più un tracciamento accurato delle visite e abbiano deciso di abolire ogni "snippet" di tracciamento, pixel di Facebook etc e di aumentare nel contempo la velocità del Blog.
 
-##### Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una pagina dove descriviamo le nostre policy per la privacy.
+#### Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una pagina dove descriviamo le nostre policy per la privacy.
 
 Un risultato inatteso ma gradito è stato vedere le prestazioni del Blog passare da una buona valutazione su Google Speed Insight a un poker di [100+100+100+100](https://pagespeed.web.dev/analysis/https-www-robotdazero-it/y2yp1eooyr?form_factor=mobile) nella versione Mobile e Desktop. Se avete un Blog minimalista come il nostro questo dato potrebbe ispirarvi...
