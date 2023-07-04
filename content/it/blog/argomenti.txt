@@ -27,8 +27,8 @@ Unire tutto:
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-https://github.com/AtsushiSakai/PythonRobotics - Algoritmi visual
-https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization - Librerie Enorme
+https://github.com/AtsushiSakai/PythonRobotics - *** Algoritmi visual
+https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization - *** Librerie Enorme
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
