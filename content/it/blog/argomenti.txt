@@ -1,9 +1,22 @@
-Fondere tutto: i SENSOR DRONE Aliexpress/magazzino/automatico con ML/
+Unire tutto: 
 
-recco sys/fabbrica di KIT per droni e Autogyro/
-AI/Visione telecamere/3d e autopilotaggio - 
-GPS con drone / sensori e elab. ML / 
-Servocomandi RC e Laser innocuo per Ora con puntamento Enemies, 
-Gesture Enemies!!! e 
-quindi adesso subentra anche aeromdellismo/foto/spiegazioni del SOFTWARE!!!!!!!!!!!!!
- tI SERVE SOFTWARE K4 ONNIPOTENTE E CASE 3D PER COLLEGARE SERVO E RELAIS!!!!!
+- Sensor Military Drone, Aliexpress, magazzino automatico con API Stripe, ML su K4
+
+- Recco sys, fabbrica di KIT per rover, e rover in 3D
+
+- AI, Visione telecamere OPENCV, 3d e autopilotaggio PID electric motors
+
+- GPS con rover / sensori e elab. ML / 
+
+- Servocomandi RC e Laser innocuo per Ora con puntamento Enemies, 
+
+- Gesture tracking
+
+- Ti quindi adesso subentra anche modellismo/foto/spiegazioni del SOFTWARE finito non 
+  per principianti!!!!!!!!
+
+- TI SERVE SOFTWARE K4 ONNIPOTENTE E CASE 3D PER COLLEGARE SERVO E RELAIS!!!!!
+
+
+1. SVN non fa dei tutorial su Ruby on Rails ma solo sui prodotti e la loro filosofia
+2. Articoli devono essere su come creare dei Robot e illustrare come usare SERVIZIO DJANGO e MLAI e ottenere sistemi di controllo
