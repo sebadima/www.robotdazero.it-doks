@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["800px-201002_6x2_synaptic.png"]
+images: ["header.png"]
 categories: ["News"]
 tags: ["ubuntu", "software", "sistemi"]
 contributors: ["sergio rame "]
