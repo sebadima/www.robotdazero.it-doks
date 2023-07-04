@@ -21,11 +21,11 @@ _Se sviluppi progetti informatici in maniera professionale o come hobbista evolu
 
 Mettiamo tu voglia liberare spazio su disco e ti serva sapere quali sono i file più ingombranti. Oppure che tu voglia dare una occhiata a una directory piena zeppa di programmi e ti serva sapere quali sono i più grossi: scrivi questo comando facendo copia e incolla e avrai in un attimo la risposta.
 
-<pre>$   du -a . | sort -n -r | head -n 20</pre>
+    du -a . | sort -n -r | head -n 20
 
 Se vuoi invece editare tutti i file di una directory e di tutte le subdirectory con l’editor vi (VIM), disponibile su ogni versione di Linux, puoi fare copia e incolla di questo comando:
 
-<pre>$   find . -xtype f -exec vim {} +</pre>
+    find . -xtype f -exec vim {} +
 
 Per uscire dall’editor vi ti basta premere ESC e scrivere :q + INVIO.
 
@@ -39,26 +39,27 @@ Se non ti piace l’editor **vi **e preferisci usare un editor moderno con int
 Procediamo passo passo:  
 Usa vi o Sublime Text per creare un file che chiamerai “trova“:
 
-<pre>$   vi trova</pre>
+    vi trova
 
 oppure, usando Sublime Text
 
-<pre>$   subl trova</pre>
+    subl trova
 
 Adesso fai copia e incolla del codice qui sotto:
 
-<pre class="EnlighterJSRAW" data-enlighter-language="bash" data-enlighter-theme="classic">do
+```bash
+do
 grep --exclude-dir=public -lira $FILE1 * | xargs subl $FILE1
 echo $FILE1
-done</pre>
-
+done
+```
 Salva tutto e scrivi sulla linea di comando:
 
-<pre>$   sudo chmod +x trova;    sudo cp trova /usr/bin</pre>
+    sudo chmod +x trova;    sudo cp trova /usr/bin>
 
 A partire da adesso ogni volta che vorrai modificare un programma ma non sai esattamente quale file aprire, potrai scrivere:
 
-<pre>$   trova copyright</pre>
+    trova copyright
 
 Sublime Text ti aprirà ogni singolo file che contiene la parola ‘copyright’ in una tab diversa. In questo modo potrai editarli tuti assieme senza cercarli singolarmente dal prompt dei comandi.
 
@@ -66,7 +67,7 @@ Sublime Text ti aprirà ogni singolo file che contiene la parola ‘copyright’
 
 Questo comando è potenzialmente _pericoloso_ e perciò ti consiglio di usarlo con attenzione:
 
-<pre>$   find . -type f -exec sed -i 's/en-us/it/g' {} +</pre>
+    find . -type f -exec sed -i 's/en-us/it/g' {} +
 
 Lanciando il comando all’interno di una directory ad esempio di un sito statico html possiamo cambiare tutte le occorrenze di “en-us” e sostituirle con il nostro italico “it” senza cercare dentro i files .html con l’editor. E poichè parliamo di di Linux e non di Windows 10 che è piuttosto limitato anche con la sua _Power Shell_  possiamo definire le stringhe usando le potenti wildcards delle [regular expressions][2].  
 A tale proposito, se ti ostini ad usare ancora Windows per programmare, leggi questo [post][3] apparso sul forum di [Stackoverflow][4], la bibbia della programmazione:
@@ -83,11 +84,11 @@ Il comando **rsync** di Linux non ha un vero equivalente nel mondo Windows e c
 
 Per copiare due directory sullo stesso computer (l’esempio più elementare) puoi scrivere:
 
-<pre>rsync -zarvh ./dir1/ ./dir2/</pre>
+    rsync -zarvh ./dir1/ ./dir2/
 
 Per copiare due directory da un computer locale al tuo sito web (una specie di **FTP**) puoi scrivere invece:
 
-<pre>rsync -zarvh /home/utente/r utente@sitoweb.com:/home/utente/r/</pre>
+    rsync -zarvh /home/utente/r utente@sitoweb.com:/home/utente/r/
 
 In questo secondo esempio il comando **rsync **prende i files della cartella locale r e li incolla nella equivalente cartella r nel server sitoweb.com (un nome random…). E’ importante notare come con rsync venga saltata la fase di login/autenticazione del protocollo **SFTP**, con un vantaggio enorme per la sicurezza.
 
@@ -105,17 +106,17 @@ Infatti, usando rsync con utente@sitoweb.com ci autentichiamo presso il serv
 
 Scrivi il comando **htop** nella shell e poi premi _F6 _e seleziona, ad esempio _PERCENT_MEM_, per ordinare i programmi in base alla RAM che stanno usando. Quasi rempre il record negativo sarà di **mysqld**, il demon del database Mysql. Scrolla in basso per saltare mysqld e controlla gli altri processi (cioè programmi che girano sul sistema). Prendi nota dei 3 o 4 che occupano più memoria e decidi su puoi legittimamente bloccarli. Per sapere a quale utente appartengono scrivi:
 
-<pre>$   htop -u</pre>
+    htop -u
 
 <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1606154275/001/Screenshot_from_2020-11-23_18-57-08_vvjliy.png" alt="screensgoot del comando linux htop" /> 
 
 Per trovare tutti gli utenti collegati al sistema scrivi:
 
-<pre>$   awk -F: '{ print $1}' /etc/passwd</pre>
+    awk -F: '{ print $1}' /etc/passwd
 
 oppure:
 
-<pre>$   getent passwd</pre>
+    getent passwd
 
 A questo punto se abbiamo identificato qualche programma “fuori controllo” che secondo noi sta usando troppe RAM, vediamo come agire per bloccarlo.
 
@@ -123,15 +124,15 @@ A questo punto se abbiamo identificato qualche programma “fuori controllo” c
 
 Per elencare i programmi ordinati per utente abbiamo già usato il comando:
 
-<pre>$   htop -u</pre>
+    htop -u
 
 se l’utente _riccardo_ ha lanciato e magari dimenticato troppi programmi, possiamo controllare la sua attività scrivendo:
 
-<pre>$   pgrep -u riccardo</pre>
+    pgrep -u riccardo
 
 e ci apparirà l’elenco dei programmi lanciati con il loro codice unico: se abbiamo deciso con scrupolo che dobbiamo bloccargli tutti i processi (programmi in esecuzione) senza andare a stopparli uno per uno scriviamo:
 
-<pre>$   sudo pkill -9 -u riccardo</pre>
+    sudo pkill -9 -u riccardo
 
 Dopo qualche minuto magari ricontrolliamo ancora l’utente usando **pgrep -u riccardo**, e decidiamo se bloccare l’utente per qualche ora.
 
@@ -139,17 +140,17 @@ Dopo qualche minuto magari ricontrolliamo ancora l’utente usando **pgrep -u r
 
 Per elencare i servizi abilitati a partire in automatico sul nostro sistema possiamo scrivere:
 
-<pre>$   systemctl list-unit-files | grep enabled</pre>
+    systemctl list-unit-files | grep enabled
 
 Se notiamo delle anomalie o non ci serve qualche tipo di servizio p.e. **ufw** scriviamo:
 
-<pre>$   sudo systemctl stop ufw</pre>
+    sudo systemctl stop ufw
 
-Quindi scriviamo il comando **free **e controlliamo il risparmio di **RAM**: se il risparmio è limitato possiamo decidere di fare ripartire il servizio in questo modo:
+Quindi scriviamo il comando **free** e controlliamo il risparmio di **RAM**: se il risparmio è limitato possiamo decidere di fare ripartire il servizio in questo modo:
 
-<pre>$   sudo systemctl restart ufw</pre>
+    sudo systemctl restart ufw
 
-La gestione dei servizi su Linux non è cosa semplicissima e per questo ti invito a non cambiare distro di Linux alla prima difficoltà ma di restare _fedele_ ad Ubuntu e al suo enorme ecosistema di forum e appassionati. Se vuoi ad esempio approfondire il comando **systemctl** puoi leggerti [questo][6] illuminante articolo su [Askubuntu][7].
+La gestione dei servizi su Linux non è cosa semplicissima e per questo ti invito a non cambiare distro di Linux alla prima difficoltà ma di restare _fedele_ ad Ubuntu e al suo enorme ecosistema di forum e appassionati. Se vuoi ad esempio approfondire il comando **systemctl** puoi leggerti [questo][6] articolo su [Askubuntu][7].
 
  [1]: https://www.sublimetext.com/3
  [2]: https://www.guru99.com/linux-regular-expressions.html
