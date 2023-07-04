@@ -17,14 +17,18 @@ Unire tutto:
 
 - TI SERVE SOFTWARE K4 ONNIPOTENTE E CASE 3D PER COLLEGARE SERVO E RELAIS!!!!!
 
+- https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization - Librerie Enorme
+
 
 1. SVN non fa dei tutorial su Ruby on Rails ma solo sui prodotti e la loro filosofia
 2. Articoli devono essere su come creare dei Robot e illustrare come usare SERVIZIO DJANGO e MLAI e ottenere sistemi di controllo
 3. Parlare dei mezzi di produzione ad esempio oscilloscopio e stampante 3D
 
 
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 https://github.com/AtsushiSakai/PythonRobotics - Algoritmi visual
+https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization - Librerie Enorme
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -64,6 +68,15 @@ https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method - PID**
 https://openmower.de/docs/docking-station-assembly/
 
 https://discuss.ardupilot.org/t/review-of-arace-griffinpro-quadplane/93893
+https://github.com/nasa-jpl/osr-rover-code/commit/ee212a5c5439e5f4813379e59894c4c29a96709f
+https://shop.sb-components.co.uk/collections/lora-products
+https://www.3devo.com/blog/top-10-sites-for-free-3d-stl-files
+
+https://www.printables.com/search/models?q=Arduino?q=Arduino
+https://robotics.stackexchange.com/questions/14539/generate-a-coverage-path-given-a-polygon-region
+https://scipy-cookbook.readthedocs.io/items/SavitzkyGolay.html
+https://scipy-cookbook.readthedocs.io/items/SignalSmooth.html
+
 
 
 
