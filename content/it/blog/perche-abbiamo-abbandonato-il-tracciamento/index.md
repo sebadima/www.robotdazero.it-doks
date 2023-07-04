@@ -6,7 +6,7 @@ date: 2023-06-02T09:19:42+01:00
 lastmod: 2020-08-02T09:19:42+01:00
 draft: false
 weight: 50
-images: ["image.jpg"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["blog", "comunicazioni"]
 contributors: ["sergio rame "]
