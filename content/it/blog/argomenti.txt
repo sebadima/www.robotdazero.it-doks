@@ -1,28 +1,34 @@
 Unire tutto: 
 
 - Sensor Military Drone, Aliexpress, magazzino automatico con API Stripe, ML su K4
-
 - Recco sys, fabbrica di KIT per rover, e rover in 3D
-
 - AI, Visione telecamere OPENCV, 3d e autopilotaggio PID electric motors
-
 - GPS con rover / sensori e elab. ML / 
-
 - Servocomandi RC e Laser innocuo per Ora con puntamento Enemies, 
-
 - Gesture tracking
-
 - Ti quindi adesso subentra anche modellismo/foto/spiegazioni del SOFTWARE finito non 
   per principianti!!!!!!!!
 
 - TI SERVE SOFTWARE K4 ONNIPOTENTE E CASE 3D PER COLLEGARE SERVO E RELAIS!!!!!
-
 - https://github.com/AtsushiSakai/PythonRobotics/tree/master/Localization - Librerie Enorme
 
 
 1. SVN non fa dei tutorial su Ruby on Rails ma solo sui prodotti e la loro filosofia
 2. Articoli devono essere su come creare dei Robot e illustrare come usare SERVIZIO DJANGO e MLAI e ottenere sistemi di controllo
 3. Parlare dei mezzi di produzione ad esempio oscilloscopio e stampante 3D
+
+
+Panoramica: Spiega la tua app e i suoi vantaggi.
+Tour: Guida le persone attraverso varie caratteristiche.
+Schermate e video: mostra alle persone come appare effettivamente l'app e come utilizzarla
+Manifesto: Spiegare la filosofia e le idee dietro di esso.
+Casi di studio: fornire esempi di vita reale che mostrano ciò che è possibile.
+Buzz: Testimonianze di clienti, recensioni, stampa, ecc.
+Forum: Offrire un posto per i membri della comunità per aiutarsi a vicenda. (fb page?)
+Prezzi e iscrizione: porta le persone nella tua app il più rapidamente possibile. (Trial+ Newsletter)
+Weblog: I blog mantengono il tuo sito fresco con notizie, suggerimenti, ecc
+
+Scratch your own itch, innanzi tutto"
 
 
 
