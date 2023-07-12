@@ -32,7 +32,9 @@ Di questa problematica si è reso conto un esperto di livello come Mike Davidson
 
 Agli esordi del Blog avevamo deciso di affidarci al modello di marketing della affiliazione usando Amazon per la maggior parte dei nostri incassi. Da quest'anno, invece la nostra attenzione si è spostata sulla Dashboard di RBT0, sui servizi software associati alla Robotica e sulla integrazione di sensori, telecamere e Machine Learning.
 
-> Non ci serviva più un tracciamento accurato delle visite e abbiano deciso di abolire ogni "snippet" di tracciamento, pixel di Facebook etc. e di aumentare nel contempo la velocità del Blog.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">
+👉 Non ci serviva più un tracciamento accurato delle visite e abbiano deciso di abolire ogni "snippet" di tracciamento, pixel di Facebook etc e di aumentare nel contempo la velocità del nostro Blog.
+</div>
 
 #### Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">pagina</a> dove descriviamo la nostre policy.
 
