@@ -1,7 +1,7 @@
 ---
 title: "Perchè usare il programma GIT"
 description: "Perchè usare il programma GIT"
-excerpt: "Il software Git è stato creato da Linus Torvalds, il famoso sviluppatore finlandese noto principalmente come creatore del kernel Linux. Torvalds ha creato Git nel 2005 per gestire lo sviluppo del kernel Linux stesso. Ha sviluppato Git come un sistema di controllo delle versioni distribuito, progettato per affrontare le esigenze specifiche del grande progetto open-source che è il kernel Linux."
+excerpt: "Il software Git è stato creato da Linus Torvalds, il famoso sviluppatore finlandese noto principalmente come creatore del kernel Linux. Torvalds ha creato Git nel 2005 per gestire lo sviluppo del kernel Linux stesso. Ha sviluppato Git come un sistema di controllo delle versioni distribuito, progettato per affrontare le esigenze specifiche del grande progetto open-source che è il kernel Linux..."
 date: 2023-07-02T09:19:42+01:00
 lastmod: 2020-07-02T09:19:42+01:00
 draft: false
