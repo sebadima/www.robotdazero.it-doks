@@ -1,7 +1,7 @@
 ---
 title: "Introduzione"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare e basato su software Open Source ampiamente documentati e affidabili."
+lead: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -13,46 +13,46 @@ weight: 100
 toc: true
 ---
 
-## Get started
+## Come Iniziare
 
-There are two main ways to get started with Doks:
+Ci sono 2 modi per iniziare con Kaspian:
 
 ### Tutorial
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+{{< alert icon="👉" text="Il Tutorial è indicato pet utenti con poca o media esperienza tecnica." />}}
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+Segui le istruzioni passo passo per partire con la piattaforma project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
 
 ### Quick Start
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
+{{< alert icon="👉" text="Il Quick Start è destinato ad utenti con media o avanzata esperienza tecnica." />}}
 
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
+Segui il link e completa la installazione **rapida** di Kaspian [Quick Start →]({{< relref "quick-start" >}})
 
-## Go further
+## Come approfondire
 
 Recipes, Reference Guides, Extensions, and Showcase.
 
 ### Recipes
 
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
+Get instructions on how to accomplish common tasks with Kaspian. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
 
 ### Reference Guides
 
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
+Learn how to customize Kaspian to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
 
 ### Extensions
 
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
+Get instructions on how to add even more to Kaspian. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
 
 ### Showcase
 
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+See what others have build with Kaspian. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
 
-## Contributing
+## Come contribuire
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
+Scopri come contribuire a Kaspian. [Contribuire →]({{< relref "newsletter" >}})
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Get help on Kaspian. [Help →]({{< relref "how-to-update" >}})

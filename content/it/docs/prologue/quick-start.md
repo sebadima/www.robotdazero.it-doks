@@ -21,7 +21,7 @@ toc: true
 - Account attivo su [Github](https://www.github.com/)
 
 {{< details "Perchè usare GIT?" >}}
-Git è il software più usato per il controllo e il download dei programmi in versione sorgente. Github e Gitlab prendono il nome da questo tool, in alternativa poreste usare  il comando **wget** per scaricare i file zippati da Terminale.
+<a href="https://www.robotdazero.it/blog/perch%C3%A8-usare-il-programma-git/" target="_blank" rel="noopener">Git</a> è il software più usato per il controllo e il download dei programmi in versione sorgente. Github e Gitlab prendono il nome da questo tool, in alternativa poreste usare  il comando <a href="https://en.wikipedia.org/wiki/Wget" target="_blank" rel="noopener">wget</a> per scaricare i file zippati da Terminale.
 {{< /details >}}
 
 
