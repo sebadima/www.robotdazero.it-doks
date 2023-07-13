@@ -3,11 +3,12 @@
 ## Homepage
 title = "RBTØ"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Sistemi software per la Robotica"
+description = "Robotdazero.it fornisce la piattaforma Kaspian per la analisi in ML-AI dei vostri dati."
+breadCrumb = true
 
 ## Documentation
-# docsVersion = "0.3"
+# docsVersion = "0.5"
 
 ## Open Graph
 images = ["doks.png"]
@@ -26,7 +27,7 @@ schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
 schemaAuthorTwitter = "https://twitter.com/henkverlinde"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorGitHub = "https://github.com/sebadima"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -68,7 +69,7 @@ fillImage = "1270x740 Center" # normalize image size
 footer = "©2023 Robotdazero.it - P.IVA IT00378808885"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2018-2023 Robotdazero.it"
 
 # Alert
 alert = false
@@ -80,7 +81,7 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/sebadima"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false
