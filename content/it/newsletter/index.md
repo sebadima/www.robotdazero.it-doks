@@ -60,6 +60,7 @@ var ml_account = ml('accounts', '1484882', 'a7z6a5u3g6', 'load');
 </div>
 
 
+
 <style type="text/css">
   @import url(https://assets.mlcdn.com/fonts.css?version=1688541);
 </style>
@@ -88,14 +89,14 @@ var ml_account = ml('accounts', '1484882', 'a7z6a5u3g6', 'load');
                 </div>
               </div>
               <div class="ml-button-horizontal primary">
-                <button type="submit" class="primary">Iscrivimi</button>
+                <button type="submit" class="primary">Iscrivimi2</button>
                 <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
               </div>
             </div>
           </div>
           <input type="hidden" name="ml-submit" value="1">
           <div class="ml-mobileButton-horizontal">
-            <button type="submit" class="primary">Iscrivimi</button>
+            <button type="submit" class="primary">Iscrivimi2</button>
             <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
           </div>
           <input type="hidden" name="anticsrf" value="true">
@@ -119,5 +120,5 @@ var ml_account = ml('accounts', '1484882', 'a7z6a5u3g6', 'load');
 <script>
   function ml_webform_success_5948374(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-5948374 .row-success").show(),r(".ml-subscribe-form-5948374 .row-form").hide()}
 </script>
-<img src="https://track.mailerlite.com/webforms/o/5948374/t6q0s0?v1688809745" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+<img src="https://track.mailerlite.com/webforms/o/5948374/t6q0s0?v1689259942" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?vd4de52e171e8eb9c47c0c20caf367ddf" type="text/javascript"></script>
