@@ -44,7 +44,7 @@ Leggere la temperatura con Arduino è un compito facile e utilissimo. Esiste in 
 
 ## **1. DHT11** {#1-dht11}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DHT11.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DHT11" src="images/sensore di temperatura DHT11.jpg">
 
 <br>
 <br>
@@ -67,7 +67,7 @@ Questa la tabella delle specifiche del sensore:
 
 ## **2. DHT22** {#2-dht22}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DHT22.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DHT22" src="images/sensore di temperatura DHT22.jpg">
 
 <br>
 <br>
@@ -95,7 +95,7 @@ Questa la tabella delle specifiche del sensore:
 <br>
 <br>
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura LM35.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura LM35" src="images/sensore di temperatura LM35.jpg">
 
 L’ **LM35DZ** è un sensore di temperatura a rilevazione lineare calibrato in gradi Celsius. L’uscita è analogica ed è direttamente proporzionale alla temperatura: 10 mV per aumento o diminuzione di temperatura. State attenti a comprare esattamente questo sensore con la sigla che finisce in DZ: esistono altre due versioni del chip (si chiamano **LM335** e **LM34**) calibrate in gradi Kelvin e in gradi Fahrenheit.
 
@@ -116,7 +116,7 @@ E ora la solita tabella, fate attenzione all ottima precisione:
 
 ## **4. BMP180** {#4-bmp180}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura BMP180.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura BMP180" src="images/sensore di temperatura BMP180.jpg">
 
 <br>
 <br>
@@ -136,7 +136,7 @@ Questa la tabella delle specifiche del sensore:
 
 ## **5. TMP36** {#5-tmp36}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura TMP36.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura TMP36" src="images/sensore di temperatura TMP36.jpg">
 
 <br>
 <br>
@@ -159,7 +159,7 @@ Questa la tabella delle specifiche del sensore:
 
 ## **6. LM75** {#6-lm75}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura LM75.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura LM75" src="images/sensore di temperatura LM75.jpg">
 
 <br>
 <br>
@@ -183,7 +183,7 @@ Questa la tabella delle specifiche del sensore:
 <br>
 <br>
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DS18B20.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20" src="images/sensore di temperatura DS18B20.png">
 
 Il chip **DS18B20** è un sensore di temperatura del tipo “one-wire” come il DHT11 che abbiamo visto all’inizio del post. Perciò necessita di una linea dati con tensione positiva e di una massa (GND) per comunicare con Arduino. Con il DS18B20 è estremamente facile leggere la temperatura in punti multipli perchè ognuno di questi sensori possiede un codice numerico univoco (un pò come il codice IMEI degli smartphone) e basta collegarli ai pin digitali di arduino e leggere in sequenza tutti i sensori collegati.
 
@@ -201,7 +201,7 @@ Questa la tabella delle specifiche del sensore:
 
 ## **8. DS18B20 tenuta stagna** {#8-ds18b20-tenuta-stagna}
 
-<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DS18B20 impermeabile.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20 impermeabile" src="images/sensore di temperatura DS18B20 impermeabile.jpg">
 
 <br>
 Il DS18B20 è disponibile anche in versione impermeabile (a tenuta stagna) e questo gli permette di controllare la temperatura dei liquidi nello stesso range della versione “normale”.
