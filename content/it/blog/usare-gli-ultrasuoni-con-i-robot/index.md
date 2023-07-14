@@ -23,7 +23,7 @@ La versione elettronica del sonar viene usata nei sensori di parcheggio delle au
 
 In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
-<img src="https://res.cloudinary.com/sebadima/image/upload/c_scale,w_980/v1581691565/001/HC-SR04_bepinv.jpg">
+<img src="images/HC-SR04_bepinv.jpg">
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
@@ -60,7 +60,7 @@ Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di
 
 #### La disposizione dei pin dell’ HC-SR04 {#la-disposizione-dei-pin-dell-hc-sr04}
 
-<img decoding="async" src="https://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultra.png?resize=297%2C349&ssl=1" alt="Notebook" /> 
+<img decoding="async" src="images/schema del sensore ad ultrasuoni.webp" alt="schema del sensore ad ultrasuoni" /> 
 
 - VCC  : +5VDC
 -  Trig : Trigger (INPUT)
@@ -69,7 +69,7 @@ Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di
 
 #### Dove comprarlo su Internet: {#dove-comprarlo-su-internet}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1582288321/001/Screenshot_from_2020-02-21_13-31-32_gx5bdi.png" alt="51tbSvuOcAL" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="sensore ad ultrasuoni su amazon" src="images/sensore ad ultrasuoni su amazon.png">
 
 Ti consiglio di aquistare il sensore ultrasonico [HC-SR04][1] su [Amazon][1] cercando il prezzo più basso tra i prodotti con almeno 4 stelle. In alternativa puoi cercare su banggood.com.
 
@@ -108,7 +108,58 @@ nella parte sinistra i pin del sensore, a destra quelli di Arduino
 
 ### e infine Il codice completo… {#e-infine-il-codice-completo}
 
-<script src="https://gist.github.com/sebadima/b5511ce27b5be7aa0930b9dce4da3c57.js"></script>
+```bash
+/*
+ *
+    Trasmissione : PinTrasmissione Pin 11
+    Ricezione    : PinRicezione    Pin 12
+    VCC          : +5VDC
+    GND          : GND
+ */
+
+int PinTrasmissione = 11; 
+int PinRicezione    = 12; 
+long durata, cm;
+
+void setup() {
+  // Inizializza la porta seriale
+  Serial.begin (9600);
+  // Setta i pin di Arduino per l'input e l'output
+  pinMode(PinTrasmissione, OUTPUT);
+  pinMode(PinRicezione, INPUT );
+}
+
+void loop() {
+  // Il sensore viene attivato
+  // da impulsi più lunghi di 10 microsecondi
+  digitalWrite(PinTrasmissione, LOW);
+  delayMicroseconds(5);
+  digitalWrite(PinTrasmissione, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(PinTrasmissione, LOW);
+
+  // Ora legge il segnale dal sensore: un impulso 
+  // HIGH segna il tempo in microsecondi tra
+  // la trasmissione e la ricezione del segnale.
+  pinMode(PinRicezione, INPUT);
+  durata = pulseIn(PinRicezione, HIGH);
+
+  // Calcola la distanza partendo dalla durata:
+  // Divide inizialmente per 2 la durata per
+  // tenere conto di andata e ritorno.
+  cm = (durata/2) / 29.1;     
+  // Dividiamo per 29.1  che sarebbe come moltiplicare
+  // per 0.0343 (i cm percorsi in un microsecondo 
+  // da una onda sonora a livello del mare...).
+  
+  Serial.print("cm:");
+  Serial.print(cm);
+  Serial.println();
+  // Scrive "cm: valore" + una riga vuota
+
+  delay(250);
+}
+```
 
 Copia e incolla questo programma nel tuo IDE di arduino, fai l’upload con la compilazione automatica, **ignora i warning** e fai attenzione ai messaggi di errore.
 
@@ -185,7 +236,35 @@ A fine programma scriviamo il risultato su Monitor Seriale dell’ IDE:
 
 Semplice da usare NewPing in certe occasioni **risulta consigliabile quando dobbiamo limitarci a calcolare distanze in modo diretto**, senza elaborare il segnale di ritorno. La libreria si trova a questo indirizzo in **formato zippato** [clicca qui][3]. Dopo avere scaricato e installato la libreria puoi usare il codice sottostante:
 
-<script src="https://gist.github.com/sebadima/65897569ffbb6807346600031611dbf6.js"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></script>
+
+```bash
+/*
+ * Libreria Open Source disponibile su: 
+   https://playground.arduino.cc/Code/NewPing
+*/
+
+#include 
+
+#define PIN_TRASMISSIONE 11
+#define PIN_RICEZIONE    12
+#define DISTANZA_MAX    200
+
+// Settiamo i pin di Arduino e la distanza massima
+NewPing sonar(PIN_TRASMISSIONE, PIN_RICEZIONE, DISTANZA_MAX); 
+
+void setup() {
+   Serial.begin(9600);
+}
+
+void loop() {
+   delay(50);
+   unsigned int distanza = sonar.ping_cm();
+   Serial.print(distanza);
+   Serial.println(" cm");
+}  
+```bash
+
+
 
 #### Come funziona il programma con NewPing {#come-funziona-il-programma-con-newping}
 
