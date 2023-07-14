@@ -6,7 +6,7 @@ date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
 draft: false
 weight: 50
-images: ["arduino-compatible-sensors.jpg"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["rover", "performance", "SEO"]
 contributors: ["sebadima"]
@@ -26,17 +26,28 @@ mermaid: true
 }
 </style>
 
+
+
+
+
+
+
+
+
+
 ## Gli 8 convenientissimi sensori di temperatura che dovresti immediatamente usare nei tuoi apparati di controllo.
 
 _Arduino con l’aggiunta di un singolo sensore che vi presentiamo in questo post può diventare una stazione di controllo allo stato dell’arte, rivendibile e installabile con profitto anche se siete solo dei principianti._
 
 Leggere la temperatura con Arduino è un compito facile e utilissimo. Esiste in commercio a poco prezzo un varietà di sensori di temperatura con delle caratteristiche spesso molto diverse e applicazioni sorprendenti. Nel post vi vogliamo presentare quelli che abbiamo usato personalmente e usiamo tuttora nelle installazioni più facili e redditizie: il **controllo della temperatura nelle celle frigorifere e nei laboratori lattiero-casieari**. Il costo dei componenti è come sempre basso e il prezzo cui potrete vendere la installazione completa (con allarme via email o Telegram) è davvero interessante.
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590955619/001/9-arduino-compatible-sensors_iafyul.jpg" alt="8 Sensori di temperatura per Arduino per i vostri impianti di sorveglianza" /> 
 
 ## **1. DHT11** {#1-dht11}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590955760/001/dht-111_ez5ajt.jpg" alt="Sensore di temperatura DHT11" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DHT11.jpg">
+
+<br>
+<br>
 
 Il **DHT11** è un sensore che misura sia temperatura che umidità relativa. Contiene un chip che converte il segnale analogico in digitale e invia in binario i valori ai pin di Arduino o Raspberry. In questo modo vi evita le conversione che sono necessarie ad esempio nei sensori ad ultrasuoni, come spiegato in questo nostro <a href="https://www.robotdazero.it/blog/011-usare-gli-ultrasuoni-per-dirigere-il-tuo-robot/" target="_blank" rel="noopener">post sul sensore HC-SR04</a>.
 
@@ -56,7 +67,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **2. DHT22** {#2-dht22}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590955816/001/dht22_hgcp1p.jpg" alt="Sensore di Umidità e Temperatura DHT22" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DHT22.jpg">
+
+<br>
+<br>
 
 Il sensore **DHT22** è (chiaramente) molto simile al DHT11. Misura temperatura e umidità come il gemello ma è molto più preciso e permette di registrare anche le temperature al di sotto dello zero (-40 ºC) e per questo lo usiamo di routine per il controllo delle celle frigorifere – automezzi compresi.
 
@@ -78,7 +92,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **3. LM35DZ** {#3-lm35dz}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590955939/001/lm35dz_vqiqcr.jpg" alt="Sensore di temperatura LM35DZ" /> 
+<br>
+<br>
+
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura LM35.jpg">
 
 L’ **LM35DZ** è un sensore di temperatura a rilevazione lineare calibrato in gradi Celsius. L’uscita è analogica ed è direttamente proporzionale alla temperatura: 10 mV per aumento o diminuzione di temperatura. State attenti a comprare esattamente questo sensore con la sigla che finisce in DZ: esistono altre due versioni del chip (si chiamano **LM335** e **LM34**) calibrate in gradi Kelvin e in gradi Fahrenheit.
 
@@ -99,7 +116,10 @@ E ora la solita tabella, fate attenzione all ottima precisione:
 
 ## **4. BMP180** {#4-bmp180}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590956085/001/bmp180_rrchn1.jpg" alt="Sensore di pressione atmosferica e temperatura BMP180" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura BMP180.jpg">
+
+<br>
+<br>
 
 Il **BMP180** viene presentato soprattutto come sensore barometrico, ma è anche un sensore di temperatura e quindo molto comodo per controllare le condizioni atmosferiche. Con un sensore di umidità atmosferica può diventare una centralina di rilevamento a basso costo e dalla buona precisione. Un sensore da provare il prima possibile.
 
@@ -116,7 +136,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **5. TMP36** {#5-tmp36}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590956233/001/TMP36_h0tgwj.jpg" alt="Sensore di temperatura Analogico TMP36" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura TMP36.jpg">
+
+<br>
+<br>
 
 Il **TMP36** è un sensore di temperatura analogico piuttosto affidabile e robusto. Come per gli altri sensori analogici restituisce una tensione proporzionale alla temperatura rilevata. E’ perciò molto simile al **LM35DZ** di cui abbiamo parlato prima.
 
@@ -136,7 +159,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **6. LM75** {#6-lm75}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590956289/001/LM75_t8nmdc.jpg" alt="LM75 Temperature Sensor" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura LM75.jpg">
+
+<br>
+<br>
 
 L’ **LM75** è un altro utilissimo sensore di temperaura. Funziona usando la comunicazione I2C, cioè comunica con Arduino usando i pin SDA e SCL e soprattutto ha un costo bassissimo che gli permette di essere esposto a temperature molto pericolose (125ºC) senza troppe ansie: costa appena 2€!
 
@@ -154,7 +180,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **7. DS18B20** {#7-ds18b20}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590956354/001/ds18b20_oiooyp.png" alt="Sensore digitale di temperatura DS18B20" /> 
+<br>
+<br>
+
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DS18B20.png">
 
 Il chip **DS18B20** è un sensore di temperatura del tipo “one-wire” come il DHT11 che abbiamo visto all’inizio del post. Perciò necessita di una linea dati con tensione positiva e di una massa (GND) per comunicare con Arduino. Con il DS18B20 è estremamente facile leggere la temperatura in punti multipli perchè ognuno di questi sensori possiede un codice numerico univoco (un pò come il codice IMEI degli smartphone) e basta collegarli ai pin digitali di arduino e leggere in sequenza tutti i sensori collegati.
 
@@ -172,6 +201,7 @@ Questa la tabella delle specifiche del sensore:
 
 ## **8. DS18B20 tenuta stagna** {#8-ds18b20-tenuta-stagna}
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1590956420/001/ds18b20-waterproof_biuzsa.jpg" alt="DS18B20 sensore digitale a tenuta stagna one-wire" /> 
+<img class="x figure-img img-fluid lazyload blur-up" width="180" alt="" src="images/sensore di temperatura DS18B20 impermeabile.jpg">
 
+<br>
 Il DS18B20 è disponibile anche in versione impermeabile (a tenuta stagna) e questo gli permette di controllare la temperatura dei liquidi nello stesso range della versione “normale”.
