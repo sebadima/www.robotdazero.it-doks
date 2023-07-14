@@ -1,5 +1,5 @@
 ---
-title: Usare gli ultrasuoni con i Robot
+title: "Usare gli ultrasuoni con i Robot"
 description: "Usare gli ultrasuoni con i Robot"
 excerpt: "Cosa sono i sensori a ultrasuoni?  sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi...."
 date: 2023-05-15T09:19:42+01:00
@@ -13,6 +13,20 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
+
+<style>
+.x {
+    transition:transform 0.40s ease;
+    transition-delay: 0.60s;
+}
+
+.x:hover {
+    -webkit-transform:scale(1.70); /* or some other value */
+    transform:scale(1.70);
+}
+</style>
+
+
 ## Cosa sono i sensori a ultrasuoni? {#cosa-sono-i-sensori-a-ultrasuoni}
 
 In breve sono l’equivalente elettronico delle **orecchie dei pipistrelli**, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
@@ -23,7 +37,7 @@ La versione elettronica del sonar viene usata nei sensori di parcheggio delle au
 
 In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
-<img src="images/HC-SR04_bepinv.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/HC-SR04_bepinv.jpg">
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
