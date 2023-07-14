@@ -35,7 +35,7 @@ mermaid: true
 
 
 
-## Gli 8 convenientissimi sensori di temperatura che dovresti immediatamente usare nei tuoi apparati di controllo.
+## Gli 8 sensori di temperatura che dovresti immediatamente usare nei tuoi apparati di controllo.
 
 _Arduino con l’aggiunta di un singolo sensore che vi presentiamo in questo post può diventare una stazione di controllo allo stato dell’arte, rivendibile e installabile con profitto anche se siete solo dei principianti._
 
