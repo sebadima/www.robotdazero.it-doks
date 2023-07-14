@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["sensori", "arduino", "automazione", "elettronica", "esp32"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
@@ -91,11 +91,11 @@ Questa la tabella delle specifiche del sensore:
 &nbsp;
 
 ## **3. LM35DZ** {#3-lm35dz}
-
 <br>
-<br>
-
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura LM35" src="images/sensore di temperatura LM35.jpg">
+
+<br>
+<br>
 
 L’ **LM35DZ** è un sensore di temperatura a rilevazione lineare calibrato in gradi Celsius. L’uscita è analogica ed è direttamente proporzionale alla temperatura: 10 mV per aumento o diminuzione di temperatura. State attenti a comprare esattamente questo sensore con la sigla che finisce in DZ: esistono altre due versioni del chip (si chiamano **LM335** e **LM34**) calibrate in gradi Kelvin e in gradi Fahrenheit.
 
@@ -180,10 +180,10 @@ Questa la tabella delle specifiche del sensore:
 
 ## **7. DS18B20** {#7-ds18b20}
 
-<br>
-<br>
-
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20" src="images/sensore di temperatura DS18B20.png">
+
+<br>
+<br>
 
 Il chip **DS18B20** è un sensore di temperatura del tipo “one-wire” come il DHT11 che abbiamo visto all’inizio del post. Perciò necessita di una linea dati con tensione positiva e di una massa (GND) per comunicare con Arduino. Con il DS18B20 è estremamente facile leggere la temperatura in punti multipli perchè ognuno di questi sensori possiede un codice numerico univoco (un pò come il codice IMEI degli smartphone) e basta collegarli ai pin digitali di arduino e leggere in sequenza tutti i sensori collegati.
 
@@ -204,4 +204,6 @@ Questa la tabella delle specifiche del sensore:
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20 impermeabile" src="images/sensore di temperatura DS18B20 impermeabile.jpg">
 
 <br>
+<br>
+
 Il DS18B20 è disponibile anche in versione impermeabile (a tenuta stagna) e questo gli permette di controllare la temperatura dei liquidi nello stesso range della versione “normale”.
