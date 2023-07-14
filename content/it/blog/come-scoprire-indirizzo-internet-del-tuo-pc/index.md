@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["images/indirizzo internet del pc.jpg"]
 categories: ["News"]
-tags: ["linux", "shell", "networking"]
+tags: ["linux", ubuntu", "shell", "networking", "terminale"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false

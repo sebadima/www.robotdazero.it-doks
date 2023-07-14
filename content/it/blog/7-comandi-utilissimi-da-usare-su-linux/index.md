@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["image.jpg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["terminale", "shell", "ubuntu", "linux"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false
