@@ -37,7 +37,9 @@ La versione elettronica del sonar viene usata nei sensori di parcheggio delle au
 
 In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
++++++++++++++++++++++++
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/HC-SR04_bepinv.jpg">
+++++++++++++++++++++
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
