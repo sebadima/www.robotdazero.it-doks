@@ -11,7 +11,7 @@ pluralizelisttitles = false
 
 # Multilingual
 defaultContentLanguage = "it"
-disableLanguages = ["de", "nl"]
+disableLanguages = ["de", "nl", "en"]
 # defaultContentLanguageInSubdir = true
 
 # add redirects/headers
