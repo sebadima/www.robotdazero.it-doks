@@ -6,7 +6,7 @@ date: 2023-07-02T09:19:42+01:00
 lastmod: 2020-07-02T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.webp"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["git", "programmazione", "ubuntu"]
 contributors: ["sergio rame "]
