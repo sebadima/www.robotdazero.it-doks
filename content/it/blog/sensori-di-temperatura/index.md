@@ -3,7 +3,7 @@ title: "I sensori di temperatura per la robotica"
 description: "I sensori di temperatura per la robotica"
 excerpt: "Leggere la temperatura con Arduino è un compito facile e utilissimo. Esiste in commercio a poco prezzo un varietà di sensori di temperatura con delle caratteristiche spesso molto diverse e applicazioni sorprendenti. Nel post vi vogliamo presentare quelli che abbiamo usato personalmente e usiamo tuttora nelle installazioni più facili e redditizie.."
 date: 2020-11-04T09:19:42+01:00
-lastmod: 2020-11-04T09:19:42+01:00
+lastmod: 2023-07-14T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpg"]
