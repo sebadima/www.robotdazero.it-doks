@@ -4,10 +4,8 @@ blockquote {
     padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
-    background-color: #E9F2F7;
-    border-left: 6px solid #A0C0D5;
-    font-weight: 300;
-    #font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    background-color: #FBF7F0;
+    border-left: 2px solid #FFDC5D;
 }
 
 #outer {
