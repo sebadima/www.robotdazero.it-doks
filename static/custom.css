@@ -1,10 +1,13 @@
 blockquote {
-    color: #241C15 !important;
-    margin: 6px 6px !important;
-    padding: 8px 25px !important;
-    background-color: #f7f0dc !important;
-    border-left: 5px solid #E7B75F !important;
-  
+    color: #241C15;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #E9F2F7;
+    border-left: 6px solid #A0C0D5;
+    font-weight: 300;
+    #font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
 
 #outer {
