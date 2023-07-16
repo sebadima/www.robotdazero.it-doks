@@ -19,8 +19,6 @@ La differenza tra corrente e tensione spesso riesce a far naufragare la passione
 
 In due parole abbiamo descritto un fenomeno molto semplice: ma, nonostante la apparente semplicità, questi concetti riescono sempre a creare confusione tra i neofiti. Sfortunatamente non possiamo far finta di nulla e passare ad altro perchè stiamo parlando delle “dimensioni base” della Elettronica e con la **resistenza** ne formano la legge fondamentale: la [legge di Ohm][2]. Avrai sempre a che fare con tensione e corrente e lo testimonia il fatto che sul _case_ dei componenti ne vengano riportati i valori specifici espressi in **Volt**, abbreviato con una **V** e in **Ampere**, abbreviato con una **A**.
 
-Se sei capitato su questa pagine magari per motivi scolastici o perchè stai sviluppando dei progetti con [Arduino][3], come ad esempio il nostro [monitor della temperatura][4] o il [driver per motorino elettrico][5], ti consiglio di perdere pochi minuti per leggere questo post.
-
 Se la Corrente sembra un concetto intuitivo legato a **quanti** **elettroni passano in un circuito**, la idea di **tensione** sembra un poco più evasiva e per questo proviamo un poco ad approfondirla.
 
 ## Cosa è davvero la Tensione
