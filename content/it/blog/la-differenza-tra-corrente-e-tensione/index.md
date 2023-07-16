@@ -15,7 +15,7 @@ homepage: false
 ---
 La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di [elettronica][1]. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un Led appaiono misteriosi se non si hanno chiari questi due concetti.
 
-> La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo.
+> **La tensione è la differenza di “potenziale”** tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo.
 
 In due parole abbiamo descritto un fenomeno molto semplice: ma, nonostante la apparente semplicità, questi concetti riescono sempre a creare confusione tra i neofiti. Sfortunatamente non possiamo far finta di nulla e passare ad altro perchè stiamo parlando delle “dimensioni base” della Elettronica e con la **resistenza** ne formano la legge fondamentale: la [legge di Ohm][2]. Avrai sempre a che fare con tensione e corrente e lo testimonia il fatto che sul _case_ dei componenti ne vengano riportati i valori specifici espressi in **Volt**, abbreviato con una **V** e in **Ampere**, abbreviato con una **A**.
 
@@ -23,7 +23,7 @@ Se la Corrente sembra un concetto intuitivo legato a **quanti** **elettroni pass
 
 ## Cosa è davvero la Tensione
 
-> La tensione è la Forza che spinge gli elettroni carichi attraverso un circuito elettrico e permette loro di svolgere un **Lavoro** come accendere una luce o far girare un motorino. Con una bassa tensione nulla di tutto questo può funzionare.
+> **La tensione è la Forza che spinge gli elettroni** carichi attraverso un circuito elettrico e permette loro di svolgere un lavoro come accendere una luce o far girare un motorino. Con una bassa tensione nulla di tutto questo può funzionare.
 
 ## La differenza tra corrente e tensione: proviamo a capire meglio con con degli esempi pratici {#proviamo-a-capire-meglio-con-con-degli-esempi-pratici}
 
@@ -31,7 +31,12 @@ Per capire la differenza tra le due [grandezze][6] voglio usare un approccio �
 
 Immagina di avere 2 serbatoi di acqua a differenti altezze e collegati da un tubo. Per la differenza di altezza ogni volta che apri il tubo l’acqua scenderà dal serbatoio posto più in alto a quello posto più in basso. OK?
 
+<br>
+
 <img decoding="async" loading="lazy" class="aligncenter" src="https://res.cloudinary.com/sebadima/image/upload/c_scale,h_394,q_80,w_300/v1579111568/001/1200px-Lappo.svg_shqwq4.png" alt="la differenza tra corrente e tensione - esempio 1" width="300" height="394" /> 
+
+<br>
+<br>
 
 Se i serbatoi fossero alla stessa altezza l’acqua non si muoverebbe e non avremmo **nessuna corrente idrica.** Bene. Adesso facciamo finta che al posto dell’acqua ci siano delle **cariche elettriche** e che al posto del tubo ci sia un **filo di rame**.
 
@@ -43,9 +48,17 @@ Maggiore è la differenza di carica elettrica tra i due contenitori e maggiore s
 
 Abbiamo capito più o meno cosa è la tensione, ma come viene definita esattamente in ambito scientifico? In questo modo:
 
-> La tensione è il LAVORO che bisogna fornire per spostare una singola carica elettrica (un elettrone) all&#8217; interno di in un campo elettrico.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
+La tensione è il **LAVORO che bisogna fornire per spostare una singola carica elettrica** all&#8217; interno di in un campo elettrico.
+</div>
+
+<br>
+<br>
 
 <img decoding="async" loading="lazy" class="aligncenter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Electrostatic_induction.svg/440px-Electrostatic_induction.svg.png" alt="la differenza tra corrente e tensione - esempio 1 " width="440" height="302" /> 
+
+<br>
+<br>
 
 Nel primo caso non **sentiresti** nessuno sforzo nello spostare l’elettrone in un punto qualsiasi e con una traiettoria qualsiasi, ma nella seconda figura **sentiresti** l’effetto delle cariche elettriche (in rosso quelle positive, in blu quelle negative) che lo attirano o respingono. Per continuare su una specifica traiettoria, mettiamo rettilinea, dovresti esercitare una certa **forza** per compensare l’attrazione e la repulsione delle cariche vicine.
 
@@ -59,7 +72,11 @@ Nel primo caso non **sentiresti** nessuno sforzo nello spostare l’elettrone 
 
 Pensa a due **serbatoi di con gas ad alta pressione**, uno a 100 atmosfere e al’altro a 60 atmosfere. Cosa succederebbe se collegassimo i 2 serbatoi con un tubo di acciaio e un rubinetto? Accadrebbe che il gas ad alta pressione inizierebbe a muoversi verso il serbatoio a pressione più bassa fino a colmare la differenza (diciamo 80 e 80 atmosfere).
 
-> La tensione è la differenza di potenziale tra due ZONE distinte, dovute a un accumulo di cariche elettriche. La corrente è il movimento di cariche che cerca di riequilibrare il sistema.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
+La tensione è la differenza di potenziale tra due ZONE distinte, dovute a un accumulo di cariche elettriche. La corrente è il movimento di cariche che cerca di riequilibrare il sistema.
+</div>
+
+<br>
 
 E per finire: La Elettronica moderna si basa molto sulla tensione piuttosto che sul flusso di corrente. Il motivo? **Per misurare la tensione basta appoggiare i puntali di un tester nei 2 punti da controllare**. Per misurare la corrente devi invece inserirti nel flusso degli elettroni e perciò scollegare i fili o addirittura tagliare le piste del circuito.
 
