@@ -39,7 +39,7 @@ Il comando "git" è importante su Linux (e in generale su molti altri sistemi op
 In sintesi, Git semplifica il processo di sviluppo del software, migliorando la gestione delle versioni, la collaborazione tra team di sviluppo e la distribuzione dei progetti. È diventato uno standard de facto nell'ambito dello sviluppo software ed è ampiamente utilizzato sia su Linux che su altri sistemi operativi.
 
 {{< details "Puoi fare a meno di GIT?" >}}
-Github e Gitlab prendono il nome da questo tool e in linea di massima sei obbligato ad usarlo, ma puoi comunque usare il comando **wget** per scaricare i file progetto zippati usando il terminale di Linux.
+Github e Gitlab prendono il nome da questo tool e in linea di massima sei obbligato ad usarlo. In certe occasioni potresti usare in alternativa il comando **wget**, ad esempio per scaricare i file binari di un progetto su github.com.
 {{< /details >}}
 
 #### Per installare Git su Ubuntu, puoi seguire questi passaggi:
