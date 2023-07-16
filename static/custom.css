@@ -1,3 +1,12 @@
+blockquote {
+    color: #241C15 !important;
+    margin: 6px 6px !important;
+    padding: 8px 25px !important;
+    background-color: #f7f0dc !important;
+    border-left: 5px solid #E7B75F !important;
+  
+}
+
 #outer {
   width:100%;
   display: flex;
@@ -201,20 +210,5 @@ background-color: #FF6600
 }
 
 .resp-sharing-button--telegram:hover {
-  background-color: #4B97D1;}
-
-
-
-
-
-
-
-
-blockquote {
-    color: #241C15 !important;
-    margin: 6px 6px !important;
-    padding: 8px 25px !important;
-    background-color: #f7f0dc !important;
-    border-left: 5px solid #E7B75F !important;
-  
+  background-color: #4B97D1;
 }
