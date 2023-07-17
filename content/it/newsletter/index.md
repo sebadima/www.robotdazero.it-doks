@@ -125,32 +125,19 @@ var ml_account = ml('accounts', '1484882', 'a7z6a5u3g6', 'load');
 
 
 
-
-
-1111111111111111111111111111111111111
-22222222222222222222222222
-
-
-
-
-
-
-
-
-
+<hr>
 
 <form method="POST" action="/api/submit" enctype="multipart/form-data">
-  <label for="i-fullname">Full Name</label>
+
+  <label for="i-fullname">Nome</label>
   <input id="i-fullname" type="text" name="fullname" pattern="[A-Za-z]+" required />
 
-  <label for="i-email">Email Address</label>
+  <label for="i-email">Email</label>
   <input id="i-email" type="email" name="email" required />
 
-  <label for="i-age">Your Age</label>
-  <input id="i-age" type="number" name="age" min="18" required />
-
-  <label for="i-avatar">Profile Picture</label>
-  <input id="i-avatar" type="file" name="avatar" required />
+  <label for="i-messaggio">Messaggio</label>
+  <input id="i-messaggio" type="text" name="messaggio" required />
 
   <button type="submit">Submit</button>
+
 </form>
