@@ -6,7 +6,7 @@ date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
 draft: false
 weight: 50
-images: ["Partitore_di_tensione_con_alimentatore.png"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["elettronica", "teoria", "resistori"]
 contributors: ["sebadima"]
