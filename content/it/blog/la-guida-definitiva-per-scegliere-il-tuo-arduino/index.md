@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["la-guida-definitiva-per-scegliere-il-tuo-arduino.webp"]
+images: ["header.webp"]
 categories: ["News"]
 tags: ["Arduino", "IOT", "guide"]
 contributors: ["sergio rame "]
