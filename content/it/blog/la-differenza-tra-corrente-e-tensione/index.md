@@ -6,9 +6,9 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.png"]
+images: ["header.jpeg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["teoria", "circuiti", "elettronica"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false
@@ -49,7 +49,7 @@ Maggiore è la differenza di carica elettrica tra i due contenitori e maggiore s
 Abbiamo capito più o meno cosa è la tensione, ma come viene definita esattamente in ambito scientifico? In questo modo:
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
-La tensione è il **LAVORO che bisogna fornire per spostare una singola carica elettrica** all&#8217; interno di in un campo elettrico.
+La tensione è il LAVORO che bisogna fornire per spostare una singola carica elettrica all&#8217; interno di in un campo elettrico.
 </div>
 
 <br>
