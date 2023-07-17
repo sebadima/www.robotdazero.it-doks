@@ -168,9 +168,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
     La schermata più <strong>pericolosa</strong> arriva in questo momento. Se sono installati altri sistemi operativi, potresti avere la possibilità di installare Ubuntu insieme a loro in dual boot, ma a noi interessa sovrascrivere tutto e perciò scegliamo “Cancella disco e Installa”.
   </p>
   
-  <p>
-    Ti apparirà il consueto avviso che stai per eliminare i dati, ignoralo e vai semplicemente avanti.
-  </p>
+  > **Ti apparirà** il consueto avviso che stai per eliminare i dati, ignoralo e vai semplicemente avanti.
   
   <p>
     <img decoding="async" src="https://i1.wp.com/itsfoss.com/wp-content/uploads/2020/01/install_ubuntu_5.jpg?resize=800%2C471&ssl=1" alt="Avviso per la formattazione del disco durante l'installazione di Ubuntu" />
