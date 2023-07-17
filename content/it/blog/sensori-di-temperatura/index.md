@@ -3,7 +3,7 @@ title: "I sensori di temperatura per la robotica"
 description: "I sensori di temperatura per la robotica"
 excerpt: "Leggere la temperatura con Arduino è un compito facile e utilissimo. Esiste in commercio a poco prezzo un varietà di sensori di temperatura con delle caratteristiche spesso molto diverse e applicazioni sorprendenti. Nel post vi vogliamo presentare quelli che abbiamo usato personalmente e usiamo tuttora nelle installazioni più facili e redditizie.."
 date: 2020-11-04T09:19:42+01:00
-lastmod: 2023-07-14T09:19:42+01:00
+lastmod: 2023-07-13T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpg"]
@@ -27,29 +27,18 @@ mermaid: true
 </style>
 
 
+## Gli 8 sensori di temperatura che dovresti usare nei tuoi apparati di controllo
 
+Leggere la temperatura con Arduino è un task molto semplice. Esiste in commercio una varietà di sensori con delle caratteristiche molto diverse tra loro e applicazioni sorprendenti. Nel post vi presentamo quelli che abbiamo usato in alcuni impianti con celle rigorifere o in semplici laboratori alimentari. 
 
-
-
-
-
-
-
-## Gli 8 sensori di temperatura che dovresti immediatamente usare nei tuoi apparati di controllo.
-
-_Arduino con l’aggiunta di un singolo sensore che vi presentiamo in questo post può diventare una stazione di controllo allo stato dell’arte, rivendibile e installabile con profitto anche se siete solo dei principianti._
-
-Leggere la temperatura con Arduino è un compito facile e utilissimo. Esiste in commercio a poco prezzo un varietà di sensori di temperatura con delle caratteristiche spesso molto diverse e applicazioni sorprendenti. Nel post vi vogliamo presentare quelli che abbiamo usato personalmente e usiamo tuttora nelle installazioni più facili e redditizie: il **controllo della temperatura nelle celle frigorifere e nei laboratori lattiero-casieari**. Il costo dei componenti è come sempre basso e il prezzo cui potrete vendere la installazione completa (con allarme via email o Telegram) è davvero interessante.
-
-
-## **1. DHT11** {#1-dht11}
+### **1. DHT11** {#1-dht11}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DHT11" src="images/sensore di temperatura DHT11.jpg">
 
 <br>
 <br>
 
-Il **DHT11** è un sensore che misura sia temperatura che umidità relativa. Contiene un chip che converte il segnale analogico in digitale e invia in binario i valori ai pin di Arduino o Raspberry. In questo modo vi evita le conversione che sono necessarie ad esempio nei sensori ad ultrasuoni, come spiegato in questo nostro <a href="https://www.robotdazero.it/blog/011-usare-gli-ultrasuoni-per-dirigere-il-tuo-robot/" target="_blank" rel="noopener">post sul sensore HC-SR04</a>.
+Il **DHT11** è un sensore che misura sia temperatura che umidità relativa. Contiene un chip che converte il segnale analogico in digitale e invia in binario i valori ai pin di Arduino o Raspberry. In questo modo vi evita le conversione che sono necessarie ad esempio nei sensori ad ultrasuoni, come spiegato in questo nostro <a href="https://www.robotdazero.it/blog/il-sensore-ad-ultrasuoni-hc-sr04/" target="_blank" rel="noopener">post sul sensore HC-SR04</a>.
 
 Questa la tabella delle specifiche del sensore:
 
@@ -65,7 +54,7 @@ Questa la tabella delle specifiche del sensore:
 |                                 |                                                                                                                                                                                                                                          |
 |                                 |                                                                                                                                                                                                                                          |
 
-## **2. DHT22** {#2-dht22}
+### **2. DHT22** {#2-dht22}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DHT22" src="images/sensore di temperatura DHT22.jpg">
 
@@ -80,7 +69,7 @@ Questa la tabella delle specifiche del sensore:
 
 |                                   | **DHT22**                                                                                                                                                                                                                                    |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Protocollo di comunicazione  ** | one wire (filo singolo)                                                                                                                                                                                                                      |
+| **Protocollo di comunicazione** | one wire (filo singolo)                                                                                                                                                                                                                      |
 | **Range di alimentazione**        | da 3 a 6 V                                                                                                                                                                                                                                   |
 | **Temperatura misurabile**        | da -40º a 80 ºC +/-0.5ºC                                                                                                                                                                                                                     |
 | **Umidità misurabile**            | da 0 al 100% +/-2%                                                                                                                                                                                                                           |
@@ -90,8 +79,8 @@ Questa la tabella delle specifiche del sensore:
 
 &nbsp;
 
-## **3. LM35DZ** {#3-lm35dz}
-<br>
+### **3. LM35DZ** {#3-lm35dz}
+
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura LM35" src="images/sensore di temperatura LM35.jpg">
 
 <br>
@@ -114,7 +103,7 @@ E ora la solita tabella, fate attenzione all ottima precisione:
 
 &nbsp;
 
-## **4. BMP180** {#4-bmp180}
+### **4. BMP180** {#4-bmp180}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura BMP180" src="images/sensore di temperatura BMP180.jpg">
 
@@ -134,7 +123,7 @@ Questa la tabella delle specifiche del sensore:
 |                                 |                                                                                                                                                                              |
 | **Dove acquistarlo?**           | <a href="https://www.amazon.it/s?k=BMP180&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss" target="_blank" rel="noopener">controlla i prezzi su Amazon</a> |
 
-## **5. TMP36** {#5-tmp36}
+### **5. TMP36** {#5-tmp36}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura TMP36" src="images/sensore di temperatura TMP36.jpg">
 
@@ -157,7 +146,7 @@ Questa la tabella delle specifiche del sensore:
 
 &nbsp;
 
-## **6. LM75** {#6-lm75}
+### **6. LM75** {#6-lm75}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura LM75" src="images/sensore di temperatura LM75.jpg">
 
@@ -178,7 +167,7 @@ Questa la tabella delle specifiche del sensore:
 | **Dove acquistarlo**            | <a href="https://www.amazon.it/s?k=lm75+sensore+temperatura&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss" target="_blank" rel="noopener">controlla i prezzi su Amazon</a> |
 |                                 |                                                                                                                                                                                                |
 
-## **7. DS18B20** {#7-ds18b20}
+### **7. DS18B20** {#7-ds18b20}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20" src="images/sensore di temperatura DS18B20.png">
 
@@ -199,7 +188,7 @@ Questa la tabella delle specifiche del sensore:
 | **Dove acquistarlo?**           | <a href="https://www.amazon.it/s?k=DS18B20+sensore+temperatura&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss" target="_blank" rel="noopener">Controlla i prezzi su Amazon</a>                               |
 |                                 |                                                                                                                                                                                                                                 |
 
-## **8. DS18B20 tenuta stagna** {#8-ds18b20-tenuta-stagna}
+### **8. DS18B20 tenuta stagna** {#8-ds18b20-tenuta-stagna}
 
 <img class="x figure-img img-fluid lazyload blur-up" width="180" alt="sensore di temperatura DS18B20 impermeabile" src="images/sensore di temperatura DS18B20 impermeabile.jpg">
 
