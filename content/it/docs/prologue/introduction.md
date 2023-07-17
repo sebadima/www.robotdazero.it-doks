@@ -1,7 +1,7 @@
 ---
 title: "Introduzione"
 description: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare e basato su software Open Source ampiamente documentati e affidabili."
-lead: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare."
+lead: "Kaspian è una piattaforma software per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -13,7 +13,9 @@ weight: 100
 toc: true
 ---
 
-## Come Iniziare
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 
+Kaspian è basata sul programma Django/Python e utilizza dei programmi in ML per acquisire dati da sensori e CAM digitali. I valori in lettura, le previsioni e le elaborazioni grafiche sono disponibile automaticamente su PC e telefonino.
+</div>
 
 Ci sono 2 modi per iniziare con Kaspian:
 
@@ -21,13 +23,13 @@ Ci sono 2 modi per iniziare con Kaspian:
 
 {{< alert icon="👉" text="Il Tutorial è indicato pet utenti con poca o media esperienza tecnica." />}}
 
-Segui le istruzioni passo passo per partire con la piattaforma project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+Segui le istruzioni passo passo per partire con la piattaforma Kaspian. [Tutorial →](https://getdoks.org/tutorial/introduction/)
 
 ### Quick Start
 
 {{< alert icon="👉" text="Il Quick Start è destinato ad utenti con media o avanzata esperienza tecnica." />}}
 
-Segui il link e completa la installazione **rapida** di Kaspian [Quick Start →]({{< relref "quick-start" >}})
+Segui il link e completa la installazione rapida di Kaspian [Quick Start →]({{< relref "quick-start" >}})
 
 ## Come approfondire
 
