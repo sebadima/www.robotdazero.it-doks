@@ -122,23 +122,3 @@ var ml_account = ml('accounts', '1484882', 'a7z6a5u3g6', 'load');
 </script>
 <img src="https://track.mailerlite.com/webforms/o/5948374/t6q0s0?v1689259942" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?vd4de52e171e8eb9c47c0c20caf367ddf" type="text/javascript"></script>
-
-
-
-<hr>
-
-<form method="POST" action="/api/submit" enctype="multipart/form-data">
-
-  <label for="i-fullname">Nome</label>
-  <input id="i-fullname" type="text" name="fullname" pattern="[A-Za-z]+" required />
-
-  <label for="i-email">Email</label>
-  <input id="i-email" type="email" name="email" required />
-
-  <label for="i-messaggio">Messaggio</label>
-  <input id="i-messaggio" type="text" name="messaggio" required />
-
-  <button type="submit">Submit</button>
-
-
-</form>
