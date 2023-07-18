@@ -23,6 +23,7 @@ Se la Corrente sembra un concetto intuitivo legato a **quanti** **elettroni pass
 
 ## Cosa è davvero la Tensione
 
+
 > **La tensione è la Forza che spinge gli elettroni** carichi attraverso un circuito elettrico e permette loro di svolgere un lavoro come accendere una luce o far girare un motorino. Con una bassa tensione nulla di tutto questo può funzionare.
 
 ## La differenza tra corrente e tensione: proviamo a capire meglio con con degli esempi pratici {#proviamo-a-capire-meglio-con-con-degli-esempi-pratici}
