@@ -33,7 +33,7 @@ Immagina di avere 2 serbatoi di acqua a differenti altezze e collegati da un tub
 
 <br>
 
-<img decoding="async" loading="lazy" class="aligncenter" src="https://res.cloudinary.com/sebadima/image/upload/c_scale,h_394,q_80,w_300/v1579111568/001/1200px-Lappo.svg_shqwq4.png" alt="la differenza tra corrente e tensione - esempio 1" width="300" height="394" /> 
+<img decoding="async" loading="lazy" class="aligncenter" src="images/101.png" alt="la differenza tra corrente e tensione - esempio 1" width="300" height="394" /> 
 
 <br>
 <br>
@@ -55,7 +55,7 @@ La tensione è il LAVORO che bisogna fornire per spostare una singola carica ele
 <br>
 <br>
 
-<img decoding="async" loading="lazy" class="aligncenter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Electrostatic_induction.svg/440px-Electrostatic_induction.svg.png" alt="la differenza tra corrente e tensione - esempio 1 " width="440" height="302" /> 
+<img decoding="async" loading="lazy" class="aligncenter" src="images/102.png" alt="la differenza tra corrente e tensione - esempio 2 " width="440" height="302" /> 
 
 <br>
 <br>
