@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["max7219-arduino-matrice-led.webp"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["LED", "MAX7219", "progetti", "Arduino"]
 contributors: ["sergio rame "]

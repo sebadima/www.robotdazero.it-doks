@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.png"]
+images: ["header2.jpeg"]
 categories: ["News"]
 tags: ["teoria", "circuiti", "elettronica"]
 contributors: ["sergio rame "]

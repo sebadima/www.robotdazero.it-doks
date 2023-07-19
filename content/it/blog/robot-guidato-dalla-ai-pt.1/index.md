@@ -6,7 +6,7 @@ date: 2023-05-18T06:19:42+01:00
 lastmod: 2023-05-18T06:19:42+01:00
 draft: false
 weight: 50
-images: ["header.jpg"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["rover", "CPU", "raspberry"]
 contributors: ["sebadima"]

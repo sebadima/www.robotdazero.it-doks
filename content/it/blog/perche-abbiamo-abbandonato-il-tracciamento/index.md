@@ -1,7 +1,7 @@
 ---
 title: Perchè abbiamo abbandonato il tracciamento sul nostro Blog
-description: "Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
-excerpt: "Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto la tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018..."
+description: "Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto al tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018."
+excerpt: "Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento sul web e da quando ci siamo resi conto che il nostro vecchio fornitore di dati utente si comportava più o meno come Facebook o Google abbiamo pensato di rinunciare in toto al tracciamento degli utenti e di usare solo la newsletter per tenerci in contatto con chi ci segue dal 2018..."
 date: 2023-06-02T09:19:42+01:00
 lastmod: 2020-08-02T09:19:42+01:00
 draft: false
