@@ -13,7 +13,7 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-
+<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con Bing image creator</a>
 <div class="cms mw6">
   <p>
     &nbsp;

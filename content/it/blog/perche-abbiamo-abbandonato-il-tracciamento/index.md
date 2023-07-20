@@ -13,6 +13,19 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
+<style>
+.x {
+    transition:transform 0.40s ease;
+    transition-delay: 0.60s;
+}
+
+.x:hover {
+    -webkit-transform:scale(1.70); /* or some other value */
+    transform:scale(1.70);
+}
+</style>
+
+<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con © Bing image creator</a>
 
 ## Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
 
@@ -36,7 +49,7 @@ Agli esordi del Blog avevamo deciso di affidarci al modello di marketing della a
 👉 Non ci serviva più un tracciamento accurato delle visite e abbiano deciso di abolire ogni "snippet" di tracciamento, pixel di Facebook etc e di aumentare nel contempo la velocità del nostro Blog.
 </div>
 
-#### Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">pagina</a> dove descriviamo la nostre policy.
+#### Per questo motivo non abbiamo più un "cookie banner" per il semplice motivo che usiamo solo "cookie tecnici" e come da direttive del garante della privacy tutto quello che ci serve è avere una <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">pagina</a> dove descriviamo la nostra policy.
 
 Un risultato inatteso ma gradito è stato vedere le prestazioni del Blog passare da una buona valutazione su Google Speed Insight a un poker di [100+100+100+100](https://pagespeed.web.dev/analysis/https-www-robotdazero-it/y2yp1eooyr?form_factor=mobile) nella versione Mobile e Desktop. Se avete un Blog minimalista come il nostro questo dato potrebbe ispirarvi...
 
