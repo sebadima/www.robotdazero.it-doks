@@ -13,7 +13,21 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di [elettronica][1]. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un Led appaiono misteriosi se non si hanno chiari questi due concetti.
+<style>
+.x {
+    transition:transform 0.40s ease;
+    transition-delay: 0.60s;
+}
+.x:hover {
+    -webkit-transform:scale(1.70); /* or some other value */
+    transform:scale(1.70);
+}
+</style>
+<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con © Bing image creator</a>
+
+<br>
+
+La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di [elettronica][1]. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
 
 > **La tensione è la differenza di “potenziale”** tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo.
 
