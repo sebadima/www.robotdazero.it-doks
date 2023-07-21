@@ -125,5 +125,5 @@ La opzione:  –m "<messaggio du commento>" ti permette di descrivere le modific
 5. **git clone** <remote_URL>
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
-Il comando <strong>clone</strong> è forse il più utile se volete usare software open source dal nostro sito o da internet. Il comando permette di scaricare un programma remoto in una directory locale mantenendo intatta la struttura dei file e salvando tutte le le revisioni. E' equivalente a "Git init" quando lavorate con dei repository remoti.
+Il comando <strong>clone</strong> è forse il più utile se volete usare software open source preso dal nostro sito o da internet. Il comando permette di scaricare un programma remoto in una directory locale mantenendo intatta la struttura dei file e salvando tutte le le revisioni. E' equivalente a "Git init" quando lavorate con dei repository remoti.
 </div>
