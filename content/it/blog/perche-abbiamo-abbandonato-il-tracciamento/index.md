@@ -18,14 +18,12 @@ homepage: false
     transition:transform 0.40s ease;
     transition-delay: 0.60s;
 }
-
 .x:hover {
     -webkit-transform:scale(1.70); /* or some other value */
     transform:scale(1.70);
 }
 </style>
-
-<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con © Bing image creator</a>
+<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con software free di Intelligenza Artificiale</a>
 
 ## Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
 
