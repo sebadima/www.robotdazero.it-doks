@@ -29,7 +29,7 @@ homepage: false
 
 Il software Git è stato creato da <a href="https://it.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener">Linus Torvalds</a>, il famoso sviluppatore finlandese noto principalmente come creatore del kernel Linux. Torvalds ha creato Git nel 2005 per gestire lo sviluppo del kernel Linux stesso. Ha sviluppato Git come un sistema di controllo delle versioni distribuito, progettato per affrontare le esigenze specifiche del grande progetto open-source che è il kernel Linux. 
 
-## Cosa veniva usato prima dell'arrivo di GIT?
+### Cosa veniva usato prima dell'arrivo di GIT?
 
 
 Prima del programma Git, i programmatori utilizzavano diversi sistemi per il controllo delle versioni e la gestione del codice sorgente. Alcuni dei sistemi più comuni erano:
