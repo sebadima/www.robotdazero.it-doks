@@ -6,7 +6,7 @@ date:    2018-07-03T09:19:42+01:00
 lastmod: 2018-07-03T09:19:42+01:00
 draft: false
 weight: 50
-images: ["images/Convertire-in-numeri-interi-in-stringhe-usando-Python.jpg"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["python", "programmazione", "automazione"]
 contributors: ["sebadima"]
