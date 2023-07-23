@@ -27,4 +27,4 @@ se hai problemi nel ricevere la email, se sospetti sia finita nella spam o sia s
 </br>
 </br>
 
-<a class="btn btn-primary btn-lg px-4 mb-2" href="https://dash.robotdazero.it/admin/login/?next=/admin/" target="_blank" rel="noopener">Accedi con le tue credenziali</a>
+<a class="btn btn-primary btn-lg px-4 mb-2" href="https://dash.robotdazero.it/admin/login/?next=/admin/" target="_blank" rel="noopener">Accedi con le credenziali</a>
