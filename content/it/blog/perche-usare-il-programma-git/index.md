@@ -130,6 +130,12 @@ In sintesi, Git semplifica il processo di sviluppo del software, migliorando la 
 Github e Gitlab prendono il nome da questo tool e in linea di massima sei obbligato ad usarlo. In certe occasioni potresti usare in alternativa il comando **wget**, ad esempio per scaricare i file binari di un progetto su github.com.
 {{< /details >}}
 
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="output del programma Git" src="images/101.png">
+
+<p style="font-size: 16px"> Output del programma Git sulla nostra piattaforma ML Kaspian </p>
+
+
 #### Per installare Git su Ubuntu, puoi seguire questi passaggi:
 
 Apri il terminale sul tuo sistema Ubuntu. Puoi farlo premendo Ctrl+Alt+T sulla tastiera o cercando "Terminal" nel menu delle applicazioni.
@@ -237,5 +243,5 @@ $ git checkout HEAD nomefile
 
 
 Se ti è piaciuto questo post puoi iscriverti alla nostra newletter e contribuire al successo della nostra piattaforma.
-<br>
-<br>
+
+
