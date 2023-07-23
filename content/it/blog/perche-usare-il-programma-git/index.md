@@ -103,11 +103,11 @@ Questo comando dovrebbe stampare la versione di Git che hai installato.
 
 ### Ecco alcuni motivi per cui dovresti usare Git su Linux:
 
-Noi di Robotdazero preferiamo sempre usare software e sistemi Open Source. A nostro personalissimo avviso permettono maggiore libertà di azione allo sviluppatore e presentano meno bug rispetto al sofware a pagamento.
+Noi di Robotdazero preferiamo sempre usare software e sistemi Open Source. A nostro modesto avviso permettono maggiore libertà di azione al programmatore e presentano meno bug rispetto al sofware a pagamento.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
-Se vuoi provare un sitema alternativo a Windows ti suggerisco Linux nella distro di Ubuntu. Per noi si tratta di un OS maturo e affidabile e ti consiglio di provarlo se non lo usi già!
+Se vuoi provare un sistema alternativo a Windows ti suggerisco Linux nella distro di Ubuntu. Per noi si tratta di un OS maturo e affidabile e ti consiglio di provarlo se non lo usi già!
 </div>
 
 ##### Cosa può fare GIT su Ubuntu/Linux:
