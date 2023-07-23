@@ -14,18 +14,17 @@ pinned: false
 homepage: false
 ---
 
-
 <style>
 .x {
     transition:transform 0.40s ease;
     transition-delay: 0.60s;
 }
-
 .x:hover {
     -webkit-transform:scale(1.70); /* or some other value */
     transform:scale(1.70);
 }
 </style>
+<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con software free di Intelligenza Artificiale</a>
 
 
 ### In questa primo articolo di una serie piuttosto lunga vedremo come costruire un rover guidato dalla intelligenza artificiale destinato a compiti di sorveglianza "reale"
@@ -113,6 +112,14 @@ Tutte sono in grado di girare sulla piattaforma hardware che abbiamo deciso di p
 **Raspberry Pi**: Il Raspberry Pi è una scelta popolare per i piccoli robot perché è conveniente, piccolo e potente. È compatibile con una vasta gamma di sensori e attuatori e può eseguire una varietà di sistemi operativi, tra cui Linux che useremo nel nostro progetto.
 
 **Arduino**: Arduino è un'altra scelta popolare per i piccoli robot. È un microcontrollore, il che significa che è meno potente di una CPU come il Raspberry Pi, ma è anche molto più piccolo ed economico. Arduino è compatibile con una vasta gamma di sensori e attuatori, e può eseguire una varietà di linguaggi di programmazione, tra cui C e C++.
+
+<br>
+<br>
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/Nvidia Jetson Nano.jpg">
+
+<br>
+<br>
 
 **Nvidia Jetson Nano**: Nvidia Jetson Nano è una potente CPU progettata per applicazioni AI. È compatibile con una vasta gamma di sensori e attuatori e può eseguire Linux e Jetpack, la piattaforma di sviluppo AI di Nvidia.
 
