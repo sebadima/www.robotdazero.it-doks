@@ -48,13 +48,6 @@
   parent = "get-started"
 
 [[main]]
-  name = "Newsletter"
-  weight = 50
-  identifier = "newsletter"
-  url = "/newsletter"
-  parent = "get-started"
-
-[[main]]
   name = "Argomenti"
   weight = 60
   identifier = "tags"
