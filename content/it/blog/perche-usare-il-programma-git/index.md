@@ -12,13 +12,6 @@ tags: ["git", "programmazione", "ubuntu"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false
-
-
-menu:
-docs:
-parent: "prologue"
-weight: 110
-toc: true
 ---
 <style>
 .x {
