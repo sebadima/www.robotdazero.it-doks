@@ -234,4 +234,3 @@ $ git checkout HEAD nomefile
 
 Se ti è piaciuto questo post puoi iscriverti alla nostra newletter e contribuire al successo della nostra piattaforma.
 
-
