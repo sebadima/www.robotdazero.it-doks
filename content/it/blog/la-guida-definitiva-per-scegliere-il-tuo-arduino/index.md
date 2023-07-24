@@ -54,7 +54,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
     </li>
   </ol>
   
-### Step #1 &#8211; QUALE VERSIONE DI ARDUINO DOVRESTI SCEGLIERE
+### Step #1 - QUALE VERSIONE DI ARDUINO DOVRESTI SCEGLIERE
   
   <p>
     Se vai sul sito <a href="https://store.arduino.cc/">arduino.cc</a> e controlli sulla pagina <a href="https://store.arduino.cc/">STORE</a> ti troverai di fronte a circa una ventina di schede! E se vai sulla <a href="https://it.wikipedia.org/wiki/Arduino_(hardware)">pagina di Wikipedia</a> troverai oltre 180 schede compatibili di varia qualità.
@@ -184,7 +184,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
     <strong>Arduino Micro contiene lo stesso eccellente chip di conversione seriale/USB di Arduino Uno</strong>: meno problemi di compatibilità con i driver per Windows 10 e meno errori dell&#8217;<a href="https://www.robotdazero.it/blog/004-come-installare-ide-di-arduino/">IDE</a> in fase di caricamento. Non possiede il comodo portabatteria “coin” per la CR32 che trovi su <a href="https://tinycircuits.com/collections/all/products/tinyduino-starter-kit">TinyDuino</a>, e neppure attachi per cam di sorveglianza, ma resta una eccellente scelta per collegare sensori multipli.
   </p>
   
-### Step #2 &#8211; E’ MEGLIO UN ARDUINO ORIGINALE O “COMPATIBILE”?
+### Step #2 - E’ MEGLIO UN ARDUINO ORIGINALE O “COMPATIBILE”?
   
   <p>
     Se vuoi comprare un Arduino originale sei a posto, ma molti comprano dei <strong>compatibili</strong>. Perchè?
@@ -230,9 +230,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
     Per riassumere, <strong>evita le schede super economiche con il marchio Arduino</strong>: se vuoi pagare di meno, acquista schede da produttori che espongono il loro marchio, e preferibilmente su Amazon.it. Se acquisti marchi contraffatti, inoltre, stai supportando venditori fuorilegge che <strong>violano la normativa sul copyright</strong>.
   </p>
   
-  <hr />
-  
-### Step #3 &#8211; GLI ACCESSORI INDISPENSABILI PER ARDUINO
+### Step #3 - GLI ACCESSORI INDISPENSABILI PER ARDUINO
   
   <p>
     Anche in questo caso, non ti consiglio di precipitarti su Amazon.it o in un negozio fisico a comprare accessori alla rinfusa. Sarebbe molto meglio comprarli gradatamente, limitandoti all’ inizio solo alle breadboard, ai fili di connessione, a pochi sensori e agli utilissimi kit di resistenze e condensatori.
@@ -254,9 +252,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
     Molte schede sono già fornite di cavetto, ma non è una regola universale e in ogni caso ti consiglio di averne uno di scorta. Se compri un Arduino <strong>molto compatto</strong> ricorda che alcuni di essi <strong>usano un cavo MISCRO-USB</strong> &#8211; quello dello smartphone. Controlla con attenzione prima di comprare.
   </p>
   
-  <hr />
-  
-### Step #4 &#8211; I KIT DA SCEGLIERE PER INIZIARE CON ARDUINO
+### Step #4 - I KIT DA SCEGLIERE PER INIZIARE CON ARDUINO
   
   <p>
     Specialmente all’inizio, comunque, non è facile indovinare cosa serve davvero e di quali componenti puoi fare a meno. Se vuoi un consiglio <strong>concentrati sui sensori e cerca il kit che li contiene</strong>: avrai il duplice vantaggio di fare un solo ordine on line e di essere sicuro della compatibilità hardware.
@@ -293,9 +289,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
     </li>
   </ul>
   
-  <hr />
-  
-### Step #5 &#8211; COSA SONO GLI “SHIELDS” DI ARDUINO
+### Step #5 - COSA SONO GLI “SHIELDS” DI ARDUINO
   
   <p>
     Per avere un Arduino UNO dalle funzionalità molto complete potresti affidarti a uno SHIELD, uno “<strong>scudo</strong>” che contiene molte parti accessorie già incorporate nella scheda. <strong>Se vuoi concentrarti sullo sviluppo del software e degli algoritmi potrebbero essere la soluzione migliore</strong>: ti permette di risparmiare il tempo che perderesti a comprare, collegare e testare le schede aggiuntive.
@@ -385,7 +379,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
 
 <br>
 
-### Step #6 &#8211; ARDUINO TEENSY
+### Step #6 - ARDUINO TEENSY
 
 <img class="figure-img img-fluid lazyload blur-up" width="800" alt="immagine della scheda Arduino Teensy" src="images/101.jpg">
 
@@ -396,7 +390,7 @@ Arduino Teensy è una scheda di sviluppo open source che utilizza un microcontro
 
 Arduino Teensy è disponibile in una varietà di modelli, ognuno con le proprie caratteristiche e capacità. Il modello più popolare è il Teensy 3.2, che ha 60 pin digitali, 12 pin analogici, un convertitore analogico-digitale da 12 bit e un oscillatore a 200 MHz.
 
-> Arduino Teensy può essere programmato utilizzando l'IDE Arduino, che è un software gratuito e open source. L'IDE Arduino è facile da usare e supporta una varietà di linguaggi di programmazione, tra cui C, C++ e Python.
+> **Arduino Teensy** può essere programmato utilizzando l'IDE Arduino, che è un software gratuito e open source. L'IDE Arduino è facile da usare e supporta una varietà di linguaggi di programmazione, tra cui C, C++ e Python.
 
 Se stai cercando una scheda di sviluppo potente e versatile, Arduino Teensy è una scelta eccellente. È facile da usare, supporta una varietà di linguaggi di programmazione ed è ideale per progetti di qualsiasi grandezza.
 Ecco alcuni dei vantaggi dell'utilizzo di Arduino Teensy:
@@ -406,7 +400,10 @@ Ecco alcuni dei vantaggi dell'utilizzo di Arduino Teensy:
 3. Facilità d'uso: Arduino Teensy è facile da usare, anche per i principianti.
 4. Supporto: Arduino Teensy ha una grande comunità di utenti e sviluppatori, che offrono supporto e aiuto.
 
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
 Se stai cercando una scheda di sviluppo potente, versatile e facile da usare, Arduino Teensy è una scelta eccellente.
+</div>
 
   
 #### In conclusione, un breve sommario su cosa fare attenzione scegliendo la scheda Arduino più adatta:
@@ -425,4 +422,3 @@ La dimensione della scheda Arduino è un altro fattore importante da considerare
 
 5. **Caratteristiche aggiuntive**
 Infine, ci sono alcune caratteristiche aggiuntive da considerare quando si sceglie una scheda Arduino. Ad esempio, alcune schede Arduino hanno un&#8217;interfaccia Ethernet integrata, mentre altre hanno un modulo Wi-Fi integrato. Altre schede possono essere dotate di Bluetooth integrato o di un&#8217;interfaccia USB-C.
-
