@@ -23,7 +23,7 @@ homepage: false
     transform:scale(1.50);
 }
 </style>
-<a style="font-size: 13px" href="https://www.bing.com/images/create?FORM=GENILP" target="_blank" rel="noopener">immagine creata con software free di Intelligenza Artificiale</a>
+
 
 ## Perchè usare il comando GIT
 
@@ -101,7 +101,7 @@ git --version
 ```
 Questo comando dovrebbe stampare la versione di Git che hai installato.
 
-### Ecco alcuni motivi per cui dovresti usare Git su Linux:
+## Ecco alcuni motivi per cui dovresti usare Git su Linux:
 
 Noi di Robotdazero preferiamo sempre usare software e sistemi Open Source. A nostro modesto avviso permettono maggiore libertà di azione al programmatore e presentano meno bug rispetto al sofware a pagamento.
 
