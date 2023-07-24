@@ -6,7 +6,7 @@ date: 2023-06-02T09:19:42+01:00
 lastmod: 2020-08-02T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.jpeg"]
+images: ["header3.jpeg"]
 categories: ["News"]
 tags: ["blog", "comunicazioni"]
 contributors: ["sergio rame "]
@@ -39,7 +39,29 @@ Qualcosa di simile è accaduto (e non solo a noi) con uno dei servizi che abbiam
 Di questa problematica si è reso conto un esperto di livello come Mike Davidson su Twitter e la facile conseguenza è stata tornare a al nostro solito Gmail aziendale.
 {{< tweet user="mikeindustries" id="1144360664275673088" >}}
 
-### Inoltre abbiamo cambiato modello di business
+
+
+
+### Il tracciamento delle email può essere pericoloso per la privacy
+
+Il tracciamento può essere utilizzato per raccogliere informazioni su chi invia e riceve e-mail, nonché su quando e da dove vengono inviate. Queste informazioni possono essere utilizzate per creare profili degli utenti e per inviare pubblicità mirata. In secondo luogo, il tracciamento delle e-mail può essere utilizzato per monitorare le attività degli utenti. Ad esempio, un'azienda potrebbe utilizzare il tracciamento delle e-mail per vedere quali pagine del proprio sito web un utente ha visitato o quali prodotti ha visualizzato. Queste informazioni possono essere utilizzate per personalizzare le esperienze di marketing o per prendere decisioni commerciali. 
+
+> Infine, il tracciamento delle e-mail può essere utilizzato per violare la privacy degli utenti. Ad esempio, un utente potrebbe essere vittima di phishing se apre un'e-mail che contiene un link dannoso. Questo link potrebbe portare l'utente a un sito Web che raccoglie i suoi dati personali o potrebbe installare un malware sul suo computer.
+
+##### Ecco alcuni suggerimenti per proteggere la tua privacy dalle e-mail tracciate:
+
+1. Utilizza un servizio di posta elettronica crittografato come ProtonMail o Tutanota
+2. Attiva la crittografia end-to-end per le tue e-mail
+3. Usa un client di posta elettronica che non traccia le tue attività
+4. Non aprire gli allegati da fonti sconosciute
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉
+<a href="https://tutanota.com/" target="_blank" rel="noopener">Tutanota</a>
+<a href="https://proton.me/" target="_blank" rel="noopener">ProtonMail</a>
+</div>
+
+
+### E Inoltre abbiamo cambiato modello di business
 
 Agli esordi del Blog avevamo deciso di affidarci al modello di marketing della affiliazione usando Amazon per la maggior parte dei nostri incassi. Da quest'anno, invece la nostra attenzione si è spostata sulla Dashboard di RBT0, sui servizi software associati alla Robotica e sulla integrazione di sensori, telecamere e Machine Learning.
 
