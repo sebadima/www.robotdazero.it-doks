@@ -13,16 +13,6 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-<style>
-.x {
-    transition:transform 0.40s ease;
-    transition-delay: 0.60s;
-}
-.x:hover {
-    -webkit-transform:scale(1.50); /* or some other value */
-    transform:scale(1.50);
-}
-</style>
 
 
 ## Perchè usare il comando GIT
