@@ -395,10 +395,10 @@ Arduino Teensy è disponibile in una varietà di modelli, ognuno con le proprie 
 Se stai cercando una scheda di sviluppo potente e versatile, Arduino Teensy è una scelta eccellente. È facile da usare, supporta una varietà di linguaggi di programmazione ed è ideale per progetti di qualsiasi grandezza.
 Ecco alcuni dei vantaggi dell'utilizzo di Arduino Teensy:
 
-1. Potenza: Arduino Teensy è una delle schede più potenti sul mercato, ed è ideale per progetti complessi.
-2. Versatilità: Arduino Teensy può essere utilizzata per creare una vasta gamma di progetti, da robot a strumenti musicali.
-3. Facilità d'uso: Arduino Teensy è facile da usare, anche per i principianti.
-4. Supporto: Arduino Teensy ha una grande comunità di utenti e sviluppatori, che offrono supporto e aiuto.
+- Potenza: Arduino Teensy è una delle schede più potenti sul mercato, ed è ideale per progetti complessi.
+- Versatilità: Arduino Teensy può essere utilizzata per creare una vasta gamma di progetti, da robot a strumenti musicali.
+- Facilità d'uso: Arduino Teensy è facile da usare, anche per i principianti.
+- Supporto: Arduino Teensy ha una grande comunità di utenti e sviluppatori, che offrono supporto e aiuto.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
