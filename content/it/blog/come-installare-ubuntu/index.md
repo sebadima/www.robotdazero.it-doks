@@ -13,7 +13,7 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-<p><a style="font-size: 14px" href="https://www.bing.com/images/create" target="_blank" rel="noopener">Immagine creata con Bing image creator</a></p>
+
 
 
 ## Una semplice guida in 8 step che ti guiderà nella installazione di Ubuntu
@@ -25,9 +25,7 @@ homepage: false
   
   <hr />
   
-  <h3 id="qualche-cenno-storico-prima-di-partire-con-la-guida-in-8-step-per-installare-ubuntu">
-    Qualche cenno “storico” prima di partire con la guida in 8 Step per installare Ubuntu
-  </h3>
+### Qualche cenno “storico” prima di partire con la guida in 8 Step per installare Ubuntu
   
   <p>
     Anni orsono si consigliava di <strong>installare Linux/Ubuntu assieme a Windows</strong> per avere a disposizione entrambi i sistemi e magari disinstallare Linux senza problemi. E’ un approccio rispettabile e l’ho seguito anche io quando ero agli inizi. Il risultato? A volte ho cancellato per errore l’intera partizione di Windows <em>sbagliando</em><br /> ad usare <strong>parted</strong> ed <strong>fdisk</strong>, a volte non sono riuscito a leggere la partizione di Linux da <strong>Windows XP</strong>.
@@ -53,9 +51,7 @@ homepage: false
     Se invece vuoi per forza far convivere Windows 10 e Linux puoi in alternativa <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">abilitare</a> il subsytem con Linux e usarne il potente ambiente di sviluppo in pochi minuti!
   </p>
   
-  <h2 id="cosa-ti-servirà-per-installare-ubuntu">
-    Cosa ti servirà per installare Ubuntu
-  </h2>
+### Cosa ti servirà per installare Ubuntu
   
   <ul>
     <li>
@@ -83,17 +79,13 @@ homepage: false
     <strong>Con questa procedura cancellerai tutti i dati presenti sul disco</strong>. Puoi salvarli se proprio lo desideri su un disco USB esterno o su Dropbox/Google Drive.
   </p>
   
-  <h3 id="step-1-fai-il-download-di-ubuntu-dal-sito">
-    Step #1 &#8211; Fai il download di Ubuntu dal sito
-  </h3>
+### Step #1 &#8211; Fai il download di Ubuntu dal sito
   
   <p>
     Prima di fare qualsiasi cosa devi scaricare Ubuntu. È disponibile come un singolo file ISO di circa 2 GB. Un file ISO è un’immagine del disco ed è necessario estrarla su una chiavetta USB o su un DVD. Puoi scaricare Ubuntu ISO dal suo <a href="https://ubuntu.com/download/desktop">sito web</a>, oppure se hai una connessione internet traballante puoi trovare i link di torrent nella <a href="https://ubuntu.com/download/alternative-downloads">pagina di download alternativa</a>.
   </p>
   
-  <h3 id="step-2-crea-una-chiavetta-usb-live">
-    Step #2 &#8211; Crea una <strong>chiavetta USB live</strong>
-  </h3>
+### Step #2 &#8211; Crea una <strong>chiavetta USB live</strong>
   
   <p>
     Dopo aver scaricato il file ISO di Ubuntu, il passaggio successivo è creare una live USB di Ubuntu. <strong>La USB live ti consente di avviare Ubuntu da un’unità USB</strong>. Al limite potresti provare Ubuntu senza nemmeno installarlo. Noi in questa guida faremo invece la installazione <strong>completa</strong> di Ubuntu.
@@ -103,9 +95,7 @@ homepage: false
     Sono disponibili vari strumenti gratuiti per creare un USB live di Ubuntu come Rufus, <a href="https://unetbootin.github.io/">Unetbootin</a>, <a href="https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">Universal USB installer</a>. Io ti consiglio <a href="https://www.pendrivelinux.com/category/new-usb-linux-tutorials/">pendrivelinux</a> ma sono tutti molto simili.
   </p>
   
-  <h3 id="step-3-avvia-il-pc-usando-la-usb-live">
-    Step #3 &#8211; Avvia il PC usando la USB live
-  </h3>
+### Step #3 &#8211; Avvia il PC usando la USB live
   
   <p>
     Collega la chiavetta USB Ubuntu live al PC. Ora, devi assicurarti che il tuo sistema si avvii dal disco USB invece che dal disco rigido. Puoi farlo entrando nel BIOS e spostando l’USB verso l’alto nell’ordine di avvio.
@@ -123,9 +113,7 @@ homepage: false
     <strong>Adesso Modifica l’ordine di avvio del PC</strong>. Inserisci la USB (in inglese removable drive) all’inizio dell’ordine di avvio, salva le modifiche ed esci seguendo il menu.
   </p>
   
-  <h3 id="step-4-scegli-la-giusta-opzione-su-grub">
-    Step #4 &#8211; Scegli la giusta opzione su GRUB
-  </h3>
+### Step #4 &#8211; Scegli la giusta opzione su GRUB
   
   <p>
     Adesso riavvia il PC e alla partenza ti dovrebbe apparire una schermata scura. E’ la schermata di avvio del programma <a href="https://wiki.ubuntu-it.org/AmministrazioneSistema/Grub">grub</a> che ti dà la possibilità di 1) provare Ubuntu senza installarlo o 2) di installarlo immediatamente sul disco fisso. Puoi scegliere la prima opzione, ma in questo tutorial selezioneremo “Installare Ubuntu”.
@@ -135,9 +123,7 @@ homepage: false
     <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602690772/001/ubuntu_live_install_screen_wzqugq.jpg" alt="Schermata di installazione live di Ubuntu" />
   </p>
   
-  <h3 id="step-5-modifica-le-impostazioni-di-base-del-so">
-    Step #5 &#8211; Modifica le impostazioni di base del SO
-  </h3>
+### Step #5 &#8211; Modifica le impostazioni di base del SO
   
   <p>
     Dopo 20-30 secondi, dovrebbe apparire l’ambiente Ubuntu live; potresti aspettare di più se hai usato una USB di vecchia generazione. Quindi fai clic sull’icona “Installa Ubuntu”, quella in basso nella unica colonna del desktop.
@@ -163,9 +149,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
     <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602690801/001/install_ubuntu_4_wdk85u.jpg" alt="Cancella il disco e installa Ubuntu Linux" />
   </p>
   
-  <h3 id="step-6-cancella-il-disco-fisso">
-    Step #6 &#8211; Cancella il disco fisso
-  </h3>
+### Step #6 &#8211; Cancella il disco fisso
   
   <p>
     La schermata più <strong>pericolosa</strong> arriva in questo momento. Se sono installati altri sistemi operativi, potresti avere la possibilità di installare Ubuntu insieme a loro in dual boot, ma a noi interessa sovrascrivere tutto e perciò scegliamo “Cancella disco e Installa”.
@@ -181,9 +165,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
     Poi apparirà anche un altro avviso sulla formattazione e anche in questo caso andremo avanti senza problemi, dopotutto stiamo lavorando su un PC “messo da parte” o no?
   </p>
   
-  <h3 id="step-7-configura-l-orario-e-la-timezone">
-    Step #7 &#8211; Configura l’Orario e la TimeZone
-  </h3>
+### Step #7 &#8211; Configura l’Orario e la TimeZone
   
   <p>
     <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1603296292/001/installazione-ubuntu-pc-4_eejths.jpg" alt="Seleziona il fuso orario quando installi Ubuntu" />
@@ -201,9 +183,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
     <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1603296319/001/installazione-ubuntu-pc-6-bis_zixnmi.jpg" alt="Installa Ubuntu 9" />
   </p>
   
-  <h3 id="step-8-fine-della-installazione">
-    Step #8 &#8211; Fine della installazione!
-  </h3>
+### Step #8 &#8211; Fine della installazione!
   
   <p>
     Alla fine ti verrà chiesto di riavviare il sistema.
