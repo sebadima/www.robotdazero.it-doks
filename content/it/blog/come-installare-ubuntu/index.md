@@ -13,7 +13,10 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-# <span style="font-size: 1rem; color: #464646;">Una semplice guida in 8 step che ti guiderà nella installazione di Ubuntu.</span> {.f2.lh-title.b.mb3}
+<p><a style="font-size: 14px" href="https://www.bing.com/images/create" target="_blank" rel="noopener">Immagine creata con Bing image creator</a></p>
+
+
+## Una semplice guida in 8 step che ti guiderà nella installazione di Ubuntu
 
 <div class="cms mw6">
   <h4 id="con-ubuntu-in-versione-server-puoi-raccogliere-il-flusso-di-dati-fornito-da-cam-di-sorveglianza-e-sensori-di-controllo-riciclando-vecchi-pc-da-1-o-2-gb-di-ram-praticamente-a-costo-zero">
