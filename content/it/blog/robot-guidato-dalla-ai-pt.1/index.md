@@ -16,7 +16,7 @@ homepage: false
 
 
 
-### In questa primo articolo di una serie piuttosto lunga vedremo come costruire un rover guidato dalla intelligenza artificiale destinato a compiti di sorveglianza "reale"
+#### In questa primo articolo di una serie piuttosto lunga vedremo come costruire un rover guidato dalla intelligenza artificiale destinato a compiti di sorveglianza "reale"
 
 quindi con la capacità di:
 <ol>
@@ -89,7 +89,7 @@ Tutte sono in grado di girare sulla piattaforma hardware che abbiamo deciso di p
 7. usare un driver economico come il <a href="https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/">L298N</a> DC Motor Driver
 
 
-### I fattori da considerare quando si sceglie la CPU...
+### I FATTORI DA CONSIDERARE QUANDO SI SCEGLIE LA CPU...
 
 1. Dimensioni e peso del robot: la CPU dovrebbe essere abbastanza piccola da adattarsi al corpo del robot e abbastanza leggera da non appesantire il robot.
 2. Requisiti di alimentazione del robot: la CPU dovrebbe consumare una quantità ragionevole di energia in modo che il robot possa funzionare a lungo con una batteria.
@@ -137,10 +137,10 @@ con controllo PID per il rover, seguiremo questi passaggi:
 
 
 
-## Perchè abbiamo scelto Raspberry...
+## PERCHÈ ABBIAMO SCELTO RASPBERRY...
 
 
-### Le prestazioni sono il principale parametro per scegliere la CPU?
+### LE PRESTAZIONI SONO IL PRINCIPALE PARAMETRO PER SCEGLIERE LA CPU?
 
 E' innegabile che le prestazioni siano un punto chiave nella scelta, perchè gli algoritmi di ML impongono la elaborazione di miliardi di singole operazione al secondo (pensiamo alla chiavette TPU come Google Coral o Orange PI). Tale carico di lavoro ci propone un serio dubbio da risolvere in fase di pianificazione: La nostra CPU dovrà elaborare in toto i dati (immagini e video ) o deve appogiarsi ad unita' di calcolo esterno?
 
@@ -150,7 +150,7 @@ Nel nostro caso abbiamo deciso di scegliere la seconda strada e ricorrere alla u
 In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
 
 
-### Potevamo usare una CPU Intel per il Rover?
+### POTEVAMO USARE UNA CPU INTEL PER IL ROVER?
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="Pc Intel su Amazon refurbished" src="./images/Screenshot from 2023-04-30 18-12-15.resized.png">
 
@@ -188,7 +188,7 @@ Il consumo medio di energia di un pc portatile può, quindi, oscillare tra i 20 
 
 Il dato viene da un sito autorevole come [energit.it](https://energit.it/quale-e-il-consumo-medio-di-un-pc/) che vi consigliamo di leggere per approfondire l'argomento.
 
-### Perchè non potevamo usare ESP32 o Arduino per la elaborazione delle immagini in machine learning
+### PERCHÈ NON POTEVAMO USARE ESP32 O ARDUINO PER LA ELABORAZIONE DELLE IMMAGINI IN MACHINE LEARNING
 
 
 Il controller ESP32 riesce a rilevare ostacoli negli spazi aperti usando una versione ridotta di un <a href="https://en.wikipedia.org/wiki/Computer_vision">sistema</a> di riconoscimento delle immagini, ma non può gestire altri compiti di ML o tantomeno far girare programmi in <a href="https://docs.micropython.org/en/latest/library/index.html">MicroPython</a> a velocità accettabile. Durante le nostre <a href="https://www.hackster.io/mjrobot/esp32-cam-tinyml-image-classification-fruits-vs-veggies-4ab970">prove</a> condotte con Tiny ML siamo riusciti a riconoscere volti, animali e oggetti precisi senza ncecessità di extra RAM o di risorse di CPU aggiuntive, ma
