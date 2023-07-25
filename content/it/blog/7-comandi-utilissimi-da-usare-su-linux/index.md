@@ -16,8 +16,6 @@ homepage: false
 
 
 
-<br>
-
 * * *
 _Se sviluppi progetti informatici in maniera professionale o come hobbista evoluto, conoscere Linux e la sua shell (Bash) ti darà enormi vantaggi rispetto al command prompt di Windows e per velocizzare il suo utilizzo ti propongo 7 comandi utilissimi da usare su Linux sin dall&#8217;inizio._
 
