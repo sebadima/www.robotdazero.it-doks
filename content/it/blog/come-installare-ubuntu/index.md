@@ -194,4 +194,3 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
     Dopo il riavvio potrebbe apparire una scritta che ti chiede di rimuovere il supporto di installazione e di premere Invio. Rimuovi la chiavetta USB e premi Invio. Il tuo sistema si riavvierà con Ubuntu al posto di di Windows.
   </p>
   
-</div>
