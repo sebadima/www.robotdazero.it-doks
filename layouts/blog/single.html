@@ -1,5 +1,17 @@
 {{ define "main" }}
 <article>
+
+<style>
+.x {
+    transition:transform 0.40s ease;
+    transition-delay: 0.60s;
+}
+.x:hover {
+    -webkit-transform:scale(1.50); /* or some other value */
+    transform:scale(1.50);
+}
+</style>
+
 <div class="row justify-content-center">
   <div class="col-md-12 col-lg-10">
     <div class="blog-header">
@@ -14,6 +26,7 @@
     </div>
   </div>
   <div class="col-md-12 col-lg-9">
+  {{ partial "sidebar/docs-toc.html" . }}
     {{ .Content }}
     {{ if .Params.tags -}}
     <div class="mt-4">
