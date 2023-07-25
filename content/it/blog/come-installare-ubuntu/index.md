@@ -100,7 +100,7 @@ Prima di fare qualsiasi cosa devi scaricare Ubuntu. È disponibile come un singo
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602690764/001/boot_order-BIOS_tbvs1r.jpg" alt="Ordine di avvio nel BIOS" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - il BIOS" src="images/101.jpg">
   </p>
   
   <p>
@@ -114,7 +114,7 @@ Prima di fare qualsiasi cosa devi scaricare Ubuntu. È disponibile come un singo
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602690772/001/ubuntu_live_install_screen_wzqugq.jpg" alt="Schermata di installazione live di Ubuntu" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - usare GRUB" src="images/102.jpg">
   </p>
   
 ### <strong> STEP 5 - MODIFICA LE IMPOSTAZIONI DI BASE DEL SO  </strong>
@@ -124,7 +124,7 @@ Prima di fare qualsiasi cosa devi scaricare Ubuntu. È disponibile come un singo
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602783971/001/Desktop-Ubuntu-Live_fb53ji.jpg" alt="Schermata di installazione live di Ubuntu" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - il desktop" src="images/103.jpg">
 
 <br /> 
 
@@ -140,7 +140,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1602690801/001/install_ubuntu_4_wdk85u.jpg" alt="Cancella il disco e installa Ubuntu Linux" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - scaricare gli aggiornamenti" src="images/104.jpg">
   </p>
   
 ### <strong> STEP 6 - CANCELLA IL DISCO FISSO  </strong>
@@ -162,7 +162,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
 ### <STRONG> STEP 7 - CONFIGURA L’ORARIO E LA TIMEZONE </STRONG>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1603296292/001/installazione-ubuntu-pc-4_eejths.jpg" alt="Seleziona il fuso orario quando installi Ubuntu" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - la Timezone" src="images/105.jpg">
   </p>
   
   <p>
@@ -174,7 +174,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1603296319/001/installazione-ubuntu-pc-6-bis_zixnmi.jpg" alt="Installa Ubuntu 9" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - la presentazione di ubuntu" src="images/106.jpg">
   </p>
   
 ### <STRONG> STEP 8 - FINE DELLA INSTALLAZIONE! </STRONG>
@@ -184,7 +184,7 @@ Adesso usando la interfaccia grafica di Ubuntu puoi comodamente scegliere alcune
   </p>
   
   <p>
-    <img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1603296330/001/installazione-ubuntu-pc-7_vajtr6.jpg" alt="Riavvia Ubuntu alla fine della installazione" />
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="installare ubuntu - riavviare il sistema" src="images/107.jpg">
   </p>
   
   <p>
