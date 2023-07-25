@@ -1,7 +1,7 @@
 ---
 title: "Come usare fuser e netstat su Ubuntu"
 description: "Come usare fuser e netstat su Ubuntu"
-excerpt: "Iniziamo ad usare la shell di Ubuntu per gestire le installazioni di Domotica più evolute. Useremo Ubuntu per applicazioni complesse che non potrebbero mai girare su una semplice scheda Arduino…."
+excerpt: "Iniziamo ad usare la shell di Ubuntu per gestire le installazioni di Domotica più evolute. Useremo Ubuntu per applicazioni complesse che non potrebbero mai girare su una semplice scheda Arduino."
 date: 2020-08-02T09:19:42+01:00
 lastmod: 2023-07-02T09:19:42+01:00
 draft: false
