@@ -15,6 +15,7 @@ homepage: false
 ---
 
 
+
 ## Perchè usare il comando Git
 
 Il software Git è stato creato da <a href="https://it.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener">Linus Torvalds</a>, il famoso sviluppatore finlandese noto principalmente come creatore del kernel Linux. Torvalds ha creato Git nel 2005 per gestire lo sviluppo del kernel Linux stesso. Ha sviluppato Git come un sistema di controllo delle versioni distribuito, progettato per affrontare le esigenze specifiche del grande progetto open-source che è il kernel Linux. 
@@ -78,8 +79,8 @@ Una volta scaricato il programma di installazione, eseguilo. Il programma di ins
 Dopo aver installato Git, dovrai configurarlo. Ciò include impostare il tuo nome utente e indirizzo e-mail. Puoi farlo eseguendo il seguente comando in una finestra del prompt dei comandi:
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
+git config --global user.name Your Name
+git config --global user.email your@email.com
 ```
 
 4. ##### Come testare Git
