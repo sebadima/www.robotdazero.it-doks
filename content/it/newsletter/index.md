@@ -38,5 +38,6 @@ Con la scheda multifunzione per <a href="https://www.robotdazero.it/tags/esp32/"
 ##### Usa la tua email per ricevere un coupon con il 10% di sconto!
 
 
-<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=V9Atnx"></script>
+<script async type="text/javascript" src="/klaviyo.js?company_id=V9Atnx"></script>
 <div class="klaviyo-form-YjY5qD"></div>
+
