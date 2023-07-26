@@ -101,7 +101,7 @@ Noi di Robotdazero preferiamo sempre usare software e sistemi Open Source. A nos
 Se vuoi provare un sistema alternativo a Windows ti suggerisco Linux nella distro di Ubuntu. Per noi si tratta di un OS maturo e affidabile e ti consiglio di provarlo se non lo usi già!
 </div>
 
-#### Cosa può fare Git su Ubuntu/Linux:
+### Cosa può fare Git su Ubuntu/Linux:
 
 1.    Controllo delle versioni: Git permette di tenere traccia delle modifiche apportate ai file nel tempo, consentendo di recuperare versioni precedenti di un progetto. Questo è utile per il backup, per ripristinare modifiche indesiderate o per collaborare con altri sviluppatori.
 
