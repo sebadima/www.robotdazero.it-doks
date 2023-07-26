@@ -155,9 +155,6 @@ Verrà visualizzata la versione di Git installata sul tuo sistema.
 
 Ora hai Git correttamente installato su Ubuntu e sei pronto per utilizzarlo nel terminale. Puoi iniziare a clonare repository, creare nuovi repository o gestire i tuoi progetti con Git.
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="esempio di output del programma Git sulla nostra piattaforma" src="images/Output del programma Git su linux .png">
-<br>
-<p style="font-size: 16px">Esempio di output del programma Git sulla nostra piattaforma Kaspian.</p>
 
 ### I Primi comandi su Git
 
