@@ -104,8 +104,9 @@ Se sei un programmatore evoluto, ti consiglio di dare un'occhiata alla shell di 
 
 ### ESISTE UN EQUIVALENTE SU WINDOWS?
 
+Seppure in linea di massima chi lavora nel mondo IOT tende a preferire Linux, anche nel mondo Windows esiste un comando simile. 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
-L'equivalente Linux del comando "fuser" è il comando "lsof". Il comando "lsof" viene utilizzato per elencare tutti i file e le porte aperte su un sistema. Questo comando può essere utilizzato per trovare i processi che stanno utilizzando determinati file o porte, o per trovare i file o le porte che sono in uso da più di un processo.
+L'equivalente Windows del comando "fuser" è il comando "lsof". Il comando "lsof" viene utilizzato per elencare tutti i file e le porte aperte su un sistema. Questo comando può essere utilizzato per trovare i processi che stanno utilizzando determinati file o porte, o per trovare i file o le porte che sono in uso da più di un processo.
 </div>
 
 Ecco un esempio di come utilizzare il comando "lsof":
