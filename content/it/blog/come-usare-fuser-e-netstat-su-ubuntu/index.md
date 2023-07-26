@@ -81,3 +81,46 @@ Dopo avere ottenuto il messaggio:
 
 possiamo procedere con il solito comando **kill -9 PID** per “stoppare” il programma che ci dà fastidio.
 
+
+### PERCHÈ È IMPORTANTE USARE LA SHELL DI UBUNTU
+
+
+- **La shell di Ubuntu è potente e flessibile**. Può essere utilizzata per eseguire un'ampia gamma di attività, dalla gestione di file e cartelle al controllo di processi e servizi.
+- **La shell di Ubuntu è facile da imparare**. L'interfaccia della shell è semplice e diretta, e ci sono molte risorse disponibili per aiutarti a imparare a usarla.
+- **La shell di Ubuntu è compatibile con una vasta gamma di software**. Puoi utilizzare la shell di Ubuntu per eseguire programmi che sono stati scritti per Linux, Windows e macOS.
+- **La shell di Ubuntu è gratuita e open source**. Puoi utilizzarla e modificarla a tuo piacimento senza alcun costo.
+
+Ecco alcuni esempi di come i programmatori evoluti possono utilizzare la shell di Ubuntu:
+
+- **Per automatizzare le attività**. 
+La shell di Ubuntu può essere utilizzata per creare script che eseguono automaticamente una serie di comandi. Questo può essere utile per automatizzare attività ripetitive o per eseguire attività che sono troppo difficili da eseguire manualmente.
+- **Per risolvere i problemi**. 
+La shell di Ubuntu può essere utilizzata per ottenere informazioni dettagliate sul sistema e sui processi in esecuzione. Questo può essere utile per diagnosticare e risolvere problemi di sistema.
+- **Per sviluppare software**. La shell di Ubuntu può essere utilizzata per compilare codice, eseguire test e eseguire il debug di programmi. Questo può essere utile per sviluppatori di tutti i livelli di esperienza.
+
+Se sei un programmatore evoluto, ti consiglio di dare un'occhiata alla shell di Ubuntu. È uno strumento potente e flessibile che può aiutarti a essere più produttivo e a risolvere i problemi più velocemente.
+
+
+
+### ESISTE UN EQUIVALENTE SU WINDOWS?
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
+L'equivalente Linux del comando "fuser" è il comando "lsof". Il comando "lsof" viene utilizzato per elencare tutti i file e le porte aperte su un sistema. Questo comando può essere utilizzato per trovare i processi che stanno utilizzando determinati file o porte, o per trovare i file o le porte che sono in uso da più di un processo.
+</div>
+
+Ecco un esempio di come utilizzare il comando "lsof":
+
+```bash
+$ lsof -i
+```
+
+Questo comando elencherà tutti i file aperti su tutte le porte di rete. Puoi anche utilizzare il comando "lsof" per elencare i file aperti su una porta specifica, come ad esempio:
+
+```bash
+$ lsof -i :80
+```
+
+Questo comando elencherà tutti i file aperti sulla porta 80.
+
+Il comando "lsof" può essere uno strumento utile per trovare file o porte che sono in uso da più di un processo, o per trovare processi che stanno utilizzando determinati file o porte.
+
