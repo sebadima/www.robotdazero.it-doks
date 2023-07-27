@@ -11,19 +11,20 @@ email: info@robotdazero.it
 
 tel: 0931-094-682
 
+  <br>
+
 <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xyybpbln"
-  method="POST"
->
+<form action="https://formspree.io/f/xyybpbln" method="POST" >
   <label>
-    Your email:
+    la tua email:
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
+    messaggio:&nbsp; 
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <br>
+  <br>
+  <button type="submit">Invia</button>
 </form>
