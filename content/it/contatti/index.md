@@ -14,12 +14,12 @@ tel: 0931-094-682
 <!-- modify this form HTML and place wherever you want your form -->
 <form action="https://formspree.io/f/xyybpbln" method="POST" >
   <label>
-    <h3>scrivi la tua email:</h3>
+    <h4>la tua email:</h4>
     <input type="email" name="email">
   </label>
   <br>
   <label>
-    <h3> messaggio:</h3>
+    <h4> messaggio:</h4>
     <textarea cols="50" rows="4"  name="message"></textarea>
   </label>
   <br>
