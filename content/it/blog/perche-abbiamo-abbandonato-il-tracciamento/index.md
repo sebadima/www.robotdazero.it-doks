@@ -16,7 +16,7 @@ homepage: false
 
 
 
-## Dall'inizio del Blog abbiamo preso una posizione chiara contro il tracciamento degli utenti sul web.
+## DALL'INIZIO DEL BLOG ABBIAMO PRESO UNA POSIZIONE CHIARA CONTRO IL TRACCIAMENTO DEGLI UTENTI SUL WEB.
 
 Abbiamo cercato di ridurre al minimo la presenza di codice javascript che rallentasse il Blog e abbiamo cercato servizi di "user tracking" che non raccogliessero in modo massivo tutti i cookie dei nostri visitatori. E abbiamo selezionato due servizi alternativi a Google/Facebook che promettevano il rispetto assoluto della privacy secondo le norme della UE e non usassero il nostro (minimo) traffico per alimentare i loro algoritmi di Machine Learning.
 
@@ -32,7 +32,7 @@ Di questa problematica si è reso conto un esperto di livello come Mike Davidson
 
 
 
-### Il tracciamento delle email può essere pericoloso per la privacy
+### IL TRACCIAMENTO DELLE EMAIL PUÒ ESSERE PERICOLOSO PER LA PRIVACY
 
 Il tracciamento può essere utilizzato per raccogliere informazioni su chi invia e riceve e-mail, nonché su quando e da dove vengono inviate. Queste informazioni possono essere utilizzate per creare profili degli utenti e per inviare pubblicità mirata. In secondo luogo, il tracciamento delle e-mail può essere utilizzato per monitorare le attività degli utenti. Ad esempio, un'azienda potrebbe utilizzare il tracciamento delle e-mail per vedere quali pagine del proprio sito web un utente ha visitato o quali prodotti ha visualizzato. Queste informazioni possono essere utilizzate per personalizzare le esperienze di marketing o per prendere decisioni commerciali. 
 
@@ -51,7 +51,7 @@ Il tracciamento può essere utilizzato per raccogliere informazioni su chi invia
 </div>
 
 
-### E Inoltre abbiamo cambiato modello di business
+### E INOLTRE ABBIAMO CAMBIATO MODELLO DI BUSINESS
 
 Agli esordi del Blog avevamo deciso di affidarci al modello di marketing della affiliazione usando Amazon per la maggior parte dei nostri incassi. Da quest'anno, invece la nostra attenzione si è spostata sulla Dashboard di RBT0, sui servizi software associati alla Robotica e sulla integrazione di sensori, telecamere e Machine Learning.
 
