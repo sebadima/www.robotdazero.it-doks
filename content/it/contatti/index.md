@@ -9,9 +9,13 @@ images: []
 
 
 
-**email:** info@robotdazero.it
+<ul>
+<li>email: info@robotdazero.it</li>
+</ul>
 
-Usa il modulo sottostante per inviarci le tue comunicazioni
+<details open="">
+  <summary>Usa il modulo sottostante per inviarci le tue comunicazioni
+</summary>
 <form action="https://formspree.io/f/xyybpbln" method="POST">
   <label>
     <h4>la tua email:</h4>
@@ -25,3 +29,4 @@ Usa il modulo sottostante per inviarci le tue comunicazioni
   <br>
   <button class="btn btn-primary btn-lg px-4 mb-2" type="submit">Invia il messaggio</button>
 </form>
+</details>
