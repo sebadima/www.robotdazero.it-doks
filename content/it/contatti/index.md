@@ -7,12 +7,13 @@ draft: false
 images: []
 ---
 
-email: info@robotdazero.it
 
-tel: 0931-094-682
 
-<!-- modify this form HTML and place wherever you want your form -->
+**email:** info@robotdazero.it
+
+**Usa il modulo sottostante per inviarci le tue comunicazioni**
 <form action="https://formspree.io/f/xyybpbln" method="POST" >
+
   <label>
     <h4>la tua email:</h4>
     <input type="email" name="email">
