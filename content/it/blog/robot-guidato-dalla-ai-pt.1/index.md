@@ -195,7 +195,7 @@ Il controller ESP32 riesce a rilevare ostacoli negli spazi aperti usando una ver
 
 <br >
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
-Allenare la ESP32 con molteplici modelli e immagini à semplicemente aldilà degli scopi di un controller
+Allenare la ESP32 con molteplici modelli e immagini è semplicemente aldilà degli scopi di un controller
 </div>
 <br >
 
