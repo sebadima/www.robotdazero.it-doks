@@ -16,7 +16,7 @@ homepage: false
 
 
 
-## DALLA NASCITA DEL BLOG ABBIAMO EVITATO GLI ECCESSI NEL TRACCIAMENTO.
+## DALLA NASCITA DEL BLOG ABBIAMO EVITATO GLI ECCESSI NEL TRACCIAMENTO
 
 Abbiamo cercato di ridurre al minimo la presenza di codice javascript che rallentasse il Blog e abbiamo cercato servizi di "user tracking" che non raccogliessero in modo massivo tutti i cookie dei nostri visitatori. E abbiamo selezionato due servizi alternativi a Google/Facebook che promettevano il rispetto assoluto della privacy secondo le norme della UE e non usassero il nostro (minimo) traffico per alimentare i loro algoritmi di Machine Learning.
 
