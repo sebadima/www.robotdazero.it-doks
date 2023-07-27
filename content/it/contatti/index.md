@@ -11,14 +11,12 @@ images: []
 
 **email:** info@robotdazero.it
 
-**Usa il modulo sottostante per inviarci le tue comunicazioni**
-<form action="https://formspree.io/f/xyybpbln" method="POST" >
-
+Usa il modulo sottostante per inviarci le tue comunicazioni
+<form action="https://formspree.io/f/xyybpbln" method="POST">
   <label>
     <h4>la tua email:</h4>
     <input type="email" name="email">
   </label>
-  <br>
   <label>
     <h4> messaggio:</h4>
     <textarea cols="50" rows="4"  name="message"></textarea>
