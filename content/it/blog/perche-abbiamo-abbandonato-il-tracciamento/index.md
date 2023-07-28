@@ -28,7 +28,7 @@ Qualcosa di simile è accaduto (e non solo a noi) con uno dei servizi che abbiam
 
 Di questa problematica si è reso conto un esperto di livello come Mike Davidson su Twitter e la facile conseguenza è stata tornare a al nostro solito Gmail aziendale.
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/101.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="tweet di Mike Davidson sulla sicurezza delle email" src="images/101.png">
 
 
 
