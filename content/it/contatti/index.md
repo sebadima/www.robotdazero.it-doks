@@ -18,7 +18,6 @@ images: []
 </summary>
 </details>
 <form action="https://formspree.io/f/xyybpbln" method="POST">
-<input type="hidden" name="_language" value="es" />
   <label>
     <h4>la tua email:</h4>
     <input type="email" name="email">
