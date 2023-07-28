@@ -24,7 +24,7 @@ images: []
   <br>
   <label>
     <h4> messaggio:</h4>
-    <textarea cols="35" rows="3"  name="message"></textarea>
+    <textarea rows="3"  name="message"></textarea>
   </label>
   <br>
   <br>
