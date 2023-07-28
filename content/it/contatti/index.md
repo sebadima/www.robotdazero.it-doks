@@ -16,7 +16,6 @@ images: []
 <details open="">
   <summary>Usa il modulo sottostante per inviarci le tue comunicazioni
 </summary>
-</details>
 <form action="https://formspree.io/f/xyybpbln" method="POST">
   <label>
     <h4>la tua email:</h4>
@@ -24,9 +23,10 @@ images: []
   </label>
   <label>
     <h4> messaggio:</h4>
-    <textarea name="message"></textarea>
+    <textarea cols="50" rows="3"  name="message"></textarea>
   </label>
   <br>
   <br>
   <button class="btn btn-primary btn-lg px-4 mb-2" type="submit">Invia il messaggio</button>
 </form>
+</details>
