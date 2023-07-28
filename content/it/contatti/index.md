@@ -22,6 +22,7 @@ images: []
     <h4>la tua email:</h4>
     <input type="email" name="email">
   </label>
+  <br>
   <label>
     <h4> messaggio:</h4>
     <textarea cols="28" rows="3"  name="message"></textarea>
