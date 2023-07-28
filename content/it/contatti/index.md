@@ -17,6 +17,7 @@ images: []
   <summary>Usa il modulo sottostante per inviarci le tue comunicazioni
 </summary>
 <form action="https://formspree.io/f/xyybpbln" method="POST">
+<input type="hidden" name="_language" value="it"/>
   <label>
     <h4>la tua email:</h4>
     <input type="email" name="email">
