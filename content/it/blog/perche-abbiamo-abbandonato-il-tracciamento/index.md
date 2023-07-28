@@ -27,8 +27,8 @@ Dopo avere controllato con la console di Firefox/Network che uno dei servizi di 
 Qualcosa di simile è accaduto (e non solo a noi) con uno dei servizi che abbiamo usato per tenerci in contatto con i lettori. Il servizio di email professionale "SuperHuman" tracciava, infatti tutti gli IP e la geolocalizzazione dei nostri contatti per default, mentre apparentemente doveva soltanto controllare la apertura delle email!
 
 Di questa problematica si è reso conto un esperto di livello come Mike Davidson su Twitter e la facile conseguenza è stata tornare a al nostro solito Gmail aziendale.
-{{< tweet user="mikeindustries" id="1144360664275673088" >}}
 
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/101.png">
 
 
 
