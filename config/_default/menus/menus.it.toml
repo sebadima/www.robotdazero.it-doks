@@ -80,11 +80,6 @@
   weight = 10
 
 [[footer]]
-  name = "Newsletter"
-  url = "https://landing.mailerlite.com/webforms/landing/d5t0t4"
-  weight = 10
-
-[[footer]]
   name = "Contatti"
   url = "/contatti/"
   weight = 10
