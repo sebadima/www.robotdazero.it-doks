@@ -19,12 +19,12 @@ images: []
 <form action="https://formspree.io/f/xyybpbln" method="POST">
 <input type="hidden" name="_language" value="it"/>
   <label>
-    <h4>la tua email:</h4>
+    <h4>La tua email:</h4>
     <input type="email" name="email">
   </label>
   <br>
   <label>
-    <h4> messaggio:</h4>
+    <h4>Messaggio:</h4>
     <textarea cols="28" rows="3"  name="message"></textarea>
   </label>
   <br>
