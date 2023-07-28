@@ -14,8 +14,8 @@ images: []
 </ul>
 
 <details open="">
-  <summary>Usa il modulo sottostante per inviarci le tue comunicazioni
-</summary>
+  <summary>Usa il modulo sottostante per inviarci le tue comunicazioni </summary>
+
 <form action="https://formspree.io/f/xyybpbln" method="POST">
 <input type="hidden" name="_language" value="it"/>
   <label>
@@ -31,4 +31,5 @@ images: []
   <br>
   <button class="btn btn-primary btn-lg px-4 mb-2" type="submit">Invia il messaggio</button>
 </form>
+
 </details>
