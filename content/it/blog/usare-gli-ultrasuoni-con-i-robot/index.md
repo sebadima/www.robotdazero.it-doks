@@ -66,23 +66,23 @@ Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanz
 9. Dimensioni: 45mm x 20mm x 15mm
 
 
-#### Come funziona? {#come-funziona}
+#### Come funziona?
 
 Nel dettaglio in sensore opera in questo modo:
 
-1. &#8211; Il trasmettitore manda un impulso ad ultrasuoni,
-2. &#8211; Il segnale sonoro incontra un oggetto solido,
-3. &#8211; Il ricevitore riceva l’onda riflessa (l’impulso riflesso).
+1. Il trasmettitore manda un impulso ad ultrasuoni,
+2. Il segnale sonoro incontra un oggetto solido,
+3. Il ricevitore riceva l’onda riflessa (l’impulso riflesso).
 
 Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di calcolare la distanza reale di un oggetto. Come è possibile? Perchè sappiamo con precisione la velocità del suono a livello del mare che è circa 330 mt al secondo e basta fare una proporzione per avere la distanza in centimetri, la risoluzione che verosimilmente ci servirà con i Robot mobili.
 
-## COME FANNO I ROBOT A CALCOLARE LE DISTANZE USANDO IL SENSORE HCSR04 E ARDUINO
+### UN PROGETTO PER MISURARE LE DISTANZE USANDO ARDUINO E IL SENSORE HCSR04
 
 In questi progetto il sensore legge e scrive la distanza da un oggetto nel monitor serial del tuo IDE Arduino. L’obiettivo del progetto è iniziare a capire come funziona il sensore, poi nella parte centrale di questo post costruiremo un vero Robot, con una logica di funzionamento “complessa” e capacità dinamiche.
 
-**Nota:** Esiste una libreria per Arduino chiamata [NewPing][2] che ci renderà il lavoro molto più semplice.
+**Nota:** Esiste una libreria per Arduino chiamata NewPing che ci renderà il lavoro molto più semplice.
 
-### LE PARTI RICHIESTE
+#### LE PARTI RICHIESTE
 
 Ecco una lista delle cose che vi serviranno:
 
@@ -96,7 +96,7 @@ Ecco una lista delle cose che vi serviranno:
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/104.webp">
 
-### COME COLLEGARE ARDUINO AL SENSORE HC-SR04
+#### I COLLEGAMENTI ELETTRICI
 
 nella parte sinistra i pin del sensore, a destra quelli di Arduino
 
