@@ -27,23 +27,21 @@ homepage: false
 </style>
 
 
-## Cosa sono i sensori a ultrasuoni? {#cosa-sono-i-sensori-a-ultrasuoni}
+## COSA SONO I SENSORI A ULTRASUONI? {#COSA-SONO-I-SENSORI-A-ULTRASUONI}
 
 In breve sono l’equivalente elettronico delle **orecchie dei pipistrelli**, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
 
 La versione elettronica del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo tre in questo progetto e avrai con poca spesa e un software molto semplice il tuo primo Robot capace di movimento autonomo.
 
-## Come usare il sensore a ultrasuoni HC-SR04 con Arduino {#come-usare-il-sensore-a-ultrasuoni-hc-sr04-con-arduino}
+## COME USARE IL SENSORE A ULTRASUONI HC-SR04 CON ARDUINO {#COME-USARE-IL-SENSORE-A-ULTRASUONI-HC-SR04-CON-ARDUINO}
 
 In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
-+++++++++++++++++++++++
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/HC-SR04_bepinv.jpg">
-++++++++++++++++++++
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
-#### Descrizione {#descrizione}
+#### DESCRIZIONE {#DESCRIZIONE}
 
 Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanza da un oggetto e dunque sfrutta la riflessione del suono sugli ostacoli solidi e la costanza della velocità del suono. Riesce a fornire con buona esattezza la distanza da un oggetto e restituisce dei valori costanti e progressivi, senza ritardi.
 
@@ -89,13 +87,13 @@ Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di
 
 Ti consiglio di aquistare il sensore ultrasonico [HC-SR04][1] su [Amazon][1] cercando il prezzo più basso tra i prodotti con almeno 4 stelle. In alternativa puoi cercare su banggood.com.
 
-## Come fanno i Robot a calcolare le distanze usando il sensore HCSR04 e Arduino {#come-fanno-i-robot-a-calcolare-le-distanze-usando-il-sensore-hcsr04-e-arduino}
+## COME FANNO I ROBOT A CALCOLARE LE DISTANZE USANDO IL SENSORE HCSR04 E ARDUINO
 
 In questi progetto il sensore legge e scrive la distanza da un oggetto nel monitor serial del tuo IDE Arduino. L’obiettivo del progetto è iniziare a capire come funziona il sensore, poi nella parte centrale di questo post costruiremo un vero Robot, con una logica di funzionamento “complessa” e capacità dinamiche.
 
 **Nota:** Esiste una libreria per Arduino chiamata [NewPing][2] che ci renderà il lavoro molto più semplice.
 
-### Le parti richieste {#le-parti-richieste}
+### LE PARTI RICHIESTE
 
 Ecco una lista delle cose che vi serviranno:
 
@@ -106,13 +104,13 @@ Ecco una lista delle cose che vi serviranno:
 - Batteria 9V
 - Portabatteria con Jack standard 9V
 
-### Lo schema {#lo-schema}
+### LO SCHEMA
 
 Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il sensore ultrasonico HC-SR04 al tuo Arduino in pochi minuti.
 
 <img decoding="async" src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=701%2C327&ssl=1" alt="" /> 
 
-### Come collegare Arduino al sensore HC-SR04 {#come-collegare-arduino-al-sensore-hc-sr04}
+### COME COLLEGARE ARDUINO AL SENSORE HC-SR04 {#COME-COLLEGARE-ARDUINO-AL-SENSORE-HC-SR04}
 
 nella parte sinistra i pin del sensore, a destra quelli di Arduino
 
@@ -122,7 +120,7 @@ nella parte sinistra i pin del sensore, a destra quelli di Arduino
 - GND    &lt;——&gt;  GND</pre>
 
 
-### e infine Il codice completo… {#e-infine-il-codice-completo}
+### IL CODICE COMPLETO
 
 ```bash
 /*
@@ -248,9 +246,9 @@ A fine programma scriviamo il risultato su Monitor Seriale dell’ IDE:
 
 &nbsp;
 
-### Il programma per Arduino modificato con l’uso di NewPing: una libreria alternativa per Robot terrestri {#il-programma-per-arduino-modificato-con-l-uso-di-newping-una-libreria-alternativa-per-robot-terrestri}
+### IL PROGRAMMA PER ARDUINO MODIFICATO CON L’USO DI NEWPING
 
-Semplice da usare NewPing in certe occasioni **risulta consigliabile quando dobbiamo limitarci a calcolare distanze in modo diretto**, senza elaborare il segnale di ritorno. La libreria si trova a questo indirizzo in **formato zippato** [clicca qui][3]. Dopo avere scaricato e installato la libreria puoi usare il codice sottostante:
+Newping è una una libreria alternativa per la Robotica e non solo, molto semplice da usare. NewPing in certe occasioni risulta consigliabile quando dobbiamo limitarci a calcolare distanze in modo diretto, senza elaborare il segnale di ritorno. 
 
 
 ```bash
