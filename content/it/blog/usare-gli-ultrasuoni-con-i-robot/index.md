@@ -3,7 +3,7 @@ title: "Usare gli ultrasuoni con i Robot"
 description: "Usare gli ultrasuoni con i Robot"
 excerpt: "Cosa sono i sensori a ultrasuoni?  sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi...."
 date: 2023-05-15T09:19:42+01:00
-lastmod: 2023-05-15T09:19:42+01:00
+lastmod: 2023-07-27T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
@@ -13,7 +13,6 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-
 <style>
 .x {
     transition:transform 0.40s ease;
@@ -25,6 +24,7 @@ homepage: false
     transform:scale(1.70);
 }
 </style>
+
 
 
 ## COSA SONO I SENSORI A ULTRASUONI?
