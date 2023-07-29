@@ -6,7 +6,7 @@ date: 2023-05-15T09:19:42+01:00
 lastmod: 2023-05-15T09:19:42+01:00
 draft: false
 weight: 50
-images: ["usare-gli-ultrasuoni-con-i-robot.webp"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["ultrasuoni", "HC-SR04", "progetti", "Arduino"]
 contributors: ["sergio rame "]
