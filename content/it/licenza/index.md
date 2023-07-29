@@ -21,7 +21,7 @@ Domande frequenti sulle licenze
 
 ### La politica di doppia licenza di Robotdazero è ancora “open source”?
 
-Si, finché il tuo software è open source compatibile con la GPL al 100%, Robotdazero è un fornitore open source compatibile con la GPL al 100% che è indistinguibile da qualsiasi altro fornitore open source “puro”.
+> Sì, finché il tuo software è open source compatibile con la GPL al 100%, Robotdazero è un fornitore open source compatibile con la GPL al 100% che è indistinguibile da qualsiasi altro fornitore open source “puro”.
 
 Il lato commerciale della nostra attività è un modo per attirare nuovi clienti offrendo loro la possibilità di estendere l’uso del nostro software oltre i limiti della GPL. Le opzioni di licenza commerciale raggiungono i clienti che altrimenti non sarebbero in grado di utilizzare i framework QP ™ .
 Perché non usate una licenza open source veramente gratuita, come BSD?
@@ -34,34 +34,35 @@ Il modello di business dual-licensing, sempre più popolare e rigorosamente cont
 
 ### Posso usare il soffware di Robotdazero anche se la politica della mia azienda vieta l’open source?
 
-Assolutamente Si. È possibile richiedere una licenza commerciale tradizionale e closed-source. Tutte le licenze commerciali di Robotdazero sostituiscono espressamente la licenza GPL open source. Quando si utilizza il software sotto una licenza commerciale, l’uso non ha nulla a che fare con l’open source e non si viola la politica no-open-source. Altre aziende utilizzano il modello di business dual licensing? Sì, il modello di business dual licensing sta diventando sempre più popolare tra le aziende open source in quanto apre la strada alla redditività finanziaria a lungo termine. Altre aziende che offrono doppia licenza includono MySRBT0, SugarCRM, Jaspersoft e Alfresco. Secondo un recente rapporto di Gartner, entro il 2012 oltre il 50% di tutte le entrate generate da progetti di software open source provenivano da progetti sotto il patrocinio di un singolo fornitore, cioè da un singolo fornitore open source. Le applicazioni Linux ™ non sono normalmente considerate una derivata GPL. Perché allora le applicazioni QP ™ sono considerate derivati GPL?
+> Sì, è possibile richiedere una licenza commerciale tradizionale e closed-source. Tutte le licenze commerciali di Robotdazero sostituiscono espressamente la licenza GPL open source. Quando si utilizza il software sotto una licenza commerciale, l’uso non ha nulla a che fare con l’open source e non si viola la politica no-open-source. 
+
+### Altre aziende utilizzano il modello di business dual licensing? 
+
+> Sì, il modello di business dual licensing sta diventando sempre più popolare tra le aziende open source in quanto apre la strada alla redditività finanziaria a lungo termine. Altre aziende che offrono doppia licenza includono MySRBT0, SugarCRM, Jaspersoft e Alfresco. Secondo un recente rapporto di Gartner, entro il 2012 oltre il 50% di tutte le entrate generate da progetti di software open source provenivano da progetti sotto il patrocinio di un singolo fornitore, cioè da un singolo fornitore open source. Le applicazioni Linux ™ non sono normalmente considerate una derivata GPL. Perché allora le applicazioni QP ™ sono considerate derivati GPL?
 
 In effetti, l’uso accettato in passato dimostra che nel caso di Linux ™ , qualsiasi applicazione che viene eseguita nello Spazio utente non è normalmente considerata una derivata GPL (a condizione che utilizzi chiamate di sistema standard). Tuttavia, si presume che i binari collegati staticamente che vengono eseguiti nello spazio del kernel siano derivati di Linux ™ . Inoltre, le distribuzioni solo binarie in esecuzione nello Spazio utente o nello Spazio del kernel potrebbero ancora essere considerate opere derivate dalla GPL. (Vedi l’articolo online”Linux GPL Derivatives in a Nutshell")
 
-A differenza di Linux ™ , le applicazioni basate sui framework QP ™ Real-Time Embedded sono sempre collegate staticamente con QP ™ , come una libreria o semplicemente file oggetto compilati. Pertanto, QP ™ stesso deve essere considerato una “parte inseparabile di un tutto". GPL Sezione 2 prescrive chiaramente che in questo caso " la distribuzione del tutto deve essere ai termini di questa licenza [GPL]“.
-
-La GPL istruisce i licenziatari a contattare il proprietario del copyright sul software per ricevere indicazioni sulla distribuzione dei loro programmi che dipendono dal codice originale.
-
-Le nostre linee guida per la distribuzione di qualsiasi software di terze parti dipendente dai framework QP ™ sono che tutti questi software di terze parti devono anche essere distribuiti secondo i termini della GPL.
-
-Tale politica è la pietra angolare del principio guida quid pro quo (“something for something”) alla base del modello di business a doppia licenza praticato da Robotdazero e dalla maggior parte delle altre società open source di seconda generazione. La politica garantisce che gli utenti del software devono contribuire con il codice dell’applicazione alla comunità (licenziatari GPL) o contribuire con i ricavi delle licenze al fornitore originale del software acquistando licenze commerciali (licenziatari commerciali).
-
 Si prega di notare che Robotdazero non ha alcun diritto, e non rivendica alcun diritto, sul software applicativo sviluppato da terze parti, indipendentemente dal fatto che i framework QP ™ utilizzati in queste applicazioni siano concessi in licenza sotto licenza GPL o licenze commerciali.
-Posso valutare i framework QP ™ sotto GPL anche se ho in mente un uso commerciale?
 
-Ottengo gli stessi framework QP ™ sotto entrambe le licenze? Quanto costa una licenza commerciale QP ™ ? Come posso contribuire ai framework QP ™ ? I salti quantici possono mai portare via il codice? I framework QP sono soggetti alle Export Administration Regulations (EAR)? Licenze e prezzi commerciali 1 “Se pensi che una buona architettura sia costosa, prova la cattiva architettura.” Brian Foote e Joseph Yoder Se la tua azienda ha una politica che vieta l’open source nel tuo prodotto… Tutti i framework QP ™ possono essere concessi in licenza commercialmente, nel qual caso non si utilizza alcuna licenza open source e non si violano le norme. Le informazioni sulla licenza fornite in questa sezione riguardano il nostro software embedded, come i framework QP ™ Real-Time Embedded. Il software non incorporato e basato su host, come lo strumento di modellazione QM ™ , è offerto con una semplice licenza EULA click-through. Licenza di singolo prodotto
+#### Posso valutare i framework QP ™ sotto GPL anche se ho in mente un uso commerciale?  Ottengo gli stessi framework QP ™ sotto entrambe le licenze?  Quanto costa una licenza commerciale QP ™ ?  Come posso contribuire ai framework QP ™ ? 
 
-La licenza per singolo prodotto consente a una determinata azienda (“Licenziatario”) di incorporare i tipi specificati di framework QP ™ Real-Time Embedded in un prodotto finale del Licenziatario(Prodotto singolo). Il Licenziatario può distribuire / vendere un numero illimitato di unità del Singolo Prodotto (licenza royalty-free), per tutta la durata del Singolo Prodotto. È richiesta una licenza di prodotto singolo diversa per ogni prodotto finale diverso (cioè modello) anche se il prodotto finale è nella stessa famiglia di un prodotto finale con licenza precedente. Questa licenza è specifica per il Licenziatario e il nome e il modello del singolo Prodotto, che deve essere definito nella licenza. La regola generale che applichiamo è:
-Prezzi
+> Tutti i programmi robotdazero.it possono essere concessi in licenza commercialmente, nel qual caso non si utilizza alcuna licenza open source e non si violano le norme. Le informazioni sulla licenza fornite in questa sezione riguardano il nostro software embedded, come ila piattaforma Kaspian. 
 
-Kaspian: 3000 euro i.c.
+La licenza per singolo prodotto consente a una determinata azienda (“Licenziatario”) di incorporare la piattaforma in un prodotto finale del Licenziatario(Prodotto singolo). Il Licenziatario può distribuire / vendere un numero illimitato di unità del Singolo Prodotto (licenza royalty-free), per tutta la durata del Singolo Prodotto. È richiesta una licenza di prodotto singolo diversa per ogni prodotto finale diverso (cioè modello) anche se il prodotto finale è nella stessa famiglia di un prodotto finale con licenza precedente. Questa licenza è specifica per il Licenziatario e il nome e il modello del singolo Prodotto, che deve essere definito nella licenza. 
 
-Linea di prodotti Licenza
+
+## Prezzi
+
+Una singola licenza per piattaforma Kaspian: 
+3000 euro i.c.
+
+### Linea di prodotti Licenza
 
 La licenza della linea di prodotti consente a una determinata azienda (“Licenziatario”) di incorporare i tipi specificati di framework QP ™ Real-Time Embedded in un numero qualsiasi di prodotti finali all’interno di una famiglia di prodotti correlati(Linea di prodotti). Il licenziatario può distribuire / vendere un numero illimitato di unità di ciascuno di tali prodotti (licenza royalty-free), per la durata dei prodotti finali all’interno della Linea di prodotti. La licenza della linea di prodotti si applica a tutti i prodotti finali che svolgono funzioni simili all’interno della stessa linea di prodotti.
 
 
 
+```bash
 //============================================================================
 // Product: "" example, Kaspian kernel, app
 // Last updated for: @ref qpc_7_0_0
@@ -95,6 +96,7 @@ La licenza della linea di prodotti consente a una determinata azienda (“Licenz
 // <www.robotdazero.it/contatti>
 // <info@robotdazero.it>
 //============================================================================
+```
 
 
 <ul>
