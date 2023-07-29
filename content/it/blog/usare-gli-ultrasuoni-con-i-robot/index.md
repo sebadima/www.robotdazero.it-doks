@@ -76,16 +76,6 @@ Nel dettaglio in sensore opera in questo modo:
 
 Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di calcolare la distanza reale di un oggetto. Come è possibile? Perchè sappiamo con precisione la velocità del suono a livello del mare che è circa 330 mt al secondo e basta fare una proporzione per avere la distanza in centimetri, la risoluzione che verosimilmente ci servirà con i Robot mobili.
 
-#### La disposizione dei pin dell’ HC-SR04 {#la-disposizione-dei-pin-dell-hc-sr04}
-
-<img decoding="async" src="images/schema del sensore ad ultrasuoni.webp" alt="schema del sensore ad ultrasuoni" /> 
-
-- VCC  : +5VDC
--  Trig : Trigger (INPUT)
--  Echo : Echo (OUTPUT)
--  GND  : GND
-
-
 ## COME FANNO I ROBOT A CALCOLARE LE DISTANZE USANDO IL SENSORE HCSR04 E ARDUINO
 
 In questi progetto il sensore legge e scrive la distanza da un oggetto nel monitor serial del tuo IDE Arduino. L’obiettivo del progetto è iniziare a capire come funziona il sensore, poi nella parte centrale di questo post costruiremo un vero Robot, con una logica di funzionamento “complessa” e capacità dinamiche.
@@ -103,13 +93,10 @@ Ecco una lista delle cose che vi serviranno:
 - Batteria 9V
 - Portabatteria con Jack standard 9V
 
-### LO SCHEMA
 
-Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il sensore ultrasonico HC-SR04 al tuo Arduino in pochi minuti.
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/104.webp">
 
-<img decoding="async" src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=701%2C327&ssl=1" alt="" /> 
-
-### COME COLLEGARE ARDUINO AL SENSORE HC-SR04 {#COME-COLLEGARE-ARDUINO-AL-SENSORE-HC-SR04}
+### COME COLLEGARE ARDUINO AL SENSORE HC-SR04
 
 nella parte sinistra i pin del sensore, a destra quelli di Arduino
 
