@@ -6,7 +6,7 @@ date: 2023-05-10T09:19:42+01:00
 lastmod: 2023-05-10T09:19:42+01:00
 draft: false
 weight: 50
-images: ["sensore-ad-ultrasuoni-hc-sr04.webp"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["HC-SR04", "guide", "sensori"]
 contributors: ["sebadima"]
