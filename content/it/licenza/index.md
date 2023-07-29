@@ -113,6 +113,35 @@ Il licenziatario può distribuire / vendere un numero illimitato di unità di ci
 // <www.robotdazero.it/contatti>
 // <info@robotdazero.it>
 //============================================================================
+//============================================================================
+//
+// This code is covered by the following QP license:
+// License #    : LicenseRef-RBT0-dual
+// Issued to    : Any user of the Robotdazero™ software platform
+// Framework(s) : Robotdazero™
+// Support ends : 2024-12-31
+// License scope:
+//
+// Copyright (C) 2005 Robotdazero™, <www.robotdazero.it>.
+//
+// This software is dual-licensed under the terms of the open source GNU
+// General Public License version 3 (or any later version), or alternatively,
+// under the terms of one of the closed source Quantum Leaps commercial
+// licenses.
+//
+// The terms of the open source GNU General Public License version 3
+// can be found at: <www.gnu.org/licenses/gpl-3.0>
+//
+// The terms of the closed source Robotdazero™ commercial licenses
+// can be found at: <www.rbotdazero.it/licenza>
+//
+// Redistributions in source code must retain this top-level comment block.
+// Plagiarizing this software to sidestep the license obligations is illegal.
+//
+// Contact information:
+// <www.robotdazero.it/contatti>
+// <info@robotdazero.it>
+//============================================================================
 ```
 
 
