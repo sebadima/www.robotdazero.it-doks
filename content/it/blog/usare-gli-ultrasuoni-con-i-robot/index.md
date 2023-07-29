@@ -47,9 +47,13 @@ Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanz
 
 > Fisicamente è piccolo, seppure non minuscolo e nella parte anteriore presenta due tronchi di cono in plastica. Uno si limita a trasmettere il segnale mentre l’altro lo riceve. Il sensore rileva il segnale e crea un impulso elettrico di durata proporzionale al ritardo.
 
-#### Caratteristiche elettriche e dinamiche {#caratteristiche-elettriche-e-dinamiche}
+### CARATTERISTICHE ELETTRICHE E DINAMICHE {#CARATTERISTICHE-ELETTRICHE-E-DINAMICHE}
 
-Le specifiche tecniche del sensore [HC-SR04][1]:
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/103.webp">
+
+
+##### Le specifiche tecniche del sensore HC-SR04:
 
 1. Alimentazione       : +5V DC
 2. Corrente a riposo   : &lt;2mA
@@ -81,11 +85,6 @@ Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di
 -  Echo : Echo (OUTPUT)
 -  GND  : GND
 
-#### Dove comprarlo su Internet: {#dove-comprarlo-su-internet}
-
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="sensore ad ultrasuoni su amazon" src="images/sensore ad ultrasuoni su amazon.png">
-
-Ti consiglio di aquistare il sensore ultrasonico [HC-SR04][1] su [Amazon][1] cercando il prezzo più basso tra i prodotti con almeno 4 stelle. In alternativa puoi cercare su banggood.com.
 
 ## COME FANNO I ROBOT A CALCOLARE LE DISTANZE USANDO IL SENSORE HCSR04 E ARDUINO
 
@@ -276,7 +275,7 @@ void loop() {
    Serial.print(distanza);
    Serial.println(" cm");
 }  
-```bash
+```
 
 
 
@@ -312,4 +311,5 @@ Infine nel loop(), per avere la distanza in cm basta usare la chiamata di funzio
     
 
 Le solite istruzioni di **print** permettono di vedere sull’IDE di Arduino le distanza dagli oggetti anche in movimento. Provate a vedere la differenza di comportamento con il programma precedente. Se tutto ha funzionato correttamente non dovremmo avere differenze.
+
 
