@@ -22,7 +22,6 @@ Utilizziamo il modello di doppia licenza, in cui si combinano sia i modelli di d
 
 ## Domande frequenti sulle licenze
 
-
 ### La politica di doppia licenza di Robotdazero™ è ancora “open source”?
 
 > Sì, finché il tuo software è open source compatibile con la GPL al 100%, Robotdazero™ è un fornitore open source compatibile con la GPL al 100% che è indistinguibile da qualsiasi altro fornitore open source “puro”.
@@ -73,10 +72,11 @@ Una licenza multipla per piattaforma Kaspian costa 15.000 euro i.c.
 
 <br>
 
-> La licenza multipla consente a una determinata azienda (“Licenziatario”) di incorporare i tipi specificati di framework Robotdazero™ in un numero qualsiasi di prodotti finali all’interno di una famiglia di prodotti correlati(Linea di prodotti). Il licenziatario può distribuire / vendere un numero illimitato di unità di ciascuno di tali prodotti (licenza royalty-free), per la durata dei prodotti finali all’interno della Linea di prodotti. La licenza della linea di prodotti si applica a tutti i prodotti finali che svolgono funzioni simili all’interno della stessa linea di prodotti.
+> La licenza multipla consente a una determinata azienda (“Licenziatario”) di incorporare i tipi specificati di framework Robotdazero™ in un numero qualsiasi di prodotti finali all’interno di una famiglia di prodotti correlati (Linea di prodotti). 
 
+Il licenziatario può distribuire / vendere un numero illimitato di unità di ciascuno di tali prodotti (licenza royalty-free), per la durata dei prodotti finali all’interno della Linea di prodotti.
 
-
+<br>
 <hr>
 
 ```bash
@@ -121,7 +121,7 @@ Una licenza multipla per piattaforma Kaspian costa 15.000 euro i.c.
 </ul>
 
 <details open="">
-  <summary>Usa il modulo sottostante per inviarci le tue comunicazioni </summary>
+  <summary>Usa il modulo sottostante per chiederci un preventivo</summary>
 
 <form action="https://formspree.io/f/xyybpbln" method="POST">
 <input type="hidden" name="_language" value="it"/>
