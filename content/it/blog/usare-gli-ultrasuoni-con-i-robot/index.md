@@ -29,13 +29,13 @@ homepage: false
 
 ## COSA SONO I SENSORI A ULTRASUONI? {#COSA-SONO-I-SENSORI-A-ULTRASUONI}
 
-In breve sono l’equivalente elettronico delle **orecchie dei pipistrelli**, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
+In breve sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
 
-La versione elettronica del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo tre in questo progetto e avrai con poca spesa e un software molto semplice il tuo primo Robot capace di movimento autonomo.
+> La versione elettronica del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo un esemplare per dotare di movimento autonomo un piccolo rover.
 
-## COME USARE IL SENSORE A ULTRASUONI HC-SR04 CON ARDUINO {#COME-USARE-IL-SENSORE-A-ULTRASUONI-HC-SR04-CON-ARDUINO}
+## COME USARE IL SENSORE A ULTRASUONI HC-SR04 CON ARDUINO
 
-In questo post vedremo come usare il sensore [HCSR04][1] e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
+In questo post vedremo come usare il sensore HCSR04 e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/HC-SR04_bepinv.jpg">
 
