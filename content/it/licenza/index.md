@@ -80,7 +80,7 @@ La licenza della linea di prodotti consente a una determinata azienda (“Licenz
 //
 // Alternatively, this program may be distributed and modified under the
 // terms of robotdazero.it license, which expressly supersede
-// the GNU General Public License and are specifically designed for
+// the GNU General Public License and is specifically designed for
 // licensees interested in retaining the proprietary status of their code.
 //
 // This program is distributed in the hope that it will be useful,
