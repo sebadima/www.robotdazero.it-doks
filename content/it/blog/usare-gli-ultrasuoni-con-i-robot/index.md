@@ -27,11 +27,11 @@ homepage: false
 </style>
 
 
-## COSA SONO I SENSORI A ULTRASUONI? {#COSA-SONO-I-SENSORI-A-ULTRASUONI}
+## COSA SONO I SENSORI A ULTRASUONI?
 
 In breve sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
 
-> La versione elettronica del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo un esemplare per dotare di movimento autonomo un piccolo rover.
+> La versione *consumer* del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo un esemplare per il movimento autonomo di un piccolo rover.
 
 ## COME USARE IL SENSORE A ULTRASUONI HC-SR04 CON ARDUINO
 
@@ -304,7 +304,7 @@ Nel setup(), come al solito bisogna settare la Porta Seriale allavelocità di 96
     Serial.begin(9600);
     
 
-In fine nel loop(), per avere la distanza in cm basta usare la chiamata di funzione ping_cm(). In questo caso possiamo parlare di **metodo** perchè il linguaggio C++ da cui deriva il linguaggio di Arduino è un linguaggio di programmazione **ad oggetti**. Noi ci adeguiamo alla terminologia e invece di chiamata a funzione parliamo di **metodo**.
+Infine nel loop(), per avere la distanza in cm basta usare la chiamata di funzione ping_cm(). In questo caso possiamo parlare di **metodo** perchè il linguaggio C++ da cui deriva il linguaggio di Arduino è un linguaggio di programmazione **ad oggetti**. Noi ci adeguiamo alla terminologia e invece di chiamata a funzione parliamo di **metodo**.
 
     unsigned int distanza = sonar.ping_cm();
     Serial.print(distanza);
