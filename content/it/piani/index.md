@@ -25,4 +25,4 @@ Il costo della dashboard IOT con Elaborazione in Machine Learning è di 19 euro 
 <img class="x figure-img img-fluid lazyload blur-up" width="1024" alt="" src="./images/immagine della dashboard.png">
 
 
-<h4>Acquista un abbonamento mensile alla nostra app sul nostro <a href="https://www.robotdazero.it/ecommerce/" target="_blank" rel="noopener">ecommerce</a></h4>
+<h4>Acquista un abbonamento mensile alla nostra app sul nostro <a href="https://buy.stripe.com/7sI2bAdQrd1zfUQ8wD?locale=it" target="_blank" rel="noopener">ecommerce</a></h4>
