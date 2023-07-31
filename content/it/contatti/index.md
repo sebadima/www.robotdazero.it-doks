@@ -32,7 +32,7 @@ section {
 .container .contactInfo {
     position: absolute;
     top: 40px;
-    background-color: #fa4c4c;
+    background-color: #F8507A;
     width: 320px;
     padding: 80px;
     display: flex;
@@ -185,10 +185,13 @@ section {
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background-color: #fa4c4c;
+    background-color: #F8507A;
     font-weight: 500;
 }
 </style>
+
+<h3>Invia un messaggio</h3>
+<h4>Chiedi e ottieni solo le informazioni che ti interessano</h4>
 
 <section>
 <div class="container">
@@ -213,7 +216,7 @@ section {
 
 <div class="contactForm">
 <form action="https://formspree.io/f/xyybpbln" method="POST">
-<h2>Invia un messaggio</h2>
+<h2>Invia un messaggio, i campi sono tutti obbligatori</h2>
 <div class="formBox">
 <div class="inputBox w50">
 <input type="text" name="" id="" required>
