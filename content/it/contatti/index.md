@@ -197,13 +197,12 @@ section {
 <div>
 <br>
 <br>
-<h2>Info</h2>
+<h3 style="color:#ffffff;">Info:</h3>
 <ul class="info">
-<p style="color:white;">Via Acradina 1</p>
-<br>
-<p style="color:white;">96100 - Siracusa,</p>
-<p style="color:white;">info@robordazero.it</p>
-<p style="color:white;">0931-111-111</p>
+<p style="color:#eeeeee;">Via Acradina 1</p>
+<p style="color:#eeeeee">96100 - Siracusa,</p>
+<p style="color:#eeeeee">info@robordazero.it</p>
+<p style="font-size: 16px; color:#eeeeee">+39 351 51 33 273</p>
 </ul>
 </div>
 
@@ -233,7 +232,7 @@ section {
 <span>Scrivi qui il tuo messaggio.</span>
 </div>
 <div class="inputBox w100">
-<input type="submit" value="Invia il messaggio">
+<input type="submit" value="Invia">
 </div>
 </div>
 </div>
