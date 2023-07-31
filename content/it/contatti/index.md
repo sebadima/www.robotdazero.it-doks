@@ -199,8 +199,8 @@ section {
 <div>
 <ul class="info">
 <h3 style="color:#ffffff;">I N F O</h3>
-<p style="color:#eeeeee;">Via Acradina 1</p>
-<p style="color:#eeeeee">96100 - Siracusa,</p>
+<p style="color:#eeeeee;">Viale Acradina 1</p>
+<p style="color:#eeeeee">96100 - Siracusa</p>
 <p style="color:#eeeeee">info@robordazero.it</p>
 <p style="font-size: 16px; color:#eeeeee">+39 351 51 33 273</p>
 </ul>
