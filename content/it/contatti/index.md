@@ -197,8 +197,8 @@ section {
 <div>
 <br>
 <br>
-<h3 style="color:#ffffff;">Info:</h3>
 <ul class="info">
+<h3 style="color:#ffffff;">Info</h3>
 <p style="color:#eeeeee;">Via Acradina 1</p>
 <p style="color:#eeeeee">96100 - Siracusa,</p>
 <p style="color:#eeeeee">info@robordazero.it</p>
@@ -207,11 +207,10 @@ section {
 </div>
 
 <ul class="socialIcon">
-<li><a href="#"><img src="img/1.png" alt=""></a></li>
-<li><a href="#"><img src="img/2.png" alt=""></a></li>
-<li><a href="#"><img src="img/3.png" alt=""></a></li>
-<li><a href="#"><img src="img/4.png" alt=""></a></li>
-<li><a href="#"><img src="img/5.png" alt=""></a></li>
+<li><a href="https://twitter.com/robofromscratch"><img src="images/1.png" alt=""></a></li>
+<li><a href="https://www.linkedin.com/in/sergiorame/"><img src="images/2.png" alt=""></a></li>
+<li><a href="#"><img src="images/3.png" alt=""></a></li>
+<li><a href="#"><img src="images/4.png" alt=""></a></li>
 </ul>
 </div>
 
