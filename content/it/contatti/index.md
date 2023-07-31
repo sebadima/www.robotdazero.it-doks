@@ -195,8 +195,6 @@ section {
 <div class="container">
 <div class="contactInfo">
 <div>
-<br>
-<br>
 <ul class="info">
 <h3 style="color:#ffffff;">Info</h3>
 <p style="color:#eeeeee;">Via Acradina 1</p>
