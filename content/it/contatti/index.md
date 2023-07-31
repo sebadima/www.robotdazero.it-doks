@@ -198,7 +198,7 @@ section {
 <div class="contactInfo">
 <div>
 <ul class="info">
-<h3 style="color:#ffffff;">INFO</h3>
+<h3 style="color:#ffffff;">I N F O</h3>
 <p style="color:#eeeeee;">Via Acradina 1</p>
 <p style="color:#eeeeee">96100 - Siracusa,</p>
 <p style="color:#eeeeee">info@robordazero.it</p>
@@ -216,7 +216,7 @@ section {
 
 <div class="contactForm">
 <form action="https://formspree.io/f/xyybpbln" method="POST">
-<h2>Invia un messaggio, i campi sono tutti obbligatori</h2>
+<h2>I campi sono tutti obbligatori</h2>
 <div class="formBox">
 <div class="inputBox w50">
 <input type="text" name="" id="" required>
