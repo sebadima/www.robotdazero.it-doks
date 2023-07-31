@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Contatti"
 description: "Come raggoungerci."
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -195,7 +195,7 @@ section {
 <div class="contactInfo">
 <div>
 <ul class="info">
-<h3 style="color:#ffffff;">Info</h3>
+<h3 style="color:#ffffff;">INFO</h3>
 <p style="color:#eeeeee;">Via Acradina 1</p>
 <p style="color:#eeeeee">96100 - Siracusa,</p>
 <p style="color:#eeeeee">info@robordazero.it</p>
