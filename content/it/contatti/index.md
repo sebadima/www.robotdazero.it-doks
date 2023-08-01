@@ -7,8 +7,9 @@ draft: false
 images: []
 ---
 
-<style>
 
+
+<style>
 
 body {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/221620/cityscape.svg);
@@ -88,9 +89,6 @@ input[type='submit'] {
   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
   input[type='submit'] {margin-left: 10px;}
 }
-
-
-
 </style>
 
 
@@ -110,9 +108,6 @@ input[type='submit'] {
   <br>
   <button class="btn btn-primary btn-lg px-4 mb-2" type="submit">Invia il messaggio</button>
 </form>
-
-</details>
-
 -->
 
 
@@ -120,11 +115,11 @@ input[type='submit'] {
     <h3 class="bz-btmmargin">esprimi pure i tuoi dubbi :-)</h3>
     <form action="https://formspree.io/f/xyybpbln" method="POST">
       <div class="bz-left">
+<input type="hidden" name="_language" value="it"/>
         <input class="bz-btmmargin" type="text" id="name" placeholder="Nome"/>
         <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="email" required/>
       </div>
       <div class="bz-right">
-        <input class="bz-btmmargin" type="text" id="company" placeholder="Telefono"/>
         <input class="bz-btmmargin" type="text" id="lp-phone"  name="message" placeholder="messaggio" required/>
       </div>
       <div class="bz-clear"></div>
