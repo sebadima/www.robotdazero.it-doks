@@ -1,6 +1,6 @@
 ---
-title: "Contatti"
-description: "Come raggoungerci."
+title: "Come possiamo aiutarti?"
+description: "I nostri contatti"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
 draft: false
@@ -112,7 +112,7 @@ input[type='submit'] {
 
 
 <div class="bz-container">
-  <h3 class="bz-btmmargin">come possiamo aiutarti...</h3>
+  <h5 class="bz-btmmargin">Viale Acradina,1 - 96100 - Tel: 351-51-33-273 </h5>
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
@@ -122,7 +122,7 @@ input[type='submit'] {
       <input class="bz-btmmargin" type="text" id="messaggio"  name="message" placeholder="messaggio" required/>
     </div>
     <div class="bz-clear"></div>
-    <input class="bz-topmargin" type="submit" value="Submit">
+    <input class="bz-topmargin" type="submit" value="Invia">
     <div class="bz-clear"></div>
   </form>
 </div>
