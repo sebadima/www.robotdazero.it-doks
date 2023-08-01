@@ -12,7 +12,7 @@ images: []
 <style>
 
 body {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/221620/cityscape.svg);
+  background-image: url(images/cityscape.svg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
