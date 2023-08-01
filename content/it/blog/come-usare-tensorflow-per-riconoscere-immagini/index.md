@@ -18,7 +18,7 @@ homepage: false
 
 <hr>
 
-**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI4**
+**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI400**
 
 ### QUALI SONO I MODELLI DI RETE NEURALE PIÙ ADATTI AD UN HARDWARE LIMITATO?
 
@@ -73,6 +73,12 @@ Ecco alcuni esempi di piattaforme e requisiti di RAM e CPU per VGG16:
 - PyTorch: 4 GB di RAM, 4 core di CPU
 - Keras: 4 GB di RAM, 4 core di CPU
 
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
+L'algoritmo non può dunque essere "addestrato" su una macchina "leggera" come l'RPI ma può riconosce le immagini con soli 4 Gb di Ram. Per questo motivo abbiamo deciso di fare una prova pratica delle prestazioni.
+</div>
+
+<br>
+
 È importante notare che questi sono solo requisiti minimi. I requisiti effettivi di RAM e CPU possono variare a seconda del set di dati utilizzato, della complessità del modello e della piattaforma su cui viene eseguito il modello.
 
 ### IL FILE SORGENTE DEL PROGRAMMA
@@ -84,29 +90,25 @@ from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 from keras.applications.vgg16 import preprocess_input, decode_predictions
 import numpy as np
-#load imgenet vgg16 model
 
 model = VGG16(weights='imagenet')
-#load image and change size to 224*224
 img_path = 'demo.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
-#convert image to array
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input(x)
-#predict class for image
 preds = model.predict(x)
 
 print('Result:', decode_predictions(preds, top=1)[0])
 ```
 
-### CARICARE IL PROGRAMMA SU UN DESKTOP LINUX O SU RPI
+### COME PUOI CARICARE IL PROGRAMMA SU UN DESKTOP LINUX O SU RPI
 
-**1.** Clicca sul comando "COPY" che appare sulla zona gialla del sorgente.
+**1.** Clicca sul comando "Copy" che appare in alto a destra sul sorgente.
 
-**2.** Carica il programma su un file. 
+**2.** Incolla il programma su un file. 
 
-Per completare questa operazione ti basta usare il terminale con il comando VI o nano  o puoi usare GEDIT dal desktop. In genere non ha nessuna importanza quale software usi a patto che sia un editor fi testo e non un word processor. Usam il programma che preferisci e assegna il nome image_classify.py. Per eseguire il programma:
+Per completare questa operazione ti basta usare il terminale con il comando **vi** o **nano**  o puoi usare **GEDIT/SublimeText** dal desktop. In genere non ha nessuna importanza quale software userai purchè si tratti di un editor di testo e non un di un word processor. Usa il programma che preferisci e sava il file con il nome **image_classify.py**. Per eseguire il programma:
 
 ```bash
 python image_classify.py
@@ -124,8 +126,8 @@ La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click de
 
 **1**. Il programma lanciato su uno Raspberry Pi 400 (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
 
-Dopo circa 15 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
-Il tempo di elabprazione è stato di circa 30 secondi.
+Dopo circa 20 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
+Il tempo di elaborazione reale è stato di **17.992** secondi.
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/Screenshot from 2023-08-01 16-15-59.png">
 
