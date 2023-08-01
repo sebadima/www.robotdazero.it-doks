@@ -16,7 +16,7 @@ homepage: false
 
 
 
-### In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI4/3
+##### In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI4/3
 
 
 ### COSA È IL MDELLO VGG16 NEL MACHINE LEARNING?
@@ -31,7 +31,7 @@ VGG16 è un modello molto potente per il riconoscimento delle immagini. Tuttavia
 
 Nonostante la sua complessità, VGG16 è ancora un modello molto popolare per il riconoscimento delle immagini. È stato utilizzato in una varietà di applicazioni, tra cui la classificazione delle immagini, il rilevamento degli oggetti e la segmentazione delle immagini.
 
-Ecco alcune delle caratteristiche di VGG16:
+**Ecco alcune delle caratteristiche di VGG16:**
 
     È una rete deep con 16 strati.
     È stata addestrata su un enorme set di dati di immagini chiamato ImageNet.
@@ -58,6 +58,7 @@ Ecco alcuni esempi di piattaforme e requisiti di RAM e CPU per VGG16:
 
 
 ```bash
+# file image_classify.py
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 from keras.applications.vgg16 import preprocess_input, decode_predictions
@@ -78,31 +79,43 @@ preds = model.predict(x)
 print('Result:', decode_predictions(preds, top=1)[0])
 ```
 
+### Caricare il programma su un desktop Linux o su RPI
+
+Per caricare il programma ti vasta usare il terminale con il comando VI o nano  o puoi usare GEDIT dal desktop. In genere non ha nessuna importanza quale software usi a patto che sia un editor fi testo e non un word processor. Usam il programma che preferisci e assegna il nome image_classify.py. Per eseguire il programma:
+
+```bash
+python image_classify.py
+oppure
+python3 image_classify.py
+```
+
+
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/demo.jpg">
 
-La foto "demo.jpg" che puoi scaricare direttamente dalla paginia facendo click destro e "salva con nome"...
+La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click destro e "salva con nome"...
 
 
 ### IL RISULTATO DEL PROGRAMMA
 
+**1**. Il test su Raspberry PI 4B con 8GB di Ram:
 Dopo circa 30 secondi attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato accettabile ma forse inferiore alle attese. La posizione dell'aereo forse influise sul risultato.
+Il tempo di elabprazione è stato di circa 30 secondi.
+
+```bash
+2023-08-01 13:27:22.182028: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 5% of free system memory.
+2023-08-01 13:27:22.737930: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 5% of free system memory.
+1/1 [==============================] - 2s 2s/step
+Result: [('n02690373', 'airliner', 0.86845803)]
+```
+
+**2**. Lo stesso programma su Raspberry Pi 400 (mini desktop con clock a 1.8 Ghz) con 4GB di RAM
+Il tempo di elabprazione è stato identico, sempre circa 30 secondi.
 
 ```bash
 2023-08-01 13:27:22.182028: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
 2023-08-01 13:27:22.737930: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
 2023-08-01 13:27:23.190633: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
 2023-08-01 13:27:29.485538: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-1/1 [==============================] - 2s 2s/step
-Result: [('n02690373', 'airliner', 0.86845803)]
-```
-
-Lo stesso programma su Raspberry Pi 3B+ con 1GB di RAM
-
-```bash
-2023-08-01 13:27:22.182028: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 30% of free system memory.
-2023-08-01 13:27:22.737930: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 30% of free system memory.
-2023-08-01 13:27:23.190633: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 30% of free system memory.
-2023-08-01 13:27:29.485538: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 30% of free system memory.
 1/1 [==============================] - 2s 2s/step
 Result: [('n02690373', 'airliner', 0.86845803)]
 ```
