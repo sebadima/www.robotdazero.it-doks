@@ -19,7 +19,7 @@ homepage: false
 <hr>
 <br>
 
-I robot semoventi come il Rover che stiamo progettando sono afflitti da un limite tecnologico al momento insuperabile: la ridotta potenza dei computer per IOT quali Raspberry PI o JETSON Nano. Seppure le prestazioni siano continuamente in crescita al momento siamo costretti a selezionare algoritmi potenti ma non troppo "esigenti" in termini di RAM e CPU. Il nostro robot è autoguidato e deve per questo fare girare programmi in machine learning per riconoscere i percorsi ed evitare gli ostacoli. Nella nostra ricerca di algoritmi performanti ci occupiamo oggi di una libreria neurale molto usata, la "VGG16".   
+I robot semoventi come il Rover che stiamo progettando sono afflitti da un limite tecnologico al momento insuperabile: la ridotta potenza dei computer per IOT quali <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank" rel="noopener">Raspberry Pi</a> o <a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" target="_blank" rel="noopener">Jetson Nano</a>. Seppure le prestazioni siano continuamente in crescita al momento siamo costretti a selezionare algoritmi potenti ma non troppo "esigenti" in termini di RAM e CPU. Il nostro robot è autoguidato e deve per questo fare girare programmi in machine learning per riconoscere i percorsi ed evitare gli ostacoli. Nella nostra ricerca di algoritmi performanti ci occupiamo oggi di una libreria neurale molto usata, la "VGG16".   
 
 **In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI**
 
@@ -45,11 +45,11 @@ Tra le reti convoluzionali (CNN) più diffuse abbiamo deciso di provare la rete 
 
 ### COSA È IL MODELLO VGG16 NEL MACHINE LEARNING?
 
-VGG16 è una rete neurale convoluzionale (CNN) profonda sviluppata dal Visual Geometry Group (VGG) del Dipartimento di Informatica dell'Università di Oxford. È stato presentato per la prima volta nel 2014 al concorso ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2014, dove ha ottenuto un punteggio di top-5 accuracy del 96,7%.
+<a href="https://medium.com/@mygreatlearning/everything-you-need-to-know-about-vgg16-7315defb5918" target="_blank" rel="noopener">VGG16</a> è una rete neurale convoluzionale (CNN) profonda sviluppata dal Visual Geometry Group (<a href="https://www.robots.ox.ac.uk/~vgg/" target="_blank" rel="noopener">VGG</a>) del Dipartimento di Informatica dell'Università di Oxford. È stato presentato per la prima volta nel 2014 al concorso ImageNet Large Scale Visual Recognition Challenge (<a href="https://www.image-net.org/challenges/LSVRC/" target="_blank" rel="noopener">ILSVRC</a>) 2014, dove ha ottenuto un punteggio di top-5 accuracy del 96,7%.
 
 VGG16 è una rete deep, il che significa che ha molti strati. Ha 16 strati convoluzionali, 3 strati fully connected e 3 strati di classificazione. I livelli convoluzionali sono responsabili dell'estrazione di caratteristiche dalle immagini, mentre i livelli fully connected sono responsabili della classificazione delle immagini.
 
-> VGG16 è stato addestrato su un enorme set di dati di immagini chiamato ImageNet. ImageNet è un set di dati di oltre 14 milioni di immagini etichettate con 22.000 categorie. Allenare un modello su un set di dati così grande richiede molta potenza di elaborazione e tempo.
+> VGG16 è stato addestrato su un enorme set di dati di immagini chiamato ImageNet. <a href="https://www.image-net.org/" target="_blank" rel="noopener">ImageNet</a> è un set di dati di oltre 14 milioni di immagini etichettate con 22.000 categorie. Allenare un modello su un set di dati così grande richiede molta potenza di elaborazione e tempo.
 
 VGG16 è un modello molto potente per il riconoscimento delle immagini. Tuttavia, è anche molto complesso e richiede molta potenza di elaborazione per essere addestrato. Per questo motivo, VGG16 non è sempre la scelta migliore per i problemi di riconoscimento delle immagini. In alcuni casi, è possibile utilizzare modelli più semplici e meno potenti che possono essere addestrati più velocemente.
 
