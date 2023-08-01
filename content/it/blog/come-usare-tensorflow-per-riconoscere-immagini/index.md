@@ -16,16 +16,37 @@ homepage: false
 
 
 
-##### In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI4/3
+<hr>
 
+**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI4**
 
-### COSA È IL MDELLO VGG16 NEL MACHINE LEARNING?
+### QUALI SONO I MODELLI DI RETE NEURALE PIÙ ADATTI AD UN HARDWARE LIMITATO?
+
+I modelli di rete neurale convoluzionale più adatti ad un hardware dalle prestazioni limitate sono quelli che hanno una struttura semplice e che non richiedono una grande quantità di dati di addestramento. Alcuni esempi di questi modelli includono:
+
+    Le reti neurali convoluzionali convoluzionali (CNN)
+    Le reti neurali convoluzionali residuali (ResNet)
+    Le reti neurali convoluzionali convoluzionali (DenseNet)
+
+Questi modelli sono tutti in grado di raggiungere prestazioni elevate su una varietà di compiti, ma sono anche relativamente efficienti in termini di risorse. Ciò li rende adatti per l'esecuzione su hardware dalle prestazioni limitate, come i dispositivi mobili e le schede di elaborazione a tensore.
+
+Oltre alla struttura semplice e alla ridotta necessità di dati di addestramento, ci sono altri fattori che possono contribuire alla compatibilità di un modello di rete neurale con hardware dalle prestazioni limitate. Questi fattori includono:
+
+- La dimensione del modello: un modello più piccolo richiede meno risorse per essere eseguito.
+- La complessità del modello: un modello più semplice è più facile da implementare ed eseguire su hardware dalle prestazioni limitate.
+- I tipi di dati utilizzati dal modello: alcuni tipi di dati, come le immagini in formato JPEG, sono più efficienti in termini di risorse rispetto ad altri tipi di dati, come le immagini in formato RAW.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
+Tra le reti convoluzionali (CNN) più diffuse abbiamo deciso di provare la rete VGG16 e di fare un test "dal vivo" sulle più performante delle versioni del Raspberry, l'RPI 400 a 1.8 Ghz con 4GB di Ram.
+</div>
+
+### COSA È IL MODELLO VGG16 NEL MACHINE LEARNING?
 
 VGG16 è una rete neurale convoluzionale (CNN) profonda sviluppata dal Visual Geometry Group (VGG) del Dipartimento di Informatica dell'Università di Oxford. È stato presentato per la prima volta nel 2014 al concorso ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2014, dove ha ottenuto un punteggio di top-5 accuracy del 96,7%.
 
 VGG16 è una rete deep, il che significa che ha molti strati. Ha 16 strati convoluzionali, 3 strati fully connected e 3 strati di classificazione. I livelli convoluzionali sono responsabili dell'estrazione di caratteristiche dalle immagini, mentre i livelli fully connected sono responsabili della classificazione delle immagini.
 
-VGG16 è stato addestrato su un enorme set di dati di immagini chiamato ImageNet. ImageNet è un set di dati di oltre 14 milioni di immagini etichettate con 22.000 categorie. Allenare un modello su un set di dati così grande richiede molta potenza di elaborazione e tempo.
+> VGG16 è stato addestrato su un enorme set di dati di immagini chiamato ImageNet. ImageNet è un set di dati di oltre 14 milioni di immagini etichettate con 22.000 categorie. Allenare un modello su un set di dati così grande richiede molta potenza di elaborazione e tempo.
 
 VGG16 è un modello molto potente per il riconoscimento delle immagini. Tuttavia, è anche molto complesso e richiede molta potenza di elaborazione per essere addestrato. Per questo motivo, VGG16 non è sempre la scelta migliore per i problemi di riconoscimento delle immagini. In alcuni casi, è possibile utilizzare modelli più semplici e meno potenti che possono essere addestrati più velocemente.
 
@@ -54,7 +75,7 @@ Ecco alcuni esempi di piattaforme e requisiti di RAM e CPU per VGG16:
 
 È importante notare che questi sono solo requisiti minimi. I requisiti effettivi di RAM e CPU possono variare a seconda del set di dati utilizzato, della complessità del modello e della piattaforma su cui viene eseguito il modello.
 
-
+### IL FILE SORGENTE DEL PROGRAMMA
 
 
 ```bash
@@ -79,9 +100,13 @@ preds = model.predict(x)
 print('Result:', decode_predictions(preds, top=1)[0])
 ```
 
-### Caricare il programma su un desktop Linux o su RPI
+### CARICARE IL PROGRAMMA SU UN DESKTOP LINUX O SU RPI
 
-Per caricare il programma ti vasta usare il terminale con il comando VI o nano  o puoi usare GEDIT dal desktop. In genere non ha nessuna importanza quale software usi a patto che sia un editor fi testo e non un word processor. Usam il programma che preferisci e assegna il nome image_classify.py. Per eseguire il programma:
+**1.** Clicca sul comando "COPY" che appare sulla zona gialla del sorgente.
+
+**2.** Carica il programma su un file. 
+
+Per completare questa operazione ti basta usare il terminale con il comando VI o nano  o puoi usare GEDIT dal desktop. In genere non ha nessuna importanza quale software usi a patto che sia un editor fi testo e non un word processor. Usam il programma che preferisci e assegna il nome image_classify.py. Per eseguire il programma:
 
 ```bash
 python image_classify.py
@@ -97,26 +122,24 @@ La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click de
 
 ### IL RISULTATO DEL PROGRAMMA
 
-**1**. Il test su Raspberry PI 4B con 8GB di Ram:
-Dopo circa 30 secondi attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato accettabile ma forse inferiore alle attese. La posizione dell'aereo forse influise sul risultato.
+**1**. Il programma lanciato su uno Raspberry Pi 400 (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
+
+Dopo circa 15 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
 Il tempo di elabprazione è stato di circa 30 secondi.
 
-```bash
-2023-08-01 13:27:22.182028: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 5% of free system memory.
-2023-08-01 13:27:22.737930: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 5% of free system memory.
-1/1 [==============================] - 2s 2s/step
-Result: [('n02690373', 'airliner', 0.86845803)]
-```
-
-**2**. Lo stesso programma su Raspberry Pi 400 (mini desktop con clock a 1.8 Ghz) con 4GB di RAM
-Il tempo di elabprazione è stato identico, sempre circa 30 secondi.
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/Screenshot from 2023-08-01 16-15-59.png">
 
 ```bash
-2023-08-01 13:27:22.182028: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 13:27:22.737930: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 13:27:23.190633: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 13:27:29.485538: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+(w) raspberry ~/pi (master)$ time python  image_classify.py
+2023-08-01 14:22:33.257519: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-01 14:22:33.822023: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-01 14:22:34.270226: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-01 14:22:39.745270: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
 1/1 [==============================] - 2s 2s/step
 Result: [('n02690373', 'airliner', 0.86845803)]
+
+real	0m17.992s
+user	0m18.217s
+sys	0m9.155s
 ```
 
