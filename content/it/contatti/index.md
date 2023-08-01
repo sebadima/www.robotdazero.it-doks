@@ -35,8 +35,7 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 10px;
-  border: 1px solid #7ea573;
+  border: 1px solid #B6DB6C;
 }
 
 .bz-btmmargin {
@@ -135,7 +134,7 @@ input[type='submit'] {
 <br>
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin">Facci sapere come aiutarti nei tuoi progetti...</h5>
+  <h5 class="bz-btmmargin">Come possiamo aiutarti nei tuoi progetti?</h5>
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
