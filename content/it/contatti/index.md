@@ -111,19 +111,18 @@ input[type='submit'] {
 -->
 
 
-  <div class="bz-container">
-    <h3 class="bz-btmmargin">esprimi pure i tuoi dubbi :-)</h3>
-    <form action="https://formspree.io/f/xyybpbln" method="POST">
-      <div class="bz-left">
-<input type="hidden" name="_language" value="it"/>
-        <input class="bz-btmmargin" type="text" id="name" placeholder="Nome"/>
-        <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="email" required/>
-      </div>
-      <div class="bz-right">
-        <input class="bz-btmmargin" type="text" id="lp-phone"  name="message" placeholder="messaggio" required/>
-      </div>
-      <div class="bz-clear"></div>
-      <input class="bz-topmargin" type="submit" value="Submit">
-      <div class="bz-clear"></div>
-    </form>
-  </div>
+<div class="bz-container">
+  <h3 class="bz-btmmargin">come possiamo aiutarti...</h3>
+  <form action="https://formspree.io/f/xyybpbln" method="POST">
+    <div class="bz-left">
+      <input type="hidden" name="_language" value="it"/>
+      <input class="bz-btmmargin" type="text" id="name" placeholder="Nome"/>
+      <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="email" required/>
+      <input class="bz-btmmargin" type="text" id="lp-phone"  name="telefono" placeholder="telefono"/>
+      <input class="bz-btmmargin" type="text" id="messaggio"  name="message" placeholder="messaggio" required/>
+    </div>
+    <div class="bz-clear"></div>
+    <input class="bz-topmargin" type="submit" value="Submit">
+    <div class="bz-clear"></div>
+  </form>
+</div>
