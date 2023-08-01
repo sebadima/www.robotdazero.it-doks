@@ -35,7 +35,7 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border: 1px solid #B6DB6C;
+  border: 1px solid #7EA573;
 }
 
 .bz-btmmargin {
@@ -131,6 +131,8 @@ input[type='submit'] {
 </svg>
  - info@robotdazero.it</h5>
 
+<br>
+<br>
 <br>
 
 <div class="bz-container">
