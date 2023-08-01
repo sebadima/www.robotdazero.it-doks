@@ -2,9 +2,9 @@
 title: "Come costruire un Robot guidato dalla Intelligenza Artificiale pt.2 - I Motori"
 description: "La scelta dei motori per il nostro rover."
 excerpt: "Il nostro rover richiede due motori di azionamento principali. All’inizio abbiamo considerato la ipotesi dei motori passo-passo, che si muovono di pochissimo ogni volta che vengono azionati dal driver, sono una soluzione sofisticata ma per la versione iniziale del nostro rover li abbiamo scartati; pensiamo di usarli in una una prossima evoluzione..."
-date: 2023-05-18T08:19:42+01:00
-lastmod: 2023-05-18T08:19:42+01:00
-draft: false
+date: 2023-07-18T08:19:42+01:00
+lastmod: 2023-07-18T08:19:42+01:00
+draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
