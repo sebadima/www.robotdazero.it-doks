@@ -74,7 +74,7 @@ Ecco alcuni esempi di piattaforme e requisiti di RAM e CPU per VGG16:
 - Keras: 4 GB di RAM, 4 core di CPU
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
-L'algoritmo non può dunque essere "addestrato" su una macchina "leggera" come l'RPI ma può riconosce le immagini con soli 4 Gb di Ram. Per questo motivo abbiamo deciso di fare una prova pratica delle prestazioni.
+L'algoritmo non può dunque essere "addestrato" su una macchina "leggera" come l'RPI ma può riconosce le immagini con soli 4 Gb di Ram. Per questo motivo abbiamo deciso di fare un test proatico delle prestazioni.
 </div>
 
 <br>
@@ -117,19 +117,19 @@ python3 image_classify.py
 ```
 
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/demo.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine di un aereo usata per testare algoritmo in machine learning" src="images/demo.jpg">
 
 La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click destro e "salva con nome"...
 
 
 ### IL RISULTATO DEL PROGRAMMA
 
-**1**. Il programma lanciato su uno Raspberry Pi 400 (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
+- **Il programma lanciato su uno Raspberry Pi 400**  (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
 
 Dopo circa 20 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
 Il tempo di elaborazione reale è stato di **17.992** secondi.
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/Screenshot from 2023-08-01 16-15-59.png">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine del terminale linux dopo il test di un programma in machine learning Tensorflow" src="images/Screenshot from 2023-08-01 16-15-59.png">
 
 ```bash
 (w) raspberry ~/pi (master)$ time python  image_classify.py
@@ -144,4 +144,18 @@ real	0m17.992s
 user	0m18.217s
 sys	0m9.155s
 ```
+
+
+
+### GLI ALGORITMI DI MACHINE LEARNING VENGONO UTILIZZATI PER GUIDARE ROBOT E AUTOMOBILI SENZA PILOTA 
+
+Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR. Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
+
+> Un altro modo in cui gli algoritmi di machine learning vengono utilizzati per guidare robot e automobili senza pilota è per controllare i movimenti del veicolo. Questo viene fatto inviando segnali ai motori e agli altri sistemi di controllo. Gli algoritmi di machine learning devono essere in grado di eseguire calcoli in tempo reale per tenere il passo con le condizioni in continua evoluzione della strada.
+
+Ecco alcuni esempi specifici:
+
+- **Rilevamento e classificazione degli oggetti**: gli algoritmi di machine learning vengono utilizzati per rilevare e classificare oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR.
+- **Pianificazione del percorso**: gli algoritmi vengono utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come le asperità del percorso e le condizioni meteorologiche.
+- **Controllo del rover**: gli algoritmi di machine learning vengono utilizzati per controllare i movimenti del veicolo. Questo viene fatto inviando segnali ai motori e agli altri sistemi di controllo. Gli algoritmi devono essere in grado di eseguire calcoli in tempo reale per tenere il passo con le condizioni in continua evoluzione dell'ambiente circostante.
 
