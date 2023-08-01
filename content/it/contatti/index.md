@@ -89,6 +89,10 @@ input[type='submit'] {
   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
   input[type='submit'] {margin-left: 10px;}
 }
+
+footer {
+   visibility: hidden;
+}
 </style>
 
 
@@ -112,14 +116,14 @@ input[type='submit'] {
 
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin">Viale Acradina,1 - 96100 - Tel: 351-51-33-273 </h5>
+  <h5 class="bz-btmmargin">Siamo in Viale Acradina,1 - 96100 - Tel: 351-51-33-273 </h5>
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
       <input class="bz-btmmargin" type="text" id="name" placeholder="Nome"/>
-      <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="email" required/>
-      <input class="bz-btmmargin" type="text" id="lp-phone"  name="telefono" placeholder="telefono"/>
-      <input class="bz-btmmargin" type="text" id="messaggio"  name="message" placeholder="messaggio" required/>
+      <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="Email" required/>
+      <input class="bz-btmmargin" type="text" id="lp-phone"  name="telefono" placeholder="Telefono"/>
+      <input class="bz-btmmargin" type="text" id="messaggio"  name="message" placeholder="Messaggio" required/>
     </div>
     <div class="bz-clear"></div>
     <input class="bz-topmargin" type="submit" value="Invia">
