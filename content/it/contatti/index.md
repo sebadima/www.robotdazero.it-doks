@@ -141,7 +141,6 @@ input[type='submit'] {
       <input type="hidden" name="_language" value="it"/>
       <input class="bz-btmmargin" type="text" id="name" placeholder="Nome"/>
       <input class="bz-btmmargin" type="email" name="email" id="email" placeholder="Email" required/>
-      <input class="bz-btmmargin" type="text" id="lp-phone"  name="telefono" placeholder="Telefono"/>
       <input class="bz-btmmargin" type="text" id="messaggio"  name="message" placeholder="Messaggio" required/>
     </div>
     <div class="bz-clear"></div>
