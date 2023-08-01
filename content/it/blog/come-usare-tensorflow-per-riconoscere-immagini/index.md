@@ -150,7 +150,7 @@ sys	0m9.155s
 
 
 
-### GLI ALGORITMI DI MACHINE LEARNING VENGONO UTILIZZATI PER GUIDARE ROBOT E AUTOMOBILI SENZA PILOTA 
+### A COSA SERVONO ALGORITMI IN MACHINE LEARNING NEL NOSTRO ROVER
 
 Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR. Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
 
@@ -158,7 +158,7 @@ Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è ut
 
 Ecco alcuni esempi specifici:
 
-- **Rilevamento e classificazione degli oggetti**: gli algoritmi di machine learning vengono utilizzati per rilevare e classificare oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR.
-- **Pianificazione del percorso**: gli algoritmi vengono utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come le asperità del percorso e le condizioni meteorologiche.
-- **Controllo del rover**: gli algoritmi di machine learning vengono utilizzati per controllare i movimenti del veicolo. Questo viene fatto inviando segnali ai motori e agli altri sistemi di controllo. Gli algoritmi devono essere in grado di eseguire calcoli in tempo reale per tenere il passo con le condizioni in continua evoluzione dell'ambiente circostante.
+- **Rilevamento e classificazione degli oggetti**: si tratta di rilevare e classificare oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR.
+- **Pianificazione del percorso**: in questo caso il rover cerca di pianificare un percorso sicuro e fluido. Questo viene fatto prendendo in considerazione una serie di fattori, come le asperità del percorso e le condizioni meteorologiche.
+- **Controllo del rover**: avviene per mezzo di segnali ai motori e agli altri sistemi di controllo. Gli algoritmi devono essere in grado di eseguire calcoli in "tempo reale" per tenere sotto controllo le accelerazioni laterali del mezzo per evitarne il ribaltamento.
 
