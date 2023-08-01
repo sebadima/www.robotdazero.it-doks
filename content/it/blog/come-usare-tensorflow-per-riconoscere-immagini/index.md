@@ -40,7 +40,7 @@ Oltre alla struttura semplice e alla ridotta necessità di dati di addestramento
 - I tipi di dati utilizzati dal modello: alcuni tipi di dati, come le immagini in formato JPEG, sono più efficienti in termini di risorse rispetto ad altri tipi di dati, come le immagini in formato RAW.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
-Tra le reti convoluzionali (CNN) più diffuse abbiamo deciso di provare la rete VGG16 e di fare un test "dal vivo" sulle più performante delle versioni del Raspberry, l'RPI 400 a 1.8 Ghz con 4GB di Ram.
+Tra le reti convoluzionali (CNN) più diffuse abbiamo deciso di provare la rete VGG16 e di fare un test "dal vivo" sulla più performante delle versioni del Raspberry, l'RPI 400 a 1.8 Ghz con 4GB di Ram.
 </div>
 
 ### COSA È IL MODELLO VGG16 NEL MACHINE LEARNING?
