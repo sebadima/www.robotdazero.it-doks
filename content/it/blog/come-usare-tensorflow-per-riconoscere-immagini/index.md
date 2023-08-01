@@ -17,8 +17,11 @@ homepage: false
 
 
 <hr>
+<br>
 
-**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI400**
+I robot semoventi come il Rover che stiamo progettando sono afflitti da un limite tecnologico al momento insuperabile: la ridotta potenza dei computer per IOT quali Raspberry PI o JETSON Nano. Seppure le prestazioni siano continuamente in crescita al momento siamo costretti a selezionare algoritmi potenti ma non troppo "esigenti" in termini di RAM e CPU. Il nostro robot è autoguidato e deve per questo fare girare programmi in machine learning per riconoscere i percorsi ed evitare gli ostacoli. Nella nostra ricerca di algoritmi performanti ci occupiamo oggi di una libreria neurale molto usata, la "VGG16".   
+
+**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI**
 
 ### QUALI SONO I MODELLI DI RETE NEURALE PIÙ ADATTI AD UN HARDWARE LIMITATO?
 
