@@ -1,5 +1,5 @@
 ---
-title: "Come possiamo aiutarti?"
+title: "Ti interessa lo sviluppo sostenibile?"
 description: "I nostri contatti"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -10,6 +10,10 @@ images: []
 
 
 <style>
+
+footer {
+  visibility: hidden;
+}
 
 body {
   background-image: url(images/cityscape.svg);
@@ -131,7 +135,7 @@ input[type='submit'] {
 <br>
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin">Email e messaggio sono valori obbligatori</h5>
+  <h5 class="bz-btmmargin">Facci sapere come aiutarti nei tuoi progetti...</h5>
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
