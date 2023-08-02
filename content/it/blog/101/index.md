@@ -57,7 +57,7 @@ Il machine learning è un campo in rapida evoluzione e ci sono molti potenziali 
 - **Machine learning generativo**: questo tipo di machine learning consente ai modelli di apprendimento automatico di creare nuovi dati, come immagini, testo e codice. Ciò ha il potenziale per rivoluzionare molti settori, come la medicina, l'istruzione e l'intrattenimento.
 - **Machine learning autonomo**: questo tipo di machine learning consente ai sistemi di apprendimento automatico di prendere decisioni e agire in modo indipendente. Ciò ha il potenziale per creare robot e altri sistemi intelligenti in grado di svolgere compiti che attualmente sono eseguiti da umani.
 
-### I MIGLIOI SOFTWARE PER LAVORARE CON IL MACHINE LEARNING
+### I MIGLIORI SOFTWARE PER LAVORARE CON IL MACHINE LEARNING
 
 Esistono molti software diversi per lavorare con il Machine Learning, ma alcuni dei più popolari includono:
 
