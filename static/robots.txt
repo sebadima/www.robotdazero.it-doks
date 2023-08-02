@@ -3,3 +3,4 @@ Sitemap: https://www.robotdazero.it/it/sitemap.xml
 User-agent: *
 Disallow: /conferma-pagamento/
 Disallow: /newsletter/
+Disallow: /book/
