@@ -12,7 +12,7 @@ images: []
 <style>
 
 footer {
-  visibility: hidden;
+  background-image: url(images/footer.png);
 }
 
 body {
