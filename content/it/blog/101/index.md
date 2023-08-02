@@ -57,6 +57,41 @@ Il machine learning è un campo in rapida evoluzione e ci sono molti potenziali 
 - **Machine learning generativo**: questo tipo di machine learning consente ai modelli di apprendimento automatico di creare nuovi dati, come immagini, testo e codice. Ciò ha il potenziale per rivoluzionare molti settori, come la medicina, l'istruzione e l'intrattenimento.
 - **Machine learning autonomo**: questo tipo di machine learning consente ai sistemi di apprendimento automatico di prendere decisioni e agire in modo indipendente. Ciò ha il potenziale per creare robot e altri sistemi intelligenti in grado di svolgere compiti che attualmente sono eseguiti da umani.
 
+### I MIGLIOI SOFTWARE PER LAVORARE CON IL MACHINE LEARNING
+
+Esistono molti software diversi per lavorare con il Machine Learning, ma alcuni dei più popolari includono:
+
+1. <a href="https://www.tensorflow.org/" target="_blank" rel="noopener">Tensorflow</a>    è una libreria di apprendimento automatico open source sviluppata da Google. È uno dei software più popolari per il Machine Learning ed è ampiamente utilizzato da aziende e ricercatori.
+2. <a href="https://pytorch.org/" target="_blank" rel="noopener">Pytorch</a>    è un'altra libreria di apprendimento automatico open source che sta diventando sempre più popolare. È simile a TensorFlow, ma è più facile da usare per i principianti.
+3. <a href="https://scikit-learn.org" target="_blank" rel="noopener">Scikit-learn</a>    è una libreria di apprendimento automatico Python che è facile da usare e ha una vasta gamma di funzionalità. È una buona scelta per i principianti che vogliono imparare il Machine Learning.
+4. Amazon <a href="https://aws.amazon.com/sagemaker/" target="_blank" rel="noopener">Sagemaker</a> è un servizio cloud di apprendimento automatico che semplifica la creazione, la formazione e il deployment di modelli di Machine Learning. È una buona scelta per le aziende che vogliono creare modelli di Machine Learning senza dover investire in hardware o software.
 
 
-<p style="font-size: 10px">r.101.5.0</p>
+### QUALE E' IL LIVELLO DI MATEMATICA RICHIESTO PER AFFRONTARE IL MACHINE LEARNING? 
+
+Il livello di matematica richiesto per affrontare il Machine Learning dipende dal livello di approfondimento che si desidera raggiungere. Per avere una buona comprensione di base del Machine Learning, è necessario avere una conoscenza di base di algebra lineare, calcolo e statistica. Se si desidera approfondire la conoscenza del Machine Learning, è necessario avere una conoscenza più avanzata di questi argomenti, oltre ad una conoscenza di informatica e intelligenza artificiale.
+
+Ecco alcuni dei concetti matematici più importanti per il Machine Learning:
+
+```bash
+** Algebra lineare: 
+questo è lo studio dei vettori, delle matrici e degli spazi vettoriali. 
+È un concetto importante nel Machine Learning perché molti algoritmi 
+di Machine Learning si basano sull algebra lineare.
+** Calcolo: 
+questo è lo studio del cambiamento. È un concetto importante nel 
+Machine Learning perché molti algoritmi di Machine Learning si 
+basano sul calcolo per ottimizzare i loro risultati.
+** Statistica: 
+questo è lo studio della raccolta, dell analisi e dell interpretazione 
+dei dati. È un concetto importante nel Machine Learning perché il 
+Machine Learning si basa sull utilizzo di dati per addestrare modelli 
+che possono prevedere eventi futuri.
+```
+
+Se non si ha una conoscenza di base di questi argomenti, è possibile trovare molti <a href="https://www.google.com/search?q=corsi+online+e+libri+sul+machine+learning+free+PDF&client=firefox-b-d&sxsrf=AB5stBhaI5Imnbi2mZyhe-uqvhL2UlKBvg%3A1690989269103&ei=1XLKZKeiBf2Uxc8PoOWEsA8&ved=0ahUKEwjn4M_1ob6AAxV9SvEDHaAyAfYQ4dUDCA8&uact=5&oq=corsi+online+e+libri+sul+machine+learning+free+PDF&gs_lp=Egxnd3Mtd2l6LXNlcnAiMmNvcnNpIG9ubGluZSBlIGxpYnJpIHN1bCBtYWNoaW5lIGxlYXJuaW5nIGZyZWUgUERGMgUQIRigAUjjUVD2CFjTSnAAeAOQAQCYAd4BoAGAHKoBBjIuMjcuMbgBA8gBAPgBAcICBBAAGEfCAggQIRgWGB4YHcICBBAhGBXCAgcQIRigARgK4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp" target="_blank" rel="noopener">corsi online</a>     e libri che possono aiutare a imparare questi concetti. È anche possibile trovare molti tutorial online che possono aiutare a imparare come utilizzare le librerie di Machine Learning.
+
+
+
+
+<p style="font-size: 10px">r.101.6.0</p>
