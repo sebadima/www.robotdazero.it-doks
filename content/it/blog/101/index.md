@@ -14,9 +14,9 @@ pinned: false
 homepage: false
 mermaid: true
 ---
-r.101.1
+r.101.2
 
-## L'apprendimento automatico (ML) è una branca dell'intelligenza artificiale (AI) che consente ai computer di imparare senza essere esplicitamente programmati. 
+## L'APPRENDIMENTO AUTOMATICO (ML) È UNA BRANCA DELL'INTELLIGENZA ARTIFICIALE (AI) CHE CONSENTE AI COMPUTER DI IMPARARE SENZA ESSERE ESPLICITAMENTE PROGRAMMATI. 
 
 Ciò significa che i <a href="https://it.wikipedia.org/wiki/Robot" target="_blank" rel="noopener">robot</a>  possono imparare a svolgere compiti in modo indipendente, senza bisogno di essere programmati manualmente per ogni singolo passo.
 
