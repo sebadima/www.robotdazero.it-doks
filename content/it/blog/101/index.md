@@ -14,7 +14,9 @@ pinned: false
 homepage: false
 mermaid: true
 ---
-<p style="font-size: 12px">r.101.2.0</p>
+<p style="font-size: 12px">r.101.2.1</p>
+
+
 
 ## L'APPRENDIMENTO AUTOMATICO (ML) È UNA BRANCA DELL'INTELLIGENZA ARTIFICIALE (AI) CHE CONSENTE AI COMPUTER DI IMPARARE SENZA ESSERE ESPLICITAMENTE PROGRAMMATI. 
 
