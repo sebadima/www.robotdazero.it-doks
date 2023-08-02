@@ -8,7 +8,8 @@ images: []
 ---
 
 
-Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. Titolare del Trattamento dei Dati
+
+Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. Titolare del Trattamento dei Dati:
 
 Robotdazero.it – via Acradina 1 – 96100 – Siracusa
 
@@ -21,6 +22,7 @@ Il Titolare non fornisce una lista di tipologie di Dati Personali raccolti. Dett
 Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare. L’eventuale utilizzo di Cookie – o di altri strumenti di tracciamento – da parte di questa Applicazione o dei titolari dei servizi terzi utilizzati da questa Applicazione, ove non diversamente precisato, ha la finalità di fornire il Servizio richiesto dall’Utente, oltre alle ulteriori finalità descritte nel presente documento e nella Cookie Policy, se disponibile. L’Utente si assume la responsabilità dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante questa Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilità verso terzi. Modalità e luogo del trattamento dei Dati raccolti
 Modalità di trattamento
 
+### Misure di sicurezza
 Il Titolare adotta le opportune misure di sicurezza volte ad impedire l’accesso, la divulgazione, la modifica o la distruzione non autorizzate dei Dati Personali. Il trattamento viene effettuato mediante strumenti informatici e/o telematici, con modalità organizzative e con logiche strettamente correlate alle finalità indicate. Oltre al Titolare, in alcuni casi, potrebbero avere accesso ai Dati altri soggetti coinvolti nell’organizzazione di questa Applicazione (personale amministrativo, commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come fornitori di servizi tecnici terzi, corrieri postali, hosting provider, società informatiche, agenzie di comunicazione) nominati anche, se necessario, Responsabili del Trattamento da parte del Titolare. L’elenco aggiornato dei Responsabili potrà sempre essere richiesto al Titolare del Trattamento. Base giuridica del trattamento Il Titolare tratta Dati Personali relativi all’Utente in caso sussista una delle seguenti condizioni:
 Consenso informato
 
