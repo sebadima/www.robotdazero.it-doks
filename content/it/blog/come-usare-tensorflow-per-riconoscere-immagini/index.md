@@ -150,7 +150,7 @@ sys	0m9.155s
 
 
 
-### A COSA SERVONO ALGORITMI IN MACHINE LEARNING NEL NOSTRO ROVER
+### A COSA SERVONO GLI ALGORITMI IN MACHINE LEARNING DEL NOSTRO ROVER
 
 Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR. Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
 
@@ -164,4 +164,4 @@ Ecco alcuni esempi specifici:
 
 
 
-<p style="font-size: 10px">R.100.1.0</p>
+<p style="font-size: 11px; color:gray">R.100.2.0</p>
