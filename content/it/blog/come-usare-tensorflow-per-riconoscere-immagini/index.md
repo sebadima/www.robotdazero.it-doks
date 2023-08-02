@@ -129,7 +129,7 @@ La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click de
 
 - **Il programma lanciato su uno Raspberry Pi 400**  (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
 
-Dopo circa 20 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86 %. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
+Dopo circa 20 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86%. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
 Il tempo di elaborazione reale è stato di **17.992** secondi.
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine del terminale linux dopo il test di un programma in machine learning Tensorflow" src="images/Screenshot from 2023-08-01 16-15-59.png">
@@ -152,7 +152,7 @@ sys	0m9.155s
 
 ### A COSA SERVONO GLI ALGORITMI IN MACHINE LEARNING DEL NOSTRO ROVER
 
-Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR. Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
+Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, <a href="https://it.wikipedia.org/wiki/Radar" target="_blank" rel="noopener">Radar</a> e <a href="https://it.wikipedia.org/wiki/Lidar" target="_blank" rel="noopener">LIDAR</a> . Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
 
 > Un altro modo in cui gli algoritmi di machine learning vengono utilizzati per guidare robot e automobili senza pilota è per controllare i movimenti del veicolo. Questo viene fatto inviando segnali ai motori e agli altri sistemi di controllo. Gli algoritmi di machine learning devono essere in grado di eseguire calcoli in tempo reale per tenere il passo con le condizioni in continua evoluzione della strada.
 
@@ -164,4 +164,4 @@ Ecco alcuni esempi specifici:
 
 
 
-<p style="font-size: 11px; color:gray">R.100.2.0</p>
+<p style="font-size: 11px; color:gray">R.100.2.1</p>
