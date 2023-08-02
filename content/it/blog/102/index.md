@@ -14,20 +14,10 @@ pinned: false
 homepage: false
 mermaid: true
 ---
-
-<style>
-.x {
-    transition:transform 0.50s ease;
-}
-
-.x:hover {
-    -webkit-transform:scale(1.75); /* or some other value */
-    transform:scale(1.75);
-}
-</style>
+<p style="font-size: 12px">r.102.1.0</p>
 
 
-### La robotica è un campo in rapida evoluzione con il potenziale per rivoluzionare il modo in cui lavoriamo. Ecco alcuni dei prossimi sviluppi della robotica in ambito commerciale:
+### LA ROBOTICA È UN CAMPO IN RAPIDA EVOLUZIONE CON IL POTENZIALE PER RIVOLUZIONARE IL MODO IN CUI LAVORIAMO. ECCO ALCUNI DEI PROSSIMI SVILUPPI DELLA ROBOTICA IN AMBITO COMMERCIALE:
 
 1. **Robot più autonomi**: i robot stanno diventando sempre più autonomi, il che significa che possono svolgere compiti senza la necessità di un intervento umano. Ciò consente loro di eseguire attività pericolose o ripetitive, liberando gli esseri umani per concentrarsi su attività più creative o strategiche.
 2. **Robot più intelligenti**: i robot stanno diventando anche più intelligenti, il che significa che possono imparare e adattarsi al loro ambiente. Ciò consente loro di svolgere compiti più complessi e di interagire con gli esseri umani in modo più naturale.
