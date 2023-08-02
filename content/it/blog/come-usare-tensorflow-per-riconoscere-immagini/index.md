@@ -162,3 +162,6 @@ Ecco alcuni esempi specifici:
 - **Pianificazione del percorso**: in questo caso il rover cerca di pianificare un percorso sicuro e fluido. Questo viene fatto prendendo in considerazione una serie di fattori, come le asperità del percorso e le condizioni meteorologiche.
 - **Controllo del rover**: avviene per mezzo di segnali ai motori e agli altri sistemi di controllo. Gli algoritmi devono essere in grado di eseguire calcoli in "tempo reale" per tenere sotto controllo le accelerazioni laterali del mezzo per evitarne il ribaltamento.
 
+
+
+<p style="font-size: 10px">r.100.0.0</p>
