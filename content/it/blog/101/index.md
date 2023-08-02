@@ -14,7 +14,7 @@ pinned: false
 homepage: false
 mermaid: true
 ---
-<p style="font-size: 12px">r.101.3.1</p>
+<p style="font-size: 12px">r.101.3.2</p>
 
 
 
@@ -46,3 +46,14 @@ Ecco alcuni esempi specifici di come il machine learning viene utilizzato nella 
 - **I robot che operano in ambienti pericolosi**, come le centrali nucleari e le raffinerie di petrolio, utilizzano il machine learning per rilevare i problemi e prendere decisioni in tempo reale. Ciò consente loro di operare in sicurezza e proteggere gli esseri umani.
 
 Il machine learning è una tecnologia potente che sta rivoluzionando il campo della robotica. È probabile che abbia un impatto ancora maggiore sul nostro mondo nei prossimi anni.
+
+
+### QUALI SARANNO I PROSSIMI SVILUPPI DEL MACHINE LEARNING?
+
+Il machine learning è un campo in rapida evoluzione e ci sono molti potenziali sviluppi futuri che potrebbero avere un impatto significativo sulle nostre vite. Alcuni dei più promettenti includono:
+
+- **Machine learning federated**: questo tipo di machine learning consente ai modelli di apprendimento automatico di essere addestrati su dati distribuiti tra più dispositivi, senza che i dati vengano mai condivisi. Ciò ha il potenziale per migliorare la privacy e la sicurezza, nonché ridurre la quantità di dati necessari per addestrare i modelli.
+- **Machine learning spiegabile**: questo tipo di machine learning consente agli esseri umani di capire perché i modelli di apprendimento automatico prendono le decisioni che prendono. Ciò è importante per garantire che i modelli di apprendimento automatico siano equi e giusti, nonché per consentire agli esseri umani di fidarsi dei loro risultati.
+- **Machine learning generativo**: questo tipo di machine learning consente ai modelli di apprendimento automatico di creare nuovi dati, come immagini, testo e codice. Ciò ha il potenziale per rivoluzionare molti settori, come la medicina, l'istruzione e l'intrattenimento.
+- **Machine learning autonomo**: questo tipo di machine learning consente ai sistemi di apprendimento automatico di prendere decisioni e agire in modo indipendente. Ciò ha il potenziale per creare robot e altri sistemi intelligenti in grado di svolgere compiti che attualmente sono eseguiti da umani.
+
