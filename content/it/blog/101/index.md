@@ -74,24 +74,24 @@ Il livello di matematica richiesto per affrontare il Machine Learning dipende da
 Ecco alcuni dei concetti matematici più importanti per il Machine Learning:
 
 ```bash
-** Algebra lineare: 
-questo è lo studio dei vettori, delle matrici e degli spazi vettoriali. 
+ALGEBRA LINEARE: 
+è lo studio dei vettori, delle matrici e degli spazi vettoriali. 
 È un concetto importante nel Machine Learning perché molti algoritmi 
 di Machine Learning si basano sull algebra lineare.
-** Calcolo: 
-questo è lo studio del cambiamento. È un concetto importante nel 
+CALCOLO: 
+è lo studio del cambiamento. È un concetto importante nel 
 Machine Learning perché molti algoritmi di Machine Learning si 
 basano sul calcolo per ottimizzare i loro risultati.
-** Statistica: 
-questo è lo studio della raccolta, dell analisi e dell interpretazione 
+STATISTICA: 
+è lo studio della raccolta, dell analisi e dell interpretazione 
 dei dati. È un concetto importante nel Machine Learning perché il 
 Machine Learning si basa sull utilizzo di dati per addestrare modelli 
 che possono prevedere eventi futuri.
 ```
 
-Se non si ha una conoscenza di base di questi argomenti, è possibile trovare molti <a href="https://www.google.com/search?q=corsi+online+e+libri+sul+machine+learning+free+PDF&client=firefox-b-d&sxsrf=AB5stBhaI5Imnbi2mZyhe-uqvhL2UlKBvg%3A1690989269103&ei=1XLKZKeiBf2Uxc8PoOWEsA8&ved=0ahUKEwjn4M_1ob6AAxV9SvEDHaAyAfYQ4dUDCA8&uact=5&oq=corsi+online+e+libri+sul+machine+learning+free+PDF&gs_lp=Egxnd3Mtd2l6LXNlcnAiMmNvcnNpIG9ubGluZSBlIGxpYnJpIHN1bCBtYWNoaW5lIGxlYXJuaW5nIGZyZWUgUERGMgUQIRigAUjjUVD2CFjTSnAAeAOQAQCYAd4BoAGAHKoBBjIuMjcuMbgBA8gBAPgBAcICBBAAGEfCAggQIRgWGB4YHcICBBAhGBXCAgcQIRigARgK4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp" target="_blank" rel="noopener">corsi online</a>     e libri che possono aiutare a imparare questi concetti. È anche possibile trovare molti tutorial online che possono aiutare a imparare come utilizzare le librerie di Machine Learning.
+Se non si ha una conoscenza di base di questi argomenti, è possibile trovare molti <a href="https://www.google.com/search?q=corsi+online+e+libri+sul+machine+learning+free+PDF&client=firefox-b-d&sxsrf=AB5stBhaI5Imnbi2mZyhe-uqvhL2UlKBvg%3A1690989269103&ei=1XLKZKeiBf2Uxc8PoOWEsA8&ved=0ahUKEwjn4M_1ob6AAxV9SvEDHaAyAfYQ4dUDCA8&uact=5&oq=corsi+online+e+libri+sul+machine+learning+free+PDF&gs_lp=Egxnd3Mtd2l6LXNlcnAiMmNvcnNpIG9ubGluZSBlIGxpYnJpIHN1bCBtYWNoaW5lIGxlYXJuaW5nIGZyZWUgUERGMgUQIRigAUjjUVD2CFjTSnAAeAOQAQCYAd4BoAGAHKoBBjIuMjcuMbgBA8gBAPgBAcICBBAAGEfCAggQIRgWGB4YHcICBBAhGBXCAgcQIRigARgK4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp" target="_blank" rel="noopener">corsi online</a>     e libri che possono aiutare a imparare questi concetti. È anche possibile trovare molti <a href="https://www.robotdazero.it/tags/machine-learning/" target="_blank" rel="noopener">tutorial</a> online che possono aiutare a imparare come utilizzare le librerie di Machine Learning.
 
 
 
 
-<p style="font-size: 10px">r.101.6.0</p>
+<p style="font-size: 10px">r.101.6.4</p>
