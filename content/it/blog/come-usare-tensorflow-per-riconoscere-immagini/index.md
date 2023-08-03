@@ -164,4 +164,4 @@ Ecco alcuni esempi specifici:
 
 
 
-<p style="font-size: 11px; color:gray">R.100.2.1</p>
+<p style="font-size: 11px;">R.100.2.1</p>
