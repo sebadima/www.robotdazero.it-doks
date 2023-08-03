@@ -39,8 +39,6 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border: 1px solid #B6DB6C;
-  border-radius: 08px;
 }
 
 .bz-btmmargin {
@@ -71,7 +69,7 @@ input[type='text'], input[type='email'] {
 
 input[type='submit'] {
   float: right;
-  background-color: #E75B2D;
+  background-color: #007D7E;
   border: none;
   color: white;
   font-size: 18px;
