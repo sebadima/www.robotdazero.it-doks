@@ -1,6 +1,6 @@
 ---
-title: "Prova la nostra app in machine learning"
-description: "Prova la nostra app in machine learning"
+title: "Prova la nostra app Kaspian in machine learning"
+description: "Prova la nostra app Kaspian in machine learning"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
 draft: false
@@ -129,6 +129,7 @@ input[type='submit'] {
   </form>
 
 </div>
+
 <br>
 <br>
 <br>
