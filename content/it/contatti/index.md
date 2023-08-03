@@ -11,6 +11,13 @@ images: []
 
 <style>
 
+.lead {
+  padding-top:    0px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  padding-left:  20px;
+}
+
 footer {
   background-image: url(images/footer.png);
 }
@@ -71,7 +78,7 @@ input[type='text'], input[type='email'] {
 
 input[type='submit'] {
   float: right;
-  background-color: #E75B2D;
+  background-color: #007D7E;
   border: none;
   color: white;
   font-size: 18px;
@@ -118,7 +125,8 @@ input[type='submit'] {
 </svg>
  - info@robotdazero.it</h5>
 
-  <h5 class="bz-btmmargin">Come possiamo aiutarti nei tuoi progetti?</h5>
+  <br>
+  <p class="lead">Come possiamo aiutarti nei tuoi progetti?</p>
 
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
