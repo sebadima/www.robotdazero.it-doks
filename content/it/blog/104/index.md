@@ -36,6 +36,26 @@ Quando si alimenta l'Arduino Teensy, è importante assicurarsi che la tensione d
 3.  Se si utilizza un alimentatore esterno, utilizzare un alimentatore regolato. Questo garantirà che la tensione di alimentazione fornita all'Arduino Teensy sia costante.
 
 
+
+### I VALORI OPERATIVI RACCOMANDATI
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👉 
+Tensioni massime operative
+<br>
+<br>
+4.5V to 5.5V	16 MHz	Yes
+<br>
+3.4V to 4.5V	8 MHz	Yes
+<br>
+3.0V to 3.4V	8 MHz	No*
+<br>
+2.7V to 3.0V	8 MHz	No
+<br>
+2.6V** to 2.7V	2 MHz	No
+<br>
+</div>
+
+
 ### IL TEENSY IN DETTAGLIO
 
 Teensy non viene assemblato direttamente da Arduino o da un produttore collegato. Viene fornro da una società separata chiamata PJRC, di proprietà di Paul Stoffregen. L'imprenditore ha immediatamente riconosciuto il potenziale della nuova schede e la capacità di sopperire alle lacune della scheda originale. La PJRC ha progettato dunque una versione "ARM based" di Arduino che incorporava tutto il meglio della vecchia scheda, con la potenza di un ARM Cortex-M4 a 180 MHz! Il Teensy rappresenta un salto di potenza enorme rispetto al classico ATmega328P!
@@ -80,4 +100,4 @@ Nella maggior parte dei casi sarai in grado di compilare e caricare i tuoi proge
 
 
 
-<p style="font-size: 12px">R.104.3.7</p>
+<p style="font-size: 12px">R.104.4.0</p>
