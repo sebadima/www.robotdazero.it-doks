@@ -15,7 +15,7 @@ images: []
   padding-top:    5px;
   padding-right:  5px;
   padding-bottom: 5px;
-  padding-left:  10px;
+  padding-left:  15px;
 }
 
 
@@ -47,7 +47,7 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 9px;
+  border-radius: 5px;
   border: 1px solid #EBEBEB;
 }
 
