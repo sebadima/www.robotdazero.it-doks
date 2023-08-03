@@ -14,7 +14,6 @@ pinned: false
 homepage: false
 mermaid: true
 ---
-<p style="font-size: 12px">r.104.2.0</p>
 
 
 
@@ -35,3 +34,7 @@ Quando si alimenta l'Arduino Teensy, è importante assicurarsi che la tensione d
 2. Utilizzare un alimentatore che abbia una tensione di uscita compresa tra 7 e 12 volt.
  Se si alimenta l'Arduino Teensy da una batteria, utilizzare una batteria che abbia una capacità sufficiente per alimentare la scheda per il periodo di tempo desiderato.
 3.  Se si utilizza un alimentatore esterno, utilizzare un alimentatore regolato. Questo garantirà che la tensione di alimentazione fornita all'Arduino Teensy sia costante.
+
+
+
+<p style="font-size: 12px">r.104.2.1</p>
