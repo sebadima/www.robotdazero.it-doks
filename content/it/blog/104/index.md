@@ -58,7 +58,7 @@ Tensioni massime operative
 
 ### IL TEENSY IN DETTAGLIO
 
-Teensy non viene assemblato direttamente da Arduino o da un produttore collegato. Viene fornro da una società separata chiamata PJRC, di proprietà di Paul Stoffregen. L'imprenditore ha immediatamente riconosciuto il potenziale della nuova schede e la capacità di sopperire alle lacune della scheda originale. La PJRC ha progettato dunque una versione "ARM based" di Arduino che incorporava tutto il meglio della vecchia scheda, con la potenza di un ARM Cortex-M4 a 180 MHz! Il Teensy rappresenta un salto di potenza enorme rispetto al classico ATmega328P!
+Teensy non viene assemblato direttamente da Arduino o da un produttore collegato. Viene fornito da una società separata chiamata PJRC, di proprietà di Paul Stoffregen. L'imprenditore ha immediatamente riconosciuto il potenziale della nuova schede e la capacità di sopperire alle lacune della scheda originale. La PJRC ha progettato dunque una versione "ARM based" di Arduino che incorporava tutto il meglio della vecchia scheda, con la potenza di un ARM Cortex-M4 a 180 MHz! Il Teensy rappresenta un salto di potenza enorme rispetto al classico ATmega328P!
 
 ### LA PIEDINATURA DEL TEENSY
 
@@ -100,4 +100,4 @@ Nella maggior parte dei casi sarai in grado di compilare e caricare i tuoi proge
 
 
 
-<p style="font-size: 12px">R.104.4.1</p>
+<p style="font-size: 12px; color:gray">R.104.4.1</p>
