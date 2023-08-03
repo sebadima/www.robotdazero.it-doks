@@ -114,14 +114,14 @@ input[type='submit'] {
 
 <div class="bz-container">
 
-  <h5 class="lead">Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail</h5>
+  <h5 class="lead">Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.</h5>
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
       <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"     required/>
       <input class="bz-btmmargin" type="text" id="telefono" name="telefono" placeholder="Telefono" required/>
-      <input class="bz-btmmargin" type="text" id="email" name="email" placeholder="Email" required/>
+      <input class="bz-btmmargin" type="text" id="email"    name="email"    placeholder="Email"    required/>
     </div>
     <div class="bz-clear"></div>
     <input class="bz-topmargin" type="submit" value="Invia">
