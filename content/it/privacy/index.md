@@ -57,3 +57,7 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire s
 Via Akradina, 1 – 96100 – Siracusa, P.Iva:00378808885 
 ##### Contatti: 
 email: info@robotdazero.it
+
+
+
+<p style="font-size: 11px">R.Privacy.1.0.2</p>
