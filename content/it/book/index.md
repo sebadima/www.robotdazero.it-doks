@@ -39,6 +39,8 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
+  border-radius: 9px;
+  border: 1px solid #EBEBEB;
 }
 
 .bz-btmmargin {
