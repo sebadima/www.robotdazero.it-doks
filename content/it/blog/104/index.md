@@ -2,8 +2,8 @@
 title: "Come alimentare un Arduino Teensy?"
 description: "Come alimentare un Arduino Teensy?"
 excerpt: "Ci sono diversi modi per alimentare un Arduino Teensy. Ecco alcuni dei modi più comuni: Utilizzare un cavo USB. Il Teensy può essere alimentato direttamente da un computer utilizzando un cavo USB. Questo è il modo più semplice per alimentare il Teensy, ma non è sempre pratico..."
-date: 2021-11-05T09:19:42+01:00
-lastmod: 2021-11-05T09:19:42+01:00
+date: 2023-08-02T09:19:42+01:00
+lastmod: 2023-08-03T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
