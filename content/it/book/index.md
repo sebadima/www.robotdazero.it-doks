@@ -12,10 +12,10 @@ images: []
 <style>
 
 .lead {
-  padding-top:    5px;
-  padding-right:  5px;
-  padding-bottom: 5px;
-  padding-left:  15px;
+  padding-top:    0px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  padding-left:  20px;
 }
 
 
@@ -29,7 +29,6 @@ body {
   background-repeat: no-repeat;
   margin: 0; 
   padding: 0;
-  background-color: #b6db6c;
 }
 
 h5 {
@@ -114,12 +113,13 @@ input[type='submit'] {
 <br>
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin lead">Un nostro incaricato ti contatterà  entro 30 minuti.</h5>
+  <h5 class="bz-btmmargin lead">Se vuoi parlare direttamente con un esperto puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà  entro 30 minuti.</h5>
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
-      <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"     required/>
-      <input class="bz-btmmargin" type="text" id="telefono" name="telefono" placeholder="Telefono" required/>
+      <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"                   required/>
+      <input class="bz-btmmargin" type="text" id="telefono" name="telefono" placeholder="Cellulare"              required/>
+      <input class="bz-btmmargin" type="text" id="orario"   name="orario"   placeholder="Orario di preferenza" required/>
     </div>
     <div class="bz-clear"></div>
     <input class="bz-topmargin" type="submit" value="Invia">
