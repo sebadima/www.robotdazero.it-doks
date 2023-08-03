@@ -11,6 +11,14 @@ images: []
 
 <style>
 
+.lead {
+  padding-top:    5px;
+  padding-right:  5px;
+  padding-bottom: 5px;
+  padding-left:  10px;
+}
+
+
 footer {
   background-image: url(images/footer.png);
 }
@@ -106,7 +114,7 @@ input[type='submit'] {
 <br>
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin">Un nostro incaricato ti contatterà  entro 30 minuti.</h5>
+  <h5 class="bz-btmmargin lead">Un nostro incaricato ti contatterà  entro 30 minuti.</h5>
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
