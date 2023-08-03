@@ -28,7 +28,6 @@ body {
   background-repeat: no-repeat;
   margin: 0; 
   padding: 0;
-  background-color: #b6db6c;
 }
 
 h5 {
