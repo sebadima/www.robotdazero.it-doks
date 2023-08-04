@@ -1,5 +1,5 @@
 ---
-title: "Prova la nostra app"
+title: "Prova il nostro software"
 description: "Prova la nostra app Kaspian in machine learning"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -111,7 +111,7 @@ input[type='submit'] {
 }
 </style>
 
-<img  width="400" class="x figure-img img-fluid lazyload blur-up" src="images/103.svg" alt="Servizi cloud...">
+<img class="x figure-img img-fluid lazyload blur-up" src="images/106.svg" alt="Servizi cloud...">
 
 
 <div class="bz-container">
@@ -132,11 +132,6 @@ input[type='submit'] {
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
