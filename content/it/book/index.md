@@ -140,6 +140,7 @@ input[type='submit'] {
 
 <br>
 <br>
+<br>
 
  Usando i siti web di robotdazero.it o acquistando i Servizi, l'interessato presta il proprio consenso al trattamento dei suoi dati personali da parte di robotdazero.it come definito nella presente <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> Privacy Generale di robotdazero.it (l'"Informativa") e nella Nota legale relativa all'uso del sito web di robotdazero.it.
 
@@ -156,4 +157,8 @@ info@robotdazero.it
 Telefono 351 - 51.33.273
 <br>
 </h5>
+
 </div>
+<br>
+<br>
+<br>

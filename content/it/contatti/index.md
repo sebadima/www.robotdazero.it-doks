@@ -141,6 +141,37 @@ Scopri come il nostro software può dare forma ai tuoi progetti. Siamo sempre in
 <br>
 <br>
 <br>
+
+
+
+<div class="bz-container">
+
+<h5 class="bz-btmmargin lead"><strong>Informativa Privacy di robotdazero.it</strong></h5>
+
+<h5 class="bz-btmmargin lead">
+ Robotdazero.it si impegna a proteggere i dati personali e a garantire che vengano attuate le misure di sicurezza tecniche e organizzative atte a proteggere i dati personali sia quando si acquistano i servizi di robotdazero.it (“Servizi”), che quando si ricevono newsletter o si naviga nei siti web di robotdazero.it.
+
+<br>
+<br>
+<br>
+
+ Usando i siti web di robotdazero.it o acquistando i Servizi, l'interessato presta il proprio consenso al trattamento dei suoi dati personali da parte di robotdazero.it come definito nella presente <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> Privacy Generale di robotdazero.it (l'"Informativa") e nella Nota legale relativa all'uso del sito web di robotdazero.it.
+
+ Robotdazero.it è un fornitore di servizi di informatica e telematica. L'entità robotdazero.it con cui l'interessato è in contatto è il titolare del trattamento dei dati personali ricevuti e trattati nell'ambito dei Servizi acquistati o della visita a uno dei siti web di robotdazero.it. 
+
+ Robotdazero.it ha facoltà di modificare e aggiornare regolarmente la presente <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> a sua esclusiva discrezione.
+</h5>
+<h5 class="bz-btmmargin lead"><strong>Robotdazero.it</strong></h5>
+<h5 class="bz-btmmargin lead">
+Viale Acradina,1 - 96100 - Siracusa
+<br>
+info@robotdazero.it
+<br>
+Telefono 351 - 51.33.273
+<br>
+</h5>
+</div>
+
 <br>
 <br>
 <br>
