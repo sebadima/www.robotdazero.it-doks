@@ -24,7 +24,7 @@ footer {
 }
 
 body {
-  background-image: url(images/101.svg);
+  background-image: url(images/201.svg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
