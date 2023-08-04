@@ -111,9 +111,8 @@ input[type='submit'] {
 }
 </style>
 
-<br>
-<br>
-<br>
+<img  width="400" class="x figure-img img-fluid lazyload blur-up" src="images/103.svg" alt="Servizi cloud...">
+
 
 <div class="bz-container">
 
