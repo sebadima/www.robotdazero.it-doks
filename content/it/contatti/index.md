@@ -45,8 +45,8 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 9px;
-  border: 1px solid #74A1B4;
+  border-radius: 7px;
+  border: 0px solid #74A1B4;
 }
 
 .bz-btmmargin {
