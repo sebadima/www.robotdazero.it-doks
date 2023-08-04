@@ -1,5 +1,5 @@
 ---
-title: "Contatti"
+title: ""
 description: "I nostri contatti"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -11,6 +11,10 @@ images: []
 
 <style>
 
+footer {
+  background-image: url(images/footer.png);
+}
+
 .lead {
   padding-top:    5px;
   padding-bottom: 5px;
@@ -18,17 +22,12 @@ images: []
   padding-left:  10px;
 }
 
-footer {
-  background-image: url(images/footer.png);
-}
-
 body {
-  background-image: url(images/101.svg);
+  background-image: url(images/101.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
   padding: 0;
-  background-color: #b6db6c;
 }
 
 h5 {
@@ -46,8 +45,8 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 5px;
-  border: 1px solid #EBEBEB;
+  border-radius: 9px;
+  border: 1px solid #bbbbbb;
 }
 
 .bz-btmmargin {
