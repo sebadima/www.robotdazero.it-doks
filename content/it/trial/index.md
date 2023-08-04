@@ -28,6 +28,7 @@ body {
   background-repeat: no-repeat;
   margin: 0; 
   padding: 0;
+  background-color: #b6db6c;
 }
 
 h5 {
@@ -46,7 +47,7 @@ h3 {
   background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 5px;
-  border: 1px solid #007D7E;
+  border: 1px solid #bbbbbb;
 }
 
 .bz-btmmargin {
