@@ -19,7 +19,6 @@ images: []
 }
 
 footer {
-  background-image: url(images/footer.png);
 }
 
 body {
@@ -28,7 +27,7 @@ body {
   background-repeat: no-repeat;
   margin: 0; 
   padding: 0;
-  background-color: #b6db6c;
+  background-color: #ffffff;
 }
 
 h5 {
