@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Prova la nostra app"
 description: "Prova la nostra app Kaspian in machine learning"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -10,6 +10,11 @@ images: []
 
 
 <style>
+
+.col-md-12 > article:nth-child(1) > h1:nth-child(1) {
+  color: #ffffff;
+}
+
 
 footer {
   background-image: url(images/footer.png);
