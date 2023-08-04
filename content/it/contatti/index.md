@@ -1,8 +1,8 @@
 ---
-title: "I nostri contatti"
+title: "Come puoi contattarci"
 description: "I nostri contatti"
 date: 2023-06-27T19:23:18+02:00
-lastmod: 2023-06-27T19:23:18+02:00
+lastmod: 2023-07-27T19:23:18+02:00
 draft: false
 images: []
 ---
@@ -14,7 +14,6 @@ images: []
 .col-md-12 > article:nth-child(1) > h1:nth-child(1) {
   color: #ffffff;
 }
-
 
 footer {
   background-image: url(images/footer.png);
@@ -110,9 +109,7 @@ input[type='submit'] {
 }
 </style>
 
-
-<br>
-<br>
+<img width="600" class="x figure-img img-fluid lazyload blur-up" src="images/101.svg" alt="">
 
 <div class="bz-container">
 
