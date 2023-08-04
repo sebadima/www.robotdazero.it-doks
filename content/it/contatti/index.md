@@ -122,7 +122,7 @@ input[type='submit'] {
  - info@robotdazero.it</p>
 
   <p class="lead">
-Scopri come tecnologia e consulenza possono dare forma ai tuoi progetti. Siamo sempre in linea su Whatsapp e se preferisci un sistema più tradizionale puoi usare la nostra email.  Per quesiti brevi ti suggeriamo di usare il modulo sottostante: rispondiamo sempre in maniera prioritaria. 
+Scopri come il nostro software può dare forma ai tuoi progetti. Siamo sempre in linea su Whatsapp e se preferisci un sistema più tradizionale puoi usare la nostra email.  <br> <strong>Per quesiti brevi puoi usare il modulo sottostante: rispondiamo sempre in maniera prioritaria</strong>. 
   </p>
 
   <form action="https://formspree.io/f/xyybpbln" method="POST">
