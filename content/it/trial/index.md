@@ -18,9 +18,6 @@ images: []
   padding-left:  20px;
 }
 
-footer {
-}
-
 body {
   background-image: url(images/101.svg);
   background-size: cover;
@@ -46,7 +43,7 @@ h3 {
   background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 5px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #777777;
 }
 
 .bz-btmmargin {
@@ -104,8 +101,6 @@ input[type='submit'] {
   input[type='submit'] {margin-left: 10px;}
 }
 </style>
-
-
 
 <br>
 <br>
