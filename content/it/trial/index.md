@@ -108,7 +108,7 @@ input[type='submit'] {
 
 <div class="bz-container">
 
-  <h5 class="lead">Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.</h5>
+  <h5 class="lead"><strong>Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni</strong>. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.</h5>
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
