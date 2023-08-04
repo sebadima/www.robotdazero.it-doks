@@ -35,7 +35,7 @@ body {
 }
 
 h5 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
