@@ -15,11 +15,12 @@ images: []
   color: #ffffff;
 }
 
+
 .lead {
-  padding-top:    0px;
-  padding-bottom: 0px;
-  padding-right: 20px;
-  padding-left:  20px;
+  padding-top:    5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 
