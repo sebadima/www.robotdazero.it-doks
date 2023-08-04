@@ -29,7 +29,7 @@ footer {
 }
 
 body {
-  background-image: url(images/102.jpeg);
+  background-image: url(images/103.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
