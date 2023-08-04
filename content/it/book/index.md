@@ -146,23 +146,14 @@ input[type='submit'] {
  Robotdazero.it è un fornitore di servizi di informatica e telematica. L'entità robotdazero.it con cui l'interessato è in contatto è il titolare del trattamento dei dati personali ricevuti e trattati nell'ambito dei Servizi acquistati o della visita a uno dei siti web di robotdazero.it.
 
  Robotdazero.it ha facoltà di modificare e aggiornare regolarmente la presente <a href="https://www.robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> a sua esclusiva discrezione.
-
 </h5>
-</div>
-
-<br>
-<br>
-<br>
-
-<div class="bz-container">
 <h5 class="bz-btmmargin lead"><strong>Robotdazero.it</strong></h5>
 <h5 class="bz-btmmargin lead">
-Robotdazero.it - info@robotdazero.it 
-<br>
 Viale Acradina,1 - 96100 - Siracusa
 <br>
-Telefono 351 - 51.33.273
+info@robotdazero.it 
 <br>
+Telefono 351 - 51.33.273
 <br>
 </h5>
 </div>
