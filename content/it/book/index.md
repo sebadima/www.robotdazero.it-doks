@@ -29,7 +29,7 @@ footer {
 }
 
 body {
-  background-image: url(images/101.jpeg);
+  background-image: url(images/102.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
@@ -112,10 +112,7 @@ input[type='submit'] {
 </style>
 
 
-
-<br>
-<br>
-<br>
+<img width="400" class="x figure-img img-fluid lazyload blur-up" src="images/103.svg" alt="Servizi cloud...">
 
 <div class="bz-container">
   <h5 class="bz-btmmargin lead">Se vuoi parlare direttamente con un esperto puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà  entro 30 minuti.</h5>
