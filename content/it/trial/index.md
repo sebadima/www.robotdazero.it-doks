@@ -1,5 +1,5 @@
 ---
-title: "Prova la nostra app Kaspian in machine learning"
+title: ""
 description: "Prova la nostra app Kaspian in machine learning"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -46,7 +46,7 @@ h3 {
   background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 5px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #007D7E;
 }
 
 .bz-btmmargin {
