@@ -62,7 +62,7 @@ Teensy non viene assemblato direttamente da Arduino o da un produttore collegato
 
 ### LA PIEDINATURA DEL TEENSY
 
-> In linea di massima, per la presenza di ulteriori dispositivi di I/O la piedinatura appare competamente diverrsa nelle ultime versioni 2023.
+> In linea di massima, per la presenza di ulteriori dispositivi di I/O la piedinatura appare completamente diversa dall'<a href="diverrsa" target="_blank" rel="noopener">Arduino Mega</a>, soprattutto nelle versioni più recenti.
 
 <br>
 
@@ -96,8 +96,5 @@ Nella maggior parte dei casi sarai in grado di compilare e caricare i tuoi proge
 </div>
 
 <br>
-<br>
-
-
 
 <p style="font-size: 12px; color:gray">R.104.4.1</p>

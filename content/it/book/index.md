@@ -1,6 +1,6 @@
 ---
-title: "Fatti richiamare"
-description: "I nostri contatti"
+title: ""
+description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
 draft: false
@@ -24,7 +24,7 @@ footer {
 }
 
 body {
-  background-image: url(images/201.svg);
+  background-image: url(images/101.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
@@ -47,7 +47,7 @@ h3 {
   background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 5px;
-  border: 1px solid #007D7E;
+  border: 1px solid #74A1B4;
 }
 
 .bz-btmmargin {

@@ -11,6 +11,10 @@ images: []
 
 <style>
 
+footer {
+  background-image: url(images/footer.png);
+}
+
 .lead {
   padding-top:    0px;    
   padding-bottom: 0px;
@@ -19,7 +23,7 @@ images: []
 }
 
 body {
-  background-image: url(images/101.svg);
+  background-image: url(images/101.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
@@ -42,8 +46,8 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 5px;
-  border: 1px solid #bbbbbb;
+  border-radius: 9px;
+  border: 1px solid #74A1B4;
 }
 
 .bz-btmmargin {

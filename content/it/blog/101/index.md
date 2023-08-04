@@ -94,4 +94,4 @@ Se non si ha una conoscenza di base di questi argomenti, è possibile trovare mo
 
 
 
-<p style="font-size: 11px">R.101.6.5</p>
+<p style="font-size: 11px; color:gray">R.101.6.5</p>
