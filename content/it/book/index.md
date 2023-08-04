@@ -112,7 +112,7 @@ input[type='submit'] {
 </style>
 
 
-<img width="300" class="x figure-img img-fluid lazyload blur-up" src="images/103.svg" alt="Servizi cloud...">
+<img width="300" class="x figure-img img-fluid lazyload blur-up" src="images/104.svg" alt="">
 
 <div class="bz-container">
   <h5 class="bz-btmmargin lead">Se vuoi parlare direttamente con un esperto puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà  entro 30 minuti.</h5>
