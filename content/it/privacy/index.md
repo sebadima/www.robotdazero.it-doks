@@ -9,7 +9,7 @@ images: []
 
 
 
-<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="Servizi cloud...">
+<img width="50%" height="50%" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="logo">
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
 
@@ -64,7 +64,7 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire s
 ##### Ultima modifica: 
 03 Luglio 2023   
 
-##### Dove siamo 
+##### Dove siamo: 
 Viale Akradina, 1 – 96100 – Siracusa
 
 ##### Contatti: 
