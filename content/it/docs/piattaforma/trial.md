@@ -1,5 +1,5 @@
 ---
-title: "Prova il nostro software"
+title: "Prova la piattaforma Kaspian"
 description: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare e basato su software Open Source ampiamente documentati e affidabili."
 lead: "Kaspian è una piattaforma software per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare."
 date: 2020-10-06T08:48:57+00:00
@@ -109,17 +109,14 @@ input[type='submit'] {
 
 
 
-#### werwer
+#### Quali tipi di sensori puoi collegare alla piattaforma?
 
-
-weòwkeròlk
-wer
-wer
-rwe
+Puoi collegare la maggior parte dei sensori di gase della serie MQ2/8/10 etc..
+Ma in generale puoi collage tutti i con uscita digitale.
 
 
 ### Puoi usare la nostra piattaforma sullo smartphone?
 
-òlwòef
+Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello schermo si adatta alla risoluzione. Un tablet con risoluzione di almeno 1024px potrebbe esser la soluzione migliore per la portabilità. La versione desktop funziona ovviamente con ogni schermo.
 
 
