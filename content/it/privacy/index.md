@@ -8,11 +8,13 @@ images: []
 ---
 
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="Servizi cloud...">
+<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="Servizi cloud...">
 
-Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. Titolare del Trattamento dei Dati:
+Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
 
-Robotdazero.it – via Acradina 1 – 96100 – Siracusa
+#### Titolare del Trattamento dei Dati:
+
+Robotdazero.it – Viale Acradina 1 – 96100 – Siracusa
 
 Indirizzo email del Titolare: info@robotdazero.it
 
@@ -46,7 +48,11 @@ L’Utente può verificare la correttezza dei propri Dati e richiederne l’aggi
 
 L’Utente ha diritto di ricevere i propri Dati in formato strutturato, di uso comune e leggibile da dispositivo automatico e, ove tecnicamente fattibile, di ottenerne il trasferimento senza ostacoli ad un altro titolare. Questa disposizione è applicabile quando i Dati sono trattati con strumenti automatizzati ed il trattamento è basato sul consenso dell’Utente, su un contratto di cui l’Utente è parte o su misure contrattuali ad esso connesse. proporre reclamo.
 
-L’Utente può proporre un reclamo all’autorità di controllo della protezione dei dati personali competente o agire in sede giudiziale. ## Dettagli sul diritto di opposizione Quando i Dati Personali sono trattati nell’interesse pubblico, nell’esercizio di pubblici poteri di cui è investito il Titolare oppure per perseguire un interesse legittimo del Titolare, gli Utenti hanno diritto ad opporsi al trattamento per motivi connessi alla loro situazione particolare. Si fa presente agli Utenti che, ove i loro Dati fossero trattati con finalità di marketing diretto, possono opporsi al trattamento senza fornire alcuna motivazione. Per scoprire se il Titolare tratti dati con finalità di marketing diretto gli Utenti possono fare riferimento alle rispettive sezioni di questo documento. Come esercitare i diritti Per esercitare i diritti dell’Utente, gli Utenti possono indirizzare una richiesta agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono depositate a titolo gratuito e evase dal Titolare nel più breve tempo possibile, in ogni caso entro un mese. Ulteriori informazioni sul trattamento Difesa in giudizio I Dati Personali dell’Utente possono essere utilizzati da parte del Titolare in giudizio o nelle fasi preparatorie alla sua eventuale instaurazione per la difesa da abusi nell’utilizzo di questa Applicazione o dei Servizi connessi da parte dell’Utente.
+L’Utente può proporre un reclamo all’autorità di controllo della protezione dei dati personali competente o agire in sede giudiziale. 
+
+## Dettagli sul diritto di opposizione 
+
+Quando i Dati Personali sono trattati nell’interesse pubblico, nell’esercizio di pubblici poteri di cui è investito il Titolare oppure per perseguire un interesse legittimo del Titolare, gli Utenti hanno diritto ad opporsi al trattamento per motivi connessi alla loro situazione particolare. Si fa presente agli Utenti che, ove i loro Dati fossero trattati con finalità di marketing diretto, possono opporsi al trattamento senza fornire alcuna motivazione. Per scoprire se il Titolare tratti dati con finalità di marketing diretto gli Utenti possono fare riferimento alle rispettive sezioni di questo documento. Come esercitare i diritti Per esercitare i diritti dell’Utente, gli Utenti possono indirizzare una richiesta agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono depositate a titolo gratuito e evase dal Titolare nel più breve tempo possibile, in ogni caso entro un mese. Ulteriori informazioni sul trattamento Difesa in giudizio I Dati Personali dell’Utente possono essere utilizzati da parte del Titolare in giudizio o nelle fasi preparatorie alla sua eventuale instaurazione per la difesa da abusi nell’utilizzo di questa Applicazione o dei Servizi connessi da parte dell’Utente.
 
 L’Utente dichiara di essere consapevole che il Titolare potrebbe essere obbligato a rivelare i Dati per ordine delle autorità pubbliche. Informative specifiche Su richiesta dell’Utente, in aggiunta alle informazioni contenute in questa privacy policy, questa Applicazione potrebbe fornire all’Utente delle informative aggiuntive e contestuali riguardanti Servizi specifici, o la raccolta ed il trattamento di Dati Personali. Log di sistema e manutenzione Per necessità legate al funzionamento ed alla manutenzione, questa Applicazione e gli eventuali servizi terzi da essa utilizzati potrebbero raccogliere log di sistema, ossia file che registrano le interazioni e che possono contenere anche Dati Personali, quali l’indirizzo IP Utente. Informazioni non contenute in questa policy Ulteriori informazioni in relazione al trattamento dei Dati Personali potranno essere richieste in qualsiasi momento al Titolare del Trattamento utilizzando gli estremi di contatto. Risposta alle richieste “Do Not Track”
 
@@ -56,10 +62,6 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire s
 ##### Ultima modifica: 
 03 Luglio 2023   
 ##### Dove siamo 
-Via Akradina, 1 – 96100 – Siracusa, P.Iva:00378808885 
+Viale Akradina, 1 – 96100 – Siracusa
 ##### Contatti: 
 email: info@robotdazero.it
-
-
-
-<p style="font-size: 11px">R.Privacy.1.0.2</p>
