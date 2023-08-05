@@ -100,7 +100,7 @@ images: []
       - mail: info@robotdazero.it
       <br>
       <br>
-      Siamo sempre in linea su Whatsapp ma se preferisci un sistema più tradizionale puoi usare la nostra email.  <br> Per quesiti brevi puoi usare il modulo sottostante: rispondiamo sempre in maniera prioritaria
+      Siamo sempre in linea su whatsapp ma se preferisci un sistema più tradizionale puoi usare la nostra email.  <br> Per quesiti brevi puoi usare il modulo sottostante: rispondiamo sempre in maniera prioritaria
    </p>
    <div class="lead">
       <form action="https://formspree.io/f/xyybpbln" method="POST">
@@ -129,18 +129,18 @@ images: []
       <br>
       Usando i siti web di Robotdazero.it o acquistando i Servizi, l'interessato presta il proprio consenso al trattamento dei suoi dati personali da parte di Robotdazero.it come definito nella presente <a href="https://www.Robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> Privacy Generale di Robotdazero.it (l'"Informativa") e nella Nota legale relativa all'uso del sito web di Robotdazero.it.
       Robotdazero.it è un fornitore di servizi di informatica e telematica. L'entità Robotdazero.it con cui l'interessato è in contatto è il titolare del trattamento dei dati personali ricevuti e trattati nell'ambito dei Servizi acquistati o della visita a uno dei siti web di Robotdazero.it. 
-Robotdazero.it ha facoltà di modificare e aggiornare regolarmente la presente <a href="https://www.Robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> a sua esclusiva discrezione.
-<br>
-</h5>
-<h5 class="bz-btmmargin lead"><strong>Robotdazero.it</strong></h5>
-<h5 class="bz-btmmargin lead">
-Viale Acradina,1 - 96100 - Siracusa
-<br>
-info@robotdazero.it
-<br>
-Telefono 351 - 51.33.273
-<br>
-</h5>
+      Robotdazero.it ha facoltà di modificare e aggiornare regolarmente la presente <a href="https://www.Robotdazero.it/privacy/" target="_blank" rel="noopener">Informativa</a> a sua esclusiva discrezione.
+      <br>
+   </h5>
+   <h5 class="bz-btmmargin lead"><strong>Robotdazero.it</strong></h5>
+   <h5 class="bz-btmmargin lead">
+      Viale Acradina,1 - 96100 - Siracusa
+      <br>
+      info@robotdazero.it
+      <br>
+      Telefono 351 - 51.33.273
+      <br>
+   </h5>
 </div>
 
 <br>
