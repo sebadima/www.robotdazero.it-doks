@@ -13,14 +13,9 @@ weight: 100
 toc: true
 ---
 
-<style>
 
-.lead {
-  padding-top:    0px;    
-  padding-bottom: 0px;
-  padding-right: 20px;
-  padding-left:  20px;
-}
+
+<style>
 
 .bz-form {width: 684px; margin: 200px auto 0; }
 
@@ -60,25 +55,12 @@ input[type='text'], input[type='email'] {
 
 input[type='submit'] {
   float: right;
-  background-color: #007D7E;
-  border: none;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 
-/* input[type='submit']:hover {
+input[type='submit']:hover {
   background-color: #000000;
-} */
+}
 
 @media only screen and (max-width: 600px) {
   .bz-container {padding: 10px;}
@@ -89,9 +71,11 @@ input[type='submit'] {
 </style>
 
 
+
+
 <div class="bz-container">
 
-  <h5 class="lead"><strong>Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni</strong>. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.</h5>
+#### Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
@@ -101,7 +85,7 @@ input[type='submit'] {
       <input class="bz-btmmargin" type="text" id="email"    name="email"    placeholder="Email"    required/>
     </div>
     <div class="bz-clear"></div>
-    <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
+    <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="INVIA">
     <div class="bz-clear"></div>
   </form>
 
@@ -109,7 +93,7 @@ input[type='submit'] {
 
 
 
-#### Quali tipi di sensori puoi collegare alla piattaforma?
+### Quali tipi di sensori puoi collegare alla piattaforma?
 
 Puoi collegare la maggior parte dei sensori di gase della serie MQ2/8/10 etc..
 Ma in generale puoi collage tutti i con uscita digitale.
@@ -120,3 +104,6 @@ Ma in generale puoi collage tutti i con uscita digitale.
 Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello schermo si adatta alla risoluzione. Un tablet con risoluzione di almeno 1024px potrebbe esser la soluzione migliore per la portabilità. La versione desktop funziona ovviamente con ogni schermo.
 
 
+### Su che tipo di server è attualmente ospitato Kaspia?
+
+Al momento la piattaforma gira su un piccolo server Ubunt 22.04 con 4 GB di Ram e 2 CPU.
