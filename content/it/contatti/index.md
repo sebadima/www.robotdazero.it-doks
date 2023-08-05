@@ -23,7 +23,7 @@ footer {
   padding-top:    5px;
   padding-bottom: 5px;
   padding-right: 10px;
-  padding-left:  20px;
+  padding-left:  12px;
 }
 
 body {
@@ -109,6 +109,31 @@ input[type='submit'] {
 }
 </style>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <img class="x figure-img img-fluid lazyload blur-up" src="images/106.svg" alt="">
 
 <div class="bz-container">
@@ -129,7 +154,8 @@ input[type='submit'] {
 Siamo sempre in linea su Whatsapp ma se preferisci un sistema più tradizionale puoi usare la nostra email.  <br> Per quesiti brevi puoi usare il modulo sottostante: rispondiamo sempre in maniera prioritaria
 </p>
 
-<br>
+
+<div class="lead">
 
   <form action="https://formspree.io/f/xyybpbln" method="POST">
     <div class="bz-left">
@@ -144,10 +170,44 @@ Siamo sempre in linea su Whatsapp ma se preferisci un sistema più tradizionale 
   </form>
 
 </div>
+</div>
 
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -126,7 +126,7 @@ input[type='submit'] {
       <input class="bz-btmmargin" type="text" id="email"    name="email"    placeholder="Email"    required/>
     </div>
     <div class="bz-clear"></div>
-    <input class="bz-topmargin" type="submit" value="Invia">
+    <input style="background-color: #EE3D43;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
     <div class="bz-clear"></div>
   </form>
 
@@ -144,7 +144,6 @@ input[type='submit'] {
 <h5 class="bz-btmmargin lead">
  Robotdazero.it si impegna a proteggere i dati personali e a garantire che vengano attuate le misure di sicurezza tecniche e organizzative atte a proteggere i dati personali sia quando si acquistano i servizi di robotdazero.it (“Servizi”), che quando si ricevono newsletter o si naviga nei siti web di robotdazero.it.
 
-<br>
 <br>
 <br>
 
