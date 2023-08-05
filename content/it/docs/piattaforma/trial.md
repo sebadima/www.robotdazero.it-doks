@@ -101,7 +101,7 @@ input[type='submit'] {
       <input class="bz-btmmargin" type="text" id="email"    name="email"    placeholder="Email"    required/>
     </div>
     <div class="bz-clear"></div>
-    <input style="background-color: #EE3D43;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
+    <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
     <div class="bz-clear"></div>
   </form>
 
