@@ -8,6 +8,7 @@ images: []
 ---
 
 
+
 <img width="50%" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="Servizi cloud...">
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
@@ -59,9 +60,12 @@ L’Utente dichiara di essere consapevole che il Titolare potrebbe essere obblig
 Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire se gli eventuali servizi di terze parti utilizzati le supportino, l’Utente è invitato a consultare le rispettive privacy policy. Modifiche a questa privacy policy Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se possibile, su questa Applicazione nonché, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui è in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina, facendo riferimento alla data di ultima modifica indicata in fondo. Qualora le modifiche interessino trattamenti la cui base giuridica è il consenso, il Titolare provvederà a raccogliere nuovamente il consenso dell’Utente, se necessario. 
 
 #### Definizioni e riferimenti legali 
+
 ##### Ultima modifica: 
 03 Luglio 2023   
+
 ##### Dove siamo 
 Viale Akradina, 1 – 96100 – Siracusa
+
 ##### Contatti: 
 email: info@robotdazero.it
