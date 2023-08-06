@@ -32,13 +32,13 @@ layout: full
                </div>
                <div class="card-body">
                   <h4 class="card-title">$0<small class="text-muted fw-light">/mo</small></h4>
-                  <h6 class="text-muted mt-2">charged monthly</h6>
+                  <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">100 screenshots</li>
-                     <li class="small">20 requests per minute</li>
+                     <li class="small">20 richieste al minuto</li>
                      <li class="small">no extra allowed</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Start free →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -49,13 +49,13 @@ layout: full
                </div>
                <div class="card-body">
                   <h4 class="card-title">$14<small class="text-muted fw-light">/mo</small></h4>
-                  <h6 class="text-muted mt-2">charged monthly</h6>
+                  <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">1,500 screenshots</li>
-                     <li class="small">40 requests per minute</li>
+                     <li class="small">40 richieste al minuto</li>
                      <li class="small">$0.009 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Start free →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -66,13 +66,13 @@ layout: full
                </div>
                <div class="card-body">
                   <h4 class="card-title">$48<small class="text-muted fw-light">/mo</small></h4>
-                  <h6 class="text-muted mt-2">charged monthly</h6>
+                  <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">10,000 screenshots</li>
-                     <li class="small">80 requests per minute</li>
+                     <li class="small">80 richieste al minuto</li>
                      <li class="small">$0.004 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Start free →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -83,13 +83,13 @@ layout: full
                </div>
                <div class="card-body">
                   <h4 class="card-title">$148<small class="text-muted fw-light">/mo</small></h4>
-                  <h6 class="text-muted mt-2">charged monthly</h6>
+                  <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">50,000 screenshots</li>
-                     <li class="small">150 requests per minute</li>
+                     <li class="small">150 richieste al minuto</li>
                      <li class="small">$0.002 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Start free →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
