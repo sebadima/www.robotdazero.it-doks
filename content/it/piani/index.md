@@ -9,7 +9,7 @@ layout: full
 ---
 
 
-<img class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
+<img class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="immagine del pannello di controllo della nostra app">
 
 <div class="container">
    <div class="row justify-content-center text-center">
