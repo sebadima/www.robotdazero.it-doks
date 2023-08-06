@@ -9,6 +9,7 @@ layout: full
 ---
 
 
+<img class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
 
 <div class="container">
    <div class="row justify-content-center text-center">
