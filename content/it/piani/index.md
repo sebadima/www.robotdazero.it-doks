@@ -1,5 +1,5 @@
 ---
-title: "Le tariffe della nostra dashboard per l'IOT"
+title: "Le tariffe della nostra App per l'IOT"
 description: "Le tariffe della nostra dashboard per l'IOT"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
