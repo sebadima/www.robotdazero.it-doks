@@ -31,7 +31,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Free</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">$0<small class="text-muted fw-light">/mo</small></h4>
+                  <h4 class="card-title">€0<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">100 screenshots</li>
@@ -45,15 +45,15 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Hobbyist</h4>
+                  <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">$14<small class="text-muted fw-light">/mo</small></h4>
+                  <h4 class="card-title">€14<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">1,500 screenshots</li>
                      <li class="small">40 richieste al minuto</li>
-                     <li class="small">$0.009 per extra*</li>
+                     <li class="small">€0.009 per extra*</li>
                   </ul>
                   <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
@@ -65,12 +65,12 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">$48<small class="text-muted fw-light">/mo</small></h4>
+                  <h4 class="card-title">€48<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">10,000 screenshots</li>
                      <li class="small">80 richieste al minuto</li>
-                     <li class="small">$0.004 per extra*</li>
+                     <li class="small">€0.004 per extra*</li>
                   </ul>
                   <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
@@ -82,12 +82,12 @@ layout: full
                   <h4 class="my-0 fw-normal">Business</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">$148<small class="text-muted fw-light">/mo</small></h4>
+                  <h4 class="card-title">€148<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">50,000 screenshots</li>
                      <li class="small">150 richieste al minuto</li>
-                     <li class="small">$0.002 per extra*</li>
+                     <li class="small">€0.002 per extra*</li>
                   </ul>
                   <a class="btn btn-primary px-3 mb-2 shadow w-100" href="https://app.screenshotone.com/sign-up" role="button">Inizia gratis →</a>
                </div>
@@ -95,7 +95,7 @@ layout: full
          </div>
       </div>
       <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con senza RID.</b>
-         *<a href="/docs/charging-extra">Cifre addizionali sono richieste solo dopo gli accordi commerciali.</a><br>Tutti i piani includono ogni caratteristica. Hai bisogno di più risorse? <a href="#" onclick="return $crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),$crisp.push(['do','chat:open']),!1">Request →</a>
+         *<a href="/docs/charging-extra">Cifre addizionali sono richieste solo dopo gli accordi commerciali.</a><br>Tutti i piani includono ogni caratteristica. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Request →</a>
       </p>
    </div>
 </div>
