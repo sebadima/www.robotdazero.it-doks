@@ -15,7 +15,7 @@ layout: full
    <div class="row justify-content-center text-center">
       <div class="col-lg-12 text-center">
          <h2 class="display-5 mb-0">Inizia a costo zero</h2>
-         <p class="lead mt-3 mb-0">Ti puoi cancellare in qualsiasi momento, senza domande. tutti i prezzi sono IVA inclusa.</p>
+         <p class="lead mt-3 mb-0">Ti puoi cancellare in qualsiasi momento, senza domande. Tutti i prezzi sono IVA inclusa.</p>
       </div>
    </div>
    <div class="container mt-2">
@@ -29,7 +29,7 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Free</h4>
+                  <h4 class="my-0 fw-normal">Trial</h4>
                </div>
                <div class="card-body">
                   <h4 class="card-title">€0<small class="text-muted fw-light"></small></h4>
@@ -95,8 +95,8 @@ layout: full
             </div>
          </div>
       </div>
-      <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con senza RID.</b>
-         *<a href="/book">Cifre addizionali sono richieste solo DOPO gli accordi commerciali.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
+      <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con bonifico anticipato.</b>
+         <a href="/book"><br><br>Le cifre addizionali possono essere richieste solo DOPO gli avvisi bonari.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
