@@ -48,7 +48,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">€14<small class="text-muted fw-light"></small></h4>
+                  <h4 class="card-title">€19<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">1,500 screenshots</li>
@@ -95,7 +95,7 @@ layout: full
          </div>
       </div>
       <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con senza RID.</b>
-         *<a href="/docs/charging-extra">Cifre addizionali sono richieste solo dopo gli accordi commerciali.</a><br>Tutti i piani includono ogni caratteristica. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Request →</a>
+         *<a href="/book">Cifre addizionali sono richieste solo DOPO gli accordi commerciali.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
