@@ -149,6 +149,32 @@ sys	0m9.155s
 ```
 
 
+<br>
+
+Il risultato dell'algoritmo con una immagine diversa, stavolta di un pappagallo:
+
+<br>
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine della seconda foto di test per l'algoritmo in machine learning" src="images/103.jpeg">
+
+```bash
+(w) raspberry ~/pi (master)$ time python  image_classify.py
+2023-08-06 15:29:38.135273: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-06 15:29:38.695745: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-06 15:29:39.153077: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-08-06 15:29:44.802273: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+1/1 [==============================] - 2s 2s/step
+Result: [('n01806567', 'quail', 0.1353003)]
+
+real	0m18.637s
+user	0m18.892s
+sys	0m8.997s
+
+```
+
+Come si vede l’output dopo 18.637 secondi descrive il pappagallo come una quaglia (‘quail’). Il risultato è un poco comico ma la bassa qualità della foto (si vede solo la testa sfocata e uno sfondo complicato) rende accettabile il risultato.
+
+
 
 ### A COSA SERVONO GLI ALGORITMI IN MACHINE LEARNING DEL NOSTRO ROVER
 
