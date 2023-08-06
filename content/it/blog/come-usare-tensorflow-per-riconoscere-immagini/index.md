@@ -151,9 +151,7 @@ sys	0m9.155s
 
 <br>
 
-Il risultato dell'algoritmo con una immagine diversa, stavolta di un pappagallo:
-
-<br>
+- **Il risultato dell'algoritmo con una immagine diversa, stavolta di un pappagallo:**
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine della seconda foto di test per l'algoritmo in machine learning" src="images/103.jpeg">
 
