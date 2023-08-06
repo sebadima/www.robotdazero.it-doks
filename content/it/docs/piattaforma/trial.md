@@ -104,6 +104,6 @@ Ma in generale puoi collage tutti i con uscita digitale.
 Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello schermo si adatta alla risoluzione. Un tablet con risoluzione di almeno 1024px potrebbe esser la soluzione migliore per la portabilità. La versione desktop funziona ovviamente con ogni schermo.
 
 
-### Su che tipo di server è attualmente ospitato Kaspia?
+### Su che tipo di server è attualmente ospitato Kaspian?
 
-Al momento la piattaforma gira su un piccolo server Ubunt 22.04 con 4 GB di Ram e 2 CPU.
+Al momento la piattaforma gira su un server Ubuntu 22.04 con 4 GB di Ram e 2 CPU.
