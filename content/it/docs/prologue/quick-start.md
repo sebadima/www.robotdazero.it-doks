@@ -55,7 +55,7 @@ Infine si deve installare il pacchetto di Docker
 $ sudo apt install docker-ce
 ```
 
-Docker adesso dovrebbe essere installato con il daemon attivo e settao per ripartire in automatico dopo ogni reboot. Per controllare basta eseguire: 
+Docker adesso dovrebbe essere installato con il daemon attivo e settato per ripartire in automatico dopo ogni reboot. Per controllare basta eseguire: 
 
 ```bash
 $ sudo systemctl status docker
@@ -149,20 +149,20 @@ La creazione della piattaforma è gestita interamente con docker, ma prima di co
 come iniziare:
 
 
-### Filosofia di base del rover
-la filofia di base del rover e quelle di permettere a chiunque di creare la propria piattaforma di sorveglizanza senza dipendere da servizi esterni tipo amazoon AWS o Google Cloud ma di ess effettuare in PROPRIO le elaborazioni dei DATI ee usare uqnto piu possibile soluzioni Open SOurce
+### La filosofia di base di Kaspian
+Vogliamo permettere a chiunque di creare la propria piattaforma di elaborazione dati senza dipendere da servizi esterni tipo amazon AWS o Google Cloud ma di effettuare in PROPRIO la analisi dei dati usando software open source.
 
 ### L'Hosting
-1. innanzi tutto vi servirà un servixzo di hosting tipo linode o digital ocean dover ospitare la vostra piattaforma dati e econservere lei vostri DAI!
+1. innanzi tutto vi servirà un servizio di hosting tipo Linode/Digital Ocean/Amazon AWS per ospitare il software e dati.
 perche affidarsi a as un computer opsitato suall 'esterno:
-non potere realmente garantire la continuita della piattaforma usando un computer locale, anche se dotato di ridodnsanza hardwa e con soluzioniu multiple di backup. dovreste ahce pensare a soluzioni di connettivita veloce che in genere non sono alla portata di piccole organizzazioni piccole
 
-### Software Open Source
-2. perche usae soluzioni software Open Source: 
-il motivo è soprattutto la qualità, non ill costo FREE come potreste oenare. Le soluzoni open source sono comuni anche nella applicazioni industriali ad a alta sicurezza, pensate a node-red e a sistemi come ROS2 .
+Non potert realmente garantire la continuita della piattaforma usando un computer locale, anche se dotato di ridondanza hardware e con soluzioni multiple di backup.
+
+### Perchè usiamo solo software Open Source
+il motivo sta più nella qualità che bel costo: le soluzoni open source tipo Nginx o MariaDB o ROS2 sono comuni anche nella applicazioni industriali ad a alta sicurezza. Ad eesempio nel campo dell'IOT Node-REDd viene continuamente spinto anche da un colosso tipo la Siemens.
 
 ### Stampa 3D
-3. la stampa 3D è un elemento essezniale dello sviluppo della robotica e non solo e doreste certamente prevedere di stampare da soli piccoli e medi pezzi per assemblare i vostri proytotipi e soluzioni definitive. in caso contrario dovrete sempre fare riferimento ad Amazono e alla fornitura continua di pezzi e dei loro pezzi di ricambio, .. Ed e una cosa che non vi consigliamo.
+La stampa 3D è un elemento esseniziale dello sviluppo della robotica e dovreste certamente prevedere di stampare da soli piccoli e medi pezzi per assemblare i vostri prototipi. in caso contrario dovrete sempre fare riferimento ad Amazon e alla fornitura continua di pezzi e ricambi, una cosa che ci ha rallentato molti in passato.
 
 ### Start development server 222
 La matematica.
