@@ -34,7 +34,7 @@ layout: full
                   <h4 class="card-title">€0<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">100 screenshots</li>
+                     <li class="small">1000 immagini</li>
                      <li class="small">20 richieste al minuto</li>
                      <li class="small">nessun traffico extra</li>
                   </ul>
@@ -51,7 +51,7 @@ layout: full
                   <h4 class="card-title">€19<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">1,500 screenshots</li>
+                     <li class="small">1,500 immagini</li>
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
@@ -68,7 +68,7 @@ layout: full
                   <h4 class="card-title">€48<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">10,000 screenshots</li>
+                     <li class="small">10,000 immagini</li>
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
@@ -85,7 +85,7 @@ layout: full
                   <h4 class="card-title">€148<small class="text-muted fw-light"></small></h4>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">50,000 screenshots</li>
+                     <li class="small">50,000 immagini</li>
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
