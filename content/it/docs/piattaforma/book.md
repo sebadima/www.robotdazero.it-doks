@@ -95,16 +95,16 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 
 </div>
 
-### FAQ
-#### Quali sono i tempi di attesa? 
+## FAQ
+### Quali sono i tempi di attesa? 
 
 Dipende dalle richieste e dalla disponibilità degli incaricati, in genere rispondiamo entro pochi minuti.
 
-#### Posso chiamare direttamente al vostro recapito telefonico?
+### Posso chiamare direttamente al vostro recapito telefonico?
 
 In genere ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp. Ti suggeriamo comunque di compilare il modulo per avere delle risposte più rapide. 
 
-#### Come posso inviare dei file?
+### Come posso inviare dei file?
 
 In questo caso puoi usare solo la nostra email (clicca sul tasto 'Copy'):
 ```bash
