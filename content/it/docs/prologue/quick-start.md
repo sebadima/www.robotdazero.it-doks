@@ -1,7 +1,7 @@
 ---
 title: "Quick Start"
-description: "Come iniziare velocemente con la nostra piattaforma in Machine Learning Kaspian."
-lead: "Come iniziare velocemente con la nostra piattaforma in ML/AI Kaspian"
+description: "Come iniziare con la nostra piattaforma in Machine Learning Kaspian."
+lead: "Come iniziare con la nostra piattaforma in ML/AI Kaspian."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -13,7 +13,7 @@ weight: 110
 toc: true
 ---
 
-Questo documento descrive la installazione completa (lunga) di Kapian sul tuo server personale: se vuoi partire con la versione cloud (rapida) vai invece a questa <a href="/docs/piattaforma/cloud/">pagina</a>.
+Questo documento descrive la installazione completa (lunga) di Kaspian sul tuo server personale: se vuoi partire con la versione cloud (rapida) vai invece a questa <a href="/docs/piattaforma/cloud/">pagina</a>.
 ## Cosa serve prima di iniziare
 
 - Server Linux ospitato su Linode, Digital Ocean, Amazon AWS o simili
@@ -136,7 +136,7 @@ docker-compose up --build -d
 docker-compose logs -f
 ```
 
-### Install dependencies
+### Installare le librerie JS
 
 ```bash
 npm install
@@ -147,41 +147,18 @@ npm install
 La creazione della piattaforma è gestita interamente con docker, ma prima di collegare sensori e altro è necessario testare il sistema, in particolare il software di cache REDIS e il database Postgres.
 
 
-come iniziare:
+```bash
+docker ps
+```
+
+se tutto il sitema è stato installato correttamente dovrebbe qualcosa di simile a questo:
 
 
-### La filosofia di base di Kaspian
-Vogliamo permettere a chiunque di creare la propria piattaforma di elaborazione dati senza dipendere da servizi esterni tipo amazon AWS o Google Cloud ma di effettuare in PROPRIO la analisi dei dati usando software open source.
-
-### L'Hosting
-1. innanzi tutto vi servirà un servizio di hosting tipo Linode/Digital Ocean/Amazon AWS per ospitare il software e dati.
-perche affidarsi a as un computer opsitato suall 'esterno:
-
-Non potert realmente garantire la continuita della piattaforma usando un computer locale, anche se dotato di ridondanza hardware e con soluzioni multiple di backup.
-
-### Perchè usiamo solo software Open Source
-il motivo sta più nella qualità che bel costo: le soluzoni open source tipo Nginx o MariaDB o ROS2 sono comuni anche nella applicazioni industriali ad a alta sicurezza. Ad eesempio nel campo dell'IOT Node-REDd viene continuamente spinto anche da un colosso tipo la Siemens.
-
-### Stampa 3D
-La stampa 3D è un elemento esseniziale dello sviluppo della robotica e dovreste certamente prevedere di stampare da soli piccoli e medi pezzi per assemblare i vostri prototipi. in caso contrario dovrete sempre fare riferimento ad Amazon e alla fornitura continua di pezzi e ricambi, una cosa che ci ha rallentato molti in passato.
-
-### Start development server 222
-La matematica.
-Affidarsi ad un matematico o ad un ingegnere prr progettare la parte piu complessa del vs robot non è per noi una soluzione plausile:
-Dovrete sempre dipendere dal progettista iniziale per CAPIRE come modificar il robot a vostro vantaggio e come farl evolver.
- Vi sritroverete SEMPRE con delle soluzione chiuse e delle Expertise specifiche del vostro ingegnere o fisico. Una o opizone per noi improponibile.
-
-
-Consigliamo invede di usare Matematicaopens ource inglobaa nel progetto ROS2 e nei prodotti dell ecosiistema ROS che e ingrado di superare mole delle dificolta di calcolo della traiettori, gestione dei motori, rilevzioni di oggetti in movimento, utilizzo di matrici e tensori che in teoria vi obbligherebbero a ricorrere ad un aiuto esterno .
-
-non fate queso errore. sate le routine piu semolici e potenti di ROS e estite d soli gli aggiornamenti e le modifiche.
-
-5. impararGIT:
-Git è un pogramma a linea di comando che vi consente di gestiore Versioni e aggiornamrnti e condivisone dei dati e del software.
-Eun prodotto open source come notrs abitudine ed e un prodotto altamente affidabile e a nostro avviso non avete motivo di uarr alternatice commerciali.
- impararare git e' la chiave per sdganciarvi dai blog tipo wordpresse dalle difficilta di coordinae i vpostri ptogrammatori
-
-
-
-
-
+```bash
+CONTAINER ID   IMAGE                                            COMMAND                  CREATED         STATUS       PORTS                                                                                  NAMES
+8b3ad08c73aa   k4_celery-beat                                   "/code/docker-entryp…"   2 hours ago     Up 2 hours   8005/tcp                                                                               k4_celery-beat_1
+f72c057c6b70   k4_celery                                        "/code/docker-entryp…"   2 hours ago     Up 2 hours   8005/tcp                                                                               k4_celery_1
+8db42dcf3304   k4_app                                           "/code/docker-entryp…"   2 hours ago     Up 2 hours   0.0.0.0:8005->8005/tcp, :::8005->8005/tcp                                              k4_app_1
+5d6d7a3149ed   postgres:9.6                                     "docker-entrypoint.s…"   2 hours ago     Up 2 hours   5432/tcp                                                                               k4_db_1
+31b16a25b5e0   redis:3.0                                        "docker-entrypoint.s…"   2 hours ago     Up 2 hours   6379/tcp                    
+```
