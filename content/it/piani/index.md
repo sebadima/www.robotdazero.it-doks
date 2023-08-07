@@ -39,7 +39,7 @@ layout: full
                      <li class="small">20 richieste al minuto</li>
                      <li class="small">no extra allowed</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -56,7 +56,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -73,7 +73,7 @@ layout: full
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
@@ -90,13 +90,13 @@ layout: full
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
                </div>
             </div>
          </div>
       </div>
       <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con bonifico anticipato.</b>
-         <a href="/book"><br><br>Le cifre addizionali possono essere richieste solo DOPO gli avvisi bonari.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
+         <a href="/trial"><br><br>Le cifre addizionali possono essere richieste solo DOPO gli avvisi bonari.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
