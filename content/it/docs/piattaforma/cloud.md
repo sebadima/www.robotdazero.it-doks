@@ -33,6 +33,10 @@ Devi personalmente inserire tra le opzioni i SSDID della tua WIFI (il nome) e la
 
 ### Iniziare con Arduino
 
-Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian e
+Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian ... 
 
 <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/102.png" alt="">
+
+e cliccare su "Crea il sorgente per Arduino", dopo questa operazione verrà creato un file dal nome "arduino.setup" che poteri scaricare nella cartella di download. Ti basterà copiare il contenuto del file in un nuovo progrmma per Arduino e procedere con il solito cicl di compilazione / upload. Fatto questo devi aspettare almeno cinque minuti e potrai andare nel client della App Kaspian sul tuo telefoni, ad esempio e visualizzare i dati dei sensori nella pagina "Sorveglianza".
+
+<img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/103.png" alt="">
