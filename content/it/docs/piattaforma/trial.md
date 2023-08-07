@@ -23,8 +23,8 @@ toc: true
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 7px;
-  border: 1px solid #74A1B4;
+  border-radius: 5px;
+  border: 1px solid #4F2872;
 }
 
 .bz-btmmargin {
@@ -59,7 +59,6 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-  background-color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
