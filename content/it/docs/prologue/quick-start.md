@@ -13,6 +13,7 @@ weight: 110
 toc: true
 ---
 
+Questo documento descrive la installazione completa (lunga) di Kapian sul tuo server personale: se vuoi partire con la versione cloud (rapida) vai invece a questa <a href="/docs/piattaforma/cloud/">pagina</a>.
 ## Cosa serve prima di iniziare
 
 - Server Linux ospitato su Linode, Digital Ocean, Amazon AWS o simili
