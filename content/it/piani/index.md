@@ -37,9 +37,9 @@ layout: full
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">100 screenshots</li>
                      <li class="small">20 richieste al minuto</li>
-                     <li class="small">no extra allowed</li>
+                     <li class="small">nessun traffico extra</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -56,7 +56,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -73,7 +73,7 @@ layout: full
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -90,7 +90,7 @@ layout: full
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary px-3 mb-2 shadow w-100" href="/docs/piattaforma/trial" role="button">Inizia gratis →</a>
+                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
