@@ -13,6 +13,12 @@ weight: 630
 toc: true
 ---
 
+
+
+<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="/104.svg" alt="">
+
+
+
 ## Hyas?
 
 Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
