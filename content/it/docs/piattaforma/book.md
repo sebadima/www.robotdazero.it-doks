@@ -70,6 +70,8 @@ input[type='submit'] {
 
 
 
+<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="/105.svg" alt="">
+
 Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
 
 In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
@@ -93,16 +95,16 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 
 </div>
 
-#### FAQ
-- Quali sono i tempi di attesa? 
+### FAQ
+#### Quali sono i tempi di attesa? 
 
 Dipende dalle richieste e dalla disponibilità degli incaricati, in genere rispondiamo entro pochi minuti.
 
-- Posso chiamare direttamente al vostro recapito telefonico?
+#### Posso chiamare direttamente al vostro recapito telefonico?
 
 In genere ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp. Ti suggeriamo comunque di compilare il modulo per avere delle risposte più rapide. 
 
-- Come posso inviare dei file?
+#### Come posso inviare dei file?
 
 In questo caso puoi usare solo la nostra email (clicca sul tasto 'Copy'):
 ```bash
