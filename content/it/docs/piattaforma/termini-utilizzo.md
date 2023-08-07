@@ -19,7 +19,7 @@ toc: true
 
 ### Introduzione
 
-I presenti termini di utilizzo (i “Termini”) si applicano all'accesso e all'utilizzo del nostro servizio API basato su abbonamento (il “Servizio”). Accedendo o utilizzando il Servizio, l'utente accetta di essere vincolato da questi Termini. Se non si accettano questi Termini, non utilizzare il Servizio.
+I presenti termini di utilizzo (i “Termini”) si applicano all'accesso e all'utilizzo del nostro servizio in cloud  basato su abbonamento (il “Servizio”). Accedendo o utilizzando il Servizio, l'utente accetta di essere vincolato da questi Termini. Se non si accettano questi Termini, si prega di non utilizzare il Servizio.
 
 ### Privacy
 
@@ -28,9 +28,10 @@ Ci impegniamo a proteggere la tua privacy e i tuoi dati personali. Utilizzeremo 
 ### Licenza
 
 Subordinatamente al rispetto dei presenti Termini, ti concediamo una licenza limitata, non esclusiva, non trasferibile e non sublicenziabile per accedere e utilizzare il Servizio.
-Restrizione
 
-L'utente accetta di non (a) accedere al Servizio in modo da danneggiare, disabilitare, sovraccaricare o compromettere il Servizio o interferire con l'utilizzo del Servizio da parte di terzi; o (b) utilizzare il Servizio per scopi illegali o non autorizzati.
+### Restrizione
+
+L'utente accetta di (a) non accedere al Servizio in modo da danneggiare, disabilitare, sovraccaricare o compromettere il Servizio o interferire con l'utilizzo del Servizio da parte di terzi; o (b) utilizzare il Servizio per scopi illegali o non autorizzati.
 
 ### Cessazione
 
