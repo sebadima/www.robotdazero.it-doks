@@ -9,7 +9,6 @@ layout: full
 ---
 
 
-<img class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="immagine del pannello di controllo della nostra app">
 
 <div class="container">
    <div class="row justify-content-center text-center">
@@ -96,7 +95,7 @@ layout: full
          </div>
       </div>
       <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con bonifico anticipato.</b>
-         <a href="/trial"><br><br>Le cifre addizionali possono essere richieste solo DOPO gli avvisi bonari.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="#" onclick="return €crisp.push(['do','message:show',['text','Hello 👋 How many screenshots do you plan to make monthly? And if you need any additional features?']]),€crisp.push(['do','chat:open']),!1">Richiedi un preventivo →</a>
+         <a href="/docs/piattaforma/book"><br><br>Gli extra sono abilitati solo a richiesta dell'utente.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
