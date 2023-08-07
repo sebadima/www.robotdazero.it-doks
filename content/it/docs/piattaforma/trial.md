@@ -1,9 +1,9 @@
 ---
 title: "Prova la nostra piattaforma in ML/AI Kaspian"
 description: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare e basato su software Open Source ampiamente documentati e affidabili."
-lead: "Kaspian è una piattaforma software per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare."
+lead: "Kaspian è una piattaforma per costruire sistemi di controllo e sorveglianza sicuri, semplici e facili da personalizzare e basato su software Open Source ampiamente documentati e affidabili."
 date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+lastmod: 2023-08-04T08:48:57+00:00
 draft: false
 images: []
 menu:
@@ -30,6 +30,7 @@ toc: true
 .bz-btmmargin {
   margin-bottom: 14px !important;
 }
+
 .bz-topmargin {
   margin-top: 6px !important;
 }
@@ -67,8 +68,8 @@ input[type='submit']:hover {
   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
   input[type='submit'] {margin-left: 10px;}
 }
-</style>
 
+</style>
 
 
 
