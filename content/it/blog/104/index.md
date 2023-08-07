@@ -97,4 +97,39 @@ Nella maggior parte dei casi sarai in grado di compilare e caricare i tuoi proge
 
 <br>
 
-<p style="font-size: 12px; color:gray">R.104.4.1</p>
+
+
+
+
+
+### Risoluzione dei problemi più comuni
+
+1. Il LED lampeggia ma nessuna comunicazione USB: 
+molti telefoni cellulari sono venduti con cavi di ricarica. Hanno solo 2 fili per l'alimentazione, ma mancano i 2 fili di dati. Prova un altro cavo USB.
+
+2. La porta seriale non viene riconosciuta: 
+Teensy utilizza il protocollo HID per il caricamento, non il protocollo seriale. Le nuove schede Teensy vengono fornite con il file di esempio 'blinking LED' compilato per funzionare come RawHID. Bisogna programmare Teensy almeno una volta dall'IDE di Arduino. La porta COM (Windows) o il dispositivo seriale (Mac, Linux) appare solo dopo che Teensy inizia a eseguire il programma. Le normali schede Arduino sono sempre seriali. 
+
+> Teensy utilizza HID e supporta molti protocolli. Per utilizzare serial, assicurarsi che il menu Strumenti > USB Type sia impostato su "Serial" e ricorda che Teensy diventa un dispositivo seriale solo DOPO avere eseguito almeno un programma compilato con questa impostazione.
+
+3. Il chip principale sembra assolutamete inerte:
+Più di 4 volt applicati al pin di alimentazione 3.3 V posso bruciare istantaneamente il chip. Serve estrema attenzione nel collegare la alimentazione alla scheda Teensy sia usando il VIN (5 V) che il pin a 3.3. Fili volanti tra Teensy e altri dispistivi elettrici sono il modo più rapiso per rovinare il Teensy. 
+
+
+4. Comunicazione inaffidabile
+Alcuni hub USB hanno problemi a gestire una rapida sequenza di connessione / disconnessione durante la programmazione di Teensy. La maggior parte degli hub funziona bene, ma alcuni possono causare problemi difficili da risolvere. In caso provate ad usare un vecchio cavo USB collaudato con il vecchio Arduino.
+
+#### Teensy 3.0 non viene riconosciuto da Teensy Loader
+Teensy Loader 1.07 è la prima versione a supportare Teensy 3.0. Puoi controllare la versione usando Help > About . La versione 1.07 fa parte del programma di installazione Teensyduino. Viene eseguito automaticamente quando si fa clic su Carica o Verifica in Arduino.
+Nuovo di zecca Teensy non riconosciuto
+Quando un Teensy nuovo di zecca non è mai stato riconosciuto da Teensy Loader, segui questi passaggi.
+
+- **In primo luogo**, riavviare il computer e rimuovere qualsiasi altro circuito collegato al Teensy.
+Il LED dovrebbe lampeggiare quando il cavo USB è collegato. Ogni Teensy è pre-programmato con un programma di lampeggio LED durante il test del prodotto. Non sono necessari driver o software sul computer per il lampeggio del LED. È necessaria solo l'alimentazione dal cavo USB. Se il LED non lampeggia, controllare la tensione sulla scheda utilizzando un voltmetro, o provare un altro cavo o porta USB, ed evitare eventuali hub USB. Se il LED non lampeggia mai, non preoccuparti di driver o software. Nessun LED lampeggia indica che la scheda non riceve alimentazione!
+- **Quando si preme il pulsante**, il LED dovrebbe smettere di lampeggiare. Nessun software o driver sul computer sono necessari per il pulsante per fermare il lampeggio del LED. Quando il LED lampeggia e il pulsante causa l'arresto del lampeggio, questa è un'ottima indicazione che l'hardware Teensy funziona correttamente.
+- **Quando il LED smette di lampeggiare**, se il programma Teensy Loader è in esecuzione, dovrebbe rilevare la scheda Teensy. Il messaggio" Premere il pulsante per attivare " scomparirà e l'immagine mostrerà quale scheda è presente. Nessun driver deve essere installato su Windows o Mac per questo lavoro. Su Linux, il file delle regole udev deve essere installato. Se il LED lampeggia e il pulsante interrompe il lampeggio, ma Teensy Loader non rileva mai la scheda e hai seguito i passaggi precedenti, il problema è quasi certamente un cavo USB difettoso. Molti cavi USB realizzati per i dispositivi di ricarica hanno solo fili di alimentazione ma nessuna linea dati.
+- **Su Windows**, l'installazione del driver è necessaria solo per utilizzare il monitor seriale Arduino quando Teensy implementa un dispositivo seriale (dal menu Strumenti > USB Type) e per riprogrammare automaticamente utilizzando "Upload" quando Teensy è stato programmato come Seriale. Senza il driver, 5 secondi dopo aver fatto clic su Carica, apparirà un messaggio che ti chiede di premere il pulsante sul tuo Teensy. Windows può darti errori fuorvianti che indicano che i driver devono essere installati, ma NESSUN DRIVER È NECESSARIO su Windows per far sì che Teensy Loader riconosca il tuo Teensy e programmi il nuovo codice. Segui i passaggi 1-3 precedenti prima di preoccuparti dei conducenti!
+
+
+
+<p style="font-size: 14px; color:gray">R.104.5.0</p>
