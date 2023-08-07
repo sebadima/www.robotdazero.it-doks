@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["arduino", "elettronica","pratica"]
+tags: ["arduino", "elettronica","teensy"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
