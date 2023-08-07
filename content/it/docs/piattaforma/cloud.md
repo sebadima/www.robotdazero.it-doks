@@ -19,29 +19,35 @@ toc: true
 
 ### Introduzione
 
-Puoi preparare da solo la tua infrastruttura per far funzionare la nostra piattaforma ma ti suggeriamo di partire con la versione ospitata sui nostri computer che puoi provare gratuitamente visitando questa <a href="/docs/piattaforma/trial/">pagina</a>.
+Puoi preparare da solo la tua infrastruttura per far funzionare la nostra piattaforma ma ti suggeriamo di partire con la versione ospitata sui nostri computer che puoi richiedere gratuitamente visitando questa <a href="/docs/piattaforma/trial/">pagina</a>.
 
 ### Cosa accade al primo accesso
 
-Con la nostra versione cloud puoi partire da subito collegando i tuoi sensori collegati ad aun Arduino con accesso al WIFI, con un ESP32 (tutte le versioni accedonoi al WIFI).  Usando le credenzili che riceverai via email potrai andare alla pagina di setup e generale i files in linguaggio C++ per il Arduino. I files terranno conto delle tue credenzili WIFI da inserire tra le opzioni e dei valori assegnati in atuomatico da Amazon AWS. Le foto dei tuoi apprati saranno conservate su sistemi ad alta cicurezza come Amazon S3 e i dati numerici saranno conservati su MQTT, il data base specializzato in applicazioni IOT.
+Con la nostra versione cloud puoi partire senza installare il programma e in pochi minuti potrai leggere sulla App i dati dei tuoi sensori.  La App è compatibile con ogni Arduino dotato di accesso al WIFI e con ESP32 (tutte le versioni). 
+
+
+Usando le credenziali che riceverai via email dovrai accedere alla App dal tuo PC e andare subito alla pagina delle impostazioni, premere modifica e inserire le credenziali della tua WIFI (SSID e password). 
 
 ### Cosa bisogna impostare nelle opzioni per partire
 
-Devi personalmente inserire tra le opzioni i SSDID della tua WIFI (il nome) e la password. Il resto della configurazione, le API e le password dei servizi associati sono invece inserite automaticamente da noi.
+Dopo avere configurato le due opzioni della sezione WIFI la App dovrebbe apparire come nella immagine sotto. Il resto della configurazione, le API e le password dei servizi associati sono invece inserite automaticamente da noi.
 
 <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/101.png" alt="">
 
-### Iniziare con Arduino
+### Come programmare il tuo Arduino
 
-Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian ... 
+Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian cliccando sul logo: 
 
 <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/102.png" alt="">
 
 <br>
 <br>
 
-e cliccare su "Crea il sorgente per Arduino", dopo questa operazione verrà creato un file dal nome "arduino.setup" che poteri scaricare nella cartella di download. Ti basterà copiare il contenuto del file in un nuovo progrmma per Arduino e procedere con il solito cicl di compilazione / upload. 
+dovrai quindi cliccare su "CREA IL SORGENTE PER ARDUINO". Dopo questa operazione verrà creato un file dal nome "arduino.setup" che potrai scaricare nella cartella di download. Ti basterà copiare il contenuto del file in un nuovo progrmma per Arduino e procedere con il solito ciclo di compilazione / upload. 
 
-Fatto questo devi aspettare almeno cinque minuti e potrai andare nel client della App Kaspian sul tuo telefoni, ad esempio e visualizzare i dati dei sensori nella pagina "Sorveglianza".
+I files terranno conto delle tue credenziali WIFI da te inserite e delle credenziali Amazon QWS inserire in automatico dali nostri server. Le foto scattate dalle tue WebCAM saranno conservate su sistemi ad alta sicurezza come Amazon S3, mentre i dati numerici saranno conservati su MQTT, il database Amazon per applicazioni IOT.
 
+Fatto questo devi aspettare almeno cinque minuti e potrai andare nel client della App Kaspian sul tuo telefonino, ad esempio e visualizzare i dati dei sensori nella pagina "Sorveglianza".
+
+<br>
 <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/103.png" alt="">
