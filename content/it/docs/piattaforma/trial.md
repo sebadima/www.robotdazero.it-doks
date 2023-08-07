@@ -24,7 +24,7 @@ toc: true
   background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 5px;
-  border: 1px solid #4F2872;
+  border: 1px solid gray;
 }
 
 .bz-btmmargin {
@@ -72,7 +72,7 @@ input[type='submit'] {
 
 <div class="bz-container">
 
-#### Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il cellulare e dopo una breve telefonata di verifica riceverai le credenziali via mail.
+#### Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il numero di telefono e dopo una breve telefonata di verifica riceverai le credenziali via mail.
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
@@ -90,13 +90,16 @@ input[type='submit'] {
 
 <br>
 
-### Quali tipi di sensori posso collegare alla piattaforma?
-Puoi collegare la maggior parte dei sensori di gase della serie MQ2/8/10 etc..
-Ma in generale puoi collage tutti i con uscita digitale.
+### Quali sensori di gas posso collegare alla piattaforma?
+Puoi collegare tutti i sensori di gas della serie  MQ-2 MQ-3 MQ-4 MQ-5 MQ-6 MQ-7 MQ-8 MQ-9 MQ-135.
+In generale puoi collegare tutti i sensori di gas, temperatura, suono, GPS, magnetici, amperometrici etc. compatibili con Arduino.
 
 ### Posso usare la piattaforma Kaspian sullo smartphone?
-Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello schermo si adatta alla risoluzione. Un tablet con risoluzione di almeno 1024px potrebbe esser la soluzione migliore per la portabilità. La versione desktop funziona ovviamente con ogni schermo.
+Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello schermo si adatta all'hardware adoperato. Un tablet con risoluzione di almeno 1024px potrebbe essere la soluzione migliore per la portabilità. La versione desktop funziona ovviamente con ogni schermo.
 
 ### Su che tipo di server è attualmente ospitato Kaspian?
-Attualmente la piattaforma gira su un server Ubuntu 22.04 - 4GB Ram - 2 CPU.
+Attualmente la piattaforma gira su due server Ubuntu 22.04 - 4GB Ram - 2 CPU.<br>
+i vostri dati sono al sicuro perchè replicati sui servizi *Amazon S3* e *Amazon Glacier* in due centri geografici differenti.
 
+### Posso ospitare la piattaforma software sul mio server personale?
+Sì, puoi copiare il software della piattaforma Kaspian ed usarlo senza pagare nulla. Se hai già esperienza nella manutenzione di server Linux può essere la scelta migliore. Per chi non è sistemista o non vuole sobbarcarsi la gestione degli aggiornamenti e del backup, acquistare la nostra versione cloud potrebbe essere la soluzione più ecomomica.
