@@ -1,39 +1,21 @@
 ---
 title: "Ti richiamiamo noi"
-description: "La Dashboard di RBT0"
-lead: "Come eseguire alcuni semplici task"
+description: "Come farti richiamare per parlare con un nostro incaricato"
+lead: "Come farti richiamare per parlare con un nostro incaricato"
 date: 2020-10-13T15:21:01+02:00
-lastmod: 2020-10-13T15:21:01+02:00
+lastmod: 2023-08-04T15:21:01+02:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 130
+    parent: "piattaforma"
+weight: 210
 toc: true
 ---
-
-{{< alert icon="💡" text="Se vuoi parlare direttamente con un esperto puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà entro 30 minuti." />}}
 
 
 
 <style>
-
-.lead {
-  padding-top:    5px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  padding-left:  12px;
-}
-
-h5 {
-  font-weight: 700;
-}
-
-h3 {
-  text-transform: uppercase;
-  color: #5f7c57;
-}
 
 .bz-form {width: 684px; margin: 200px auto 0; }
 
@@ -41,13 +23,14 @@ h3 {
   width: 100%;
   background-color: #fff;
   padding: 30px 40px 20px;
-  border-radius: 7px;
-  border: 1px solid #a4b1c1;
+  border-radius: 5px;
+  border: 1px solid #4F2872;
 }
 
 .bz-btmmargin {
   margin-bottom: 14px !important;
 }
+
 .bz-topmargin {
   margin-top: 6px !important;
 }
@@ -73,25 +56,8 @@ input[type='text'], input[type='email'] {
 
 input[type='submit'] {
   float: right;
-  background-color: #007D7E;
-  border: none;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  font-size: 20px;
 }
-
-/* input[type='submit']:hover {
-  background-color: #000000;
-} */
 
 @media only screen and (max-width: 600px) {
   .bz-container {padding: 10px;}
@@ -99,13 +65,19 @@ input[type='submit'] {
   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
   input[type='submit'] {margin-left: 10px;}
 }
+
 </style>
 
+Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
 
-<img width="50%" height="50%" class="x figure-img img-fluid lazyload blur-up" src="images/106.svg" alt="">
+In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di attivazione automatica. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
+
+<br>
 
 <div class="bz-container">
+
   <form action="https://formspree.io/f/xqkveyej" method="POST">
+    <h5> Per parlare direttamente con un esperto lascia il tuo recapito telefonico e un nostro incaricato ti contatterà entro 30 minuti.</h5>
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
       <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"                   required/>
@@ -116,5 +88,5 @@ input[type='submit'] {
     <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
     <div class="bz-clear"></div>
   </form>
-</div>
 
+</div>
