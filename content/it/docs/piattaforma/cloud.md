@@ -33,4 +33,6 @@ Devi personalmente inserire tra le opzioni i SSDID della tua WIFI (il nome) e la
 
 ### Iniziare con Arduino
 
-Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian e  
+Appena inserite le credenziali WIFI puoi andare nella HOME della App Kaspian e
+
+<img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/102.png" alt="">
