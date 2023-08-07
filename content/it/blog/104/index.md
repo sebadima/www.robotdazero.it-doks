@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["arduino", "elettronica","teensy"]
+tags: ["arduino", "iot","teensy"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
@@ -124,4 +124,4 @@ Il LED dovrebbe lampeggiare quando il cavo USB è collegato. Ogni Teensy è pre-
 
 
 <!-- https://www.pjrc.com/teensy/troubleshoot.html -->
-<p style="font-size: 14px; color:gray">R.104.6.0</p>
+<p style="font-size: 14px; color:gray">R.104.6.1</p>
