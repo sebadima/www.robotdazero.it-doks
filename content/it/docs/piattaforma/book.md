@@ -68,9 +68,11 @@ input[type='submit'] {
 
 </style>
 
+
+
 Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
 
-In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di attivazione automatica. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
+In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
 
 <br>
 
@@ -91,13 +93,18 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 
 </div>
 
-
 #### FAQ
-1. Quali sono i tempi di attesa? 
+- Quali sono i tempi di attesa? 
 
-- Dipende dalle richieste e dalla disponibiltà degli incaricati, in genere rispondiamo entro pochi minuti.
+Dipende dalle richieste e dalla disponibilità degli incaricati, in genere rispondiamo entro pochi minuti.
 
-2. Posso chiamare direttamente al vostro recapito telefonico?
+- Posso chiamare direttamente al vostro recapito telefonico?
 
-- Se preferisci puoi porre dei quesiti via whatsapp, ma ti suggeriamo di compilare il modulo per avere delle risposte più rapide. 
+In genere ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp. Ti suggeriamo comunque di compilare il modulo per avere delle risposte più rapide. 
 
+- Come posso inviare dei file?
+
+In questo caso puoi usare solo la nostra email (clicca sul tasto 'Copy'):
+```bash
+info@robotdazero.it
+```
