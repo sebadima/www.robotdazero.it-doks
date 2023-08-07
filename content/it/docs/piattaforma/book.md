@@ -90,3 +90,14 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
   </form>
 
 </div>
+
+
+#### FAQ
+1. Quali sono i tempi di attesa? 
+
+- Dipende dalle richieste e dalla disponibiltà degli incaricati, in genere rispondiamo entro pochi minuti.
+
+2. Posso chiamare direttamente al vostro recapito telefonico?
+
+- Se preferisci puoi porre dei quesiti via whatsapp, ma ti suggeriamo di compilare il modulo per avere delle risposte più rapide. 
+
