@@ -13,13 +13,14 @@ layout: full
 <div class="container">
    <div class="row justify-content-center text-center">
       <div class="col-lg-12 text-center">
-         <h2 class="display-5 mb-0">Inizia a costo zero</h2>
-         <p class="lead mt-3 mb-0">Ti puoi cancellare in qualsiasi momento, senza domande. Tutti i prezzi sono IVA inclusa.</p>
+         <h2 class="display-6">Puoi iniziare a costo zero!</h2>
+         <p class="lead mt-3 mb-0">Ti puoi cancellare in qualsiasi momento, senza domande e senza penali. <br>Tutti i prezzi si intendono mensili e IVA inclusa.</p>
       </div>
    </div>
    <div class="container mt-2">
       <div class="row mt-0 justify-content-center text-center">
-         <div class="col-lg-12 mt-0 text-center"><button class="ps-0 btn-monthly btn btn-link text-dark text-decoration-none fw-bold">Prezzi Mensili</button>
+         <p class="lead mt-3 mb-0"></p>
+         <h2 class="display-6">Tabella riassuntiva</h2>
          </div>
       </div>
    </div>
@@ -31,10 +32,10 @@ layout: full
                   <h4 class="my-0 fw-normal">Trial</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">€0<small class="text-muted fw-light"></small></h4>
+                  <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">1000 immagini</li>
+                     <li class="small">500 immagini</li>
                      <li class="small">20 richieste al minuto</li>
                      <li class="small">nessun traffico extra</li>
                   </ul>
@@ -48,7 +49,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">€19<small class="text-muted fw-light"></small></h4>
+                  <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">1,500 immagini</li>
@@ -65,7 +66,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">€48<small class="text-muted fw-light"></small></h4>
+                  <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">10,000 immagini</li>
@@ -82,7 +83,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Business</h4>
                </div>
                <div class="card-body">
-                  <h4 class="card-title">€148<small class="text-muted fw-light"></small></h4>
+                  <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
                      <li class="small">50,000 immagini</li>
@@ -94,8 +95,8 @@ layout: full
             </div>
          </div>
       </div>
-      <p class="text-center mb-0"><b>Senza carta di credito, pagamenti anche con bonifico anticipato.</b>
-         <a href="/docs/piattaforma/book"><br><br>Gli extra sono abilitati solo a richiesta dell'utente.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
+      <p class="text-center mb-0">Senza carta di credito, pagamenti anche con bonifico bancario.
+         <a href="/docs/piattaforma/book/"><br><br>Gli extra sono abilitati solo a richiesta dell'utente.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
