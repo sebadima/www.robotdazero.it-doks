@@ -70,7 +70,7 @@ input[type='submit'] {
 
 
 
-<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="/104.svg" alt="">
+<img width="25%" class="x figure-img img-fluid lazyload blur-up" src="/114.svg" alt="">
 
 <div class="bz-container">
 

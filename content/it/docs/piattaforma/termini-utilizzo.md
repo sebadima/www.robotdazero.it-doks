@@ -15,7 +15,7 @@ toc: true
 
 
 
-<img width="45%" class="x figure-img img-fluid lazyload blur-up" src="/103.svg" alt="">
+<img width="22%" class="x figure-img img-fluid lazyload blur-up" src="/113.svg" alt="">
 
 ### Introduzione
 

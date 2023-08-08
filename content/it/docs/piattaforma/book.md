@@ -70,7 +70,7 @@ input[type='submit'] {
 
 
 
-<img width="50%" class="x figure-img img-fluid lazyload blur-up" src="/105.svg" alt="">
+<img width="25%" class="x figure-img img-fluid lazyload blur-up" src="/112.svg" alt="">
 
 Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
 
