@@ -15,8 +15,6 @@ toc: true
 
 
 
-<img width="22%" class="x figure-img img-fluid lazyload blur-up" src="/113.svg" alt="">
-
 ### Introduzione
 
 I presenti termini di utilizzo (i “Termini”) si applicano all'accesso e all'utilizzo del nostro servizio in cloud  basato su abbonamento (il “Servizio”). Accedendo o utilizzando il Servizio, l'utente accetta di essere vincolato da questi Termini. Se non si accettano questi Termini, si prega di non utilizzare il Servizio.

@@ -70,8 +70,6 @@ input[type='submit'] {
 
 
 
-<img width="25%" class="x figure-img img-fluid lazyload blur-up" src="/114.svg" alt="">
-
 <div class="bz-container">
 
 #### Puoi provare la nostra app senza carta di credito e senza impegno per 30 giorni. Ti basta fornire il numero di telefono e dopo una breve telefonata di verifica riceverai le credenziali via mail.

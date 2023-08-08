@@ -70,8 +70,6 @@ input[type='submit'] {
 
 
 
-<img width="25%" class="x figure-img img-fluid lazyload blur-up" src="/112.svg" alt="">
-
 Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
 
 In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
