@@ -1,5 +1,5 @@
 ---
-title: "La nostra privacy"
+title: "La nostra privacy policy"
 description: "Non usiamo cookie di marketing e non raccogliamo alcun dato personale."
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -9,7 +9,7 @@ images: []
 
 
 
-<img width="50%" height="50%" class="x figure-img img-fluid lazyload blur-up" src="images/privacy.svg" alt="logo">
+<img width="30%" height="30%" class="x figure-img img-fluid lazyload blur-up" src="/108.svg" alt="logo">
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
 

@@ -83,7 +83,7 @@ images: []
 </style>
 
 
-<img width="50%" height="50%" class="x figure-img img-fluid lazyload blur-up" src="images/106.svg" alt="logo">
+<img width="30%" height="50%" class="x figure-img img-fluid lazyload blur-up" src="/112.svg" alt="logo">
 <div class="bz-container">
    <h5 class="bz-btmmargin lead"><strong>I nostri contatti:</strong></h5>
    <p class="lead">
