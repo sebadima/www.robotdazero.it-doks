@@ -1,21 +1,9 @@
 ---
-title: "Thank you"
-description: "We do not use cookies and we do not collect any personal data."
+title: "Thank you page"
+description: "Thank you page"
 date: 2020-08-27T19:23:18+02:00
-lastmod: 2020-08-27T19:23:18+02:00
+lastmod: 2023-08-05T19:23:18+02:00
 draft: false
+layout: thank-you
 images: []
 ---
-
-
-## Grazie per esserti iscritto!
-
-##### Usa il codice 
-
-
-```bash
-MINUS10
-```
-
-
-##### per avere uno sconto del 10% sugli acquisti presso il nostro ecommerce
