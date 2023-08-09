@@ -4,3 +4,4 @@ User-agent: *
 Disallow: /conferma-pagamento/
 Disallow: /newsletter/
 Disallow: /book/
+Disallow: /thank-you/
