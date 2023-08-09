@@ -96,7 +96,7 @@ layout: full
          </div>
       </div>
       <p class="text-center mb-0">Senza carta di credito, pagamenti anche con bonifico bancario.
-         <a href="/docs/piattaforma/book/"><br><br>Gli extra sono abilitati solo a richiesta dell'utente.</a><br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
+         <br><br>Gli extra sono abilitati solo a <a href="/docs/piattaforma/book/">richiesta</a> dell'utente.<br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
