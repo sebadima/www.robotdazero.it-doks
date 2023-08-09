@@ -1,3 +1,21 @@
+a:link {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
 blockquote {
     /* padding-top:    8px; */
     /* padding-bottom: 2px; */
