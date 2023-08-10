@@ -2,7 +2,7 @@ section a, article a {
 text-decoration: underline dotted;
 }
 
-.page-links a {
+.blog-header a, .meta a, a.btn, div.col a, .page-links a {
 text-decoration: none;
 }
 
