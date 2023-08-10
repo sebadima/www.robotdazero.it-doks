@@ -1,6 +1,6 @@
- a {
-#font-weight: bold;
-color: #F8507A;
+section a {
+#color: #F8507A;
+text-decoration: underline dotted;
 }
 
 blockquote {
