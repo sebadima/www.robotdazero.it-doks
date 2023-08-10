@@ -3,6 +3,16 @@ section a {
 text-decoration: underline dotted;
 }
 
+.page-links a {
+#color: #F8507A;
+text-decoration: none;
+}
+
+article a {
+#color: #F8507A;
+text-decoration: underline dotted;
+}
+
 blockquote {
     /* padding-top:    8px; */
     /* padding-bottom: 2px; */
