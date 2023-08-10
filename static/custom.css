@@ -1,16 +1,10 @@
-section a {
-#color: #F8507A;
+section a, article a {
 text-decoration: underline dotted;
 }
 
 .page-links a {
 #color: #F8507A;
 text-decoration: none;
-}
-
-article a {
-#color: #F8507A;
-text-decoration: underline dotted;
 }
 
 blockquote {
