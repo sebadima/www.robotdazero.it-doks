@@ -115,7 +115,7 @@ E' in definitiva il componente base di tutti i Robot e i sistemi di automazione 
   </p>
   
   <p>
-    Tra queste ti segnalo <strong>2</strong> ottime schede compatibili e precisamente: la <a href="https://www.adafruit.com/product/2821?utm_source=Programming%20Electronics%20Academy&utm_medium=Blog%20Post%20-%20Arduino%20Buying%20Guide&utm_campaign=Lead%20Generation&utm_content=Adafruit"><strong>Adafruit Feather HUZZAH with ESP8266</strong></a>, oppure la <a href="https://www.sparkfun.com/products/13711?utm_source=Programming%20Electronics%20Academy&utm_medium=Blog%20Post%20-%20Arduino%20Buying%20Guide&utm_campaign=Lead%20Generation&utm_content=SparkFun"><strong>SparkFun ESP8266 Thing Development Board</strong></a>.
+    Tra queste ti segnalo <strong>2</strong> ottime schede compatibili e precisamente: la <a href="https://www.adafruit.com/product/2821?utm_source=Programming%20Electronics%20Academy&utm_medium=Blog%20Post%20-%20Arduino%20Buying%20Guide&utm_campaign=Lead%20Generation&utm_content=Adafruit">Adafruit Feather HUZZAH with ESP8266</a>, oppure la <a href="https://www.sparkfun.com/products/13711?utm_source=Programming%20Electronics%20Academy&utm_medium=Blog%20Post%20-%20Arduino%20Buying%20Guide&utm_campaign=Lead%20Generation&utm_content=SparkFun">SparkFun ESP8266 Thing Development Board</a>.
   </p>
   
   <p>
