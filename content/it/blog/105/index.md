@@ -1,10 +1,10 @@
 ---
-title: Come usare il modello di elaborazione “VGG16” con Tensorflow 2
+title: Leggere e classificare immagini da un ESP32-cam con Tensorflow
 description: Come usare il modello di elaborazione “VGG16” con Tensorflow 2
 excerpt: "VGG16 è una rete neurale convoluzionale (CNN) profonda sviluppata dal Visual Geometry Group (VGG) del Dipartimento di Informatica dell'Università di Oxford. È stato presentato per la prima volta nel 2014 al concorso ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2014, dove ha ottenuto un punteggio di top-5 accuracy del 96,7%..."
-date: 2023-08-01T09:19:42+01:00
-lastmod: 2023-08-01T09:19:42+01:00
-draft: false
+date: 2023-08-11T09:19:42+01:00
+lastmod: 2023-08-11T09:19:42+01:00
+draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
@@ -19,173 +19,277 @@ homepage: false
 <hr>
 <br>
 
-I robot semoventi come il Rover che stiamo progettando sono afflitti da un limite tecnologico al momento insuperabile: la ridotta potenza dei computer per IOT quali <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" target="_blank" rel="noopener">Raspberry Pi</a> o <a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit" target="_blank" rel="noopener">Jetson Nano</a>. Seppure le prestazioni siano continuamente in crescita al momento siamo costretti a selezionare algoritmi potenti ma non troppo "esigenti" in termini di RAM e CPU. Il nostro robot è autoguidato e deve per questo fare girare programmi in machine learning per riconoscere i percorsi ed evitare gli ostacoli. Nella nostra ricerca di algoritmi performanti ci occupiamo oggi di una libreria neurale molto usata, la "VGG16".   
-
-**In questo breve post vedremo come usare il modello di elaborazione "VGG16" con Tensorflow 2.13.0 e hardware Raspberry PI**
-
-### QUALI SONO I MODELLI DI RETE NEURALE PIÙ ADATTI AD UN HARDWARE LIMITATO?
-
-I modelli di rete neurale convoluzionale più adatti ad un hardware dalle prestazioni limitate sono quelli che hanno una struttura semplice e che non richiedono una grande quantità di dati di addestramento. Alcuni esempi di questi modelli includono:
-
-    Le reti neurali convoluzionali convoluzionali (CNN)
-    Le reti neurali convoluzionali residuali (ResNet)
-    Le reti neurali convoluzionali convoluzionali (DenseNet)
-
-Questi modelli sono tutti in grado di raggiungere prestazioni elevate su una varietà di compiti, ma sono anche relativamente efficienti in termini di risorse. Ciò li rende adatti per l'esecuzione su hardware dalle prestazioni limitate, come i dispositivi mobili e le schede di elaborazione a tensore.
-
-Oltre alla struttura semplice e alla ridotta necessità di dati di addestramento, ci sono altri fattori che possono contribuire alla compatibilità di un modello di rete neurale con hardware dalle prestazioni limitate. Questi fattori includono:
-
-- La dimensione del modello: un modello più piccolo richiede meno risorse per essere eseguito.
-- La complessità del modello: un modello più semplice è più facile da implementare ed eseguire su hardware dalle prestazioni limitate.
-- I tipi di dati utilizzati dal modello: alcuni tipi di dati, come le immagini in formato JPEG, sono più efficienti in termini di risorse rispetto ad altri tipi di dati, come le immagini in formato RAW.
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
-Tra le reti convoluzionali (CNN) più diffuse abbiamo deciso di provare la rete VGG16 e di fare un test "dal vivo" sulla più performante delle versioni del Raspberry, l'RPI 400 a 1.8 Ghz con 4GB di Ram.
-</div>
-
-### COSA È IL MODELLO VGG16 NEL MACHINE LEARNING?
-
-<a href="https://medium.com/@mygreatlearning/everything-you-need-to-know-about-vgg16-7315defb5918" target="_blank" rel="noopener">VGG16</a> è una rete neurale convoluzionale (CNN) profonda sviluppata dal Visual Geometry Group (<a href="https://www.robots.ox.ac.uk/~vgg/" target="_blank" rel="noopener">VGG</a>) del Dipartimento di Informatica dell'Università di Oxford. È stato presentato per la prima volta nel 2014 al concorso ImageNet Large Scale Visual Recognition Challenge (<a href="https://www.image-net.org/challenges/LSVRC/" target="_blank" rel="noopener">ILSVRC</a>) 2014, dove ha ottenuto un punteggio di top-5 accuracy del 96,7%.
-
-VGG16 è una rete deep, il che significa che ha molti strati. Ha 16 strati convoluzionali, 3 strati fully connected e 3 strati di classificazione. I livelli convoluzionali sono responsabili dell'estrazione di caratteristiche dalle immagini, mentre i livelli fully connected sono responsabili della classificazione delle immagini.
-
-> VGG16 è stato addestrato su un enorme set di dati di immagini chiamato ImageNet. <a href="https://www.image-net.org/" target="_blank" rel="noopener">ImageNet</a> è un set di dati di oltre 14 milioni di immagini etichettate con 22.000 categorie. Allenare un modello su un set di dati così grande richiede molta potenza di elaborazione e tempo.
-
-VGG16 è un modello molto potente per il riconoscimento delle immagini. Tuttavia, è anche molto complesso e richiede molta potenza di elaborazione per essere addestrato. Per questo motivo, VGG16 non è sempre la scelta migliore per i problemi di riconoscimento delle immagini. In alcuni casi, è possibile utilizzare modelli più semplici e meno potenti che possono essere addestrati più velocemente.
-
-Nonostante la sua complessità, VGG16 è ancora un modello molto popolare per il riconoscimento delle immagini. È stato utilizzato in una varietà di applicazioni, tra cui la classificazione delle immagini, il rilevamento degli oggetti e la segmentazione delle immagini.
-
-**Ecco alcune delle caratteristiche di VGG16:**
-
-    È una rete deep con 16 strati.
-    È stata addestrata su un enorme set di dati di immagini chiamato ImageNet.
-    È molto potente per il riconoscimento delle immagini.
-    È anche molto complesso e richiede molta potenza di elaborazione per essere addestrato.
-    È ancora un modello molto popolare per il riconoscimento delle immagini.
-
-
-
-
-### QUALI SONO I REQUISITI DI RAM E CPU DEL MODELLO VGG16?
-
-I requisiti di RAM e CPU del modello VGG16 nel Machine Learning variano a seconda della piattaforma su cui viene eseguito il modello. In generale, VGG16 richiede almeno 4 GB di RAM e 4 core di CPU per essere eseguito in modo efficiente. Per l'addestramento, VGG16 richiede almeno 16 GB di RAM e 8 core di CPU.
-
-Ecco alcuni esempi di piattaforme e requisiti di RAM e CPU per VGG16:
-
-- TensorFlow: 4 GB di RAM, 4 core di CPU
-- PyTorch: 4 GB di RAM, 4 core di CPU
-- Keras: 4 GB di RAM, 4 core di CPU
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> ⚡️
-L'algoritmo non può dunque essere "addestrato" su una macchina "leggera" come l'RPI ma può riconosce le immagini con soli 4 Gb di Ram. Per questo motivo abbiamo deciso di fare un test proatico delle prestazioni.
-</div>
-
-<br>
-
-È importante notare che questi sono solo requisiti minimi. I requisiti effettivi di RAM e CPU possono variare a seconda del set di dati utilizzato, della complessità del modello e della piattaforma su cui viene eseguito il modello.
-
-### IL FILE SORGENTE DEL PROGRAMMA
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.jpg" alt="">
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.jpg" alt="">
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpg" alt="">
 
 
 ```bash
-# file image_classify.py
-from keras.applications.vgg16 import VGG16
-from keras.preprocessing import image
-from keras.applications.vgg16 import preprocess_input, decode_predictions
-import numpy as np
+#include "Arduino.h"
+#include "WiFi.h"
+#include "driver/rtc_io.h"
+#include "esp_camera.h"
+#include "esp_timer.h"
+#include "img_converters.h"
+#include "soc/rtc_cntl_reg.h" // Disable brownour problems
+#include "soc/soc.h"          // Disable brownour problems
+#include <ESPAsyncWebServer.h>
+#include <FS.h>
+#include <SPIFFS.h>
+#include <StringArray.h>
 
-model = VGG16(weights='imagenet')
-img_path = 'demo.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
-x = image.img_to_array(img)
-x = np.expand_dims(x, axis=0)
-x = preprocess_input(x)
-preds = model.predict(x)
+// Set your Static IP address
+IPAddress local_IP(192, 168, 1, 185);
+// Set your Gateway IP address
+IPAddress gateway(192, 168, 1, 1);
 
-print('Result:', decode_predictions(preds, top=1)[0])
+IPAddress subnet(255, 255, 0, 0);
+IPAddress primaryDNS(8, 8, 8, 8);   // optional
+IPAddress secondaryDNS(8, 8, 4, 4); // optional
+
+const char *ssid = "SSID-xxxx";
+const char *password = "passwd-yyyy";
+
+// Create AsyncWebServer object on port 80
+AsyncWebServer server(80);
+
+boolean takeNewPhoto = false;
+
+// Photo File Name to save in SPIFFS
+#define FILE_PHOTO "/photo.jpg"
+
+// OV2640 camera module pins (CAMERA_MODEL_AI_THINKER)
+#define PWDN_GPIO_NUM 32
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM 0
+#define SIOD_GPIO_NUM 26
+#define SIOC_GPIO_NUM 27
+#define Y9_GPIO_NUM 35
+#define Y8_GPIO_NUM 34
+#define Y7_GPIO_NUM 39
+#define Y6_GPIO_NUM 36
+#define Y5_GPIO_NUM 21
+#define Y4_GPIO_NUM 19
+#define Y3_GPIO_NUM 18
+#define Y2_GPIO_NUM 5
+#define VSYNC_GPIO_NUM 25
+#define HREF_GPIO_NUM 23
+#define PCLK_GPIO_NUM 22
+
+const char index_html[] PROGMEM = R"rawliteral(
+<!DOCTYPE HTML><html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { text-align:center; }
+    .vert { margin-bottom: 10%; }
+    .hori{ margin-bottom: 0%; }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>ESP32-CAM Last Photo</h2>
+    <p>It might take more than 5 seconds to capture a photo.</p>
+    <p>
+      <button onclick="rotatePhoto();">ROTATE</button>
+      <button onclick="capturePhoto()">CAPTURE PHOTO</button>
+      <button onclick="location.reload();">REFRESH PAGE</button>
+    </p>
+  </div>
+  <div><img src="saved-photo" id="photo" width="70%"></div>
+</body>
+<script>
+  var deg = 0;
+  function capturePhoto() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "/capture", true);
+    xhr.send();
+  }
+  function rotatePhoto() {
+    var img = document.getElementById("photo");
+    deg += 90;
+    if(isOdd(deg/90)){ document.getElementById("container").className = "vert"; }
+    else{ document.getElementById("container").className = "hori"; }
+    img.style.transform = "rotate(" + deg + "deg)";
+  }
+  function isOdd(n) { return Math.abs(n % 2) == 1; }
+</script>
+</html>)rawliteral";
+
+void WiFiStationConnected(WiFiEvent_t event, WiFiEventInfo_t info) {
+  Serial.println("Connected to AP successfully!");
+}
+
+void WiFiGotIP(WiFiEvent_t event, WiFiEventInfo_t info) {
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void WiFiStationDisconnected(WiFiEvent_t event, WiFiEventInfo_t info) {
+  Serial.println("Disconnected from WiFi access point");
+  Serial.print("WiFi lost connection. Reason: ");
+  Serial.println(info.wifi_sta_disconnected.reason);
+  Serial.println("Trying to Reconnect");
+  WiFi.begin(ssid, password);
+}
+
+void setup() {
+  // Serial port for debugging purposes
+  Serial.begin(115200);
+
+  // delete old config
+  WiFi.disconnect(true);
+
+  delay(1000);
+
+  WiFi.onEvent(WiFiStationConnected,
+               WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_CONNECTED);
+  WiFi.onEvent(WiFiGotIP, WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_GOT_IP);
+  WiFi.onEvent(WiFiStationDisconnected,
+               WiFiEvent_t::ARDUINO_EVENT_WIFI_STA_DISCONNECTED);
+
+  /* Remove WiFi event
+  Serial.print("WiFi Event ID: ");
+  Serial.println(eventID);
+  WiFi.removeEvent(eventID);*/
+
+  // Configures static IP address
+  if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+    Serial.println("STA Failed to configure");
+  }
+
+  // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi...");
+  }
+  if (!SPIFFS.begin(true)) {
+    Serial.println("An Error has occurred while mounting SPIFFS");
+    ESP.restart();
+  } else {
+    delay(500);
+    Serial.println("SPIFFS mounted successfully");
+  }
+
+  // Print ESP32 Local IP Address
+  Serial.print("IP Address: http://");
+  Serial.println(WiFi.localIP());
+
+  // Turn-off the 'brownout detector'
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
+
+  // OV2640 camera module
+  camera_config_t config;
+  config.ledc_channel = LEDC_CHANNEL_0;
+  config.ledc_timer = LEDC_TIMER_0;
+  config.pin_d0 = Y2_GPIO_NUM;
+  config.pin_d1 = Y3_GPIO_NUM;
+  config.pin_d2 = Y4_GPIO_NUM;
+  config.pin_d3 = Y5_GPIO_NUM;
+  config.pin_d4 = Y6_GPIO_NUM;
+  config.pin_d5 = Y7_GPIO_NUM;
+  config.pin_d6 = Y8_GPIO_NUM;
+  config.pin_d7 = Y9_GPIO_NUM;
+  config.pin_xclk = XCLK_GPIO_NUM;
+  config.pin_pclk = PCLK_GPIO_NUM;
+  config.pin_vsync = VSYNC_GPIO_NUM;
+  config.pin_href = HREF_GPIO_NUM;
+  config.pin_sscb_sda = SIOD_GPIO_NUM;
+  config.pin_sscb_scl = SIOC_GPIO_NUM;
+  config.pin_pwdn = PWDN_GPIO_NUM;
+  config.pin_reset = RESET_GPIO_NUM;
+  config.xclk_freq_hz = 20000000;
+  config.pixel_format = PIXFORMAT_JPEG;
+
+  if (psramFound()) {
+    // config.frame_size = FRAMESIZE_UXGA;
+    config.frame_size = FRAMESIZE_QVGA;
+    config.jpeg_quality = 10;
+    config.fb_count = 2;
+  } else {
+    config.frame_size = FRAMESIZE_SVGA;
+    config.jpeg_quality = 12;
+    config.fb_count = 1;
+  }
+  // Camera init
+  esp_err_t err = esp_camera_init(&config);
+  if (err != ESP_OK) {
+    Serial.printf("Camera init failed with error 0x%x", err);
+    ESP.restart();
+  }
+
+  // Route for root / web page
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
+    request->send_P(200, "text/html", index_html);
+  });
+
+  server.on("/capture", HTTP_GET, [](AsyncWebServerRequest *request) {
+    takeNewPhoto = true;
+    request->send_P(200, "text/plain", "Taking Photo");
+  });
+
+  server.on("/saved-photo", HTTP_GET, [](AsyncWebServerRequest *request) {
+    request->send(SPIFFS, FILE_PHOTO, "image/jpg", false);
+  });
+
+  // Start server
+  server.begin();
+}
+
+void loop() {
+  if (takeNewPhoto) {
+    capturePhotoSaveSpiffs();
+    takeNewPhoto = false;
+  }
+  delay(1);
+}
+
+// Check if photo capture was successful
+bool checkPhoto(fs::FS &fs) {
+  File f_pic = fs.open(FILE_PHOTO);
+  unsigned int pic_sz = f_pic.size();
+  return (pic_sz > 100);
+}
+
+// Capture Photo and Save it to SPIFFS
+void capturePhotoSaveSpiffs(void) {
+  camera_fb_t *fb = NULL; // pointer
+  bool ok = 0; // Boolean indicating if the picture has been taken correctly
+
+  do {
+    // Take a photo with the camera
+    Serial.println("Taking a photo...");
+
+    fb = esp_camera_fb_get();
+    if (!fb) {
+      Serial.println("Camera capture failed");
+      return;
+    }
+
+    // Photo file name
+    Serial.printf("Picture file name: %s\n", FILE_PHOTO);
+    File file = SPIFFS.open(FILE_PHOTO, FILE_WRITE);
+
+    // Insert the data in the photo file
+    if (!file) {
+      Serial.println("Failed to open file in writing mode");
+    } else {
+      file.write(fb->buf, fb->len); // payload (image), payload length
+      Serial.print("The picture has been saved in ");
+      Serial.print(FILE_PHOTO);
+      Serial.print(" - Size: ");
+      Serial.print(file.size());
+      Serial.println(" bytes");
+    }
+    // Close the file
+    file.close();
+    esp_camera_fb_return(fb);
+
+    // check if file has been correctly saved in SPIFFS
+    ok = checkPhoto(SPIFFS);
+  } while (!ok);
+}
+
 ```
-
-### COME PUOI CARICARE IL PROGRAMMA SU UN DESKTOP LINUX O SU RPI
-
-**1.** Clicca sul comando "Copy" che appare in alto a destra sul sorgente.
-
-**2.** Incolla il programma su un file. 
-
-Per completare questa operazione ti basta usare il terminale con il comando **vi** o **nano**  o puoi usare **GEDIT/SublimeText** dal desktop. In genere non ha nessuna importanza quale software userai purchè si tratti di un editor di testo e non un di un word processor. Usa il programma che preferisci e sava il file con il nome **image_classify.py**. Per eseguire il programma:
-
-```bash
-python image_classify.py
-oppure
-python3 image_classify.py
-```
-
-
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine di un aereo usata per testare algoritmo in machine learning" src="images/demo.jpg">
-
-La foto "demo.jpg" che puoi scaricare direttamente dalla pagina facendo click destro e "salva con nome"...
-
-
-### IL RISULTATO DEL PROGRAMMA
-
-- **Il programma lanciato su uno Raspberry Pi 400**  (mini desktop con clock a 1.8 Ghz) con 4GB di RAM.
-
-Dopo circa 20 secondi di attesa il programma ha tirato fuori la risposta "airliner" cioè aereo di linea commerciale, con un livello di accuratezza dello 0.86%. Un risultato buono ma forse inferiore alle attese. La posizione dell'aereo forse influisce sul risultato.
-Il tempo di elaborazione reale è stato di **17.992** secondi.
-
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine del terminale linux dopo il test di un programma in machine learning Tensorflow" src="images/Screenshot from 2023-08-01 16-15-59.png">
-
-```bash
-(w) raspberry ~/pi (master)$ time python  image_classify.py
-2023-08-01 14:22:33.257519: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 14:22:33.822023: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 14:22:34.270226: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-01 14:22:39.745270: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-1/1 [==============================] - 2s 2s/step
-Result: [('n02690373', 'airliner', 0.86845803)]
-
-real	0m17.992s
-user	0m18.217s
-sys	0m9.155s
-```
-
-
-<br>
-
-- **Il risultato dell'algoritmo** con una immagine diversa, stavolta di un pappagallo.
-
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="immagine della seconda foto di test per l'algoritmo in machine learning" src="images/103.jpeg">
-
-```bash
-(w) raspberry ~/pi (master)$ time python  image_classify.py
-2023-08-06 15:29:38.135273: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-06 15:29:38.695745: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-06 15:29:39.153077: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-2023-08-06 15:29:44.802273: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
-1/1 [==============================] - 2s 2s/step
-Result: [('n01806567', 'quail', 0.1353003)]
-
-real	0m18.637s
-user	0m18.892s
-sys	0m8.997s
-
-```
-
-Come si vede l’output dopo 18.637 secondi descrive il pappagallo come una quaglia (‘quail’). Il risultato è un poco comico ma la bassa qualità della foto (si vede solo la testa sfocata e uno sfondo complicato) rende accettabile il risultato.
-
-
-
-### A COSA SERVONO GLI ALGORITMI IN MACHINE LEARNING DEL NOSTRO ROVER
-
-Gli algoritmi di machine learning vengono utilizzati in vari modi. Un modo è utilizzare gli algoritmi di machine learning per rilevare e classificare gli oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, <a href="https://it.wikipedia.org/wiki/Radar" target="_blank" rel="noopener">Radar</a> e <a href="https://it.wikipedia.org/wiki/Lidar" target="_blank" rel="noopener">LIDAR</a> . Una volta che gli oggetti sono stati rilevati e classificati, gli algoritmi di machine learning possono essere utilizzati per pianificare un percorso sicuro e fluido per il robot o l'auto senza pilota. Questo viene fatto prendendo in considerazione una serie di fattori, come il traffico attuale, le condizioni meteorologiche e le leggi e le normative locali.
-
-> Un altro modo in cui gli algoritmi di machine learning vengono utilizzati per guidare robot e automobili senza pilota è per controllare i movimenti del veicolo. Questo viene fatto inviando segnali ai motori e agli altri sistemi di controllo. Gli algoritmi di machine learning devono essere in grado di eseguire calcoli in tempo reale per tenere il passo con le condizioni in continua evoluzione della strada.
-
-Ecco alcuni esempi specifici:
-
-- **Rilevamento e classificazione degli oggetti**: si tratta di rilevare e classificare oggetti nell'ambiente circostante, come altri veicoli, pedoni e ostacoli. Questo viene fatto utilizzando i dati raccolti dai sensori, come telecamere, radar e LIDAR.
-- **Pianificazione del percorso**: in questo caso il rover cerca di pianificare un percorso sicuro e fluido. Questo viene fatto prendendo in considerazione una serie di fattori, come le asperità del percorso e le condizioni meteorologiche.
-- **Controllo del rover**: avviene per mezzo di segnali ai motori e agli altri sistemi di controllo. Gli algoritmi devono essere in grado di eseguire calcoli in "tempo reale" per tenere sotto controllo le accelerazioni laterali del mezzo per evitarne il ribaltamento.
-
-
-
-<p style="font-size: 11px;">R.105.0.1</p>
