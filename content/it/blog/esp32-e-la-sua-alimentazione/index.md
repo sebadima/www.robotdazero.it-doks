@@ -18,7 +18,7 @@ homepage: false
 
 L&#8217;ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l&#8217;ESP32 è la scelta dell&#8217;alimentazione giusta per garantire il corretto funzionamento della scheda. Può essere alimentato attraverso un&#8217;ampia gamma di fonti di alimentazione, tra cui l&#8217;alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni.
 
-## 1. Alimentazione con presa USB
+## 1. ALIMENTAZIONE CON PRESA USB
 
 ![esp32 alimentato con cavo USB](images/img1.webp)
 
@@ -34,12 +34,12 @@ Il voltaggio delle prese USB può variare a seconda del tipo di porta USB. In ge
 
 Per capire il voltaggio delle prese USB, è possibile utilizzare un **voltmetro**. Un voltmetro è un dispositivo che misura la tensione elettrica tra due punti. Per misurare la tensione delle prese USB, è necessario collegare il voltmetro alle prese USB e misurare la tensione. Tuttavia, è importante notare che non tutti i voltmetri sono in grado di misurare la tensione delle prese USB in modo accurato. Alcuni voltmetri potrebbero fornire una lettura inaccurata, a seconda della qualità del dispositivo e della porta USB stessa.
 
-## 2. Alimentazione tramite il pin Vin
+## 2. ALIMENTAZIONE TRAMITE IL PIN VIN
 Un altro modo per alimentare <a href="https://amzn.to/447Mz55" target="_blank" rel="noopener">ESP32</a> è utilizzando il pin Vin, comunemente conosciuto come pin 5V. Il pin Vin in ESP32 e in altre schede microcontroller come Arduino è collegato a un regolatore di tensione a bordo. Qualsiasi tensione collegata al pin Vin passa prima attraverso il regolatore, che la riduce a 3,3 V e la alimenta ai periferici della scheda ESP32.
       
 Utilizzando una alimentazione esterna regolata da 5V, possiamo alimentare ESP32 attraverso il pin Vin, collegando la GND di ESP32 con la GND esterna dell&#8217;alimentazione. Qualsiasi tensione compresa tra 5V e 12V può essere collegata al pin Vin di ESP32, tuttavia non è consigliabile utilizzare più di 6V o 7V. Poiché ESP32 ha bisogno solo di 3,3 V per funzionare, le restanti tensioni vengono dissipate dal regolatore di tensione LDO sotto forma di calore.
 
-## 3. Alimentazione con batterie ricaricabili
+## 3. ALIMENTAZIONE CON BATTERIE RICARICABILI
 
 ![esp32 alimentato con batterie ricaricabili](images/img2.webp)
 
@@ -55,7 +55,7 @@ Batterie al litio
 Batterie LiFePO4
 Batterie al litio polimero
       
-### Avvertenze
+### AVVERTENZE
       
 Ecco alcune avvertenze da tenere a mente durante l&#8217;alimentazione dell&#8217;ESP32 con una fonte di alimentazione esterna:
      
@@ -96,11 +96,11 @@ Svantaggi:
 
 > Gli accumulatori al litio sono diventati uno standard nell&#8217;industria delle batterie per i loro vantaggi in termini di leggerezza, durata della vita e potenza costante. Tuttavia, hanno anche degli svantaggi in termini di costi, rischio di incendio e sensibilità alla temperatura. È importante utilizzare gli accumulatori al litio in modo sicuro e corretto per evitare danni o incidenti.
 
-## 4. Alimentazione con alimentatore esterno
+## 4. ALIMENTAZIONE CON ALIMENTATORE ESTERNO
 
 L&#8217;alimentazione tramite alimentatore esterno è un&#8217;altra opzione che può essere utile quando si lavora con l&#8217;ESP32. In questo caso, l&#8217;ESP32 viene alimentato attraverso un alimentatore esterno, il quale fornisce una tensione di alimentazione costante e stabile. Questa opzione è particolarmente utile quando si utilizzano sensori o componenti esterni che richiedono una maggiore quantità di corrente.
 
-### 4.1 Gli alimentatori da laboratorio
+### 4.1 GLI ALIMENTATORI DA LABORATORIO
 
 
 Gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. In questo articolo, esploreremo come funzionano gli alimentatori elettrici da laboratorio e quali sono le loro caratteristiche principali.
