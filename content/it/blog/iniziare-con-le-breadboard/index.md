@@ -41,7 +41,7 @@ Se servissero solo a inserire i componenti e basta non sarebbero comunque una gr
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpeg" alt="">
 
-## Inserire dei LED su una Breadboard {#inserire-dei-led-su-una-breadboard}
+## INSERIRE DEI LED SU UNA BREADBOARD {#INSERIRE-DEI-LED-SU-UNA-BREADBOARD}
 
 Stai iniziando a capire quanto lavoro ci risparmiano le Breadboard, ma vediamo subito come usarle in progetti appena più complessi. Fino ad ora (ad esempio in questo \[articolo\] (<https://www.robotdazero.it/blog/003-il-tuo-primo-programma-con-arduino/>) del Blog) abbiamo usato il LED interno di Arduino per fare dei semplici test, ma in futuro per realizzare progetti **UTILI** dovremo sempre collegare dei LED esterni, aggiungendo una [resistenza][1] per limitare la corrente.
 
@@ -60,16 +60,8 @@ Il [filo rosso][2] (positivo) conduce il segnale che proviene dal **pin 2** 
   * Se colleghi un LED ad una batteria o ad un alimentatore **DEVI** sempre inserire in linea una resistenza, che per le tensioni che si usano nella Robotica sarà di **150Ω** (si legge 150 Ohm) fino a **1 KΩ** (si legge un Kilo Ohm)
   * Puoi [ricavare il valore di una resistenza][4] dalle fasce colorate con cui vengono appositamente verniciate
 
-#### Ma la cosa che vorrei sottolineare più di tutte è questa: {#ma-la-cosa-che-vorrei-sottolineare-più-di-tutte-è-questa}
+### LA COSA CHE VORREI SOTTOLINEARE
 
-> Le Breadboard servono a creare dei **prototipi** di Robot, ma sono così comode che vorrai usarle anche sui lavori da consegnare ai tuoi clienti.
+Le Breadboard servono a creare dei **prototipi** di Robot, ma sono così comode che vorrai usarle anche sui lavori da consegnare ai tuoi clienti.
 
 Nei prossimi articoli del Blog vederemo come usare **collanti ed isolanti** in bomboletta per rendere più **stabili** i collegamenti nella Breadboard, limitando così l’uso del saldatore. E se ti stai chiedendo perchè vogliamo evitare il saldatore la risposta è semplice: **non esiste modo più rapido di distruggere un componente che toccarlo con il saldatore per pochi secondi**!
-
-[Iscriviti ora alla nostra newsletter][5] e dopo avere confermato la tua iscrizione troverai ogni 15 gg nella tua mail un argomento o un progetto pratico da seguire, con la lista dei componenti e il software necessario.
-
- [1]: https://it.wikipedia.org/wiki/Resistenza_elettrica
- [2]: https://www.puntoluce.net/comefare/codice-colori-dei-fili-elettrici-una-guida/
- [3]: https://www.robotdazero.it/blog/003-il-tuo-primo-programma-con-arduino/
- [4]: https://www.leo-alberto.it/elettrotecnica/resistorscode.php
- [5]: https://landing.mailerlite.com/webforms/landing/k3h6p4
