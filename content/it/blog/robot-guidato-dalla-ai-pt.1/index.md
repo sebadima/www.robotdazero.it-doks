@@ -147,7 +147,7 @@ E' innegabile che le prestazioni siano un punto chiave nella scelta, perchè gli
 Nel nostro caso abbiamo deciso di scegliere la seconda strada e ricorrere alla unita di elaborazione esterna con Tensorfklow e quindi abbiamo optato per l'ecosistema Google Coral e Tensorflow.
 
 
-In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma Jetson Nvidia con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
+In genere nella costuzione di robot mobili o di rover ci si orienta come prima scelta vero il Raspberry PI4 con 8GB di memoria. In alternativa si può usare una CPU della gamma <a href="https://amzn.to/3E0ziAB" target="_blank" rel="noopener">Jetson Nvidia</a> con simile capacità di memoria RAM ma con un coprocessore grafico molto più potente per sostenere il carico del riconoscimento delle immagini. Nel nostro Rover che sarà nella classe degli 8/10 Kg di peso al completo volevamo avere molta più liberta nella scelta della CPU perchè il consumo e il peso delle batterie sono meno importanti.
 
 
 ### POTEVAMO USARE UNA CPU INTEL PER IL ROVER?
