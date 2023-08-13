@@ -39,6 +39,8 @@ Se servissero solo a inserire i componenti e basta non sarebbero comunque una gr
 
 > In questo modo potrai collegare tutti i componenti alla alimentazione e alla massa del circuito semplicemente variando la loro posizione sulla scheda!
 
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpeg" alt="">
+
 ## Inserire dei LED su una Breadboard {#inserire-dei-led-su-una-breadboard}
 
 Stai iniziando a capire quanto lavoro ci risparmiano le Breadboard, ma vediamo subito come usarle in progetti appena più complessi. Fino ad ora (ad esempio in questo \[articolo\] (<https://www.robotdazero.it/blog/003-il-tuo-primo-programma-con-arduino/>) del Blog) abbiamo usato il LED interno di Arduino per fare dei semplici test, ma in futuro per realizzare progetti **UTILI** dovremo sempre collegare dei LED esterni, aggiungendo una [resistenza][1] per limitare la corrente.
