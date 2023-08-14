@@ -71,7 +71,7 @@
    </svg>
    <section class="section section-sm">
       <div class="container">
-         <h1>Grazie <script type="text/javascript">formData.display("name")</script> per esserti iscritto! </h1>
+         <h1>Grazie per esserti iscritto! </h1>
          Grazie per esserti iscritto alla newsletter del nostro blog! Siamo felici di averti con noi.
          Ogni mese ti invieremo un'email con i nostri articoli più recenti, oltre a offerte e promozioni esclusive.
          Speriamo che troverai i nostri contenuti utili e interessanti.
@@ -86,33 +86,5 @@
       <path fill="#4F2872" fill-opacity="0.99" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
    </svg>
 </div>
-
-
-<script type="text/javascript">
- var formData = function() {  var query_string = (location.search) ? ((location.search.indexOf('#') != -1) ? location.search.substring(1, location.search.indexOf('#')) : location.search.substring(1)) : '';  
-var elements = [];  
-if(query_string) {     
-    var pairs = query_string.split("&");     
-    for(i in pairs) {     
-        if (typeof pairs[i] == 'string') {           
-            var tmp = pairs[i].split("=");           
-            var queryKey = unescape(tmp[0]);           
-            queryKey = (queryKey.charAt(0) == 'c') ? queryKey.replace(/\s/g, "_") : queryKey;   
-            elements[queryKey] = unescape(tmp[1]);      
-             }    
-       } 
- }  
-return {     
-    display: function(key) {         
-        if(elements[key]) {           
-             document.write(elements[key]);         
-         } 
-         else {         
-               document.write("<!--If desired, replace everything between these quotes with a default in case there is no data in the query string.-->");          
-          }     
-  }   
-} 
-}
-(); </script>
 
 {{ end }}
