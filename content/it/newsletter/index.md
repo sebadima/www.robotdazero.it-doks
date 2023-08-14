@@ -11,6 +11,8 @@ images: []
 <br>
 <br>
 
+<img width="30%" class="x figure-img img-fluid lazyload blur-up" src="/110.svg" alt="">
+
 <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=V9Atnx"></script>
 
 <div class="klaviyo-form-XXYmEh"></div>
