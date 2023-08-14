@@ -4,7 +4,7 @@ description: Leggere e classificare immagini da una OV2640 con Tensorflow
 excerpt: "..."
 date: 2023-08-11T09:19:42+01:00
 lastmod: 2023-08-11T09:19:42+01:00
-draft: false
+draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
@@ -136,6 +136,21 @@ La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti 
 
 
 
+### IL NOSTRO PROGETTO
+
+i due programmi che presentiamo permettono di:
+
+1. creare un mini server web sull'ESP32
+2. creare il comando "capture" per scattare una foto usando la interfaccia HTML
+3. salvare la foto in un file e fornira in rete all'indirizzo della CAM
+
+Per realizzare il programma abbiamo tenuto conto di alcune features che volevamo fossero presenti:
+
+1. La schede ESP32 doveva riconnettersi al WIFI automaticamente 
+2. Volevamo evitare i problemi della gestione del "BrownOut" quand su collega la CAM ad una USB dalla tensione instabile
+3. Avere un indirizzo IP fisso per permettere al RPI di fare il download della foto in modo sicuro
+4. Mostrare come si usano gli interrupt dell'ESP32 per controllare il WIFI e effettuare la riconnessione
+5. Mostrare come si puo' scattare una foro con una risoluzione specifica 
 
 
 
