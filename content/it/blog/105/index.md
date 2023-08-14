@@ -4,7 +4,7 @@ description: Leggere e classificare immagini da una OV2640 con Tensorflow
 excerpt: "..."
 date: 2023-08-11T09:19:42+01:00
 lastmod: 2023-08-11T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
