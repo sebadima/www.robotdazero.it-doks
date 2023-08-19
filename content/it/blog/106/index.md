@@ -23,15 +23,15 @@ homepage: false
 
 > La camera OV2640 richiede un'alimentazione di 5 V DC. È possibile utilizzare un alimentatore esterno da 5 V o alimentare la camera direttamente da una scheda di sviluppo ESP32.
 
-## Alimentazione con alimentatore esterno
+## ALIMENTAZIONE CON ALIMENTATORE ESTERNO
 
 Per alimentare la camera OV2640 con un alimentatore esterno, è necessario collegare i pin di alimentazione VDD e GND della camera ai pin di alimentazione VCC e GND dell'alimentatore. I pin di alimentazione VDD e GND della camera sono solitamente identificati con i simboli +5V e GND.
 
-## Alimentazione da scheda di sviluppo ESP32
+## ALIMENTAZIONE DA SCHEDA DI SVILUPPO ESP32
 
 Se si utilizza una scheda di sviluppo ESP32, è possibile alimentare la camera OV2640 direttamente dalla scheda. La maggior parte delle schede di sviluppo ESP32 ha un pin di alimentazione dedicato per la camera, che è solitamente indicato con il simbolo CAM. Per alimentare la camera, è sufficiente collegare il pin CAM della scheda di sviluppo ESP32 al pin di alimentazione VDD della camera.
 
-### Schema di collegamento
+### SCHEMA DI COLLEGAMENTO
 
 Il seguente schema mostra come collegare una camera OV2640 a un alimentatore esterno o a una scheda di sviluppo ESP32:
 
