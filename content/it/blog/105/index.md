@@ -1,7 +1,7 @@
 ---
 title:       Leggere e classificare immagini da una OV2640 con Tensorflow
 description: Leggere e classificare immagini da una OV2640 con Tensorflow
-excerpt: "..."
+excerpt: "OV2640 è un sensore di immagine CMOS a colori di tipo retroilluminato (BSI) da 2,0 megapixel prodotto da OmniVision Technologies. È un sensore di immagine a formato 1/3,2 pollici con una risoluzione nativa di 1632x1232 pixel..."
 date: 2023-08-11T09:19:42+01:00
 lastmod: 2023-08-11T09:19:42+01:00
 draft: false
