@@ -124,7 +124,7 @@ Ecco alcuni altri suggerimenti per l'installazione della fotocamera OV2640 su Li
 
 Ubuntu 22.04 è attualmente il nostro sistema di riferimento su Linux e lo preferiamo rispetto al normale Raspbian / Raspberry OS per la sua universalità e le risposte che possiamo trovare su <a href="https://askubuntu.com/" target="_blank" rel="noopener">AskUbuntu</a>. In questo post vedremo come programmare la camera per collegarla al WIFI e classificare le foto dal Raspberry.
 
-La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti "bundle" commerciali disponibili a basso costo. Noi useremo la camera nella foto, un prodotto valido ma molto economico che potete trovare a meno di dieci dollari.
+La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti "bundle" commerciali disponibili a basso costo. Noi useremo la camera nella foto, un prodotto valido ma molto economico che potete trovare a meno di dieci euro.
 
 
 
