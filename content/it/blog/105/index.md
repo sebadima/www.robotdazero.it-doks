@@ -65,7 +65,7 @@ e riavvia il computer.
 
 Una volta riavviato il computer, la fotocamera OV2640 dovrebbe essere installata e pronta per l'uso.
 
-### Un paio di consigli 
+### COSA FARE SE LA INSTALLAZIONE NON RIESCE
 Ti voglio dare qualche suggerimento aggiuntivo per installare il driver della OV2640:
 
 1. Assicurati che il tuo computer soddisfi i requisiti minimi di sistema per il driver.
@@ -124,7 +124,7 @@ Ecco alcuni altri suggerimenti per l'installazione della fotocamera OV2640 su Li
 
 
 
-### COME abbiamo usato la camera su ubuntu 22.04
+### COME ABBIAMO USATO LA CAMERA SU UBUNTU 22.04
 
 Ubuntu 22.04 è attualmente il nostro sistema di riferimento su Linux e lo preferiamo rispetto al normale Raspbian / Raspberry OS per la sua universalità e le risposte che possiamo trovare su <a href="https://askubuntu.com/" target="_blank" rel="noopener">AskUbuntu</a>. In questo post vedremo come programmare la camera per collegarla al WIFI e classificare le foto dal Raspberry.
 
@@ -140,7 +140,7 @@ La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti 
 
 
 
-### COME CLASSIFICARE LE IMMAGINI DELLA CAM USANDO TENSORFLOW
+## COME CLASSIFICARE LE IMMAGINI DELLA CAM USANDO TENSORFLOW
 
 i due programmi che presentiamo permettono di:
 
