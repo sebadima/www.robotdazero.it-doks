@@ -50,19 +50,23 @@ Ecco alcuni dei vantaggi dell'utilizzo di una camera OV2640:
 
  ecco i passaggi per installare la fotocamera OV2640 su Windows:
 
-    Scarica il driver della fotocamera OV2640 dal sito web del produttore.
-    Estrai il contenuto dell'archivio scaricato in una cartella.
-    Apri il prompt dei comandi come amministratore.
-    Spostati nella cartella in cui hai estratto i file del driver.
-    Esegui il comando seguente per installare il driver:
+- Scarica il driver della fotocamera OV2640 dal sito web del produttore.
+- Estrai il contenuto dell'archivio scaricato in una cartella.
+- Apri il prompt dei comandi come amministratore.
+- Spostati nella cartella in cui hai estratto i file del driver.
 
-> .\install.bat
+quindi esegui il comando seguente per installare il driver:
 
-    Riavvia il computer.
+```bash
+.\install.bat
+```
+
+e riavvia il computer.
 
 Una volta riavviato il computer, la fotocamera OV2640 dovrebbe essere installata e pronta per l'uso.
 
-Ecco alcuni suggerimenti aggiuntivi per l'installazione del driver della fotocamera OV2640:
+### Un paio di consigli 
+Ti voglio dare qualche suggerimento aggiuntivo per installare il driver della OV2640:
 
 1. Assicurati che il tuo computer soddisfi i requisiti minimi di sistema per il driver.
 2. Se hai problemi a installare il driver, contatta il produttore della fotocamera per assistenza.
@@ -74,7 +78,7 @@ Ecco alcuni suggerimenti aggiuntivi per l'installazione del driver della fotocam
 - Espandi la categoria "Dispositivi di acquisizione immagini".
 - Fai clic con il pulsante destro del mouse sulla fotocamera OV2640 e seleziona "Abilita dispositivo".
 
-La fotocamera OV2640 dovrebbe ora essere abilitata e pronta per l'uso.
+##### La fotocamera OV2640 dovrebbe ora essere abilitata e pronta per l'uso.
 
 
 
@@ -124,19 +128,19 @@ Ecco alcuni altri suggerimenti per l'installazione della fotocamera OV2640 su Li
 
 Ubuntu 22.04 è attualmente il nostro sistema di riferimento su Linux e lo preferiamo rispetto al normale Raspbian / Raspberry OS per la sua universalità e le risposte che possiamo trovare su <a href="https://askubuntu.com/" target="_blank" rel="noopener">AskUbuntu</a>. In questo post vedremo come programmare la camera per collegarla al WIFI e classificare le foto dal Raspberry.
 
-La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti "bundle" commerciali disponibili a basso costo. Noi useremo la camera nella foto, un prodotto valido ma molto economico che potete trovare a meno di dieci euro.
+La camera OV2640 viene installata direttamente sul "telaio" dell'ESP32 in molti "bundle" commerciali disponibili a basso costo. Noi useremo la camera nella foto, un prodotto valido che potete trovare a meno di dieci euro.
 
 
 
-##### la camera ov2640
+##### La camera OV2640
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.jpg" alt="la camera ov2640">
 
-##### la parte ottica della camera ov2640
+##### La parte ottica della camera ov2640
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.jpg" alt="la parte ottica della camera ov2640">
 
 
 
-### IL NOSTRO PROGETTO
+### COME CLASSIFICARE LE IMMAGINI DELLA CAM USANDO TENSORFLOW
 
 i due programmi che presentiamo permettono di:
 
