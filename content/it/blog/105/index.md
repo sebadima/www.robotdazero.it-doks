@@ -465,6 +465,9 @@ preds = model.predict(x)
 print('Result:', decode_predictions(preds, top=1)[0])
 ```
 
+### I risultati dei test
+Per provare il programma abbiamo usato uma immaginr a bassa risoluzione di un flacone di alcool appoggiato sulla nostra scrivania scura: la prima foto è la jpeg che abbiamo fornito a TF, mentre la seconda foto mostra la schermata del sito web fornito dall'ESP32. Il PC è un laptop Ubuntu 22.04.
+
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpg" alt="">
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/105.jpg" alt="">
 
