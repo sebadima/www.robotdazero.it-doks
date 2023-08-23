@@ -80,7 +80,7 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Business</h4>
+                  <h4 class="my-0 fw-normal">Corporate</h4>
                </div>
                <div class="card-body">
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
