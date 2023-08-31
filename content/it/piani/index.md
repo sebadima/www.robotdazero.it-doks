@@ -32,13 +32,14 @@ layout: full
                   <h4 class="my-0 fw-normal">Trial</h4>
                </div>
                <div class="card-body">
-                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/101.svg" alt="">
+                  <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/104/107.webp" alt="">
+                  <p class="small">⚡️</p>
                   <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
-                  <h6 class="text-muted mt-2">pagamento mensile</h6>
+                  <h6 class="text-muted mt-2">30 giorni di prova</h6>
                   <ul class="list-unstyled mt-3 mb-4">
-                     <li class="small">500 immagini</li>
-                     <li class="small">20 richieste al minuto</li>
-                     <li class="small">nessun traffico extra</li>
+                     <li class="small">1,500 immagini</li>
+                     <li class="small">40 richieste al minuto</li>
+                     <li class="small">€0.0 per ogni extra*</li>
                   </ul>
                   <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
@@ -50,7 +51,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
-                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/102.svg" alt="">
+                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/105.webp" alt="">
                   <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -68,7 +69,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div width="128" class="card-body">
-                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/103.svg" alt="">
+                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/104.webp" alt="">
                   <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -86,7 +87,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Corporate</h4>
                </div>
                <div class="card-body">
-                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/104.svg" alt="">
+                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/103.webp" alt="">
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -100,7 +101,7 @@ layout: full
          </div>
       </div>
       <p class="text-center mb-0">Senza carta di credito, puoi pagare anche con bonifico bancario.
-         <br><br>Il traffico extra viene abilitato solo a <a href="/docs/piattaforma/book/">richiesta</a> dell'utente.<br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
+         <br><br>*Il traffico extra viene abilitato solo a <a href="/docs/piattaforma/book/">richiesta</a> dell'utente.<br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
