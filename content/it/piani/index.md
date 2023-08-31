@@ -32,6 +32,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Trial</h4>
                </div>
                <div class="card-body">
+                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/101.svg" alt="">
                   <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -49,6 +50,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
+                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/102.svg" alt="">
                   <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -66,6 +68,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div class="card-body">
+                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/103.svg" alt="">
                   <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -83,6 +86,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Corporate</h4>
                </div>
                <div class="card-body">
+                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/104.svg" alt="">
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
