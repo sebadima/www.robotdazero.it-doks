@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="none"
+   height="489"
+   viewBox="0 0 480 489"
+   width="480"
+   version="1.1"
+   id="svg84"
+   sodipodi:docname="104.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs88" />
+  <sodipodi:namedview
+     id="namedview86"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1574642"
+     inkscape:cx="239.74823"
+     inkscape:cy="244.06802"
+     inkscape:window-width="1478"
+     inkscape:window-height="800"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg84" />
+  <filter
+     id="a"
+     color-interpolation-filters="sRGB"
+     filterUnits="userSpaceOnUse"
+     height="224"
+     width="224"
+     x="128"
+     y="4.13855">
+    <feFlood
+       flood-opacity="0"
+       result="BackgroundImageFix"
+       id="feFlood2" />
+    <feColorMatrix
+       in="SourceAlpha"
+       result="hardAlpha"
+       type="matrix"
+       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+       id="feColorMatrix4" />
+    <feOffset
+       dy="8"
+       id="feOffset6" />
+    <feGaussianBlur
+       stdDeviation="20"
+       id="feGaussianBlur8" />
+    <feComposite
+       in2="hardAlpha"
+       operator="out"
+       id="feComposite10" />
+    <feColorMatrix
+       type="matrix"
+       values="0 0 0 0 0.0862745 0 0 0 0 0.0431373 0 0 0 0 0.270588 0 0 0 0.1 0"
+       id="feColorMatrix12" />
+    <feBlend
+       in2="BackgroundImageFix"
+       mode="normal"
+       result="effect1_dropShadow_22_200"
+       id="feBlend14" />
+    <feBlend
+       in="SourceGraphic"
+       in2="effect1_dropShadow_22_200"
+       mode="normal"
+       result="shape"
+       id="feBlend16" />
+  </filter>
+  <filter
+     id="b"
+     color-interpolation-filters="sRGB"
+     filterUnits="userSpaceOnUse"
+     height="312"
+     width="424"
+     x="28"
+     y="176.139">
+    <feFlood
+       flood-opacity="0"
+       result="BackgroundImageFix"
+       id="feFlood19" />
+    <feColorMatrix
+       in="SourceAlpha"
+       result="hardAlpha"
+       type="matrix"
+       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+       id="feColorMatrix21" />
+    <feOffset
+       dy="8"
+       id="feOffset23" />
+    <feGaussianBlur
+       stdDeviation="20"
+       id="feGaussianBlur25" />
+    <feComposite
+       in2="hardAlpha"
+       operator="out"
+       id="feComposite27" />
+    <feColorMatrix
+       type="matrix"
+       values="0 0 0 0 0.0862745 0 0 0 0 0.0431373 0 0 0 0 0.270588 0 0 0 0.1 0"
+       id="feColorMatrix29" />
+    <feBlend
+       in2="BackgroundImageFix"
+       mode="normal"
+       result="effect1_dropShadow_22_200"
+       id="feBlend31" />
+    <feBlend
+       in="SourceGraphic"
+       in2="effect1_dropShadow_22_200"
+       mode="normal"
+       result="shape"
+       id="feBlend33" />
+  </filter>
+  <linearGradient
+     id="c"
+     gradientUnits="userSpaceOnUse"
+     x1="214.114"
+     x2="214.114"
+     y1="108.139"
+     y2="221.918">
+    <stop
+       offset="0"
+       stop-color="#5359f5"
+       id="stop36" />
+    <stop
+       offset="1"
+       stop-color="#696ffd"
+       stop-opacity="0"
+       id="stop38" />
+  </linearGradient>
+  <linearGradient
+     id="d"
+     gradientUnits="userSpaceOnUse"
+     x1="340.8"
+     x2="299.2"
+     y1="104.139"
+     y2="104.139">
+    <stop
+       offset="0"
+       stop-color="#696ffd"
+       id="stop41" />
+    <stop
+       offset="1"
+       stop-color="#696ffd"
+       stop-opacity="0"
+       id="stop43" />
+  </linearGradient>
+  <path
+     clip-rule="evenodd"
+     d="m152 96.1386 32-.0001v24.0005h-32c-11.046 0-20 8.954-20 20v80h-24v-80c0-24.301 19.699-44.0004 44-44.0004z"
+     fill="url(#c)"
+     fill-rule="evenodd"
+     id="path46" />
+  <path
+     clip-rule="evenodd"
+     d="m328 96.1386-32-.0001v24.0005h32c11.046 0 20 8.954 20 20v80h24v-80c0-24.301-19.699-44.0004-44-44.0004z"
+     fill="url(#d)"
+     fill-rule="evenodd"
+     id="path48" />
+  <rect
+     fill="#f16552"
+     height="144"
+     rx="24"
+     width="144"
+     x="168"
+     y="36.1385"
+     id="rect50"
+     style="filter:url(#a);fill:#ff3c00;fill-opacity:1" />
+  <path
+     d="m196 64.1385h88v88h-88z"
+     fill="#f16552"
+     id="path54"
+     style="fill:#ff3c00;fill-opacity:1" />
+  <circle
+     cx="240"
+     cy="108.139"
+     r="32"
+     stroke="#fff"
+     stroke-width="8"
+     id="circle56" />
+  <ellipse
+     cx="240"
+     cy="108.139"
+     rx="12"
+     ry="32"
+     stroke="#fff"
+     stroke-width="8"
+     id="ellipse58" />
+  <path
+     d="m208 108.139h64"
+     stroke="#fff"
+     stroke-width="8"
+     id="path60" />
+  <g
+     filter="url(#b)"
+     id="g66">
+    <rect
+       fill="#fff"
+       height="232"
+       rx="16"
+       width="344"
+       x="68"
+       y="208.139"
+       id="rect62" />
+    <rect
+       height="228"
+       rx="14"
+       stroke="#ededed"
+       stroke-width="4"
+       width="340"
+       x="70"
+       y="210.139"
+       id="rect64" />
+  </g>
+  <g
+     fill="#ededed"
+     id="g76">
+    <rect
+       height="152"
+       rx="8"
+       width="188"
+       x="204"
+       y="272.139"
+       id="rect68" />
+    <rect
+       height="44"
+       rx="8"
+       width="104"
+       x="84"
+       y="272.139"
+       id="rect70" />
+    <rect
+       height="92"
+       rx="8"
+       width="104"
+       x="84"
+       y="332.139"
+       id="rect72" />
+    <path
+       d="m68 224.139c0-8.837 7.1634-16 16-16h312c8.837 0 16 7.163 16 16v32h-344z"
+       id="path74" />
+  </g>
+  <circle
+     cx="96"
+     cy="232.139"
+     fill="#fff"
+     r="8"
+     id="circle78" />
+  <circle
+     cx="128"
+     cy="232.139"
+     fill="#fff"
+     r="8"
+     id="circle80" />
+  <circle
+     cx="160"
+     cy="232.139"
+     fill="#fff"
+     r="8"
+     id="circle82" />
+</svg>
