@@ -32,7 +32,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Trial</h4>
                </div>
                <div class="card-body">
-                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/101.svg" alt="">
+                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/101.svg" alt="">
                   <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -40,7 +40,7 @@ layout: full
                      <li class="small">20 richieste al minuto</li>
                      <li class="small">nessun traffico extra</li>
                   </ul>
-                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -50,7 +50,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Small</h4>
                </div>
                <div class="card-body">
-                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/102.svg" alt="">
+                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/102.svg" alt="">
                   <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -58,7 +58,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -67,8 +67,8 @@ layout: full
                <div class="card-header py-3 bg-white">
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
-               <div class="card-body">
-                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/103.svg" alt="">
+               <div width="128" class="card-body">
+                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/103.svg" alt="">
                   <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -76,7 +76,7 @@ layout: full
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -86,7 +86,7 @@ layout: full
                   <h4 class="my-0 fw-normal">Corporate</h4>
                </div>
                <div class="card-body">
-                  <img class="x figure-img img-fluid lazyload blur-up" src="/101/104.svg" alt="">
+                  <img width="128" class="x figure-img img-fluid lazyload blur-up" src="/101/104.svg" alt="">
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -94,13 +94,13 @@ layout: full
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
-                  <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
       </div>
-      <p class="text-center mb-0">Senza carta di credito, pagamenti anche con bonifico bancario.
-         <br><br>Gli extra sono abilitati solo a <a href="/docs/piattaforma/book/">richiesta</a> dell'utente.<br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
+      <p class="text-center mb-0">Senza carta di credito, puoi pagare anche con bonifico bancario.
+         <br><br>Il traffico extra viene abilitato solo a <a href="/docs/piattaforma/book/">richiesta</a> dell'utente.<br>Tutti i piani sono full feature. Hai bisogno di più risorse? <a href="/docs/piattaforma/book/">Richiedi un preventivo →</a>
       </p>
    </div>
 </div>
