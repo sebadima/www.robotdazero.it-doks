@@ -100,7 +100,7 @@ Sì, puoi adoperare ogni tipo di dispositivo perchè la risoluzione dello scherm
 
 ### Su che tipo di server è attualmente ospitato Kaspian?
 Attualmente la piattaforma gira su due server Ubuntu 22.04 - 4GB Ram - 2 CPU.<br>
-i vostri dati sono al sicuro perchè replicati sui servizi *Amazon S3* e *Amazon Glacier* in due centri geografici differenti.
+i vostri dati sono al sicuro perchè replicati sui servizi *Amazon S3* e *Amazon Glacier*.
 
 #### Posso ospitare la piattaforma software sul mio server personale?
 Sì, puoi copiare il software della piattaforma Kaspian ed usarlo senza pagare nulla. Se hai già esperienza nella manutenzione di server Linux può essere la scelta migliore. Per chi non è sistemista o non vuole sobbarcarsi la gestione degli aggiornamenti e del backup, acquistare la nostra versione cloud potrebbe essere la soluzione più ecomomica.
