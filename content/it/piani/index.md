@@ -29,7 +29,7 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Trial</h4>
+                  <h4 class="my-0 fw-normal text-primary">Trial</h4>
                </div>
                <div class="card-body">
                   <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/104/107.webp" alt="">
@@ -48,7 +48,7 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Small</h4>
+                  <h4 class="my-0 fw-normal text-primary">Small</h4>
                </div>
                <div class="card-body">
                   <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/105.webp" alt="">
@@ -84,7 +84,7 @@ layout: full
          <div class="col px-2 monthly-plan">
             <div class="card mb-4 rounded-3 mt-0 shadow-sm">
                <div class="card-header py-3 bg-white">
-                  <h4 class="my-0 fw-normal">Corporate</h4>
+                  <h4 class="my-0 fw-normal text-primary">Corporate</h4>
                </div>
                <div class="card-body">
                   <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/103.webp" alt="">
