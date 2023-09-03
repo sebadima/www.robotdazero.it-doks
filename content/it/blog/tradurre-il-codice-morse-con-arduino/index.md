@@ -16,21 +16,12 @@ homepage: false
 ---
 
 
-<style>
-.x {
-    transition:transform 0.60s ease;
-}
 
-.x:hover {
-    -webkit-transform:scale(1.50); /* or some other value */
-    transform:scale(1.50);
-}
-</style>
+<hr>
 
+##### Come usare Arduino per una applicazione divertente e semplice da capire, ma con alcuni spunti interessanti per approfondire la gestione delle stringhe e dei caratteri con il C++.
 
-Come usare Arduino per una applicazione divertente e semplice da capire, ma con alcuni spunti interessanti per approfondire la gestione delle stringhe e dei caratteri con il C++.
-
-#### Cos’è il codice Morse
+#### COS’È IL CODICE MORSE
 
 
 Il codice Morse è un tipo di comunicazione in uso da molto tempo.
@@ -44,14 +35,80 @@ Inoltre, amministrazioni pubbliche e associazioni possono scegliere il Morse com
 <img class ="x" src="images/tradurre-il-codice-morse-con-arduino-img1.jpg" alt="">
 
 
-#### Programma per il lettore di Codice Morse
+### PROGRAMMA PER IL LETTORE DI CODICE MORSE
 
 La parte hardware del progettino è molto semplice e per questo motivo preferiamo partire analizzando il sorgente scritto in Arduino C++.
 
-<script src="https://gist.github.com/sebadima/ac632445c9505353d6f8f018ce0deda5.js"></script>
+```bash
+/*
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+int ledPin = 13;
+char* letters[] = {
+    “.-”, “-…”, “-.-.”, “-..”, “.”, “..-.”, “–.”, “….”, “..”,
+    “.—”, “-.-”, “.-..”, “–”, “-.”, “—”, “.–.”, “–.-”, “.-.”,
+    “…”, “-”, “..-”, “…-”, “.–”, “-..-”, “-.–”, “–..”
+};
+// A-I
+// J-R
+// S-Z
+char* numbers[] = { “—–”, “.—-”, “..—”,
+“…–”, “….-”, “…..”, “-….”,
+“–…”, “—..”, “—-.” };
+int dotDelay = 200;
+void setup()
+{
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(9600);
+}
+void loop()
+{
+    char ch;
+    if (Serial.available()) {
+        ch = Serial.read();
+        // read a single letter
+        if (ch >= ‘a’ && ch <= ‘z’) { flashSequence(letters[ch - ‘a’]); } else if (ch >= ‘A’ && ch <= ‘Z’) { flashSequence(letters[ch - ‘A’]); } else if (ch >= ‘0’ && ch <= ‘9’) {
+            flashSequence(numbers[ch - ‘0’]);
+        }
+        else if (ch == ‘ ‘) {
+            delay(dotDelay * 4);
+            // gap between words
+        }
+    }
+}
+void flashSequence(char* sequence)
+{
+    int i = 0;
+    while (sequence[i] != NULL) {
+        flashDotOrDash(sequence[i]);
+        i++;
+    }
+    delay(dotDelay * 3);
+}
+void flashDotOrDash(char dotOrDash)
+{
+    digitalWrite(ledPin, HIGH);
+    if (dotOrDash == ‘.’) {
+        delay(dotDelay);
+    }
+    else // must be a -
+    {
+        delay(dotDelay * 3);
+    }
+    digitalWrite(ledPin, LOW);
+    delay(dotDelay);
+}
+```
 
 
-#### Come funziona il programma
+### COME FUNZIONA IL PROGRAMMA
 
 Nel loop, controlleremo costantemente se ci sono state inviate delle lettere attraverso il cavo USB. Il flag di Arduino Serial.available() sarà attivata quando arriva un carattere da trasformare in Morse e la funzione Serial.read() ci darà quel carattere e noi lo assegniamo ad una variabile “ch”, che useremo dentro il loop(). A questo punto troviamo delle istruzioni if in sequenza che leggono il carattere e stabiliscono se è una lettera maiuscola, minuscola o uno spazio tra due parole.
 
@@ -64,14 +121,14 @@ La stringa trovata viene passata ad una funzione chiamata flashSequence(). La fu
 Il loop while continua fino a quando non arriviamo al NULL. La funzione flashDotOrDash() accende il LED e simula un punto o una linea cambiando la lunghezza del segnale. In caso di linea triplica la lunghezza rispetto al punto.
 
 
-#### Assemblaggio
+### ASSEMBLAGGIO
 
 Così dovrebbe apparire il montaggio reale:
 
 
 <img class ="x" src="images/tradurre-il-codice-morse-con-arduino-img3.png" alt="">
 
-##### I componenti necessari:
+### I COMPONENTI NECESSARI:
 
 - Arduino Uno R3
 - LED D1 5mm Rosso
@@ -84,7 +141,7 @@ Così dovrebbe apparire il montaggio reale:
 > Per la alimentazione possiamo usare una normalissima batteria da 9 volt reperibile praticamente dovunque, non serve neppure che sia alcalina o ricaricabile visto il bassissimo consumo del LED.
 
 
-#### Il collaudo finale
+### IL COLLAUDO FINALE
 
 Carica lo scketch facendo poi la compilazione / upload. una volta che il programma è stato caricato su Arduino possiamo usare il Monitor Seriale dove possiamo digitare delle stringhe da mandare ad Arduino. Sempre nel Mnitor Seriale possiamo ricevere le risposte della scheda ai nostri comandi nella sezione superiore.
 
