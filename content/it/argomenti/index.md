@@ -152,7 +152,11 @@ Scopri la differenza tra tensione e corrente
 > La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
 
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
-<p> <input onclick="location.href='https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </p>
+<p> 
+<a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">
+<input onclick="location.href='https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> 
+</a> 
+</p>
 </div>
 
 <br>
@@ -161,10 +165,9 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 
 <div class="bz-container">
 
-### E per finire scopri l'elenco completo degli argomenti trattati nel sito ...
-<p>&nbsp;</p>
+#### E per finire scopri l'elenco completo degli argomenti trattati nel sito ...
 
-<p> <input onclick="location.href='https://www.robotdazero.it/tags/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Vedi tutti i Tags ⚡️"> </p>
+<a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags ⚡️</a>
 </div>
 
 <br>
