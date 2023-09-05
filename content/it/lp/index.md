@@ -112,12 +112,14 @@ input[type='submit'] {
 
 
 <div class="bz-container">
-<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/101.svg" alt="">
+<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/114.svg" alt="">
 Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
+
+##### Cosa è Arduino?
+
+> Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
+
+Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
 <p> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023"> </p>
 </div>
 
@@ -126,13 +128,13 @@ Leggi la nostra guida completa per scegliere Arduino
 <br>
 
 <div class="bz-container">
-<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/102.svg" alt="">
+<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/115.svg" alt="">
 Leggi la nostra guida completa per scegliere Arduino
 Leggi la nostra guida completa per scegliere Arduino
 Leggi la nostra guida completa per scegliere Arduino
 Leggi la nostra guida completa per scegliere Arduino
 Leggi la nostra guida completa per scegliere Arduino
-<p> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scegli Arduino"> </p>
+<p> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32"> </p>
 </div>
 
 <br>
@@ -140,13 +142,18 @@ Leggi la nostra guida completa per scegliere Arduino
 <br>
 
 <div class="bz-container">
-<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/103.svg" alt="">
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-Leggi la nostra guida completa per scegliere Arduino
-<p> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scegli Arduino"> </p>
+<img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/116.svg" alt="">
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+La differenza tra corrente e tensione
+<p> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza"> </p>
 </div>
 
 <br>
