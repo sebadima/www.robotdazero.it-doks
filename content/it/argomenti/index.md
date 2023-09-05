@@ -113,7 +113,7 @@ input[type='submit'] {
 
 <div class="bz-container">
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/114.svg" alt="">
-Leggi la nostra guida completa per scegliere Arduino
+&nbsp;&nbsp;Leggi la nostra guida completa per scegliere Arduino
 
 ##### Cosa è Arduino?
 
@@ -132,7 +132,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 
 <div class="bz-container">
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/115.svg" alt="">
-Scopri come alimentare la scheda ESP32
+&nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
 ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
 
@@ -152,7 +152,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 <div class="bz-container">
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/116.svg" alt="">
-Scopri la differenza tra tensione e corrente
+&nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
 
@@ -172,7 +172,6 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 <div class="bz-container">
 
 #### E per finire scopri l'elenco completo degli argomenti trattati nel sito ...
-
 <a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags ⚡️</a>
 </div>
 
