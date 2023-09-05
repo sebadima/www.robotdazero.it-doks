@@ -105,4 +105,3 @@ layout: full
       </p>
    </div>
 </div>
-
