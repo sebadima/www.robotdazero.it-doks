@@ -161,20 +161,6 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 
 <div class="bz-container">
 
-##### Se il mondo IOT ti interessa dai una occhiata agli ultimi aggiornamento del nostro Blog
-
-> Calvalca l'onda dello sviluppo IOT: il settore dell'Internet of Things beneficia di un enorme supporto globale e offre continue opportunità di successo. Grazie a tutto questo potresti creare una startapp tecnologica senza investire grossi capitali.
-<p>...</p>
-
-<p> <input onclick="location.href='https://www.robotdazero.it/blog/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi gli ultimi articoli 👉"> </p>
-</div>
-
-<br>
-<br>
-<br>
-
-<div class="bz-container">
-
 ### E per finire scopri l'elenco completo degli argomenti trattati nel sito ...
 <p>&nbsp;</p>
 
