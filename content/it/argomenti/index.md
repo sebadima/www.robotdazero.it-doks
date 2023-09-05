@@ -120,7 +120,10 @@ Leggi la nostra guida completa per scegliere Arduino
 > Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
 
 Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
-<p> <input  onclick="location.href='https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"> </p>
+<p> 
+<a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
+<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
+</p>
 </div>
 
 <br>
@@ -136,7 +139,11 @@ Scopri come alimentare la scheda ESP32
 > L’ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l’ESP32 è la scelta dell’alimentazione giusta per garantire il corretto funzionamento della scheda. 
 
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
-<p> <input onclick="location.href='https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </p>
+
+<p> 
+<a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/">
+<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> 
+</p>
 </div>
 
 <br>
@@ -154,8 +161,7 @@ Scopri la differenza tra tensione e corrente
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
 <p> 
 <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">
-<input onclick="location.href='https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> 
-</a> 
+<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> 
 </p>
 </div>
 
