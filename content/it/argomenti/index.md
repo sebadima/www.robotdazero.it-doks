@@ -145,7 +145,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 <div class="bz-container">
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/116.svg" alt="">
-Scopri come la differenza tra tensione e corrente
+Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
 
