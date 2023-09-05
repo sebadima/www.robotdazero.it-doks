@@ -41,7 +41,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.0 per ogni extra*</li>
                   </ul>
-                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -59,7 +59,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -77,7 +77,7 @@ layout: full
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
-                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -95,7 +95,7 @@ layout: full
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
-                  <a style="background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
