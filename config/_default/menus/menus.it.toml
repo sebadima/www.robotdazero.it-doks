@@ -56,7 +56,7 @@
   name = "Argomenti"
   weight = 60
   identifier = "tags"
-  url = "/tags"
+  url = "/argomenti"
   parent = "get-started"
 
 [[main]]

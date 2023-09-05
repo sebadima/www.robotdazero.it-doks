@@ -175,7 +175,7 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 
 <div class="bz-container">
 
-### E per finire scopri il resto degli argomenti trattati nel sito ...
+### E per finire scopri l'elenco completo degli argomenti trattati nel sito ...
 <p>&nbsp;</p>
 
 <p> <input onclick="location.href='https://www.robotdazero.it/tags/';" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Vedi tutti i Tags ⚡️"> </p>
