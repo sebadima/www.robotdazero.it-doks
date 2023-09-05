@@ -145,6 +145,9 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 <div class="bz-container">
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/116.svg" alt="">
+Scopri come la differenza tra tensione e corrente
+
+##### Tensione e corrente sono la stessa cosa?
 
 > La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
 
