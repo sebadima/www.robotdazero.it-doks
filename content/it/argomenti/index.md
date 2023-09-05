@@ -1,5 +1,5 @@
 ---
-title: "Cosa potresti leggere prima di iniziare..."
+title: "Cosa potresti leggere per iniziare ..."
 description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
