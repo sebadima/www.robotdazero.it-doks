@@ -1,5 +1,5 @@
 ---
-title: "Cosa leggere se vuoi iniziare con l'IOT"
+title: "Se vuoi entrare nel mondo dell'Internet of Things prova ad iniziare con  questi articoli"
 description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
