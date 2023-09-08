@@ -59,7 +59,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="https://checkout.stripe.com/c/pay/cs_live_b17RaGmmvgpI1p3jjGJMdWZ02vFTXHwLAQrrUMQlULADb0Bsz2q2p971ma#fidkdWxOYHwnPyd1blppbHNgWjA0SXBBYzJDcGs8Z11fbGZLSDVOUU9NaFNhajdAcndOdkFgNU9TY0FSYFY1TnExaVwwY0lHdWBGTjxtUmc3N001bWJ3YnJjfD00f2F8MWRwTUlpbmluUWhENTVKTnFTNTU0NScpJ3VpbGtuQH11anZgYUxhJz8nMnZMN2dEYVR3YTR%2FY1BUPXJBJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJycit3amdqcWFkf2B3aitscSonKSdpamZkaWAnPydscSd4JSUl" role="button">Acquista⚡️</a>
+                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="https://robotdazero.company.site/App-Kaspian-small-p585865660" role="button">Acquista⚡️</a>
                </div>
             </div>
          </div>
