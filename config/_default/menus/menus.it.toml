@@ -63,7 +63,7 @@
   name = "Ecommerce"
   weight = 70
   identifier = "ecommerce"
-  url = "/ecommerce"
+  url = "https://robotdazero.company.site/"
   parent = "get-started"
 
 [[social]]
