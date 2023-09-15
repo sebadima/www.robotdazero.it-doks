@@ -472,4 +472,19 @@ Per provare il programma abbiamo usato uma immagine a bassa risoluzione di un fl
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/105.jpg" alt="">
 
 
-<p style="font-size: 11px;">R.105.0.1</p
+```bash
+2023-09-15 19:08:06.752749: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-09-15 19:08:07.311766: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-09-15 19:08:07.850514: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-09-15 19:08:08.542592: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 67108864 exceeds 10% of free system memory.
+2023-09-15 19:08:08.638182: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 67108864 exceeds 10% of free system memory.
+1/1 [==============================] - 2s 2s/step
+Result: [('n03937543', 'pill_bottle', 0.18644877)]
+```
+
+#### I RISULTATI DEL TEST
+
+Il programma correttamente classifica la foto come un flacone di medicinali (pill bottle), un risultato accettabile considerando che il prodotto assomiglia molto ai flaconi di aspirina in uso negli USA.
+
+
+<p style="font-size: 11px;">R.105.1.0</p
