@@ -487,4 +487,4 @@ Result: [('n03937543', 'pill_bottle', 0.18644877)]
 Il programma correttamente classifica la foto come un flacone di medicinali (pill bottle), un risultato accettabile considerando che il prodotto assomiglia molto ai flaconi di aspirina in uso negli USA.
 
 
-<p style="font-size: 11px;">R.105.1.0</p
+<p style="font-size: 11px;">R.105.1.1</p
