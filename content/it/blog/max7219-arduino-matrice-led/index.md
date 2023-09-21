@@ -21,30 +21,7 @@ _In questo post scoprirai come costruire una matrice a LED con max7219 Arduino. 
 
 Parliamo innanzitutto del “driver” MAX7219. Il chip è in grado di pilotare 64 LED individuali utilizzando solo 3 fili per il link con Arduino, e per di più lo possiamo collegare in configurazione “sequenziale” con altri driver usando sempre gli stessi 3 fili!
 
-
-
-
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <br>
 <br>
@@ -53,10 +30,7 @@ Parliamo innanzitutto del “driver” MAX7219. Il chip è in grado di pilotare 
 
 <br>
 
-
 <img width="400" class="x figure-img img-fluid lazyload blur-up" src="images/102.jpg" alt="Resistenza del regolatore di corrente MAX7219">
-
-
 
 <br>
 <br>
@@ -69,38 +43,7 @@ La tabella seguente è presa pari pari dal datasheet della casa madre e mostra i
 
 Adesso colleghiamo il modulo Matrice LED 8×8 alla nostra scheda Arduino. Ecco lo schema del circuito:
 
-
-
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="Schema del circuito che spiega come come costruire una Matrice a LED con Arduino">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Il **VCC** e **GND** del modulo vanno ai pin **5V** e **GND** di Arduino e gli altri tre pin, **DIN**, **CLK** e **CS** vanno a un qualsiasi pin digitale della scheda Arduino. Se vogliamo collegare più di un modulo, colleghiamo semplicemente i pin di uscita della precedente scheda pin di ingresso del nuovo modulo. In realtà questi pin sono tutti uguali tranne che il pin **DOUT** della scheda precedente va a finire nel pin **DIN** della nuova scheda. Ti ricordo che puoi ottenere i componenti necessari per questo tutorial dai link sottostanti:
 
@@ -217,34 +160,13 @@ void loop() {
 }
 ```
 
-
-
 Una volta collegati i moduli siamo pronti per caricare il codice Arduino del primo esempio. Useremo la libreria MaxMatrix **specifica per il MAX7219** che può essere scaricata da [GitHub][6]. Non hai bisogno di fare copia e incolla del programma, ti basta andare alla fine del listato e cliccare su una delle 2 icone sottostanti.
 
 Nella **sezione setup** inizializziamo il modulo a LED impostimo la luminosità. Nella **sezione loop** utilizzamo la funzione **setDot()** con cui possiamo impostare qualsiasi singolo LED in modo che si accenda alla posizione desiderata. Quindi usiamo la funzione **clear()** per cancellare il display.
 
+<br>
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpg" alt="display con lettera G">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Per visualizzare i caratteri predefiniti usiamo la **funzione writeSprite()**: i primi due argomenti sono la posizione X e Y dell’angolo superiore sinistro del carattere. A fine sorgente usiamo la funzione **shiftLeft()** per spostare il carattere verso sinistra.
 
@@ -411,23 +333,10 @@ Adesso diamo un’occhiata al programma con il testo scorrevole e vediamo cosa c
 
 All’inizio dobbiamo fare l&#8217;**include** di una libreria aggiuntiva per poter usare **PROGMEN**, che è un modificatore di variabili. Ci serve per salvare i dati nella **memoria flash** invece che nella **SRAM**: quando abbiamo un **gruppo sostanzioso di variabili statiche**, come in questo caso è meglio memorizzarle nella più capiente memoria flash. La memoria flash infatti ha **32K byte**, sedici volte la capacità della SRAM (**2K byte**).
 
-
-
-
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/107.jpg" alt="8x8 LED Matrix Scrolling Text Codice Arduino">
 
 <br>
 <br>
-
-
-
-
-
-
-
-
-
-
 
 Successivamente con un **array di caratteri** definiamo il testo scorrevole e nella sezione **loop()** definiamo la funzione custom **printStringWithShift()**, che stampa il testo scorrevole sulla matrice LED con una velocità di scorrimento variabile. Puoi cambiare la velocità modificando il secondo argomento, ma ti consiglio di fare esperimenti solo dopo che tutto funzioni, altrimenti non capirai se hai sbagliate le modifiche o la costruzione in se stessa.
 
