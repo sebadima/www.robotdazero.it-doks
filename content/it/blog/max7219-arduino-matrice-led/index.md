@@ -432,6 +432,8 @@ All’inizio dobbiamo fare l&#8217;**include** di una libreria aggiuntiva per p
 Successivamente con un **array di caratteri** definiamo il testo scorrevole e nella sezione **loop()** definiamo la funzione custom **printStringWithShift()**, che stampa il testo scorrevole sulla matrice LED con una velocità di scorrimento variabile. Puoi cambiare la velocità modificando il secondo argomento, ma ti consiglio di fare esperimenti solo dopo che tutto funzioni, altrimenti non capirai se hai sbagliate le modifiche o la costruzione in se stessa.
 
 <br>
+
 > La funzione printStringWithShift() estrae i caratteri dalla stringa e li visualizza con effetto scroll sulla matrice a LED. La puoi considerare il “nucleo” del programma.
 
-##### rev 1.0.1
+<br>
+rev 1.0.1
