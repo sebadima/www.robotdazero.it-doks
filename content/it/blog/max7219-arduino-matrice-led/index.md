@@ -345,4 +345,5 @@ Successivamente con un **array di caratteri** definiamo il testo scorrevole e 
 > La funzione printStringWithShift() estrae i caratteri dalla stringa e li visualizza con effetto scroll sulla matrice a LED. La puoi considerare il “nucleo” del programma.
 
 <br>
-rev 1.0.1
+
+<p style="font-size: 11px;">R.1.0.3</p>
