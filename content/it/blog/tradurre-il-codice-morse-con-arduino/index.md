@@ -135,7 +135,6 @@ Così dovrebbe apparire il montaggio reale:
 - R1 270 Ω 0.25W
 - Breadboard mini
 - Batteria standard 9v
-- Batteria standard 9v
 - Plug per batteria 9v compatibile con Arduino
 
 > Per la alimentazione possiamo usare una normalissima batteria da 9 volt reperibile praticamente dovunque, non serve neppure che sia alcalina o ricaricabile visto il bassissimo consumo del LED.
@@ -148,3 +147,6 @@ Carica lo scketch facendo poi la compilazione / upload. una volta che il program
 In alto, c’è un campo in cui è possibile comporre una riga di testo che verrà inviata ad Arduino quando si fa clic su Invia o si preme INVIO. Sotto c’è una zone in cui saranno mostrati tutti i messaggi provenienti dalla scheda Arduino. Direttamente nella parte inferiore della finestra è presente un elenco a discesa in cui è possibile scegliere la velocità di invio delle informazioni. Qualunque cosa selezioni qui dovrebbe coordinare la velocità di trasmissione che indichi nel messaggio di avvio del tuo contenuto. Utilizziamo 9600, che è l’impostazione predefinita, quindi non ci sono ragioni valide per trasformare qualcosa qui. 
 
 Quindi, dovremmo semplicemente inviare il monitor seriale e digitare alcuni contenuti nel campo Invia e premere INVIO. In questo modo dovremmo ottenere il nostro messaggio in codice Morse.
+
+
+<p style="font-size: 11px;">R.1.0.2</p
