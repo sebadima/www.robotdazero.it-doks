@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["machine learning", "tensorflow", "raspberry", "ubuntu", "ESP32"]
+tags: ["machine learning", "tensorflow", "raspberry", "ubuntu", "esp32"]
 contributors: ["sebadima "]
 pinned: false
 homepage: false

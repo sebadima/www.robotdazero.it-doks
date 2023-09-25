@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["OV2640", "ESP32", "elettronica", "Arduino"]
+tags: ["ov2640", "esp32", "elettronica", "arduino"]
 contributors: ["sebadima "]
 pinned: false
 homepage: false
