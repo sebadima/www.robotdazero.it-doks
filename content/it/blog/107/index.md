@@ -45,7 +45,7 @@ Il pin "VIN" è situato sul bordo destro della scheda ESP32. Il pin è contrasse
 
 Sì, è possibile usare il pin "VIN" della scheda ESP32 per alimentare dei dispositivi esterni. Il pin VIN è collegato a un regolatore di tensione integrato che fornisce una tensione di uscita di 3,3 V. La tensione di ingresso al pin VIN può essere compresa tra 5 V e 12 V.
 
-Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessario collegare il dispositivo al pin VIN e al pin GND della scheda. La tensione di ingresso al pin VIN deve essere sufficiente a fornire la potenza necessaria al dispositivo esterno.
+Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessario collegare il dispositivo al pin VIN e al pin <a href="https://en.wikipedia.org/wiki/Ground_(electricity)" target="_blank" rel="noopener">GND</a> della scheda. La tensione di ingresso al pin VIN deve essere sufficiente a fornire la potenza necessaria al dispositivo esterno.
 
 Ecco una semplice schema di collegamento per alimentare un dispositivo esterno dal pin VIN della scheda ESP32:
 
@@ -70,3 +70,6 @@ Ecco alcuni suggerimenti per alimentare un dispositivo esterno dal pin VIN della
 > Dovresti sempre usare un alimentatore esterno regolato per proteggere il dispositivo ESP32 da eventuali sovratensioni.
 Verificare che la tensione di uscita dell'alimentatore esterno sia compresa tra 5 V e 12 V.
 Assicurarsi che la corrente massima fornita dall'alimentatore esterno sia sufficiente a soddisfare le esigenze del dispositivo esterno.
+
+<br>
+<p style="font-size: 12px;">107.R.1.0.2</p>
