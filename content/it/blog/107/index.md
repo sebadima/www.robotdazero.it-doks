@@ -28,6 +28,9 @@ Il pin "VIN" è collegato al regolatore di tensione della scheda ESP32. Il regol
 
 Il pin "VIN" è un pin importante da conoscere quando si utilizza la scheda ESP32. È importante utilizzare una tensione di alimentazione appropriata per evitare di danneggiare la scheda.
 
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpg" alt="">
+
 Ecco alcuni dettagli tecnici sul pin "VIN" della scheda ESP32:
 
 ```bash
@@ -52,8 +55,8 @@ Ecco una semplice schema di collegamento per alimentare un dispositivo esterno d
 
 {{< mermaid class="bg-light text-center" >}}
 graph TD
-  ESP32 -->|VIN| D[POSITIVO del disp.esterno]
-  ESP32 -->|GND| E[negativo del disp.esterno]
+  ESP32 -->|VIN/V5| D[+ POSITIVO del dispositivo esterno]
+  ESP32 -->|GND| E[-- negativo del dispositivo esterno]
 {{< /mermaid >}}
 
 
@@ -72,4 +75,4 @@ Verificare che la tensione di uscita dell'alimentatore esterno sia compresa tra 
 Assicurarsi che la corrente massima fornita dall'alimentatore esterno sia sufficiente a soddisfare le esigenze del dispositivo esterno.
 
 <br>
-<p style="font-size: 12px;">107.R.1.0.2</p>
+<p style="font-size: 12px;">107.R.1.0.4</p>
