@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["machine learning", "teoria"]
+tags: ["Machine Learning", "Teoria"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

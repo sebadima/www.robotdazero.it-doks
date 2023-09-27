@@ -8,7 +8,7 @@ draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["Rover", "Progetti"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

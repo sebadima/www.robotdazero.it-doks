@@ -9,7 +9,7 @@ draft: false
 weight: 50
 images: ["iniziare-con-la-robotica.jpg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["Teoria", "Guide"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["images/arduino-per-il-commodore-64.jpg"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["Arduino", "Elettronica", "Commodore 64"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

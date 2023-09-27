@@ -9,7 +9,7 @@ draft: false
 weight: 50
 images: ["tradurre-il-codice-morse-con-arduino.webp"]
 categories: ["News"]
-tags: ["progetti", "guide", "Arduino"]
+tags: ["Progetti", "Codice morse", "Arduino"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

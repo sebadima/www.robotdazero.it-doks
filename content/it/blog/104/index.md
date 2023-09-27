@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["arduino", "iot","teensy"]
+tags: ["Arduino", "IOT","Teensy"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

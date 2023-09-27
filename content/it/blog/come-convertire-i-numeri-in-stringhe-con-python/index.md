@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["python", "programmazione", "automazione"]
+tags: ["Python", "Programmazione", "Automazione"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

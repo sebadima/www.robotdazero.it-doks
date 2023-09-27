@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["00.webp"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["Led", "Arduino", "Progetti"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

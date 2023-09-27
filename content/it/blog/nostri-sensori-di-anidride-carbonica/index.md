@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["nostri-sensori-di-anidride-carbonica.webp"]
 categories: ["News"]
-tags: ["progetti", "guide", "Arduino"]
+tags: ["Progetti", "Sensori", "Anidride carbonica"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

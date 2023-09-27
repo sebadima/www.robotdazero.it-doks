@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["HC-SR04", "guide", "sensori"]
+tags: ["HC-SR04", "Guide", "Sensori"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header3.jpeg"]
 categories: ["News"]
-tags: ["blog", "comunicazioni"]
+tags: ["Blog", "Comunicazioni"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false

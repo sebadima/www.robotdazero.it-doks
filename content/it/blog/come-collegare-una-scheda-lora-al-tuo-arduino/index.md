@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["Screenshot-from-2023-03-05-14-36-49.webp"]
 categories: ["News"]
-tags: ["rover", "performance", "SEO"]
+tags: ["Lora", "Guide", "Arduino", "ESP32"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

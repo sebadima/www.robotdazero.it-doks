@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpg"]
 categories: ["News"]
-tags: ["sensori", "arduino", "automazione", "elettronica", "esp32"]
+tags: ["Sensori", "Arduino", "Automazione", "Elettronica", "ESP32"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false

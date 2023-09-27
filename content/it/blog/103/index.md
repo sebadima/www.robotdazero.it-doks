@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["machine learning", "teoria", "ai"]
+tags: ["Guide", "Teoria", "ùroni"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
