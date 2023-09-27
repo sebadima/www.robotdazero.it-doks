@@ -11,6 +11,7 @@ categories: ["News"]
 tags: ["ESP32", "Elettronica", "Alimentazione"]
 contributors: ["sebadima "]
 pinned: false
+mermaid: true
 homepage: false
 ---
 <hr>
@@ -29,10 +30,13 @@ Il pin "VIN" è un pin importante da conoscere quando si utilizza la scheda ESP3
 
 Ecco alcuni dettagli tecnici sul pin "VIN" della scheda ESP32:
 
+```bash
 Tensione nominale: 5 V
 Range di tensione: 3,3 V - 12 V
 Corrente massima: 2 A
 Impedenza: 200 ohm
+```
+
 Per utilizzare il pin "VIN" per alimentare la scheda ESP32, è necessario collegare un alimentatore esterno al pin. L'alimentatore esterno deve fornire una tensione compresa tra 3,3 V e 12 V.
 
 Il pin "VIN" è situato sul bordo destro della scheda ESP32. Il pin è contrassegnato con la lettera "V" e un simbolo di freccia.
@@ -45,9 +49,21 @@ Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessa
 
 Ecco una semplice schema di collegamento per alimentare un dispositivo esterno dal pin VIN della scheda ESP32:
 
+```bash
+
 +5V | | GND
 ------- | | --------
 Dispositivo | | ESP32
+```
+
+
+{{< mermaid class="bg-light text-center" >}}
+graph TD
+  ESP32 -->|VIN| D[POSITIVO]
+  ESP32 -->|GND| E[negativo del dispositivo]
+{{< /mermaid >}}
+
+
 In questo schema, il dispositivo esterno è collegato al pin VIN della scheda ESP32 tramite un cavo con due fili, uno per la tensione di ingresso e uno per la massa.
 
 È importante notare che la corrente massima che può essere fornita dal pin VIN è di 2 A. Se il dispositivo esterno richiede una corrente maggiore di 2 A, è necessario utilizzare un alimentatore esterno per fornire la potenza necessaria.
