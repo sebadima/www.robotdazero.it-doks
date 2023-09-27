@@ -1,7 +1,7 @@
 {{ define "main" }}
 <style>
    .curved-div {
-   background: #ff3c00;
+   background: #ffffff;
    color: #FFF;
    text-align: center;
    }
@@ -60,9 +60,9 @@
 {{ define "sidebar-footer" }}
 <div class="curved-div">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40">
-      <path fill="#FF3C00" fill-opacity="1" d="M0,160L0,288L1440,288L1440,0L0,0L0,0Z" style="--darkreader-inline-fill: #cc3000;" data-darkreader-inline-fill=""></path>
+      <path fill="#ffffff" fill-opacity="1" d="M0,160L0,288L1440,288L1440,0L0,0L0,0Z" style="--darkreader-inline-fill: #cc3000;" data-darkreader-inline-fill=""></path>
    </svg>
-   <section class="section container-fluid mt-n3 pb-3">
+   <section style="color:#222" class="section container-fluid mt-n3 pb-3">
       <div class="row justify-content-center">
          <div class="col-lg-12 text-center">
             <h1 class="mt-0">{{ .Title }}</h1>
@@ -70,7 +70,7 @@
          <div class="col-lg-9 col-xl-8 text-center">
             <p class="lead">{{ .Params.lead | safeHTML }}</p>
             <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-            <p  style="font-size:16px;" class="meta">Open-source MIT Licensed. <a style="font-size:16px;text-decoration: none;color:white" aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+            <p  style="font-size:16px;" class="meta">Open-source MIT Licensed. <a style="font-size:16px;text-decoration: none" aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
          </div>
       </div>
    </section>
@@ -90,7 +90,7 @@
       <section class="section container-fluid mt-n3 pb-3"></section>
    </div>
 </div>
-<section class="section section-sm">
+<section style="color:#222" class="section section-sm">
    <div class="container">
       <div class="row justify-content-center text-center">
          <div class="col-lg-5">
