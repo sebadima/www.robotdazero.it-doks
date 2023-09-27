@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["00.webp"]
 categories: ["News"]
-tags: ["Led", "Arduino", "Progetti"]
+tags: ["LED", "Arduino", "Progetti"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
