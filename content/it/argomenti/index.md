@@ -133,6 +133,8 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 <br>
 <br>
 
+
+
 <div style="padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/102.svg" alt="">
@@ -155,6 +157,8 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 <br>
 <br>
 
+
+
 <div style="padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/103.svg" alt="">
@@ -176,6 +180,8 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 <br>
 <br>
 <br>
+
+
 
 <div class="bz-container">
 
