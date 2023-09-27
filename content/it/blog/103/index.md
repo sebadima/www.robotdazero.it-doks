@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["Guide", "Teoria", "ùroni"]
+tags: ["Guide", "Teoria", "Droni"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
