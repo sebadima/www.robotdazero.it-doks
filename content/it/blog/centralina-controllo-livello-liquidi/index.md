@@ -26,15 +26,12 @@ Il resto del progetto è abbastanza semplice e ve lo consiglio se vi siete stufa
 <br>
 <br>
 
-<img class = "x"  width="800" title="" alt="" src="./images/img1.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img2.jpg">
+<img class = "x"  width="800" title="" alt="" src="./images/img1.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img3.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img4.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img5.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img6.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img7.jpg">
-<img class = "x"  width="800" title="" alt="" src="./images/img8.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img9.jpg">
-<img class = "x"  width="800" title="" alt="" src="./images/img10.jpg">
 <img class = "x"  width="800" title="" alt="" src="./images/img11.jpg">
-<img class = "x"  width="800" title="" alt="" src="./images/img12.jpg">
