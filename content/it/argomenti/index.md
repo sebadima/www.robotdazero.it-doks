@@ -114,7 +114,7 @@ input[type='submit'] {
 <div style="padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/101.svg" alt="">
-Come scegliere Arduino
+&nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
 
@@ -138,7 +138,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 <div style="padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/102.svg" alt="">
-Scopri come alimentare la scheda ESP32
+&nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
 ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
 
@@ -147,10 +147,7 @@ Scopri come alimentare la scheda ESP32
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
 
 <br>
-<p> 
-<a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/">
-<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> 
-</p>
+<p> <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> </p>
 </div>
 
 <br>
@@ -162,7 +159,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 <div style="padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/105/103.svg" alt="">
-Scopri la differenza tra tensione e corrente
+&nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
 
@@ -171,10 +168,7 @@ Scopri la differenza tra tensione e corrente
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
 
 <br>
-<p> 
-<a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">
-<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> 
-</p>
+<p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
 </div>
 
 <br>
