@@ -70,7 +70,7 @@
          <div class="col-lg-9 col-xl-8 text-center">
             <p class="lead">{{ .Params.lead | safeHTML }}</p>
             <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-            <p  style="font-size:16px;" class="meta">Open-source MIT Licensed. <a style="font-size:16px;text-decoration: none" aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+            <p  style="font-size:16px;" class="meta">Open-source MIT Licensed. <a style="font-size:16px;" aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
          </div>
       </div>
    </section>
