@@ -49,18 +49,11 @@ Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessa
 
 Ecco una semplice schema di collegamento per alimentare un dispositivo esterno dal pin VIN della scheda ESP32:
 
-```bash
-
-+5V | | GND
-------- | | --------
-Dispositivo | | ESP32
-```
-
 
 {{< mermaid class="bg-light text-center" >}}
 graph TD
-  ESP32 -->|VIN| D[POSITIVO]
-  ESP32 -->|GND| E[negativo del dispositivo]
+  ESP32 -->|VIN| D[POSITIVO del disp.esterno]
+  ESP32 -->|GND| E[negativo del disp.esterno]
 {{< /mermaid >}}
 
 
