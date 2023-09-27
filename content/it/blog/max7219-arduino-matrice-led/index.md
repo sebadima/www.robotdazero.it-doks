@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["LED", "MAX7219", "progetti", "Arduino"]
+tags: ["LED", "MAX7219", "Progetti", "Arduino"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false
