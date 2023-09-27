@@ -111,15 +111,19 @@ input[type='submit'] {
 
 
 
-<div class="bz-container">
+<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/114.svg" alt="">
-&nbsp;&nbsp;Leggi la nostra guida completa per scegliere Arduino
+&nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
 
 > Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
 
 Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
+
+<br>
+
 <p> 
 <a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
 <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
@@ -130,7 +134,8 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 <br>
 <br>
 
-<div class="bz-container">
+<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/115.svg" alt="">
 &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
@@ -139,6 +144,8 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 > L’ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l’ESP32 è la scelta dell’alimentazione giusta per garantire il corretto funzionamento della scheda. 
 
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
+
+<br>
 
 <p> 
 <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/">
@@ -150,7 +157,8 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 <br>
 <br>
 
-<div class="bz-container">
+<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<br>
 <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/106/116.svg" alt="">
 &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
@@ -162,6 +170,9 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 <p> 
 <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">
 <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> 
+
+<br>
+
 </p>
 </div>
 
