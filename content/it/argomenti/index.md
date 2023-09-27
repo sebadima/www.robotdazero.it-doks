@@ -123,7 +123,6 @@ input[type='submit'] {
 Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
 
 <br>
-
 <p> 
 <a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
 <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
@@ -146,7 +145,6 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
 
 <br>
-
 <p> 
 <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/">
 <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> 
@@ -167,12 +165,11 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 > La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
 
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
+
+<br>
 <p> 
 <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">
 <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> 
-
-<br>
-
 </p>
 </div>
 
