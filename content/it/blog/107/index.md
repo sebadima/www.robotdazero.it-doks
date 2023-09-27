@@ -63,6 +63,10 @@ In questo schema, il dispositivo esterno è collegato al pin VIN della scheda ES
 
 Ecco alcuni suggerimenti per alimentare un dispositivo esterno dal pin VIN della scheda ESP32:
 
-Utilizzare sempre un alimentatore esterno regolato per proteggere il dispositivo ESP32 da eventuali sovratensioni.
+### COSA RICORDARE
+
+- E' possibile "ricevere" una tensione di 5V dal pin "VIN"/"5V" presente sulla scheda, ma ricorda che la scheda non dovrebbe fornire più di 2.0A in modo continuativo.  
+
+> Dovresti sempre usare un alimentatore esterno regolato per proteggere il dispositivo ESP32 da eventuali sovratensioni.
 Verificare che la tensione di uscita dell'alimentatore esterno sia compresa tra 5 V e 12 V.
 Assicurarsi che la corrente massima fornita dall'alimentatore esterno sia sufficiente a soddisfare le esigenze del dispositivo esterno.
