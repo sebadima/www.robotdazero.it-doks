@@ -76,7 +76,7 @@ graph TD
 
 
 
-È importante notare che la corrente massima che può essere fornita dal pin "VIN" è di 2A. Se il dispositivo esterno richiede una corrente maggiore di 2A devi necessariamente usare un alimentatore esterno o una batteria ricaricabile <a href="https://it.wikipedia.org/wiki/Accumulatore_litio-polimero" target="_blank" rel="noopener">LIPO</a> o <a href="https://it.wikipedia.org/wiki/Accumulatore_agli_ioni_di_litio" target="_blank" rel="noopener">Li-Ion</a>.
+È importante notare che la corrente massima che può essere fornita dal pin "VIN" è di 2A. Se il dispositivo esterno richiede una corrente superiore devi usare necessariamente un alimentatore esterno o un accumulatore <a href="https://it.wikipedia.org/wiki/Accumulatore_litio-polimero" target="_blank" rel="noopener">LIPO</a> o <a href="https://it.wikipedia.org/wiki/Accumulatore_agli_ioni_di_litio" target="_blank" rel="noopener">Li-Ion</a>.
 
 ### COSA RICORDARE
 
