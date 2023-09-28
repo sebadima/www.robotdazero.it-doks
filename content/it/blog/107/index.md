@@ -82,8 +82,7 @@ graph TD
 
 - E' possibile "ricevere" una tensione di 5V dal pin "VIN"/"5V" presente sulla scheda, ma ricorda che la scheda non dovrebbe fornire più di 2.0A in modo continuativo.  
 
-> Dovresti sempre usare un alimentatore esterno stabilizzato per proteggere il dispositivo ESP32 da eventuali sovratensioni.
-Verifica che la tensione di uscita dell'alimentatore esterno sia compresa tra 5V e 12V.
+- Dovresti sempre usare un alimentatore esterno stabilizzato per proteggere il dispositivo ESP32 da eventuali sovratensioni. Nelle specifiche teoriche si parla di una tensione compresa tra 3.3V e 12V, ma noi ti consigliamo di fornire 5V ~ 6V. Una tensione di 3.3V comporta sgradevoli fenomeni di "brownout" della scheda mentre tensioni superiori a 6V vengono sprecate sotto forma di calore. 
 
 <br>
-<p style="font-size: 12px;">107.R.1.2.6</p>
+<p style="font-size: 12px;">107.R.2.0.1</p>
