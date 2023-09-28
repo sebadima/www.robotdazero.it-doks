@@ -24,23 +24,43 @@ Il pin "VIN" della scheda ESP32 è un pin di alimentazione che fornisce l'alimen
 
 > Il pin "VIN" è collegato al regolatore di tensione della scheda ESP32. Il regolatore di tensione converte la tensione in ingresso in una tensione di 3.3V che è la tensione di alimentazione *nativa* dell'ESP32.
 
+<br>
+
 **E' un pin importante da conoscere quando si utilizza la scheda ESP32 perchè può funzionare anche come alimentatore per dispostivi esterni quando la scheda viene alimentata via presa USB.**
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpg" alt="la immagine del pin VIN in evidenza sull'ESP32 dentro il quadrato rosso">
 
 <br>
-<br>
 Il pin viene spesso chiamato "5V" come vedi in questa immagine: ricorda che VIN e 5V sono del tutto equivalenti.
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpg" alt="la immagine del pin VIN in evidenza sull'ESP32 dentro il quadrato rosso">
+
+<br>
+La immagine del nostro multimetro mostra solo 4.8V invece dei 5V teorici, la scheda è una ESP32 di media qualità e nell'utilizzo reale potete aspettarvi valori simili.
+
+<br>
+<br>
+
 Ecco alcuni dettagli tecnici sul pin "VIN" della scheda ESP32:
 
 ```bash
-Tensione nominale: 5 V
-Range di tensione: 3,3 V - 12 V
-Corrente massima: 2 A
+Tensione nominale output: 5V
+Range di tensione input: 3.3V - 12V
+Corrente massima: 2A
 Impedenza: 200 ohm
 ```
 
-Se ti serve invece utilizzare il pin "VIN" per fornire corrente all'ESP32, è necessario collegare un alimentatore esterno al pin. L'alimentatore esterno deve fornire una tensione compresa tra 3,3 V e 12 V.
+Se vuoi utilizzare il pin "VIN" per fornire corrente all'ESP32 è necessario collegare un alimentatore esterno al pin. L'alimentatore esterno deve fornire una tensione compresa tra 3,3 V e 12 V.
 
 ### POSSO USARE IL PIN VIN PER ALIMENTARE UN DISPOSITIVI ESTERNO?
 
