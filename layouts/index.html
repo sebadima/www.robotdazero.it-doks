@@ -1,142 +1,71 @@
 {{ define "main" }}
-<style>
-   .curved-div {
-   background: #ffffff;
-   color: #FFF;
-   text-align: center;
-   }
-   .curved-div h1 {
-   font-size: 3rem;
-   }
-   .curved-div p {
-   font-size: 1.4rem;
-   font-weight: 200;
-   }
-   .bz-form {width: 684px; margin: 200px auto 0; }
-   .bz-container {
-   width: 100%;
-   background-color: #fff;
-   padding: 30px 40px 20px;
-   border-radius: 7px;
-   }
-   .bz-btmmargin {
-   margin-bottom: 14px !important;
-   }
-   .bz-topmargin {
-   margin-top: 6px !important;
-   }
-   .bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
-   .bz-right {float: left; width: 49%; min-width: 300px;}
-   .bz-clear {clear: both;}
-   input[type='text'], input[type='email'] {
-   box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   outline: 0;
-   display: block;
-   width: 100%;
-   padding: 7px;
-   border: 0;
-   border-bottom: 1px solid #ddd;
-   background: transparent;
-   margin-bottom: 10px;
-   height: 45px;
-   }
-   input[type='submit'] {
-   float: right;
-   }
-   @media only screen and (max-width: 600px) {
-   .bz-container {padding: 10px;}
-   .bz-form {width: 100%;}
-   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
-   input[type='submit'] {margin-left: 10px;}
-   }
-</style>
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <p class="meta">Open-source MIT Licensed. <a  aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <img width="80%" src="/header.svg" alt="">
+      <br>
+      <br>
+    </div>
+  </div>
+</section>
 {{ end }}
+
+
 {{ define "sidebar-prefooter" }}
-{{ if eq $.Site.Language.LanguageName "Italiano" }}
+  {{ if eq $.Site.Language.LanguageName "Italiano" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Il nostro focus sull'IOT</h2>
+          <img width="18%" class="x figure-img img-fluid lazyload blur-up" src="/102/108.svg" alt="">
+          <p>Calvalca l'onda dello sviluppo <a target ="_blank" href="https://www.internet4things.it/iot-library/internet-of-things-gli-ambiti-applicativi-in-italia/">IOT</a>: il settore dell'Internet of Things beneficia di un enorme supporto globale e offre  continue opportunità di successo. Grazie a tutto questo potresti creare una startapp tecnologica senza investire grossi capitali.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">L'attenzione alle prestazioni ⚡️</h2>
+          <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/102.svg" alt="">
+          <p>Librerie software veloci e una interazione con il <a target ="_blank" href="https://it.wikipedia.org/wiki/Apprendimento_automatico">ML</a> sono secondo noi la chiave per migliorare le prestazioni dei robot. In questo blog parleremo a lungo di <a target ="_blank" href="https://www.tensorflow.org/">Tensorflow</a> e <a target ="_blank" href="https://pytorch.org/">PyTorch</a> cercando di approfondire vantaggi e svantaggi.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Software sempre free</h2>
+          <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/101.svg" alt="">
+          <p>Tutti i programmi sono Open Source senza eccezione e modificabili dall'utente. Solo i servizi cloud sono a pagamento, ma potresti ospitarli sui tuoi computer senza senza pagarci nulla: i sorgenti della <a href="/docs/prologue/introduction/">piattaforma</a> sono infatti aperti e gratuiti!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">La privacy soprattutto</h2>
+          <img width="16%" class="x figure-img img-fluid lazyload blur-up" src="/102/106.svg" alt="">
+          <p>La privacy è per noi un valore fondamentale. Non usiamo Google Analytics o equivalenti, scriviamo quello che serve per aiutare i nostri lettori senza condividere i loro dati con Facebook e non usiamo <a href="https://en.wikipedia.org/wiki/Spy_pixel" target="_blank" rel="noopener">spy pixels</a> nella newsletter.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Machine Learning "facile"</h2>
+          <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/104.svg" alt="">
+          <p>Gli algoritmi in Machine Learning possono elaborare grandi quantità di dati, fornire previsioni, riconoscere immagini e suoni. La app di Robotdazero elabora dati e immagini direttamente dai sensori e in tempo reale, senza interventi manuali.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Hardware Open</h2>
+          <img width="17%" class="x figure-img img-fluid lazyload blur-up" src="/102/103.svg" alt="">
+          <p>Forniamo servizi software per chi si occupa di robotica e automazione in genere. Acquisiamo dati da centinaia di sensori e webcam differenti e non vi obbligheremo mai a scegliere il nostro particolare hardware.<p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
 {{ end }}
-{{ end }}
+
 {{ define "sidebar-footer" }}
-<div class="curved-div">
-
-<!--
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40">
-      <path fill="#ffffff" fill-opacity="1" d="M0,160L0,288L1440,288L1440,0L0,0L0,0Z" style="--darkreader-inline-fill: #cc3000;" data-darkreader-inline-fill=""></path>
-   </svg>
--->
-
-   <section style="color:#111" class="section container-fluid mt-n3 pb-3">
-      <div class="row justify-content-center">
-         <div class="col-lg-12 text-center">
-            <h1 class="mt-0">{{ .Title }}</h1>
-         </div>
-         <div class="col-lg-9 col-xl-8 text-center">
-            <p class="lead">{{ .Params.lead | safeHTML }}</p>
-            <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-            <p  style="font-size:16px;" class="meta">Open-source MIT Licensed. <a style="font-size:16px;" aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
-         </div>
-      </div>
-   </section>
-   <section class="section section-sm">
-      <div class="container">
-         <div class="row justify-content-center text-center">
-         </div>
-      </div>
-      <img width="28%" src="/header.svg" alt="">
-   </section>
-   <svg viewBox="0 0 1440 319">
-      <path fill="#C886D3" fill-opacity="5" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-   </svg>
-</div>
-<div class="wrap container-xxl" role="document">
-   <div class="content">
-      <section class="section container-fluid mt-n3 pb-3"></section>
-   </div>
-</div>
-<section class="section section-sm">
-   <div class="container">
-      <div class="row justify-content-center text-center">
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">Il nostro focus sull'IOT</h2>
-            <img width="18%" class="x figure-img img-fluid lazyload blur-up" src="/102/108.svg" alt="">
-            <p>Calvalca l'onda dello sviluppo <a target ="_blank" href="https://www.internet4things.it/iot-library/internet-of-things-gli-ambiti-applicativi-in-italia/">IOT</a>: il settore dell'Internet of Things beneficia di un enorme supporto globale e offre  continue opportunità di successo. Grazie a tutto questo potresti creare una startapp tecnologica senza investire grossi capitali.</p>
-         </div>
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">L'attenzione alle prestazioni ⚡️</h2>
-            <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/102.svg" alt="">
-            <p>Librerie software veloci e una interazione con il <a target ="_blank" href="https://it.wikipedia.org/wiki/Apprendimento_automatico">ML</a> sono secondo noi la chiave per migliorare le prestazioni dei robot. In questo blog parleremo a lungo di <a target ="_blank" href="https://www.tensorflow.org/">Tensorflow</a> e <a target ="_blank" href="https://pytorch.org/">PyTorch</a> cercando di approfondire vantaggi e svantaggi.</p>
-         </div>
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">Software sempre free</h2>
-            <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/101.svg" alt="">
-            <p>Tutti i programmi sono Open Source senza eccezione e modificabili dall'utente. Solo i servizi cloud sono a pagamento, ma potresti ospitarli sui tuoi computer senza senza pagarci nulla: i sorgenti della <a href="/docs/prologue/introduction/">piattaforma</a> sono infatti aperti e gratuiti!</p>
-         </div>
-      </div>
-      <div class="row justify-content-center text-center">
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">La privacy soprattutto</h2>
-            <img width="16%" class="x figure-img img-fluid lazyload blur-up" src="/102/106.svg" alt="">
-            <p>La privacy è per noi un valore fondamentale. Non usiamo Google Analytics o equivalenti, scriviamo quello che serve per aiutare i nostri lettori senza condividere i loro dati con Facebook e non usiamo <a href="https://en.wikipedia.org/wiki/Spy_pixel" target="_blank" rel="noopener">spy pixels</a> nella newsletter.</p>
-         </div>
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">Machine Learning "facile"</h2>
-            <img width="20%" class="x figure-img img-fluid lazyload blur-up" src="/102/104.svg" alt="">
-            <p>Gli algoritmi in Machine Learning possono elaborare grandi quantità di dati, fornire previsioni, riconoscere immagini e suoni. La app di Robotdazero elabora dati e immagini direttamente dai sensori e in tempo reale, senza interventi manuali.</p>
-         </div>
-         <div class="col-lg-5">
-            <h2 style="color:#333" class="h4">Hardware Open</h2>
-            <img width="17%" class="x figure-img img-fluid lazyload blur-up" src="/102/103.svg" alt="">
-            <p>Forniamo servizi software per chi si occupa di robotica e automazione in genere. Acquisiamo dati da centinaia di sensori e webcam differenti e non vi obbligheremo mai a scegliere il nostro particolare hardware.
-            <p>
-         </div>
-      </div>
-   </div>
-</section>
 <section class="section section-sm container-fluid">
-   <div class="row justify-content-center text-center">
-      <div class="col-lg-9"></div>
-   </div>
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
 </section>
-</div>
 {{ end }}
