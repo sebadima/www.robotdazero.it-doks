@@ -29,7 +29,7 @@ Il pin "VIN" della scheda ESP32 è un pin di alimentazione che fornisce l'alimen
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpg" alt="la immagine del pin VIN in evidenza sull'ESP32 dentro il quadrato rosso">
 
 <br>
-Il pin viene spesso chiamato "5V" come vedi in questa immagine: ricorda che "VIN" e "5V" sono del tutto equivalenti.
+Il pin viene spesso chiamato "V5" come vedi in questa immagine: ricorda che "VIN" e "V5" sono del tutto equivalenti.
 
 <br>
 
@@ -80,7 +80,7 @@ graph TD
 
 ### COSA RICORDARE
 
-- E' possibile "ricevere" una tensione di 5V dal pin "VIN"/"5V" presente sulla scheda, ma ricorda che la scheda non dovrebbe fornire più di 2.0A in modo continuativo.  
+- E' possibile "ricevere" una tensione di 5V dal pin "VIN"/"V5" presente sulla scheda, ma ricorda che la scheda non dovrebbe fornire più di 2.0A in modo continuativo.  
 
 - Dovresti sempre usare un alimentatore esterno stabilizzato per proteggere il dispositivo ESP32 da eventuali sovratensioni. Nelle specifiche teoriche si parla di una tensione compresa tra 3.3V e 12V, ma noi ti consigliamo di fornire 5V~6V. Una tensione di 3.3V comporta fenomeni di "brownout" della scheda mentre tensioni superiori a 6V servono solo ad alzare le temperature. 
 
