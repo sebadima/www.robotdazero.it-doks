@@ -85,4 +85,4 @@ graph TD
 - Dovresti sempre usare un alimentatore esterno stabilizzato per proteggere il dispositivo ESP32 da eventuali sovratensioni. Nelle specifiche teoriche si parla di una tensione compresa tra 3.3V e 12V, ma noi ti consigliamo di fornire 5V~6V. Una tensione di 3.3V comporta fenomeni di "brownout" della scheda mentre tensioni superiori a 6V servono solo ad alzare le temperature. 
 
 <br>
-<p style="font-size: 12px;">107.R.2.0.2</p>
+<p style="font-size: 12px;">107.R.2.0.3</p>
