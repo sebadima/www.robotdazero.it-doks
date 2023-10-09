@@ -1,7 +1,7 @@
 ---
 title: "Due nuove schede Arduino UNO R4: Minima e WiFi"
-description: Usare il pin VIN dell' ESP32 come uscita a 5V
-excerpt: "Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessario collegare il dispositivo al pin VIN e al pin GND della scheda. La tensione di ingresso al pin VIN deve essere sufficiente a fornire la potenza necessaria..."
+description: "Due nuove schede Arduino UNO R4: Minima e WiFi"
+excerpt: "La scheda Arduino Uno R3 è una scheda di sviluppo open source basata sul microcontrollore ATmega328P. È una delle schede Arduino più popolari e diffuse, ed è ideale per principianti e professionisti...."
 date: 2023-09-15T09:19:42+01:00
 lastmod: 2023-09-16T09:19:42+01:00
 draft:  false
