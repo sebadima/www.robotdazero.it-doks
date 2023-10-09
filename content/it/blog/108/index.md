@@ -2,7 +2,7 @@
 title: "Due nuove schede Arduino UNO R4: Minima e WiFi"
 description: "Due nuove schede Arduino UNO R4: Minima e WiFi"
 excerpt: "La scheda Arduino Uno R3 è una scheda di sviluppo open source basata sul microcontrollore ATmega328P. È una delle schede Arduino più popolari e diffuse, ed è ideale per principianti e professionisti...."
-date: 2023-09-15T09:19:42+01:00
+date: 2023-07-15T09:19:42+01:00
 lastmod: 2023-09-16T09:19:42+01:00
 draft:  false
 weight: 50
@@ -91,19 +91,18 @@ L'Arduino Uno R4 funziona a 48 MHz, che fornisce un aumento di 3 volte rispetto 
 
 L'Arduino Uno R4 è disponibile in 2 versioni (Minima e WiFi) e offre le seguenti nuove funzionalità rispetto all'Uno R3:
 
-Arduino Uno R4 Minimi Arduino Uno R4 WiFi
-Connettore USB-C Connettore USB-C
-RA4M1 da Renesas (Cortex-M4) RA4M1 da Renesas (Cortex-M4)
-Dispositivo HID (emula un mouse o una tastiera) Dispositivo HID (emula un mouse o una tastiera)
-Sezione di potenza migliorata (fino a 24 V attraverso VIN) Sezione di potenza migliorata (fino a 24 V attraverso VIN)
-CAN bus CAN bus
-DAC (12 bit) DAC (12 bit)
-Op amp Op amp
- 	WiFi / Bluetooth LE
- 	Matrice LED completamente indirizzabile (12x8)
- 	Connettore QWIIC I2C
- 	RTC (con supporto per una batteria tampone)
- 	Diagnostica degli errori di runtime
+Arduino Uno R4 WiFi
+- Connettore USB-C
+- RA4M1 da Renesas (Cortex-M4) RA4M1 da Renesas
+- Dispositivo HID (emula un mouse o una tastiera)
+- Sezione di potenza migliorata (fino a 24 V attraverso VIN)
+- CAN bus
+- DAC (12 bit)
+- Op amp
+- WiFi / Bluetooth LE
+- Matrice LED completamente indirizzabile (12x8)
+- Connettore QWIIC I2C
+- RTC (con supporto per una batteria tampone)
 
 <br>
-<p style="font-size: 12px;">108.R.0.5.0</p>
+<p style="font-size: 12px;">108.R.0.5.2</p>
