@@ -106,4 +106,4 @@ Op amp Op amp
  	Diagnostica degli errori di runtime
 
 <br>
-<p style="font-size: 12px;">108.R.0.0.2</p>
+<p style="font-size: 12px;">108.R.0.5.0</p>
