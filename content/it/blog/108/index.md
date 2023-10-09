@@ -20,7 +20,7 @@ homepage: false
 
 ### LA VECCHIA SCHEDA ARDUINO UNO R3
 
-a scheda Arduino Uno R3 è una scheda di sviluppo open source basata sul microcontrollore ATmega328P. È una delle schede Arduino più popolari e diffuse, ed è ideale per principianti e professionisti.
+La scheda Arduino Uno R3 è una scheda di sviluppo open source basata sul microcontrollore ATmega328P. È una delle schede Arduino più popolari e diffuse, ed è ideale per principianti e professionisti.
 
 La scheda Arduino Uno R3 ha un'ampia gamma di funzionalità, tra cui:
 
@@ -85,7 +85,7 @@ Dimensioni: 68,6 mm x 53,3 mm
 
 ### LA NUOVA ARDUINO UNO R4 
 
-LA scheda Arduino Uno R4 è alimentato da un ARM Cortex-M4 a 32 bit Renesas RA4M1, con un notevole salto di potenza elaboraiiva rispetto alla precedente versione. La versione WiFi è dotata di un modulo WiFi ESP32-S3 in aggiunta al RA4M1 e amplia le opportunità creative per i produttori e makerd. 
+La scheda Arduino Uno R4 è alimentata da un ARM Cortex-M4 a 32 bit Renesas RA4M1, con un notevole salto di potenza elaboraiiva rispetto alla precedente versione. La versione WiFi è dotata di un modulo WiFi ESP32-S3 in aggiunta al RA4M1 e amplia le opportunità creative per i produttori e makerd. 
 
 L'Arduino Uno R4 funziona a 48 MHz, che fornisce un aumento di 3 volte rispetto al popolare Uno R3. Inoltre, la SRAM è stata aggiornata da 2 kB a 32 kB e la memoria flash da 32 kB a 256 kB per supportare progetti più complessi. Rispondendo al feedback della community, la porta USB è ora USB-C e la tensione di alimentazione massima è stata aumentata a 24 V con un design termico migliorato. La scheda include un bus CAN e una porta SPI, consentendo agli utenti di ridurre il cablaggio ed eseguire attività parallele collegando più schermi. Un DAC analogico a 12 bit è anche fornito sulla scheda.
 
