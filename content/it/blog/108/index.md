@@ -105,4 +105,4 @@ Arduino Uno R4 WiFi
 - RTC (con supporto per una batteria tampone)
 
 <br>
-<p style="font-size: 12px;">108.R.0.5.2</p>
+<p style="font-size: 12px;">108.R.0.5.6</p>
