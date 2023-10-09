@@ -4,7 +4,7 @@ description: Usare il pin VIN dell' ESP32 come uscita a 5V
 excerpt: "Per alimentare un dispositivo esterno dal pin VIN della scheda ESP32, è necessario collegare il dispositivo al pin VIN e al pin GND della scheda. La tensione di ingresso al pin VIN deve essere sufficiente a fornire la potenza necessaria..."
 date: 2023-09-15T09:19:42+01:00
 lastmod: 2023-09-16T09:19:42+01:00
-draft:  true
+draft:  false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
