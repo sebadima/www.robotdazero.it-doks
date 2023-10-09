@@ -2,7 +2,7 @@
 title: "Due nuove schede Arduino UNO R4: Minima e WiFi"
 description: "Due nuove schede Arduino UNO R4: Minima e WiFi"
 excerpt: "La scheda Arduino Uno R3 è una scheda di sviluppo open source basata sul microcontrollore ATmega328P. È una delle schede Arduino più popolari e diffuse, ed è ideale per principianti e professionisti...."
-date: 2023-07-15T09:19:42+01:00
+date: 2023-09-15T09:19:42+01:00
 lastmod: 2023-09-16T09:19:42+01:00
 draft:  false
 weight: 50
