@@ -12,7 +12,6 @@ images: []
 <style>
 
 .col-md-12 > article:nth-child(1) > h1:nth-child(1) {
-  color: #ffffff;
 }
 
 .lead {
@@ -27,7 +26,6 @@ footer {
 }
 
 body {
-  background-image: url(images/103.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0; 
@@ -47,7 +45,7 @@ h3 {
 
 .bz-container {
   width: 100%;
-  background-color: #fff;
+  # background-color: #fff;
   padding: 30px 40px 20px;
   border-radius: 7px;
   border: 0px solid #74A1B4;
@@ -111,7 +109,7 @@ input[type='submit'] {
 
 
 
-<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/102.svg" alt="">
 &nbsp;&nbsp;Come scegliere Arduino
@@ -135,7 +133,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 
 
 
-<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/101.svg" alt="">
 &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
@@ -156,7 +154,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 
 
-<div style="padding: 5px 1em 0 2em;" class="bz-container">
+<div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/103.svg" alt="">
 &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
