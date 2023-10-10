@@ -21,10 +21,6 @@ images: []
   padding-left:  10px;
 }
 
-footer {
-  background-image: url(images/footer.png);
-}
-
 body {
   background-size: cover;
   background-repeat: no-repeat;
