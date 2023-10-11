@@ -143,21 +143,21 @@ I pezzi principali del kit
 <img class = "x"  width="800" title="" alt="vista ravvicinata della basetta con l'ESP32" src="./images/img4.jpg">
 <br>
 <br>
-vista ravvicinata della basetta con l'ESP32
+Vista ravvicinata della basetta con l'ESP32
 <br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="vista complessiva del kint montato e collaudato" src="./images/img5.jpg">
 <br>
 <br>
-vista complessiva del kint montato e collaudato
+Vista complessiva del kint montato e collaudato
 <br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="particolare del montaggio del Modulo display LCD 16X2" src="./images/img6.jpg">
 <br>
 <br>
-particolare del montaggio del Modulo display LCD 16X2
+Particolare del display LCD 16X2
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="il Modulo display LCD 16X2 per Arduino ed ESP32 montato sulla basetta in 3D" src="./images/img11.jpg">
@@ -165,4 +165,4 @@ particolare del montaggio del Modulo display LCD 16X2
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.4.2</p
+<p style="font-size: 12px;">109.R.1.4.5</p
