@@ -149,6 +149,10 @@ void loop()
 }
 ```
 
+### COME COSTRUIRE LA CENTRALINA A COSTO ZERO
+
+Il kit è disponibile sul nostro <a href="https://robotdazero.company.site/Kit-per-profondimetro-digitale-con-ESP32-p594459089" target="_blank" rel="noopener">ecommerce</a> ad un prezzo competitivo, ma nulla vieta di acquistare separatamente i pezzi su Amazon e di fare l'upload del nostro programma sul vostro ESP32. Il codice del programma è "free" e "open source", potete dunque modificarlo a vostro piacere. 
+
 ### FOTO DEL KIT MONTATO
 
 
@@ -198,4 +202,4 @@ Particolare del display LCD 16X2
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.5.4</p
+<p style="font-size: 12px;">109.R.1.5.5</p
