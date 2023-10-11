@@ -31,6 +31,18 @@ Dovendo lavorare in un ambiente sottoposto a perdite di liquidi (l'acqua non è 
 <br>
 <br>
 
+### I COMPONENTI DEL KIT 
+
+
+1. Modulo display LCD 16X2 carattere seriale blu con retroilluminazione 
+2. Scheda di Sviluppo ESP-WROOM-32 ESP-32 ESP-32S 2.4GHz WiFi + Bluetooth 
+3. ANGEEK JSN-SR04T sensore ad ultrasuoni impermeabile
+4. Circuito stampato multi-funzione Robotdazero
+4  Potenziometro 5 KOhm
+5. Alimentatore Wall da 5V e 3A.
+6. Circuito stampato multunzione Robotdazero "orange"
+
+
 ### IL CODICE SORGENTE
 
 ```bash
@@ -107,25 +119,53 @@ void loop()
 <img class = "x"  width="800" title="" alt="contenitore in plastica del sensore di livello liquidi" src="./images/img2.jpg">
 <br>
 <br>
+Contenitore in plastica del sensore di livello liquidi
+<br>
+<br>
+<br>
 <img class = "x"  width="800" title="" alt="assemblaggio del kit per controllo dei liquidi in un serbatoio" src="./images/img1.jpg">
+<br>
+<br>
+Assemblaggio complessivo del kit 
+<br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="i pezzi principali del kit per il controllo del livello liquidi" src="./images/img3.jpg">
 <br>
 <br>
+I pezzi principali del kit
+<br>
+<br>
+<br>
 <img class = "x"  width="800" title="" alt="vista ravvicinata della basetta con l'ESP32" src="./images/img4.jpg">
+<br>
+<br>
+<br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="vista complessiva del kint montato e collaudato" src="./images/img5.jpg">
 <br>
 <br>
+<br>
+<br>
+<br>
 <img class = "x"  width="800" title="" alt="particolare dle montaggio del Modulo display LCD 16X2" src="./images/img6.jpg">
+<br>
+<br>
+<br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="" src="./images/img7.jpg">
 <br>
 <br>
+<br>
+<br>
+<br>
 <img class = "x"  width="800" title="" alt="" src="./images/img9.jpg">
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="il Modulo display LCD 16X2 per Arduino ed ESP32 montato sulla basetta in 3D" src="./images/img11.jpg">
@@ -133,4 +173,4 @@ void loop()
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.1.0</p
+<p style="font-size: 12px;">109.R.1.3.0</p
