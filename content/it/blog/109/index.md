@@ -165,4 +165,4 @@ particolare del montaggio del Modulo display LCD 16X2
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.4.0</p
+<p style="font-size: 12px;">109.R.1.4.2</p
