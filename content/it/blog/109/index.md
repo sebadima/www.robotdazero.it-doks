@@ -116,6 +116,9 @@ void loop()
 }
 ```
 
+### FOTO DEL KIT MONTATO
+
+
 <img class = "x"  width="800" title="" alt="contenitore in plastica del sensore di livello liquidi" src="./images/img2.jpg">
 <br>
 <br>
@@ -140,32 +143,21 @@ I pezzi principali del kit
 <img class = "x"  width="800" title="" alt="vista ravvicinata della basetta con l'ESP32" src="./images/img4.jpg">
 <br>
 <br>
+vista ravvicinata della basetta con l'ESP32
 <br>
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="vista complessiva del kint montato e collaudato" src="./images/img5.jpg">
 <br>
 <br>
+vista complessiva del kint montato e collaudato
 <br>
 <br>
 <br>
-<img class = "x"  width="800" title="" alt="particolare dle montaggio del Modulo display LCD 16X2" src="./images/img6.jpg">
+<img class = "x"  width="800" title="" alt="particolare del montaggio del Modulo display LCD 16X2" src="./images/img6.jpg">
 <br>
 <br>
-<br>
-<br>
-<br>
-<img class = "x"  width="800" title="" alt="" src="./images/img7.jpg">
-<br>
-<br>
-<br>
-<br>
-<br>
-<img class = "x"  width="800" title="" alt="" src="./images/img9.jpg">
-<br>
-<br>
-<br>
-<br>
+particolare del montaggio del Modulo display LCD 16X2
 <br>
 <br>
 <img class = "x"  width="800" title="" alt="il Modulo display LCD 16X2 per Arduino ed ESP32 montato sulla basetta in 3D" src="./images/img11.jpg">
@@ -173,4 +165,4 @@ I pezzi principali del kit
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.3.0</p
+<p style="font-size: 12px;">109.R.1.4.0</p
