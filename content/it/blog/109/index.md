@@ -35,20 +35,25 @@ Dovendo lavorare in un ambiente sottoposto a perdite di liquidi (l'acqua non è 
 
 
 1. Modulo display LCD 16X2 carattere seriale blu con retroilluminazione 
-2. Scheda di Sviluppo ESP-WROOM-32 ESP-32 ESP-32S 2.4GHz WiFi + Bluetooth 
-3. ANGEEK JSN-SR04T sensore ad ultrasuoni impermeabile
+2. Scheda di Sviluppo ESP-WROOM-32 ESP-32 ESP-32S 2.4GHz WiFi
+3. Sensore ad ultrasuoni impermeabile ANGEEK JSN-SR04T 
 4. Circuito stampato multi-funzione Robotdazero
 4  Potenziometro 5 KOhm
 5. Alimentatore Wall da 5V e 3A.
 6. Circuito stampato multunzione Robotdazero "orange"
 
+> ATTENZIONE: nel kit non sono inclusi: **box, cavetti, connettori Dupont, viti, staffe etc.** Forniamo solo la parte elettronica compreso l'alimentatore da muro. 
+
 
 ### IL CODICE SORGENTE
 
 ```bash
-#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 #include <math.h>
+#include <Wire.h>
 
+#define I2C_SDA 23
+#define I2C_SCL 18
 #define VELOCITA_DEL_SUONO 0.034
 #define TENTATIVI_CALIBRAZIONE 8
 
@@ -64,10 +69,20 @@ float h[3];
 float CalibrazioneSensore;   
 float Livello;   
 
+LiquidCrystal_I2C lcd(0x27,16,2);
+
 
 void setup() 
 {
   Serial.begin(115200);
+  Wire.begin(I2C_SDA, I2C_SCL, 10000); 
+  lcd.init(); 
+  lcd.clear();
+  lcd.backlight();
+  lcd.setCursor(0,0);  
+  lcd.print("Inizio procedura"); 
+  delay(3000);  
+
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
@@ -75,8 +90,11 @@ void setup()
   {
     ValorePotenziometro = round(analogRead(PinPotenziometro)/10);
     h[ix%3] = ValorePotenziometro;  
-    Serial.print("ValorePotenziometro: ");  
+    Serial.print("Trimmer: ");  
     Serial.println(ValorePotenziometro);  
+    lcd.clear();
+    lcd.print("Trimmer: "); 
+    lcd.print(ValorePotenziometro); 
     delay(1000);  
   }
 
@@ -85,7 +103,13 @@ void setup()
   Serial.print("Livello iniziale (cm): ");  
   Serial.println(Livello);  
   Serial.println("Fine setup\n");  
-  delay(2000);  
+
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Liv. iniziale cm:");  
+  lcd.setCursor(0,1);
+  lcd.print(Livello);  
+  delay(3000);  
 }
 
 
@@ -112,7 +136,16 @@ void loop()
   Serial.print("Livello liquido (cm): ");  
   Serial.println(Livello - DistanzaCm + CalibrazioneSensore);  
   Serial.println("\n");  
-  delay(1000);  
+
+  lcd.setCursor(0,0);
+  lcd.print("Livello liquido:");  
+  lcd.setCursor(0,1);
+  lcd.print("      ");  
+  lcd.setCursor(0,1);
+  lcd.print(Livello - DistanzaCm + CalibrazioneSensore);  
+  lcd.setCursor(8,1);
+  lcd.print("(cm)");  
+  delay(2000);  
 }
 ```
 
@@ -165,4 +198,4 @@ Particolare del display LCD 16X2
 <br>
 <br>
 
-<p style="font-size: 12px;">109.R.1.4.5</p
+<p style="font-size: 12px;">109.R.1.5.4</p
