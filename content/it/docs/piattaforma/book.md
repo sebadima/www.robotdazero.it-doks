@@ -85,6 +85,7 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
       <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"                   required/>
       <input class="bz-btmmargin" type="text" id="telefono" name="telefono" placeholder="Cellulare"              required/>
       <input class="bz-btmmargin" type="text" id="orario"   name="orario"   placeholder="Orario di preferenza" required/>
+      <input class="bz-btmmargin" type="text" id="orario"   name="scheda2"  placeholder="Il nome della mia scheda IOT" required/>
     </div>
     <div class="bz-clear"></div>
     <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
