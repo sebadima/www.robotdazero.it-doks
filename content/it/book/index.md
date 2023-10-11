@@ -113,12 +113,13 @@ input[type='submit'] {
 <img class="x figure-img img-fluid lazyload blur-up" src="images/106.svg" alt="">
 
 <div class="bz-container">
-  <h5 class="bz-btmmargin lead">Se vuoi parlare direttamente con un esperto puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà  entro 30 minuti.</h5>
+  <h5 class="bz-btmmargin lead">Se vuoi parlare direttamente con un esperto 1 puoi lasciare il tuo recapito telefonico e un nostro incaricato ti contatterà  entro 30 minuti.</h5>
   <form action="https://formspree.io/f/xqkveyej" method="POST">
     <div class="bz-left">
       <input type="hidden" name="_language" value="it"/>
       <input class="bz-btmmargin" type="text" id="nome"     name="nome"     placeholder="Nome"                   required/>
       <input class="bz-btmmargin" type="text" id="telefono" name="telefono" placeholder="Cellulare"              required/>
+      <input class="bz-btmmargin" type="text" id="orario"   name="orario"   placeholder="Orario di preferenza" required/>
       <input class="bz-btmmargin" type="text" id="orario"   name="orario"   placeholder="Orario di preferenza" required/>
     </div>
     <div class="bz-clear"></div>
