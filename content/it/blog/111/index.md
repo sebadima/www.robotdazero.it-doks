@@ -52,6 +52,16 @@ In questo post vedremo come usare il sensore HCSR04 e cercheremo di spiegare c
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
+<br>
+<br>
+
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="pagina di amazon con il sensore HC-SR04" src="images/101.png">
+<br>
+
+###### Pagina di Amazon.it con un esempio del prezzo medio (3.99 euro) 
+
+<br>
+
 #### DESCRIZIONE {#DESCRIZIONE}
 
 Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanza da un oggetto e dunque sfrutta la riflessione del suono sugli ostacoli solidi e la costanza della velocità del suono. Riesce a fornire con buona esattezza la distanza da un oggetto e restituisce dei valori costanti e progressivi, senza ritardi.
