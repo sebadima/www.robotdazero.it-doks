@@ -13,31 +13,42 @@ contributors: ["sergio rame "]
 pinned: false
 homepage: false
 ---
-<style>
-.x {
-    transition:transform 0.40s ease;
-    transition-delay: 0.60s;
-}
 
-.x:hover {
-    -webkit-transform:scale(1.70); /* or some other value */
-    transform:scale(1.70);
-}
-</style>
-
-
+<hr>
+<br>
 
 ## COSA SONO I SENSORI A ULTRASUONI?
 
 In breve sono l’equivalente elettronico delle orecchie dei pipistrelli, niente horror comunque: si tratta di microfoni specialmente sensibili ai suoni oltre i 20 Khz (Kilo Hertz), generalmente non udibili dall’orecchio umano ma facilmente recepiti dai mammiferi. Pensa a cose come il fischietto per i cani o ai **ping** usati sui sottomarini per trovare le navi.
 
-> La versione *consumer* del sonar viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo un esemplare per il movimento autonomo di un piccolo rover.
+> La versione *consumer* del <a href="https://it.wikipedia.org/wiki/Sonar" target="_blank" rel="noopener">sonar</a> viene usata nei sensori di parcheggio delle automobili e grazie alla enorme diffusione i costi si sono abbassati moltissimo. Ne useremo un esemplare per il movimento autonomo di un piccolo rover.
+
+
+## COME CALCOLARE LE DISTANZE USANDO GLI ULTRASUONI 
+
+Per calcolare le distanze usando gli ultrasuoni, si sfrutta il principio del tempo di volo. Un sensore ad ultrasuoni emette un impulso sonoro che si propaga nell'aria a una velocità di circa 343 metri al secondo. Quando l'impulso incontra un ostacolo, viene riflesso indietro verso il sensore. Misurando il tempo che intercorre tra l'emissione e la ricezione dell'impulso, è possibile calcolare la distanza dell'ostacolo.
+
+La formula per calcolare la distanza in centimetri è:
+
+distanza = velocità del suono * tempo di volo / 2
+Ad esempio, se il tempo di volo è di 10 millisecondi, la distanza è:
+
+distanza = 343 m/s * 10 ms / 2 = 171,5 cm
+In alcuni casi, è necessario tenere conto della temperatura dell'aria, che può influenzare la velocità del suono. La formula corretta è quindi:
+
+distanza = velocità del suono (a temperatura T) * tempo di volo / 2
+La velocità del suono in aria varia a seconda della temperatura, secondo la seguente formula:
+
+velocità del suono = 331,4 + 0,6 * T
+dove T è la temperatura in gradi Celsius.
+
+In pratica, è possibile utilizzare un sensore ad ultrasuoni per misurare la distanza di un ostacolo in diversi modi. Un modo semplice è quello di utilizzare un Arduino. In questo caso, è necessario collegare il sensore ai pin di Arduino e scrivere un programma che generi un impulso ad ultrasuoni e misuri il tempo di volo.
 
 ## COME USARE IL SENSORE A ULTRASUONI HC-SR04 CON ARDUINO
 
 In questo post vedremo come usare il sensore HCSR04 e cercheremo di spiegare come si usa, come funziona e quali caratteristiche ci possono fare comodo per lavorare con Arduino e i nostri Robot in genere. Di seguito riporto le caratteristiche elettriche e dopo vedremo come usarlo in un progetto pratico.
 
-<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/HC-SR04_bepinv.jpg">
+<img class="x figure-img img-fluid lazyload blur-up" width="800" alt="Il sensore HC-SR04 montato su una Breadboard per Arduino" src="images/102.jpg">
 
 ###### Il sensore HC-SR04 montato su una Breadboard per Arduino
 
@@ -47,7 +58,7 @@ Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanz
 
 > Fisicamente è piccolo, seppure non minuscolo e nella parte anteriore presenta due tronchi di cono in plastica. Uno si limita a trasmettere il segnale mentre l’altro lo riceve. Il sensore rileva il segnale e crea un impulso elettrico di durata proporzionale al ritardo.
 
-### CARATTERISTICHE ELETTRICHE E DINAMICHE {#CARATTERISTICHE-ELETTRICHE-E-DINAMICHE}
+### CARATTERISTICHE ELETTRICHE E DINAMICHE
 
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/103.webp">
@@ -76,7 +87,7 @@ Nel dettaglio in sensore opera in questo modo:
 
 Il tempo che passa tra la trasmissione e la ricezione del segnale ci permette di calcolare la distanza reale di un oggetto. Come è possibile? Perchè sappiamo con precisione la velocità del suono a livello del mare che è circa 330 mt al secondo e basta fare una proporzione per avere la distanza in centimetri, la risoluzione che verosimilmente ci servirà con i Robot mobili.
 
-### UN PROGETTO PER MISURARE LE DISTANZE USANDO ARDUINO E IL SENSORE HCSR04
+## UN PROGETTO PER MISURARE LE DISTANZE USANDO ARDUINO E IL SENSORE HCSR04
 
 In questi progetto il sensore legge e scrive la distanza da un oggetto nel monitor serial del tuo IDE Arduino. L’obiettivo del progetto è iniziare a capire come funziona il sensore, poi nella parte centrale di questo post costruiremo un vero Robot, con una logica di funzionamento “complessa” e capacità dinamiche.
 
@@ -299,4 +310,4 @@ Infine nel loop(), per avere la distanza in cm basta usare la chiamata di funzio
 
 Le solite istruzioni di **print** permettono di vedere sull’IDE di Arduino le distanza dagli oggetti anche in movimento. Provate a vedere la differenza di comportamento con il programma precedente. Se tutto ha funzionato correttamente non dovremmo avere differenze.
 
-
+<p style="font-size: 12px;">1118.R.1.0.1</p>
