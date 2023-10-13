@@ -332,4 +332,4 @@ Infine nel loop(), per avere la distanza in cm basta usare la chiamata di funzio
 
 Le solite istruzioni di **print** permettono di vedere sull’IDE di Arduino le distanza dagli oggetti anche in movimento. Provate a vedere la differenza di comportamento con il programma precedente. Se tutto ha funzionato correttamente non dovremmo avere differenze.
 
-<p style="font-size: 12px;">111.R.1.0.1</p>
+<p style="font-size: 12px;">111.R.1.1.2</p>
