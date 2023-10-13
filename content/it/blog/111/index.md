@@ -11,6 +11,7 @@ categories: ["News"]
 tags: ["ultrasuoni", "HC-SR04", "progetti", "Arduino"]
 contributors: ["sergio rame "]
 pinned: false
+mermaid: true
 homepage: false
 ---
 
@@ -68,7 +69,7 @@ Come detto prima l’HC-SR04 usa il principio del Sonar per calcolare la distanz
 
 > Fisicamente è piccolo, seppure non minuscolo e nella parte anteriore presenta due tronchi di cono in plastica. Uno si limita a trasmettere il segnale mentre l’altro lo riceve. Il sensore rileva il segnale e crea un impulso elettrico di durata proporzionale al ritardo.
 
-### CARATTERISTICHE ELETTRICHE E DINAMICHE
+### • CARATTERISTICHE ELETTRICHE E DINAMICHE
 
 
 <img class="x figure-img img-fluid lazyload blur-up" width="800" alt="" src="images/103.webp">
@@ -119,15 +120,26 @@ Ecco una lista delle cose che vi serviranno:
 
 #### I COLLEGAMENTI ELETTRICI
 
-nella parte sinistra i pin del sensore, a destra quelli di Arduino
+Nella parte sinistra in alto i pin del sensore HCSR04, a destra quelli di Arduino:
 
-- VCC    &lt;——&gt;  5V
-- Trig   &lt;——&gt;  Pin 11
-- Echo   &lt;——&gt;  Pin 12
-- GND    &lt;——&gt;  GND</pre>
+{{< mermaid class="bg-light text-center" >}}
+graph TD
+ VCC -->|5V| E[Arduino]
+  Trig -->|PIN 11| E[Arduino]
+  Echo -->|PIN 12| E[aaa]
+  GND -->|GND| E[Scheda Arduino]
+{{< /mermaid >}}
 
 
-### IL CODICE COMPLETO
+
+
+- VCC <--> 5V&nbsp; di Arduino
+- Trig&nbsp; <--> Pin 11 di Arduino
+- Echo <--> Pin 12 di Arduino
+- GND <-->  GND di Arduino
+
+
+### • IL CODICE COMPLETO
 
 ```bash
 /*
@@ -253,7 +265,7 @@ A fine programma scriviamo il risultato su Monitor Seriale dell’ IDE:
 
 &nbsp;
 
-### IL PROGRAMMA PER ARDUINO MODIFICATO CON L’USO DI NEWPING
+### • IL PROGRAMMA PER ARDUINO MODIFICATO CON L’USO DI NEWPING
 
 Newping è una una libreria alternativa per la Robotica e non solo, molto semplice da usare. NewPing in certe occasioni risulta consigliabile quando dobbiamo limitarci a calcolare distanze in modo diretto, senza elaborare il segnale di ritorno. 
 
@@ -320,4 +332,4 @@ Infine nel loop(), per avere la distanza in cm basta usare la chiamata di funzio
 
 Le solite istruzioni di **print** permettono di vedere sull’IDE di Arduino le distanza dagli oggetti anche in movimento. Provate a vedere la differenza di comportamento con il programma precedente. Se tutto ha funzionato correttamente non dovremmo avere differenze.
 
-<p style="font-size: 12px;">1118.R.1.0.1</p>
+<p style="font-size: 12px;">111.R.1.0.1</p>
