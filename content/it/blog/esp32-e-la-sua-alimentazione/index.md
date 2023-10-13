@@ -98,6 +98,11 @@ Svantaggi:
 
 ## 4. ALIMENTAZIONE CON ALIMENTATORE ESTERNO
 
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.jpg" alt="alimentatore esterno per alimetare un progetto IOT con ESP32">
+
+<br>
+<br>
+
 L&#8217;alimentazione tramite alimentatore esterno è un&#8217;altra opzione che può essere utile quando si lavora con l&#8217;ESP32. In questo caso, l&#8217;ESP32 viene alimentato attraverso un alimentatore esterno, il quale fornisce una tensione di alimentazione costante e stabile. Questa opzione è particolarmente utile quando si utilizzano sensori o componenti esterni che richiedono una maggiore quantità di corrente. Per realizzare progetti come la <a href="https://www.robotdazero.it/blog/una-centralina-elettronica-per-controllare-il-livello-di-un-serbatoio/" target="_blank" rel="noopener">Centralina controllo livello liquidi</a>  che puoi trovare in <a href="https://robotdazero.company.site/Kit-per-profondimetro-digitale-con-ESP32-p594459089" target="_blank" rel="noopener">kit</a> sul nostro <a href="https://robotdazero.company.site/" target="_blank" rel="noopener">ecommerce</a>, la soluzione con alimentatore esterno rimane al momento la soluzione migliore.
   
 
