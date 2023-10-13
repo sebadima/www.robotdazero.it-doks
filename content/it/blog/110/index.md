@@ -6,7 +6,7 @@ date: 2020-07-22T09:19:42+01:00
 lastmod: 2020-07-22T09:19:42+01:0
 draft: false
 weight: 50
-images: ["images/esp32-scheda-robotdazero.jpg"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["ESP32", "teoria", "alimentazione"]
 contributors: ["sebadima"]
