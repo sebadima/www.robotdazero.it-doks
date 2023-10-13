@@ -120,7 +120,7 @@ Ecco una lista delle cose che vi serviranno:
 
 #### I COLLEGAMENTI ELETTRICI
 
-Nella parte sinistra in alto i pin del sensore HCSR04, a destra quelli di Arduino:
+Nella parte in alto i pin del sensore HCSR04, in basso quelli di Arduino:
 
 {{< mermaid class="bg-light text-center" >}}
 graph TD
