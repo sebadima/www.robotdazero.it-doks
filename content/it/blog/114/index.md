@@ -492,18 +492,16 @@ Smart grid: queste reti intelligenti utilizzano tecnologie elettroniche e IoT pe
 ### Microcomputer a bassissimo costo
 ### Software per la Intwlligwnza artificiale a costro zero
 ### Software di condisione ed elaborazione a costo zero
-#### la nostra piattaforma Kaspian
 
-## Come usare la nostra piattaforma Kaspian
+## LA NOSTRA PIATTAFORMA KASPIAN
 
+### Come usare la nostra piattaforma Kaspian
 ### Primo approccio
 ### Programmare il tuo ESP32
-
 ### Prima connessione a Kaspian
 ### Leggere i dati statistici
 ### Una semplice elaborazione in machine Learning
 ### Le principali piattaforma di ML
-
 ### Come condividere i tuoi dati
 ### Come ampliare la rete di Kaspian
 ### Un esempio reale
@@ -540,4 +538,6 @@ Piattaforme per la condivisione di esperienze e idee
 Questi strumenti possono aiutare a diffondere la conoscenza sull'argomento e a coinvolgere i lettori in modo attivo.
 -->
 
+<br>
+<br>
 <p style="font-size: 11px;">R.114.2.0.0</p
