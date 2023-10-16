@@ -489,9 +489,19 @@ Smart grid: queste reti intelligenti utilizzano tecnologie elettroniche e IoT pe
 ### Servomeccanismi
 ### La scheda LORA
 ### Applicazioni per l'Agricoltura
+#### Controllo della umidità del suolo con la scheda LORA
 ### Microcomputer a bassissimo costo
 ### Software per la Intwlligwnza artificiale a costro zero
 ### Software di condisione ed elaborazione a costo zero
+
+## UN PROGETTO PER MONITORARE LA ANIDRIDE CARBONICA
+### Gli effetti della Anidride Carbonica
+### La parte elettrica 
+### Il case in 3D
+### Il programma
+### I limiti CO2
+
+
 
 ## LA NOSTRA PIATTAFORMA KASPIAN
 
