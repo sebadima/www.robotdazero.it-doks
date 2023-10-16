@@ -1,19 +1,18 @@
 ---
-title: "LIBRO solo bozza"
-description: "da personlizzare
+title: "Titolo provvisorio solo bozza"
+description: "da personlizzare"
 excerpt: "da personalizzare"
 date: 2023-10-14T09:19:42+01:00
 lastmod: 2023-10-14T09:19:42+01:00
 draft: true
 weight: 50
-images: ["header.jpg"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["sensori", "centraline"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
 ---
-
 
 
 Certo, ecco un possibile schema per un libro sulla ecologia, il cambiamento climatico e l'uso dell'elettronica e dell'IoT per combatterlo:
