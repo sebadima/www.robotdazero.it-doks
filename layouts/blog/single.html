@@ -86,16 +86,28 @@
 
 </div>
 
+
+
 <div class="row justify-content-center">
   <div class="col-lg-9 col-xl-8 text-center">
-    <h4>Iscriviti alla newsletter e riceverai un buono sconto del 10% valido su tutti gli articoli del nostro <a href="https://robotdazero.company.site/" target="_blank" rel="noopener">ecommerce</a>.</h4>
-      <a target="_blank" class="btn btn-primary btn-lg px-4 mb-2" href="https://robotdazero.aweb.page/p/dc55e5c9-4b83-472e-932d-be300e6ee3c4" role="button">Iscriviti adesso</a>
-    <p class="meta">Powered by aweber - leggi la loro <a target="_blank" href="https://www.aweber.com/privacy.htm">privacy</a></p>
+    <h4>Iscriviti alla newsletter e riceverai un buono sconto del 10% valido su tutti gli articoli del nostro <a href="https://robotdazero.company.site/" target="_blank" rel="noopener">ecommerce</a></h4>
+
+      <button class="klaviyo_form_trigger btn btn-primary btn-lg px-4 mb-2">Iscriviti adesso</button>
+      <script type="text/javascript">
+        document.querySelector('.klaviyo_form_trigger').addEventListener('click', function (){
+        window._klOnsite = window._klOnsite || []; 
+        window._klOnsite.push(['openForm', 'V2nPN4']);
+        });
+      </script>
+
+    <p class="meta">Powered by Klaviyo - leggi la loro <a target="_blank" href="https://www.klaviyo.com/legal/privacy/privacy-notice">privacy</a></p>
     <!--
     <p class="meta">ecommerce by Stripe API <a target="_blank" href="https://stripe.com/docs/api/versioning">rel.2022-11-15</a></p>
     -->
   </div>
 </div>
+
+
 
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
