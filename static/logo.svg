@@ -22,9 +22,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="4.3206107"
-     inkscape:cx="58.787986"
-     inkscape:cy="65.384275"
+     inkscape:zoom="8.6412214"
+     inkscape:cx="74.063604"
+     inkscape:cy="65.326413"
      inkscape:window-width="1482"
      inkscape:window-height="800"
      inkscape:window-x="0"
@@ -61,13 +61,6 @@
      style="fill:#f9bd2b;fill-opacity:1"
      d="m 60.977067,90.159142 h 17.032 l -17.032,-17.01 z"
      id="path6-8" />
-  <rect
-     style="fill:#ffffff;stroke-width:0.0160738"
-     id="rect2804"
-     width="0.3715041"
-     height="0.46507037"
-     x="79.594055"
-     y="81.422112" />
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"
@@ -75,4 +68,10 @@
      fill="#000000"
      id="path4"
      style="fill:#000000;fill-opacity:1" />
+  <circle
+     style="opacity:1;fill:#ffffff;stroke-width:1.15998"
+     id="path2820"
+     cx="98.1623"
+     cy="80.277916"
+     r="4.0774765" />
 </svg>
