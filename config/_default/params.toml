@@ -17,16 +17,16 @@ domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@robofromscratch"
+twitterCreator = "@robofromscratch"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorTwitter = "https://twitter.com/robofromscratch"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/sergiorame/"
 schemaAuthorGitHub = "https://github.com/sebadima"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
@@ -35,9 +35,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/robofromscratch"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/sebadima"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
