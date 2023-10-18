@@ -16,11 +16,11 @@ homepage: false
 
 
 
-Come usare Python in Visual Studio Code
+##### Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. 
 
-Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per Python, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
+In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per Python, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
 
-Installazione e configurazione
+## INSTALLAZIONE E CONFIGURAZIONE
 
 Per installare <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Visual Studio Code</a>, vai al sito web di Visual Studio Code e fai clic sul pulsante "Download". Una volta scaricato, installa Visual Studio Code sul tuo computer.
 
@@ -28,7 +28,7 @@ Per configurare Visual Studio Code per Python, apri l'editor e fai clic sul puls
 
 Una volta installata l'estensione, Visual Studio Code sarà pronto per l'uso con Python.
 
-Scrittura ed esecuzione di codice Python
+## SCRITTURA ED ESECUZIONE DI CODICE PYTHON
 
 Per scrivere codice Python in Visual Studio Code, crea un nuovo file con l'estensione ".py". Ad esempio, puoi creare un file chiamato "hello.py".
 
@@ -43,7 +43,7 @@ Per eseguire il codice, fai clic con il pulsante destro del mouse sul file e sel
 Il codice verrà eseguito e visualizzerà il seguente output:
 
 
-Come usare Python in Visual Studio Code
+## COME USARE PYTHON IN VISUAL STUDIO CODE
 
 Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per Python, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
 
@@ -85,5 +85,5 @@ Visual Studio Code è un editor di codice potente e versatile che può essere ut
 
 
 <br>
-<p style="font-size: 12px;">R.115.1.0.0</p>
+<p style="font-size: 12px;">R.115.1.2.0</p>
 <br>
