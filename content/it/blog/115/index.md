@@ -1,7 +1,7 @@
 ---
-title: "come usare python in visual studio code"
-description: "Python è un linguaggio di programmazione popolare che può essere utilizzato per una varietà di attività, tra cui lavorare con i file."
-excerpt: "Python è un linguaggio di programmazione popolare che può essere utilizzato per una varietà di attività, tra cui lavorare con i file. In questo articolo, impareremo come usare Python per aprire, leggere e ..."
+title: "Come usare Python in Visual Studio Code"
+description: "Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python."
+excerpt: "Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. In questo articolo, ti mostreremo..."
 date: 2023-10-16T09:19:42+01:00
 lastmod: 2023-16-01T09:19:42+01:00
 draft: false
@@ -22,7 +22,7 @@ Visual Studio Code è un editor di codice open source gratuito e potente che pu�
 
 Installazione e configurazione
 
-Per installare Visual Studio Code, vai al sito web di Visual Studio Code e fai clic sul pulsante "Download". Una volta scaricato, installa Visual Studio Code sul tuo computer.
+Per installare <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Visual Studio Code</a>, vai al sito web di Visual Studio Code e fai clic sul pulsante "Download". Una volta scaricato, installa Visual Studio Code sul tuo computer.
 
 Per configurare Visual Studio Code per Python, apri l'editor e fai clic sul pulsante "Extensions" nell'angolo in alto a sinistra. Nella barra di ricerca, digita "Python" e fai clic sul pulsante "Install" per installare l'estensione "Python".
 
