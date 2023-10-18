@@ -9,7 +9,8 @@ images: []
 
 
 
-<img width="256" class="x figure-img img-fluid lazyload blur-up" src="/110/102.svg" alt="logo">
+<img width="128" class="x figure-img img-fluid lazyload blur-up" src="/hog/101.webp" alt="logo">
+<br>
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
 
