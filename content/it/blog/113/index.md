@@ -19,32 +19,32 @@ homepage: false
 ##### Python è un linguaggio di programmazione popolare che può essere utilizzato per una varietà di attività, tra cui lavorare con i file. In questo articolo, impareremo come usare Python per aprire, leggere e salvare un file di testo.
 
 ## APRIRE UN FILE DI TESTO
-Per aprire un file di testo in Python, usiamo la funzione open (). La funzione open () accetta due argomenti: il nome del file e la modalità. La modalità specifica come vogliamo aprire il file.
+Per aprire un <a href="https://it.wikipedia.org/wiki/File_di_testo" target="_blank" rel="noopener">file di testo</a> in Python, usiamo la funzione open(). La funzione open() accetta due argomenti: il nome del file e la modalità. La modalità specifica come vogliamo aprire il file.
 
-Il codice seguente mostra come aprire un file di testo per la lettura:
+Questo codice di una sola linea mostra come aprire un file di testo in sola lettura:
 
 ```bash
 f = open("my_file.txt", "r")
 ```
 
 
-La modalità r indica che vogliamo aprire il file solo per la lettura. Se il file non esiste, la funzione open () genera un'eccezione.
+La modalità r indica che vogliamo aprire il file solo per la lettura. Se il file non esiste, la funzione open() genera un'eccezione.
 
 ## LEGGERE UN FILE DI TESTO
-Una volta aperto un file di testo, possiamo leggerne il contenuto usando il metodo read (). Il metodo read () accetta un argomento facoltativo, n, che specifica il numero di byte da leggere. Se n non è specificato, il metodo read () leggerà l'intero file.
+Una volta aperto un file di testo, possiamo leggerne il contenuto usando il metodo read(). Il metodo read() accetta un argomento facoltativo, n, che specifica il numero di byte da leggere. Se n non è specificato, il metodo read() leggerà l'intero file.
 
 Il codice seguente mostra come leggere l'intero contenuto di un file di testo:
 
 
 ```bash
 f = open("my_file.txt", "r")
-file_contents = f.read()
+contenuto_del_file = f.read()
 ```
 
-La variabile file_contents conterrà l'intero contenuto del file come una stringa.
+La variabile contenuto_del_file conterrà l'intero contenuto del file come una stringa.
 
 Salvataggio di un file di testo
-Per salvare un file di testo in Python, usiamo il metodo write (). Il metodo write () prende un argomento stringa, che è il dato che vogliamo scrivere nel file.
+Per salvare un file di testo in Python, usiamo il metodo write(). Il metodo write() prende un argomento stringa, che è il dato che vogliamo scrivere nel file.
 
 Il codice seguente mostra come salvare una stringa in un file di testo:
 
@@ -57,9 +57,9 @@ f.close()
 ```
 
 
-La modalità w indica che vogliamo aprire il file solo per la scrittura. Se il file non esiste, la funzione open () lo creerà. Se il file esiste già, il suo contenuto verrà sovrascritto.
+La modalità w indica che vogliamo aprire il file solo per la scrittura. Se il file non esiste, la funzione open() lo creerà. Se il file esiste già, il suo contenuto verrà sovrascritto.
 
-È importante chiudere il file dopo aver finito di scriverlo. Ciò garantisce che tutti i dati siano stati scritti nel file e che il file sia chiuso correttamente.
+> È importante chiudere il file dopo aver finito di scriverlo. Ciò garantisce che tutti i dati siano stati scritti nel file e che il file sia chiuso correttamente.
 
 ## UN ESEMPIO COMPLETO
 Il seguente codice Python mostra come aprire, leggere e salvare un file di testo:
@@ -74,7 +74,7 @@ def open_read_and_save_text_file():
     f = open("my_file.txt", "r")
 
     # Read the entire contents of the file.
-    file_contents = f.read()
+    contenuto_del_file = f.read()
 
     # Close the file.
     f.close()
@@ -83,7 +83,7 @@ def open_read_and_save_text_file():
     f = open("my_new_file.txt", "w")
 
     # Write the file contents to the new file.
-    f.write(file_contents)
+    f.write(contenuto_del_file)
 
     # Close the new file.
     f.close()
