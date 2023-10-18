@@ -1,5 +1,5 @@
 ---
-title: "Come usare ilinguaggio Python per leggere e scrivere file di testo"
+title: "Come usare il linguaggio Python per leggere e scrivere file di testo"
 description: "Python è un linguaggio di programmazione popolare che può essere utilizzato per una varietà di attività, tra cui lavorare con i file."
 excerpt: "Python è un linguaggio di programmazione popolare che può essere utilizzato per una varietà di attività, tra cui lavorare con i file. In questo articolo, impareremo come usare Python per aprire, leggere e ..."
 date: 2023-10-16T09:19:42+01:00
