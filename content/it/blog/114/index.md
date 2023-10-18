@@ -485,7 +485,11 @@ Smart grid: queste reti intelligenti utilizzano tecnologie elettroniche e IoT pe
 
 ## GLI STRUMENTI CHE CI OFFRE LA TECNOLOGIA
 
-### Sensori ambientali
+### - I MicroController
+### - Arduino ed ESP32
+### - La alimentazione dell'ESP32 
+
+### - Sensori ambientali
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Leggere la temperatura con Arduino è un task molto semplice. Esiste in commercio una varietà di sensori con delle caratteristiche molto diverse tra loro e applicazioni sorprendenti. Nel post vi presentamo quelli che abbiamo usato in alcuni impianti con celle rigorifere o in semplici laboratori alimentari. 
 
