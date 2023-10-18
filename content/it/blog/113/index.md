@@ -93,12 +93,10 @@ if __name__ == "__main__":
     open_read_and_save_text_file()
 ```
 
-
 Questo codice aprirà il file my_file.txt per la lettura, leggere il suo contenuto, e salvarlo in un nuovo file chiamato my_new_file.txt.
 
 In conclusione adesso sai come usare Python per aprire, leggere e salvare un file di testo. Queste sono operazioni di file di base che sono essenziali per molti programmi Python.
 
-
 <br>
-<p style="font-size: 12px;">R.113.1.0.0</p>
+<p style="font-size: 12px;">R.113.1.1.0</p>
 <br>
