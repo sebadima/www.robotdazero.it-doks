@@ -1,8 +1,10 @@
-#sp-form-136897 > div > div.sp-link-wrapper.sp-brandname__left {
+body > div.sticky-top > header > nav > a.navbar-brand.order-0 {
 display: none 
 }
 
-
+#sp-form-136897 > div > div.sp-link-wrapper.sp-brandname__left {
+display: none 
+}
 
 section a, article a {
 text-decoration: underline dotted;
