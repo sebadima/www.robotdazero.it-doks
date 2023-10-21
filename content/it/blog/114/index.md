@@ -5,12 +5,12 @@ excerpt: "da personalizzare"
 date: 2023-10-14T09:19:42+01:00
 lastmod: 2023-10-14T09:19:42+01:00
 draft: false
-weight: 50
+weight: 5
 images: ["header.jpeg"]
 categories: ["News"]
 tags: ["sensori", "centraline"]
 contributors: ["sebadima"]
-pinned: false
+pinned: true
 homepage: false
 ---
 <hr>
