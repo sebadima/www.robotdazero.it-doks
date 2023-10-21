@@ -9,14 +9,14 @@ draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["LoRa", "programmazione", "ESP32"]
+tags: ["ESPNOW", "programmazione", "ESP32"]
 contributors: ["sergio rame"]
-pinned: false
+pinned: true
 homepage: false
 ---
 
 
-
+ESP-NOW è un protocollo di comunicazione wireless basato sul livello di collegamento dati che consente il controllo diretto, rapido e a bassa potenza di dispositivi intelligenti senza la necessità di un router. Espressif lo definisce e può funzionare con Wi-Fi e Bluetooth LE. ESP-ORA fornisce una trasmissione dati flessibile e a bassa potenza a tutti i dispositivi interconnessi. Può anche essere utilizzato come protocollo indipendente che aiuta con il provisioning del dispositivo, il debug e gli aggiornamenti del firmware.
 
 ```bash
 #include <esp_now.h>
