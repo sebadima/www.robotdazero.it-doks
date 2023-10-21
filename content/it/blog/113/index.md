@@ -94,5 +94,5 @@ if __name__ == "__main__":
 Questo codice aprirà il file file_esempio.txt per la lettura, leggere il suo contenuto, e salvarlo in un nuovo file chiamato file_destinazione.txt. In conclusione adesso sai come usare Python per aprire, leggere e salvare un file di testo, operazioni di base che sono essenziali per molti programmi Python nella Robotica.
 
 <br>
-<p style="font-size: 12px;">d R.113.2.0.0</p>
+<p style="font-size: 12px;">m R.113.2.0.0</p>
 <br>
