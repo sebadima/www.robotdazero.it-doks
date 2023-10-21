@@ -4,7 +4,7 @@ description: "da personlizzare"
 excerpt: "da personalizzare"
 date: 2023-10-14T09:19:42+01:00
 lastmod: 2023-10-14T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
