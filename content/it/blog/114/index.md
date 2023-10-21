@@ -663,8 +663,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
+### La scheda ESP32
+### il procollo ESPNOW per la ESP32
 ### Servomeccanismi
-### La scheda LORA
 ### Applicazioni per l'Agricoltura
 ##### Ecco alcune applicazioni specifiche per l'agricoltura con ESP32:
 
