@@ -107,7 +107,7 @@ input[type='submit'] {
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/102.svg" alt="">
+<img width="60" height="60" src="/115/eye-24.svg" alt="">
 &nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
@@ -131,7 +131,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/101.svg" alt="">
+<img width="60" height="60" src="/115/repo-forked-24.svg" alt="">
 &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
 ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
@@ -152,7 +152,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" class="x figure-img img-fluid lazyload blur-up" src="/105/103.svg" alt="">
+<img width="60" height="60" src="/115/git-pull-request-24.svg" alt="">
 &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
