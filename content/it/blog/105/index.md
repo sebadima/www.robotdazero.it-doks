@@ -23,7 +23,7 @@ homepage: false
 
 ## COSA E' LA OV2640
 
-OV2640 è un sensore di immagine CMOS a colori di tipo retroilluminato (BSI) da 2,0 megapixel prodotto da OmniVision Technologies. È un sensore di immagine a formato 1/3,2 pollici con una risoluzione nativa di 1632x1232 pixel. L'OV2640 è un sensore di immagine molto popolare ed è utilizzato in una varietà di applicazioni, tra cui fotocamere digitali, videocamere digitali, telecamere di sicurezza e telecamere di sorveglianza.
+La <a href="https://amzn.to/3S9HczV" target="_blank" rel="noopener">OV2640</a> è un sensore di immagine CMOS a colori di tipo retroilluminato (BSI) da 2,0 megapixel prodotto da OmniVision Technologies. È un sensore di immagine a formato 1/3,2 pollici con una risoluzione nativa di 1632x1232 pixel. L'OV2640 è un sensore di immagine molto popolare ed è utilizzato in una varietà di applicazioni, tra cui fotocamere digitali, videocamere digitali, telecamere di sicurezza e telecamere di sorveglianza.
 
 L'OV2640 offre una serie di funzionalità, tra cui:
 
@@ -35,7 +35,7 @@ L'OV2640 offre una serie di funzionalità, tra cui:
     Ottima riproduzione dei colori
     Supporto per l'acquisizione di immagini JPEG e RAW
 
-L'OV2640 è un sensore di immagine versatile e potente che è ideale per una varietà di applicazioni. È un sensore di immagine popolare e ben supportato e sono disponibili molte schede di sviluppo e moduli fotocamera che lo utilizzano.
+La <a href="https://amzn.to/3S9HczV" target="_blank" rel="noopener">OV2640</a> è un sensore di immagine versatile e potente che è ideale per una varietà di applicazioni. È un sensore di immagine popolare e ben supportato e sono disponibili molte schede di sviluppo e moduli fotocamera che lo utilizzano.
 
 Ecco alcuni dei vantaggi dell'utilizzo di una camera OV2640:
 
@@ -50,7 +50,7 @@ Ecco alcuni dei vantaggi dell'utilizzo di una camera OV2640:
 
  ecco i passaggi per installare la fotocamera OV2640 su Windows:
 
-- Scarica il driver della fotocamera OV2640 dal sito web del produttore.
+- Scarica il driver della fotocamera <a href="https://amzn.to/3S9HczV" target="_blank" rel="noopener">OV2640</a> dal sito web del produttore.
 - Estrai il contenuto dell'archivio scaricato in una cartella.
 - Apri il prompt dei comandi come amministratore.
 - Spostati nella cartella in cui hai estratto i file del driver.
