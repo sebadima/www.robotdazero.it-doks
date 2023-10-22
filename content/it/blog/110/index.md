@@ -131,4 +131,45 @@ Quali sono le caratteristiche principali degli alimentatori elettrici da laborat
 
 Indipendentemente dalla fonte di alimentazione scelta, **è importante assicurarsi che la tensione di alimentazione fornita sia stabile e costante**. Inoltre, è importante scegliere la giusta tensione di alimentazione in base alle <a href="https://www.mischianti.org/it/2020/05/30/esp32-piedinatura-specifiche-e-configurazione-dellarduino-ide-parte-1/" target="_blank" rel="noopener">specifiche</a> dell&#8217;ESP32.
 
-<p style="font-size: 12px;">110.R.1.2.2</p>
+### COME RIDURRE IL CONSUMO ENERGETICO 
+##### L'ESP32 è in grado di entrare in modalità sleep
+In questa modalità il consumo energetico è ridotto a soli 5 µA. Può essere utilizzata per estendere la durata della batteria di un dispositivo ESP32.
+Ad esempio, un progetto di domotica che deve monitorare un sensore di temperatura potrebbe entrare in modalità sleep quando il sensore non rileva alcun cambiamento di temperatura. 
+
+In questo modo, il dispositivo ESP32 consumerà solo una piccola quantità di energia, anche se è in funzione 24 ore su 24, 7 giorni su 7.
+
+### COSA E LA MODALITÀ "SLEEP" DELL ESP32?
+
+La modalità sleep dell'ESP32 è una modalità di funzionamento in cui il consumo energetico del chip è notevolmente ridotto. In modalità sleep, la CPU, la maggior parte della RAM e tutte le periferiche che sono clockate da <a href="https://stackoverflow.com/questions/74925441/esp32-attaching-an-interrupt-directly-to-system-time" target="_blank" rel="noopener">APB_CLK</a> vengono disattivate. 
+
+##### Le uniche parti del chip che rimangono attive sono:
+
+1. Il controller <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system_time.html" target="_blank" rel="noopener">RTC</a>
+2. Il coprocessore <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ulp.html" target="_blank" rel="noopener">ULP</a>
+3. La memoria RTC FAST
+4. La memoria RTC SLOW
+
+La modalità sleep può essere utilizzata per estendere la durata della batteria di un dispositivo ESP32. Ad esempio, un dispositivo che deve monitorare un sensore di temperatura potrebbe entrare in modalità sleep quando il sensore non rileva alcun cambiamento di temperatura. 
+
+In questo modo, il dispositivo ESP32 consumerà solo una piccola quantità di energia, anche se è in funzione 24 ore su 24, 7 giorni su 7.
+
+##### L'ESP32 offre due modalità sleep:
+
+Light sleep: 
+> In modalità light sleep, la CPU e la maggior parte della RAM rimangono attive, ma il loro consumo energetico è ridotto.
+
+Deep sleep: 
+> In modalità deep sleep, la CPU, la maggior parte della RAM e tutte le periferiche che sono clockate da <a href="https://stackoverflow.com/questions/74925441/esp32-attaching-an-interrupt-directly-to-system-time" target="_blank" rel="noopener">APB_CLK</a> vengono disattivate.
+La modalità deep sleep è più efficiente dal punto di vista energetico rispetto alla modalità light sleep, ma richiede più tempo per riattivare il dispositivo.
+
+Per entrare in modalità sleep, il programmatore deve utilizzare la funzione 
+```bash
+esp_deep_sleep_start(). 
+```
+Questa funzione accetta un parametro che specifica il tempo di attesa prima che il dispositivo venga riattivato. Se il parametro è impostato su 0, il dispositivo verrà riattivato da un evento di riattivazione.
+<br>
+<br>
+
+
+
+<p style="font-size: 12px"> 110.R.1.4.2 </p>
