@@ -64,5 +64,5 @@ Visual Studio Code è un editor di codice potente e <a href="https://code.visual
 
 
 <br>
-<p style="font-size: 12px;">R.115.1.6.0</p>
+<p style="font-size: 12px;">R.115.1.8.0</p>
 <br>	
