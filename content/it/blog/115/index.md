@@ -42,6 +42,8 @@ print("Hello, world!")
 Per eseguire il codice, fai clic con il pulsante destro del mouse sul file e seleziona "Run".
 Il codice verrà eseguito e visualizzerà il seguente output:
 
+> "Hello, world!"
+
 
 ## FUNZIONALITÀ AVANZATE
 
@@ -61,4 +63,4 @@ Visual Studio Code è un editor di codice potente e versatile che può essere ut
 
 <br>
 <p style="font-size: 12px;">R.115.1.5.0</p>
-<br>
+<br>	
