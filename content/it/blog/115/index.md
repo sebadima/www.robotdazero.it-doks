@@ -26,9 +26,7 @@ Per installare <a href="https://code.visualstudio.com/download" target="_blank" 
 
 Per configurare Visual Studio Code per Python, apri l'editor e fai clic sul pulsante "Extensions" nell'angolo in alto a sinistra. Nella barra di ricerca, digita "Python" e fai clic sul pulsante "Install" per installare l'estensione "Python".
 
-
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
-
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="come configurare Visual Studio Code per Python">
 
 Una volta installata l'estensione, Visual Studio Code sarà pronto per l'uso con Python.
 
