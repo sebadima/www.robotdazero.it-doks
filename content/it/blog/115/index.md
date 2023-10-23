@@ -18,7 +18,7 @@ homepage: false
 
 ##### Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. 
 
-In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per Python, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
+In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
 
 ## INSTALLAZIONE
 
@@ -43,33 +43,13 @@ Per eseguire il codice, fai clic con il pulsante destro del mouse sul file e sel
 Il codice verrà eseguito e visualizzerà il seguente output:
 
 
-## COME USARE PYTHON IN VISUAL STUDIO CODE
-
-Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per Python, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità avanzate di Visual Studio Code per Python.
-
-### SCRITTURA ED ESECUZIONE DI CODICE PYTHON
-
-Per scrivere codice Python in Visual Studio Code, crea un nuovo file con l'estensione ".py". Ad esempio, puoi creare un file chiamato "hello.py".
-
-Inserisci il seguente codice nel file "hello.py":
-
-```bash
-print("Hello, world!")
-```
-Per eseguire il codice, fai clic con il pulsante destro del mouse sul file e seleziona "Run".
-
-Il codice verrà eseguito e visualizzerà il seguente output:
-
-
-> Hello, world!
-
-### Funzionalità avanzate
+## FUNZIONALITÀ AVANZATE
 
 Visual Studio Code offre una serie di funzionalità avanzate per Python, tra cui:
 
-- IntelliSense: IntelliSense fornisce suggerimenti di completamento automatico e informazioni sui tipi di dati.
-- Debug: Visual Studio Code include un debugger integrato che ti consente di eseguire il debug del tuo codice Python.
-- Linting: Il linting è un processo che analizza il tuo codice alla ricerca di errori e potenziali problemi.
+- IntelliSense: <a href="https://code.visualstudio.com/docs/editor/intellisense" target="_blank" rel="noopener">IntelliSense</a> fornisce suggerimenti di completamento automatico e informazioni sui tipi di dati.
+- Debug: Visual Studio Code include un <a href="https://it.wikipedia.org/wiki/Debugger" target="_blank" rel="noopener">debugger</a> integrato che ti consente di eseguire il debug del tuo codice Python.
+- Linting: Il <a href="https://it.wikipedia.org/wiki/Lint_(software)" target="_blank" rel="noopener">lint</a> è un processo che analizza il tuo codice alla ricerca di errori e potenziali problemi.
 - Test: Visual Studio Code supporta una varietà di framework di test per Python.
 
 Per saperne di più su queste funzionalità, consulta la <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener">documentazione</a> di Visual Studio Code.
@@ -80,5 +60,5 @@ Visual Studio Code è un editor di codice potente e versatile che può essere ut
 
 
 <br>
-<p style="font-size: 12px;">R.115.1.4.0</p>
+<p style="font-size: 12px;">R.115.1.5.0</p>
 <br>
