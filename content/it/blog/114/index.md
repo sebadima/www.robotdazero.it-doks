@@ -21,7 +21,7 @@ homepage: false
 ## INTRODUZIONE
 ### Cosa è L'IoT
 ### Cosa è l'ESP32
-#### L'IoT e la gestione delle risorse naturali
+### L'IoT e la gestione delle risorse naturali
 
 ## PROGETTI DI BASE CON L' ESP32
 ### L'ESP32 e i sensori
@@ -29,7 +29,7 @@ homepage: false
 ### Altri tipi di sensori 
 ### Prime applicazioni con i sensori
 
-## La infrastruttura
+## LA INFRASTRUTTURA
 ### Preparazione di un server Ubuntu
 ### installare Docker
 ### installare Node-red
@@ -40,8 +40,20 @@ homepage: false
 ### Uso avanzato dei sensori
 ### Come usare il Machine Learning
 ### Celery python
-### Progetto con il conreollo della anidribe carbonica
+### Progetto per il controllo della anidribe carbonica (CO2)
+
+## IL CONTROLLO DEL SUOLO CON L'ESP32
+### Il protocollo ESPNOW
+### Gli algoritmi in Machine Learning
+### I grafici su Python Jupyter
+
+
+
+
+
+
+
+
 
 <br>
-
 <p style="font-size: 11px;">R.114.2.0.0</p
