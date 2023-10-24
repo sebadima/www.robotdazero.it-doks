@@ -15,6 +15,7 @@ homepage: false
 ---
 
 
+
 <hr>
 
 ### Cosa è l'IoT
@@ -23,37 +24,22 @@ homepage: false
 
 ## Progetti di base con ESp32
 ## L'ESP32 e i sensori
-### I sensori per l'ESP32
-### Prime applicazioni con i sensori
+### I sensori di temperatura per l'ESP32
+### Altri sensori 
+### A applicazioni con i sensori
 
-## instalalre Docker
-## installare Node red
-## Installare K4
-## La piattaform AWS Mqtt
-## partire con lettura sensori
-## Celery python
+## Preparazione di un server Ubuntu
+### installare Docker
+### installare Node-red
+### Installare Kaspian
+### La piattaform AWS Mqtt
+
+## Uso avanzato dei sensori
 ## Primo progetto semplice
 ## Progetto piu complesso in ML AI etc
-## Progetto con il conreollo della anidribe carbonica
-
-
-
-<!--
- o per la produzione di energia rinnovabile.
-
-Ecco alcuni suggerimenti per rendere il libro più interessante e coinvolgente:
-
-Utilizzare esempi concreti e casi studio per illustrare i concetti presentati.
-Integrare il testo con immagini, grafici e video.
-Rendere il libro accessibile a un pubblico di lettori di diverso livello di conoscenza.
-Inoltre, il libro potrebbe essere accompagnato da un sito web o da un'applicazione mobile che offra risorse aggiuntive, come:
-
-Articoli e approfondimenti su argomenti specifici
-Tutorial e guide per l'utilizzo delle tecnologie
-Piattaforme per la condivisione di esperienze e idee
-Questi strumenti possono aiutare a diffondere la conoscenza sull'argomento e a coinvolgere i lettori in modo attivo.
--->
+### Celery python
+### Progetto con il conreollo della anidribe carbonica
 
 <br>
-<br>
+
 <p style="font-size: 11px;">R.114.2.0.0</p
