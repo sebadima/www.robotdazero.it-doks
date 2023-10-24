@@ -1,6 +1,6 @@
 ---
-title: "Come usare gli strumenti dei colossi HI-TECH per difendere il nostro Ambiente"
-description: "da personlizzare"
+title: "Progetti avanzati con il microcontroller ESP32"
+description: "Come usare gli strumenti dei colossi HI-TECH per difendere il nostro Ambiente"
 excerpt: "da personalizzare"
 date: 2023-07-14T09:19:42+01:00
 lastmod: 2023-07-14T09:19:42+01:00
