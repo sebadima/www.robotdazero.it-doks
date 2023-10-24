@@ -70,7 +70,7 @@
   name = "Contatti"
   weight = 80
   identifier = "contatti"
-  url = "/piani/"
+  url = "/contatti/"
   parent = "get-started"
 
 [[main]]
