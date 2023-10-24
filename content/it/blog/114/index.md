@@ -18,15 +18,16 @@ homepage: false
 
 <hr>
 
-### Cosa è l'IoT
-## Cosa è l'ESP32
+## INTRODUZIONE
+### Cosa è L'IoT
+### Cosa è l'ESP32
 #### L'IoT e la gestione delle risorse naturali
 
-## Progetti di base con ESp32
-## L'ESP32 e i sensori
+## PROGETTI DI BASE CON L' ESP32
+### L'ESP32 e i sensori
 ### I sensori di temperatura per l'ESP32
-### Altri sensori 
-### A applicazioni con i sensori
+### Altri tipi di sensori 
+### Applicazioni con i sensori
 
 ## Preparazione di un server Ubuntu
 ### installare Docker
@@ -35,8 +36,8 @@ homepage: false
 ### La piattaform AWS Mqtt
 
 ## Uso avanzato dei sensori
-## Primo progetto semplice
-## Progetto piu complesso in ML AI etc
+### Primo progetto semplice
+### Progetto piu complesso in ML AI etc
 ### Celery python
 ### Progetto con il conreollo della anidribe carbonica
 
