@@ -27,17 +27,18 @@ homepage: false
 ### L'ESP32 e i sensori
 ### I sensori di temperatura per l'ESP32
 ### Altri tipi di sensori 
-### Applicazioni con i sensori
+### Prime applicazioni con i sensori
 
-## Preparazione di un server Ubuntu
+## La infrastruttura
+### Preparazione di un server Ubuntu
 ### installare Docker
 ### installare Node-red
 ### Installare Kaspian
 ### La piattaform AWS Mqtt
 
-## Uso avanzato dei sensori
-### Primo progetto semplice
-### Progetto piu complesso in ML AI etc
+## IL MONITORAGGIO DEI GAS TOSSICI
+### Uso avanzato dei sensori
+### Come usare il Machine Learning
 ### Celery python
 ### Progetto con il conreollo della anidribe carbonica
 
