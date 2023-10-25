@@ -1,5 +1,5 @@
 ---
-title: "Termini di utilizzo"
+title: "Termini di utilizzo2"
 description: "I limiti e le clausole di utilizzo della nostra piattaforma Kaspian."
 lead: "I limiti e le clausole di utilizzo della nostra piattaforma Kaspian."
 date: 2020-11-16T13:59:39+01:00
