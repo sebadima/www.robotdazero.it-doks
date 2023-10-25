@@ -1,7 +1,7 @@
 ---
-title: "Comandi"
-description: "La Dashboard di RBT0"
-lead: "Come eseguire alcuni semplici task"
+title: "Commands"
+description: "Doks comes with commands for common tasks."
+lead: "Doks comes with commands for common tasks."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -13,85 +13,100 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="Ubuntu richiede il comando `sudo` per eseguire codice con i permessi di root!" />}}
+{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
 
-## Flake8
+## create
 
-Per controllare il sorgente Python con flake8:
+Create new content for your site:
 
-file: **server-check-code.sh**
 ```bash
-flake8 > /tmp/linter
-prospector >> /tmp/linter
-vi /tmp/linter
+npm run create [path] [flags]
 ```
 
-## Pulire il disco 
+See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
 
-Per pulire il disco dalle immagine inutilizzate di Docker:
+### Docs based tree
 
-file: **server-clean-disk.sh**
+Create a docs based tree — with a single command:
+
 ```bash
-echo "** Use carefully, answer 'N' if you are unsure"
-docker system prune --filter "until=24h" --filter "label!=keep"
+npm run create -- --kind docs [section]
 ```
 
-## Creare i dati iniziali
-Per creare i dati iniziali per la piattaforma:
+For example, create a docs based tree named guides:
 
-file: **server-make-initial-data.sh**
 ```bash
-# python manage.py dumpdata --natural-foreign --natural-primary -e contenttypes -e auth.Permission --indent 2 > ./kaspianapp/base/fixtures/kaspianapp.json
-
-INSTANCE="$( docker ps | grep k4_app | awk 'NR==1{print $1}')"
-echo $INSTANCE
-
-docker exec -i $INSTANCE /venv/bin/python \
-    manage.py dumpdata \
-    auth.user \
-    auth.group \
-    wagtailusers.userprofile \
-    wagtailimages.image \
-    wagtailimages.rendition \
-    wagtailimages.uploadedimage \
-    wagtaildocs.document \
-    mapi \
-    --natural-foreign \
-    --natural-primary \
-    -e contenttypes \
-    -e auth.Permission \
-    --indent 2 >   kaspianapp/base/fixtures/kaspianapp.json
+npm run create -- --kind docs guides
 ```
 
-## Caricare i dati iniziali:
+## lint
 
-file: **server-load-initial-data.sh**
+Check scripts, styles, and markdown for errors:
+
 ```bash
-NSTANCE="$( docker ps | grep k4_app | awk 'NR==1{print $1}')"
-echo $INSTANCE
-docker exec -i $INSTANCE /venv/bin/python manage.py loaddata   kaspianapp/base/fixtures/kaspianapp.json
+npm run lint
 ```
 
-## Per rilanciare il server Django
-file: **server-restart.sh**
+### scripts
+
+Check scripts for errors:
+
 ```bash
-NSTANCE="$( docker ps | grep k4_app | awk 'NR==1{print $1}')"
-echo $INSTANCE
-docker exec -i $INSTANCE /venv/bin/python manage.py loaddata   kaspianapp/base/fixtures/kaspianapp.json
+npm run lint:scripts [-- --fix]
 ```
 
-## Per far ripartire il server senza fare il rebuild completo:
+### styles
 
-file: **server-start.sh**
+Check styles for errors:
+
 ```bash
-docker-compose pull
-docker-compose up --build -d
-docker-compose logs -f
+npm run lint:styles [-- --fix]
 ```
 
-## Per settare i permessi delle directory:
+### markdown
 
-file: **server-set-permissions.sh**
+Check markdown for errors:
+
 ```bash
-sudo chmod ugo+rw  ~/docker/kaspian-media/
+npm run lint:markdown [-- --fix]
+```
+
+## clean
+
+Delete temporary directories:
+
+```bash
+npm run clean
+```
+
+## start
+
+Start local development server:
+
+```bash
+npm run start
+```
+
+## build
+
+Build production website:
+
+```bash
+npm run build
+```
+
+### functions
+
+Build Lambda functions:
+
+```bash
+npm run build:functions
+```
+
+### preview
+
+Build production website including draft and future content:
+
+```bash
+npm run build:preview
 ```
