@@ -107,7 +107,7 @@ input[type='submit'] {
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" height="60" src="/115/eye-24.svg" alt="">
+<img width="60" height="60" src="/115/git-compare-24.svg" alt="">
 &nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
