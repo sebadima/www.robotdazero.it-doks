@@ -72,10 +72,11 @@ footer = "©2024 Robotdazero.it - P.IVA IT00378808885"
 copyRight = "Copyright (c) 2018-2023 Robotdazero.it"
 
 # Alert
-alert = false
+alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+alertText = "Usiamo solo cookie strettamente necessari per garantire il funzionamento del servizio richiesto e, pertanto, non richiedono il tuo consenso. Leggi la <a class=\"alert-link stretched-link\" href=\"https://www.robotdazero.it/cookie-policy/\" target=\"_blank\" rel=\"noopener\">Cookie policy</a>"
+
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
