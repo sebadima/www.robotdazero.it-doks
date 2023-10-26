@@ -25,7 +25,7 @@
   name = "Quick Start"
   weight = 40
   identifier = "quick-start"
-  url = "/docs/piattaforma/quick-start/"
+  url = "/docs/piattaforma/cloud/"
   parent = "get-started"
 
 [[main]]
