@@ -17,15 +17,19 @@ homepage: false
 
 
 
+### Cosa sono le reti mesh
 Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modo peer-to-peer. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un nodo centrale.
 
 Le reti mesh sono spesso utilizzate per applicazioni IoT, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
 
-Scalabilità: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
-Resilienza: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
-Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
+### vantaggi rispetto alle reti Wi-Fi
+- Scalabilità: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
+- Resilienza: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
+- Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
+
 L'ESP32 è un microcontrollore che supporta le reti mesh. È possibile utilizzare l'ESP32 per creare reti mesh di piccole, medie o grandi dimensioni.
 
+### Il software
 Esistono diverse librerie che possono essere utilizzate per creare reti mesh con ESP32. Una delle librerie più popolari è painlessMesh. Questa libreria è facile da usare e offre una vasta gamma di funzionalità.
 
 Come creare una rete mesh con ESP32
