@@ -1,5 +1,5 @@
 ---
-title: "cookie-policy"
+title: "Cookie policy"
 description: "Non usiamo cookie di marketing e non raccogliamo alcun dato personale."
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
