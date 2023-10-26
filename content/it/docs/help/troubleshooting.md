@@ -1,9 +1,9 @@
 ---
 title: "Troubleshooting"
-description: "Solutions to common problems."
-lead: "Solutions to common problems."
+description: "Soluzioni ai problemi più comuni."
+lead: "Soluzioni ai problemi più comuni."
 date: 2020-11-12T15:22:20+01:00
-lastmod: 2020-11-12T15:22:20+01:00
+lastmod: 2023-10-15T15:22:20+01:00
 draft: false
 images: []
 menu: 
@@ -13,18 +13,3 @@ weight: 201
 toc: true
 ---
 
-## Problems updating npm packages
-
-Delete the `./node_modules` folder, and run again:
-
-```bash
-npm install
-```
-
-## Problems with cache
-
-Delete the temporary directories:
-
-```bash
-npm run clean
-```
