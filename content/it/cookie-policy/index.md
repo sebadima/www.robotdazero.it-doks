@@ -8,22 +8,22 @@ images: []
 ---
 
 
-Questa informativa è redatta e personalizzata per i visitatori del sito web www.robotdazero.it. Il presente documento annulla e sostituisce integralmente il documento che era stato pubblicato in precedenza in tema di cookie.
+Questa informativa è redatta e personalizzata per i visitatori del sito web www.robotdazero.it. Il presente documento annulla e sostituisce integralmente i documenti pubblicati in precedenza in tema di cookie.
 
 Specifiche informative di sintesi sono progressivamente riportate o visualizzate nelle pagine del sito predisposte per particolari servizi a richiesta che prevedono form per la raccolta dei dati.
 
 La informiamo inoltre che, per fornire un servizio completo il nostro sito può contenere link ad altri siti web, non gestiti da robotdazero.it. Robotdazero non è responsabile di errori, contenuti, cookies, pubblicazioni di contenuto morale illecito, pubblicità, banner o files non conformi alle disposizioni normative vigenti e del rispetto della normativa Privacy da parte di siti non gestiti dal Titolare.
 
-Soggetti interessati
+### Soggetti interessati
 Utenti del sito web www.robotdazero.it.
 
 Robotdazero in qualità di Titolare del trattamento dei suoi dati personali ai sensi e per gli effetti del D.Lgs. 30 giugno 2003 n.196 (‘Codice in materia di protezione dei dati personali’), di seguito ‘Codice della Privacy’, e del Reg. UE 679/16 (di seguito GDPR) con la presente La informa che la citata normativa prevede la tutela delle persone e di altri soggetti rispetto al trattamento dei dati personali e che tale trattamento sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della Sua riservatezza e dei Suoi diritti.
 
 Le informazioni ed i dati personali da Lei forniti od altrimenti acquisti nell’ambito dell’utilizzo del sito saranno trattati in accordo alle disposizioni legislative della normativa sopra richiamata e degli obblighi di riservatezza ivi previsti.
 
-Tipologia di dati trattati
+### Tipologia di dati trattati
 
-Dati di Navigazione
+#### Dati di Navigazione
 
 Non vengono trattati:
 
@@ -38,13 +38,13 @@ L'invio facoltativo, esplicito e volontario di posta elettronica agli indirizzi 
 
 Specifiche informative di sintesi sono presenti nelle pagine che prevedono i form.
 
-Finalità del trattamento
+### Finalità del trattamento
 I Suoi dati raccolti durante la navigazione verranno trattati per le seguenti finalità:
 
 1. svolgimento di operazioni strettamente connesse e strumentali alla gestione dei rapporti con gli utenti o dei visitatori del sito;
 Il trattamento dei dati per l’espletamento della finalità di cui al punto 1 è obbligatorio e l’eventuale non comunicazione, o comunicazione errata, di una delle informazioni può limitare e/o impedire l’utilizzo in pieno delle funzionalità e dei servizi presenti sul sito.
 
-Modalità di trattamento
+### Modalità di trattamento
 I dati personali sono trattati con strumenti manuali, elettronici e anche mediante cookies per il tempo strettamente necessario a conseguire gli scopi per cui sono stati raccolti. Ogni trattamento avviene nel rispetto delle modalità indicate nel D.lgs 196/2003 e nel GDPR con l’adozione delle misure adeguate ed idonee di sicurezza.
 
 Comunicazione
@@ -53,11 +53,10 @@ I suoi dati non vengono comunicati a terzi.
 Diffusione
 I suoi dati non saranno diffusi.
 
-Terze parti
+### Terze parti:
 I suoi dati possono essere raccolti mediante strumenti e servizi erogati da terze parti e conservati da loro. Le tipologie di cookie sotto riportate sono state impostate in modo da ridurre il potere identificativo dei cookie e sono state disabilitate anche le funzioni che permettono l’incrocio delle informazioni da parte della terza parte.
 
-
-CloudFlare
+#### CloudFlare
 
 https://www.cloudflare.com/security-policy/
 
@@ -98,10 +97,12 @@ COOKIES POLICY
 
 (Provvedimento del Garante dell’8 maggio 2014 pubblicato in G.U. n.126 il 3 giugno 2014 idi recepimento della direttiva 2002/58/CE)
 
+
+### Informativa sito web e cookie
 Il presente documento è parte integrante dell’”informativa sito web e cookie” e viene redatto in questa modalità solo ed esclusivamente per permettere all’utente una migliore comprensione in merito all’utilizzo e alla disattivazione dei cookie. Si precisa che l’utente può manifestare le proprie opzioni sull’uso dei cookie presenti sul sito www.robotdazero.it (vedi elenco dettagliato nella parte sottostante “tipi di cookie”) anche attraverso le impostazioni del/i browser seguendo le istruzioni fornite qui di seguito.
 
 
-COOKIE
+#### COOKIE
 I cookie sono stringhe di testo di piccole dimensioni che i siti visitati dall'utente inviano al suo terminale (solitamente al browser), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla successiva visita del medesimo utente. Oltre ai cookies sono soggetti al provvedimento del Garante anche altri strumenti analoghi (web beacon/web bug, clear GIF o altri) che consentono l’identificazione dell’utente o del terminale.
 
 Nel corso della navigazione su un sito, l'utente può ricevere sul suo terminale anche cookie che vengono inviati da siti o da web server diversi (c.d. "terze parti"), sui quali possono risiedere alcuni elementi (quali, ad esempio, immagini, mappe, suoni, specifici link a pagine di altri domini) presenti sul sito che lo stesso sta visitando.
@@ -113,9 +114,11 @@ Al fine di giungere a una corretta regolamentazione di tali dispositivi, è nece
 Maggiori Informazioni sui cookie utilizzati dal sito www.robotdazero.it
 Quando si visita il presente sito, possono essere introdotti nel computer o in altro dispositivo “first party cookies” (generati ed utilizzati dal presente sito) ed anche “thirdy party cookies” (generati sul presente sito da terze parti). Si precisa che la disabilitazione di alcuni cookie potrebbe limitare la possibilità di utilizzare il sito e impedire di beneficiare in pieno delle funzionalità e dei servizi presenti. Per decidere quali accettare e quali rifiutare indichiamo qui di seguito una descrizione dei cookies utilizzati da www.robotdazero.it.
 
-Tipi di cookie
+### Tipi di cookie
 
-Cookie di navigazione: Sono cookie che garantiscono la normale navigazione e fruizione del sito web e che permettono il collegamento tra il server e il browser dell’utente. Questi cookie permettono al sito di funzionare correttamente e consentono di visualizzare i contenuti sul dispositivo utilizzato. Senza questi cookies alcune funzionalità del sito potrebbero non essere fornite. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito.
+#### Cookie di navigazione: 
+Sono cookie che garantiscono la normale navigazione e fruizione del sito web e che permettono il collegamento tra il server e il browser dell’utente. Questi cookie permettono al sito di funzionare correttamente e consentono di visualizzare i contenuti sul dispositivo utilizzato. Senza questi cookies alcune funzionalità del sito potrebbero non essere fornite. I cookie di navigazione sono cookie tecnici e sono necessari al funzionamento del sito.
 
-Cookie Analitici: Sono cookies che raccolgono informazioni su come l’utente utilizza il sito web, come ad esempio quali pagine web vengono visitate più spesso. Il presente sito utilizza i cookies di terze parti “Google Analytcs”, un servizio di analisi statistica erogato e gestito da Google che consente di analizzare, in modo anonimo, come gli utenti visitano il sito. Le informazioni generate dal cookie sull'utilizzo del sito web da parte dell’utente (compreso l’indirizzo IP) vengono trasmesse, e depositato presso i server di Google.
+#### Cookie Analitici: 
+Sono cookies che raccolgono informazioni su come l’utente utilizza il sito web, come ad esempio quali pagine web vengono visitate più spesso. Il presente sito utilizza i cookies di terze parti “Google Analytcs”, un servizio di analisi statistica erogato e gestito da Google che consente di analizzare, in modo anonimo, come gli utenti visitano il sito. Le informazioni generate dal cookie sull'utilizzo del sito web da parte dell’utente (compreso l’indirizzo IP) vengono trasmesse, e depositato presso i server di Google.
 
