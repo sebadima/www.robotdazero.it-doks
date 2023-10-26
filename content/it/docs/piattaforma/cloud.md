@@ -1,5 +1,5 @@
 ---
-title: "La Piattaforma in cloud"
+title: "La piattaforma in cloud"
 description: "Come funziona la nostra piattaforma Kaspian in versione cloud."
 lead: "Come funziona la nostra piattaforma Kaspian in versione cloud."
 date: 2020-11-16T13:59:39+01:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "piattaforma"
-weight: 101
+weight: 120
 toc: true
 ---
 

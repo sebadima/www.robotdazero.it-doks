@@ -1,5 +1,5 @@
 ---
-title: "Comandi"
+title: "Comandi principali"
 description: "I comandi per più comuni"
 lead: "Come eseguire alcuni semplici task"
 date: 2020-10-13T15:21:01+02:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "piattaforma"
-weight: 102
+weight: 130
 toc: true
 ---
 
