@@ -1,5 +1,5 @@
 ---
-title: "Cosa sono le reti mesh per ESP32?"
+title: "118 Cosa sono le reti mesh per ESP32?"
 description: "In questo post parleremo delle reti wireless peer to peer per ESP32."
 excerpt: "Le reti mesh sono spesso utilizzate per applicazioni IoT, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui ..."
 date: 2023-10-26T09:19:42+01:00
@@ -32,7 +32,11 @@ L'ESP32 è un microcontrollore che supporta le reti mesh. È possibile utilizzar
 ## Il software di sistema
 Esistono diverse librerie che possono essere utilizzate per creare reti mesh con ESP32. Una delle librerie più popolari è painlessMesh. Questa libreria è facile da usare e offre una vasta gamma di funzionalità.
 
-Come creare una rete mesh con ESP32
+Come avviene lo scambio di messaggi semplici utilizzando il protocollo ESP-MESH:
+
+> Ora, impariamo come scambiare messaggi semplici tra più schede ESP32 / ESP8266. Ad esempio useremo quattro schede ESP tra cui una NodeMCU ESP8266 e tre schede di sviluppo ESP32. La scheda ESP8266 verrà assegnata come Nodo 1 e le schede ESP32 verranno assegnate rispettivamente al Nodo 2, al Nodo 3 e al Nodo 4.
+
+> Il nostro obiettivo sarà quello di mostrare come scambiare un semplice messaggio tra schede ESP utilizzando il protocollo di rete ESP-MESH utilizzando la libreria painlessMesh che abbiamo installato in precedenza. Il messaggio scambiato sarà: 'Questo è un messaggio di test dal nodo X' dove X specificherà il numero assegnato a ciascuna scheda nello schizzo del programma. Il nodo 1 riceverà messaggi dal Nodo 2, dal Nodo 3 e dal Nodo 4. Allo stesso modo, ogni Nodo riceverà messaggi dall'altro nodo e invierà il proprio messaggio al resto dei nodi.
 
 Per creare una rete mesh con ESP32, è necessario eseguire i seguenti passaggi:
 
