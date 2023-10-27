@@ -13,7 +13,7 @@
 [[main]]
   name = "ESP32"
   url = "/tags/esp32/"
-  weight = 25
+  weight = 15
 
 [[main]]
   name = "Come iniziare"
