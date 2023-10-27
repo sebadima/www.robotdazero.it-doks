@@ -11,9 +11,9 @@
   weight = 20
 
 [[main]]
-  name = "Piani"
-  url = "/piani/"
-  weight = 25
+  name = "ESP32"
+  url = "/tags/esp32/"
+  weight = 15
 
 [[main]]
   name = "Come iniziare"
