@@ -1,5 +1,5 @@
 ---
-title: "120 Cosa è la \"psram\" dell'ESP32"
+title: "Cosa è la \"psram\" dell'ESP32"
 description: "."
 excerpt: " ..."
 date: 2023-10-26T09:19:42+01:00
@@ -16,47 +16,73 @@ homepage: false
 
 
 
+La PSRAM è una memoria non volatile integrata nell'ESP32. È una memoria EEPROM che può essere utilizzata per memorizzare dati che devono essere conservati anche quando l'ESP32 è spento. La PSRAM è di 8 KB di dimensioni e può essere utilizzata per memorizzare dati come configurazioni, certificati e dati sensibili.
 
-Esistono due modi per resettare la scheda ESP32:
+La PSRAM è accessibile tramite il driver I2C. Per accedere alla PSRAM, è necessario prima inizializzarla. L'inizializzazione della PSRAM può essere eseguita utilizzando la seguente funzione:
 
-Reset hardware: Tenere premuto il pulsante RESET per almeno 3 secondi.
-Reset software: Utilizzare il bootloader per cancellare la memoria flash dell'ESP32.
-Reset hardware
+C
+esp_err_t psram_init(void);
+Use code with caution. Learn more
+Una volta inizializzata la PSRAM, è possibile accedervi utilizzando le seguenti funzioni:
 
-Il reset hardware è il modo più semplice per resettare la scheda ESP32. Basta tenere premuto il pulsante RESET per almeno 3 secondi. Questo farà sì che l'ESP32 si riavvii e inizi a eseguire il codice dal bootloader.
+C
+esp_err_t psram_read(uint32_t offset, uint8_t *data, size_t len);
+esp_err_t psram_write(uint32_t offset, const uint8_t *data, size_t len);
+Use code with caution. Learn more
+La funzione psram_read() legge len byte da offset nella PSRAM e li memorizza in data. La funzione psram_write() scrive len byte da data in offset nella PSRAM.
 
-Reset software
+Ecco un esempio di come utilizzare la PSRAM:
 
-Il reset software è un modo più completo per resettare la scheda ESP32. Cancella la memoria flash dell'ESP32, quindi l'ESP32 inizierà a eseguire il codice dal bootloader.
+C
+#include <esp_log.h>
+#include <esp_system.h>
+#include <esp_psram.h>
 
-Per eseguire un reset software, è necessario utilizzare il bootloader. Il bootloader è un programma incorporato nell'ESP32 che consente di caricare nuovo codice sull'ESP32.
+static const char *TAG = "psram_example";
 
-Ecco i passaggi per eseguire un reset software:
+void app_main(void)
+{
+  // Inizializza la PSRAM
+  esp_err_t err = psram_init();
+  if (err != ESP_OK) {
+    ESP_LOGE(TAG, "Errore durante l'inizializzazione della PSRAM: %d", err);
+    return;
+  }
 
-Connetti la scheda ESP32 al computer utilizzando un cavo USB.
-Apri un terminale e impostalo sulla porta seriale associata alla scheda ESP32.
-Esegui il seguente comando:
-esptool.py --chip esp32 erase_flash
-Questo comando cancellerà la memoria flash dell'ESP32.
+  // Scrivi alcuni dati nella PSRAM
+  uint8_t data[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  err = psram_write(0, data, sizeof(data));
+  if (err != ESP_OK) {
+    ESP_LOGE(TAG, "Errore durante la scrittura nella PSRAM: %d", err);
+    return;
+  }
 
-Riavvia la scheda ESP32.
-Dopo il riavvio, l'ESP32 inizierà a eseguire il codice dal bootloader.
+  // Leggi i dati dalla PSRAM
+  uint8_t read_data[sizeof(data)];
+  err = psram_read(0, read_data, sizeof(read_data));
+  if (err != ESP_OK) {
+    ESP_LOGE(TAG, "Errore durante la lettura dalla PSRAM: %d", err);
+    return;
+  }
 
-Effetti del reset
+  // Verifica che i dati letti siano corretti
+  for (int i = 0; i < sizeof(data); i++) {
+    if (read_data[i] != data[i]) {
+      ESP_LOGE(TAG, "Dati letti dalla PSRAM non corretti");
+      return;
+    }
+  }
 
-Il reset della scheda ESP32 ha i seguenti effetti:
+  ESP_LOGI(TAG, "I dati sono stati scritti e letti correttamente dalla PSRAM");
+}
+Use code with caution. Learn more
+Questo esempio scrive un array di 10 byte nella PSRAM e poi legge gli stessi dati dalla PSRAM. Se i dati letti sono uguali ai dati scritti, l'esempio termina con successo.
 
-Cancella la memoria flash dell'ESP32.
-Ripristina l'ESP32 alle impostazioni di fabbrica.
-Cancella tutte le configurazioni e i dati memorizzati sull'ESP32.
-Quando resettare la scheda ESP32
+Ecco alcuni limiti della PSRAM:
 
-Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad esempio:
-
-Se la scheda ESP32 è bloccata o non risponde.
-Se si desidera cancellare tutte le configurazioni e i dati dall'ESP32.
-Se si desidera installare una nuova versione del firmware sull'ESP32.
-
+La PSRAM è una memoria EEPROM, quindi i dati memorizzati in essa possono essere cancellati solo un numero limitato di volte.
+La PSRAM è accessibile solo tramite il driver I2C.
+La PSRAM è di 8 KB di dimensioni, quindi è possibile memorizzare solo una piccola quantità di dati.
 <br>
 <p style="font-size: 12px;"> R.120.1.0.1 </p>
 <br>
