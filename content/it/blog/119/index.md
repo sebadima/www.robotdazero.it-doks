@@ -19,9 +19,9 @@ homepage: false
 <hr>
 
 ## RESET IMMEDIATO
-In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante RESET per almeno 3 secondi come si vede nella foto.
+In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante EN (Enable) = RST (Reset) per almeno 3 secondi come si vede nella foto.
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.webp" alt="il tasto di reset hardware dell'ESP32">
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="il tasto di reset hardware dell'ESP32">
 
 <br>
 <br>
@@ -36,12 +36,12 @@ Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad ese
 2. Se si desidera cancellare tutte le configurazioni e i dati dall'ESP32.
 3. Se si desidera installare una nuova versione del firmware sull'ESP32.
 
-### COME EFFETTUARE IL RESET
-Per eseguire un reset di fabbrica ESP32, useremo <a href="https://github.com/espressif/esptool" target="_blank" rel="noopener">ESPTOOL</a>, che è una utility open source basata su Python usata per comunicare con il bootloader ROM nei chip Espressif.
+## COME EFFETTUARE IL RESET
+Per eseguire un reset di fabbrica ESP32, useremo <a href="https://github.com/espressif/esptool" target="_blank" rel="noopener">ESPTOOL</a>, una utility basata su Python usata per comunicare con il bootloader ROM nei chip Espressif.
 
 Per installare esptool, è necessario installare Python 3.8 o una versione più recente. Puoi scaricare e installare Python al seguente <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">link</a> ma assicurati di scaricare il pacchetto giusto per il tuo sistema.
 
-Con Python 3 installato, apri una finestra di terminale e installa l'ultima versione stabile di esptool.py con <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">PIP</a>:
+Con Python 3 installato, apri un terminale di comando e installa l'ultima versione stabile di esptool.py con <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">PIP</a>:
 
 ```bash
 pip installa esptool
@@ -53,9 +53,11 @@ pip installa esptool
 pip3 install esptool
 ```
 oppure
+
 ```bash
 python -m pip install esptool
 ```
+
 oppure infine
 ```bash
 pip2 install esptool
@@ -72,27 +74,26 @@ pip install setuptools
 
 
 
-Dopo l'installazione, esptool.py dovrebbe essere presente nella directory predefinita degli eseguibili Python: a quesro punto siamo in grado di eseguirlo con il comando esptool. Nella finestra del terminale, eseguire il seguente comando:
+Dopo l'installazione, esptool.py dovrebbe essere presente nella directory predefinita degli eseguibili Python: a questo punto siamo in grado di eseguirlo con il comando esptool. Nella finestra del terminale, esegui il comando:
 
 ```bash
 python -m esptool
 ```
 
+### CANCELLARE LA MEMORIA FLASH
+Segui i passaggi successivi per cancellare il flash ESP32:
 
-### Cancellare il flash ESP32
-Seguire i passaggi successivi per cancellare il flash ESP32:
-
-1) Collegare il ESP32 al computer;
-
-2) Aprire una finestra Terminale sul computer;
-
-3) Tenere premuto il pulsante di avvio ESP32;
+1. Collega l'ESP32 al PC
+2. Apri un Terminale sul tuo PC
+3. Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
 
 ```bash
 python -m esptool --chip esp32 erase_flash
 ```
 
-Quando inizia il processo di "Cancellazione“, è possibile rilasciare il pulsante” BOOT/FLASH". Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
+Dopo l'inizio della "Cancellazione“ puoi rilasciare il pulsante BOOT/FLASH". 
+Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata. 
+
 
 <br>
 <p style="font-size: 12px;"> R.119.1.0.1 </p>
