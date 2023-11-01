@@ -36,16 +36,18 @@ Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad ese
 2. Se si desidera cancellare tutte le configurazioni e i dati dall'ESP32.
 3. Se si desidera installare una nuova versione del firmware sull'ESP32.
 
-### COME RESETTARE ALLE CONDIZIONI DI FABBRICA
+### COME EFFETTUARE IL RESET
+Per eseguire un reset di fabbrica ESP32, useremo <a href="https://github.com/espressif/esptool" target="_blank" rel="noopener">esptool</a>, che è “un'utilità basata su Python, open-source, indipendente dalla piattaforma per comunicare con il bootloader ROM nei chip Espressif.
 
-Per eseguire un reset di fabbrica ESP32, useremo esptool, che è “un'utilità basata su Python, open-source, indipendente dalla piattaforma per comunicare con il bootloader ROM nei chip Espressif.“
-
-Per installare esptool, è necessario installare Python 3.7 o più recente sul sistema. Puoi scaricare e installare Python al seguente  <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">link</a>(assicurati di scaricare il pacchetto giusto per il tuo sistema):
+Per installare esptool, è necessario installare Python 3.7 o più recente sul sistema. Puoi scaricare e installare Python al seguente <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">link</a>(assicurati di scaricare il pacchetto giusto per il tuo sistema):
 
 Scarica Python
-Con Python 3 installato, aprire una finestra di terminale e installare l'ultima stabile esptool.py rilascio con pip:
+Con Python 3 installato, apri una finestra di terminale e installa l'ultima versione stabile di esptool.py con pip:
 
+```bash
 pip installa esptool
+```
+
 Nota: con alcune installazioni Python quel comando potrebbe non funzionare e riceverai un errore. Se questo è il caso, provare a installare esptool.py con:
 
 ```bash
