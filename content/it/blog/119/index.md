@@ -16,6 +16,8 @@ homepage: false
 
 
 
+<hr>
+
 In casi di freezing  o anomalie dell' ESP32 esistono due modi per resettarlo:
 
 1. Reset hardware: Bisona tenere premuto il pulsante RESET per almeno 3 secondi.
@@ -33,7 +35,14 @@ Il reset software è un modo più completo per resettare la scheda ESP32. Cancel
 
 Per eseguire un reset software, è necessario utilizzare il bootloader. Il bootloader è un programma incorporato nell'ESP32 che consente di caricare nuovo codice sull'ESP32.
 
-## RESET ALLE CONDIZIONI DI FABBRICA
+## QUANDO RESETTARE COMPLETAMENTE
+Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad esempio:
+
+1. Se la scheda ESP32 è bloccata o non risponde.
+2. Se si desidera cancellare tutte le configurazioni e i dati dall'ESP32.
+3. Se si desidera installare una nuova versione del firmware sull'ESP32.
+
+## COME RESETTARE ALLE CONDIZIONI DI FABBRICA
 
 In certe situazioni l'ESP32 può bloccarsi continuamente senza motivi apparenti o non riesce a caricare dei nuovi programmi. Se neppure la presione del tasto **boot** riesce a risolvere il problema è preferibile resettare alle condizioni di fabbrica la CPU. Lo strumento che useremo si chiama esptool.
 ##### Ecco i passaggi per eseguire un reset software:
@@ -44,36 +53,9 @@ In certe situazioni l'ESP32 può bloccarsi continuamente senza motivi apparenti 
 - Esegui il seguente comando:
 
 
-
-
-
 ```bash
 esptool.py --chip esp32 erase_flash
 ```
-
-> Questo comando cancellerà la memoria flash dell'ESP32.
-Riavvia la scheda ESP32.
-Dopo il riavvio, l'ESP32 inizierà a eseguire il codice dal bootloader.
-
-### EFFETTI DEL RESET
-
-Sia il reset SW che HW azionano una serie di operazioni nella CPU:
- che in dettagCome Arduino l'azionamento Il reset della scheda ESP32 ha i seguenti effetti:
-
-- Cancella la memoria flash dell'ESP32.
-- Ripristina l'ESP32 alle impostazioni di fabbrica.
-- Cancella tutte le configurazioni e i dati memorizzati sull'ESP32.
-
-
-## QUANDO RESETTARE LA SCHEDA ESP32
-
-Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad esempio:
-
-1. Se la scheda ESP32 è bloccata o non risponde.
-2. Se si desidera cancellare tutte le configurazioni e i dati dall'ESP32.
-3. Se si desidera installare una nuova versione del firmware sull'ESP32.
-
-### RESETTARE LA SCHEDA ESP32 USANDO ESPTOOL.PY
 
 Per eseguire un reset di fabbrica ESP32, useremo esptool, che è “un'utilità basata su Python, open-source, indipendente dalla piattaforma per comunicare con il bootloader ROM nei chip Espressif.“
 
