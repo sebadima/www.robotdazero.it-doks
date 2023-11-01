@@ -104,5 +104,5 @@ Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
 
 
 <br>
-<p style="font-size: 12px;"> R.119.1.0.1 </p>
+<p style="font-size: 12px;"> R.119.1.2.0 </p>
 <br>
