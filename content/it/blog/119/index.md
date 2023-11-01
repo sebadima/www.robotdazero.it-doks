@@ -19,7 +19,7 @@ homepage: false
 <hr>
 
 ## RESET IMMEDIATO
-In casi di freezing o anomalie occasionali dell'ESP32 esiste un mdoo rapido per resettare la scheda: basta tenere premuto il pulsante RESET per almeno 3 secondi come si vede nella foto.
+In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante RESET per almeno 3 secondi come si vede nella foto.
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.webp" alt="il tasto di reset hardware dell'ESP32">
 
