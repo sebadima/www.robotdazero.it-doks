@@ -72,20 +72,14 @@ pip install setuptools
 
 
 
-Dopo l'installazione, si avrà esptool.py installato nella directory predefinita degli eseguibili Python e si dovrebbe essere in grado di eseguirlo con il comando esptool. Nella finestra del terminale, eseguire il seguente comando:
-
-
-
-
+Dopo l'installazione, esptool.py dovrebbe essere presente nella directory predefinita degli eseguibili Python: a quesro punto siamo in grado di eseguirlo con il comando esptool. Nella finestra del terminale, eseguire il seguente comando:
 
 ```bash
 python -m esptool
 ```
 
 
-
-
-Cancellare il flash ESP32
+### Cancellare il flash ESP32
 Seguire i passaggi successivi per cancellare il flash ESP32:
 
 1) Collegare il ESP32 al computer;
@@ -94,51 +88,11 @@ Seguire i passaggi successivi per cancellare il flash ESP32:
 
 3) Tenere premuto il pulsante di avvio ESP32;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```bash
 python -m esptool --chip esp32 erase_flash
 ```
 
-
-
-
-5) Quando inizia il processo di "Cancellazione“, è possibile rilasciare il pulsante” BOOT/FLASH". Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Quando inizia il processo di "Cancellazione“, è possibile rilasciare il pulsante” BOOT/FLASH". Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
 
 <br>
 <p style="font-size: 12px;"> R.119.1.0.1 </p>
