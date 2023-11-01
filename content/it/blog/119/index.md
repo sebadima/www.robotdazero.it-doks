@@ -24,8 +24,6 @@ https://randomnerdtutorials.com/esp32-erase-flash-memory/
 ## INTRODUZIONE
 Questa è una guida rapida che mostra come cancellare la memoria flash ESP32 per ripristinarla allo stato originale. "Flashare" l'ESP32 potrebbe essere utile se si desidera eliminare eventuali modifiche apportate al firmware o alle impostazioni di configurazione. E' inoltre una procedua consigliata se il sistema si blocca costantemente e non è possibile caricare nuovo codice o  per cancellare i dati che non sono più necessari.
 
-
-
 ## RESET IMMEDIATO
 In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante **EN** (Enable) = **RST** (Reset) per almeno 3 secondi come si vede nella foto.
 
@@ -35,7 +33,6 @@ In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per 
 <br>
 
 Dopo la pressione del tasto l'ESP32 si riavvierà ed eseguirà il codice dal <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/bootloader.html" target="_blank" rel="noopener">bootloader</a> interno: è la stessa procedura che avviene quando lo collegate alla alimentazione o fate l'upload in un nuovo codice C++.
-
 
 ## QUANDO RESETTARE COMPLETAMENTE
 Il reset della scheda ESP32 può essere utile in una serie di situazioni più gravi, come ad esempio:
@@ -54,7 +51,6 @@ Con Python 3 installato, apri un terminale di comando e installa l'ultima versio
 ```bash
 pip install esptool
 ```
-
 #### Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso, provare a installare esptool.py con queste tre soluzioni alternative:
 
 ```bash
@@ -65,7 +61,6 @@ oppure infine
 pip2 install esptool
 ```
 
-
 Dopo l'installazione, **esptool.py** dovrebbe essere presente nella directory predefinita degli eseguibili Python: a questo punto siamo in grado di eseguirlo con il comando esptool. Nella finestra del terminale digita:
 
 ```bash
@@ -75,32 +70,18 @@ python -m esptool
 Adesso non ci resta che cancellare la memoria flash ESP32 per completare il reset di fabbrica. 
 
 ### CANCELLARE LA MEMORIA FLASH
-Segui questi trepassaggi in sequenza:
+Segui questi tre passaggi in sequenza:
 
 1. Collega l'ESP32 al PC
 2. Apri un terminale sul tuo PC
 3. Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
-4. Digita
+4. Digita:
 
 ```bash
 python -m esptool --chip esp32 erase_flash
 ```
 
-5. Dopo l'inizio della "Cancellazione“ puoi rilasciare il pulsante BOOT/FLASH". 
-
-
-Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata. 
-
-
-
-
-
-
-
-
-
-
-
+5. Dopo l'inizio della **cancellazione** puoi rilasciare il pulsante BOOT/FLASH e in pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
 
 
 
