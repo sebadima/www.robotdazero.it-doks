@@ -92,7 +92,7 @@ python -m esptool --chip esp32 erase_flash
 
 **5** - Premi "ENTER" o "INVIO" sulla tastiera del PC
 
-**6** - Dopo l'inizio della **cancellazione** lascia andare il pulsante BOOT.
+**6** - Dopo l'inizio della "procedura" lascia andare il pulsante BOOT.
 
 <br>
 
@@ -101,5 +101,5 @@ In pochi secondi la memoria flash dell'ESP32 verrà cancellata.
 
 
 <br>
-<p style="font-size: 0.75em;">R.119.1.2.9</p>
+<p style="font-size: 0.75em;">R.119.1.3.0</p>
 <br>
