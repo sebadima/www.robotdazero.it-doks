@@ -80,6 +80,8 @@ Dopo l'installazione, esptool.py dovrebbe essere presente nella directory predef
 python -m esptool
 ```
 
+Per completare la procedura bisogna adesso cancellare il flash ESP32 per completare il reset di fabbrica. 
+
 ### CANCELLARE LA MEMORIA FLASH
 Segui i passaggi successivi per cancellare il flash ESP32:
 
@@ -93,6 +95,17 @@ python -m esptool --chip esp32 erase_flash
 
 Dopo l'inizio della "Cancellazione“ puoi rilasciare il pulsante BOOT/FLASH". 
 Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 <br>
