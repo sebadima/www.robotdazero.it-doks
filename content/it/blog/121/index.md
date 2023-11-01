@@ -13,6 +13,20 @@ contributors: ["sebadima"]
 pinned: false
 homepage: false
 ---
+<!--
+https://www.linode.com/docs/products/compute/compute-instances/guides/set-up-and-secure/
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-18-04-quickstart
+https://www.tecmint.com/set-ssh-directory-permissions-in-linux/#:~:text=authorized_keys%20%E2%80%93%20contains%20the%20list%20of,ssh%20user%20has%20logged%20into.
+https://askubuntu.com/questions/147241/execute-sudo-without-password
+https://www.linode.com/docs/products/compute/compute-instances/guides/set-up-and-secure/
+https://www.linode.com/docs/guides/ossec-ids-debian-7/
+https://github.com/ossec/ossec-hids/issues/1663
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04
+  https://github.com/docker/compose/releases
+-->	
+
+
 
 In questo post vedremo come preparare un server Linux per ospitare la piattaforma in ML Kaspian. Vedremo inoltre comeusare il server per comunicare con l'ESP32 attraverso il procotollo MQTT.
 
