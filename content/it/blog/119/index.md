@@ -38,19 +38,6 @@ Il reset della scheda ESP32 può essere utile in una serie di situazioni, ad ese
 
 ### COME RESETTARE ALLE CONDIZIONI DI FABBRICA
 
-In certe situazioni l'ESP32 può bloccarsi continuamente senza motivi apparenti o non riesce a caricare dei nuovi programmi. Se neppure la presione del tasto **boot** riesce a risolvere il problema è preferibile resettare alle condizioni di fabbrica la CPU. Lo strumento che useremo si chiama esptool.
-##### Ecco i passaggi per eseguire un reset software:
-
-
-- Connetti la scheda ESP32 al computer utilizzando un <a href="https://linuxhint.com/cable-used-for-esp32/" target="_blank" rel="noopener">cavo USB</a>.
-- Apri un terminale e impostalo sulla porta seriale associata alla scheda ESP32.
-- Esegui il seguente comando:
-
-
-```bash
-esptool.py --chip esp32 erase_flash
-```
-
 Per eseguire un reset di fabbrica ESP32, useremo esptool, che è “un'utilità basata su Python, open-source, indipendente dalla piattaforma per comunicare con il bootloader ROM nei chip Espressif.“
 
 Per installare esptool, è necessario installare Python 3.7 o più recente sul sistema. Puoi scaricare e installare Python al seguente  <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">link</a>(assicurati di scaricare il pacchetto giusto per il tuo sistema):
