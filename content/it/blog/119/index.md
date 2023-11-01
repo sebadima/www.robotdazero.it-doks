@@ -51,7 +51,7 @@ Quando Python 3 funzionerà correttamente, apri un terminale di comando e instal
 ```bash
 pip install esptool
 ```
-#### Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso, prova a installare esptool.py con queste tre soluzioni alternative:
+> Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso prova a installare esptool.py con queste tre soluzioni alternative:
 
 ```bash
 pip3 install esptool
@@ -71,26 +71,33 @@ Dopo l'installazione, **esptool.py** dovrebbe essere presente nella directory pr
 python -m esptool
 ```
 
-#### Adesso non ci resta che cancellare la memoria flash ESP32 per completare il reset di fabbrica. 
+##### Adesso non ci resta che cancellare la memoria flash dell'ESP32 per completare il reset di fabbrica. 
 
 ### CANCELLARE LA MEMORIA FLASH
 Segui questi tre passaggi in sequenza:
 
-1. Collega l'ESP32 al PC
-2. Apri un terminale sul tuo PC
-3. Digita:
+**1**. Collega l'ESP32 al PC
+
+**2**. Apri un terminale sul tuo PC
+
+**3**. Digita:
 
 ```bash
 python -m esptool --chip esp32 erase_flash
 ```
-4. Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
-5. Premi "ENTER" o "INVIO" sulla tastiera del PC
-6. Dopo l'inizio della **cancellazione** lascia andare il pulsante BOOT.
+
+**4**. Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
+
+**5**. Premi "ENTER" o "INVIO" sulla tastiera del PC
+
+**6**. Dopo l'inizio della **cancellazione** lascia andare il pulsante BOOT.
+
+<br>
 
 In pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
 
 
 
 <br>
-<p style="font-size: 0.75em;">R.119.1.2.5</p>
+<p style="font-size: 0.75em;">R.119.1.2.6</p>
 <br>
