@@ -4,7 +4,7 @@ description: "."
 excerpt: "Esistono due modi per resettare la scheda ESP32: Reset hardware: Tenere premuto il pulsante RESET per almeno 3 secondi. Reset software: Utilizzare il bootloader..."
 date: 2023-10-26T09:19:42+01:00
 lastmod: 2023-26-01T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
@@ -103,6 +103,7 @@ Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
 
 
 
+
 <br>
-<p style="font-size: 12px;">R.119.1.2.1</p>
+<p style="font-size: 0.75em;">R.119.1.2.1</p>
 <br>

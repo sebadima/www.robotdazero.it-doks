@@ -83,6 +83,7 @@ Ecco alcuni limiti della PSRAM:
 La PSRAM è una memoria EEPROM, quindi i dati memorizzati in essa possono essere cancellati solo un numero limitato di volte.
 La PSRAM è accessibile solo tramite il driver I2C.
 La PSRAM è di 8 KB di dimensioni, quindi è possibile memorizzare solo una piccola quantità di dati.
+
 <br>
-<p style="font-size: 12px;"> R.120.1.0.1 </p>
+<p style="font-size: 0.75em;"> R.120.1.0.1 </p>
 <br>
