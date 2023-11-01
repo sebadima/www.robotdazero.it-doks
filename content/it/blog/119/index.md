@@ -37,9 +37,11 @@ Dopo la pressione del tasto la scheda si riavvierà ed eseguirà il codice dal <
 ## QUANDO RESETTARE COMPLETAMENTE
 Il reset della scheda ESP32 può essere utile in una serie di situazioni più gravi come ad esempio:
 
-1. La scheda ESP32 è bloccata o non risponde.
-2. Vuoi cancellare tutte le configurazioni e i dati dalla scheda.
-3. Vuoi installare una nuova versione del firmware della scheda.
+**1** - La scheda ESP32 è bloccata o non risponde.
+
+**2** - Vuoi cancellare tutte le configurazioni e i dati dalla scheda.
+
+**3** - Vuoi installare una nuova versione del firmware della scheda.
 
 ## COME EFFETTUARE IL RESET
 Per eseguire un reset di fabbrica ESP32, useremo <a href="https://github.com/espressif/esptool" target="_blank" rel="noopener">ESPTOOL</a>, una utility basata su Python in grado di comunicare con il bootloader presente nella ROM.
@@ -76,21 +78,21 @@ python -m esptool
 ### CANCELLARE LA MEMORIA FLASH
 Segui questi tre passaggi in sequenza:
 
-**1**. Collega l'ESP32 al PC
+**1** - Collega l'ESP32 al PC
 
-**2**. Apri un terminale sul tuo PC
+**2** - Apri un terminale sul tuo PC
 
-**3**. Digita:
+**3** - Digita:
 
 ```bash
 python -m esptool --chip esp32 erase_flash
 ```
 
-**4**. Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
+**4** - Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
 
-**5**. Premi "ENTER" o "INVIO" sulla tastiera del PC
+**5** - Premi "ENTER" o "INVIO" sulla tastiera del PC
 
-**6**. Dopo l'inizio della **cancellazione** lascia andare il pulsante BOOT.
+**6** - Dopo l'inizio della **cancellazione** lascia andare il pulsante BOOT.
 
 <br>
 
@@ -99,5 +101,5 @@ In pochi secondi la memoria flash dell'ESP32 verrà cancellata.
 
 
 <br>
-<p style="font-size: 0.75em;">R.119.1.2.6</p>
+<p style="font-size: 0.75em;">R.119.1.2.9</p>
 <br>
