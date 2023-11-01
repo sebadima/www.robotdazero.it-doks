@@ -18,8 +18,8 @@ homepage: false
 
 In casi di freezing  o anomalie dell' ESP32 esistono due modi per resettarlo:
 
-Reset hardware: Tenere premuto il pulsante RESET per almeno 3 secondi.
-Reset software: Utilizzare il bootloader per cancellare la memoria flash dell'ESP32.
+1. Reset hardware: Bisona tenere premuto il pulsante RESET per almeno 3 secondi.
+2. Reset software: Serve utilizzare il bootloader per cancellare la memoria flash dell'ESP32.
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.webp" alt="il tasto di reset hardware dell'ESP32">
 
