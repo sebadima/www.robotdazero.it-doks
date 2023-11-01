@@ -52,7 +52,7 @@ Per usare esptool, è necessario installare prima Python 3.8 o una versione più
 Con Python 3 installato, apri un terminale di comando e installa l'ultima versione stabile di esptool.py con <a href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener">PIP</a>:
 
 ```bash
-pip installa esptool
+pip install esptool
 ```
 
 #### Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso, provare a installare esptool.py con queste tre soluzioni alternative:
@@ -104,5 +104,5 @@ Dopo alcuni secondi, la memoria flash ESP32 verrà cancellata.
 
 
 <br>
-<p style="font-size: 12px;"> R.119.1.2.0 </p>
+<p style="font-size: 12px;">R.119.1.2.1</p>
 <br>
