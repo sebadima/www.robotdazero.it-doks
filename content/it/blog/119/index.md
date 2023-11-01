@@ -26,7 +26,7 @@ In casi di freezing o anomalie occasionali dell'ESP32 esiste un mdo rapido per r
 <br>
 <br>
 
-Il reset hardware è il modo più semplice per resettare la scheda ESP32. Dopo la pressione del tasto nella foto sopra l'ESP32 si riavviera ed eseguirà il codice dal <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/bootloader.html" target="_blank" rel="noopener">bootloader</a> interno.
+Il reset hardware è il modo più semplice per resettare la scheda ESP32. Dopo la pressione del tasto nella foto sopra l'ESP32 si riavvierà ed eseguirà il codice dal <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/bootloader.html" target="_blank" rel="noopener">bootloader</a> interno.
 
 
 ## QUANDO RESETTARE COMPLETAMENTE
