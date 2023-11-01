@@ -47,19 +47,13 @@ Con Python 3 installato, apri un terminale di comando e installa l'ultima versio
 pip installa esptool
 ```
 
-> Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso, provare a installare esptool.py con:
+#### Nota: con alcune installazioni Python questo comando potrebbe non funzionare e riceverai un errore. In questo caso, provare a installare esptool.py con:
 
 ```bash
 pip3 install esptool
-```
 oppure
-
-```bash
 python -m pip install esptool
-```
-
 oppure infine
-```bash
 pip2 install esptool
 ```
 
