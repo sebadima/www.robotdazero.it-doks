@@ -18,39 +18,43 @@ homepage: false
 
 
 ## Cosa sono le reti mesh
-Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modo peer-to-peer. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un nodo centrale.
+Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modo <a href="https://it.wikipedia.org/wiki/Peer-to-peer" target="_blank" rel="noopener">peer-to-peer</a>. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un server centralizzato.
 
-Le reti mesh sono spesso utilizzate per applicazioni <a href="https://www.ibm.com/topics/internet-of-things#:~:text=The%20Internet%20of%20Things%20(IoT,to%20collect%20and%20share%20data." target="_blank" rel="noopener">IoT</a>, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
+Vengono spesso usate per applicazioni <a href="https://www.ibm.com/topics/internet-of-things#:~:text=The%20Internet%20of%20Things%20(IoT,to%20collect%20and%20share%20data." target="_blank" rel="noopener">IoT</a>, in cui è necessario collegare un gran numero di dispositivi in un'area topografica estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali:
 
-### Vantaggi rispetto alle reti Wi-Fi
-- Scalabilità: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
-- Resilienza: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
-- Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
+## Vantaggi delle reti mesh
 
-L'ESP32 è un microcontrollore che supporta le reti mesh. È possibile utilizzare l'ESP32 per creare reti mesh di piccole, medie o grandi dimensioni.
+- <a href="https://www.capterra.it/glossary/135/scalability#:~:text=Scalabilit%C3%A0%20%C3%A8%20un%20termine%20utilizzato,aumentano%20nel%20corso%20del%20tempo." target="_blank" rel="noopener">Scalabilità</a>: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
+- <a href="https://www.ibm.com/it-it/topics/cyber-resilience#:~:text=La%20cyber%20resilience%20%C3%A8%20un,disastri%20naturali%20o%20crisi%20economiche." target="_blank" rel="noopener">Resilienza</a>: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
+- <a href="https://it.wikipedia.org/wiki/Green_computing" target="_blank" rel="noopener">Efficienza energetica</a>: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
+
+## Svantaggi delle reti mesh
+
+Le reti mesh presentano anche alcuni svantaggi, tra cui:
+
+- Complessità: La configurazione e la gestione delle reti mesh può essere più complessa rispetto alle reti Wi-Fi tradizionali.
+- Performance: Le reti mesh possono avere prestazioni inferiori rispetto alle reti Wi-Fi tradizionali, soprattutto per applicazioni che richiedono un elevato throughput di dati.
+
+In questo post vedremo come con la scheda micontroller <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a> sia facile creare reti mesh di piccole e grandi dimensioni. Anxitutto vediamo di quali librerie abbiamo bisogno.
 
 ## Il software di sistema
-Esistono diverse librerie che possono essere utilizzate per creare reti mesh con ESP32. Una delle librerie più popolari è painlessMesh. Questa libreria è facile da usare e offre una vasta gamma di funzionalità.
+Esistono diverse librerie che possono essere utilizzate per creare reti mesh con ESP32. Una delle librerie più popolari è <a href="https://gitlab.com/painlessMesh/painlessMesh" target="_blank" rel="noopener">painlessMesh</a>. Questa libreria è facile da usare e offre una vasta gamma di funzionalità.
 
-Come avviene lo scambio di messaggi semplici utilizzando il protocollo ESP-MESH:
+In dettaglio, avendo risolto il problema della libreria, è necessario eseguire i seguenti passaggi:
 
-> Ora, impariamo come scambiare messaggi semplici tra più schede ESP32 / ESP8266. Ad esempio useremo quattro schede ESP tra cui una NodeMCU ESP8266 e tre schede di sviluppo ESP32. La scheda ESP8266 verrà assegnata come Nodo 1 e le schede ESP32 verranno assegnate rispettivamente al Nodo 2, al Nodo 3 e al Nodo 4.
+**1** - Installare la libreria painlessMesh.
 
-> Il nostro obiettivo sarà quello di mostrare come scambiare un semplice messaggio tra schede ESP utilizzando il protocollo di rete ESP-MESH utilizzando la libreria painlessMesh che abbiamo installato in precedenza. Il messaggio scambiato sarà: 'Questo è un messaggio di test dal nodo X' dove X specificherà il numero assegnato a ciascuna scheda nello schizzo del programma. Il nodo 1 riceverà messaggi dal Nodo 2, dal Nodo 3 e dal Nodo 4. Allo stesso modo, ogni Nodo riceverà messaggi dall'altro nodo e invierà il proprio messaggio al resto dei nodi.
+**2** - Programmare ogni dispositivo ESP32 con il codice per creare una rete mesh.
 
-Per creare una rete mesh con ESP32, è necessario eseguire i seguenti passaggi:
+**3** - Accendere i dispositivi ESP32.
 
-Installare la libreria painlessMesh.
-Programmare ogni dispositivo ESP32 con il codice per creare una rete mesh.
-Accendere i dispositivi ESP32.
-Una volta che i dispositivi ESP32 sono accesi, si connetteranno tra loro automaticamente per formare una rete mesh.
+**4** - Una volta che i dispositivi ESP32 saranno accesi, si connetteranno tra loro automaticamente per formare la rete mesh.
 
-
+In Tobotodazero poniamo sempre ub gorte accento sulle applicazioni ambientali e anche in questo caso abbiamo cercato delle applicazioni pratiche per controllare e combattere (almeno a livello di informazione) i danni dell'inquinamento.
 
 ## Monitoraggio ambientale con le reti mesh
 
-Le reti mesh possono essere utilizzate per monitorare i livelli di inquinamento, la qualità dell'aria e altri dati ambientali. Veidmao un esempio di partenza su come rilevare e condividere valori ambientali:
-
+Le reti mesh possono essere utilizzate per monitorare i livelli di inquinamento, la qualità dell'aria e altri dati ambientali. Vediamo un esempio di partenza su come rilevare e condividere valori ambientali:
 
 Ecco un programma C++ per effettuare il monitoraggio ambientale con le reti mesh per ESP32:
 
@@ -90,7 +94,7 @@ void readSensor() {
   // Acquisisce la temperatura
   float temperature = bme.readTemperature();
 
-  // Acquisisce l'umidità
+  // Acquisisce la umidità
   float humidity = bme.readHumidity();
 
   // Acquisisce la pressione
@@ -118,13 +122,10 @@ void loop() {
     // Tenta di connettersi alla rete mesh
     mesh.connect(MESH_SSID, MESH_PASSWORD, MESH_PORT);
   }
-
   // Acquisisce i dati dal sensore BME280
   readSensor();
-
   // Invia i dati al nodo gateway
   sendData();
-
   // Attende 1 secondo prima di eseguire il loop successivo
   delay(1000);
 }
@@ -133,30 +134,24 @@ void loop() {
 void setup() {
   // Inizializza la seriale
   Serial.begin(115200);
-
   // Inizializza il sensore BME280
   initSensor();
-
   // Inizializza la rete mesh
   mesh.init(MESH_SSID, MESH_PASSWORD, MESH_PORT);
-
   // Imposta il dispositivo come nodo router
   mesh.setRouter(true);
-
   // Imposta il dispositivo come nodo gateway
   mesh.setRoot();
 }
 ```
 
 
-Inizializza la seriale, il sensore <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/" target="_blank" rel="noopener">BME280</a> e la rete mesh.
-Accede alla rete mesh.
-Acquisisce i dati dal sensore BME280.
-Invia i dati al nodo <a href="https://it.wikipedia.org/wiki/Gateway_(informatica)" target="_blank" rel="noopener">gateway</a>.
-  Attende 1 secondo prima di eseguire il loop successivo.
+La fase di setup iizializza la seriale, il sensore <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/" target="_blank" rel="noopener">BME280</a> e la rete mesh. La funzione loop, molto semplice, acquisisce i dati dal sensore BME280 e li invia i dati al nodo <a href="https://it.wikipedia.org/wiki/Gateway_(informatica)" target="_blank" rel="noopener">gateway</a>.
+
+Quindi attende 1 secondo prima di eseguire il loop successivo.
 Per utilizzare questo programma, è necessario collegare un sensore BME280 al dispositivo <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a>. Il sensore BME280 è un sensore ambientale che misura la temperatura, l'umidità e la pressione.
 
-Una volta che il programma è in esecuzione, il dispositivo ESP32 inizierà a acquisire i dati dal sensore BME280 e a inviarli al nodo gateway. Il nodo gateway può quindi visualizzare i dati acquisiti o inviarli a un server remoto.
+Quando il programma "entra a regime", l'ESP32 acquisisce i dati dal sensore li invia al gateway e il nodo gateway può a sua volta inviare ad una app come la nostra "<a href="https://www.robotdazero.it/docs/piattaforma/quick-start/" target="_blank" rel="noopener">Kaspian</a>" per visualizzare i dati acquisiti.
 
 #### Ecco un esempio di output del programma:
 
@@ -164,26 +159,9 @@ Una volta che il programma è in esecuzione, il dispositivo ESP32 inizierà a ac
 Umidità: 45%
 Pressione: 1013.25 hPa
 
+Le reti mesh per ESP32 risolvono in economia il difficile problema di rilevare dati su una zona geografica estesa come potrebbe essere un terreno agricolo e sono una valida alternative alle <a href="https://it.wikipedia.org/wiki/LoRa" target="_blank" rel="noopener">schede LoRa</a> per la tramissione di dati in formato testo come ad esempio <a href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank" rel="noopener">Json</a>. 
 
-#### Smart home 
-Le reti mesh possono essere utilizzate per controllare i dispositivi di casa intelligente, come luci, termostati e serrature.
-#### Sicurezza 
-Le reti mesh possono essere utilizzate per creare sistemi di sicurezza wireless.
-
-## Vantaggi delle reti mesh
-
-Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
-
-- <a href="https://www.capterra.it/glossary/135/scalability#:~:text=Scalabilit%C3%A0%20%C3%A8%20un%20termine%20utilizzato,aumentano%20nel%20corso%20del%20tempo." target="_blank" rel="noopener">Scalabilità</a>: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
-- <a href="https://www.ibm.com/it-it/topics/cyber-resilience#:~:text=La%20cyber%20resilience%20%C3%A8%20un,disastri%20naturali%20o%20crisi%20economiche." target="_blank" rel="noopener">Resilienza</a>: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
-- Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
-
-## Svantaggi delle reti mesh
-
-Le reti mesh presentano anche alcuni svantaggi, tra cui:
-
- - Complessità: La configurazione e la gestione delle reti mesh può essere più complessa rispetto alle reti Wi-Fi tradizionali.
-- Performance: Le reti mesh possono avere prestazioni inferiori rispetto alle reti Wi-Fi tradizionali, soprattutto per applicazioni che richiedono un elevato throughput di dati.
+> I progressi della tecnologia "mesh" fanno intravedere la possibilità di usare l'ESP32 anche per trasmettere foto e video a bassissima risoluzione. Cosa del tutto impensabile per il protocollo LoRa.
 
 <br>
 <p style="font-size: 12px;"> R.118.1.0.1 </p>
