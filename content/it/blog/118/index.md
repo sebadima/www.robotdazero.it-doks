@@ -18,9 +18,9 @@ homepage: false
 
 
 ## Cosa sono le reti mesh
-Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modo <a href="https://it.wikipedia.org/wiki/Peer-to-peer" target="_blank" rel="noopener">peer-to-peer</a>. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un server centralizzato.
+Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modalità <a href="https://it.wikipedia.org/wiki/Peer-to-peer" target="_blank" rel="noopener">peer-to-peer</a>. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un server centralizzato.
 
-Vengono spesso usate per applicazioni <a href="https://www.ibm.com/topics/internet-of-things#:~:text=The%20Internet%20of%20Things%20(IoT,to%20collect%20and%20share%20data." target="_blank" rel="noopener">IoT</a>, in cui è necessario collegare un gran numero di dispositivi in un'area topografica estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali:
+Vengono spesso usate per applicazioni <a href="https://www.ibm.com/topics/internet-of-things#:~:text=The%20Internet%20of%20Things%20(IoT,to%20collect%20and%20share%20data." target="_blank" rel="noopener">IoT</a> in cui è necessario collegare un gran numero di dispositivi in un'area topografica estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali:
 
 ## Vantaggi delle reti mesh
 
@@ -35,12 +35,12 @@ Le reti mesh presentano anche alcuni svantaggi, tra cui:
 - Complessità: La configurazione e la gestione delle reti mesh può essere più complessa rispetto alle reti Wi-Fi tradizionali.
 - Performance: Le reti mesh possono avere prestazioni inferiori rispetto alle reti Wi-Fi tradizionali, soprattutto per applicazioni che richiedono un elevato throughput di dati.
 
-In questo post vedremo come con la scheda micontroller <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a> sia facile creare reti mesh di piccole e grandi dimensioni. Anxitutto vediamo di quali librerie abbiamo bisogno.
+In questo post vedremo come con la scheda micontroller <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a> sia facile creare reti mesh di piccole e grandi dimensioni. Anzitutto vediamo di quali librerie software abbiamo bisogno.
 
 ## Il software di sistema
 Esistono diverse librerie che possono essere utilizzate per creare reti mesh con ESP32. Una delle librerie più popolari è <a href="https://gitlab.com/painlessMesh/painlessMesh" target="_blank" rel="noopener">painlessMesh</a>. Questa libreria è facile da usare e offre una vasta gamma di funzionalità.
 
-In dettaglio, avendo risolto il problema della libreria, è necessario eseguire i seguenti passaggi:
+A livello operativo, pur avendo risolto il node della libreria, rimangono alcuni passaggi da risolvere:
 
 **1** - Installare la libreria painlessMesh.
 
@@ -50,7 +50,7 @@ In dettaglio, avendo risolto il problema della libreria, è necessario eseguire 
 
 **4** - Una volta che i dispositivi ESP32 saranno accesi, si connetteranno tra loro automaticamente per formare la rete mesh.
 
-In Tobotodazero poniamo sempre ub gorte accento sulle applicazioni ambientali e anche in questo caso abbiamo cercato delle applicazioni pratiche per controllare e combattere (almeno a livello di informazione) i danni dell'inquinamento.
+In Robotdazero poniamo sempre un forte accento sulle applicazioni ambientali e anche in questo caso abbiamo pensato a delle applicazioni pratiche per controllare e combattere (almeno a livello di informazione) i danni dell'inquinamento.
 
 ## Monitoraggio ambientale con le reti mesh
 
@@ -145,13 +145,10 @@ void setup() {
 }
 ```
 
-
-La fase di setup iizializza la seriale, il sensore <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/" target="_blank" rel="noopener">BME280</a> e la rete mesh. La funzione loop, molto semplice, acquisisce i dati dal sensore BME280 e li invia i dati al nodo <a href="https://it.wikipedia.org/wiki/Gateway_(informatica)" target="_blank" rel="noopener">gateway</a>.
+La fase di setup inizializza la seriale, il sensore <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/" target="_blank" rel="noopener">BME280</a> e la rete mesh. La funzione loop, molto semplice, acquisisce i dati dal sensore BME280 e li invia i dati al nodo <a href="https://it.wikipedia.org/wiki/Gateway_(informatica)" target="_blank" rel="noopener">gateway</a>.
 
 Quindi attende 1 secondo prima di eseguire il loop successivo.
-Per utilizzare questo programma, è necessario collegare un sensore BME280 al dispositivo <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a>. Il sensore BME280 è un sensore ambientale che misura la temperatura, l'umidità e la pressione.
-
-Quando il programma "entra a regime", l'ESP32 acquisisce i dati dal sensore li invia al gateway e il nodo gateway può a sua volta inviare ad una app come la nostra "<a href="https://www.robotdazero.it/docs/piattaforma/quick-start/" target="_blank" rel="noopener">Kaspian</a>" per visualizzare i dati acquisiti.
+Per utilizzare questo programma, è necessario collegare un sensore BME280 al dispositivo <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a>. Il sensore BME280 è un sensore ambientale che misura la temperatura, l'umidità e la pressione. Quando il programma "entra a regime", l'ESP32 acquisisce i dati dal sensore li invia al gateway e il nodo gateway può a sua volta inviare ad una app come la nostra "<a href="https://www.robotdazero.it/docs/piattaforma/quick-start/" target="_blank" rel="noopener">Kaspian</a>" per visualizzare i dati acquisiti.
 
 #### Ecco un esempio di output del programma:
 
@@ -159,9 +156,10 @@ Quando il programma "entra a regime", l'ESP32 acquisisce i dati dal sensore li i
 Umidità: 45%
 Pressione: 1013.25 hPa
 
-Le reti mesh per ESP32 risolvono in economia il difficile problema di rilevare dati su una zona geografica estesa come potrebbe essere un terreno agricolo e sono una valida alternative alle <a href="https://it.wikipedia.org/wiki/LoRa" target="_blank" rel="noopener">schede LoRa</a> per la tramissione di dati in formato testo come ad esempio <a href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank" rel="noopener">Json</a>. 
+Le reti mesh per ESP32 risolvono in economia il difficile problema di rilevare dati su una zona geografica estesa come potrebbe essere un terreno agricolo e sono una valida alternative alle <a href="https://it.wikipedia.org/wiki/LoRa" target="_blank" rel="noopener">schede LoRa</a> per la tramissione di dati in formato <a href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank" rel="noopener">Json</a>. 
 
-> I progressi della tecnologia "mesh" fanno intravedere la possibilità di usare l'ESP32 anche per trasmettere foto e video a bassissima risoluzione. Cosa del tutto impensabile per il protocollo LoRa.
+##### I progressi della tecnologia "mesh" fanno comunque intravedere l'utilizzo dell'ESP32 anche per trasmettere foto ad alta e video a bassa risoluzione, cosa del tutto impensabile per il protocollo LoRa.
 
 <br>
-<p style="font-size: 0.8em;">R.118.2.1.0</p>
+<p style="font-size: 0.8em;">R.118.2.2.0</p>
+<br>
