@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["python", "programmazione"]
+tags: ["ESP32", "programmazione", "reti mesh", "ambiente"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
