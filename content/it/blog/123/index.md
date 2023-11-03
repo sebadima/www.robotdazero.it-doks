@@ -15,7 +15,7 @@ homepage: false
 ---
 
 
-#### Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32
+## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32
 
 ```bash
 #include "WiFi.h"
@@ -33,7 +33,7 @@ void loop(){
 ```
 
 
-##### Il file platformio.ini associato
+#### Il file platformio.ini associato
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -77,7 +77,7 @@ void loop(){
 }
 ```     
 
-##### Il file platformio.ini associato, specifico per ESP32CAM
+#### Il file platformio.ini associato, specifico per ESP32CAM
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -109,10 +109,7 @@ lib_deps =
 
 
 
-
-22222222222222222222222222222222222222222222222222222222 sender 222222222222222222222222222222222222
-
-##### Il programma per inviare dei dati campione dall'ESP32
+## Il programma per inviare dei dati campione con l'ESP32
 
 ```bash
 #include <esp_now.h>
@@ -195,7 +192,6 @@ void loop() {
 
 ```
 
-222222222222222222222222222222222222222222222222222222 sender 222222222222222222222222222222222222
 
 
 
@@ -206,22 +202,7 @@ void loop() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Il programma per ricevere dati campione dall'ESP32
+## Il programma per ricevere i dati con la ESP32-CAM
 ```bash
 #include <esp_now.h>
 #include <WiFi.h>
@@ -280,4 +261,4 @@ void loop() {
 
 
 <br>
-<p style="font-size: 0.8em;">R.123.1.5.0</p>
+<p style="font-size: 0.8em;">R.123.1.5.2</p>
