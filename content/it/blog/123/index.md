@@ -55,6 +55,8 @@ lib_deps =
 ```
 
 
+L'output del programma <a href="https://wiki.emacinc.com/wiki/Getting_Started_With_Minicom" target="_blank" rel="noopener">Minicom</a> con l'indirizzo MAC dell'ESP32 "normale"
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
 
 
 
@@ -103,7 +105,10 @@ lib_deps =
 ```
 
 
+L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
 
+> Nella immagine puoi vedere l'indirizzo MAC E0:5A:1B:6C:E4:B0 che useremo nel programma successivo.
 
 
 
@@ -253,12 +258,11 @@ void loop() {
 
 
 
-
-
-
-
-
-
-
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
-<p style="font-size: 0.8em;">R.123.1.5.2</p>
+<br>
+Nella immagine si vede la sequenza dei dati campione inviati dall'ESP32 classico e ricevuti dall'ESP32CAM, che in questo caso funzione da ricevitore.
+<br>
+<br>
+<br>
+<p style="font-size: 0.8em;">R.123.1.5.4</p>
