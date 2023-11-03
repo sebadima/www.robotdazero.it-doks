@@ -1,7 +1,7 @@
 ---
 title: "Cosa sono le reti mesh per ESP32?"
 description: "In questo post parleremo delle reti wireless peer to peer per ESP32."
-excerpt: "Le reti mesh sono spesso utilizzate per applicazioni IoT, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui ..."
+excerpt: "Le reti mesh sono spesso utilizzate per applicazioni IoT, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui..."
 date: 2023-10-26T09:19:42+01:00
 lastmod: 2023-26-01T09:19:42+01:00
 draft: false
@@ -13,7 +13,6 @@ contributors: ["sergio rame"]
 pinned: false
 homepage: false
 ---
-
 
 
 
