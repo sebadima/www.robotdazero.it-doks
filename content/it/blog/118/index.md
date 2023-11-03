@@ -164,5 +164,4 @@ Le reti mesh per ESP32 risolvono in economia il difficile problema di rilevare d
 > I progressi della tecnologia "mesh" fanno intravedere la possibilità di usare l'ESP32 anche per trasmettere foto e video a bassissima risoluzione. Cosa del tutto impensabile per il protocollo LoRa.
 
 <br>
-<p style="font-size: 12px;"> R.118.1.0.1 </p>
-<br>
+<p style="font-size: 0.8em;">R.118.2.1.0</p>
