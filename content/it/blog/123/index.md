@@ -15,7 +15,7 @@ homepage: false
 ---
 
 
-#### Il codice sorgente per trovare l'indirizzo MAC di un ESP32
+#### Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32
 
 ```bash
 #include "WiFi.h"
@@ -76,7 +76,7 @@ lib_deps =
 
 
 
-#### Il codice sorgente per trovare l'inirizzo MAC di un ESP32CAM
+#### Il codice sorgente main.ino per trovare l'inirizzo MAC di un ESP32CAM
 
 ```bash
 #include "WiFi.h"
@@ -93,7 +93,7 @@ void loop(){
 }
 ```     
 
-##### Il file platformio.ini associato
+##### Il file platformio.ini associato,  specifico per ESP32CAM
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -129,5 +129,12 @@ lib_deps =
 
 
 
+
+
+
+
+
+
+
 <br>
-<p style="font-size: 0.8em;">R.123.1.0.0</p>
+<p style="font-size: 0.8em;">R.123.1.1.0</p>
