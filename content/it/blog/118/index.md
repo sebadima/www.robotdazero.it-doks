@@ -158,8 +158,7 @@ Pressione: 1013.25 hPa
 
 Le reti mesh per ESP32 risolvono in economia il difficile problema di rilevare dati su una zona geografica estesa come potrebbe essere un terreno agricolo e sono una valida alternative alle <a href="https://it.wikipedia.org/wiki/LoRa" target="_blank" rel="noopener">schede LoRa</a> per la tramissione di dati in formato <a href="https://it.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank" rel="noopener">Json</a>. 
 
-##### I progressi della tecnologia "mesh" fanno comunque intravedere l'utilizzo dell'ESP32 anche per trasmettere foto ad alta e video a bassa risoluzione, cosa del tutto impensabile per il protocollo LoRa.
+##### I progressi della tecnologia "mesh" fanno comunque intravedere l'utilizzo dell'ESP32 anche per trasmettere foto ad alta risoluzione e video a bassa risoluzione, cosa del tutto impensabile per il protocollo LoRa.
 
 <br>
-<p style="font-size: 0.8em;">R.118.2.2.1</p>
-<br>
+<p style="font-size: 0.8em;">R.118.2.3.0</p>
