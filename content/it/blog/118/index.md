@@ -20,7 +20,7 @@ homepage: false
 ## Cosa sono le reti mesh
 Le reti mesh sono reti wireless in cui i dispositivi sono connessi tra loro in modo peer-to-peer. Questo significa che ogni dispositivo può comunicare direttamente con qualsiasi altro dispositivo nella rete, senza bisogno di un nodo centrale.
 
-Le reti mesh sono spesso utilizzate per applicazioni IoT, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
+Le reti mesh sono spesso utilizzate per applicazioni <a href="https://www.ibm.com/topics/internet-of-things#:~:text=The%20Internet%20of%20Things%20(IoT,to%20collect%20and%20share%20data." target="_blank" rel="noopener">IoT</a>, in cui è necessario collegare un gran numero di dispositivi in un'area estesa. Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
 
 ### Vantaggi rispetto alle reti Wi-Fi
 - Scalabilità: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
@@ -54,7 +54,7 @@ Le reti mesh possono essere utilizzate per monitorare i livelli di inquinamento,
 
 Ecco un programma C++ per effettuare il monitoraggio ambientale con le reti mesh per ESP32:
 
-#### Il codice sorgente
+### Il codice sorgente
 
 ```bash
 #include <painlessMesh.h>
@@ -149,37 +149,41 @@ void setup() {
 ```
 
 
-Inizializza la seriale, il sensore BME280 e la rete mesh.
+Inizializza la seriale, il sensore <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/" target="_blank" rel="noopener">BME280</a> e la rete mesh.
 Accede alla rete mesh.
 Acquisisce i dati dal sensore BME280.
-Invia i dati al nodo gateway.
-Attende 1 secondo prima di eseguire il loop successivo.
-Per utilizzare questo programma, è necessario collegare un sensore BME280 al dispositivo ESP32. Il sensore BME280 è un sensore ambientale che misura la temperatura, l'umidità e la pressione.
+Invia i dati al nodo <a href="https://it.wikipedia.org/wiki/Gateway_(informatica)" target="_blank" rel="noopener">gateway</a>.
+  Attende 1 secondo prima di eseguire il loop successivo.
+Per utilizzare questo programma, è necessario collegare un sensore BME280 al dispositivo <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">ESP32</a>. Il sensore BME280 è un sensore ambientale che misura la temperatura, l'umidità e la pressione.
 
 Una volta che il programma è in esecuzione, il dispositivo ESP32 inizierà a acquisire i dati dal sensore BME280 e a inviarli al nodo gateway. Il nodo gateway può quindi visualizzare i dati acquisiti o inviarli a un server remoto.
 
-Ecco un esempio di output del programma:
+#### Ecco un esempio di output del programma:
 
-Temperatura: 22.5 °C
+> Temperatura: 22.5 °C
 Umidità: 45%
 Pressione: 1013.25 hPa
 
 
-Smart home: Le reti mesh possono essere utilizzate per controllare i dispositivi di casa intelligente, come luci, termostati e serrature.
-Sicurezza: Le reti mesh possono essere utilizzate per creare sistemi di sicurezza wireless.
-Vantaggi delle reti mesh
+#### Smart home 
+Le reti mesh possono essere utilizzate per controllare i dispositivi di casa intelligente, come luci, termostati e serrature.
+#### Sicurezza 
+Le reti mesh possono essere utilizzate per creare sistemi di sicurezza wireless.
+
+## Vantaggi delle reti mesh
 
 Le reti mesh offrono una serie di vantaggi rispetto alle reti Wi-Fi tradizionali, tra cui:
 
-Scalabilità: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
-Resilienza: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
-Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
-Svantaggi delle reti mesh
+- <a href="https://www.capterra.it/glossary/135/scalability#:~:text=Scalabilit%C3%A0%20%C3%A8%20un%20termine%20utilizzato,aumentano%20nel%20corso%20del%20tempo." target="_blank" rel="noopener">Scalabilità</a>: Le reti mesh possono essere facilmente scalate per aggiungere nuovi dispositivi.
+- <a href="https://www.ibm.com/it-it/topics/cyber-resilience#:~:text=La%20cyber%20resilience%20%C3%A8%20un,disastri%20naturali%20o%20crisi%20economiche." target="_blank" rel="noopener">Resilienza</a>: Le reti mesh possono continuare a funzionare anche se alcuni dispositivi vengono scollegati o danneggiati.
+- Efficienza energetica: Le reti mesh utilizzano meno energia rispetto alle reti Wi-Fi tradizionali.
+
+## Svantaggi delle reti mesh
 
 Le reti mesh presentano anche alcuni svantaggi, tra cui:
 
-Complessità: La configurazione e la gestione delle reti mesh può essere più complessa rispetto alle reti Wi-Fi tradizionali.
-Performance: Le reti mesh possono avere prestazioni inferiori rispetto alle reti Wi-Fi tradizionali, soprattutto per applicazioni che richiedono un elevato throughput di dati.
+ - Complessità: La configurazione e la gestione delle reti mesh può essere più complessa rispetto alle reti Wi-Fi tradizionali.
+- Performance: Le reti mesh possono avere prestazioni inferiori rispetto alle reti Wi-Fi tradizionali, soprattutto per applicazioni che richiedono un elevato throughput di dati.
 
 <br>
 <p style="font-size: 12px;"> R.118.1.0.1 </p>
