@@ -60,23 +60,7 @@ lib_deps =
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Il codice sorgente main.ino per trovare l'inirizzo MAC di un ESP32CAM
+#### Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32CAM
 
 ```bash
 #include "WiFi.h"
@@ -93,7 +77,7 @@ void loop(){
 }
 ```     
 
-##### Il file platformio.ini associato,  specifico per ESP32CAM
+##### Il file platformio.ini associato, specifico per ESP32CAM
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -126,6 +110,48 @@ lib_deps =
 
 
 
+22222222222222222222222222222222222222222222222222222222 sender 222222222222222222222222222222222222
+
+```bash
+```
+```bash
+```
+
+222222222222222222222222222222222222222222222222222222 sender 222222222222222222222222222222222222
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+33333333333333333333333333333333333333333333333333333333 receive 33333333333333333333333333333333
+
+
+```bash
+```
+
+```bash
+```
+
+33333333333333333333333333333333333333333333333333333333 receive 33333333333333333333333333333333
 
 
 
