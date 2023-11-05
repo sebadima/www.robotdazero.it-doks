@@ -68,7 +68,7 @@ L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
 
 uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
 
-## Il programma per inviare dei dati campione con l'ESP32
+## Il programma per inviare dei dati campione con l'ESP32-CAM
 
 ```bash
 #include <esp_now.h>
@@ -181,4 +181,4 @@ Nella immagine si vede la sequenza dei dati campione inviati dall'ESP32 classico
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.1.6.0</p>
+<p style="font-size: 0.8em;">R.123.1.8.0</p>
