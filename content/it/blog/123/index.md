@@ -15,6 +15,9 @@ homepage: false
 ---
 
 
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="">
+
 ## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
 
 ```bash
@@ -176,4 +179,8 @@ Nella immagine si vede la sequenza automatica generata dal primo ESP32-CAM e ric
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.0.0</p>
+<p style="font-size: 0.8em;">R.123.3.0.1</p>
+
+
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="">
