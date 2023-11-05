@@ -172,8 +172,8 @@ void loop() {
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
 <br>
-Nella immagine si vede la sequenza dei dati campione inviati dall'ESP32 classico e ricevuti dall'ESP32-CAM, che in questo caso funzione da ricevitore.
+Nella immagine si vede la sequenza dei dati campione inviati dal primo ESP32-CAM classico e ricevuti dalla seconda ESP32-CAM.
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.1.8.0</p>
+<p style="font-size: 0.8em;">R.123.1.9.0</p>
