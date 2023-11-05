@@ -175,12 +175,8 @@ void loop() {
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
 <br>
-Nella immagine si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuti dalla seconda ESP32-CAM.
+Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuta dalla seconda ESP32-CAM (619,620,621, etc..).
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.0.1</p>
-
-
-
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="">
+<p style="font-size: 0.8em;">R.123.3.2.1</p>
