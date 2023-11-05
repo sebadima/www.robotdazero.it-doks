@@ -1,6 +1,6 @@
 ---
-title: "Un progetto per ESP32 e la rete di tipo mesh"
-description: "Un progetto per ESP32 e la rete di tipo mesh"
+title: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
+description: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
 excerpt: "..."
 date: 2023-11-02T09:19:42+01:00
 lastmod: 2023-11-02T09:19:42+01:00
@@ -60,13 +60,9 @@ lib_deps =
 L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
 
-> Nella immagine puoi vedere l'indirizzo MAC E0:5A:1B:6C:E4:B0 che useremo nel programma successivo.
+> Nella immagine puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma successivo.
 
 
-
-
-
-uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
 
 ## Il programma per inviare dei dati campione con l'ESP32-CAM
 
@@ -77,7 +73,7 @@ uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
 // Indirizzo MAC del dispositivo di destinazione
 // Sostituire nella riga in basso indirizzo MAC
 // trovato con la utility apposita
-uint8_t broadcastAddress[] = {0x08, 0xD1, 0xF9, 0x99, 0x2D, 0x84};
+uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
 
 // Struct per definire il formato dei dati
 typedef struct struct_messaggio {
@@ -170,9 +166,8 @@ void setup() {
 }
  
 void loop() {
-}```
-
-
+}
+```
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
