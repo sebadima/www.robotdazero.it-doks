@@ -57,7 +57,7 @@ lib_deps =
 ```
 
 
-L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
+L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-CAM
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
 
 > Nella immagine puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma successivo.
@@ -132,7 +132,7 @@ void loop() {
 
 
 
-## Il programma per ricevere i dati con la ESP32-CAM
+## Il programma per ricevere i dati con la seconda ESP32-CAM
 ```bash
 #include <esp_now.h>
 #include <WiFi.h>
@@ -172,8 +172,8 @@ void loop() {
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
 <br>
-Nella immagine si vede la sequenza dei dati campione inviati dal primo ESP32-CAM classico e ricevuti dalla seconda ESP32-CAM.
+Nella immagine si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuti dalla seconda ESP32-CAM.
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.1.9.0</p>
+<p style="font-size: 0.8em;">R.123.3.0.0</p>
