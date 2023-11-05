@@ -15,7 +15,7 @@ homepage: false
 ---
 
 
-## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32
+## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
 
 ```bash
 #include "WiFi.h"
@@ -28,58 +28,10 @@ void setup(){
 }
  
 void loop(){ 
-
 }
 ```
 
-
-#### Il file platformio.ini associato
-
-```bash
-; PlatformIO Project Configuration File
-;
-;   Build options: build flags, source filter
-;   Upload options: custom upload port, speed and extra flags
-;   Library options: dependencies, extra library storages
-;   Advanced options: extra scripting
-;
-; Please visit documentation for the other options and examples
-; https://docs.platformio.org/page/projectconf.html
-
-[env:esp32dev]
-upload_port = /dev/ttyUSB0
-platform = espressif32
-board = esp32dev
-framework = arduino
-lib_deps = 
-```
-
-
-L'output del programma <a href="https://wiki.emacinc.com/wiki/Getting_Started_With_Minicom" target="_blank" rel="noopener">Minicom</a> con l'indirizzo MAC dell'ESP32 "normale"
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.png" alt="">
-
-
-
-
-
-#### Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32CAM
-
-```bash
-#include "WiFi.h"
- 
-void setup(){
-  Serial.begin(115200);
-  WiFi.mode(WIFI_MODE_STA);
-  Serial.print("indirizzo MAC ESP32CAM="); 
-  Serial.println(WiFi.macAddress());
-}
- 
-void loop(){ 
-
-}
-```     
-
-#### Il file platformio.ini associato, specifico per ESP32CAM
+### Il file platformio.ini associato, specifico per ESP32-CAM
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -114,6 +66,8 @@ L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
 
 
 
+uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
+
 ## Il programma per inviare dei dati campione con l'ESP32
 
 ```bash
@@ -123,14 +77,11 @@ L'output del "serial monitor" di Arduino con l'indirizzo MAC della ESP32-CAM
 // Indirizzo MAC del dispositivo di destinazione
 // Sostituire nella riga in basso indirizzo MAC
 // trovato con la utility apposita
-uint8_t broadcastAddress[] = {0xE0, 0x5A, 0x1B, 0x6C, 0xE4, 0xB0};
+uint8_t broadcastAddress[] = {0x08, 0xD1, 0xF9, 0x99, 0x2D, 0x84};
 
 // Struct per definire il formato dei dati
 typedef struct struct_messaggio {
-  char a[32];
   int contatore;
-  float c;
-  bool d;
 } struct_messaggio;
 
 struct_messaggio Dati;
@@ -143,25 +94,19 @@ void suInvioDati(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Consegna positiva" : "Errore di consegna");
 }
 
-
-
 void setup() {
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
-
   // Inizializza ESP-NOW
   if (esp_now_init() != ESP_OK) {
     Serial.println("Errore di inizializzazione per ESP-NOW");
     return;
   }
-
   esp_now_register_send_cb(suInvioDati);
   ix= 0;
-
   memcpy(peerInfo.peer_addr, broadcastAddress, 6);
   peerInfo.channel = 0;  
   peerInfo.encrypt = false;
-  
   // Aggiungi dispositivo
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
     Serial.println("Non riesco add aggiunger il dispositivo");
@@ -171,21 +116,10 @@ void setup() {
  
 void loop() {
   // Valori da inviare
-  strcpy(Dati.a, "Contatore in sequenza:");
   Dati.contatore = ix;
-  Dati.c = (float)ix * 1000.0;
-  if (ix % 2) {
-    Dati.d = false;
-  }
-  else {
-    Dati.d = true;
-  }
-
   ix=ix+1;
-
   // invio del messaggio
   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &Dati, sizeof(Dati));
-   
   if (result == ESP_OK) {
     Serial.println("Messaggio inviato con successo");
   }
@@ -202,11 +136,6 @@ void loop() {
 
 
 
-
-
-
-
-
 ## Il programma per ricevere i dati con la ESP32-CAM
 ```bash
 #include <esp_now.h>
@@ -214,10 +143,7 @@ void loop() {
 
 // Struttura di esempio
 typedef struct struct_messaggio {
-    char a[32];
     int b;
-    float c;
-    bool d;
 } struct_messaggio;
 
 struct_messaggio Dati;
@@ -225,44 +151,34 @@ struct_messaggio Dati;
 // Funzione di callback dopo invio dati
 void suDatiRicevuti(const uint8_t * mac, const uint8_t *incomingData, int len) {
   memcpy(&Dati, incomingData, sizeof(Dati));
-  Serial.print("Conteggio bytes ricevuti: ");
+  Serial.print("Conteggio dei bytes ricevuti: ");
   Serial.println(len);
-  Serial.print("Char: ");
-  Serial.println(Dati.a);
   Serial.print("Int: ");
   Serial.println(Dati.b);
-  Serial.print("Float: ");
-  Serial.println(Dati.c);
-  Serial.print("Bool pari o dispari: ");
-  Serial.println(Dati.d);
   Serial.println();
 }
  
 void setup() {
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
-
   // Inizializza la rete ESP-NOW
   if (esp_now_init() != ESP_OK) {
     Serial.println("Errore nella inizialiazzione dele rete ESP-NOW");
     return;
   }
-  
   esp_now_register_recv_cb(suDatiRicevuti);
 }
  
 void loop() {
-
-}
-```
+}```
 
 
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
 <br>
 <br>
-Nella immagine si vede la sequenza dei dati campione inviati dall'ESP32 classico e ricevuti dall'ESP32CAM, che in questo caso funzione da ricevitore.
+Nella immagine si vede la sequenza dei dati campione inviati dall'ESP32 classico e ricevuti dall'ESP32-CAM, che in questo caso funzione da ricevitore.
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.1.5.4</p>
+<p style="font-size: 0.8em;">R.123.1.6.0</p>
