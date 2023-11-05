@@ -15,8 +15,14 @@ homepage: false
 ---
 
 
+<hr>
+<br>
+<br>
+<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="la immagine dei sue Esp32-Cam usati in questo progetto iniziale per la rete mesh ESP32-NOW">
+<br>
+<br>
+La immagine dei due dispositivi ESP32-CAM usati per testare e programmare la rete mesh ESP32-NOW.
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="">
 
 ## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
 
