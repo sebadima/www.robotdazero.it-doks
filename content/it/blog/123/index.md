@@ -78,7 +78,7 @@ L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-C
 
 
 
-## Il programma per inviare dei dati campione con l'ESP32-CAM
+## Il programma main.ino per inviare dei dati campione con l'ESP32-CAM
 
 ```bash
 #include <esp_now.h>
@@ -146,7 +146,7 @@ void loop() {
 
 
 
-## Il programma per ricevere i dati con la seconda ESP32-CAM
+## Il programma main.ino per ricevere i dati con la seconda ESP32-CAM
 ```bash
 #include <esp_now.h>
 #include <WiFi.h>
