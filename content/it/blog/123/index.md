@@ -224,4 +224,4 @@ void loop() {
 ### Conclusione
 Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi articoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
 <br>
-<p style="font-size: 0.8em;">R.123.3.5.0</p>
+<p style="font-size: 0.8em;">R.123.3.5.1</p>
