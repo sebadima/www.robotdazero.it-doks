@@ -25,15 +25,15 @@ https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
 <br>
 <br>
 
-In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come prepare due ESP32-CAM di cui sfruttare l'antennino di circa 10 cm offerto in dotazione: si tratta di un microcontroller molto economico disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
+In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come usare due ESP32-CAM di cui sfruttare l'antennino di circa 10 cm offerto in dotazione: si tratta di un microcontroller molto economico disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
 
 ## Un progetto minimale
-In questo post vedremo due programmi base per inviare e ricevere dei dati campione senza usare il WI-FI di casa/ufficio ma usando le caratteristiche radio "native" della scheda ESP32. Si tratta di un vantaggio non da poco perchè permette il funzionamento di tutta la apparecchiatura presso nuovi utenti senza impostare login e password in ogni scheda. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> è comunque ispirato al normale WI-FI e infatti in entrambi i programmi sorgenti useremo la istruzione:
+Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza numerica senza usare il WI-FI di casa/ufficio ma usando le caratteristiche radio "native" della scheda ESP32. Si tratta di un vantaggio non da poco perchè permette di far funzionare tutta la apparecchiatura presso nuovi utenti senza impostare login e password in ogni scheda. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> sostituisce il normale WI-FI ma ne è certamente ispirato: infatti in entrambi i programmi sorgenti useremo questa struzione:
 ```bash 
 #include "WiFi.h" 
 ```
 per settare lo "*scope*" del normale WI-FI e ereditarne variabili e strutture dati. 
-Faremo inoltre uso di un mini programmama per trovare l'indirizzo MAC della scheda ESP cui inviare i dati. ESPNOW prevede, infatti di specificare il MAC di ogni scheda per consegnare il messaggio al giusto device e in questo modo possiamo gestire caso per caso i dispositivi finali. I dispositivi sono accessibili alla rete dopo avere completato l'accesso alla rete con queste istruzioni:
+Faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda ESP cui inviare i dati. Il protocollo ESPNOW prevede, infatti di specificare il MAC di ogni scheda per consegnare il messaggio. In questo modo possiamo gestire caso per caso i dispositivi finali. Tutti i dispositivi "vicini" sono accessibili alla rete dopo avere completato l'accesso con queste istruzioni:
 
 ```bash 
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
@@ -46,7 +46,6 @@ Faremo inoltre uso di un mini programmama per trovare l'indirizzo MAC della sche
 <br>
 <br>
 La immagine dei due dispositivi ESP32-CAM usati per testare e programmare la rete mesh ESP32-NOW.
-
 
 ## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
 Il programma è brevissimo e prevede la "include" a WIFI.h e la stampa della funzione "WiFi.macAddress()".
@@ -67,7 +66,7 @@ void loop(){
 ```
 
 ### Il file platformio.ini associato, specifico per ESP32-CAM
-Usando PlatformiIO potete usare questo file di settaggio per riconoscere in automatico la ESP32-CAM.
+Usando PlatformiIO potete usare questo file di settaggio per riconoscere in automatico la ESP32-CAM:
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -92,14 +91,17 @@ build_flags =
 lib_deps =
 ```
 
+<br>
 
-L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-CAM
+##### L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-CAM:
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
 
-> Nella immagine puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma successivo.
+> Nella immagine sopra puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma di trasmissione.
+
+<br>
 
 ## Il programma main.ino per inviare dei dati campione con l'ESP32-CAM
-In questo programma useremo l'indirizzo MAC scoperto in precedenza (E0:5A:1B:6C:E4:B0) per smistare i dati al dispositivo. E' necessario usare questo sistema anche nel nostro caso, quando i dispositivi collegati sono solo due. 
+In questo programma useremo l'indirizzo MAC scoperto in precedenza per selezionare il dispositivo ricevente. Il protocollo mesh di Espressif prevede di usare il sistema degli indirizzi hardware anche quando i dispositivi sono solo due. 
 
 ```bash
 #include <esp_now.h>
@@ -164,10 +166,8 @@ void loop() {
 
 
 
-
-
-
 ## Il programma main.ino per ricevere i dati con la seconda ESP32-CAM
+Questo è il sorgente per ricevere a mostrare i video il contatore attivato nella scheda trasmittente.
 ```bash
 #include <esp_now.h>
 #include <WiFi.h>
@@ -211,4 +211,4 @@ Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-C
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.3.2</p>
+<p style="font-size: 0.8em;">R.123.3.3.4</p>
