@@ -15,6 +15,7 @@ homepage: false
 ---
 
 
+
 <!--
 https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/
 https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
@@ -190,4 +191,4 @@ Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-C
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.2.2</p>
+<p style="font-size: 0.8em;">R.123.3.2.5</p>
