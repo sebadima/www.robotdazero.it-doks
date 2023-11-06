@@ -47,8 +47,8 @@ Faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda
 <br>
 La immagine dei due dispositivi ESP32-CAM usati per testare e programmare la rete mesh ESP32-NOW.
 
-## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
-Il programma è brevissimo e prevede la "include" a WIFI.h e la stampa della funzione "WiFi.macAddress()".
+## Il codice sorgente main.ino per trovare l'indirizzo MAC di una ESP32-CAM
+Il programma è brevissimo e prevede la "include" a WIFI.h e l'uso della funzione "WiFi.macAddress()".
 Per usarlo serve fare l'upload nell'IDE di Arduino e annotare il valore che appare nel "serial monitor". Se invece usate il programma con PlatformIO potete compilare il programma con "make upload" e quindi lanciare la utility *minicom* per visualizzare l'output.
 
 ```bash
@@ -93,7 +93,7 @@ lib_deps =
 
 <br>
 
-##### L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-CAM:
+##### L'output del "serial monitor" di Arduino con l'indirizzo MAC della scheda ESP32-CAM:
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
 
 > Nella immagine sopra puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma di trasmissione.
@@ -167,7 +167,7 @@ void loop() {
 
 
 ## Il programma main.ino per ricevere i dati con la seconda ESP32-CAM
-Questo è il sorgente per ricevere a mostrare i video il contatore attivato nella scheda trasmittente.
+Questo è il sorgente per ricevere a mostrare i video i dati in arrivo dalla scheda trasmittente.
 ```bash
 #include <esp_now.h>
 #include <WiFi.h>
@@ -208,7 +208,10 @@ void loop() {
 <br>
 <br>
 Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuta dalla seconda ESP32-CAM (619,620,621, etc..).
+
+### Consclusione
+Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi artcoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.3.4</p>
+<p style="font-size: 0.8em;">R.123.3.4.0</p>
