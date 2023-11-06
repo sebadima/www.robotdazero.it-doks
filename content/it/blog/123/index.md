@@ -1,7 +1,7 @@
 ---
 title: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
 description: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
-excerpt: "..."
+excerpt: "In questo post vedremo 2 brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in un precedente articolo sul nostro blog. Vedremo come preparare due ESP32-CAM per ..."
 date: 2023-11-05T09:19:42+01:00
 lastmod: 2023-11-05T09:19:42+01:00
 draft: false
@@ -25,18 +25,19 @@ https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
 <br>
 <br>
 
-In questo post vedremo 2 brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo. Vedremo come prepare due ESP32-CAM di cui sfruttare l'antennino di circa 10 cm offerto in dotazione: si tratta di un microcontroller molto economico disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di otto euro.
+In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come prepare due ESP32-CAM di cui sfruttare l'antennino di circa 10 cm offerto in dotazione: si tratta di un microcontroller molto economico disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
 
 ## Un progetto minimale
-In questo post vedremo due programmi base per inviare e ricevere dei dati campione usando le caratteristiche radio "native" della scheda ESP32. Il protocollo di comunicazione è ispirato al normale WI-FI di case e in entrambi sorgenti useremo la istruzione 
+In questo post vedremo due programmi base per inviare e ricevere dei dati campione senza usare il WI-FI di casa/ufficio ma usando le caratteristiche radio "native" della scheda ESP32. Si tratta di un vantaggio non da poco perchè permette il funzionamento di tutta la apparecchiatura presso nuovi utenti senza impostare login e password in ogni scheda. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> è comunque ispirato al normale WI-FI e infatti in entrambi i programmi sorgenti useremo la istruzione:
 ```bash 
 #include "WiFi.h" 
 ```
-per settare lo "*scope*" del normale WI-FI e ereditarne variabile e strutture dati. Nel primo programma vedremo come trovare l'indirizzo MAC della scheda cui inviare i dati campione. ESPNOW prevede, infatti di specificare il MAC di ogni scheda cui inviare un messaggio. In questo modo possiamo gestire caso per caso i dispositivi finalei, sempre ammesso che abbiamo compleato con successo la registrazione alla rete mesh con queste istrizioni:
+per settare lo "*scope*" del normale WI-FI e ereditarne variabili e strutture dati. 
+Faremo inoltre uso di un programmaminimale per trovare l'indirizzo MAC della scheda ESP32 cui inviare i dati. ESPNOW prevede, infatti di specificare il MAC di ogni scheda per consegnare il messaggio. In questo modo possiamo gestire caso per caso i dispositivi finali, dopo che abbiano completato la registrazione alla rete con queste istruzioni:
 
 ```bash 
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
-    Serial.println("Non riesco add aggiunger il dispositivo");
+    Serial.println("Non riesco ad aggiungere il dispositivo");
     return;
   }
 ```
@@ -94,9 +95,8 @@ L'output del "serial monitor" di Arduino con l'indirizzo MAC della prima ESP32-C
 
 > Nella immagine puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma successivo.
 
-
-
 ## Il programma main.ino per inviare dei dati campione con l'ESP32-CAM
+In questo programma useremo l'indirizzo MAC scoperto in precedenza (E0:5A:1B:6C:E4:B0) per smistare i dati al dispositivo. E' necessario usare questo sistema anche nel nostro caso, quando i dispositivi collegati sono solo due. 
 
 ```bash
 #include <esp_now.h>
@@ -137,7 +137,7 @@ void setup() {
   peerInfo.encrypt = false;
   // Aggiungi dispositivo
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
-    Serial.println("Non riesco add aggiunger il dispositivo");
+    Serial.println("Non riesco ad aggiungere il dispositivo");
     return;
   }
 }
