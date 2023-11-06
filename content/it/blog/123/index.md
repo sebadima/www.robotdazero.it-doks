@@ -33,7 +33,7 @@ In questo post vedremo due programmi base per inviare e ricevere dei dati campio
 #include "WiFi.h" 
 ```
 per settare lo "*scope*" del normale WI-FI e ereditarne variabili e strutture dati. 
-Faremo inoltre uso di un programmaminimale per trovare l'indirizzo MAC della scheda ESP32 cui inviare i dati. ESPNOW prevede, infatti di specificare il MAC di ogni scheda per consegnare il messaggio. In questo modo possiamo gestire caso per caso i dispositivi finali, dopo che abbiano completato la registrazione alla rete con queste istruzioni:
+Faremo inoltre uso di un mini programmama per trovare l'indirizzo MAC della scheda ESP cui inviare i dati. ESPNOW prevede, infatti di specificare il MAC di ogni scheda per consegnare il messaggio al giusto device e in questo modo possiamo gestire caso per caso i dispositivi finali. I dispositivi sono accessibili alla rete dopo avere completato l'accesso alla rete con queste istruzioni:
 
 ```bash 
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
@@ -49,6 +49,8 @@ La immagine dei due dispositivi ESP32-CAM usati per testare e programmare la ret
 
 
 ## Il codice sorgente main.ino per trovare l'indirizzo MAC di un ESP32-CAM
+Il programma è brevissimo e prevede la "include" a WIFI.h e la stampa della funzione "WiFi.macAddress()".
+Per usarlo serve fare l'upload nell'IDE di Arduino e annotare il valore che appare nel "serial monitor". Se invece usate il programma con PlatformIO potete compilare il programma con "make upload" e quindi lanciare la utility *minicom* per visualizzare l'output.
 
 ```bash
 #include "WiFi.h"
@@ -65,6 +67,7 @@ void loop(){
 ```
 
 ### Il file platformio.ini associato, specifico per ESP32-CAM
+Usando PlatformiIO potete usare questo file di settaggio per riconoscere in automatico la ESP32-CAM.
 
 ```bash
 ; PlatformIO Project Configuration File
