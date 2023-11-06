@@ -25,10 +25,10 @@ https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
 <br>
 <br>
 
-In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo già scritto in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come usare due ESP32-CAM per creare una rete "mesh" con porata di 40~50 mt sfruttando l'antennino incorporato di circa 10 cm. La ESP32-CAM è un microcontroller interessantissimo che unisce alla velocità dell'ESP32 "classico" una webcam 1600X1200 px, il tutto ad un prezzo assai allettante. E' disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
+In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo già scritto in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come usare due ESP32-CAM per creare una rete "mesh" con portata di 40~50 mt sfruttando l'antenna incorporata di circa 10 cm. La ESP32-CAM è un microcontroller interessantissimo che unisce alla velocità dell'ESP32 "classico" una webcam 1600X1200 px, il tutto ad un prezzo assai allettante. E' disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
 
 ## Un progetto minimale
-Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza numerica senza WI-FI ma sfruttando le qualità radio "native" della scheda. Si tratta di un vantaggio importante perchè permette di far funzionare tutta la rete presso nuovi utenti senza impostare manualmente login e password. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> sostituisce il normale WI-FI ma ne conserva certamente molti dettagli tecnici: infatti i nostri programmi sorgenti useranno questa struzione:
+Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza numerica senza WI-FI ma sfruttando le qualità radio "native" della scheda. Si tratta di un vantaggio importante perchè permette di far funzionare tutta la rete presso nuovi utenti senza impostare manualmente login e password. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> sostituisce il normale WI-FI ma ne conserva certamente molti dettagli tecnici: infatti i nostri programmi sorgenti useranno questa istruzione:
 ```bash 
 #include "WiFi.h" 
 ```
@@ -167,7 +167,7 @@ void loop() {
 
 
 ## Il programma main.ino per ricevere i dati con la seconda ESP32-CAM
-Questo è il sorgente per ricevere i dati in arrivo dalla scheda trasmittente. Fai attenzione alla struct messaggio: sia pure semplicissima deve corrispondere alla struct del programma in tramissione. In un prossimo post useremo questa stessa struttura per invocare molteplici dati.
+Questo è il sorgente per ricevere i dati in arrivo dalla scheda trasmittente. Fai attenzione alla struct messaggio: sia pure semplicissima deve corrispondere alla struct del programma in trasmissione. In un prossimo post useremo questa stessa struttura per invocare molteplici dati.
 
 ```bash
 typedef struct struct_messaggio {
@@ -175,7 +175,7 @@ typedef struct struct_messaggio {
 } struct_messaggio;
 ```
 
-##### Il programma da copiare e incollare nell'Ide di Arduino o in un file per PlatformIO in Visual Code o in un file autonomo di nome main.ino. Per compilare con PlatformIO ricorda che basta scrivere "make upload".
+##### Il programma da copiare e incollare nell' Ide di Arduino o in un file per PlatformIO in Visual Code o in un file autonomo di nome main.ino. Per compilare con PlatformIO ricorda che basta scrivere "make upload".
 
 
 ```bash
@@ -222,6 +222,6 @@ void loop() {
 > Nella immagine sopra puoi vedere la sequenza automatica generata dal primo ESP32-CAM e ricevuta dalla seconda ESP32-CAM (619,620,621, etc..).
 
 ### Conclusione
-Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi artcoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
+Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi articoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
 <br>
-<p style="font-size: 0.8em;">R.123.3.4.9</p>
+<p style="font-size: 0.8em;">R.123.3.5.0</p>
