@@ -191,7 +191,7 @@ void setup() {
   WiFi.mode(WIFI_STA);
   // Inizializza la rete ESP-NOW
   if (esp_now_init() != ESP_OK) {
-    Serial.println("Errore nella inizialiazzione dele rete ESP-NOW");
+    Serial.println("Errore nella inizializzazione della rete ESP-NOW");
     return;
   }
   esp_now_register_recv_cb(suDatiRicevuti);
@@ -208,4 +208,4 @@ Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-C
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.3.0</p>
+<p style="font-size: 0.8em;">R.123.3.3.2</p>
