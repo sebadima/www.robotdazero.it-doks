@@ -94,11 +94,11 @@ lib_deps =
 <br>
 
 ##### L'output del "serial monitor" di Arduino con l'indirizzo MAC della scheda ESP32-CAM:
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
+<img style="border: 2px solid #999;" width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="L'output del serial monitor di Arduino con indirizzo MAC della ESP32-CAM">
+<br>
+<br>
 
 > Nella immagine sopra puoi vedere l'indirizzo MAC *E0:5A:1B:6C:E4:B0* che useremo nel programma di trasmissione.
-
-<br>
 
 ## Il programma main.ino per inviare dei dati campione con l'ESP32-CAM
 In questo programma useremo l'indirizzo MAC scoperto in precedenza per selezionare il dispositivo ricevente. Il protocollo mesh di Espressif prevede di usare il sistema degli indirizzi hardware anche quando i dispositivi sono solo due. 
@@ -204,14 +204,14 @@ void loop() {
 }
 ```
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
+<img style="border: 2px solid #999;" width="800" class="x figure-img img-fluid lazyload blur-up" src="images/103.png" alt="">
+
 <br>
 <br>
-Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuta dalla seconda ESP32-CAM (619,620,621, etc..).
+
+> Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-CAM e ricevuta dalla seconda ESP32-CAM (619,620,621, etc..).
 
 ### Conclusione
 Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi artcoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
 <br>
-<br>
-<br>
-<p style="font-size: 0.8em;">R.123.3.4.0</p>
+<p style="font-size: 0.8em;">R.123.3.4.1</p>
