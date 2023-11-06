@@ -2,8 +2,8 @@
 title: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
 description: "Come iniziare con ESP32 e la rete mesh ESP-NOW"
 excerpt: "..."
-date: 2023-11-02T09:19:42+01:00
-lastmod: 2023-11-02T09:19:42+01:00
+date: 2023-11-05T09:19:42+01:00
+lastmod: 2023-11-05T09:19:42+01:00
 draft: true
 weight: 50
 images: ["header.jpeg"]
@@ -24,6 +24,23 @@ https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
 <hr>
 <br>
 <br>
+
+In questo post vedremo 2 brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo parlato in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo. Vedremo come prepare due ESP32-CAM di cui sfruttare l'antennino di circa 10 cm offerto in dotazione: si tratta di un microcontroller molto economico disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di otto euro.
+
+## Un progetto minimale
+In questo post vedremo due programmi base per inviare e ricevere dei dati campione usando le caratteristiche radio "native" della scheda ESP32. Il protocollo di comunicazione è ispirato al normale WI-FI di case e in entrambi sorgenti useremo la istruzione 
+```bash 
+#include "WiFi.h" 
+```
+per settare lo "*scope*" del normale WI-FI e ereditarne variabile e strutture dati. Nel primo programma vedremo come trovare l'indirizzo MAC della scheda cui inviare i dati campione. ESPNOW prevede, infatti di specificare il MAC di ogni scheda cui inviare un messaggio. In questo modo possiamo gestire caso per caso i dispositivi finalei, sempre ammesso che abbiamo compleato con successo la registrazione alla rete mesh con queste istrizioni:
+
+```bash 
+  if (esp_now_add_peer(&peerInfo) != ESP_OK){
+    Serial.println("Non riesco add aggiunger il dispositivo");
+    return;
+  }
+```
+
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpeg" alt="la immagine dei sue Esp32-Cam usati in questo progetto iniziale per la rete mesh ESP32-NOW">
 <br>
 <br>
@@ -191,4 +208,4 @@ Nella immagine in alto si vede la sequenza automatica generata dal primo ESP32-C
 <br>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.123.3.2.5</p>
+<p style="font-size: 0.8em;">R.123.3.2.6</p>
