@@ -33,7 +33,7 @@ Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza nu
 #include "WiFi.h" 
 ```
 per settare lo "*scope*" del WI-FI classico ed ereditarne variabili e strutture dati. 
-Per crere la rete faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda ESP ricevente. Il protocollo ESP-NOW prevede, infatti, di specificare il MAC di ogni scheda abilitata alla ricezione. In questo modo possiamo indirizzare caso per caso tutte le destinazioni. Tutte le schede entro 30~40 mt sono così accessibili a patto che abbiano completato l'accesso con queste istruzioni:
+Per creare la rete faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda ESP ricevente. Il protocollo ESP-NOW prevede, infatti, di specificare il MAC di ogni scheda abilitata alla ricezione. In questo modo possiamo indirizzare caso per caso tutte le destinazioni. Tutte le schede entro 30~40 mt sono così accessibili a patto che abbiano completato l'accesso con queste istruzioni:
 
 ```bash 
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
@@ -224,4 +224,4 @@ void loop() {
 ### Conclusione
 Con soli tre brevissimi programmi abbiamo impostato la struttura di funzionamento della rete mesh. Nei prossimi artcoli vedremo come usare questa struttura per realizzare dei compiti utili, con l'utilizzo di 3 o 4 schede ESP32 di modello diverso.
 <br>
-<p style="font-size: 0.8em;">R.123.3.4.2</p>
+<p style="font-size: 0.8em;">R.123.3.4.9</p>
