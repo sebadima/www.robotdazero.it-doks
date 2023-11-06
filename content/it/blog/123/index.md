@@ -25,7 +25,7 @@ https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
 <br>
 <br>
 
-In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo già scritto in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come usare due ESP32-CAM per creare una rete "mesh" con portata di 40~50 mt sfruttando l'antenna incorporata di circa 10 cm. La ESP32-CAM è un microcontroller interessantissimo che unisce alla velocità dell'ESP32 "classico" una webcam 1600X1200 px, il tutto ad un prezzo assai allettante. E' disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
+In questo post vedremo due brevi programmi per testare sul campo la rete ESP-NOW, di cui abbiamo già scritto in questo <a href="https://www.robotdazero.it/blog/cosa-sono-le-reti-mesh-per-esp32/" rel="noopener">articolo</a> introduttivo del nostro blog. Vedremo come usare due ESP32-CAM per creare una rete "mesh" con portata di 40~50 metri sfruttando l'antenna incorporata di circa 10 cm. La ESP32-CAM è un microcontroller interessantissimo che unisce alla velocità dell'ESP32 "classico" una webcam 1600X1200 px, il tutto ad un prezzo assai allettante. E' disponibile su <a href="https://it.aliexpress.com/item/1005001900359624.html" target="_blank" rel="noopener">Aliexpress</a> a meno di dieci euro.
 
 ## Un progetto minimale
 Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza numerica senza WI-FI ma sfruttando le qualità radio "native" della scheda. Si tratta di un vantaggio importante perchè permette di far funzionare tutta la rete presso nuovi utenti senza impostare manualmente login e password. Il protocollo di comunicazione di <a href="https://www.espressif.com/en/products/sdks/esp-wifi-mesh/overview" target="_blank" rel="noopener">Espressif</a> sostituisce il normale WI-FI ma ne conserva certamente molti dettagli tecnici: infatti i nostri programmi sorgenti useranno questa istruzione:
@@ -33,7 +33,7 @@ Nel dettaglio vedremo due brevi programmi per inviare e ricevere una sequenza nu
 #include "WiFi.h" 
 ```
 per settare lo "*scope*" del WI-FI classico ed ereditarne variabili e strutture dati. 
-Per creare la rete faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda ESP ricevente. Il protocollo ESP-NOW prevede, infatti, di specificare il MAC di ogni scheda abilitata alla ricezione. In questo modo possiamo indirizzare caso per caso tutte le destinazioni. Tutte le schede entro 30~40 mt sono così accessibili a patto che abbiano completato l'accesso con queste istruzioni:
+Per creare la rete faremo inoltre uso di un mini programma per trovare l'indirizzo MAC della scheda ESP ricevente. Il protocollo ESP-NOW prevede, infatti, di specificare il MAC di ogni scheda abilitata alla ricezione. In questo modo possiamo indirizzare caso per caso tutte le destinazioni. Tutte le schede entro 30~40 metri diverranno così accessibili a patto che abbiano completato l'accesso con queste istruzioni:
 
 ```bash 
   if (esp_now_add_peer(&peerInfo) != ESP_OK){
@@ -65,7 +65,7 @@ void loop(){
 }
 ```
 
-### Il file platformio.ini associato, specifico per ESP32-CAM
+### Il file platformIOio.ini associato, specifico per ESP32-CAM
 Usando PlatformiIO potete usare questo file di settaggio per riconoscere in automatico la ESP32-CAM:
 
 ```bash
