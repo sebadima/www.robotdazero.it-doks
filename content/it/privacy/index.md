@@ -77,4 +77,5 @@ Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla pr
 Viale Akradina, 1 – 96100 – Siracusa
 
 ##### Contatti: 
-email: info@robotdazero.it
+
+<a class="btn btn-primary" href="mailto:info@robotdazero.it" role="button">info@robotdazero.it</a>
