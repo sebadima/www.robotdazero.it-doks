@@ -11,7 +11,7 @@ images: []
 <section class="section container-fluid mt-n3 pb-3">
    <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-8 text-center">
-         <img width="220" class="figure-img img-fluid lazyload blur-up" src="/122/103.png" alt="">
+         <img width="200" class="figure-img img-fluid lazyload blur-up" src="/122/103.png" alt="">
          <br><br>
       </div>
    </div>
