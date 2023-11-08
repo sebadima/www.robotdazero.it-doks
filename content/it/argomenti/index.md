@@ -115,6 +115,7 @@ input[type='submit'] {
 </section>
 
 
+
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="60" height="60" src="/115/git-compare-24.svg" alt="">
@@ -128,11 +129,9 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 
 <br>
 <p> 
-<a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
-<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
+<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024 👉</a>
 </p>
 </div>
-
 <br>
 <br>
 <br>
@@ -151,9 +150,9 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
 
 <br>
-<p> <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> </p>
+<p> 
+<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32 👉</a>
 </div>
-
 <br>
 <br>
 <br>
@@ -172,21 +171,20 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
 
 <br>
-<p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
+<p> 
+<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza 👉</a>
 </div>
-
 <br>
 <br>
 <br>
 
 
 
-<div class="bz-container">
-
-#### E per finire scopri l'elenco completo degli argomenti trattati nel sito
-<a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags ⚡️</a>
+<div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
+<br>
+<p> 
+<a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Vedi tutti i Tags del nostro sito</a>
 </div>
-
 <br>
 <br>
 <br>
