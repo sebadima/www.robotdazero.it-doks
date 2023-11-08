@@ -105,6 +105,16 @@ input[type='submit'] {
 
 
 
+<section class="section container-fluid mt-n3 pb-3">
+   <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-8 text-center">
+         <img width="220" class="figure-img img-fluid lazyload blur-up" src="/122/106.png" alt="">
+         <br><br>
+      </div>
+   </div>
+</section>
+
+
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="60" height="60" src="/115/git-compare-24.svg" alt="">
