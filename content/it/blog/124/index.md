@@ -2,8 +2,8 @@
 title: "ESP32 per lo sviluppo sostenibile e l'ambiente"
 description: "ESP32 per lo sviluppo sostenibile e l'ambiente"
 excerpt: ""
-date: 2023-11-08T09:19:42+01:00
-lastmod: 2023-11-08T09:19:42+01:00
+date: 2022-11-08T09:19:42+01:00
+lastmod: 2022-11-08T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
@@ -15,12 +15,8 @@ homepage: false
 ---
 
 
-## Introduzione
 
-### Introduzione allo sviluppo sostenibile e all'ambiente
-
-
-Introduzione allo sviluppo sostenibile e all'ambiente
+## Introduzione allo sviluppo sostenibile e all'ambiente
 
 Lo sviluppo sostenibile è un modello di sviluppo economico e sociale che mira a soddisfare i bisogni delle generazioni attuali senza compromettere la capacità delle generazioni future di soddisfare i propri bisogni. Lo sviluppo sostenibile si basa su tre pilastri fondamentali:
 
@@ -33,9 +29,8 @@ Il concetto di sviluppo sostenibile è nato alla fine degli anni '60 e all'inizi
 
 Negli anni '80, l'Agenda 21, un piano d'azione per lo sviluppo sostenibile globale, è stata adottata dalla Conferenza delle Nazioni Unite sull'ambiente e lo sviluppo (UNCED) di Rio de Janeiro. L'Agenda 21 ha stabilito una serie di obiettivi e principi per lo sviluppo sostenibile, che sono stati ripresi da una serie di altri documenti internazionali, tra cui la Dichiarazione di Johannesburg sullo sviluppo sostenibile del 2002 e l'Agenda 2030 per lo sviluppo sostenibile del 2015.
 
-Citazioni e filosofie sullo sviluppo sostenibile
 
-Ecco alcune citazioni e filosofie sullo sviluppo sostenibile:
+Alcune citazioni e filosofie sullo sviluppo sostenibile:
 
 "Il futuro appartiene a coloro che credono nella bellezza dei propri sogni." - Eleanor Roosevelt
 "La Terra non è un'eredità dei nostri padri, ma un prestito dei nostri figli." - Native American Proverb
