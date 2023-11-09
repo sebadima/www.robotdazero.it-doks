@@ -60,4 +60,4 @@ Con questo semplice trucchetto sarai sicuro che i momenti di STOP del tuo blog n
 <hr>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.125.1.0.1</p>
+<p style="font-size: 0.8em;">R.125.1.0.2</p>
