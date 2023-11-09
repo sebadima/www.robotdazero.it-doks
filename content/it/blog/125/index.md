@@ -22,7 +22,7 @@ homepage: false
 
 ## Perchè riavviare periodicamente Mysql può essere una buona idea
 
-Se utilizzi un server Cloud come facciamo noi potresti occasionalmente ritrovarti con il Blog bloccato con dei messaggi tipo "Database not found" o "Mysql not found". In genere può accadere su dei server dalla RAM troppo limitata o sottoposti a un attacco di “Forza Bruta” o DDOS. 
+Se utilizzi un server "Cloud" come facciamo noi potresti occasionalmente ritrovarti con il Blog bloccato con dei messaggi tipo "Database not found" o "Mysql not found". In genere può accadere su dei server dalla RAM troppo limitata o sottoposti a un attacco di “Forza Bruta” o DDOS. 
 
 La soluzione più ovvia sarebbe quella di aumentare la RAM del server o installare un firewall Premium come Wordfence, ma esiste una soluzione gratuita che funziona piuttosto bene: rilanciare in automatico il server Mysql quando va in errore!
 
@@ -60,4 +60,4 @@ Con questo semplice trucchetto sarai sicuro che i momenti di STOP del tuo blog n
 <hr>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.125.1.0.2</p>
+<p style="font-size: 0.8em;">R.125.1.0.3</p>
