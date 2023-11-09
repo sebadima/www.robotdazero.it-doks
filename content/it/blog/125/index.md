@@ -4,7 +4,7 @@ description: "Perchè riavviare periodicamente il database di Wordpress"
 excerpt: "Se utilizzi un server VPS come faccio io potresti occasionalmente ritrovarti con il Blog bloccato con il messaggio che vedi nello screenshot sopra. In genere accade su server dalla RAM troppo limitata o sottoposti a un attacco di “Forza Bruta” o DDOS..."
 date:    2023-11-08T09:19:42+01:00
 lastmod: 2023-11-08T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
