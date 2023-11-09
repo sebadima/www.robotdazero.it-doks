@@ -6,105 +6,86 @@ lastmod: 2023-06-27T19:23:18+02:00
 draft: false
 images: []
 ---
-
-
-
 <style>
-
-.col-md-12 > article:nth-child(1) > h1:nth-child(1) {
-}
-
-.lead {
-  padding-top:    5px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  padding-left:  10px;
-}
-
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0; 
-  padding: 0;
-}
-
-h5 {
-  font-weight: 700;
-}
-
-h3 {
-  text-transform: uppercase;
-  color: #5f7c57;
-}
-
-.bz-form {width: 684px; margin: 200px auto 0; }
-
-.bz-container {
-  width: 100%;
-  # background-color: #fff;
-  padding: 30px 40px 20px;
-  border-radius: 7px;
-  border: 0px solid #74A1B4;
-}
-
-.bz-btmmargin {
-  margin-bottom: 14px !important;
-}
-.bz-topmargin {
-  margin-top: 6px !important;
-}
-
-.bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
-.bz-right {float: left; width: 49%; min-width: 300px;}
-.bz-clear {clear: both;}
-
-input[type='text'], input[type='email'] {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  outline: 0;
-  display: block;
-  width: 100%;
-  padding: 7px;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  background: transparent;
-  margin-bottom: 10px;
-  height: 45px;
-}
-
-input[type='submit'] {
-  float: right;
-  background-color: #007D7E;
-  border: none;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-/* input[type='submit']:hover {
-  background-color: #000000;
-} */
-
-@media only screen and (max-width: 600px) {
-  .bz-container {padding: 10px;}
-  .bz-form {width: 100%;}
-  .bz-left, .bz-right { width: 100%; padding: 0 10px;}
-  input[type='submit'] {margin-left: 10px;}
-}
+   .col-md-12 > article:nth-child(1) > h1:nth-child(1) {
+   }
+   .lead {
+   padding-top:    5px;
+   padding-bottom: 5px;
+   padding-right: 10px;
+   padding-left:  10px;
+   }
+   body {
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0; 
+   padding: 0;
+   }
+   h5 {
+   font-weight: 700;
+   }
+   h3 {
+   text-transform: uppercase;
+   color: #5f7c57;
+   }
+   .bz-form {width: 684px; margin: 200px auto 0; }
+   .bz-container {
+   width: 100%;
+   # background-color: #fff;
+   padding: 30px 40px 20px;
+   border-radius: 7px;
+   border: 0px solid #74A1B4;
+   }
+   .bz-btmmargin {
+   margin-bottom: 14px !important;
+   }
+   .bz-topmargin {
+   margin-top: 6px !important;
+   }
+   .bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
+   .bz-right {float: left; width: 49%; min-width: 300px;}
+   .bz-clear {clear: both;}
+   input[type='text'], input[type='email'] {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   outline: 0;
+   display: block;
+   width: 100%;
+   padding: 7px;
+   border: 0;
+   border-bottom: 1px solid #ddd;
+   background: transparent;
+   margin-bottom: 10px;
+   height: 45px;
+   }
+   input[type='submit'] {
+   float: right;
+   background-color: #007D7E;
+   border: none;
+   color: white;
+   font-size: 18px;
+   text-transform: uppercase;
+   font-weight: 700;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
+   padding: 12px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   }
+   /* input[type='submit']:hover {
+   background-color: #000000;
+   } */
+   @media only screen and (max-width: 600px) {
+   .bz-container {padding: 10px;}
+   .bz-form {width: 100%;}
+   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
+   input[type='submit'] {margin-left: 10px;}
+   }
 </style>
-
-
-
 <section class="section container-fluid mt-n3 pb-3">
    <div class="row justify-content-center">
       <div class="col-lg-9 col-xl-8 text-center">
@@ -113,77 +94,148 @@ input[type='submit'] {
       </div>
    </div>
 </section>
-
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
-<br>
-<img width="60" height="60" src="/115/git-compare-24.svg" alt="">
-&nbsp;&nbsp;Come scegliere Arduino
+   <br>
+   <svg width="48" height="48" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path d="m1.9 34.7 22.1 12.8 22.1-12.7-6.7-3.9-15.4 9.1-15.6-9-6.5 3.7z" fill="url(#b)" stroke="url(#a)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+      <path d="m1.9 27.8 22.1 12.7 22.1-12.7-5.2-3-16.9 10.2-17-10.1-5.1 2.9z" fill="#007CFC" stroke="#007CFC" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="m1.9 13.317v8.3831l22.1 12.7 22.1-12.7v-8.3727" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="m1.9 13.2 22.1 12.8 22.1-12.7-22.1-12.8-22.1 12.7z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="m14.377 9.8592c-0.072 0.10295-0.0783 0.22081-0.0175 0.32791 0.0608 0.107 0.1838 0.1945 0.3422 0.2434l0.1568 0.0547c0.1842 0.0516 0.3726 0.0962 0.5643 0.1338 0.3587 0.0811 0.7048 0.1849 1.0334 0.3096 0.094 0.0587 0.1607 0.1335 0.1921 0.2156l0.2271 0.0904c-0.1479 0.2273-0.2709 0.4612-0.3682 0.7001-0.4097 1.0038-0.3486 2.0682 0.1755 3.0567-0.0737 0.0252-0.2103 0.0661-0.2453 0.0803-0.0244 0.0824-0.0975 0.1548-0.2036 0.2018-0.3403 0.1049-0.6958 0.1877-1.0616 0.2474-0.1958 0.0272-0.3889 0.0618-0.5783 0.1036-0.0467 0.0112-0.1128 0.0309-0.1621 0.0452-0.1453 0.0403-0.2665 0.11-0.3457 0.199-0.048 0.0526-0.0762 0.112-0.0823 0.1733-0.0061 0.0614 0.0101 0.123 0.0473 0.1799 0.0792 0.102 0.2168 0.1799 0.3827 0.2166s0.3464 0.0292 0.5022-0.0209l0.0045-0.0055c0.0486-0.0136 0.1097-0.0289 0.1515-0.0418 0.1746-0.0613 0.3436-0.1291 0.5061-0.2031 0.3177-0.1315 0.6548-0.2423 1.0064-0.3308 0.1282-0.01 0.2586 0.0038 0.3763 0.0397l0.2503-0.0593c0.9545 1.1436 2.5182 2.0223 4.3914 2.4675l-0.0536 0.1737c0.0673 0.0728 0.1089 0.1544 0.1215 0.2388-0.0828 0.2399-0.2013 0.4736-0.3539 0.6979-0.0884 0.1163-0.1665 0.2358-0.2338 0.3581l-0.0425 0.1073-0.0045 0.0057c-0.0294 0.0529-0.0415 0.1094-0.0355 0.1659s0.0299 0.1117 0.0703 0.1621c0.0403 0.0504 0.0962 0.0949 0.164 0.1307 0.0679 0.0358 0.1462 0.062 0.2301 0.0771s0.1714 0.0187 0.2571 0.0105c0.0856-0.0082 0.1675-0.0279 0.2404-0.058 0.073-0.0299 0.1353-0.0697 0.1832-0.1164 0.0478-0.0469 0.08-0.0998 0.0946-0.1554l0.0103-0.0127c0.0139-0.0328 0.033-0.074 0.0424-0.1033 0.0333-0.1269 0.0554-0.2552 0.0662-0.3841 0.037-0.2451 0.1106-0.487 0.2196-0.7223 0.0665-0.0716 0.1626-0.1294 0.2775-0.1668l0.0864-0.1734c1.9525 0.2319 3.9588-0.0095 5.6401-0.6786l0.1926 0.1506c0.1216 0.0035 0.2392 0.0304 0.3382 0.0773 0.2428 0.199 0.4561 0.4125 0.6371 0.6375 0.0852 0.1188 0.1808 0.2344 0.2862 0.3462 0.0302 0.0288 0.0792 0.0694 0.1112 0.0979 0.0456 0.0487 0.1063 0.0908 0.1779 0.1235 0.0717 0.0328 0.153 0.0555 0.2385 0.0668 0.0855 0.0111 0.1735 0.0107 0.2583-0.0016 0.0847-0.0122 0.1645-0.0359 0.234-0.0696 0.0695-0.0336 0.1273-0.0764 0.1696-0.1257 0.0425-0.0492 0.0684-0.1039 0.0765-0.1603 8e-3 -0.0565-0.0022-0.1136-0.0299-0.1676-0.0277-0.0541-0.0724-0.1039-0.1311-0.1463-0.032-0.0285-0.073-0.0672-0.1051-0.0937-0.1327-0.0985-0.2739-0.1919-0.4229-0.2798-0.2991-0.1836-0.5576-0.3935-0.7681-0.6232-0.0312-0.0643-0.0317-0.133-0.0014-0.197l-0.1626-0.1585c1.4864-0.8422 2.4387-2.0158 2.6752-3.2967 0.0811-0.0013 0.2351-0.0015 0.2761-0.0055 0.0771-0.0668 0.1916-0.111 0.3189-0.1228 0.3778 0.0022 0.7548 0.0283 1.1258 0.0782 0.1945 0.0316 0.3915 0.0557 0.59 0.0726l0.1769 0.0046c0.0861 8e-3 0.1734 0.0041 0.2566-0.0112s0.1604-0.0418 0.2267-0.0777c0.0662-0.036 0.1202-0.0807 0.1582-0.1313 0.0382-0.0505 0.0596-0.1058 0.0631-0.1623 0.0034-0.0565-0.0112-0.1131-0.043-0.1659-0.0318-0.053-0.0801-0.1011-0.1417-0.1414s-0.1353-0.072-0.2163-0.0929c-0.0809-0.0208-0.1675-0.0306-0.2542-0.0285-0.055-0.0019-0.1341-0.0051-0.1861-0.0049-0.1994 0.0055-0.398 0.0184-0.595 0.0387-0.3755 0.0281-0.7548 0.0321-1.1325 0.012-0.1253-0.0195-0.2344-0.0703-0.3036-0.1415-0.0908-0.0024-0.1813-0.0084-0.2711-0.0183-0.1051-1.2968-0.9372-2.529-2.3379-3.4619 0.0482-0.04222 0.1356-0.11556 0.1646-0.13797-0.0328-0.08135-0.0159-0.16746 0.0475-0.23997 0.2349-0.19138 0.4981-0.36714 0.7859-0.5248 0.1564-0.078 0.3058-0.16182 0.4474-0.25104 0.0321-0.02237 0.0714-0.0555 0.1049-0.08145l0.0103-0.01272c0.0618-0.03917 0.1103-0.08642 0.1424-0.13872 0.032-0.05229 0.047-0.10852 0.0439-0.16508s-0.0242-0.11223-0.062-0.16346c-0.0377-0.05122-0.0914-0.09688-0.1574-0.1341-0.066-0.03721-0.143-0.06516-0.2261-0.08202-0.0831-0.01688-0.1705-0.02235-0.2565-0.01606-0.0861 0.00632-0.169 0.02425-0.2434 0.05268-0.0744 0.02842-0.1388 0.06671-0.189 0.11243-0.036 0.02715-0.0889 0.06361-0.1219 0.09081-0.1162 0.10525-0.2229 0.21482-0.3196 0.32822-0.1966 0.20892-0.4244 0.40458-0.6799 0.58417-0.1103 0.04508-0.2384 0.06887-0.3693 0.06858l-0.1815 0.12191c-1.6163-0.76183-3.5979-1.1134-5.5685-0.988l-0.0728-0.18825c-0.1177-0.03488-0.2103-0.09826-0.2581-0.17657-0.0858-0.24111-0.1355-0.48682-0.1482-0.73364 0.0023-0.13026-7e-3 -0.26057-0.0276-0.39032-0.0072-0.032-0.0233-0.07832-0.0341-0.11364-0.0047-0.05847-0.0287-0.11573-0.0703-0.1679-0.0415-0.05219-0.0996-0.0981-0.1703-0.13461-0.0708-0.03651-0.1526-0.06277-0.2398-0.07703-0.0873-0.01424-0.178-0.01615-0.266-0.00557s-0.1712 0.03338-0.2441 0.06689c-0.0728 0.03348-0.1337 0.0769-0.1784 0.12729-0.0446 0.05037-0.0721 0.10656-0.0803 0.16473-0.0084 0.05819 0.0025 0.11701 0.032 0.1725 0.0101 0.03803 0.0214 0.07593 0.034 0.11365 0.0536 0.12658 0.1184 0.25113 0.194 0.37301 0.1299 0.2327 0.225 0.47282 0.284 0.71696-0.0121 0.08373-0.0599 0.1633-0.138 0.22968l0.04 0.18802c-1.9001 0.34074-3.5374 1.1215-4.6077 2.1971-0.0735-0.0257-0.2116-0.0647-0.2521-0.0768-0.1139 0.0381-0.2467 0.0455-0.37 0.0205-0.3411-0.1093-0.6656-0.2398-0.9687-0.3898-0.1548-0.08342-0.3166-0.16097-0.4849-0.23232l-0.1569-0.05474c-0.1502-0.05881-0.3294-0.07671-0.4982-0.04979s-0.3136 0.09646-0.4028 0.19345l3e-3 0.00209zm3.9201 1.9417 2.8092 1.1165-0.0064 0.0079c0.0839 0.0341 0.1526 0.082 0.1991 0.1389 0.0465 0.0568 0.0691 0.1206 0.0654 0.1846-0.0036 0.064-0.0333 0.1261-0.0861 0.1797-0.0528 0.0537-0.1267 0.097-0.2142 0.1256l-2.9099 0.9562c-0.3477-0.749-0.3688-1.5439-0.0609-2.295 0.0571-0.1404 0.1251-0.2787 0.2038-0.4144zm0.7231-0.8969c0.806-0.7551 1.9735-1.3134 3.3226-1.5889l0.4402 2.1129-0.0045 0.0056c0.0135 0.0637 5e-4 0.1285-0.0373 0.1875s-0.0992 0.1101-0.1779 0.1482c-0.0787 0.038-0.1718 0.0615-0.2696 0.068-0.0979 0.0066-0.197-0.0041-0.287-0.0308l-2.9865-0.9025zm-0.2372 4.5443 3.072-0.7287 0.0123 0.0043c0.0925-0.0219 0.1925-0.0271 0.2897-0.0151 0.0972 0.0119 0.1881 0.0406 0.2632 0.083s0.1317 0.097 0.1639 0.1581 0.0388 0.1266 0.0192 0.1895l0.0098 0.0034-0.6504 2.0805c-1.3278-0.3472-2.4461-0.9716-3.1784-1.7745l-0.0013-5e-4zm5.0912-6.3145c1.4184-0.05323 2.8304 0.19713 4.0217 0.71307l-2.2581 1.5308-0.0123-0.0043c-0.0682 0.046-0.1543 0.0791-0.2492 0.0958-0.095 0.0168-0.1954 0.0166-0.2909-5e-4 -0.0956-0.0171-0.1826-0.0505-0.2522-0.0968-0.0696-0.0462-0.1191-0.1036-0.1434-0.1662l-0.8027-2.0704-0.0129-0.00147zm-0.6903 4.1674 0.4643-0.5759 0.9783-0.1167 0.7543 0.428-0.0334 0.651-0.8024 0.3837-0.9617-0.1707-0.3994-0.5994zm3.8497-1.0213c0.0182-0.0247 0.0406-0.048 0.0669-0.0693l1.9921-1.6917c0.9683 0.6893 1.5618 1.5662 1.687 2.4929l-3.2793-0.2179c-0.0882-0.0056-0.1731-0.0248-0.2479-0.0561s-0.1373-0.0738-0.1821-0.1238c-0.0449-0.05-0.0708-0.1062-0.0758-0.1638-0.0048-0.0576 0.0115-0.115 0.0477-0.1673l-0.0086-3e-3zm-2.5105 3.1333c0.0436-0.0508 0.1056-0.0937 0.1808-0.1251 0.0751-0.0314 0.1611-0.0504 0.2504-0.0552 0.0894-0.0047 0.1794 0.0047 0.2624 0.0276 0.083 0.023 0.1565 0.0587 0.2141 0.104l0.0155-0.0017 2.0919 1.6459c-1.2321 0.4504-2.6626 0.621-4.0695 0.4856l1.005-2.0158c0.0104-0.0226 0.0242-0.0443 0.0413-0.065l0.0081-3e-4zm2.4271-1.1522c0.0446-0.0598 0.1141-0.1102 0.2005-0.1454 0.0863-0.0353 0.1864-0.0541 0.2888-0.0543l0.0058-0.0072 3.2772-0.0231c-0.0347 0.1411-0.0802 0.2808-0.1364 0.4186-0.3032 0.752-0.9223 1.4316-1.788 1.9625l-1.8014-1.7918c-0.054-0.0525-0.0863-0.1131-0.0935-0.1758-0.0073-0.0627 0.0106-0.1253 0.052-0.1818l-5e-3 -0.0017z" fill="#007CFC"></path>
+      <line x1="4.5" x2="4.5" y1="16.982" y2="20.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="7.5" x2="7.5" y1="18.982" y2="22.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="11.5" x2="11.5" y1="20.982" y2="24.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="14.5" x2="14.5" y1="22.982" y2="26.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="18.5" x2="18.5" y1="24.982" y2="28.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="21.5" x2="21.5" y1="26.982" y2="30.735" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="26.5" x2="26.5" y1="27.124" y2="30.877" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="29.5" x2="29.5" y1="25.124" y2="28.877" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="33.5" x2="33.5" y1="23.124" y2="26.877" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="36.5" x2="36.5" y1="21.124" y2="24.877" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="40.5" x2="40.5" y1="19.124" y2="22.877" stroke="#393D45" stroke-linecap="round"></line>
+      <line x1="43.5" x2="43.5" y1="17.124" y2="20.877" stroke="#393D45" stroke-linecap="round"></line>
+      <defs>
+         <linearGradient id="b" x1="1.9459" x2="46.073" y1="39.211" y2="39.211" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD" offset="0"></stop>
+            <stop stop-color="#D3E3FE" offset="1"></stop>
+         </linearGradient>
+         <linearGradient id="a" x1="1.4459" x2="46.573" y1="39.211" y2="39.211" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD" offset="0"></stop>
+            <stop stop-color="#D3E3FE" offset="1"></stop>
+         </linearGradient>
+      </defs>
+   </svg>
+   <path d="m22.478 5.5456-3.5341 0.71639 0.7359 1.7713c-0.2026 0.0985-0.6077 0.2955-1.0129 0.4925l-3.0686-0.38668-1.4321 1.9487 2.5593 0.8848c-0.0521 0.1506-0.0056 0.5037 0.0929 0.7063l-2.6281 0.7768 1.2369 2.0287 3.0248-0.2183c0.1998 0.1533 0.6515 0.3095 0.8513 0.4628l-0.7751 1.7545 3.4653 0.9452 1.6784-1.4422c0.2518 0.0028 0.7063-0.0929 1.2592 0.014l1.6448 1.5798 3.4329-0.6671-0.6347-1.8205 1.013-0.4925 2.8659 0.4851 1.5334-1.9979-2.4059-1.0846c0.052-0.1505 0.0056-0.5037-0.0929-0.7062l2.6281-0.7769-1.2369-2.0287-3.0249 0.2183c-0.1998-0.15334-0.6514-0.30948-0.8512-0.46282l0.7258-1.8558-3.4653-0.9452-1.7797 1.4915c-0.5036-0.0056-0.8047-0.10969-1.2592-0.01398l-1.5463-1.3773zm3.9243 4.9802c1.1003 0.7174 1.0891 1.7248-0.1264 2.3158-1.2156 0.591-2.7266 0.5742-3.8789 0.0073-1.1003-0.7174-1.0891-1.7248 0.1264-2.3158 1.3169-0.64023 2.7787-0.72476 3.8789-0.0073z" clip-rule="evenodd" fill="#1062FE" fill-rule="evenodd"></path>
+   <path d="M22.0242 11.036C23.3052 10.3373 23.3052 9.17283 22.1407 8.47414C21.7913 8.24124 21.3255 8.12479 20.9762 8.12479C21.9078 7.42609 21.7913 6.37805 20.7433 5.67935C19.4623 4.98065 17.4827 4.98065 16.3182 5.67935C16.2017 5.5629 16.0853 5.5629 15.9688 5.44645C14.9208 4.8642 13.1741 4.8642 12.0096 5.44645C10.7286 6.0287 10.7286 6.96029 11.6602 7.65899L17.7156 11.1525C18.8801 11.7347 20.7433 11.7347 22.0242 11.036Z" fill="#007CFC"></path>
 
-##### Cosa è Arduino?
+   &nbsp;&nbsp;Come scegliere Arduino
 
-> Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
+   ##### Cosa è Arduino?
 
-Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
-
-<br>
-<p> 
-<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024 👉</a>
-</p>
+   > Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
+   Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
+   <br>
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024 👉</a>
+   </p>
 </div>
 <br>
 <br>
 <br>
-
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
-<br>
-<img width="60" height="60" src="/115/repo-forked-24.svg" alt="">
-&nbsp;&nbsp;Scopri come alimentare la scheda ESP32
+   <br>
+   <svg width="48" height="48" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_2870_2480)">
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8636 23.4988C9.35025 23.4305 6.95964 20.6984 6.54982 20.9716C2.79315 23.9086 3.27128 28.1434 7.91588 30.8072C13.0386 33.7443 21.4399 33.7443 26.5626 30.8072C31.0023 28.2117 31.617 24.2501 28.3385 21.3131C27.7921 20.9033 23.0109 23.5671 16.8636 23.4988Z" fill="url(#paint0_linear_2870_2480)" stroke="url(#paint1_linear_2870_2480)" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4102 23.3622C7.30131 23.4305 4.6375 17.898 4.56919 18.0346C3.20313 20.6301 4.29598 23.6354 7.84774 25.6845C12.9705 28.6216 21.3717 28.6216 26.4945 25.6845C30.0462 23.6354 31.1391 20.6984 29.773 18.1029C29.7047 17.9663 27.1092 22.7475 17.4102 23.3622Z" fill="#007BFC" stroke="#007BFC" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+         <path d="M11.5 7.01001L17 9.51001" stroke="#007BFC" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+         <path d="M4.02295 8.74536C4.02295 10.248 4.02295 14.8926 4.02295 15.3708C4.02295 17.3515 5.32071 19.264 7.84792 20.7667C12.9706 23.7037 21.3719 23.7037 26.4947 20.7667C28.9536 19.3323 30.2513 17.4198 30.3196 15.5757C30.3196 14.6877 30.3196 11.0677 30.3196 9.4967" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
+         <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4946 3.21278C21.3719 0.275752 12.9706 0.275752 7.84791 3.21278C2.72518 6.14981 2.72518 10.9993 7.84791 13.9364C12.9706 16.8734 21.3719 16.8734 26.4946 13.9364C31.6174 10.9993 31.6857 6.14981 26.4946 3.21278Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
+         <path d="M9.91545 12.4084C6.02818 10.273 6.02818 6.74703 9.91545 4.61159C13.8027 2.47615 20.1778 2.47615 24.0651 4.61159C28.0042 6.74703 27.9523 10.273 24.0651 12.4084" stroke="#007BFC" stroke-linecap="round" stroke-linejoin="round"></path>
+         <ellipse cx="17" cy="9.51001" rx="2" ry="1.5" fill="#007BFC"></ellipse>
+      </g>
+      <defs>
+         <lineargradient id="paint0_linear_2870_2480" x1="4.03709" y1="27.0137" x2="30.3737" y2="27.0137" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD"></stop>
+            <stop offset="1" stop-color="#D3E3FE"></stop>
+         </lineargradient>
+         <lineargradient id="paint1_linear_2870_2480" x1="3.69557" y1="27.0137" x2="30.7152" y2="27.0137" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD"></stop>
+            <stop offset="1" stop-color="#D3E3FE"></stop>
+         </lineargradient>
+         <clippath id="clip0_2870_2480">
+            <rect width="34" height="34" fill="white" transform="translate(0 0.0100098)"></rect>
+         </clippath>
+      </defs>
+   </svg>
 
-##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
+   &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
-> L’ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l’ESP32 è la scelta dell’alimentazione giusta per garantire il corretto funzionamento della scheda. 
+   ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
 
-Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
-
-<br>
-<p> 
-<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32 👉</a>
+   > L’ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l’ESP32 è la scelta dell’alimentazione giusta per garantire il corretto funzionamento della scheda. 
+   Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
+   <br>
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32 👉</a>
 </div>
 <br>
 <br>
 <br>
-
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
-<br>
-<img width="60" height="60" src="/115/git-pull-request-24.svg" alt="">
-&nbsp;&nbsp;Scopri la differenza tra tensione e corrente
+   <br>
+   <svg width="48" height="49" fill="none" viewBox="0 0 48 49" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#c)" stroke-linecap="round" stroke-linejoin="round">
+         <path d="m2.5 34.91 21.5 12.3 21.5-12.3-6.9-3.9-14.6 8.3-14.4-8.4-7.1 4z" fill="url(#b)" stroke="url(#a)"></path>
+         <path d="m39.3 29.21c2.3-0.7 3.3-4.1 3.3-4.1l2.9 1.6-21.5 12.3-21.5-12.3 3.1-1.7s0.5 4.1 3.9 4.3c1.4 0.1 5.36-2.74 5.36-2.74l9 5.34 9.4-5.3c0.14-0.1 4.54 3 6.04 2.6z" fill="#007CFC" stroke="#007CFC"></path>
+         <path d="m7.8 22.01-4.3-2.4v-6.6" stroke="#393D45"></path>
+         <path d="m33.3 26.21-9.2 5.4-9.13-5.39" stroke="#393D45"></path>
+         <path d="m44.5 13.01v6.6l-4.1 2.5" stroke="#393D45"></path>
+         <path d="m3.5 12.81 20.5 12.1 20.5-12.1-20.5-12-20.5 12z" stroke="#393D45"></path>
+         <path d="m21.9 6.41c0.5712-0.29793 1.2058-0.45352 1.85-0.45352s1.2789 0.15559 1.85 0.45352c1 0.6 1 1.5 0 2.1-0.5711 0.29794-1.2058 0.45353-1.85 0.45353s-1.2788-0.15559-1.85-0.45353c-1-0.5-1-1.5 0-2.1z" fill="#007CFC" stroke="#007CFC"></path>
+         <path d="m24 9.01v0.8c0.0191 0.54729 0.1876 1.0789 0.4873 1.5372 0.2996 0.4583 0.719 0.8259 1.2127 1.0628 1.4 0.7 3.2 1.7 3.2 1.7" stroke="#007CFC"></path>
+         <path d="m24 9.01v0.8c-0.0191 0.54729-0.1876 1.0789-0.4873 1.5372-0.2996 0.4583-0.719 0.8259-1.2127 1.0628-1.4 0.7-3.2 1.7-3.2 1.7" stroke="#007CFC"></path>
+         <path d="m28.4 13.71c0.5711-0.2979 1.2058-0.4535 1.85-0.4535s1.2788 0.1556 1.85 0.4535c1 0.6 1 1.5 0 2.2-0.5712 0.2979-1.2058 0.4535-1.85 0.4535s-1.2789-0.1556-1.85-0.4535c-0.2218-0.0861-0.4123-0.2372-0.5467-0.4335-0.1343-0.1963-0.2062-0.4286-0.2062-0.6665s0.0719-0.4702 0.2062-0.6665c0.1344-0.1963 0.3249-0.3474 0.5467-0.4335z" fill="#007CFC" stroke="#007CFC"></path>
+         <path d="m15.9 13.51c0.5712-0.2979 1.2058-0.4535 1.85-0.4535s1.2789 0.1556 1.85 0.4535c1 0.6 1 1.5 0 2.1-0.5711 0.2979-1.2058 0.4535-1.85 0.4535s-1.2788-0.1556-1.85-0.4535c-1-0.5-1-1.5 0-2.1z" fill="#007CFC" stroke="#007CFC"></path>
+         <path d="m9.3099 9.26-2.62-1.54c-0.2454-0.17326-0.43919-0.40986-0.5607-0.68459-0.12152-0.27473-0.1662-0.57728-0.1293-0.87541 0.04211-0.82795 0.2775-1.6345 0.68731-2.3552s0.98266-1.3353 1.6727-1.7948c0.27377-0.17567 0.58922-0.27563 0.9142-0.28968 0.32499-0.01405 0.64788 0.0583 0.93582 0.20968l5.72 3.39" stroke="#393D45"></path>
+         <path d="m32.4 5.35c0.0809-0.08957 0.1797-0.16112 0.29-0.21l5.49-3.24c0.2868-0.14137 0.6054-0.20557 0.9246-0.18629 0.3191 0.01929 0.6277 0.12141 0.8954 0.29629 0.7033 0.45692 1.2883 1.0739 1.7072 1.8005 0.4189 0.72655 0.6597 1.542 0.7028 2.3795 0.0316 0.30289-0.0207 0.60864-0.1512 0.88378-0.1305 0.27515-0.3342 0.50909-0.5888 0.67622l-2.67 1.57" stroke="#393D45"></path>
+         <path d="m5.9999 24.68c-0.03199-0.3015 0.02023-0.606 0.15086-0.8796s0.33456-0.5057 0.58914-0.6704l5.49-3.2c0.2735-0.1518 0.5838-0.2247 0.8963-0.2105 0.3125 0.0141 0.615 0.1147 0.8737 0.2905 0.7002 0.4506 1.2837 1.0607 1.7026 1.7804 0.4189 0.7196 0.6613 1.5282 0.7074 2.3596 0.0327 0.303-0.0191 0.6092-0.1497 0.8845-0.1306 0.2754-0.3349 0.5092-0.5903 0.6755l-5.49 3.23c-0.28765 0.1509-0.60978 0.2238-0.93435 0.2115-0.32457-0.0122-0.64026-0.1093-0.91567-0.2815-0.68975-0.4667-1.26-1.0892-1.6648-1.8171-0.40475-0.7278-0.63262-1.5407-0.6652-2.3729z" stroke="#393D45"></path>
+         <path d="m10.29 28.86c0.1805-0.1913 0.3192-0.4182 0.407-0.6662 0.0878-0.2479 0.1229-0.5115 0.103-0.7738-0.0454-0.837-0.2873-1.6515-0.706-2.3777-0.41866-0.7262-1.0024-1.3436-1.704-1.8023-0.41486-0.257-0.91447-0.3397-1.39-0.23" stroke="#393D45"></path>
+         <path d="m40 28.87c-0.2754 0.1722-0.5911 0.2692-0.9157 0.2815s-0.6467-0.0606-0.9343-0.2115l-5.46-3.23c-0.2463-0.1725-0.4407-0.409-0.5623-0.6839s-0.1658-0.5779-0.1277-0.8761c0.0405-0.8269 0.2753-1.6327 0.6853-2.352s0.9837-1.3318 1.6747-1.788c0.2671-0.1919 0.5844-0.3017 0.913-0.3159s0.6543 0.0678 0.937 0.2359l5.49 3.2c0.2545 0.1647 0.4585 0.3968 0.5891 0.6704s0.1829 0.5781 0.1509 0.8796c-0.0449 0.842-0.2896 1.6612-0.7139 2.3898s-1.016 1.3457-1.7261 1.8002z" stroke="#393D45"></path>
+         <path d="m41.44 23.01c-0.2451-0.0568-0.4992-0.0631-0.7468-0.0184s-0.4835 0.1394-0.6932 0.2784c-0.7016 0.4587-1.2854 1.0761-1.704 1.8023-0.4187 0.7262-0.6606 1.5407-0.706 2.3777-0.0199 0.2623 0.0152 0.5259 0.103 0.7738 0.0878 0.248 0.2264 0.4749 0.407 0.6662" stroke="#393D45"></path>
+      </g>
+      <defs>
+         <lineargradient id="b" x1="2.9" x2="45.9" y1="39.06" y2="39.06" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD" offset="0"></stop>
+            <stop stop-color="#D3E3FE" offset="1"></stop>
+         </lineargradient>
+         <lineargradient id="a" x1="95.38" x2="1987.4" y1="-22834" y2="-22834" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B2CFFD" offset="0"></stop>
+            <stop stop-color="#D3E3FE" offset="1"></stop>
+         </lineargradient>
+         <clippath id="c">
+            <rect transform="translate(0 .01001)" width="48" height="48" fill="#fff"></rect>
+         </clippath>
+      </defs>
+   </svg>
 
-##### Tensione e corrente sono la stessa cosa?
+   &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
-> La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
+   ##### Tensione e corrente sono la stessa cosa?
 
-La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
-
-<br>
-<p> 
-<a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza 👉</a>
+   > La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
+   La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
+   <br>
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza 👉</a>
 </div>
 <br>
 <br>
 <br>
-
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
-<br>
-<p> 
-<a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Vedi tutti i Tags del nostro sito</a>
+   <br>
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Vedi tutti i Tags del nostro sito</a>
 </div>
 <br>
 <br>
