@@ -88,8 +88,12 @@ images: []
 </style>
 
 
+<section class="section container-fluid mt-n3 pb-3">
 
-<section class="text-center section container-fluid mt-n3 pb-3">
+### Cosa è l'IOT? 
+> L'Internet delle cose (**IdC**), in inglese Internet of Things (**IoT**), è un neologismo utilizzato nel mondo delle telecomunicazioni e dell'informatica che fa riferimento all'estensione di internet al mondo degli oggetti e dei luoghi concreti, che acquisiscono una propria identità digitale in modo da poter comunicare con altri oggetti nella rete e poter fornire servizi agli utenti. 
+<br>da **Wikipedia.it**
+
    <img width="220" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/122/106.png" alt="">
 </section>
 
