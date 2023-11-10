@@ -90,14 +90,15 @@ images: []
 
 <section class="section container-fluid mt-n3 pb-3">
 
-### Cosa è l'IOT? 
+#### Cosa è l'IOT? 
 > L'Internet delle cose (**IdC**), in inglese Internet of Things (**IoT**), è un neologismo utilizzato nel mondo delle telecomunicazioni e dell'informatica che fa riferimento all'estensione di internet al mondo degli oggetti e dei luoghi concreti, che acquisiscono una propria identità digitale in modo da poter comunicare con altri oggetti nella rete e poter fornire servizi agli utenti. 
 <br>da **Wikipedia.it**
 
    <img width="150" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/114/arduino/arduino-original.svg" alt="">
    <img width="140" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/122/espressif.svg" alt="">
 
-##### Per iniziare con l'IoT e Arduino ti consigliamo di leggere questi articoli introduttivi. Il primo articoli ti illustra i principali criter per sceglere la tua prima scheda IoT.
+##### Per iniziare con l'IoT e Arduino ti consiglio di leggere questi articoli introduttivi estratti dal nostro blog. Il primo articolo ti illustra come scegliere la tua prima scheda IoT fra le centinaia offerte sul mercato.
+Ti suggerisco in ogni caso di leggere anche gli altri due se vuoi avere una facile introduzione al mondo dell'ESP32 e della elettronica in generale.
 </section>
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
