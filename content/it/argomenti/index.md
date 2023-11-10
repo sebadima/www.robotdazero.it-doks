@@ -95,6 +95,9 @@ images: []
 <br>da **Wikipedia.it**
 
    <img width="150" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/114/arduino/arduino-original.svg" alt="">
+   <img width="140" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/122/espressif.svg" alt="">
+
+##### Per iniziare con l'IoT e Arduino ti consigliamo di leggere questi articoli introduttivi. Il primo articoli ti illustra i principali criter per sceglere la tua prima scheda IoT.
 </section>
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
