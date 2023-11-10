@@ -96,7 +96,7 @@ images: []
 </section>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="60" height="60" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+   <svg width="50" height="50" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <path d="m1.9 34.7 22.1 12.8 22.1-12.7-6.7-3.9-15.4 9.1-15.6-9-6.5 3.7z" fill="url(#b)" stroke="url(#a)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
       <path d="m1.9 27.8 22.1 12.7 22.1-12.7-5.2-3-16.9 10.2-17-10.1-5.1 2.9z" fill="#007CFC" stroke="#007CFC" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="m1.9 13.317v8.3831l22.1 12.7 22.1-12.7v-8.3727" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -128,7 +128,7 @@ images: []
    <path d="m22.478 5.5456-3.5341 0.71639 0.7359 1.7713c-0.2026 0.0985-0.6077 0.2955-1.0129 0.4925l-3.0686-0.38668-1.4321 1.9487 2.5593 0.8848c-0.0521 0.1506-0.0056 0.5037 0.0929 0.7063l-2.6281 0.7768 1.2369 2.0287 3.0248-0.2183c0.1998 0.1533 0.6515 0.3095 0.8513 0.4628l-0.7751 1.7545 3.4653 0.9452 1.6784-1.4422c0.2518 0.0028 0.7063-0.0929 1.2592 0.014l1.6448 1.5798 3.4329-0.6671-0.6347-1.8205 1.013-0.4925 2.8659 0.4851 1.5334-1.9979-2.4059-1.0846c0.052-0.1505 0.0056-0.5037-0.0929-0.7062l2.6281-0.7769-1.2369-2.0287-3.0249 0.2183c-0.1998-0.15334-0.6514-0.30948-0.8512-0.46282l0.7258-1.8558-3.4653-0.9452-1.7797 1.4915c-0.5036-0.0056-0.8047-0.10969-1.2592-0.01398l-1.5463-1.3773zm3.9243 4.9802c1.1003 0.7174 1.0891 1.7248-0.1264 2.3158-1.2156 0.591-2.7266 0.5742-3.8789 0.0073-1.1003-0.7174-1.0891-1.7248 0.1264-2.3158 1.3169-0.64023 2.7787-0.72476 3.8789-0.0073z" clip-rule="evenodd" fill="#1062FE" fill-rule="evenodd"></path>
    <path d="M22.0242 11.036C23.3052 10.3373 23.3052 9.17283 22.1407 8.47414C21.7913 8.24124 21.3255 8.12479 20.9762 8.12479C21.9078 7.42609 21.7913 6.37805 20.7433 5.67935C19.4623 4.98065 17.4827 4.98065 16.3182 5.67935C16.2017 5.5629 16.0853 5.5629 15.9688 5.44645C14.9208 4.8642 13.1741 4.8642 12.0096 5.44645C10.7286 6.0287 10.7286 6.96029 11.6602 7.65899L17.7156 11.1525C18.8801 11.7347 20.7433 11.7347 22.0242 11.036Z" fill="#007CFC"></path>
 
-   ##### Cosa è Arduino?
+   #### Cosa è Arduino?
 
    > Arduino è una piccola scheda creata da una azienda italiana in grado di leggere programmi e di interagire con l’ambiente esterno. E’ in definitiva il componente base di tutti i Robot e i sistemi di automazione che troverai nella industria e nella domotica. 
    Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
@@ -142,7 +142,7 @@ images: []
 <br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="60" height="60" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg width="50" height="50" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_2870_2480)">
          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8636 23.4988C9.35025 23.4305 6.95964 20.6984 6.54982 20.9716C2.79315 23.9086 3.27128 28.1434 7.91588 30.8072C13.0386 33.7443 21.4399 33.7443 26.5626 30.8072C31.0023 28.2117 31.617 24.2501 28.3385 21.3131C27.7921 20.9033 23.0109 23.5671 16.8636 23.4988Z" fill="url(#paint0_linear_2870_2480)" stroke="url(#paint1_linear_2870_2480)" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4102 23.3622C7.30131 23.4305 4.6375 17.898 4.56919 18.0346C3.20313 20.6301 4.29598 23.6354 7.84774 25.6845C12.9705 28.6216 21.3717 28.6216 26.4945 25.6845C30.0462 23.6354 31.1391 20.6984 29.773 18.1029C29.7047 17.9663 27.1092 22.7475 17.4102 23.3622Z" fill="#007BFC" stroke="#007BFC" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -167,7 +167,7 @@ images: []
       </defs>
    </svg>
 
-   ##### Come alimentare la scheda ESP32
+   #### Come alimentare la scheda ESP32
 
    > L’ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l’ESP32 è la scelta dell’alimentazione giusta per garantire il corretto funzionamento della scheda. 
    Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
@@ -180,7 +180,7 @@ images: []
 <br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="60" height="60" fill="none" viewBox="0 0 48 49" xmlns="http://www.w3.org/2000/svg">
+   <svg width="50" height="50" fill="none" viewBox="0 0 48 49" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#c)" stroke-linecap="round" stroke-linejoin="round">
          <path d="m2.5 34.91 21.5 12.3 21.5-12.3-6.9-3.9-14.6 8.3-14.4-8.4-7.1 4z" fill="url(#b)" stroke="url(#a)"></path>
          <path d="m39.3 29.21c2.3-0.7 3.3-4.1 3.3-4.1l2.9 1.6-21.5 12.3-21.5-12.3 3.1-1.7s0.5 4.1 3.9 4.3c1.4 0.1 5.36-2.74 5.36-2.74l9 5.34 9.4-5.3c0.14-0.1 4.54 3 6.04 2.6z" fill="#007CFC" stroke="#007CFC"></path>
@@ -215,7 +215,7 @@ images: []
       </defs>
    </svg>
 
-   ##### Tensione e corrente sono la stessa cosa?
+   #### Tensione e corrente sono la stessa cosa?
 
    > La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.
    La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
