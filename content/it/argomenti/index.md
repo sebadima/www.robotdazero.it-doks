@@ -1,5 +1,5 @@
 ---
-title: "Se vuoi entrare nel mondo dell'Internet of Things inizia con  questi articoli:"
+title: "Vuoi entrare nel mondo dell'Internet of Things? Inizia da qui!"
 description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -86,14 +86,14 @@ images: []
    input[type='submit'] {margin-left: 10px;}
    }
 </style>
+
+
+
 <section class="section container-fluid mt-n3 pb-3">
    <div class="row justify-content-center">
-      <div class="col-lg-9 col-xl-8 text-center">
-         <img width="220" class="figure-img img-fluid lazyload blur-up" src="/122/106.png" alt="">
-         <br><br>
-      </div>
    </div>
 </section>
+
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
    <svg width="48" height="48" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
