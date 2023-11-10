@@ -134,6 +134,7 @@ images: []
    Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
    <br>
    <p> 
+<br>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024</a>
    </p>
 </div>
@@ -173,6 +174,7 @@ images: []
    Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
    <br>
    <p> 
+<br>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32</a>
 </div>
 <br>
@@ -221,6 +223,7 @@ images: []
    La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
    <br>
    <p> 
+<br>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza</a>
 </div>
 <br>
