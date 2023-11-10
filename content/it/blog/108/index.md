@@ -82,7 +82,7 @@ Ecco alcuni esempi di progetti che possono essere realizzati con la scheda Ardui
 
 La scheda Arduino Uno R4 è alimentata da un <a href="https://developer.arm.com/Processors/Cortex-M4" target="_blank" rel="noopener">ARM Cortex-M4</a> a 32 bit <a href="https://www.renesas.com/eu/en" target="_blank" rel="noopener">Renesas</a> RA4M1, con un notevole salto di potenza elaboraiiva rispetto alla precedente versione. La versione WiFi è dotata di un modulo WiFi ESP32-S3 in aggiunta al RA4M1 e amplia le opportunità creative per i produttori e maker. 
 
-<img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up" src="https://www.robotstore.it/open2b/var/products/18/18/0-41d963c1-500-Arduino-UNO-R4-Minima.jpg" alt="">
+<img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpg" alt="La versione minima della sched IOT Arduino R4">
 
 ###### La versione "Minima" della R4
 
