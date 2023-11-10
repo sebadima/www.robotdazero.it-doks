@@ -91,10 +91,9 @@ images: []
 
 <section class="section container-fluid mt-n3 pb-3">
    <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Tutti i tags</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Tutti i tags...</a>
    </p>
 </section>
-<br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
    <svg width="48" height="48" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
