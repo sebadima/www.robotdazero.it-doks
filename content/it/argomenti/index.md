@@ -89,14 +89,13 @@ images: []
 
 
 
-<section class="section container-fluid mt-n3 pb-3">
-   <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Tutti i tags...</a>
-   </p>
+<section class="text-center section container-fluid mt-n3 pb-3">
+   <img width="220" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/122/106.png" alt="">
 </section>
+
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="50" height="50" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+   <svg width="42" height="42" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <path d="m1.9 34.7 22.1 12.8 22.1-12.7-6.7-3.9-15.4 9.1-15.6-9-6.5 3.7z" fill="url(#b)" stroke="url(#a)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
       <path d="m1.9 27.8 22.1 12.7 22.1-12.7-5.2-3-16.9 10.2-17-10.1-5.1 2.9z" fill="#007CFC" stroke="#007CFC" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="m1.9 13.317v8.3831l22.1 12.7 22.1-12.7v-8.3727" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -135,7 +134,7 @@ images: []
    <br>
    <p> 
 <br>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024 ></a>
    </p>
 </div>
 <br>
@@ -143,7 +142,7 @@ images: []
 <br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="50" height="50" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg width="42" height="42" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_2870_2480)">
          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8636 23.4988C9.35025 23.4305 6.95964 20.6984 6.54982 20.9716C2.79315 23.9086 3.27128 28.1434 7.91588 30.8072C13.0386 33.7443 21.4399 33.7443 26.5626 30.8072C31.0023 28.2117 31.617 24.2501 28.3385 21.3131C27.7921 20.9033 23.0109 23.5671 16.8636 23.4988Z" fill="url(#paint0_linear_2870_2480)" stroke="url(#paint1_linear_2870_2480)" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4102 23.3622C7.30131 23.4305 4.6375 17.898 4.56919 18.0346C3.20313 20.6301 4.29598 23.6354 7.84774 25.6845C12.9705 28.6216 21.3717 28.6216 26.4945 25.6845C30.0462 23.6354 31.1391 20.6984 29.773 18.1029C29.7047 17.9663 27.1092 22.7475 17.4102 23.3622Z" fill="#007BFC" stroke="#007BFC" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -175,14 +174,14 @@ images: []
    <br>
    <p> 
 <br>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32 ></a>
 </div>
 <br>
 <br>
 <br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
-   <svg width="50" height="50" fill="none" viewBox="0 0 48 49" xmlns="http://www.w3.org/2000/svg">
+   <svg width="42" height="42" fill="none" viewBox="0 0 48 49" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#c)" stroke-linecap="round" stroke-linejoin="round">
          <path d="m2.5 34.91 21.5 12.3 21.5-12.3-6.9-3.9-14.6 8.3-14.4-8.4-7.1 4z" fill="url(#b)" stroke="url(#a)"></path>
          <path d="m39.3 29.21c2.3-0.7 3.3-4.1 3.3-4.1l2.9 1.6-21.5 12.3-21.5-12.3 3.1-1.7s0.5 4.1 3.9 4.3c1.4 0.1 5.36-2.74 5.36-2.74l9 5.34 9.4-5.3c0.14-0.1 4.54 3 6.04 2.6z" fill="#007CFC" stroke="#007CFC"></path>
@@ -224,6 +223,11 @@ images: []
    <br>
    <p> 
 <br>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza ></a>
 </div>
 <br>
+<section class="section container-fluid mt-n3 pb-3">
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Tutti i tags ></a>
+   </p>
+</section>
