@@ -80,11 +80,16 @@ Ecco alcuni esempi di progetti che possono essere realizzati con la scheda Ardui
 
 ### LA NUOVA ARDUINO UNO R4 
 
-La scheda Arduino Uno R4 è alimentata da un ARM Cortex-M4 a 32 bit Renesas RA4M1, con un notevole salto di potenza elaboraiiva rispetto alla precedente versione. La versione WiFi è dotata di un modulo WiFi ESP32-S3 in aggiunta al RA4M1 e amplia le opportunità creative per i produttori e maker. 
+La scheda Arduino Uno R4 è alimentata da un <a href="https://developer.arm.com/Processors/Cortex-M4" target="_blank" rel="noopener">ARM Cortex-M4</a> a 32 bit <a href="https://www.renesas.com/eu/en" target="_blank" rel="noopener">Renesas</a> RA4M1, con un notevole salto di potenza elaboraiiva rispetto alla precedente versione. La versione WiFi è dotata di un modulo WiFi ESP32-S3 in aggiunta al RA4M1 e amplia le opportunità creative per i produttori e maker. 
+
+<img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up" src="https://www.robotstore.it/open2b/var/products/18/18/0-41d963c1-500-Arduino-UNO-R4-Minima.jpg" alt="">
+
+###### La versione "Minima" della R4
+
 
 ##### L'Arduino Uno R4 funziona a 48 MHz, che fornisce un aumento di 3 volte rispetto al popolare Uno R3. Inoltre, la SRAM è stata aggiornata da 2 kB a 32 kB e la memoria flash da 32 kB a 256 kB per supportare progetti più complessi. 
 
-Rispondendo al feedback della community, la porta USB è ora USB-C e la tensione di alimentazione massima è stata aumentata a 24 V con un design termico migliorato. La scheda include un bus CAN e una porta SPI, consentendo agli utenti di ridurre il cablaggio ed eseguire attività parallele collegando più schermi. Un DAC analogico a 12 bit è anche fornito sulla scheda.
+Rispondendo al feedback della community, la porta USB è ora USB-C e la tensione di alimentazione massima è stata aumentata a 24 V con un design termico migliorato. La scheda include un <a href="https://www.digimax.it/it/blog/cose-il-protocollo-can-bus-e-quali-sono-i-suoi-vantaggi-n467" target="_blank" rel="noopener">bus CAN</a> e una porta SPI, consentendo agli utenti di ridurre il cablaggio ed eseguire attività parallele collegando più schermi. Un <a href="https://it.wikipedia.org/wiki/Convertitore_analogico-digitale" target="_blank" rel="noopener">DAC analogico</a> a 12 bit è anche fornito sulla scheda.
 
 L'Arduino Uno R4 è disponibile in 2 versioni (Minima e WiFi) e offre le seguenti nuove funzionalità rispetto all'Uno R3:
 
