@@ -921,7 +921,7 @@ L'intelligenza artificiale (AI) può essere utilizzata per migliorare l'efficien
 I sensori ambientali hanno il potenziale di trasformare il modo in cui gestiamo le risorse naturali e proteggiamo l'ambiente.
 
 
-### Vari ripi di sensori amnientali 
+### Vari ripi di sensori ambientali
 I sensori ambientali sono dispositivi che misurano le condizioni ambientali, come la temperatura, l'umidità, la qualità dell'aria, il rumore e la luminosità. I sensori ambientali vengono utilizzati in una varietà di applicazioni, tra cui la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
 
 Tipi di sensori ambientali
