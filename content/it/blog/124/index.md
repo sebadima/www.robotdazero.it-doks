@@ -2739,8 +2739,6 @@ Sistema di tracciabilità delle colture basato sull'ESP32Opens in a new window
 www.meccanicanews.com
 Sistema di tracciabilità delle colture basato sull'ESP32
 L'agricoltura sostenibile è un settore in rapida crescita e l'ESP32 ha il potenziale per svolgere un ruolo importante in questo settore.
-
-<hr>
 <br>
 <br>
-<p style="font-size: 0.8em;">R.124.0.0.1</p>
+<p style="font-size: 0.8em;">R.124.0.0.3</p>
