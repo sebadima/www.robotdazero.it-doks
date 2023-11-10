@@ -8,7 +8,7 @@ draft:  false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["ESP32", "Elettronica", "Alimentazione"]
+tags: ["Arduino", "ARM"]
 contributors: ["sebadima "]
 pinned: false
 mermaid: true
