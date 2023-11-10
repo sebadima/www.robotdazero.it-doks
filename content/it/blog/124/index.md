@@ -826,63 +826,54 @@ L'ESP32 è una piattaforma potente e versatile che offre un'ampia gamma di possi
 ## Capitolo 4: Monitoraggio ambientale con l'ESP32
 Il monitoraggio ambientale è il processo di raccolta e analisi dei dati sull'ambiente. I dati ambientali possono essere utilizzati per una varietà di scopi, tra cui la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
 
-L'ESP32 è un microcontroller economico e versatile che può essere utilizzato per il monitoraggio ambientale. L'ESP32 offre una serie di funzionalità che lo rendono adatto per questo scopo, tra cui:
+L'ESP32 consuma una quantità relativamente piccola di energia, che lo rende adatto per l'utilizzo in applicazioni alimentate a batteria o a energia solare. La disponibiltà di connessioni è fondamentale in questo tipo di applicazioni e non batsa prevedere il collegamento alle sole reti WI-FI. L'ESP32 integra una serie di moduli di connettività wireless tra cui LoRa ed ESP-NOW. Queste opzioni aggiuntive non sempre presenti nelle altre schede (ESP-NOW è un protocollo esclusivo dell'ESP32) permetteno la raccolta ei dati sensotriali e attuativi anche a distanze superiori ai 100 mt (ESP-NOW) e decine di KM (protocollo LoRa). Grazie all connessione wireless i dati racolti vengono rasmessi in tempo reale a un centro di controllo.
 
-Dimensioni ridotte: L'ESP32 è un microcontroller di piccole dimensioni, che lo rende adatto per l'installazione in dispositivi di piccole dimensioni, come i sensori ambientali.
-Consumo energetico ridotto: L'ESP32 consuma una quantità relativamente piccola di energia, che lo rende adatto per l'utilizzo in applicazioni alimentate a batteria o a energia solare.
-Connettività wireless: L'ESP32 integra una serie di moduli di connettività wireless, tra cui Wi-Fi, Bluetooth e Zigbee. Questa connettività wireless consente ai dati raccolti dai sensori di essere trasmessi in tempo reale a un centro di controllo.
-Tecniche e metodi per il monitoraggio ambientale con l'ESP32
+### Tecniche e metodi per il monitoraggio ambientale con l'ESP32
 
-L'ESP32 può essere utilizzato per il monitoraggio ambientale in una varietà di modi, tra cui:
+La nostra scheda può essere utilizzatao per il monitoraggio ambientale in una varietà di modi, tra cui:
 
-Raccolta dati dei sensori: L'ESP32 può essere utilizzato per raccogliere dati ambientali da sensori, come i sensori di temperatura, umidità, qualità dell'aria, rumore e luminosità. Questi dati possono essere utilizzati per monitorare l'ambiente e identificare i problemi ambientali.
-Trasmissione dati: L'ESP32 può essere utilizzato per trasmettere i dati raccolti dai sensori a un centro di controllo. Questo centro di controllo può utilizzare i dati per analizzare l'ambiente e prendere decisioni per la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
-Citazioni e riflessioni sull'ESP32 per il monitoraggio ambientale
+- Raccolta dati dei sensori: L'ESP32 può essere utilizzato per raccogliere dati ambientali da sensori, come i sensori di temperatura, umidità, qualità dell'aria, rumore e luminosità. Questi dati possono essere utilizzati per monitorare l'ambiente e identificare i problemi ambientali.
+- Trasmissione dati: L'ESP32 può essere utilizzato per trasmettere i dati raccolti dai sensori a un centro di controllo. Questo centro di controllo può utilizzare i dati per analizzare l'ambiente e prendere decisioni per la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
 
-"L'ESP32 è una piattaforma potente che può essere utilizzata per sviluppare una varietà di soluzioni di monitoraggio ambientale." - Barbara Pompili, Ministro della Transizione Ecologica
+Negli anni post Covid-19 le schede Iot hanno destato una attenzione crescente per la capacità di monitorare la qualità dell'aria in modo super economico. Più di un imprenditore ha espresso interesse nella scheda, elogiandone i vari aspetti innovativi e mettendo in luce le potenzialità di sviluppo
 
-"L'ESP32 è una piattaforma versatile che può essere utilizzata per sviluppare soluzioni di monitoraggio ambientale a costi contenuti." - Marco Tronchetti Provera, Presidente e AD di Pirelli
+> "L'ESP32 è una piattaforma potente che può essere utilizzata per sviluppare una varietà di soluzioni di monitoraggio ambientale." - Barbara Pompili, Ministro della Transizione Ecologica
 
-"L'ESP32 è una piattaforma emergente che ha il potenziale di trasformare il modo in cui sviluppiamo e utilizziamo le tecnologie di monitoraggio ambientale." - Elon Musk, CEO di Tesla
+> "L'ESP32 è una piattaforma versatile che può essere utilizzata per sviluppare soluzioni di monitoraggio ambientale a costi contenuti." - Marco Tronchetti Provera, Presidente e AD di Pirelli
+
+> "L'ESP32 è una piattaforma emergente che ha il potenziale di trasformare il modo in cui sviluppiamo e utilizziamo le tecnologie di monitoraggio ambientale." - Elon Musk, CEO di Tesla
 
 Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
 
-Ecco alcuni esempi di sistemi di monitoraggio ambientale basati sull'ESP32:
+Come detto sopra il controllo dell'aria è stato il principiale fattore di successo nel periodo Covid-19 2, ma la fine della emergenza non ha diminuito l'interesse per la tematica.
+I sistemi di monitoraggio dell'aria possono usare 'ESP32 per raccogliere dati da specifici sensori di qualità dell'aria. Il costo di specifici dispositivi si aggira su pochi euro, pur fornendo qualitò e affidabilitò sorprendenti. I dati rilevati vngono in genere salvati su database NOQL o Postgres per produrre previsioni affidabili grazie agli algoritmi in Machine Learning. Sempre grazie al ML i ricercatoti riescono ad individuare le specifiche fonti di inquinamento con un grado di precisione mai raggiunto prima.
 
-Sistemi di monitoraggio della qualità dell'aria: I sistemi di monitoraggio della qualità dell'aria possono utilizzare l'ESP32 per raccogliere dati sulla qualità dell'aria da sensori di qualità dell'aria. Questi dati possono essere utilizzati per monitorare la qualità dell'aria e identificare le fonti di inquinamento.
-Sistemi di monitoraggio della temperatura: I sistemi di monitoraggio della temperatura possono utilizzare l'ESP32 per raccogliere dati sulla temperatura da sensori di temperatura. Questi dati possono essere utilizzati per monitorare il clima e identificare i cambiamenti climatici.
-Sistemi di monitoraggio della flora e della fauna: I sistemi di monitoraggio della flora e della fauna possono utilizzare l'ESP32 per raccogliere dati sulla flora e la fauna da sensori di movimento e immagini. Questi dati possono essere utilizzati per monitorare la biodiversità e identificare le specie in pericolo.
-Conclusione
+### Sistemi di monitoraggio della temperatura: 
+L'ESP32 può raccogliere dati sulla temperatura da sensori di temperatura/umidità molto precisi ma a basso costo. I dati possono essere utilizzati per monitorare il clima e identificare i cambiamenti climatici.
 
-L'ESP32 è una piattaforma versatile che può essere utilizzata per sviluppare una varietà di soluzioni di monitoraggio ambientale. L'ESP32 offre una serie di funzionalità che lo rendono adatto per questo scopo, tra cui le dimensioni ridotte, il consumo energetico ridotto e la connettività wireless.
 
-L'utilizzo dell'ESP32 per il monitoraggio ambientale può aiutare a migliorare la nostra comprensione dell'ambiente e a proteggere l'ambiente per le generazioni future.
+### Sistemi di monitoraggio della flora e della fauna: I sistemi di monitoraggio della flora e della fauna possono utilizzare l'ESP32 per raccogliere dati sulla flora e la fauna da sensori di movimento e immagini. Questi dati possono essere utilizzati per monitorare la biodiversità e identificare le specie in pericolo.
 
-Riflessioni aggiuntive
+L'utilizzo dell'ESP32 per il monitoraggio ambientale può aiutare a migliorare la nostra comprensione dell'ambiente e a proteggere l'ambiente per le generazioni future. Il monitoraggio ambientale è un campo in rapida evoluzione e l'ESP32 è una piattaforma innovativa e al passo con i tempi, con il potenziale di trasformare il modo in cui sviluppiamo le tecniche monitoraggio ambientale.
 
-Il monitoraggio ambientale è un campo in rapida evoluzione. L'ESP32 è una piattaforma emergente che ha il potenziale di trasformare il modo in cui sviluppiamo e utilizziamo le tecnologie di monitoraggio ambientale.
-
-Le nuove tecnologie, come l'intelligenza artificiale (AI), possono essere utilizzate per migliorare l'efficienza e l'accuratezza del monitoraggio ambientale. L'AI può essere utilizzata per analizzare i dati raccolti dai sensori e identificare i problemi ambientali in modo più rapido e accurato.
-
-Il monitoraggio ambientale è una parte importante della sostenibilità. Investire nella tecnologia di monitoraggio ambientale può aiutare a ridurre l'impatto ambientale
+Il monitoraggio ambientale è una parte importante della sostenibilità. Investire nella tecnologia di monitoraggio ambientale può certamente aiutare a ridurre l'impatto ambientale
 
 
 ### Sensori ambientali
 
-Sensori ambientali
-
 I sensori ambientali sono dispositivi che misurano le condizioni ambientali, come la temperatura, l'umidità, la qualità dell'aria, il rumore e la luminosità. I sensori ambientali vengono utilizzati in una varietà di applicazioni, tra cui la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
 
-Tipi di sensori ambientali
+#### Tipi di sensori ambientali
 
 Esistono molti tipi diversi di sensori ambientali, ognuno progettato per misurare una particolare condizione ambientale. Alcuni dei tipi più comuni di sensori ambientali includono:
 
-Sensori di temperatura: I sensori di temperatura misurano la temperatura ambiente.
-Sensori di umidità: I sensori di umidità misurano l'umidità ambiente.
-Sensori di qualità dell'aria: I sensori di qualità dell'aria misurano la concentrazione di inquinanti nell'aria.
-Sensori di rumore: I sensori di rumore misurano il livello di rumore ambientale.
-Sensori di luminosità: I sensori di luminosità misurano la luminosità ambientale.
-Tecniche e metodi di misurazione
+1. Sensori di temperatura: I sensori di temperatura misurano la temperatura ambiente.
+   Tra i sensori più noti ricordo la famiglia DHT11 e DHT12, prodotti a basso costo ma con precisione di buon livello.
+2. Sensori di umidità: I sensori di umidità misurano l'umidità ambiente.
+   L'utilizzo
+3. Sensori di qualità dell'aria: I sensori di qualità dell'aria misurano la concentrazione di inquinanti nell'aria.
+4. Sensori di rumore: I sensori di rumore misurano il livello di rumore ambientale.
+5. Sensori di luminosità: I sensori di luminosità misurano la luminosità ambientale.
 
 I sensori ambientali utilizzano una varietà di tecniche e metodi per misurare le condizioni ambientali. Alcune delle tecniche più comuni di misurazione includono:
 
@@ -1371,7 +1362,8 @@ L'utilizzo dell'ESP32 per l'efficienza energetica può aiutare a ridurre il cons
 
 
 
-
++++++++++++++++++++++++++++++++++++++++++++++++ METTA LIBRO +++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++ METTA LIBRO +++++++++++++++++++++++++++++++++++++++++
 
 
 
