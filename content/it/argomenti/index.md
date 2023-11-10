@@ -90,10 +90,11 @@ images: []
 
 
 <section class="section container-fluid mt-n3 pb-3">
-   <div class="row justify-content-center">
-   </div>
+   <p> 
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Tutti i tags</a>
+   </p>
 </section>
-
+<br>
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
    <br>
    <svg width="48" height="48" fill="white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +137,7 @@ images: []
    Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico: il segreto di tutto ciò sta nel sapiente mix di chip secondari e di un chip più potente chiamato microcontroller...
    <br>
    <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024 👉</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino" role="button">Leggi la guida Completa 2024</a>
    </p>
 </div>
 <br>
@@ -177,7 +178,7 @@ images: []
    Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
    <br>
    <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32 👉</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/esp32-e-la-sua-alimentazione/" role="button">L'alimentazione dell'ESP32</a>
 </div>
 <br>
 <br>
@@ -227,16 +228,5 @@ images: []
    La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
    <br>
    <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza 👉</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/blog/la-differenza-tra-corrente-e-tensione" role="button">Scopri la differenza</a>
 </div>
-<br>
-<br>
-<br>
-<div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
-   <br>
-   <p> 
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/tags" role="button">Vedi tutti i Tags del nostro sito</a>
-</div>
-<br>
-<br>
-<br>
