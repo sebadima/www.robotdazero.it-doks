@@ -94,7 +94,7 @@ images: []
 > L'Internet delle cose (**IdC**), in inglese Internet of Things (**IoT**), è un neologismo utilizzato nel mondo delle telecomunicazioni e dell'informatica che fa riferimento all'estensione di internet al mondo degli oggetti e dei luoghi concreti, che acquisiscono una propria identità digitale in modo da poter comunicare con altri oggetti nella rete e poter fornire servizi agli utenti. 
 <br>da **Wikipedia.it**
 
-   <img width="220" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/122/106.png" alt="">
+   <img width="150" class="figure-img img-fluid blur-up ls-is-cached lazyloaded" src="/114/arduino/arduino-original.svg" alt="">
 </section>
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
