@@ -19,6 +19,38 @@ homepage: false
 
 L&#8217;ESP32 è una scheda di sviluppo molto potente e versatile, utilizzata in molte applicazioni IOT. Una delle questioni più importanti quando si lavora con l&#8217;ESP32 è la scelta dell&#8217;alimentazione giusta per garantire il corretto funzionamento della scheda. Può essere alimentato attraverso un&#8217;ampia gamma di fonti di alimentazione, tra cui l&#8217;alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## I PIN DI ALIMENTAZIONE DELL'ESP32
+
+Si può alimentare l'ESP32 in due modi diversi: Tramite la presa USB ed erogare 3.3 e 5V dai pin della scheda oppure in alternativa si possono fornire 3.3V o 5V direttamente sulle porte 3.3V e 5V.
+
+Questi sono i pin da usare per la alimentazione della scheda e delle periferiche:
+
+- PIN 3.3V
+- PIN 5V
+- PIN GROUND (pin della massa)
+
+Le periferiche compatibili possono prevelare dunque 3.3 e 5V da questi PIN quando usiamo la USB.
+
+
+
+
+
 ## ALIMENTAZIONE CON PRESA USB
 
 ![esp32 alimentato con cavo USB](images/img1.webp)
