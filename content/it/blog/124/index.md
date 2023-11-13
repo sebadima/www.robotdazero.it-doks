@@ -837,12 +837,6 @@ La nostra scheda può essere utilizzatao per il monitoraggio ambientale in una v
 
 Negli anni post Covid-19 le schede Iot hanno destato una attenzione crescente per la capacità di monitorare la qualità dell'aria in modo super economico. Più di un imprenditore ha espresso interesse nella scheda, elogiandone i vari aspetti innovativi e mettendo in luce le potenzialità di sviluppo
 
-> "L'ESP32 è una piattaforma potente che può essere utilizzata per sviluppare una varietà di soluzioni di monitoraggio ambientale." - Barbara Pompili, Ministro della Transizione Ecologica
-
-> "L'ESP32 è una piattaforma versatile che può essere utilizzata per sviluppare soluzioni di monitoraggio ambientale a costi contenuti." - Marco Tronchetti Provera, Presidente e AD di Pirelli
-
-> "L'ESP32 è una piattaforma emergente che ha il potenziale di trasformare il modo in cui sviluppiamo e utilizziamo le tecnologie di monitoraggio ambientale." - Elon Musk, CEO di Tesla
-
 Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
 
 Come detto sopra il controllo dell'aria è stato il principiale fattore di successo nel periodo Covid-19 2, ma la fine della emergenza non ha diminuito l'interesse per la tematica.
@@ -897,11 +891,6 @@ Alcuni dei marchi più comuni di sensori ambientali includono:
 - Infineon Technologies
 
 
-> "I sensori ambientali sono strumenti essenziali per la protezione dell'ambiente." - Barbara Pompili, Ministro della Transizione Ecologica
-
-> "I sensori ambientali ci aiutano a comprendere meglio il nostro ambiente e a prendere decisioni più informate per la sua protezione." - Marco Tronchetti Provera, Presidente e AD di Pirelli
-
-> "I sensori ambientali hanno il potenziale di trasformare il modo in cui gestiamo le risorse naturali e proteggiamo l'ambiente." - Elon Musk, CEO di Tesla
 
 La protezione dell'ambiente non è un problema rimandabile agli "altri" in genere, chiunque siano gli altri. Ogni errore e leggerezza nel gestire le risorse ambientali viene pagato collettivamente ma arricchisce solo alcuni individui, magari residenti a migliaia di chilometri dalle fonti di rischio. I dati raccolti dai sensori ambientali possono essere utilizzati per promuovere "class act", denunce politiche o legali cui gli avversari dovranno rispondere fornendo a loro volta dati concreti e verificabili, non rassicurazioni.
 
@@ -1506,17 +1495,6 @@ Il futuro della smart mobility
 
 La smart mobility è una tecnologia in rapida crescita che ha il potenziale di trasformare il settore dei trasporti. La smart mobility può aiutare a migliorare la sicurezza, l'efficienza e la sostenibilità dei trasporti, rendendo le nostre città più vivibili e sostenibili.
 
-Citazioni di imprese e imprenditori del settore
-
-"La smart mobility è la chiave per costruire un futuro più sostenibile e inclusivo" - Barbara Pompili, Ministro della Transizione Ecologica
-
-"La smart mobility è una rivoluzione che sta già cambiando il modo in cui ci muoviamo" - Marco Tronchetti Provera, Presidente e AD di Pirelli
-
-"La smart mobility è la soluzione per risolvere i problemi di congestione del traffico e dell'inquinamento" - Luca Mercalli, meteorologo e divulgatore scientifico
-
-"La smart mobility è il futuro dei trasporti, ma è importante investire nella ricerca e sviluppo per garantire che sia sicura ed efficiente" - Elon Musk, CEO di Tesla
-
-La smart mobility è una tecnologia con un grande potenziale per migliorare la nostra vita. È importante che le imprese e i governi investano nella ricerca e sviluppo di questa tecnologia, in modo da poterne sfruttare appieno i benefici.
 
 
 ### Architettura di un sistema di trasporto sostenibile
@@ -1589,9 +1567,6 @@ Citazione:
 **** Sistemi di micromobilità: I sistemi di micromobilità basati su ESP32 possono essere utilizzati per ridurre l'uso di veicoli a motore e le emissioni di gas serra. Questi sistemi possono utilizzare sensori per rilevare la posizione e la velocità dei veicoli di micromobilità. I dati raccolti dai sensori possono essere utilizzati per migliorare la sicurezza e l'efficienza della micromobilità.
 Citazione:
 
-"L'ESP32 è una piattaforma potente che può essere utilizzata per sviluppare una varietà di soluzioni di micromobilità. Il suo basso consumo energetico lo rende adatto per l'utilizzo in applicazioni alimentate a batteria. Inoltre, la sua connettività wireless consente ai dati raccolti dai sensori di essere trasmessi in tempo reale a un cloud computing." - Marco Tronchetti Provera, Presidente e AD di Pirelli
-
-Questi sono solo alcuni esempi di come l'ESP32 può essere utilizzato per sviluppare sistemi di trasporto sostenibile. L'ESP32 è una piattaforma versatile che può essere utilizzata per sviluppare una varietà di soluzioni di trasporto innovative.
 
 
 
