@@ -858,18 +858,18 @@ La nostra scheda può raccogliere dati sulla temperatura da sensori di temperatu
 L'uso attento e massiccio di risorse come l'ESP32 possono migliorare la nostra comprensione dell'ambiente e a proteggere la natura per le generazioni future. Il monitoraggio ambientale è un settore ampiamente trascurato dai governi perchè mette chiaramente in luce i minimi (per non dire deludenti) risultati ottenuti finora. Non ci aspettiamo che le stesse aziende, responsabili per la massima parte, forniscano dati e strumenti per diminuire i loro stessi ricavi. Certamente non siamo afflitti da tendenze anarchiche o libertarie ma la esigenza di raccogliere dati veri e continui da parte del cittadino è una esigenza imprescindibile e fattibile anche dal punto di vista tecnico-economico.
 
 
-Una intera batteria di sensori IoT di ultima generazione può cistra emeno di 200 euro e la fornitura di software adeguati non è certamente un problema con l'avvento del Machine Learning. Robotdazero offre gratuitamente per questi scopi la piattaforma Kaspian. Il nostro magari ambizioso obiettivo resta quello di cambiare i sistemi di monitoraggio ambientale  e renderli autonomi e contrallabili anche da piccoli comuni o associazioni di cittadini.
+Una intera batteria di sensori IoT di ultima generazione può costare meno di 200 euro e la fornitura di software adeguati non è certamente un problema con l'avvento del Machine Learning. Robotdazero offre gratuitamente per questi scopi la piattaforma Kaspian. Il nostro magari ambizioso obiettivo resta quello di cambiare i sistemi di monitoraggio ambientale  e renderli autonomi e controllabili anche da piccoli comuni o associazioni di cittadini.
 
-Il monitoraggio ambientale è una parte importante della sostenibilità. Investire nella tecnologia di monitoraggio ambientale può certamente aiutare a ridurre l'impatto ambientale
+> Il monitoraggio ambientale è una parte importante della sostenibilità. Investire nella tecnologia di monitoraggio ambientale può certamente aiutare a ridurre l'impatto ambientale
 
 
-### Sensori ambientali
+### Cosa sono in dettaglio i Sensori ambientali?
 
-I sensori ambientali sono dispositivi che misurano le condizioni ambientali, come la temperatura, l'umidità, la qualità dell'aria, il rumore e la luminosità. I sensori ambientali vengono utilizzati in una varietà di applicazioni, tra cui la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
+I sensori ambientali sono dispositivi che misurano le condizioni di parametri come la temperatura, l'umidità, la qualità dell'aria, il rumore e la luminosità. Si possono usare in una varietà di applicazioni, tra cui la gestione delle risorse naturali e la protezione dell'ambiente e la ricerca scientifica.
 
 #### Tipi di sensori ambientali
 
-Esistono molti tipi diversi di sensori ambientali, ognuno progettato per misurare una particolare condizione ambientale. Alcuni dei tipi più comuni di sensori ambientali includono:
+I sensori sono in genere specifici sono specaCertametnte Esistono molti tipi diversi di sensori ambientali, ognuno progettato per misurare una particolare condizione ambientale. Alcuni dei tipi più comuni di sensori ambientali includono:
 
 1. Sensori di temperatura: I sensori di temperatura misurano la temperatura ambiente.
    Tra i sensori più noti ricordo la famiglia DHT11 e DHT12, prodotti a basso costo ma con precisione di buon livello.
