@@ -247,58 +247,6 @@ La seguente tabella confronta le caratteristiche dei diversi protocolli di comun
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Capitolo 2: Programmazione dell'ESP32
 
 Esistono vari strumenti e software disponibili per la sua programmazione, tra cui:
@@ -373,58 +321,6 @@ Muovere un motore: Questo programma muoverà un motore collegato all'ESP32.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Capitolo 3: Applicazioni dell'ESP32 per lo sviluppo sostenibile e l'ambiente
 
 La potenza e la versatilt rendono l'ESP32 una piattaforma ideale per lo sviluppo di applicazioni che contribuiscono allo sviluppo sostenibile e alla protezione dell'ambiente.
@@ -494,7 +390,6 @@ Nuove funzionalità di risparmio energetico: Espressif potrebbe aggiungere nuove
 
 
 > Questi sviluppi potrebbero rendere l'ESP32 una piattaforma ancora più potente e versatile per lo sviluppo di applicazioni che contribuiscono all'efficienza energetica e alla protezione dell'ambiente.
-
 
 
 
@@ -697,132 +592,6 @@ L'ESP32 è una piattaforma potente e versatile che offre un'ampia gamma di possi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Capitolo 4: Monitoraggio ambientale con l'ESP32
 Il monitoraggio ambientale è il processo di raccolta e analisi dei dati sull'ambiente. I dati ambientali possono essere utilizzati per una varietà di scopi, tra cui la gestione delle risorse naturali, la protezione dell'ambiente e la ricerca scientifica.
 
@@ -900,24 +669,6 @@ Anche la ricerca scientifica potrebbe avere un ruolo primario nella azione delle
 
 I sensori ambientali sono nel 2020/2030 degli strumenti essenziali per la protezione dell'ambiente, ci permettono di comprendere meglio le dinamiche evolutive del pianeta e delle realtà locali e di porre un argine alla marea di "fake mews" e pubblicità mascherate sulla tutela della nostra salute. Investire cifre minimali nella tecnologia di sensori ambientali può certamente aiutare a ridurre l'impatto ambientale. L'intelligenza artificiale (AI) può essere utilizzata per migliorare l'efficienza e l'accuratezza della raccolta e dell'analisi dei dati ambientali e Robotdazero fornisce in dati in tempo reale e senza elaborazioni manuali.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Architettura di un sistema di monitoraggio ambientale
 Un sistema di monitoraggio ambientale è un sistema che raccoglie e analizza dati ambientali per comprendere meglio l'ambiente e identificare i problemi ambientali, vengono utilizzati diffusamente in una varietà di applicazioni.
 
@@ -935,127 +686,6 @@ Oltre ai tre componenti principali, un sistema di monitoraggio ambientale può i
 L'architettura di un sistema di monitoraggio ambientale è un aspetto importante da considerare nella progettazione di un sistema efficiente. L'architettura deve essere progettata per adattarsi alle esigenze specifiche dell'applicazione e deve essere flessibile per poter essere adattata a nuove tecnologie e applicazioni.
 
 ### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-### Esempi di sistemi di monitoraggio ambientale basati sull'ESP32
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1151,8 +781,119 @@ Tecniche e metodi per migliorare l'efficienza energetica con l'ESP32
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++ METTA LIBRO +++++++++++++++++++++++++++++++++++++++++
-+++++++++++++++++++++++++++++++++++++++++++++++ METTA LIBRO +++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
