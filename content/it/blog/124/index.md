@@ -869,39 +869,36 @@ I sensori ambientali sono dispositivi che misurano le condizioni di parametri co
 
 #### Tipi di sensori ambientali
 
-I sensori sono in genere specifici sono specaCertametnte Esistono molti tipi diversi di sensori ambientali, ognuno progettato per misurare una particolare condizione ambientale. Alcuni dei tipi più comuni di sensori ambientali includono:
+I sensori sono in genere specifici per i diversi utilizzi e le metodologia di funzionamento.Per fare una carrellata alcuni dei tipi più comuni di sensori ambientali includono:
 
 1. Sensori di temperatura: I sensori di temperatura misurano la temperatura ambiente.
-   Tra i sensori più noti ricordo la famiglia DHT11 e DHT12, prodotti a basso costo ma con precisione di buon livello.
+   Tra i sensori più noti ricordo la famiglia DHT11 e DHT12, disponibili a basso costo ma con precisione di buon livello.
 2. Sensori di umidità: I sensori di umidità misurano l'umidità ambiente.
-   L'utilizzo
-3. Sensori di qualità dell'aria: I sensori di qualità dell'aria misurano la concentrazione di inquinanti nell'aria.
-4. Sensori di rumore: I sensori di rumore misurano il livello di rumore ambientale.
-5. Sensori di luminosità: I sensori di luminosità misurano la luminosità ambientale.
+   
+3. Sensori di qualità dell'aria che misurano la concentrazione di inquinanti nell'aria (ossidi di azoto, carbonio, etc..)
+4. Sensori di rumore che quantificano in decibel il livello di rumore ambientale.
+5. Sensori di luminosità.
 
-I sensori ambientali utilizzano una varietà di tecniche e metodi per misurare le condizioni ambientali. Alcune delle tecniche più comuni di misurazione includono:
+L'utilizzo, dunque impone una certa varietà di hardware, ma anche le tecniche usate per le misurazioni tendono ad allargare le tipologia. In breve alcune delle tecniche più comuni di misurazione:
 
 Termoelettrici: I sensori termoelettrici misurano la temperatura utilizzando la differenza di tensione tra due metalli diversi.
 Capacitivi: I sensori capacitivi misurano la temperatura o l'umidità variando la capacità di un condensatore.
 Resistive: I sensori resistivi misurano la temperatura variando la resistenza elettrica di un materiale.
 Ottici: I sensori ottici misurano la qualità dell'aria o la luminosità utilizzando la luce.
 Acustici: I sensori acustici misurano il rumore utilizzando le onde sonore.
-Citazioni e riflessioni sui sensori ambientali
 
-"I sensori ambientali sono strumenti essenziali per la protezione dell'ambiente." - Barbara Pompili, Ministro della Transizione Ecologica
 
-"I sensori ambientali ci aiutano a comprendere meglio il nostro ambiente e a prendere decisioni più informate per la sua protezione." - Marco Tronchetti Provera, Presidente e AD di Pirelli
+> "I sensori ambientali sono strumenti essenziali per la protezione dell'ambiente." - Barbara Pompili, Ministro della Transizione Ecologica
 
-"I sensori ambientali hanno il potenziale di trasformare il modo in cui gestiamo le risorse naturali e proteggiamo l'ambiente." - Elon Musk, CEO di Tesla
+> "I sensori ambientali ci aiutano a comprendere meglio il nostro ambiente e a prendere decisioni più informate per la sua protezione." - Marco Tronchetti Provera, Presidente e AD di Pirelli
 
-Esempi di applicazioni dei sensori ambientali
+> "I sensori ambientali hanno il potenziale di trasformare il modo in cui gestiamo le risorse naturali e proteggiamo l'ambiente." - Elon Musk, CEO di Tesla
 
-I sensori ambientali vengono utilizzati in una varietà di applicazioni, tra cui:
+La protezione dell'ambiente non è un problema rimandabile agli "altri" in genere, chiunque siano gli altri. Oggni errore e leggerezza nel gestire le risorse ambientali viene pagato collettivamente ma arrichive solo alcuni azioniti, magari lontani dalle fonti di rischio. I dati raccolti dai sensori ambientali possono essere utilizzati per promuovere "class act", denunce politiche o legali cui gli avversari dovranno rispondere fornendo a loro volta dati concreti e verificanili, non rassicurazioni.
 
-Gestione delle risorse naturali: I sensori ambientali vengono utilizzati per monitorare le condizioni ambientali, come la temperatura, l'umidità e la qualità dell'aria. I dati raccolti dai sensori ambientali possono essere utilizzati per gestire le risorse naturali, come l'acqua e le foreste.
-Protezione dell'ambiente: I sensori ambientali vengono utilizzati per monitorare l'inquinamento e altri problemi ambientali. I dati raccolti dai sensori ambientali possono essere utilizzati per proteggere l'ambiente, come ridurre l'inquinamento e conservare le risorse naturali.
-Ricerca scientifica: I sensori ambientali vengono utilizzati per raccogliere dati ambientali per la ricerca scientifica. I dati raccolti dai sensori ambientali possono essere utilizzati per comprendere meglio l'ambiente e i suoi cambiamenti.
-Conclusione
+La ricerca scientifica non gioca un ruolo secondario nella azione delle piccole comunità: mettere a disposizioni dati e tecniche di raccolta dati sono una "regalo" apprezzato dai ricercatori univeritarie Robotdazero con la piattaforma Kaspian permette loro di accede ai dati raccolti istantaneamente, con il semplice utilizzo di un account della nostra piattaforma Kaspian. Kaspian, lo ricordiamo viene offerta grauitamente per questo tipo di utilizzi, è dotata di computer adeguati a gestire migliaia di sensori e a mantenere i dati archiviati per anni presso la infrastruttura si Amazon AWS.
+
+##### Conclusione
 
 I sensori ambientali sono strumenti essenziali per la protezione dell'ambiente. I sensori ambientali ci aiutano a comprendere meglio il nostro ambiente e a prendere decisioni più informate per la sua protezione.
 
