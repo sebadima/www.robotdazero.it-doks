@@ -45,12 +45,11 @@ Il pin viene spesso chiamato "V5" come vedi in questa immagine: ricorda che "VIN
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/104.jpg" alt="la immagine del pin "VIN" in evidenza sull'ESP32 dentro il quadrato rosso">
 
 <br>
+<br>
+
 Il display del nostro multimetro mostra solo 4.8V invece dei 5V teorici, la scheda è una ESP32 di media qualità e nell'utilizzo reale potete aspettarvi valori simili.
 
-<br>
-<br>
-
-Ecco alcuni dettagli tecnici sul pin "VIN" della scheda ESP32:
+##### Ecco alcuni dettagli tecnici sul pin "VIN" della scheda ESP32:
 
 ```bash
 Tensione nominale output: 5V
@@ -60,6 +59,60 @@ Impedenza: 200 ohm
 ```
 
 Se vuoi utilizzare il pin "VIN" per fornire corrente all'ESP32 è necessario collegare un alimentatore esterno al pin. L'alimentatore esterno deve fornire una tensione compresa tra 3,3 V e 12 V.
+
+
+
+
+
+
+
+
+
+
+
+
+
+### QUALI DISPOSITIVI ESTERNI POSSO ALIMENTARE QUANDO LA SCHEDA VIENE ALIMENTATA VIA PRESA USB?
+
+La ESP32 può alimentare qualsiasi dispositivo che funzioni a una tensione di 5V o 3,3V. La tensione di uscita della presa USB è di 5V, quindi è possibile alimentare direttamente qualsiasi dispositivo che funzioni a questa tensione. La ESP32 ha anche un pin di uscita 3,3V, quindi è possibile alimentare dispositivi che funzionano a questa tensione utilizzando un convertitore di tensione.
+
+Ecco alcuni esempi di dispositivi che è possibile alimentare con una ESP32 quando viene alimentata via presa USB:
+
+Display LCD
+Sensori
+Actuator
+Moduli wireless
+Altri moduli elettronici
+È importante notare che la quantità di corrente disponibile per alimentare altri dispositivi dipende dall'alimentatore USB utilizzato. La maggior parte degli alimentatori USB forniscono una corrente di uscita di 500 mA o 1 A. Se si desidera alimentare dispositivi che consumano più corrente, è necessario utilizzare un alimentatore USB con una corrente di uscita maggiore.
+
+> Ad esempio, se si desidera alimentare un display LCD da 128x64 che consuma 100 mA, è possibile farlo utilizzando un alimentatore USB da 500 mA. Se si desidera alimentare un motore che consuma 1 A, è necessario utilizzare un alimentatore USB da 2 A o superiore.
+
+<br>
+<br>
+
+<img img width="800" style="border: 2px solid #eeeeee;" class="x figure-img img-fluid lazyload blur-up"  src="images/102.jpg" alt="display LCD da 128x64 ad alto assorbimento">
+
+<br>
+<br>
+
+#### Inoltre, è importante considerare il consumo energetico della stessa ESP32
+
+Il consumo energetico dell'ESP32 varia a seconda del carico e delle impostazioni utilizzate. In generale, l'ESP32 consuma circa 100 mA quando è in standby e 200 mA o più quando è in uso.
+
+Se si desidera alimentare più dispositivi con una ESP32, è importante considerare il consumo energetico totale dei dispositivi. Se il consumo energetico totale è superiore alla corrente di uscita dell'alimentatore USB, l'ESP32 o i dispositivi collegati potrebbero non funzionare correttamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### POSSO USARE IL PIN "VIN" PER ALIMENTARE UN DISPOSITIVI ESTERNO?
 
@@ -85,4 +138,4 @@ graph TD
 - Dovresti sempre usare un alimentatore esterno stabilizzato per proteggere il dispositivo ESP32 da eventuali sovratensioni. Nelle specifiche teoriche si parla di una tensione compresa tra 3.3V e 12V, ma noi ti consigliamo di fornire 5V~6V. Una tensione di 3.3V comporta fenomeni di "brownout" della scheda mentre tensioni superiori a 6V servono solo ad alzare le temperature. 
 
 <br>
-<p style="font-size: 12px;">107.R.2.0.3</p>
+<p style="font-size: 12px;">107.R.3.0.3</p>
