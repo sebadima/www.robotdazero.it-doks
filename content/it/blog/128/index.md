@@ -22,25 +22,33 @@ mermaid: true
 
 ## Come usare la ESP32 Cam per controllare la nostra vettura nel parcheggio
 
-La ESP32 con la OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel. È una fotocamera economica e facile da usare, che può essere utilizzata per una varietà di applicazioni, tra cui il monitoraggio del parcheggio.
+La ESP32 nella versione con la OV2640 Cam è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare nel link in basso a 12~13 euro su Amazon o prezzi ancora più bassi su Aliexpress.
+Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di auto o accessi. Permette di registrare video con media risoluzione o scattare foto ad alta risoluzione ad intervalli prefissati. 
+
+> Poiche la registrazione dei video "potrebbe" in certi casi scaicare la batteria abbiamo pensato ad una versione soft del sistema di monitoraggio, con una serie di accortezza per risparmiare la batteria e avere delle foto ad intervalli di 10 secondi circa.
 
 ### Materiali necessari
 
-Per utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
+Per utilizzare la ESP32 per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
 
-- Una ESP32 OV2640 cam
-- Un adattatore USB per la èresa accendisigari della vettura
+- Una <a href="https://amzn.to/3MRTOs3" target="_blank" rel="noopener">ESP32 Cam</a> con fotocameara OV2640 cam
+- Un adattatore USB per la presa accendisigari della vettura
 - Una scheda SD-card da almeno 16GB
 
 ### Esempio di utilizzo
 
+- Formattate la SDcard usando il vostro PC
+- Inserite la SDcard nella feritoia della Cam
 - Collegate la fotocamera al computer utilizzando il cavetto
 - La Cam si accenderà immediatamente
 - Posizionate la fotocamera in modo che possa inquadrare il parabrezza oppure il lunotto posteriore.
 
+
 In questo modo, potrete visualizzare le immagini della Cam saranno registrate ogni 15 secondi sulla SDcard  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti davanti la vettura anche quando non siete presenti. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della Cam, in particolare utilizza la modalità "deep sleep" della ESP32. In questa modalità l'ESP consumo appena 1~2 ma contro i circa 150ma dell'ESP32 quando lo collegate al WIFI.
 
 La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non volete rischiare la batteria della macchina usate un powebank da 20000 mah, perfettamente in grado di fare funzionare la Cam per 8/10 ore. 
+
+
 
 
 ## IL PROGRAMMA per la ESP32 Cam OV2640
@@ -292,7 +300,6 @@ Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
 Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. Il programma verrà copiato sulla scheda Arduino e inizierà ad eseguirsi.
 
 
-
 ### Come caricare il programma usando PlatformIO
 
 Per compilare e caricare un programma usando PlatformIO, è necessario seguire questi passaggi:
@@ -358,7 +365,7 @@ In Visual Studio Code, è possibile eseguire il comando "PlatformIO Upload" prem
 Una volta caricato il programma sulla scheda, esso inizierà ad eseguire.
 
 
-### PlatformIO dall alinea di comando
+### PlatformIO dalla linea di comando
 
 Se usate come facciamo noi PlatformIO dalla line di comando dovrete inserire nel file platformio.ini il seguente codice:
 
@@ -388,7 +395,34 @@ lib_deps =
 ```
 
 
-Conclusione
+### Come formattare la scheda SDcard su Windows 
+
+
+Per formattare una scheda SDcard in Windows usando il filesystem FAT, segui questi passaggi:
+
+
+
+- Collega la scheda SDcard al tuo computer utilizzando un adattatore per schede SD o un lettore di schede.
+- Apri <a href="https://support.microsoft.com/it-it/windows/trovare-e-aprire-esplora-file-ef370130-1cca-9dc5-e0df-2f7416fe1cb1" target="_blank" rel="noopener">Esplora file</a>
+ premendo la Windows + E.
+
+<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schermata di Esplora file quando usi Windows 10 e 11">
+
+
+- In Esplora file, seleziona "Questo PC".
+- La scheda SDcard dovrebbe apparire nell'elenco dei dispositivi di archiviazione.
+- Fai clic destro sulla scheda SDcard e seleziona "Formatta".
+- Selezione della scheda SDcard in Esplora fileOpens in a new window
+
+- Selezione della scheda SDcard in Esplora file
+- Nella finestra di formattazione, seleziona "FAT32" dal menu a discesa "File system".
+- Fai clic su "Avvia" per avviare la formattazione.
+
+> La formattazione della scheda SDcard richiederà alcuni minuti. Al termine, la scheda SDcard sarà formattata in FAT32.
+Attenzione: La formattazione di una scheda SDcard cancella tutti i dati presenti sulla scheda. Assicurati di aver eseguito il backup di tutti i dati importanti prima di formattare la scheda.
+
+
+#### Conclusione
 
 La ESP32 con la sua OV2640 cam è una soluzione semplice ed economica per controllare la vostra vettura nel parcheggio. Con pochi semplici passaggi, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video.
 
