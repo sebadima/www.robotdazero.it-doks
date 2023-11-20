@@ -1,6 +1,6 @@
 ---
-title: "Come usare la ESP32 cam per controllare la vostra vettura"
-description: "Come usare la ESP32 cam per controllare la vostra vettura"
+title: "Come usare la ESP32 Cam per controllare la nostra vettura"
+description: "Come usare la ESP32 Cam per controllare la nostra vettura"
 excerpt: "L’introduzione del nuovo SoC ESP32-S3, che offre prestazioni e funzionalità migliorate rispetto al precedente ESP32. L’ESP32-S3 è dotato di un processore dual-core da 240 MHz..."
 date: 2023-11-17T09:19:42+01:00
 lastmod: 2023-11-17T09:19:42+01:00
