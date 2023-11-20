@@ -28,35 +28,19 @@ La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 megapixel
 
 Per utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
 
-Una OV2640 cam
-Un adattatore USB OTG
-Un computer o uno smartphone con porta USB
-Un software per la visione delle immagini
-Connessione della fotocamera
-
-Collegare la fotocamera al computer o allo smartphone utilizzando l'adattatore USB OTG. La fotocamera dovrebbe essere rilevata automaticamente dal dispositivo.
-
-### Installazione del software
-
-
-### Avvio della registrazione
-
-Una volta configurata la fotocamera, è possibile avviare la registrazione. La maggior parte dei software offre un'opzione per registrare le immagini in un file video.
-
-### Controllo della vettura
-
-Per controllare la vostra vettura, è sufficiente avviare la registrazione e collegarvi al dispositivo su cui è installato il software. È possibile visualizzare le immagini in tempo reale e registrare un video della vostra vettura.
+- Una OV2640 cam
+- Un adattatore USB per la èresa accendisigari della vettura
+- Una scheda SD-card da almeno 16GB
 
 ### Esempio di utilizzo
 
-Ecco un esempio di come utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio:
+- Collegate la fotocamera al computer utilizzando il cavetto
+- La Cam si accenderaà immediatamente
+- Posizionate la fotocamera in modo che possa inquadrare il parabrezza oppure il lunotto posteriore.
 
-Collegate la fotocamera al computer utilizzando l'adattatore USB OTG.
-Installate il software VLC Media Player sul computer.
-Avviate VLC Media Player e caricate il file di immagine della fotocamera.
-Posizionate la fotocamera in modo che possa vedere la vostra vettura.
-Avviate la registrazione.
-In questo modo, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video. Questo vi permetterà di controllare la vostra vettura anche quando non siete presenti.
+In questo modo, potrete visualizzare le immagini della Cam saranno registrate ogni 15 secondi sulla SDcard  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti davanti la vettura anche quando non siete presenti. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della Cam, in particolare utilizza la modalità "deep sleep" della ESP32. In questa modalità l'ESP consumo appena 1~2 ma contro i circa 150ma dell'ESP32 quando lo collegate al WIFI.
+
+La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non volete rischiare la batteria della macchina usate un powebank da 20000 mah, perfettamente in grado di fare funzionare la Cam per 8/10 ore. 
 
 
 ## IL PROGRAMMA per la ESP32 Cam OV2640
@@ -369,7 +353,9 @@ In Visual Studio Code, è possibile eseguire il comando "PlatformIO Upload" prem
 Una volta caricato il programma sulla scheda, esso inizierà ad eseguire.
 
 
+### PlatformIO dall alinea di comando
 
+Se usate come facciamo noi PlatformIO dalla line di comando dovrete inserire nel file platformio.ini il seguente codice:
 
 
 ```bash
@@ -397,7 +383,6 @@ lib_deps =
 ```
 
 
-
 Conclusione
 
 La ESP32 con la sua OV2640 cam è una soluzione semplice ed economica per controllare la vostra vettura nel parcheggio. Con pochi semplici passaggi, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video.
@@ -405,4 +390,4 @@ La ESP32 con la sua OV2640 cam è una soluzione semplice ed economica per contro
 
 <br>
 <br>
-<p style="font-size: 0.8em;">R.128.0.0.1</p>
+<p style="font-size: 0.8em;">R.128.1.0.1</p>
