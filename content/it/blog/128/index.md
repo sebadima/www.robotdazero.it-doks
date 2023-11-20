@@ -9,7 +9,7 @@ weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
 tags: ["schede", "ESP32", "AI"]
-contributors: ["sebadima"]
+contributors: ["sergio rame"]
 pinned: false
 homepage: false
 mermaid: true
@@ -20,22 +20,22 @@ mermaid: true
 <hr>
 
 
-## Come usare la OV2640 cam per controllare la nostra vettura nel parcheggio
+## Come usare la ESP32 Cam per controllare la nostra vettura nel parcheggio
 
-La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 megapixel. È una fotocamera economica e facile da usare, che può essere utilizzata per una varietà di applicazioni, tra cui il monitoraggio del parcheggio.
+La ESP32 con la OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel. È una fotocamera economica e facile da usare, che può essere utilizzata per una varietà di applicazioni, tra cui il monitoraggio del parcheggio.
 
 ### Materiali necessari
 
 Per utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
 
-- Una OV2640 cam
+- Una ESP32 OV2640 cam
 - Un adattatore USB per la èresa accendisigari della vettura
 - Una scheda SD-card da almeno 16GB
 
 ### Esempio di utilizzo
 
 - Collegate la fotocamera al computer utilizzando il cavetto
-- La Cam si accenderaà immediatamente
+- La Cam si accenderà immediatamente
 - Posizionate la fotocamera in modo che possa inquadrare il parabrezza oppure il lunotto posteriore.
 
 In questo modo, potrete visualizzare le immagini della Cam saranno registrate ogni 15 secondi sulla SDcard  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti davanti la vettura anche quando non siete presenti. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della Cam, in particolare utilizza la modalità "deep sleep" della ESP32. In questa modalità l'ESP consumo appena 1~2 ma contro i circa 150ma dell'ESP32 quando lo collegate al WIFI.
@@ -249,43 +249,45 @@ void loop() {
 
 Per compilare e caricare un programma usando l'Arduino IDE, è necessario seguire questi passaggi:
 
-Aprite l'Arduino IDE.
-Create un nuovo progetto o aprite un progetto esistente.
-Inserisci il codice del programma nel file .ino.
-Collegate la scheda Arduino al computer.
-Seleziona la scheda Arduino dal menu Strumenti.
-Fate clic sul pulsante Compila.
+- Aprite l'Arduino IDE.
+- Create un nuovo progetto o aprite un progetto esistente.
+- Inserisci il codice del programma nel file .ino.
+- Collegate la scheda Arduino al computer.
+- Seleziona la scheda Arduino dal menu Strumenti.
+- Fate clic sul pulsante Compila.
+
 Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
 Fate clic sul pulsante Carica per caricare il programma sulla scheda Arduino.
-Passaggio 1: Aprire l'Arduino IDE
+
+##### Passaggio 1: Aprire l'Arduino IDE
 
 Per aprire l'Arduino IDE, è possibile fare doppio clic sull'icona dell'applicazione sul desktop. Se non avete ancora installato l'Arduino IDE, potete scaricarlo dal sito web di Arduino.
 
-Passaggio 2: Creare un nuovo progetto o aprire un progetto esistente
+##### Passaggio 2: Creare un nuovo progetto o aprire un progetto esistente
 
 Per creare un nuovo progetto, fate clic sul menu File e selezionate Nuovo. Per aprire un progetto esistente, fate clic sul menu File e selezionate Apri.
 
-Passaggio 3: Inserisci il codice del programma nel file .ino
+##### Passaggio 3: Inserisci il codice del programma nel file .ino
 
 Il file .ino è il file di testo che contiene il codice del programma. Per inserire il codice del programma nel file .ino, potete utilizzare un editor di testo qualsiasi.
 
-Passaggio 4: Collegare la scheda Arduino al computer
+##### Passaggio 4: Collegare la scheda Arduino al computer
 
 Per collegare la scheda Arduino al computer, è necessario utilizzare un cavo USB. La porta USB della scheda Arduino è contrassegnata con il simbolo USB.
 
-Passaggio 5: Seleziona la scheda Arduino dal menu Strumenti
+#####  Passaggio 5: Seleziona la scheda Arduino dal menu Strumenti
 
 Per selezionare la scheda Arduino dal menu Strumenti, fate clic sul menu Strumenti e selezionate la scheda Arduino che avete collegato al computer.
 
-Passaggio 6: Fare clic sul pulsante Compila
+##### Passaggio 6: Fare clic sul pulsante Compila
 
-Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
+> Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
 
-Passaggio 7: Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo
+##### Passaggio 7: Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo
 
 Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
 
-Passaggio 8: Fare clic sul pulsante Carica per caricare il programma sulla scheda Arduino
+##### Passaggio 8: Fare clic sul pulsante Carica per caricare il programma sulla scheda Arduino
 
 Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. Il programma verrà copiato sulla scheda Arduino e inizierà ad eseguirsi.
 
@@ -295,28 +297,30 @@ Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. I
 
 Per compilare e caricare un programma usando PlatformIO, è necessario seguire questi passaggi:
 
-Installare PlatformIO. Per fare ciò, è possibile utilizzare il gestore di pacchetti del proprio IDE.
-Creare un nuovo progetto. Per fare ciò, è possibile utilizzare la funzione "New Project" del proprio IDE.
-Scrivere il codice del programma.
-Compilare il programma. Per fare ciò, è possibile utilizzare il comando "PlatformIO Build" del proprio IDE.
-Caricare il programma sulla scheda. Per fare ciò, è possibile utilizzare il comando "PlatformIO Upload" del proprio IDE.
-Passaggio 1: Installare PlatformIO
+- Installare PlatformIO. Per fare ciò, è possibile utilizzare il gestore di pacchetti del proprio IDE.
+- Creare un nuovo progetto. Per fare ciò, è possibile utilizzare la funzione "New Project" del proprio IDE.
+- Scrivere il codice del programma.
+- Compilare il programma. Per fare ciò, è possibile utilizzare il comando "PlatformIO Build" del proprio IDE.
+- Caricare il programma sulla scheda. Per fare ciò, è possibile utilizzare il comando "PlatformIO Upload" del proprio IDE.
+
+##### Passaggio 1: Installare PlatformIO
 
 Per installare PlatformIO, è possibile utilizzare il gestore di pacchetti del proprio IDE. Per esempio, se si utilizza Visual Studio Code, è possibile aprire la barra laterale di Extensions e cercare "PlatformIO IDE". Una volta trovata l'estensione, è possibile installarla facendo clic sul pulsante "Install".
 
-Passaggio 2: Creare un nuovo progetto
+##### Passaggio 2: Creare un nuovo progetto
 
 Per creare un nuovo progetto, è possibile utilizzare la funzione "New Project" del proprio IDE. Per esempio, in Visual Studio Code, è possibile aprire la barra laterale di Projects e fare clic sul pulsante "New Project".
 
 Nella finestra di dialogo "New Project", è necessario selezionare il tipo di progetto da creare. Per i progetti Arduino, è necessario selezionare "Arduino". È inoltre necessario selezionare la scheda Arduino da utilizzare.
 
-Passaggio 3: Scrivere il codice del programma
+##### Passaggio 3: Scrivere il codice del programma
 
 Una volta creato il progetto, è possibile scrivere il codice del programma. Il codice può essere scritto in qualsiasi linguaggio supportato da PlatformIO, tra cui C/C++, Python, JavaScript e TypeScript.
 
 Per esempio, ecco un semplice programma Arduino che fa lampeggiare un LED:
 
-C++
+
+```bash
 #include <Arduino.h>
 
 void
@@ -337,14 +341,15 @@ loop()
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
 }
-Use code with caution. Learn more
-Passaggio 4: Compilare il programma
+```
+
+##### Passaggio 4: Compilare il programma
 
 Una volta scritto il codice del programma, è possibile compilarlo. Per fare ciò, è possibile utilizzare il comando "PlatformIO Build" del proprio IDE.
 
 In Visual Studio Code, è possibile eseguire il comando "PlatformIO Build" premendo la scorciatoia da tastiera Ctrl+Shift+B.
 
-Passaggio 5: Caricare il programma sulla scheda
+##### Passaggio 5: Caricare il programma sulla scheda
 
 Una volta compilato il programma, è possibile caricarlo sulla scheda. Per fare ciò, è possibile utilizzare il comando "PlatformIO Upload" del proprio IDE.
 
