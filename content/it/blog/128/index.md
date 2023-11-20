@@ -1,7 +1,7 @@
 ---
-title: "Come usare la ESP32 Cam per controllare la nostra vettura"
-description: "Come usare la ESP32 Cam per controllare la nostra vettura"
-excerpt: "In questo post vedremo come utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio. La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 mpixel..."
+title: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
+description: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
+excerpt: "In questo post vedremo come utilizzare scheda ESP32 Cam per controllare la nostra vettura durante il parcheggio. La OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
 date: 2023-11-17T09:19:42+01:00
 lastmod: 2023-11-17T09:19:42+01:00
 draft: false
@@ -18,7 +18,6 @@ mermaid: true
 
 
 <hr>
-
 
 ## Usiamo la ESP32 Cam per monitorare la vettura durante il parcheggio
 
