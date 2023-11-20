@@ -1,7 +1,7 @@
 ---
 title: "Come usare la ESP32 Cam per controllare la nostra vettura"
 description: "Come usare la ESP32 Cam per controllare la nostra vettura"
-excerpt: "L’introduzione del nuovo SoC ESP32-S3, che offre prestazioni e funzionalità migliorate rispetto al precedente ESP32. L’ESP32-S3 è dotato di un processore dual-core da 240 MHz..."
+excerpt: "In questo post vedremo come utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio. La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 mpixel..."
 date: 2023-11-17T09:19:42+01:00
 lastmod: 2023-11-17T09:19:42+01:00
 draft: false
@@ -20,11 +20,11 @@ mermaid: true
 <hr>
 
 
-Come usare la OV2640 cam per controllare la vostra vettura nel parcheggio
+## Come usare la OV2640 cam per controllare la nostra vettura nel parcheggio
 
-In questo post vedremo come utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio. La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 megapixel. È una fotocamera economica e facile da usare, che può essere utilizzata per una varietà di applicazioni, tra cui il monitoraggio del parcheggio.
+La OV2640 cam è una fotocamera digitale a colori con risoluzione di 2 megapixel. È una fotocamera economica e facile da usare, che può essere utilizzata per una varietà di applicazioni, tra cui il monitoraggio del parcheggio.
 
-Materiali necessari
+### Materiali necessari
 
 Per utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
 
@@ -36,23 +36,18 @@ Connessione della fotocamera
 
 Collegare la fotocamera al computer o allo smartphone utilizzando l'adattatore USB OTG. La fotocamera dovrebbe essere rilevata automaticamente dal dispositivo.
 
-Installazione del software
+### Installazione del software
 
-Installare un software per la visione delle immagini sul computer o sullo smartphone. Ci sono molti software disponibili, tra cui VLC Media Player e OpenCV.
 
-Configurazione della fotocamera
-
-Una volta installato il software, è necessario configurare la fotocamera. La maggior parte dei software offre una serie di opzioni di configurazione, tra cui la risoluzione dell'immagine, la frequenza dei fotogrammi e la sensibilità alla luce.
-
-Avvio della registrazione
+### Avvio della registrazione
 
 Una volta configurata la fotocamera, è possibile avviare la registrazione. La maggior parte dei software offre un'opzione per registrare le immagini in un file video.
 
-Controllo della vettura
+### Controllo della vettura
 
 Per controllare la vostra vettura, è sufficiente avviare la registrazione e collegarvi al dispositivo su cui è installato il software. È possibile visualizzare le immagini in tempo reale e registrare un video della vostra vettura.
 
-Esempio di utilizzo
+### Esempio di utilizzo
 
 Ecco un esempio di come utilizzare la OV2640 cam per controllare la vostra vettura nel parcheggio:
 
@@ -64,7 +59,7 @@ Avviate la registrazione.
 In questo modo, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video. Questo vi permetterà di controllare la vostra vettura anche quando non siete presenti.
 
 
-### IL PROGRAMMA 
+## IL PROGRAMMA per la ESP32 Cam OV2640
 
 ```bash
 // https://randomnerdtutorials.com/esp32-deep-sleep-arduino-ide-wake-up-sources/
@@ -266,9 +261,146 @@ void loop() {
 ```
 
 
+### Come caricare il programma usando l'Arduino IDE:
+
+Per compilare e caricare un programma usando l'Arduino IDE, è necessario seguire questi passaggi:
+
+Aprite l'Arduino IDE.
+Create un nuovo progetto o aprite un progetto esistente.
+Inserisci il codice del programma nel file .ino.
+Collegate la scheda Arduino al computer.
+Seleziona la scheda Arduino dal menu Strumenti.
+Fate clic sul pulsante Compila.
+Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
+Fate clic sul pulsante Carica per caricare il programma sulla scheda Arduino.
+Passaggio 1: Aprire l'Arduino IDE
+
+Per aprire l'Arduino IDE, è possibile fare doppio clic sull'icona dell'applicazione sul desktop. Se non avete ancora installato l'Arduino IDE, potete scaricarlo dal sito web di Arduino.
+
+Passaggio 2: Creare un nuovo progetto o aprire un progetto esistente
+
+Per creare un nuovo progetto, fate clic sul menu File e selezionate Nuovo. Per aprire un progetto esistente, fate clic sul menu File e selezionate Apri.
+
+Passaggio 3: Inserisci il codice del programma nel file .ino
+
+Il file .ino è il file di testo che contiene il codice del programma. Per inserire il codice del programma nel file .ino, potete utilizzare un editor di testo qualsiasi.
+
+Passaggio 4: Collegare la scheda Arduino al computer
+
+Per collegare la scheda Arduino al computer, è necessario utilizzare un cavo USB. La porta USB della scheda Arduino è contrassegnata con il simbolo USB.
+
+Passaggio 5: Seleziona la scheda Arduino dal menu Strumenti
+
+Per selezionare la scheda Arduino dal menu Strumenti, fate clic sul menu Strumenti e selezionate la scheda Arduino che avete collegato al computer.
+
+Passaggio 6: Fare clic sul pulsante Compila
+
+Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
+
+Passaggio 7: Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo
+
+Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
+
+Passaggio 8: Fare clic sul pulsante Carica per caricare il programma sulla scheda Arduino
+
+Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. Il programma verrà copiato sulla scheda Arduino e inizierà ad eseguirsi.
+
+
+
+### Come caricare il programma usando PlatformIO
+
+Per compilare e caricare un programma usando PlatformIO, è necessario seguire questi passaggi:
+
+Installare PlatformIO. Per fare ciò, è possibile utilizzare il gestore di pacchetti del proprio IDE.
+Creare un nuovo progetto. Per fare ciò, è possibile utilizzare la funzione "New Project" del proprio IDE.
+Scrivere il codice del programma.
+Compilare il programma. Per fare ciò, è possibile utilizzare il comando "PlatformIO Build" del proprio IDE.
+Caricare il programma sulla scheda. Per fare ciò, è possibile utilizzare il comando "PlatformIO Upload" del proprio IDE.
+Passaggio 1: Installare PlatformIO
+
+Per installare PlatformIO, è possibile utilizzare il gestore di pacchetti del proprio IDE. Per esempio, se si utilizza Visual Studio Code, è possibile aprire la barra laterale di Extensions e cercare "PlatformIO IDE". Una volta trovata l'estensione, è possibile installarla facendo clic sul pulsante "Install".
+
+Passaggio 2: Creare un nuovo progetto
+
+Per creare un nuovo progetto, è possibile utilizzare la funzione "New Project" del proprio IDE. Per esempio, in Visual Studio Code, è possibile aprire la barra laterale di Projects e fare clic sul pulsante "New Project".
+
+Nella finestra di dialogo "New Project", è necessario selezionare il tipo di progetto da creare. Per i progetti Arduino, è necessario selezionare "Arduino". È inoltre necessario selezionare la scheda Arduino da utilizzare.
+
+Passaggio 3: Scrivere il codice del programma
+
+Una volta creato il progetto, è possibile scrivere il codice del programma. Il codice può essere scritto in qualsiasi linguaggio supportato da PlatformIO, tra cui C/C++, Python, JavaScript e TypeScript.
+
+Per esempio, ecco un semplice programma Arduino che fa lampeggiare un LED:
+
+C++
+#include <Arduino.h>
+
+void
+ 
+setup()
+ 
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void
+ 
+loop()
+ 
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+Use code with caution. Learn more
+Passaggio 4: Compilare il programma
+
+Una volta scritto il codice del programma, è possibile compilarlo. Per fare ciò, è possibile utilizzare il comando "PlatformIO Build" del proprio IDE.
+
+In Visual Studio Code, è possibile eseguire il comando "PlatformIO Build" premendo la scorciatoia da tastiera Ctrl+Shift+B.
+
+Passaggio 5: Caricare il programma sulla scheda
+
+Una volta compilato il programma, è possibile caricarlo sulla scheda. Per fare ciò, è possibile utilizzare il comando "PlatformIO Upload" del proprio IDE.
+
+In Visual Studio Code, è possibile eseguire il comando "PlatformIO Upload" premendo la scorciatoia da tastiera Ctrl+Shift+U.
+
+Una volta caricato il programma sulla scheda, esso inizierà ad eseguire.
+
+
+
+
+
+```bash
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32cam]
+platform = espressif32
+board = esp32cam
+framework = arduino
+monitor_speed=115200
+lib_ldf_mode=deep
+build_flags =
+   -I../lib/esp32-camera
+
+lib_deps =
+  esp32-camera
+```
+
+
+
 Conclusione
 
-La OV2640 cam è una soluzione semplice ed economica per controllare la vostra vettura nel parcheggio. Con pochi semplici passaggi, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video.
+La ESP32 con la sua OV2640 cam è una soluzione semplice ed economica per controllare la vostra vettura nel parcheggio. Con pochi semplici passaggi, potrete visualizzare le immagini della vostra vettura in tempo reale e registrare un video.
 
 
 <br>
