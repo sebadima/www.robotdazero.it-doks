@@ -1,14 +1,14 @@
 ---
 title: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
 description: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
-excerpt: "In questo post vedremo come utilizzare scheda ESP32 Cam per controllare la nostra vettura durante il parcheggio. La OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
-date: 2023-11-17T09:19:42+01:00
-lastmod: 2023-11-17T09:19:42+01:00
+excerpt: "In questo post vedremo come utilizzare la scheda ESP32 Cam per controllare la nostra vettura durante il parcheggio. La OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
+date: 2023-11-18T09:19:42+01:00
+lastmod: 2023-11-18T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["schede", "ESP32", "AI"]
+tags: ["OV2640", "ESP32", "sorveglianza", "programmazione"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
@@ -28,22 +28,22 @@ Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio d
 
 ### Materiali necessari
 
-Per utilizzare la ESP32 per controllare la vostra vettura nel parcheggio, avrete bisogno dei seguenti materiali:
+Per realizzare il progetto avrete bisogno dei seguenti materiali:
 
 - Una <a href="https://amzn.to/3MRTOs3" target="_blank" rel="noopener">ESP32 Cam</a> con fotocamera OV2640
 - Un adattatore USB per la presa accendisigari della vettura
 - Una scheda SD-card da almeno 16GB
 
-### Esempio di utilizzo
+### Come usare la scheda
 
 - Formattate la SD-card usando il vostro PC
 - Inserite la SD-card nella feritoia della Cam
-- Collegate la fotocamera alla presa accendisigari dell'auto
+- Collegate la fotocamera alla presa accendisigari della vettura
 - La Cam si accenderà immediatamente
-- Posizionate la fotocamera in modo che possa inquadrare il parabrezza oppure il lunotto posteriore.
+- Posizionate la fotocamera in modo che possa inquadrare il parabrezza e parte dei finestrini
 
 
-In questo modo della Cam saranno registrate ogni 15 secondi sulla SD-card  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti delle persone quando la vettura é parcheggiata. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della Cam, in particolare utilizza la modalità <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html" target="_blank" rel="noopener">deep sleep</a> della ESP32. In questa modalità l'ESP consuma appena 1~2 mA contro i circa 150 mA della scheda collegata al WIFI.
+In questo modo della Cam saranno registrate ogni 15 secondi sulla SD-card  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti delle persone quando la vettura é parcheggiata. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della ESP32, in particolare utilizza la modalità <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html" target="_blank" rel="noopener">deep sleep</a> della scheda, disabilita il WIFI, il Bluetooth e la <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/touch_pad.html" target="_blank" rel="noopener">funzione touchpad</a> di alcuni piedini. In questa modalità l'ESP32 consuma appena 1~2 mA contro i circa 130~150 mA della scheda collegata al WIFI.
 
 La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non volete rischiare la batteria della macchina usate un power bank da 20000 mAh, perfettamente in grado di fare funzionare la Cam per 8/10 ore. 
 
@@ -288,7 +288,7 @@ Per selezionare la scheda Arduino dal menu Strumenti, fate clic sul menu Strumen
 
 ##### Passaggio 6: Fare clic sul pulsante Compila
 
-> Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
+Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
 
 ##### Passaggio 7: Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo
 
@@ -301,7 +301,7 @@ Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. I
 
 ### Come caricare il programma usando PlatformIO
 
-Per compilare e caricare un programma usando PlatformIO, è necessario seguire questi passaggi:
+Per compilare e caricare un programma usando <a href="https://platformio.org/install/ide?install=vscode" target="_blank" rel="noopener">PlatformIO</a>, è necessario seguire questi passaggi:
 
 - Installare PlatformIO. Per fare ciò, è possibile utilizzare il gestore di pacchetti del proprio IDE.
 - Creare un nuovo progetto. Per fare ciò, è possibile utilizzare la funzione "New Project" del proprio IDE.
@@ -364,7 +364,7 @@ In Visual Studio Code, è possibile eseguire il comando "PlatformIO Upload" prem
 Una volta caricato il programma sulla scheda, esso inizierà ad eseguire.
 
 
-### PlatformIO dalla linea di comando
+### Usare PlatformIO dalla linea di comando
 
 Se usate come facciamo noi PlatformIO dalla linea di comando dovrete inserire nel file platformio.ini il seguente codice:
 
@@ -423,7 +423,8 @@ Attenzione: La formattazione di una scheda SD-card cancella tutti i dati present
 
 #### Conclusione
 
-Usare la ESP32 con la camera OV2640 é una soluzione semplice ed economica per controllare la nel parcheggio. Con pochi semplici passaggi potrete salvare le immagini dell'esterno vettura e usarle come prova per atti di teppismo.
+Dopo avere superato lo scoglio della formattazione e della compilazione potete iniziare ad usare il progetto semplicemente collegandola la scheda alla accendisigari. In questo modo arete a disposizione un sistema di controllo super economico.
+La ESP32 con la camera OV2640 vi permetterà di salvare le immagini dell'esterno vettura e usarle come prova per atti vandalici.
 
 
 <br>
