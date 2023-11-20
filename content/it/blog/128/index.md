@@ -252,7 +252,7 @@ void loop() {
 ```
 
 
-### Come caricare il programma usando l'Arduino IDE:
+### Come caricare il programma usando l'IDE di Arduino
 
 Per compilare e caricare un programma usando l'Arduino IDE, è necessario seguire questi passaggi:
 
