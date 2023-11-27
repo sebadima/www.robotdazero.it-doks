@@ -33,7 +33,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Trial</h4>
                </div>
                <div class="card-body">
-                  <img width="35%" class="x figure-img img-fluid lazyload blur-up" src="/piani/101.svg" alt="">
+                  <img width="30%" class="x figure-img img-fluid lazyload blur-up" src="/piani/101.svg" alt="">
                   <p class="small">⚡️</p>
                   <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">30 giorni di prova</h6>
@@ -52,7 +52,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Small</h4>
                </div>
                <div class="card-body">
-                  <img width="35%" class="x figure-img img-fluid lazyload blur-up" src="/piani/106.svg" alt="">
+                  <img width="30%" class="x figure-img img-fluid lazyload blur-up" src="/piani/106.svg" alt="">
                   <p class="small">⚡️</p>
                   <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
@@ -71,7 +71,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div width="128" class="card-body">
-                  <img width="35%" class="x figure-img img-fluid lazyload blur-up" src="/piani/105.svg" alt="">
+                  <img width="30%" class="x figure-img img-fluid lazyload blur-up" src="/piani/105.svg" alt="">
                   <p class="small">⚡️</p>
                   <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
@@ -90,7 +90,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Corporate</h4>
                </div>
                <div class="card-body">
-                  <img width="35%" class="x figure-img img-fluid lazyload blur-up" src="/piani/102.svg" alt="">
+                  <img width="30%" class="x figure-img img-fluid lazyload blur-up" src="/piani/102.svg" alt="">
                   <p class="small">⚡️</p>
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
