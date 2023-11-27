@@ -33,7 +33,7 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Trial</h4>
                </div>
                <div class="card-body">
-                  <img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/104/107.webp" alt="">
+                  <img width="45%" class="x figure-img img-fluid lazyload blur-up" src="/piani/101.svg" alt="">
                   <p class="small">⚡️</p>
                   <h2 class="card-title">€0<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">30 giorni di prova</h6>
@@ -42,7 +42,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.0 per ogni extra*</li>
                   </ul>
-                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -52,7 +52,8 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Small</h4>
                </div>
                <div class="card-body">
-                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/105.webp" alt="">
+                  <img width="45%" class="x figure-img img-fluid lazyload blur-up" src="/piani/106.svg" alt="">
+                  <p class="small">⚡️</p>
                   <h2 class="card-title">€19<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -60,7 +61,7 @@ layout: full
                      <li class="small">40 richieste al minuto</li>
                      <li class="small">€0.009 per extra*</li>
                   </ul>
-                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="https://robotdazero.company.site/App-Kaspian-small-p585865660" role="button">Acquista⚡️</a>
+                  <a style="" class="btn btn-primary btn-lg px-4 mb-2" href="https://robotdazero.company.site/App-Kaspian-small-p585865660" role="button">Acquista⚡️</a>
                </div>
             </div>
          </div>
@@ -70,7 +71,8 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Startup</h4>
                </div>
                <div width="128" class="card-body">
-                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/104.webp" alt="">
+                  <img width="45%" class="x figure-img img-fluid lazyload blur-up" src="/piani/105.svg" alt="">
+                  <p class="small">⚡️</p>
                   <h2 class="card-title">€48<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -78,7 +80,7 @@ layout: full
                      <li class="small">80 richieste al minuto</li>
                      <li class="small">€0.004 per extra*</li>
                   </ul>
-                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
@@ -88,7 +90,8 @@ layout: full
                   <h4 class="my-0 fw-normal text-primary">Corporate</h4>
                </div>
                <div class="card-body">
-                  <img width="80%" class="x figure-img img-fluid lazyload blur-up" src="/104/103.webp" alt="">
+                  <img width="45%" class="x figure-img img-fluid lazyload blur-up" src="/piani/102.svg" alt="">
+                  <p class="small">⚡️</p>
                   <h2 class="card-title">€148<small class="text-muted fw-light"></small></h2>
                   <h6 class="text-muted mt-2">pagamento mensile</h6>
                   <ul class="list-unstyled mt-3 mb-4">
@@ -96,7 +99,7 @@ layout: full
                      <li class="small">150 richieste al minuto</li>
                      <li class="small">€0.002 per extra*</li>
                   </ul>
-                  <a style="border-width:0px;background-color:#0774c6 !important" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
+                  <a style="" class="btn btn-primary btn-lg px-4 mb-2" href="/docs/piattaforma/trial" role="button">Inizia gratis⚡️</a>
                </div>
             </div>
          </div>
