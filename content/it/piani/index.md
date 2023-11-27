@@ -14,6 +14,7 @@ layout: full
    <div class="row justify-content-center text-center">
       <div class="col-lg-12 text-center">
          <h2 class="display-6">Puoi iniziare a costo zero!</h2>
+         <img width="50%" class="x figure-img img-fluid lazyload blur-up" src="/hog/105.webp" alt="">
          <p class="lead mt-3 mb-0">Ti puoi cancellare in qualsiasi momento, senza domande e senza penali. <br>Tutti i prezzi si intendono mensili e IVA inclusa.</p>
       </div>
    </div>
