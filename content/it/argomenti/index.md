@@ -1,5 +1,5 @@
 ---
-title: "Se vuoi entrare nel mondo dell'Internet of Things inizia con  questi articoli:"
+title: "Se vuoi entrare nel mondo dell'Internet of Things inizia da qui."
 description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -105,6 +105,9 @@ input[type='submit'] {
 
 
 
+<br>
+<br>
+
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="50" height="50" src="/115/git-compare-24.svg" alt="">
@@ -165,17 +168,10 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 <p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
 </div>
 
-<br>
-<br>
-<br>
-
-
-
 <div class="bz-container">
 
+<!--
 <a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags</a>
-</div>
+-->
 
-<br>
-<br>
-<br>
+</div>
