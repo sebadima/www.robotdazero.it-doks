@@ -1,5 +1,5 @@
 ---
-title: "Se vuoi entrare nel mondo dell'Internet of Things inizia da qui."
+title: "Se vuoi entrare nel mondo dell'Internet of Things inizia da qui"
 description: "Come farti richiamare"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
@@ -110,7 +110,7 @@ input[type='submit'] {
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="50" height="50" src="/115/git-compare-24.svg" alt="">
+<img width="40" height="40" src="/115/git-compare-24.svg" alt="">
 &nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
@@ -130,11 +130,9 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 <br>
 <br>
 
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="50" height="50" src="/115/repo-forked-24.svg" alt="">
+<img width="40" height="40" src="/115/repo-forked-24.svg" alt="">
 &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
 ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
@@ -151,11 +149,9 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 <br>
 <br>
 
-
-
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="50" height="50" src="/115/git-pull-request-24.svg" alt="">
+<img width="40" height="40" src="/115/git-pull-request-24.svg" alt="">
 &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
