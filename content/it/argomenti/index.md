@@ -107,7 +107,7 @@ input[type='submit'] {
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" height="60" src="/115/git-compare-24.svg" alt="">
+<img width="50" height="50" src="/115/git-compare-24.svg" alt="">
 &nbsp;&nbsp;Come scegliere Arduino
 
 ##### Cosa è Arduino?
@@ -119,7 +119,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 <br>
 <p> 
 <a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
-<input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
+<input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
 </p>
 </div>
 
@@ -131,7 +131,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" height="60" src="/115/repo-forked-24.svg" alt="">
+<img width="50" height="50" src="/115/repo-forked-24.svg" alt="">
 &nbsp;&nbsp;Scopri come alimentare la scheda ESP32
 
 ##### La alimentazione dell'ESP32 è davvero diversa da quella di Arduino?
@@ -141,7 +141,7 @@ Con le sue dimensioni contenute è di utilizzo estremamente pratico ed economico
 Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tra cui l’alimentazione tramite USB, tramite batterie, tramite un alimentatore esterno e molto altro. Ecco alcune delle opzioni più comuni...
 
 <br>
-<p> <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> </p>
+<p> <a href="https://www.robotdazero.it/blog/esp32-e-la-sua-alimentazione/"> <input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="L'alimentazione dell'ESP32 👉"> </a> </p>
 </div>
 
 <br>
@@ -152,7 +152,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
-<img width="60" height="60" src="/115/git-pull-request-24.svg" alt="">
+<img width="50" height="50" src="/115/git-pull-request-24.svg" alt="">
 &nbsp;&nbsp;Scopri la differenza tra tensione e corrente
 
 ##### Tensione e corrente sono la stessa cosa?
@@ -162,7 +162,7 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
 
 <br>
-<p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
+<p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
 </div>
 
 <br>
@@ -173,8 +173,7 @@ La tensione è la differenza di “potenziale” tra due punti e la corrente è 
 
 <div class="bz-container">
 
-#### E per finire scopri l'elenco completo degli argomenti trattati nel sito
-<a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags ⚡️</a>
+<a href="https://www.robotdazero.it/tags/" class="btn btn-primary btn-lg px-4 mb-2" type="submit">Vedi tutti i Tags</a>
 </div>
 
 <br>
