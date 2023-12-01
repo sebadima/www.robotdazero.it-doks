@@ -159,3 +159,4 @@ Avendo testato l’ hardware a parte e copiato il programma, a questo punto tutt
 
 <br>
 <br>
+ <p style="font-size: 0.8em;">R.126.1.0.5</p>
