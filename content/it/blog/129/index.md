@@ -38,9 +38,71 @@ Un ambiente virtuale può migliorare le prestazioni dei progetti Python. Ciò è
 > In generale, la creazione di un ambiente di sviluppo con Python è una buona pratica che può aiutare a migliorare la compatibilità, la sicurezza e le prestazioni dei progetti Python.
 
 
-Creare un ambiente di sviluppo con Python3
 
-## Creare una versione con python 3.7
+
+
+
+
+
+
+
+
+
+
+
+### I programmi utilizzabili
+
+Esistono diversi programmi per creare ambienti di sviluppo virtualizzati con Python. Il programma più semplice è <a href="https://docs.python.org/3/library/venv.html" target="_blank" rel="noopener">VENV</a>, che è una funzionalità integrata di Python. Per creare un ambiente virtuale con VENV, è sufficiente eseguire il seguente comando da riga di comando:
+
+```bash
+python -m venv nome_ambiente
+```
+Ad esempio, per creare un ambiente virtuale chiamato "myproject", eseguire il seguente comando:
+
+```bash
+python -m venv myproject
+```
+
+Una volta creato l'ambiente virtuale, è necessario attivarlo per poterlo utilizzare. Per attivare un ambiente virtuale con VENV, è sufficiente eseguire il seguente comando:
+
+```bash
+source nome_ambiente/bin/activate
+```
+
+Ad esempio, per attivare l'ambiente virtuale "myproject", eseguire il seguente comando:
+
+```bash
+source myproject/bin/activate
+```
+Al termine del lavoro, è possibile disattivare l'ambiente virtuale eseguendo il seguente comando:
+
+```bash
+deactivate
+```
+
+Oltre a VENV, esistono altri programmi che possono essere utilizzati per creare ambienti di sviluppo virtualizzati con Python. Alcuni di questi programmi sono:
+
+Pipenv: Pipenv è un programma che consente di creare, gestire e distribuire ambienti virtuali Python.
+Poetry: Poetry è un altro programma che consente di creare, gestire e distribuire ambienti virtuali Python.
+Anaconda: Anaconda è una distribuzione Python che include un gestore di ambienti virtuali integrato.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Usiamo VENV per creare un ambiente con python 3.7
 
 ```bash
 sudo apt install python3-pip python3-setuptools python3.7-venv
