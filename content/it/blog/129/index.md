@@ -31,14 +31,6 @@ Un ambiente virtuale include un proprio pip, che è il gestore di pacchetti Pyth
 
 Un ambiente virtuale può essere utilizzato per eseguire Python in una versione specifica. Ciò può essere utile per eseguire progetti che richiedono una versione di Python che non è installata sul sistema.
 
-### Efficienza
-
-Un ambiente virtuale può migliorare le prestazioni dei progetti Python. Ciò è dovuto al fatto che il sistema operativo non deve caricare più volte le stesse librerie Python.
-
-> In generale, la creazione di un ambiente di sviluppo con Python è una buona pratica che può aiutare a migliorare la compatibilità, la sicurezza e le prestazioni dei progetti Python.
-
-
-
 
 
 
@@ -82,32 +74,28 @@ deactivate
 
 Oltre a VENV, esistono altri programmi che possono essere utilizzati per creare ambienti di sviluppo virtualizzati con Python. Alcuni di questi programmi sono:
 
-Pipenv: Pipenv è un programma che consente di creare, gestire e distribuire ambienti virtuali Python.
-Poetry: Poetry è un altro programma che consente di creare, gestire e distribuire ambienti virtuali Python.
-Anaconda: Anaconda è una distribuzione Python che include un gestore di ambienti virtuali integrato.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Pipenv: <a href="https://pipenv.pypa.io/en/latest/" target="_blank" rel="noopener">Pipenv</a> è un programma che consente di creare, gestire e distribuire ambienti virtuali Python.
+Poetry: <a href="https://python-poetry.org/" target="_blank" rel="noopener">Poetry</a> è un altro programma che consente di creare, gestire e distribuire ambienti virtuali Python.
+Anaconda: <a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a> è una distribuzione Python che include un gestore di ambienti virtuali integrato.
 
 ## Usiamo VENV per creare un ambiente con python 3.7
 
 ```bash
-sudo apt install python3-pip python3-setuptools python3.7-venv
+sudo apt-get install python-pip python3-pip # solo unix
+pip install virtualenv
 python3 -m venv w
+cd w
+source bin/activate
+python -V
+deactivate
 ```     
 
+> Un ambiente virtuale può migliorare le prestazioni dei progetti Python. Ciò è dovuto al fatto che il sistema operativo non deve caricare più volte le stesse librerie Python.
+
+In generale, la creazione di un ambiente di sviluppo con Python è una buona pratica che può aiutare a migliorare la compatibilità, la sicurezza e le prestazioni dei progetti Python.
+
+
+
+
 <br>
-<p style="font-size: 0.8em;">R.129.1.0.1</p>
+<p style="font-size: 0.8em;">R.129.1.2.1</p>
