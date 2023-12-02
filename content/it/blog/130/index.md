@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["elettronica", "teoria"]
+tags: ["elettronica", "teoria", "resistori"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
