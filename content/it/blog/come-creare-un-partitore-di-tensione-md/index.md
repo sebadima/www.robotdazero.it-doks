@@ -18,8 +18,9 @@ mermaid: true
 
 
 <hr>
+<br>
 
-Con i partitori di tensione possiamo usare due resistenze per abbassare la tensione al livello desiderato, un trucco che ogni appassionato di elettronica sa usare alla perfezione.
+Con i partitori di tensione (*voltage divider* in inglese) possiamo usare due resistenze per abbassare la tensione al livello desiderato, un trucco che ogni appassionato di elettronica sa usare alla perfezione.
 
 ## Lo schema teorico
 
@@ -28,7 +29,7 @@ Con i partitori di tensione possiamo usare due resistenze per abbassare la tensi
 <br>
 <br>
 
-La tensione dei componenti che usiamo con Arduino deve restare rigorosamento entro certi limiti, pena bruciare sensori o intere schede in pochi secondi. Se la corrente in linea di massima non è un problema perchè i componenti assorbono solo quella che serve loro, la tensione deve essere calcolata con precisione.
+Perchè usare i partitori di tensione? Perchè la tensione dei componenti che usiamo con Arduino deve restare rigorosamente entro certi limiti, pena bruciare sensori o intere schede. Se la corrente in linea di massima non è un problema (i componenti assorbono solo la corrente necessaria) la tensione deve essere calcolata con precisione.
 
 ## La formula matematica
 
@@ -40,7 +41,7 @@ Il motivo è che la caduta di tensione viene “spalmata” tra le due resistenz
 
 Agendo sui valori di **R1** ed **R2** si può ottenere teoricamente una qualunque tensione **VR2**, comunque mai superiore a **Vg**.
 
-## Il partitore di tensione nella pratica quotidiana:
+### Il partitore di tensione nella pratica quotidiana
 
 Moltissimi dispositivi digitali funzionano a 5V o 3.3V. Capita spesso di dovere convertire la tensione tra questi due livellii per collegare due circuiti (ad esempio un sensore all’Arduino). E seppure il partitore di tensione sia un concetto semplice, **quando dobbiamo usarlo all’inverso** e cioè trovare le resistenze per ottenere una certa tensione, nascono delle difficoltà:
 
