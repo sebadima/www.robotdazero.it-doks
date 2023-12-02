@@ -15,31 +15,24 @@ homepage: false
 mermaid: true
 ---
 
-<style>
-.x {
-    transition:transform 0.50s ease;
-}
-
-.x:hover {
-    -webkit-transform:scale(1.75); /* or some other value */
-    transform:scale(1.75);
-}
-</style>
 
 
----
-Usare due resistenze per abbassare la tensione al livello desiderato, un trucco che ogni appassionato di elettronica sa usare alla perfezione.
+<hr>
 
+Ovvero come usare due resistenze per abbassare la tensione al livello desiderato, un trucco che ogni appassionato di elettronica sa usare alla perfezione.
 
-### La tensione dei componenti che usiamo con Arduino deve restare rigorosamento entro certi limiti, pena bruciare sensori o intere schede in pochi secondi. {#la-tensione-dei-componenti-che-usiamo-con-arduino-deve-restare-rigorosamento-entro-certi-limiti-pena-bruciare-sensori-o-intere-schede-in-pochi-secondi}
+<br>
 
-Se la corrente in linea di massima non è un problema perchè i componenti “assorbono” sempre solo quella che serve loro, la tensione eccessiva deve restare comunque sotto controllo (come spesso viene spiegato nel [forum di Arduino][1]).
+<img img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
 
-Oggi ti mostro come ottenere facilmente la tensione che ti serve.
+<br>
+<br>
 
-* * *
+La tensione dei componenti che usiamo con Arduino deve restare rigorosamento entro certi limiti, pena bruciare sensori o intere schede in pochi secondi. Se la corrente in linea di massima non è un problema perchè i componenti assorbono solo quella che serve loro, la tensione deve restare comunque sotto controllo.
 
-Ricordo che la **potenza in Watt si ottiene moltiplicando Ampere X Volt**, motivo per cui la potenza a volte viene chiamata Volt-Ampere.
+### La formula esatta
+
+> Ricordo che la **potenza in Watt si ottiene moltiplicando Ampere X Volt**, motivo per cui la potenza a volte viene chiamata Volt-Ampere.
 
 Se guardi la immagine all’inizio del post vedrai che si tratta di usare banalmente due resistenze (R1 e R2) collegate in serie ai poli di una batteria e di due contatti posti “a cavallo” della resistenza R2. La tensione che sarà disponibile tra quei due punti non è però Vg come si potrebbe pensare, ma:
 
@@ -49,7 +42,7 @@ Il motivo è che la caduta di tensione viene “spalmata” tra le due resistenz
 
 Agendo sui valori di R1 ed R2 si può ottenere **teoricamente** una qualunque tensione VR2, comunque mai superiore a Vg.
 
-### Il partitore di tensione nella pratica quotidiana: {#il-partitore-di-tensione-nella-pratica-quotidiana}
+### Il partitore di tensione nella pratica quotidiana:
 
 Moltissimi dispositivi digitali funzionano a 5V o 3.3V. Capita spesso di dovere convertire la tensione tra questi due livellii per collegare due circuiti (ad esempio un sensore all’Arduino). E seppure il partitore di tensione sia un concetto semplice, **quando dobbiamo usarlo all’inverso** e cioè trovare le resistenze per ottenere una certa tensione, nascono delle difficoltà:
 
@@ -63,14 +56,13 @@ Moltissimi dispositivi digitali funzionano a 5V o 3.3V. Capita spesso di dovere 
 
 **Es.4:** La tensione che ti serve è 1.75V ma hai a disposizione solo 5V. 5V sono circa il triplo **(3X)** rispetto a 1.75V e perciò ti serve una R1 due volte **(2X)** volte maggiore di R2. Con le resistenze in commercio ad esempio potresti usare R1 = 3,3 kΩm e R2 = 1,8 kΩ per una tensione finale di 1.67V molto vicina ai 1.75V voluti.
 
-Insomma, per farla breve:
+### Conclusione
 
 > Se hai a disposizione una tensione (X) volte maggiore di quella che ti serve, prendi una resistenza a caso e poi trovane un’altra (X-1) volte maggiore della prima.
 
 Perchè funziona? Perchè l’errore che commettiamo mentalmente sarà al massimo del 20% e ci sono resistenze in commercio con tolleranze peggiori! Questo in soldoni è il ragionamento banale che fanno tutti gli elettricisti; “al volo” e quasi senza pensarci. Dopo qualche volta che lo avrai usato verrà facile e istintivo anche a te. In ogni caso ricorda che ci sono molti simulatori in giro per Internet e sei hai il pc sottomano puoi usarli senza problemi. Io uso [questo][2] ma puoi trovarne tanti altri. Se vuoi avere una tabella sottomano per calcolare i valori con le resistenze in commercio ti presento questa immagine tratta dall&#8217; eccellente sito di [Raffaele ilardo][3]. Con questa tabella mi trovo le resistenze R1 e R2 per la (diffusissima) tensione di 9V.
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1600194577/001/parti3_x8s6or.png" alt="itabella partitore 9V" /> . Ti interessa questo articolo e vuoi scoprire a costo zero tutti i segreti della elettronica digitale?
+<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1600194577/001/parti3_x8s6or.png" alt="itabella partitore 9V" />
 
- [1]: https://forum.arduino.cc/index.php?topic=36324.0
- [2]: https://web.archive.org/web/20201026072734/http://www.pcbooster.altervista.org/?artid=232
- [3]: http://www.raffaeleilardo.it/parti.htm
+<br>
+<br>
