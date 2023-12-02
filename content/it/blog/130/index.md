@@ -30,7 +30,7 @@ Qualsiasi materiale, anche i migliori conduttori, mostrano una certa resistenza 
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
 
-### Cosa determina la quanta resistenza? 
+### Cosa determina la resistenza? 
 
 La resistenza dipende da diversi fattori: 
 
