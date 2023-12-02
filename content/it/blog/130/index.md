@@ -8,8 +8,8 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["python", "programmazione"]
-contributors: ["sebadima"]
+tags: ["elettronica", "teoria"]
+contributors: ["sergio rame"]
 pinned: false
 homepage: false
 mermaid: true
@@ -57,7 +57,7 @@ Si utilizza il simbolo R per rappresentare la resistenza in un circuito elettron
 -  come kilohms ( kilo + ohm), che è migliaia di ohm ed è abbreviato kΩ, 
 -  megohms (mega + ohm), che è milioni di ohm ed è abbreviato MΩ. 
 
-##### Quindi 1 kΩ = 1.000 Ω e 1 MΩ = 1.000.000 Ω.  
+Quindi 1 kΩ = 1.000 Ω e 1 MΩ = 1.000.000 Ω.  
 
 <br>
 
