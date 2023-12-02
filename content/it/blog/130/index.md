@@ -28,6 +28,8 @@ La resistenza è una misura dell'opposizione di un oggetto al flusso di elettron
 
 Qualsiasi materiale, anche i migliori conduttori, mostrano una certa resistenza al flusso di elettroni. (In realtà, alcuni materiali, chiamati superconduttori, possono condurre corrente con zero resistenza elettrica ma solo a temperature estremamente basse. Non li incontrerai nella elettronica.) Maggiore è la resistenza, più limitato è basso il flusso di corrente.  
 
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
+
 ### Cosa determina la quanta resistenza? 
 
 La resistenza dipende da diversi fattori: 
@@ -58,6 +60,54 @@ Si utilizza il simbolo R per rappresentare la resistenza in un circuito elettron
 -  megohms (mega + ohm), che è milioni di ohm ed è abbreviato MΩ. 
 
 Quindi 1 kΩ = 1.000 Ω e 1 MΩ = 1.000.000 Ω.  
+
+## Come funziona il codice di colori delle resistenze?
+
+Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul corpo dele resistenze. A osa servono i colori?
+
+> Il codice colore delle resistenze è un sistema standardizzato per indicare il valore di resistenza di un resistore. È composto da una serie di bande colorate che vengono applicate sul corpo del resistore.
+
+Il codice colore più diffuso è quello a quattro bande. Le prime due bande rappresentano le prime due cifre del valore nominale della resistenza, la terza banda rappresenta il moltiplicatore e la quarta banda rappresenta la tolleranza.
+
+I colori delle bande e i corrispondenti valori sono i seguenti:
+
+Colore	Valore
+- Nero      0
+- Marrone   1
+- Rosso     2
+- Arancione 3
+- Giallo    4
+- Verde     5
+- Blu       6
+- Viola     7
+- Grigio    8
+- Bianco    9
+
+##### Ad esempio, un resistore con le bande colorate nere, rosse e arancioni ha un valore nominale di 230 ohm. La banda nera rappresenta la cifra 0, la banda rossa rappresenta la cifra 2 e la banda arancione rappresenta il moltiplicatore 100.
+
+Esistono anche resistori a cinque bande. In questo caso, la quinta banda rappresenta un coefficiente termico che indica come cambia la resistenza del resistore al variare della temperatura.
+
+I colori delle bande e i corrispondenti valori per il coefficiente termico sono i seguenti:
+
+Colore	Valore
+Nero	100 ppm/K
+Marrone	50 ppm/K
+Rosso	25 ppm/K
+Arancione	15 ppm/K
+Giallo	10 ppm/K
+Verde	5 ppm/K
+Blu	2 ppm/K
+Viola	1 ppm/K
+Per leggere il codice colore di un resistore a cinque bande, si procede come segue:
+
+Si legge il valore nominale come per un resistore a quattro bande.
+Si legge il coefficiente termico.
+Ad esempio, un resistore con le bande colorate nere, rosse, arancioni e gialle ha un valore nominale di 230 ohm e un coefficiente termico di 10 ppm/K.
+
+Il codice colore delle resistenze è un sistema semplice e pratico per identificare il valore di resistenza di un componente elettronico. È importante familiarizzare con questo sistema per poter lavorare in modo sicuro ed efficiente con i circuiti elettronici.
+
+
+
 
 <br>
 
