@@ -1,7 +1,7 @@
 ---
 title: "Come creare un ambiente di sviluppo con Python venv"
 description: "Come creare un ambiente di sviluppo con Python venv"
-excerpt: "..."
+excerpt: "Un ambiente virtuale crea un ambiente isolato per ogni progetto Python. Ciò significa che le dipendenze di un progetto non interferiscono con le dipendenze di altri progetti. Questo è particolarmente importante ..."
 date: 2023-11-25T09:19:42+01:00
 lastmod: 2023-11-25T09:19:42+01:00
 draft: false
