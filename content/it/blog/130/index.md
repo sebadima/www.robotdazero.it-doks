@@ -54,24 +54,24 @@ parole, resistenza varia direttamente con la lunghezza.
 per la maggior parte dei materiali, maggiore è la temperatura, maggiore è la resistenza. Temperature più elevate significano che le particelle all'interno hanno più energia, quindi si scontrano tra loro molto spesso, rallentando il flusso di elettroni. Una notevole eccezione a questo è un tipo di resistenza chiamato termistore: all'aumentare della temperatura il termistore abbassa la resistenza in modo prevedibile. (Puoi immaginare quanto sia utile questa caratteristica in circuiti di rilevamento della temperatura.) 
 
 ## Il simbolo della resistenza
-Si utilizza il simbolo R per rappresentare la resistenza in un circuito elettronico. La resistenza è misurata in unità chiamate ohm (pronunciato "om"), abbreviato con la lettera greca omega (Ω). Maggiore è il valore ohm, maggiore è la resistenza.  Un singolo ohm è così piccolo come unità di misura che probabilmente vedrai solo resistenze misurate in quantità maggiori:
+Si utilizza il simbolo **R** per rappresentare la resistenza in un circuito elettronico. La resistenza è misurata in unità chiamate <a href="https://it.wikipedia.org/wiki/Ohm#:~:text=L'ohm%20(simbolo%20%CE%A9),dell'omonima%20legge%20di%20Ohm." target="_blank" rel="noopener">ohm</a> (pronunciato "om"), abbreviato con la lettera greca omega (**Ω**). Maggiore è il valore in ohm, maggiore è la resistenza.  Un singolo ohm è così piccolo come unità di misura che probabilmente vedrai solo resistenze misurate in quantità maggiori:
 
--  come kilohms ( kilo + ohm), che è migliaia di ohm ed è abbreviato kΩ, 
+-  kilohms ( kilo + ohm), che è migliaia di ohm ed è abbreviato kΩ, 
 -  megohms (mega + ohm), che è milioni di ohm ed è abbreviato MΩ. 
 
 Quindi 1 kΩ = 1.000 Ω e 1 MΩ = 1.000.000 Ω.  
 
 ## Come funziona il codice di colori delle resistenze?
 
-Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul corpo dele resistenze. A osa servono i colori?
+Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul corpo dele resistenze. A cosa servono i colori?
 
-> Il codice colore delle resistenze è un sistema standardizzato per indicare il valore di resistenza di un resistore. È composto da una serie di bande colorate che vengono applicate sul corpo del resistore.
+> Il <a href="https://it.farnell.com/calcolatore-codici-colore-resistore" target="_blank" rel="noopener">codice di colori</a> delle resistenze è un sistema standardizzato per indicare il valore di resistenza di un resistore. È composto da una serie di bande colorate che vengono applicate sul corpo del resistore.
 
 Il codice colore più diffuso è quello a quattro bande. Le prime due bande rappresentano le prime due cifre del valore nominale della resistenza, la terza banda rappresenta il moltiplicatore e la quarta banda rappresenta la tolleranza.
 
 I colori delle bande e i corrispondenti valori sono i seguenti:
 
-Colore	Valore
+Colore -> Valore
 - Nero      0
 - Marrone   1
 - Rosso     2
@@ -90,7 +90,7 @@ Esistono anche resistori a cinque bande. In questo caso, la quinta banda rappres
 I colori delle bande e i corrispondenti valori per il coefficiente termico sono i seguenti:
 
 #### Quinta banda delle resistenze
-Colore	Valore
+Colore -> Valore
 - Nero	100 ppm/K
 - Marrone	50 ppm/K
 - Rosso	25 ppm/K
