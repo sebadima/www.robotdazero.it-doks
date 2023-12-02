@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["python", "sorveglianza", "programmazione"]
+tags: ["python", "programmazione"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
