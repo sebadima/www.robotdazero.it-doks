@@ -21,8 +21,6 @@ mermaid: true
 
 Con i partitori di tensione possiamo usare due resistenze per abbassare la tensione al livello desiderato, un trucco che ogni appassionato di elettronica sa usare alla perfezione.
 
-<br>
-
 ## Lo schema teorico
 
 <img img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="immagine di un partitore di tensione - schema teorico">
@@ -34,7 +32,7 @@ La tensione dei componenti che usiamo con Arduino deve restare rigorosamento ent
 
 ## La formula matematica
 
-Se guardi la immagine all’inizio del post vedrai che si tratta di usare banalmente due resistenze (**R1** e **R2**) collegate in serie ai poli di una batteria e di due contatti posti “a cavallo” della resistenza **R2**. La tensione che sarà disponibile tra quei due punti non è però **Vg** come si potrebbe pensare, ma:
+Se guardi la immagine sopra vedrai che si tratta di usare banalmente due resistenze (**R1** e **R2**) collegate in serie ai poli di una batteria e di due contatti posti “a cavallo” della resistenza **R2**. La tensione che sarà disponibile tra quei due punti non è però **Vg** come si potrebbe pensare, ma:
 
 **Vr2** = **Vg** * (**R2** / **R2+R1**)
 
@@ -62,13 +60,13 @@ Moltissimi dispositivi digitali funzionano a 5V o 3.3V. Capita spesso di dovere 
 
 > Se hai a disposizione una tensione (X) volte maggiore di quella che ti serve, prendi una resistenza a caso e poi trovane un’altra (X-1) volte maggiore della prima.
 
-Perchè funziona? Perchè l’errore che commettiamo mentalmente sarà al massimo del 20% e ci sono resistenze in commercio con tolleranze peggiori! Questo in soldoni è il ragionamento banale che fanno tutti gli elettricisti, “al volo” e quasi senza pensarci. 
+Perchè funziona? Perchè l’errore che commettiamo mentalmente sarà al massimo del 20% e ci sono resistenze in commercio con tolleranze peggiori. Questo in breve è il ragionamento che fanno gli elettricisti, al volo e quasi senza pensarci. 
 
 ### I calcolatori on line
 
 Dopo qualche volta che lo avrai usato verrà facile e istintivo anche a te. In ogni caso ricorda che ci sono molti simulatori in giro per Internet, io utilizzo questo <a href="https://www.digikey.it/it/resources/conversion-calculators/conversion-calculator-voltage-divider" target="_blank" rel="noopener">calcolatore on line</a> di Digikey.
 
-Se vuoi avere una tabella sottomano per calcolare i valori con le resistenze in commercio ti presento questa immagine tratta dall'eccellente sito di Raffaele ilardo. Con questa tabella mi trovo le resistenze R1 e R2 per la tensione di 9V.
+Se vuoi avere una tabella sottomano per calcolare i valori con le resistenze in commercio ti presento questa immagine tratta dall'eccellente sito di <a href="http://www.raffaeleilardo.it/parti.htm" target="_blank" rel="noopener">Raffaele Ilardo</a>. Con questa tabella mi trovo le resistenze R1 e R2 per la tensione di 9V.
 
 <br>
 
