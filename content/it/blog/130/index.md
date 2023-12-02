@@ -89,26 +89,26 @@ Esistono anche resistori a cinque bande. In questo caso, la quinta banda rappres
 
 I colori delle bande e i corrispondenti valori per il coefficiente termico sono i seguenti:
 
+#### Quinta banda delle resistenze
 Colore	Valore
-Nero	100 ppm/K
-Marrone	50 ppm/K
-Rosso	25 ppm/K
-Arancione	15 ppm/K
-Giallo	10 ppm/K
-Verde	5 ppm/K
-Blu	2 ppm/K
-Viola	1 ppm/K
-Per leggere il codice colore di un resistore a cinque bande, si procede come segue:
+- Nero	100 ppm/K
+- Marrone	50 ppm/K
+- Rosso	25 ppm/K
+- Arancione	15 ppm/K
+- Giallo	10 ppm/K
+- Verde	5 ppm/K
+- Blu	2 ppm/K
+- Viola	1 ppm/K
 
-Si legge il valore nominale come per un resistore a quattro bande.
-Si legge il coefficiente termico.
-Ad esempio, un resistore con le bande colorate nere, rosse, arancioni e gialle ha un valore nominale di 230 ohm e un coefficiente termico di 10 ppm/K.
+##### Per leggere il codice colore di un resistore a cinque bande, si procede come segue:
+
+1. Si legge il valore nominale come per un resistore a quattro bande.
+2. Si legge il coefficiente termico.
+
+> Ad esempio, un resistore con le bande colorate nere, rosse, arancioni e gialle ha un valore nominale di 230 ohm e un coefficiente termico di 10 ppm/K.
 
 Il codice colore delle resistenze è un sistema semplice e pratico per identificare il valore di resistenza di un componente elettronico. È importante familiarizzare con questo sistema per poter lavorare in modo sicuro ed efficiente con i circuiti elettronici.
 
-
-
-
 <br>
 
-<p style="font-size: 0.8em;">R.130.1.0.0</p>
+<p style="font-size: 0.8em;">R.130.1.2.0</p>
