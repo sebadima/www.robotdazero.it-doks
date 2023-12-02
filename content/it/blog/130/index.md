@@ -26,30 +26,31 @@ La resistenza è una misura dell'opposizione di un oggetto al flusso di elettron
 > Ad esempio, quando gli elettroni viaggiano attraverso il filamento di una lampadina incontrano così tanta resistenza che rallentano e si scontrano furiosamente, generando il bagliore che vedi dalla tua lampadina.
 
 
-Qualsiasi materiale, anche i migliori conduttori, mostrano una certa resistenza al flusso di elettroni. (In realtà, alcuni materiali, chiamati superconduttori, possono condurre corrente con zero resistenza elettrica ma solo a temperature estremamente basse. Non li incontrerai nella elettronica.) Maggiore è la resistenza, più limitato è basso il flusso di corrente.  
+Qualsiasi materiale, anche i migliori conduttori, mostrano una certa resistenza al flusso di elettroni. (In realtà, alcuni materiali, chiamati superconduttori, possono condurre corrente con zero resistenza elettrica ma solo a temperature estremamente basse. Non li incontrerai nella elettronica.) Maggiore è la resistenza, più basso è il flusso di corrente.  
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
 
 ### Cosa determina la resistenza? 
 
-La resistenza dipende da diversi fattori: 
+La resistenza dipende da diversi fattori 
 
-- **Materiale** 
+- **Materiale**: 
+
 alcuni materiali permettono ai loro elettroni di vagare liberamente, mentre altri tengono vincolati i loro elettroni. Quanto fortemente un materiale specifico si oppone il flusso di elettroni determina la sua resistività. La resistenza è una proprietà di un materiale che riflette la sua struttura chimica.  I conduttori hanno valori relativamente bassi di resistività, mentre gli isolanti hanno una resistività molto elevata.  
 
 
 
-- **Area della sezione trasversale** 
+- **Area della sezione trasversale**: 
 
 la resistenza varia inversamente con l'area della sezione trasversale; più grande è il diametro, più facile è per gli elettroni muoversi-cioè, il abbassare la resistenza al loro movimento. Pensa all'acqua che scorre attraverso un tubo: più largo è il tubo, più facile è il flusso d'acqua. Sulla stessa linea, a il filo di rame con un grande diametro ha una resistenza inferiore rispetto a un filo di rame con un piccolo diametro.  
 
-- **Lunghezza** 
+- **Lunghezza**: 
 
 più lungo è il materiale, maggiore è la resistenza che ha perché gli elettroni avere più opportunità di imbattersi in altre particelle lungo la strada. In altri
 parole, resistenza varia direttamente con la lunghezza.
 
 
-- **Temperatura** 
+- **Temperatura**: 
 
 per la maggior parte dei materiali, maggiore è la temperatura, maggiore è la resistenza. Temperature più elevate significano che le particelle all'interno hanno più energia, quindi si scontrano tra loro molto spesso, rallentando il flusso di elettroni. Una notevole eccezione a questo è un tipo di resistenza chiamato termistore: all'aumentare della temperatura il termistore abbassa la resistenza in modo prevedibile. (Puoi immaginare quanto sia utile questa caratteristica in circuiti di rilevamento della temperatura.) 
 
@@ -63,7 +64,7 @@ Quindi 1 kΩ = 1.000 Ω e 1 MΩ = 1.000.000 Ω.
 
 ## Come funziona il codice di colori delle resistenze?
 
-Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul corpo dele resistenze. A cosa servono i colori?
+Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul corpo delle resistenze. A cosa servono i colori?
 
 > Il <a href="https://it.farnell.com/calcolatore-codici-colore-resistore" target="_blank" rel="noopener">codice di colori</a> delle resistenze è un sistema standardizzato per indicare il valore di resistenza di un resistore. È composto da una serie di bande colorate che vengono applicate sul corpo del resistore.
 
