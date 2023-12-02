@@ -111,4 +111,4 @@ Il codice colore delle resistenze è un sistema semplice e pratico per identific
 
 <br>
 
-<p style="font-size: 0.8em;">R.130.1.2.0</p>
+<p style="font-size: 0.8em;">R.130.1.4.0</p>
