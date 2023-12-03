@@ -17,18 +17,18 @@ mermaid: true
 
 ## COSA SONO LE BREADBOARD?
 
-Le breadboard servono a collegare i componenti elettronici **senza usare il saldatore**: basta prendere i terminali e inserirli nei buchi a misura standard ed il gioco è fatto. Le puoi comprare in varie forme e dimensioni e, per fortuna, **funzionano tutte allo stesso modo**.
+Le breadboard servono a collegare i componenti elettronici senza usare il saldatore: basta prendere i terminali e inserirli nei buchi a misura standard ed il gioco è fatto. Le puoi comprare in varie forme e dimensioni.
 
 La loro maggiore utilità deriva dal modo in cui i fori sono connessi. I fori sono infatti connessi a **colonne**: se un solo foro viene collegato ad un alimentatore allora tutti gli altri fori della colonna saranno collegati alla alimentazione! E se collegate una colonna di fori alla massa, tutti i fori della colonna saranno collegati a massa.
 
-> In questo modo potrai collegare tutti i componenti alla alimentazione e alla massa del circuito semplicemente variando la loro posizione sulla scheda!
+<div style="font-size: 0.85em;"class="alert alert-doks d-flexflex-shrink-1" role="alert">👉 In questo modo potrai collegare tutti i componenti al positivo (+) e alla massa del circuito (-) semplicemente variandone la posizione.</div>
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpeg" alt="">
 
 
 ## INSERIRE I COMPONENTI SULLA BREADBOARD
 
-Vediamo come usarle in progetti appena più complessi. Fino ad ora abbiamo usato il LED interno di Arduino per fare dei semplici test, ma nel prossimo esempio vedremo come collegare dei LED esterni, aggiungendo una resistenza per limitare la corrente.
+Vediamo come usarle in progetti reali. Fino ad ora abbiamo usato il LED interno di Arduino per fare dei semplici test, ma nel prossimo esempio vedremo come collegare dei LED esterni, aggiungendo una resistenza per limitare la corrente.
 
 I LED infatti hanno bisogno di limitare il flusso di elettroni che altrimenti li brucerebbe in pochi secondi, esperienza che capita a tutti principianti almeno una volta nella vita. Il fatto che si possano usare i **4 LED interni** di Arduino senza problemi vuol dire solo che i progettisti hanno già inserito le resistenze adatte nella scheda, non che puoi farne a meno!
 
