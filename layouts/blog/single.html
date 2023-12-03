@@ -167,75 +167,60 @@
 <div id="popupdarkbg"></div>
 
 <script>
-   document.getElementById("link").onclick = function(e) {
-    e.preventDefault();
-    document.getElementById("popupdarkbg").style.display = "block";
-    document.getElementById("popup").style.display = "block";
-    document.getElementById('popupiframe').src = "https://robotdazero.aweb.page/p/d1a15586-0421-4794-b2fb-dbc64209f211";
-    document.getElementById('popupdarkbg').onclick = function() {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("popupdarkbg").style.display = "none";
-    };
-    return false;
-   }
-   
-   window.onkeydown = function(e) {
-      if (e.keyCode == 27) {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("popupdarkbg").style.display = "none";
-        e.preventDefault();
-        return;
-      }
-   }
+document.getElementById("link").onclick = function (e) {
+   e.preventDefault();
+   document.getElementById("popupdarkbg").style.display = "block";
+   document.getElementById("popup").style.display = "block";
+   document.getElementById('popupiframe').src = "https://robotdazero.aweb.page/p/d1a15586-0421-4794-b2fb-dbc64209f211";
+   document.getElementById('popupdarkbg').onclick = function () {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("popupdarkbg").style.display = "none";
+   };
+   return false;
+}
 
-   document.getElementById("scroller").onclick = function(e) {
-    e.preventDefault();
-    document.getElementById("popupdarkbg").style.display = "block";
-    document.getElementById("popup").style.display = "block";
-    document.getElementById('popupiframe').src = "https://robotdazero.aweb.page/p/d1a15586-0421-4794-b2fb-dbc64209f211";
-    document.getElementById('popupdarkbg').onclick = function() {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("popupdarkbg").style.display = "none";
-    };
-    return false;
+window.onkeydown = function (e) {
+   if (e.keyCode == 27) {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("popupdarkbg").style.display = "none";
+      e.preventDefault();
+      return;
    }
-   
-   window.onkeydown = function(e) {
-      if (e.keyCode == 27) {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("popupdarkbg").style.display = "none";
-        e.preventDefault();
-        return;
-      }
-   }
-   
-   const percentLabel = document.querySelector("#percent");
-   const originalTitle = document.title;
-   
-   window.addEventListener("scroll", () => {
-   var cccp = "Valore della variabile";
+}
+
+document.getElementById("scroller").onclick = function (e) {
+   e.preventDefault();
+   document.getElementById("popupdarkbg").style.display = "block";
+   document.getElementById("popup").style.display = "block";
+   document.getElementById('popupiframe').src = "https://robotdazero.aweb.page/p/d1a15586-0421-4794-b2fb-dbc64209f211";
+   document.getElementById('popupdarkbg').onclick = function () {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("popupdarkbg").style.display = "none";
+   };
+   return false;
+}
+
+const percentLabel = document.querySelector("#percent");
+const originalTitle = document.title;
+
+window.addEventListener("scroll", () => {
    let scrollTop = window.scrollY;
    let docHeight = document.body.offsetHeight;
    let winHeight = window.innerHeight;
    let scrollPercent = scrollTop / (docHeight - winHeight);
    let scrollPercentRounded = Math.round(scrollPercent * 100);
-   //percentLabel.innerHTML = scrollPercentRounded;
    if (scrollPercentRounded > 70) {
-   
-   const buttonElement = document.getElementById('scroller');
-   
-   // Step 2: Access the HTML element
-   if (buttonElement) {
-   // Step 3: Trigger the click event
-   buttonElement.click();
-   buttonElement.remove();
-   } else {
-   console.error('Element with ID "myButton" not found');
-   }
-    console.log("scroll eccellente");
+      const buttonElement = document.getElementById('scroller');
+      if (buttonElement) {
+         buttonElement.click();
+         buttonElement.remove();
+      } else {
+         console.error('Element with ID "scroller" not found');
+      }
+      console.log("scroll eccellente");
    }
    console.log(scrollPercentRounded);
-   });
+});
 </script>
 
 {{ end -}}
