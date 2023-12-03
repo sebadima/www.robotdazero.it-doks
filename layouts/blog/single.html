@@ -121,6 +121,14 @@
        <p class="meta">Powered by Klaviyo - leggi la loro <a target="_blank" href="https://www.klaviyo.com/legal/privacy/privacy-notice">privacy</a></p>
      </div>
    </div>
+
+
+
+
+
+
+
+
    -->
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
@@ -155,6 +163,12 @@
 </style>
 <div id="popup"><iframe id="popupiframe"></iframe></div>
 <div id="popupdarkbg"></div>
+
+
+
+
+
+
 <script>
    document.getElementById("link").onclick = function(e) {
     e.preventDefault();
@@ -176,6 +190,45 @@
         return;
       }
    }
+
+
+const percentLabel = document.querySelector("#percent");
+const originalTitle = document.title;
+
+window.addEventListener("scroll", () => {
+  var cccp = "Valore della variabile";
+  let scrollTop = window.scrollY;
+  let docHeight = document.body.offsetHeight;
+  let winHeight = window.innerHeight;
+  let scrollPercent = scrollTop / (docHeight - winHeight);
+  let scrollPercentRounded = Math.round(scrollPercent * 100);
+  //percentLabel.innerHTML = scrollPercentRounded;
+  if (scrollPercentRounded > 70) {
+
+const buttonElement = document.getElementById('link');
+
+// Step 2: Access the HTML element
+if (buttonElement) {
+  // Step 3: Trigger the click event
+  buttonElement.click();
+} else {
+  console.error('Element with ID "myButton" not found');
+}
+   
+    console.log("scroll eccellente");
+  }
+
+  console.log(scrollPercentRounded);
+
+
+});
 </script>
+
+
+
+
+
+
+
 {{ end -}}
 {{ end }}
