@@ -26,7 +26,7 @@ La loro maggiore utilità deriva dal modo in cui i fori sono connessi. I fori s
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpeg" alt="">
 
 
-## INSERIRE DEI LED SU UNA BREADBOARD
+## INSERIRE I OMPONENTI SULLA BREADBOARD
 
 Vediamo come usarle in progetti appena più complessi. Fino ad ora abbiamo usato il LED interno di Arduino per fare dei semplici test, ma nel prossimo esempio vedremo come collegare dei LED esterni, aggiungendo una resistenza per limitare la corrente.
 
@@ -51,7 +51,7 @@ Volendo potresti modificare il programma e fare lampeggiare il LED a intervalli
 - Se colleghi un LED ad una batteria o ad un alimentatore **DEVI** sempre inserire in linea una resistenza, che per le tensioni che si usano nella Robotica sarà di **150Ω** fino a **1 KΩ**
 
 
-## I SEGRETI DELLE BREADBOARD
+### I SEGRETI DELLE BREADBOARD
 
 - Molte delle connessioni tra i componenti sulla tua breadboard sono realizzate da la breadboard stessa, sotto la superficie, ma quando non puoi fare un connessione diretta tramite la scheda puoi usare dei cavi di interconnessione (a volte chiamati ponticelli). Si utilizza un filo isolato solido (non ricoperto da plastica) di un paio di mm di diametro. Un filo troppo spesso o troppo sottile non funziona bene in breadboard.
 
