@@ -32,7 +32,7 @@ Vediamo come usarle in progetti reali. Fino ad ora abbiamo usato il LED interno
 
 I LED infatti hanno bisogno di limitare il flusso di elettroni che altrimenti li brucerebbe in pochi secondi, esperienza che capita a tutti principianti almeno una volta nella vita. Il fatto che si possano usare i **4 LED interni** di Arduino senza problemi vuol dire solo che i progettisti hanno già inserito le resistenze adatte nella scheda, non che puoi farne a meno!
 
-Nella figura sottostante puoi vedere una immagine di un circuito completo assemblato su una Breadboard. Consiste di un Arduino, un LED e una resistenza di 1kΩ.
+Nella figura sottostante puoi vedere una immagine di un circuito completo assemblato su una Breadboard. Consiste di un Arduino, un LED e una resistenza del valore di 1kΩ.
 
 <img decoding="async" title="Title" src="https://res.cloudinary.com/sebadima/image/upload/v1579521307/001/-075_jowvbl.png" alt="circuito con resistenza led e arduino" /> 
 
