@@ -51,14 +51,14 @@ Prova a copiare la disposizione dei componenti sulla tua breaboard. Volendo potr
 
 - Accorcia i terminali dei componenti se si piegano troppo mentre li inserisci
 - Quando accorci i terminali dovresti accorciare un poco di più i terminali **negativi** per riconoscerli più facilmente. I LED ad esempio hanno un terminale positivo e uno negativo
-- Se colleghi un LED ad una batteria o ad un alimentatore **DEVI** sempre inserire in linea una resistenza, che per le tensioni che si usano nella Robotica sarà di **150Ω** fino a **1 KΩ**
+- Se colleghi un LED ad una batteria o ad un alimentatore **DEVI** sempre inserire in linea una resistenza, che per le tensioni che si usano nella Robotica sarà di 150Ω fino a 1KΩ.
 
 
 ### I SEGRETI DELLE BREADBOARD
 
 - Molte delle connessioni tra i componenti sulla tua breadboard sono realizzate da la breadboard stessa, sotto la superficie, ma quando non puoi fare un connessione diretta tramite la scheda puoi usare dei cavi di interconnessione (a volte chiamati ponticelli). Si utilizza un filo isolato solido (non ricoperto da plastica) di un paio di mm di diametro. Un filo troppo spesso o troppo sottile non funziona bene in breadboard.
 
-Mentre stai acquistando la tua breadboard acquista un set di ponticelli pretagliati. L'alternativa è comprare un mazzo di filo, tagliare segmenti di varie lunghezze.  Anche acquistando un vasto assortimento di ponticelli potrebbe servire un cavo di interconnessione particolare, fai perciò in modo di conservare dei pezzi di filo da 2.2 mm per ognii evenienza.
+Mentre stai acquistando la tua breadboard acquista un set di ponticelli già tagliati. L'alternativa è comprare un mazzo di filo, tagliare segmenti di varie lunghezze.  Anche acquistando un vasto assortimento di ponticelli potrebbe servire un cavo di interconnessione particolare, fai perciò in modo di conservare dei pezzi di filo da 2.2 mm per ogni evenienza.
 
 <br> 
 <p style="font-size: 0.8em;">R.131.1.1.0</p>
