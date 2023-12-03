@@ -96,8 +96,9 @@
       <img width="220" src="/hog/footer.webp" alt="logo">
       <h4>Ricevi la tua dose di ispirazione via email - iscriviti alla newsletter e riceverai un buono sconto del 10% valido su tutti gli articoli del nostro <a href="https://robotdazero.company.site/">ecommerce</a></h4>
       <div id="main">
-         <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Iscriviti adesso</a><br>
+         <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Iscriviti adesso</a>
          <a  href="" id="scroller"></a>
+         <br>
       </div>
       <p class="meta">Powered by Aweber - leggi la loro <a target="_blank" href="https://www.aweber.com/privacy.htm">privacy</a></p>
       <!--
@@ -165,7 +166,6 @@
 <div id="popup"><iframe id="popupiframe"></iframe></div>
 <div id="popupdarkbg"></div>
 
-
 <script>
    document.getElementById("link").onclick = function(e) {
     e.preventDefault();
@@ -187,6 +187,7 @@
         return;
       }
    }
+
    document.getElementById("scroller").onclick = function(e) {
     e.preventDefault();
     document.getElementById("popupdarkbg").style.display = "block";
@@ -207,7 +208,6 @@
         return;
       }
    }
-   
    
    const percentLabel = document.querySelector("#percent");
    const originalTitle = document.title;
@@ -232,16 +232,11 @@
    } else {
    console.error('Element with ID "myButton" not found');
    }
-   
     console.log("scroll eccellente");
    }
-   
    console.log(scrollPercentRounded);
-   
-   
    });
 </script>
-
 
 {{ end -}}
 {{ end }}
