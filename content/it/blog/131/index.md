@@ -26,7 +26,7 @@ La loro maggiore utilità deriva dal modo in cui i fori sono connessi. I fori s
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/101.jpeg" alt="">
 
 
-## INSERIRE I OMPONENTI SULLA BREADBOARD
+## INSERIRE I COMPONENTI SULLA BREADBOARD
 
 Vediamo come usarle in progetti appena più complessi. Fino ad ora abbiamo usato il LED interno di Arduino per fare dei semplici test, ma nel prossimo esempio vedremo come collegare dei LED esterni, aggiungendo una resistenza per limitare la corrente.
 
