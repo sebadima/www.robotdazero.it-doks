@@ -6,7 +6,7 @@ date: 2023-11-04T09:19:42+01:00
 lastmod: 2023-11-04T09:19:42+01:00
 draft: false
 weight: 50
-images: ["iniziare-con-le-breadboard.webp"]
+images: ["header.webp"]
 categories: ["News"]
 tags: ["elettronica", "guide", "breadboard"]
 contributors: ["sebadima"]
