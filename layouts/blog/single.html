@@ -97,6 +97,7 @@
       <h4>Ricevi la tua dose di ispirazione via email - iscriviti alla newsletter e riceverai un buono sconto del 10% valido su tutti gli articoli del nostro <a href="https://robotdazero.company.site/">ecommerce</a></h4>
       <div id="main">
          <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Iscriviti adesso</a><br>
+         <a  href="" id="link2"></a>
       </div>
       <p class="meta">Powered by Aweber - leggi la loro <a target="_blank" href="https://www.aweber.com/privacy.htm">privacy</a></p>
       <!--
@@ -190,6 +191,26 @@
         return;
       }
    }
+   document.getElementById("link2").onclick = function(e) {
+    e.preventDefault();
+    document.getElementById("popupdarkbg").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+    document.getElementById('popupiframe').src = "https://robotdazero.aweb.page/p/d1a15586-0421-4794-b2fb-dbc64209f211";
+    document.getElementById('popupdarkbg').onclick = function() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupdarkbg").style.display = "none";
+    };
+    return false;
+   }
+   
+   window.onkeydown = function(e) {
+      if (e.keyCode == 27) {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popupdarkbg").style.display = "none";
+        e.preventDefault();
+        return;
+      }
+   }
 
 
 const percentLabel = document.querySelector("#percent");
@@ -203,9 +224,9 @@ window.addEventListener("scroll", () => {
   let scrollPercent = scrollTop / (docHeight - winHeight);
   let scrollPercentRounded = Math.round(scrollPercent * 100);
   //percentLabel.innerHTML = scrollPercentRounded;
-  if (scrollPercentRounded > 70) {
+  if (scrollPercentRounded > 75) {
 
-const buttonElement = document.getElementById('link');
+const buttonElement = document.getElementById('link2');
 
 // Step 2: Access the HTML element
 if (buttonElement) {
