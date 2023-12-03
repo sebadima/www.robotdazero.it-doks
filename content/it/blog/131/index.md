@@ -17,9 +17,9 @@ mermaid: true
 
 ## COSA SONO LE BREADBOARD?
 
-Le breadboard servono a collegare i componenti elettronici senza usare il saldatore: basta prendere i terminali e inserirli nei buchi a misura standard ed il gioco è fatto. Le puoi comprare in varie forme e dimensioni.
+Le breadboard servono a collegare i componenti elettronici senza usare il saldatore: basta prendere i terminali e inserirli nei buchi a misura standard ed il gioco è fatto. Le puoi comprare in varie forme e dimensioni a prezzi molto abbordabili sia su Amazon.it che su Aliexpress.
 
-La loro maggiore utilità deriva dal modo in cui i fori sono connessi. I fori sono infatti connessi a **colonne**: se un solo foro viene collegato ad un alimentatore allora tutti gli altri fori della colonna saranno collegati alla alimentazione! E se collegate una colonna di fori alla massa, tutti i fori della colonna saranno collegati a massa.
+La loro utilità deriva dal modo in cui i fori sono connessi. I fori destinati alla alimentazione formano una riga che percorre la intera lunghezza della scheda portando facilmente il (+)(-). I fori dei componenti invece solo collegati a "spina di pesce" permettono di ricreare circuiti complessi disponendoli in verticale o in orizzontale.
 
 <div style="font-size: 0.85em;"class="alert alert-doks d-flexflex-shrink-1" role="alert">👉 In questo modo potrai collegare tutti i componenti al positivo (+) e alla massa del circuito (-) semplicemente variandone la posizione.</div>
 
