@@ -41,8 +41,11 @@ Nella figura sottostante puoi vedere una immagine di un circuito completo assemb
 
 Come si vede nella colonna di sinistra abbiamo un filo nero che esce dal connettore GND (ground=massa) di Arduino. Il filo nero si innesta nella breadboard e continua fino al terminale negativo del LED.
 
-Il filo rosso (positivo) conduce il segnale che proviene dal **pin 2** di Arduino fino alla colonna di destra. Salendo sulla colonna di destra la corrente incontra dapprima la resistenza  di un kΩ e poi il terminale positivo del LED. Senza perdere tempo con stagno e saldatore ho realizzato il circuito necessario per accendere un LED con Arduino. Prova a copiare la disposizone dei componenti sulla tua breaboard. 
-Volendo potresti modificare il programma e fare lampeggiare il LED a intervalli regolari di un secondo. La modifica è semplicissima, si tratta solo di cambiare una riga, ma se sei nuovo del Blog non ti preoccupare: realizzeremo assieme molti di questi esercizi e in poco tempo saprai cavartela benissimo da solo. 
+Il filo rosso (positivo) conduce il segnale che proviene dal **pin 2** di Arduino fino alla colonna di destra. Salendo sulla colonna di destra la corrente incontra dapprima la resistenza  di un kΩ e poi il terminale positivo del LED. 
+
+> Senza usare stagno e saldatore ho realizzato il circuito necessario per accendere un LED con Arduino. 
+
+Prova a copiare la disposizione dei componenti sulla tua breaboard. Volendo potresti modificare il programma e fare lampeggiare il LED a intervalli regolari di un secondo. La modifica è semplicissima, si tratta solo di cambiare una riga.
 
 ### ALCUNI UTILI TRUCCHETTI
 
