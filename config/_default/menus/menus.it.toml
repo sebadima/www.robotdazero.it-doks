@@ -72,3 +72,8 @@
   name = "Contatti"
   url = "/contatti/"
   weight = 10
+
+[[footer]]
+  name = "Slack"
+  url = "https://app.slack.com/huddle/T044KLKAA1W/C043T0ZMHHB"
+  weight = 10

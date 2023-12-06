@@ -2,16 +2,16 @@
 title: "Come usare l'ESP32 per lo sviluppo sostenibile e l'ambiente"
 description: "Come usare l'ESP32 per lo sviluppo sostenibile e l'ambiente"
 excerpt: "Lo sviluppo sostenibile è un modello di sviluppo economico e sociale che mira a soddisfare i bisogni delle generazioni attuali senza compromettere la capacità delle generazioni future di soddisfare i propri bisogni. Lo sviluppo sostenibile si basa su..."
-date: 2022-11-08T09:19:42+01:00
-lastmod: 2022-11-08T09:19:42+01:00
+date: 2023-12-06T09:19:42+01:00
+lastmod: 2023-12-06sT09:19:42+01:00
 draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
 tags: ["ESP32", "programmazione", "reti mesh", "ambiente"]
 contributors: ["sebadima"]
-pinned: false
-homepage: false
+pinned: true
+homepage: true
 ---
 
 
