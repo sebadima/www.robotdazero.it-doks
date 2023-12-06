@@ -430,7 +430,7 @@ Per formattare una scheda SD-card in Windows usando il filesystem FAT, segui que
 - In Esplora file, seleziona "Questo PC".
 - La scheda SD-card dovrebbe apparire nell'elenco dei dispositivi di archiviazione.
 - Fai clic destro sulla scheda SD-card e seleziona "Formatta".
-- Selezione della scheda SD-card in Esplora fileOpens in a new window
+- Selezione della scheda SD-card in Esplora fileOpens in a neo window
 
 - Selezione della scheda SD-card in Esplora file
 - Nella finestra di formattazione, seleziona "FAT32" dal menu a discesa "File system".
@@ -442,7 +442,7 @@ Attenzione: La formattazione di una scheda SD-card cancella tutti i dati present
 
 #### Conclusione
 
-Dopo avere superato lo scoglio della formattazione e della compilazione potete iniziare ad usare il progetto semplicemente collegandola la scheda alla accendisigari. In questo modo arete a disposizione un sistema di controllo super economico.
+Dopo avere superato lo scoglio della formattazione e della compilazione potete iniziare ad usare il progetto semplicemente collegandola la scheda alla accendisigari. In questo modo avrete a disposizione un sistema di controllo super economico.
 La ESP32 con la camera OV2640 vi permetterà di salvare le immagini dell'esterno vettura e usarle come prova per atti vandalici.
 
 
