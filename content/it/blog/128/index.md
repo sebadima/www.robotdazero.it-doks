@@ -444,8 +444,6 @@ Attenzione: La formattazione di una scheda SD-card cancella tutti i dati present
 
 Dopo avere superato lo scoglio della formattazione e della compilazione potete iniziare ad usare il progetto semplicemente collegandola la scheda alla accendisigari. In questo modo avrete a disposizione un sistema di controllo super economico.
 La ESP32 con la camera OV2640 vi permetterà di salvare le immagini dell'esterno vettura e usarle come prova per atti vandalici.
-
-
 <br>
 <br>
 <p style="font-size: 0.8em;">R.128.1.2.0</p>
