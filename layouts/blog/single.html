@@ -123,15 +123,8 @@
        <p class="meta">Powered by Klaviyo - leggi la loro <a target="_blank" href="https://www.klaviyo.com/legal/privacy/privacy-notice">privacy</a></p>
      </div>
    </div>
+-->
 
-
-
-
-
-
-
-
-   -->
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
 <div class="related-posts">
@@ -158,6 +151,7 @@
       {{ end -}}
    </div>
 </div>
+
 <style>
    #popup { display: none; position: fixed; top: 9%; left: 15%; width: 70%; height: 100%; background-color: white; z-index: 10; }
    #popup iframe { width: 100%; height: 120%; border: 0; }
