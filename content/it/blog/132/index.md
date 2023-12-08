@@ -16,16 +16,18 @@ mermaid: true
 ---
 
 
+
 Python può essere un lingaggio universale per affrontare il mondo della automazione e dell'IOT ed è diventato una scelta popolare per moltissimi compiti informatici, dalla elaborazione dei dati al Machine Learning. Che tu sia un principiante assoluto o abbia una certa esperienza di programmazione, vediamo una guida passo-passo per iniziare con Python.
 
 
-### 1. Come installare Python
+### Come installare Python
 
-Scarica l'ultimo programma di installazione Python dal sito ufficiale di Python https://www.python.org/downloads / e seguire le istruzioni di installazione.
+Devi intanto scaricare il programma di installazione di Python dal <a href="https://www.python.org/downloads" target="_blank" rel="noopener">sito ufficiale</a> e seguire le istruzioni di installazione.
 
-Scegli un editor di testo o un IDE: avrai bisogno di un editor di testo o di un ambiente di sviluppo integrato (IDE) per scrivere e modificare il tuo codice Python. Gli editor di testo più diffusi includono Notepad++, Sublime Text e Atom. Per un ambiente di codifica più avanzato, considerare l'utilizzo di un IDE come PyCharm o Visual Studio Code.
+Quindi scegli un editor di testo o un IDE da usare per òa scrittura del codice: Potresti avere bisogno di un editor di testo evoluto o di un ambiente di sviluppo integrato (IDE) per lavorare con precisione. Gli editor di testo più diffusi includono <a href="https://notepad-plus-plus.org/downloads/v8.5.2/" target="_blank" rel="noopener">Notepad++</a> e <a href="https://www.sublimetext.com/3" target="_blank" rel="noopener">Sublimetext 3</a>. Se preferisci un ambiente molto avanzato, ti suggerisco di usare <a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="noopener">Pycharm</a> o <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Visual Studio Code</a>.
 
-Impostare un ambiente virtuale: un ambiente virtuale è una struttura di directory separata che isola le dipendenze del progetto dall'ambiente Python globale del sistema. Ciò aiuta a prevenire i conflitti e garantisce che il progetto venga eseguito in modo coerente indipendentemente dalla versione Python del sistema. Per creare un ambiente virtuale, utilizzare il modulo venv.
+Impostare un ambiente virtuale: un ambiente virtuale è una struttura di directory separata che isola le dipendenze del progetto dall'ambiente Python globale del sistema. Ciò aiuta a prevenire i conflitti e garantisce che il progetto venga eseguito in modo coerente indipendentemente dalla versione Python del sistema. Per creare un ambiente virtuale, utilizzare il <a href="https://www.robotdazero.it/blog/come-creare-un-ambiente-di-sviluppo-con-python-venv/" target="_blank" rel="noopener">modulo Venv.</a>
+
 
 ```bash
 python3 -m venv myenv
@@ -51,7 +53,7 @@ Pratica e sperimentazione: la pratica pratica è essenziale per consolidare la t
 
 Unisciti alla comunità: interagisci con la comunità Python attraverso forum online, gruppi di discussione e piattaforme di social media. Cerca aiuto quando necessario, condividi i tuoi progressi e contribuisci a progetti open source per migliorare la tua esperienza di apprendimento.
 
-### 2. Esplora argomenti avanzati
+### Esplora argomenti avanzati
 
 Man mano che acquisisci competenza, approfondisci argomenti Python più avanzati come la programmazione orientata agli oggetti, lo sviluppo web con framework come Django o Flask, la scienza dei dati utilizzando librerie come NumPy e Pandas e l'apprendimento automatico con librerie come TensorFlow e scikit-learn.
 
@@ -117,9 +119,7 @@ Questa istruzione stampa il seguente messaggio:
 - Polimorfismo: Il polimorfismo è la capacità di un oggetto di comportarsi in modo diverso a seconda del contesto.
 - La OOP offre diversi vantaggi rispetto alla programmazione procedurale. In particolare, la OOP:
 
-Rende il codice più modulare e riutilizzabile.
-Migliora la leggibilità e la manutenibilità del codice.
-Consente di creare software più complesso e potente.
+In definitiva l'OOP rende il codice più modulare e riutilizzabile, ne migliora la leggibilità e consente di creare software più complessi e quindi più potenti.
 
 
 <br>
