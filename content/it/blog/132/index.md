@@ -60,16 +60,14 @@ Man mano che acquisisci competenza, approfondisci argomenti Python più avanzati
 Gli argomenti avanzati del linguaggio Python sono quelli che vanno oltre i concetti fondamentali della programmazione, come variabili, tipi di dati, operatori, controlli di flusso, funzioni e moduli. Questi argomenti possono essere suddivisi in diverse categorie, tra cui:
 
 Programmazione orientata agli oggetti (OOP): l'OOP è un paradigma di programmazione che consente di modellare il mondo reale in modo più naturale. In Python, l'OOP è supportato da classi, oggetti, ereditarietà, polimorfismo e astrazione.
-Sviluppo web: Python è un linguaggio versatile che può essere utilizzato per sviluppare applicazioni web di qualsiasi complessità. Le librerie più popolari per lo sviluppo web in Python sono Django e Flask.
+
+#### Sviluppo web 
+Python è un linguaggio versatile che può essere utilizzato per sviluppare applicazioni web di qualsiasi complessità. Le librerie più popolari per lo sviluppo web in Python sono Django e Flask.
+
 Data science: Python è uno dei linguaggi più utilizzati per la data science. Le librerie più popolari per la data science in Python sono NumPy, Pandas, SciPy e Matplotlib.
 Machine learning: Python è anche uno dei linguaggi più utilizzati per l'apprendimento automatico. Le librerie più popolari per l'apprendimento automatico in Python sono TensorFlow, scikit-learn e Keras.
 Altri argomenti avanzati di Python includono:
 
-Multithreading e multiprocessing: questi meccanismi consentono di eseguire più attività contemporaneamente.
-Interfacce grafiche (GUI): Python offre diverse librerie per lo sviluppo di GUI, come Tkinter, Qt e PyQt.
-Gestione dei file e dei dati: Python offre diverse librerie per la gestione dei file e dei dati, come os, shutil, glob e csv.
-Test e Debugging: Python offre diverse librerie per il test e il debugging del codice, come unittest, nose e pdb.
-La conoscenza di questi argomenti avanzati consente di sviluppare software più complessi e potenti.
 
 ### PROGRAMMAZIONE ORIENTATA AGLI OGGETTI
 
