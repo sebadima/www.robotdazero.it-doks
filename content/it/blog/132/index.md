@@ -17,7 +17,9 @@ mermaid: true
 
 
 
-Python può essere un lingaggio universale per affrontare il mondo della automazione e dell'IOT ed è diventato una scelta popolare per moltissimi compiti informatici, dalla elaborazione dei dati al Machine Learning. Che tu sia un principiante assoluto o abbia una certa esperienza di programmazione, vediamo una guida passo-passo per iniziare con Python.
+<hr>
+
+*Python può essere un lingaggio universale per affrontare il mondo della automazione e dell'IOT ed è diventato una scelta popolare per moltissimi compiti informatici, dalla elaborazione dei dati al Machine Learning. Che tu sia un principiante assoluto o abbia una certa esperienza di programmazione, vediamo una guida passo-passo per iniziare con Python.*
 
 
 ### COME INSTALLARE PYTHON
