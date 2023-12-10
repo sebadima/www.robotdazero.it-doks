@@ -4,7 +4,7 @@ description: "Come usare l'ESP32 per lo sviluppo sostenibile e l'ambiente"
 excerpt: "Lo sviluppo sostenibile è un modello di sviluppo economico e sociale che mira a soddisfare i bisogni delle generazioni attuali senza compromettere la capacità delle generazioni future di soddisfare i propri bisogni. Lo sviluppo sostenibile si basa su..."
 date: 2023-12-06T09:19:42+01:00
 lastmod: 2023-12-06sT09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
@@ -2422,4 +2422,4 @@ Sistema di tracciabilità delle colture basato sull'ESP32
 L'agricoltura sostenibile è un settore in rapida crescita e l'ESP32 ha il potenziale per svolgere un ruolo importante in questo settore.
 <br>
 <br>
-<p style="font-size: 0.8em;">R.124.0.0.3</p>
+<p style="font-size: 0.75em;">Robotdazero.it post 124.0.0.6</p>
