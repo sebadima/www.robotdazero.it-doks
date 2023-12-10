@@ -121,4 +121,4 @@ In definitiva l'OOP rende il codice più modulare e riutilizzabile, ne migliora 
 
 
 <br>
-<p style="font-size: 0.8em;">R.132.1.1.0</p>
+<p style="font-size: 0.75em;">Robotdazero.it post 132.1.2.0</p>
