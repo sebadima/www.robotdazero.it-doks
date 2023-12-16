@@ -76,6 +76,7 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 
 <br>
 
+<!-- comment out formspree 
 <div class="bz-container">
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
@@ -91,8 +92,8 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
     <input class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Invia">
     <div class="bz-clear"></div>
   </form>
-
 </div>
+-->
 
 ## FAQ
 ### Quali sono i tempi di attesa? 
