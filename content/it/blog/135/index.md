@@ -48,7 +48,7 @@ print(convert(lst))
 ```
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
-👉 Output:
+🖥️ Output:
 {'a': 1, 'b': 2,' c': 3}
 </div>
 

@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpg"]
 categories: ["News"]
-tags: ["ESP32"]
+tags: ["ESP32", "annunci"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
