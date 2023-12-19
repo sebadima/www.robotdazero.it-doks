@@ -68,6 +68,10 @@ Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi del
 Nei prossimi post vedremo come realizzare un impinato idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
 Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
 
++++++++++++++++++++++++++++++++++++++++++++++
+Il serbatoio, un altro componente essenziale del tuo sistema idroponico, svolge un ruolo cruciale nel suo successo. Fortunatamente, simile al vassoio in crescita, questo elemento non richiede un investimento finanziario significativo. Il tuo serbatoio può essere praticamente qualsiasi contenitore in grado di contenere l'acqua, a condizione che tu garantisca che il sistema stesso sia ermetico e completamente opaco. Non vuoi che la luce penetri nel serbatoio che ospita la tua soluzione nutritiva. Se la luce riesce a entrare nel serbatoio, è probabile che si verifichi la crescita di alghe, che può essere un grave mal di testa. Mentre le alghe in sé non sono intrinsecamente dannose, possono causare conseguenze dannose per il sistema idroponico. Riduce essenzialmente la quantità di nutrienti disponibili che le piante non saranno in grado di assorbire da sole. Questo è un problema significativo: se permetti alle alghe di prosperare, le tue piante non riceveranno i livelli di nutrienti appropriati e la loro crescita sarà stentata.
++++++++++++++++++++++++++++++++++++++++++++++
+
 <br>
 <br>
 <p style="font-size: 0.75em;">Robotdazero.it -  post - R.136.0.1.0</p>  
