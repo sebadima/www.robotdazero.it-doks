@@ -43,6 +43,8 @@ I sistemi idroponici funzionano senza suolo, ma sono in grado si far crescere le
 
 Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senxs perdite escluds ls evaporazione e l'assorbimento minimo delle piantine.
 
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/102.jpg" alt="">
+
 ### Gli svantaggi
 Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono moltissimo dal tipo di impiantio e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impiato con 10 piantine fino a 1000 euro max per il miglio impianto casalingo.
 
