@@ -100,9 +100,12 @@ In via preliminare ti ricordiamo che l'attivazione di un account non richiede ne
 Invia una email all'indirizzo che trovi sotto e specifica il numero e l'orario di preferenza. 
 Riceverai una chiamata da un numero urbano che finisce con **682**.
 
+{{< details "Clicca qui per scoprire la email" >}}
 ```bash
 book@robotdazero.it
 ```
+{{< /details >}}
+
 
 ### Quali sono i tempi di attesa? 
 
