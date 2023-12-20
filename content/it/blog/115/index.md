@@ -233,49 +233,46 @@ pip install jupyterlab
 pip install notebook
 ```
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">👋 Nota: Jupyter Notebook e Jupyter Lab sono integrati nella distribuzione Anaconda, quindi non è necessario installare nulla. 
-</div>
-
-<br>
-
-
-##### Se non stai usando Anaconda puoi comunque installare l'estensione Jupyter su Visual Studio Marketplace. 
-
 Per creare un file Jupyter notebook, possiamo creare un nuovo file con .estensione **ipynb** o accedere alla tavolozza dei comandi (Ctrl + Maiusc + P) e selezionare Jupyter.
 
-#### Crea uno nuovo notebook Jupyter
-
-Scegli il kernel **Ipython**<br>
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="">
-
+#### Come creare uno notebook con Jupyter
 
 Per inizializzare il server Jupyter, dobbiamo selezionare il kernel facendo clic sul kernel picker in alto a destra del notebook, come mostrato nell'immagine.
 
-> Nota: Per impostazione predefinita, Anaconda viene fornito con Python versione 3.9.13. È possibile scaricare l'ultima versione di Python 3.11, ma non supporta tutti i pacchetti. 
+**1 - Scegli il kernel Ipython**:<br>
 
-Esegui la cella Jupyter<br><br>
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="">
+
+<br>
+<br>
+
+Adesso vai nella casella appena creata e usa "print" per visualizzare "Hello world". Quindi premi il pulsante Esegui (il triangolo cerchiato in rosso nella foto in basso). 
+
+**2 - Esegui la cella Jupyter**:<br>
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/109.png" alt="">
 
+<br>
+<br>
 
-Usa "print" per visualizzare "Hello world" e premi il pulsante Esegui. 
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/110.png" alt="">
-
-
-Aggiungi un'altra cella<br>
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/111.png" alt="">
-++++++++++++++++++++++++++++++
+Adesso puoi cliccare su "+ Code" per aggiunger una nuova cella ed eseguire con "Ctrl + ⤶ Invip". 
+**3 - Aggiungi un'altra cella**<br>
 
 
+++++++++++++
+++++++++++++
+++++++++
 
-È possibile utilizzare il tasto B o fare clic su + Codice per aggiungere una nuova cella ed eseguire la cella con Ctrl + Enter Invio. È possibile conoscere le scorciatoie da tastiera Jupyter su defkey.
+
+
+
 
 
 ### Linting
 Linting evidenzia i problemi nel codice sorgente Python e ci fornisce suggerimenti. In genere mette in evidenza questioni sintattiche e stilistiche. Linting aiuta a identificare e correggere i problemi di codifica che possono portare a errori. 
+
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/110.png" alt="">
 
 È possibile selezionare il metodo di linting selezionando Python: Selezionare il comando Linter nella tavolozza dei comandi (Ctrl + Maiusc + P). È inoltre possibile attivare manualmente il metodo linting in impostazioni. 
 
