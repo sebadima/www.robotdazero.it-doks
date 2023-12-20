@@ -16,7 +16,6 @@ homepage: false
 
 
 
-<!-- https://www.datacamp.com/tutorial/setting-up-vscode-python -->
 ##### Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. 
 
 In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità <a href="https://learn.microsoft.com/it-it/visualstudio/ide/writing-code-in-the-code-and-text-editor?view=vs-2022" target="_blank" rel="noopener">avanzate</a> di Visual Studio Code.
@@ -219,7 +218,7 @@ L'estensione autoDocstring ci aiuta a generare rapidamente docstring per le funz
 </div>
 
 
-### VSCode e Python per la "Analisi dati"
+### Come usare VSCode e Python per la "Analisi dati"
 
 Visual Studio Code consente agli utenti di eseguire programmi Python dentro i notebook Jupyter. Possiamo eseguire la cella e visualizzare il risultato all'interno di VSCode. Supporta tutti i tipi di linguaggi di programmazione e viene fornito con funzionalità integrate per integrare i notebook Jupyter nell'IDE.
 
@@ -227,10 +226,6 @@ Per utilizzare l'estensione Jupyter notebook, è necessario prima installare un 
 
 ```bash
 pip install jupyterlab
-
-oppure
-
-pip install notebook
 ```
 
 Per creare un file Jupyter notebook, possiamo creare un nuovo file con .estensione **ipynb** o accedere alla tavolozza dei comandi (Ctrl + Maiusc + P) e selezionare Jupyter.
@@ -266,7 +261,6 @@ Adesso puoi cliccare su "+ Code" per aggiungere una nuova cella ed eseguire con 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 Dopo avere aggiunto una altra cella di codice puoi continuare il ciclo aggiungendo altre istruzioni o interi blocchi di codice.
 </div>
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## Il linting
 
@@ -279,22 +273,20 @@ Il <a href="https://it.wikipedia.org/wiki/Lint_(software)" target="_blank">lint<
 
 Selezionare il metodo di linting<br>
 
-Nel nostro caso, abbiamo selezionato il metodo flake8. È inoltre possibile rivedere l'elenco dei metodi di linting disponibili.
+##### E' sempre possibile rivedere l'elenco dei metodi di linting disponibili:
 
 Enable / Disable Linting: selezionare Python: Enable / Disable Linting nella tavolozza dei comandi. 
 Esegui Linting: tavolozza comandi (Ctrl + Maiusc + P) > Python: Esegui Linting.
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/112.png" alt="">
 
-Correzione dell'errore
 
-Dopo aver eseguito il linter Python, vedrai i problemi con i suggerimenti. 
 
-Nota: Abilitando un linter diverso verrà richiesto di installare il pacchetto Python richiesto.
+#### La Formattazione
 
-Formattare
-La formattazione rende il codice leggibile. Segue regole specifiche per interlinea, rientri, spaziatura attorno agli operatori e parentesi di chiusura. L'estensione Python supporta tre metodi di formattazione Python: autopep8, black o yapf.
+Una corretta formattazione rende il codice più leggibile. Questa estensione ti suggerisce regole specifiche per interlinea, rientri, spaziatura attorno agli operatori e parentesi di chiusura. La estensione supporta tre metodi di formattazione differenti: autopep8, black o yapf e ti permette in qualunque momento di cambiare.
 
-Leggendo su PEP-8: Python Naming Conventions & Code Standards, puoi imparare la guida allo stile di Python e le regole di formattazione.
+Leggendo su <a href="https://peps.python.org/pep-0008/" target="_blank">PEP-8</a> Python Naming Conventions & Code Standards
+, puoi imparare la guida allo stile di Python e le regole di formattazione.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/113.png" alt="">
 
@@ -335,6 +327,8 @@ Per il debug rapido, è sempre possibile fare clic sulla freccia giù accanto al
 Visual Studio Code è un editor di codice potente e <a href="https://code.visualstudio.com/learn" target="_blank" rel="noopener">versatile</a> che può essere utilizzato per scrivere codice Python. Con un po' di configurazione, puoi iniziare a scrivere e eseguire codice Python in Visual Studio Code in pochi minuti.
 
 <!-- https://www.datacamp.com/tutorial/setting-up-vscode-python -->
+<!-- https://learn.microsoft.com/en-us/training/modules/python-install-vscode/  -->
+
 <br>
 <br>
 <p style="font-size: 0.85em;">R.115.2.2.0</p>
