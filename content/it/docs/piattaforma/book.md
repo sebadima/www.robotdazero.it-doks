@@ -70,7 +70,7 @@ input[type='submit'] {
 
 
 
-In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
+In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la carta di credito. Inoltre non esiste la clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
 
 <!-- comment out formspree 
 <div class="bz-container">
@@ -93,20 +93,21 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 
 ## FAQ
 
-### Come posso essere chiamato al mio telefono?
-Invia una email all'indirizzo che trovi sotto. Riceverai una chiamata da un numero urbano che finisce con *682.
+### Come faccio a farmi richiamare?
+Invia una email all'indirizzo che trovi sotto e specifica il numero e l'orario di preferenza. Riceverai una chiamata da un numero urbano che finisce con *682.
 
-### Quali sono i tempi di attesa? 
-
-Dipende dalle richieste e dalla disponibilità degli incaricati, in genere ti richiameremo entro pochi minuti dalla ricezione della email.
-
-### Posso chiamare direttamente al vostro recapito telefonico?
-
-In linea di massima ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp: trovi il numero nella nostra pagina dei <a href="/contatti">contatti</a>.
-
-### Come posso inviare dei file?
-
-In questo caso puoi usare solo la nostra email: sposta il cursore vicino all'indirizzo e quindi clicca sul tasto "Copy".
 ```bash
 info@robotdazero.it
 ```
+
+### Quali sono i tempi di attesa? 
+
+Dipende dalle richieste e dalla disponibilità degli incaricati: in genere chiamiamo entro pochi minuti dalla ricezione della email.
+
+### Posso chiamare direttamente il vostro recapito telefonico?
+
+Risposta breve: No. In linea di massima ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp, trovi il numero nella nostra pagina dei <a href="/contatti">contatti</a>.
+
+### Come posso inviare dei file?
+
+In questo caso puoi usare solo la nostra email.
