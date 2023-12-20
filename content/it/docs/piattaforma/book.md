@@ -1,9 +1,9 @@
 ---
 title: "Ti richiamiamo noi"
 description: "Come farti richiamare per parlare con un nostro incaricato"
-lead: "Come farti richiamare per parlare con un nostro incaricato"
+lead: "Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono."
 date: 2020-10-13T15:21:01+02:00
-lastmod: 2023-08-04T15:21:01+02:00
+lastmod: 2023-12-15T15:21:01+02:00
 draft: false
 images: []
 menu:
@@ -70,11 +70,7 @@ input[type='submit'] {
 
 
 
-Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono.
-
-In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico. Paghi solo quando vuoi e puoi fare disdetta in qualsiasi momento.
-
-<br>
+In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la fornitura del numero della carta di credito. Non esiste inoltre una clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
 
 <!-- comment out formspree 
 <div class="bz-container">
@@ -96,17 +92,21 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 -->
 
 ## FAQ
+
+### Come posso essere chiamato al mio telefono?
+Invia una email all'indirizzo che trovi sotto. Riceverai una chiamata da un numero urbano che finisce con *682.
+
 ### Quali sono i tempi di attesa? 
 
-Dipende dalle richieste e dalla disponibilità degli incaricati, in genere rispondiamo entro pochi minuti.
+Dipende dalle richieste e dalla disponibilità degli incaricati, in genere ti richiameremo entro pochi minuti dalla ricezione della email.
 
 ### Posso chiamare direttamente al vostro recapito telefonico?
 
-In genere ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp. Ti suggeriamo comunque di compilare il modulo per avere delle risposte più rapide. 
+In linea di massima ignoriamo le chiamate di chi non è già cliente, ma puoi porre dei quesiti via whatsapp: trovi il numero nella nostra pagina dei <a href="/contatti">contatti</a>.
 
 ### Come posso inviare dei file?
 
-In questo caso puoi usare solo la nostra email (clicca sul tasto 'Copy'):
+In questo caso puoi usare solo la nostra email: sposta il cursore vicino all'indirizzo e quindi clicca sul tasto "Copy".
 ```bash
 info@robotdazero.it
 ```
