@@ -226,50 +226,48 @@ Per utilizzare l'estensione Jupyter notebook, è necessario prima installare un 
 
 ```bash
 pip install jupyterlab
-```
 
+oppure
 
-```bash
 pip install notebook
 ```
 
 Per creare un file Jupyter notebook, possiamo creare un nuovo file con .estensione **ipynb** o accedere alla tavolozza dei comandi (Ctrl + Maiusc + P) e selezionare Jupyter.
 
-#### Come creare uno notebook con Jupyter
+### Come creare uno notebook con Jupyter
 
-Per inizializzare il server Jupyter, dobbiamo selezionare il kernel facendo clic sul kernel picker in alto a destra del notebook, come mostrato nell'immagine.
+Scopri come usare la estensione Jupyter in tre semplici passi.
 
-**1 - Scegli il kernel Ipython**:<br>
+**1 - Scegli il kernel Ipython**<br>
+Per usare il server Jupyter, dobbiamo selezionare il kernel facendo clic sul “kernel picker” in alto a destra del notebook, come mostrato nell’immagine:
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="">
 
 <br>
 <br>
 
-Adesso vai nella casella appena creata e usa "print" per visualizzare "Hello world". Quindi premi il pulsante Esegui (il triangolo cerchiato in rosso nella foto in basso). 
-
-**2 - Esegui la cella Jupyter**:<br>
+**2 - Esegui la cella Jupyter**<br>
+Adesso vai nella casella appena creata e usa la istruzione "print" per visualizzare "Hello world". Quindi premi il pulsante "Esegui" (il piccolo triangolo cerchiato in rosso nella foto in basso): 
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/109.png" alt="">
 
 <br>
 <br>
 
-Adesso puoi cliccare su "+ Code" per aggiunger una nuova cella ed eseguire con "Ctrl + ⤶ Invip". 
 **3 - Aggiungi un'altra cella**<br>
+Adesso puoi cliccare su "+ Code" per aggiungere una nuova cella ed eseguire con "Ctrl + ⤶ Invio". 
+	
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/110.png" alt="">
 
+<br>
+<br>
 
-++++++++++++
-++++++++++++
-++++++++
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">👋 Dopo avere aggiunto una altra cella di codice puoi continuare il ciclo aggiungendo altre istruzioni o interi blocchi di codice.
+</div>
 
+## Il linting
 
-
-
-
-
-### Linting
-Linting evidenzia i problemi nel codice sorgente Python e ci fornisce suggerimenti. In genere mette in evidenza questioni sintattiche e stilistiche. Linting aiuta a identificare e correggere i problemi di codifica che possono portare a errori. 
+Il <a href="https://it.wikipedia.org/wiki/Lint_(software)" target="_blank">lint</a> evidenzia i problemi nel codice sorgente Python e ci fornisce suggerimenti. In genere mette in evidenza questioni sintattiche e stilistiche. Linting aiuta a identificare e correggere i problemi di codifica che possono portare a errori. 
 
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/110.png" alt="">
@@ -416,4 +414,4 @@ Visual Studio Code è un editor di codice potente e <a href="https://code.visual
 
 <br>
 <br>
-<p style="font-size: 0.85em;">R.115.2.0.0</p>
+<p style="font-size: 0.85em;">R.115.2.1.0</p>
