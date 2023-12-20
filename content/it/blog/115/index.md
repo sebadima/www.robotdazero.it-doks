@@ -16,6 +16,7 @@ homepage: false
 
 
 
+<!-- https://www.datacamp.com/tutorial/setting-up-vscode-python -->
 ##### Visual Studio Code è un editor di codice open source gratuito e potente che può essere utilizzato per scrivere codice in una varietà di linguaggi, tra cui Python. 
 
 In questo articolo, ti mostreremo come installare e configurare Visual Studio Code per <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, come scrivere ed eseguire codice Python e come utilizzare alcune delle funzionalità <a href="https://learn.microsoft.com/it-it/visualstudio/ide/writing-code-in-the-code-and-text-editor?view=vs-2022" target="_blank" rel="noopener">avanzate</a> di Visual Studio Code.
@@ -262,28 +263,27 @@ Adesso puoi cliccare su "+ Code" per aggiungere una nuova cella ed eseguire con 
 <br>
 <br>
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">👋 Dopo avere aggiunto una altra cella di codice puoi continuare il ciclo aggiungendo altre istruzioni o interi blocchi di codice.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 Dopo avere aggiunto una altra cella di codice puoi continuare il ciclo aggiungendo altre istruzioni o interi blocchi di codice.
 </div>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## Il linting
 
 Il <a href="https://it.wikipedia.org/wiki/Lint_(software)" target="_blank">lint</a> evidenzia i problemi nel codice sorgente Python e ci fornisce suggerimenti. In genere mette in evidenza questioni sintattiche e stilistiche. Linting aiuta a identificare e correggere i problemi di codifica che possono portare a errori. 
 
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/110.png" alt="">
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/111.png" alt="">
 
 È possibile selezionare il metodo di linting selezionando Python: Selezionare il comando Linter nella tavolozza dei comandi (Ctrl + Maiusc + P). È inoltre possibile attivare manualmente il metodo linting in impostazioni. 
 
 Selezionare il metodo di linting<br>
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/112.png" alt="">
-++++++++++++++++++++++	
-
 
 Nel nostro caso, abbiamo selezionato il metodo flake8. È inoltre possibile rivedere l'elenco dei metodi di linting disponibili.
 
 Enable / Disable Linting: selezionare Python: Enable / Disable Linting nella tavolozza dei comandi. 
 Esegui Linting: tavolozza comandi (Ctrl + Maiusc + P) > Python: Esegui Linting.
-Correggere l'errore.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/112.png" alt="">
 
 Correzione dell'errore
 
@@ -296,13 +296,13 @@ La formattazione rende il codice leggibile. Segue regole specifiche per interlin
 
 Leggendo su PEP-8: Python Naming Conventions & Code Standards, puoi imparare la guida allo stile di Python e le regole di formattazione.
 
-Selezionare il formattatore Python.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/113.png" alt="">
 
 Selezionare il formatter Python
 
 Per accedere all'opzione di formattazione, dobbiamo aprire il pannello delle impostazioni andando su Preferenze - > Impostazioni o usando la scorciatoia da tastiera: Ctrl +,. Successivamente, digita " python formatting provider "nella barra di ricerca e seleziona" nero " dal menu a discesa.
 
-Configurare Python formatter.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/114.png" alt="">
 
 Configurare Python formatter
 
@@ -312,106 +312,29 @@ Debug e test in VSCode
 Debug
 L'estensione Python viene fornito con il debug per tutti i tipi di applicazioni come applicazioni multi-threaded, web e remote. Possiamo impostare punti di interruzione, ispezionare i dati ed eseguire programmi passo dopo passo. 
 
-Selezionare una configurazione di debug.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/115.png" alt="">
 
 Selezionare una configurazione di debug
 
 Avviare la scheda debug facendo clic sull'icona di debug sulla barra delle azioni o utilizzando la scorciatoia da tastiera Ctrl + Maiusc +D. Per personalizzare le opzioni di debug, fare clic su crea un avvio.file json e selezionare il file Python. 
 
-Pannello di debug.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/116.png" alt="">
 
 Pannello Debug
 
 Esegui il debug facendo clic sul pulsante blu Esegui e Debug, e verrà eseguito il file Python e ci mostrerà le variabili, Guarda, Stack di chiamate e punti di interruzione. 
 
-Debug rapido.png
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/117.png" alt="">
 
 Debug rapido
 
 Per il debug rapido, è sempre possibile fare clic sulla freccia giù accanto al pulsante Esegui e selezionare Debug Python File.
 
-Test
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##### Conclusione
 
 Visual Studio Code è un editor di codice potente e <a href="https://code.visualstudio.com/learn" target="_blank" rel="noopener">versatile</a> che può essere utilizzato per scrivere codice Python. Con un po' di configurazione, puoi iniziare a scrivere e eseguire codice Python in Visual Studio Code in pochi minuti.
 
+<!-- https://www.datacamp.com/tutorial/setting-up-vscode-python -->
 <br>
 <br>
-<p style="font-size: 0.85em;">R.115.2.1.0</p>
+<p style="font-size: 0.85em;">R.115.2.2.0</p>
