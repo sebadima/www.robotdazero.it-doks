@@ -70,7 +70,10 @@ input[type='submit'] {
 
 
 
-In via preliminare ti ricordiamo che l'attivazione di un account trial non richiede nessun pagamento e neppure la carta di credito. Inoltre non esiste la clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+In via preliminare ti ricordiamo che l'attivazione di un account non richiede nessun pagamento anticipato e neppure la carta di credito. Inoltre non esiste la clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
+</div>
 
 <!-- comment out formspree 
 <div class="bz-container">
