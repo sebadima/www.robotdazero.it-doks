@@ -94,10 +94,10 @@ In via preliminare ti ricordiamo che l'attivazione di un account trial non richi
 ## FAQ
 
 ### Come faccio a farmi richiamare?
-Invia una email all'indirizzo che trovi sotto e specifica il numero e l'orario di preferenza. Riceverai una chiamata da un numero urbano che finisce con *682.
+Invia una email all'indirizzo che trovi sotto e specifica il numero e l'orario di preferenza. Riceverai una chiamata da un numero urbano che finisce con **\*682**.
 
 ```bash
-info@robotdazero.it
+book@robotdazero.it
 ```
 
 ### Quali sono i tempi di attesa? 

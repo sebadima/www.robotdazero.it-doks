@@ -17,7 +17,7 @@ toc: true
 
 ### Come posso ottenere un account di prova per testare il programma?
 
-Invia una breve email per richiedere le credenziali. L'email deve contenere il tuo nome personale o aziendale e il tuo numero di telefono (solo rete fissa). Riceverai una chiamata da un nostro incaricato entro pochi minuti.
+Invia una breve email per richiedere le credenziali. L'email deve contenere il tuo nome personale o aziendale e il tuo numero di telefono (solo rete fissa). Riceverai una chiamata da un numero urbano che finisce con **\*682** entro pochi minuti.
 ```bash
 trial@robotdazero.it
 ```
