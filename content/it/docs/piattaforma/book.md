@@ -98,7 +98,7 @@ In via preliminare ti ricordiamo che l'attivazione di un account non richiede ne
 
 ### Come faccio a farmi richiamare?
 Invia una email all'indirizzo che trovi sotto e specifica il numero e l'orario di preferenza. 
-Riceverai una chiamata da un numero urbano che finisce con **682**.
+Riceverai una chiamata da un numero urbano che finisce con \***682**.
 
 {{< details "Clicca qui per scoprire la email" >}}
 ```bash
