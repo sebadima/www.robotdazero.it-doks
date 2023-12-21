@@ -41,7 +41,7 @@ Automatizzando il tuo sistema idroponico con Raspberry Pi e Mycodo, puoi aumenta
 ## Coltura idroponica vs. Coltivazione tradizionale
 
 Ci sono molte ragioni diverse per cui scegliere l'idroponica rispetto al tradizionale giardinaggio del suolo. 
-I sistemi idroponici funzionano senza suolo, ma sono in grado si far crescere le piante molto più velocemente di quanto possibile con i sistemi tradizionale. 
+I sistemi idroponici funzionano senza suolo, ma sono in grado di far crescere le piante molto più velocemente di quanto possibile con i sistemi tradizionale. 
 
 Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senxs perdite escluds ls evaporazione e l'assorbimento minimo delle piantine.
 
