@@ -239,7 +239,7 @@ window.addEventListener("scroll", () => {
    let scrollPercent = scrollTop / (docHeight - winHeight);
    let scrollPercentRounded = Math.round(scrollPercent * 100);
    <!-- parametro per scroll -->
-   if (scrollPercentRounded > 100) {
+   if (scrollPercentRounded > 80) {
       const buttonElement = document.getElementById('scroller');
       if (buttonElement) {
          buttonElement.click();
