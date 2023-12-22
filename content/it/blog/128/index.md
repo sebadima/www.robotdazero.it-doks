@@ -28,27 +28,28 @@ Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio d
 
 ### Materiali necessari
 
-Per realizzare il progetto avrete bisogno dei seguenti materiali:
+Per realizzare il progetto avrai bisogno dei seguenti materiali:
 
 - Una <a href="https://amzn.to/3MRTOs3" target="_blank" rel="noopener">ESP32 Cam</a> con fotocamera OV2640
 - Un adattatore USB per la presa accendisigari della vettura
 - Una scheda SD-card da almeno 16GB
 
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/201.jpeg" alt="">
+
 ### Come usare la scheda
 
-- Formattate la SD-card usando il vostro PC
-- Inserite la SD-card nella feritoia della Cam
-- Collegate la fotocamera alla presa accendisigari della vettura
+- Formatta la SD-card usando il tuo PC
+- Inserisci la SD-card nella feritoia della Cam
+- Collega la fotocamera alla presa accendisigari della vettura
 - La Cam si accenderà immediatamente
-- Posizionate la fotocamera in modo che possa inquadrare il parabrezza e parte dei finestrini
+- Posiziona la fotocamera in modo che possa inquadrare il parabrezza e parte dei finestrini
 
 
-In questo modo della Cam saranno registrate ogni 15 secondi sulla SD-card  in una directory chiamata "img". Questo vi permetterà di vedere i movimenti delle persone quando la vettura é parcheggiata. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della ESP32, in particolare utilizza la modalità <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html" target="_blank" rel="noopener">deep sleep</a> della scheda, disabilita il WIFI, il Bluetooth e la <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/touch_pad.html" target="_blank" rel="noopener">funzione touchpad</a> di alcuni piedini. In questa modalità l'ESP32 consuma appena 1~2 mA contro i circa 130~150 mA della scheda collegata al WIFI.
+In questo modo le foto della Cam saranno registrate ogni 15 secondi sulla SD-card in una directory chiamata "img". Questo vi permetterà di vedere i movimenti delle persone quando la vettura é parcheggiata. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della ESP32, in particolare utilizza la modalità <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html" target="_blank" rel="noopener">deep sleep</a> della scheda. In questo modo viene disabilito brevemente il WIFI, il Bluetooth e la <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/touch_pad.html" target="_blank" rel="noopener">funzione touchpad</a> di alcuni piedini. In questa modalità l'ESP32 consuma appena 1~2 mA contro i circa 130~150 mA della scheda in condizioni normali.
 
-La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non volete rischiare la batteria della macchina usate un power bank da 20000 mAh, perfettamente in grado di fare funzionare la Cam per 8/10 ore. 
+La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non vuoi in nessun caso la batteria della vettura puoi usare un power bank da 20000 mAh, in grado di fare funzionare la Cam per 8/10 ore. 
 
-
-
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/206.jpeg" alt="">
 
 ## Il programma da caricare sulla ESP32
 
@@ -275,23 +276,23 @@ void loop() {
 
 Per compilare e caricare un programma usando l'Arduino IDE, è necessario seguire questi passaggi:
 
-- Aprite l'Arduino IDE.
-- Create un nuovo progetto o aprite un progetto esistente.
+- Apri l'Arduino IDE.
+- Crea un nuovo progetto o aprite un progetto esistente.
 - Inserisci il codice del programma nel file .ino.
-- Collegate la scheda Arduino al computer.
+- Collega la scheda Arduino al computer.
 - Seleziona la scheda Arduino dal menu Strumenti.
-- Fate clic sul pulsante Compila.
+- Fai clic sul pulsante Compila.
 
 Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
-Fate clic sul pulsante Carica per caricare il programma sulla scheda Arduino.
+Fai clic sul pulsante Carica per caricare il programma sulla scheda Arduino.
 
 ##### Passaggio 1: Aprire l'Arduino IDE
 
-Per aprire l'Arduino IDE, è possibile fare doppio clic sull'icona dell'applicazione sul desktop. Se non avete ancora installato l'Arduino IDE, potete scaricarlo dal sito web di Arduino.
+Per aprire l'Arduino IDE, è possibile fare doppio clic sull'icona dell'applicazione sul desktop. Se non hai ancora installato l'Arduino IDE, puoi scaricarlo dal sito web di Arduino.
 
 ##### Passaggio 2: Creare un nuovo progetto o aprire un progetto esistente
 
-Per creare un nuovo progetto, fate clic sul menu File e selezionate Nuovo. Per aprire un progetto esistente, fate clic sul menu File e selezionate Apri.
+Per creare un nuovo progetto, fai clic sul menu File e selezionate Nuovo. Per aprire un progetto esistente, fai clic sul menu File e seleziona Apri.
 
 ##### Passaggio 3: Inserisci il codice del programma nel file .ino
 
@@ -303,19 +304,19 @@ Per collegare la scheda Arduino al computer, è necessario utilizzare un cavo US
 
 #####  Passaggio 5: Seleziona la scheda Arduino dal menu Strumenti
 
-Per selezionare la scheda Arduino dal menu Strumenti, fate clic sul menu Strumenti e selezionate la scheda Arduino che avete collegato al computer.
+Per selezionare la scheda Arduino dal menu Strumenti, fai clic sul menu Strumenti e seleziona la scheda Arduino che avete collegato al computer.
 
-##### Passaggio 6: Fare clic sul pulsante Compila
+##### Passaggio 6: Fai clic sul pulsante Compila
 
-Per compilare il programma, fate clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
+Per compilare il programma, fai clic sul pulsante Compila. Se la compilazione è andata a buon fine, non verranno visualizzati errori nella finestra del terminale.
 
-##### Passaggio 7: Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo
+##### Passaggio 7: il pulsante Carica diventerà attivo
 
 Se la compilazione è andata a buon fine, il pulsante Carica diventerà attivo.
 
-##### Passaggio 8: Fare clic sul pulsante Carica per caricare il programma sulla scheda Arduino
+##### Passaggio 8: Fare clic sul pulsante Carica
 
-Per caricare il programma sulla scheda Arduino, fate clic sul pulsante Carica. Il programma verrà copiato sulla scheda Arduino e inizierà ad eseguirsi.
+Per caricare il programma sulla scheda Arduino, fai clic sul pulsante Carica. Il programma verrà copiato sulla scheda Arduino e inizierà a funzionare.
 
 
 ### Come caricare il programma usando PlatformIO
@@ -442,8 +443,8 @@ Attenzione: La formattazione di una scheda SD-card cancella tutti i dati present
 
 #### Conclusione
 
-Dopo avere superato lo scoglio della formattazione e della compilazione potete iniziare ad usare il progetto semplicemente collegandola la scheda alla accendisigari. In questo modo avrete a disposizione un sistema di controllo super economico.
-La ESP32 con la camera OV2640 vi permetterà di salvare le immagini dell'esterno vettura e usarle come prova per atti vandalici.
+Dopo avere superato lo scoglio della formattazione e della compilazione puoi usare il progetto semplicemente collegandola la scheda alla presa accendisigari. In questo modo avrai a disposizione un sistema di controllo super economico.
+La ESP32 con la camera OV2640 ti permetterà di salvare le immagini dell'esterno vettura e di usarle come prova per atti vandalici.
 <br>
 <br>
 <p style="font-size: 0.8em;">R.128.1.2.0</p>

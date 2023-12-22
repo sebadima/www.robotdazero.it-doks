@@ -25,7 +25,11 @@ Per automatizzare un sistema idroponico, è necessario un controller in grado di
 
 <a href="https://kylegabriel.com/projects/2020/06/automated-hydroponic-system-build.html" target="_blank" rel="noopener">Mycodo</a> è uno strumento facile da usare ma potente che può essere utilizzato per automatizzare una vasta gamma di sistemi idroponici. Può monitorare la temperatura, il pH e i livelli di nutrienti della soluzione acquosa e regolare l'illuminazione, il dosaggio dei nutrienti e le pompe secondo necessità.
 
-Oltre alla sua interfaccia user-friendly e potenti funzionalità, <a href="https://kylegabriel.com/projects/2020/06/automated-hydroponic-system-build.html" target="_blank" rel="noopener">Mycodo</a> è anche gratuito e open-source. Ciò significa che puoi modificare e migliorare liberamente il software per soddisfare le tue esigenze specifiche.
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="">
+<br>
+<br>
+
+Oltre alla sua interfaccia user-friendly con potenti funzionalità, <a href="https://kylegabriel.com/projects/2020/06/automated-hydroponic-system-build.html" target="_blank" rel="noopener">Mycodo</a> è anche gratuito e open-source. Ciò significa che puoi modificare e migliorare liberamente il software per soddisfare le tue esigenze specifiche.
 
 Ecco una breve panoramica di come utilizzare Mycodo per automatizzare un sistema idroponico:
 
