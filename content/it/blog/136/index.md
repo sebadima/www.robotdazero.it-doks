@@ -38,23 +38,23 @@ Ecco una breve panoramica di come utilizzare Mycodo per automatizzare un sistema
 3. Distribuire il software Mycodo sul Raspberry Pi.
 4. Monitorare il sistema e apportare le modifiche necessarie.
 
-Automatizzando il tuo sistema idroponico con Raspberry Pi e Mycodo, puoi aumentare significativamente le tue rese e goderti un approccio più pratico al giardinaggio.
+Automatizzando il tuo sistema idroponico con Raspberry Pi e Mycodo, puoi aumentare significativamente le tue rese e goderti un approccio più rilassato al giardinaggio, trascurando come come la irrigazione, la pulizia e la concimazione.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nyqykZK2Ev4?si=2NuAYExwlSx2DKru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Coltura idroponica vs. Coltivazione tradizionale
+### Coltura idroponica vs. Coltivazione tradizionale
 
 Ci sono molte ragioni diverse per cui scegliere l'idroponica rispetto al tradizionale giardinaggio del suolo. 
 I sistemi idroponici funzionano senza suolo, ma sono in grado di far crescere le piante molto più velocemente di quanto possibile con i sistemi tradizionale. 
 
-Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senza perdite escluso la evaporazione e l'assorbimento delle piante.
+Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senza perdite escluso la evaporazione e l'assorbimento intrinseco delle piante.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/102.jpg" alt="piantine di lattuga in un impianto idroponico">
 
 ### Gli svantaggi
-Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono moltissimo dal tipo di impianto e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impianto con 10 piantine fino a 1000 euro max per il miglio impianto casalingo.
+Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono dal tipo di impianto e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impianto con 10 piantine fino a 1000~2000 euro max per un eccellente impianto casalingo.
 
-Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "normale" (parliamo di meno di 10 euro per semi e contenitori): a questo punto molti si chiedono: "Vale davvero la pena di provare la tecnica idroponica?"
+I costi come vedi possono essere bassi ma sono comunque superiori a quelli del giardinaggio "normale" (parliamo di meno di 10 euro per semi e contenitori). A questo punto forse ti starai chiedendo: "Vale davvero la pena di provare la coltivazione idroponica?"
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
 🔑 Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi della coltivazione idroponica sono infatti molti e importanti.
@@ -70,13 +70,23 @@ Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "n
 - grazie alla <a href="https://filodendro.it/giardinaggio/substrati/perlite/" target="_blank" rel="noopener">perlite</a> le piante cresco più alte e marciscono raramente
 - i costi iniziali sono ammortizzati molto velocemente
 
+### È sicuro lasciare i LED accesi per 18 ore al giorno?
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">
+Se siete preoccupati per sicurezza vostra o della vostra casa, i LED moderni producono poco calore e possono restare accesi 24 ore senza preoccuparsi di vampate o simili. Anche se la loro durata negli anni dipende dalla marca ed dal costo puoi probabilmente lasciarli accesso per 16 ore al giorno. Molti impianti commerciali restano accessi anche più si 16 ore.
+</div>
+
+<br>
+
+Mentre per la pianta, molte ricerche hanno scoperto che le piante richiedono un periodo di respirazione giornaliero di almeno 6 ore al giorno per le piantine e idealmente 8-10 ore per le piante più mature. Pertanto non è consigliabile fornire più di 14-16 ore al giorno di luce, anche se si coltivano varietà che amano le lunghe giornate e si cerca di indurre la fioritura/frutta da esse.
+
+
 <img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt="logo del nostro progetto per la coltivazione idroponica con Mycodo"> 
 
 ## Conclusioni
 
-Nei prossimi post vedremo come realizzare un impianto idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
+Nei prossimi post vedremo come realizzare un impianto idroponico "tecnologico" grazie a Mycodo e al Raspberry PI.
 Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
-
 
 
 <!--
@@ -89,4 +99,4 @@ Il serbatoio, un altro componente essenziale del tuo sistema idroponico, svolge 
 
 <br>
 <br>
-<p style="font-size: 0.75em;">Robotdazero.it -  post - R.136.0.1.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.136.1.1.0</p>  
