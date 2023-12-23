@@ -25,7 +25,7 @@ Per automatizzare un sistema idroponico, è necessario un controller in grado di
 
 <a href="https://kylegabriel.com/projects/2020/06/automated-hydroponic-system-build.html" target="_blank" rel="noopener">Mycodo</a> è uno strumento facile da usare ma potente che può essere utilizzato per automatizzare una vasta gamma di sistemi idroponici. Può monitorare la temperatura, il pH e i livelli di nutrienti della soluzione acquosa e regolare l'illuminazione, il dosaggio dei nutrienti e le pompe secondo necessità.
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="">
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="pannello di controllo della app per la coltivazione idroponica con Mycodo e Raspberry PI">
 <br>
 <br>
 
@@ -54,12 +54,13 @@ Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqu
 ### Gli svantaggi
 Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono moltissimo dal tipo di impiantio e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impiato con 10 piantine fino a 1000 euro max per il miglio impianto casalingo.
 
-Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "normale" (parliamo di meno di 10 euro per semi e contenitori): a questo punto molti si chiedono: "Vale dvvero la pena di provare i aiatwni idroponici?"
+Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "normale" (parliamo di meno di 10 euro per semi e contenitori): a questo punto molti si chiedono: "Vale davvero la pena di provare la tecnica idroponica?"
 
-Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi della coltivazione idropinica sono infatti molti e importanti:
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">
+🔑 Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi della coltivazione idropinica sono infatti molti e importanti.
+</div>
 
-
-### I vantaggi
+### I vantaggi della colyivazione idroponica
 
 - non richiede diserbanti
 - non ti obbliga a sforzare la schiena (e provate a dire che è una cosa secondaria!)
@@ -69,12 +70,14 @@ Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi del
 - grazie alla <a href="https://filodendro.it/giardinaggio/substrati/perlite/" target="_blank" rel="noopener">perlite</a> le piante cresco più alte e marciscono raramente
 - i costi iniziali sono ammortizzati molto velocemente
 
+<img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt="logo del nostro progetto per la coltivazione idroponica con Mycodo"> 
+
 ## Conclusioni
 
 Nei prossimi post vedremo come realizzare un impinato idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
 Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
 
-<img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt=""> 
+
 
 <!--
 
