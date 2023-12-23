@@ -47,20 +47,20 @@ Automatizzando il tuo sistema idroponico con Raspberry Pi e Mycodo, puoi aumenta
 Ci sono molte ragioni diverse per cui scegliere l'idroponica rispetto al tradizionale giardinaggio del suolo. 
 I sistemi idroponici funzionano senza suolo, ma sono in grado di far crescere le piante molto più velocemente di quanto possibile con i sistemi tradizionale. 
 
-Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senxs perdite escluds ls evaporazione e l'assorbimento minimo delle piantine.
+Si possono ottenere esemplari migliori e in modo rapido con dei costi per l'acqua praticamente azzerati. L'acqua infatti viene riciclata senza perdite escluso la evaporazione e l'assorbimento delle piante.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/102.jpg" alt="piantine di lattuga in un impianto idroponico">
 
 ### Gli svantaggi
-Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono moltissimo dal tipo di impiantio e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impiato con 10 piantine fino a 1000 euro max per il miglio impianto casalingo.
+Ci sono costi di avvio non trascurabili come ad esempio le vasche e i LED per "nutrire " di luce le piante coltivate in appartamento. Ma in generale i costi dipendono moltissimo dal tipo di impianto e dal numero di piante desiderate. I prezzi vanno da meno di 100 euro per un un impianto con 10 piantine fino a 1000 euro max per il miglio impianto casalingo.
 
 Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "normale" (parliamo di meno di 10 euro per semi e contenitori): a questo punto molti si chiedono: "Vale davvero la pena di provare la tecnica idroponica?"
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
-🔑 Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi della coltivazione idropinica sono infatti molti e importanti.
+🔑 Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi della coltivazione idroponica sono infatti molti e importanti.
 </div>
 
-### I vantaggi della colyivazione idroponica
+### I vantaggi della coltivazione idroponica
 
 - non richiede diserbanti
 - non ti obbliga a sforzare la schiena (e provate a dire che è una cosa secondaria!)
@@ -74,7 +74,7 @@ Seppur limitati i costi sono superiori a quelli necessari per il giardinaggio "n
 
 ## Conclusioni
 
-Nei prossimi post vedremo come realizzare un impinato idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
+Nei prossimi post vedremo come realizzare un impianto idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
 Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
 
 
