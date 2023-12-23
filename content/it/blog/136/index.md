@@ -74,7 +74,7 @@ Per molte persone la risposta sorprendentemente può essere "SI". I vantaggi del
 Nei prossimi post vedremo come realizzare un impinato idroponico "informatizzato" grazie a Mycodo e al Raspberry PI.
 Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
 
-<img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt="">
+<img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt=""> 
 
 <!--
 
