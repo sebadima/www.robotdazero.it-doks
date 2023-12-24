@@ -1,7 +1,7 @@
 ---
 title: "In arrivo il nuovo ESP32-P4"
 description: "In arrivo il nuovo ESP32-P4"
-excerpt: "Sistemi Espressif (SSE: 688018.SH) oggi annuncia l'imminente rilascio del suo ultimo SoC, ESP 32-P4. È alimentato da una CPU RISC-V dual-core con un'estensione delle istruzioni AI, un sottosistema di memoria avanzato e periferiche integrate ad alta velocità. ESP 32-P4 è progettato per ..."
+excerpt: "Sistemi Espressif oggi annuncia l'imminente rilascio del suo ultimo SoC, ESP 32-P4. È alimentato da una CPU RISC-V dual-core con un'estensione delle istruzioni AI, un sottosistema di memoria avanzato e periferiche integrate ad alta velocità. ESP 32-P4 è progettato per ..."
 date: 2023-12-13T09:19:42+01:00
 lastmod: 2023-12-13T09:19:42+01:00
 draft: false
