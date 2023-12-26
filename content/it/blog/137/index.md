@@ -96,10 +96,6 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 ### Il codice completo:
 
 ```bash
-/* 
-  Driver per motore elettrico brushed
-  - pin 9 di Arduino collegato alla base del TIP120
-*/
 int pinMotorino = 9;
 
 void setup() {
@@ -111,8 +107,8 @@ void loop() {
   Serial.print("LOOP\n");
     // accelerazione progressiva del motore
     for(int x = 0; x <= 255; x++)
-      analogWrite(pinMotorino, x); delay(10); 
-      delay(10);
+      analogWrite(pinMotorino, x); 
+      delay(20); 
     }    
   delay(1);
 }
