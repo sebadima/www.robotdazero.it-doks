@@ -15,12 +15,9 @@ homepage: false
 ---
 
 
+## Arduino e i dispostivi ad alto assorbimento
 
-## Come azionare Robot, servomandi e luci ad alto assorbimento usando un semplice transistor di tipo darlington, il TIP120 collegato al tuo Arduino.
-
-<br>
-
-**Nelle** applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120.
+In molte applicazioni della Robotica ci troveemo ad usare dispositivi ad alto assorbimento, che richiedono correnti che i nostri controller possano pilotare. In questi casi, prima di passare ai relay dedicati potremo usare un transistor di media potenza come il TIP120.
 
 <br>
 
@@ -58,7 +55,7 @@ Se la tensione applicata al diodo è superiore a 0,7 V, il diodo inizierà a con
 
 <br>
 
-### Come proteggere un circuito dalle tensioni parassite o dai sovraccarichi.
+### Come proteggere un circuito dalle tensioni parassite
 
 Se un circuito è alimentato da una batteria, è possibile utilizzare un diodo N4001 per proteggere il circuito dalla tensione inversa della batteria. La batteria ha una tensione inversa di circa 2 V. Se la tensione inversa della batteria supera la tensione di soglia del diodo N4001, il diodo inizierà a condurre corrente. Questa corrente limiterà la tensione inversa applicata al circuito, proteggendolo da danni.
 
@@ -77,7 +74,7 @@ Ecco altri esempi specifici di come può essere utilizzato un diodo N4001 per pr
 
 ##### Puoi scegliere il terminale 9 di Arduino perchè facilissimo da inviduare sulla scheda: se guardi altri progetti vedrai come molti abbiano fatto la stessa scelta. Non per esigenze tecniche dunque, ma solo per comodità.
 
-## Lo schema
+### Lo schema
 
 Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** al tuo Arduino in pochi minuti.
 
@@ -96,7 +93,7 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <br>
 </pre>
 
-### E infine il codice completo:
+### Il codice completo:
 
 ```bash
 /* 
