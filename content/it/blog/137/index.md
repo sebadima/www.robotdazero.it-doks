@@ -12,8 +12,9 @@ tags: ["motori", "arduino", "automazione"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
-mermaid: true
 ---
+
+
 
 ## Come azionare Robot, servomandi e luci ad alto assorbimento usando un semplice transistor di tipo darlington, il TIP120 collegato al tuo Arduino.
 
@@ -85,19 +86,6 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <br>
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### La tabella delle connessioni:
 <pre class="prettyprint" style="border: 1px solid #d6d4d4;">     
 
@@ -136,4 +124,4 @@ void loop() {
 Fai copia e incolla nell'IDE di Arduino e quindi compila e fai l'upload programma. Dopo il reset dovresti sentire il motorino accellerare e rallentare ciclicamente...
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.137.2.0.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.137.2.1.0</p>  
