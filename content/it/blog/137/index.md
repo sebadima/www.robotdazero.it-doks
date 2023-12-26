@@ -38,7 +38,9 @@ Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la ve
 
 <br>
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1592550975/001/undefined_rr5hb0.png" alt="schema dei PIN del TIP120" />
+
+<img img width="250" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schema dei PIN del TIP120">
+
 
 <br>
 <br>
