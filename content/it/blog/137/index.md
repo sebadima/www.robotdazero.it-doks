@@ -6,13 +6,14 @@ date: 2018-06-15T09:19:42+01:00
 lastmod: 2018-06-15T09:19:42+01:0
 draft: false
 weight: 50
-images: ["images/motore elettrico arduino.jpg"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["motori", "arduino", "automazione"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
 ---
+
 
 
 ## Arduino e i dispostivi ad alto assorbimento
@@ -78,7 +79,7 @@ Ecco altri esempi specifici di come può essere utilizzato un diodo N4001 per pr
 
 Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** al tuo Arduino in pochi minuti.
 
-<img decoding="async" src="https://res.cloudinary.com/sebadima/image/upload/v1592559023/001/screenshot-3_xzszcr.png" alt="schema del driver per motore elettrico con TIP120 per Arduino"/>
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del driver per motore elettrico con TIP120 per Arduino">
 
 <br>
 <br>
