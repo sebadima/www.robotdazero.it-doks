@@ -41,15 +41,11 @@ Usando il **TIP120** come un interruttore velocissimo, possiamo regolare la ve
 
 <img img width="250" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schema dei PIN del TIP120">
 
-
-<br>
-<br>
-
-> La cosa che ti darà più noia nell’usare il TIP120 è vedere nello schema teorico ufficiale la **base** al centro del transistor e nel componente fisico ritrovarla piazzata a sinistra! Perciò pensa solo ai PIN fisici, così disposti: B - C - E.
-
 <br>
 
 Nel circuito useremo anche un piccolo diodo, l'<a  target="_blank" href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode">N4001</a> destinato a proteggere il transistor dalle correnti prodotte dal motorino quando, ad esempio, lo fai girare manualmente: il diodo serve appunto come una “conduttore a senso unico” e impedirà alle correnti parassite o in “reverse” di danneggiare il TIP120.
+
+<br>
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👋
 Il <a href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode" target="_blank">diodo N4001</a> è un diodo di tipo NPN, con una tensione di soglia di circa 0,7 V. Questo significa che, se la tensione applicata al diodo è inferiore a 0,7 V, il diodo non condurrà corrente.
