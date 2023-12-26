@@ -63,30 +63,32 @@ I costi come vedi possono essere bassi ma sono comunque superiori a quelli del g
 ### I vantaggi della coltivazione idroponica
 
 - non richiede diserbanti
-- non ti obbliga a sforzare la schiena (e provate a dire che è una cosa secondaria!)
+- non ti obbliga a sforzare la schiena (prova a dire che è una cosa secondaria!)
 - funziona benissimo dentro un appartamento
 - non richiedere irrigazione
 - non esistono posti in cui i parassiti o gli insetti possano nascondersi
 - grazie alla <a href="https://filodendro.it/giardinaggio/substrati/perlite/" target="_blank" rel="noopener">perlite</a> le piante cresco più alte e marciscono raramente
-- i costi iniziali sono ammortizzati molto velocemente
+- i costi iniziali vengono ammortizzati molto velocemente
 
 ### È sicuro lasciare i LED accesi per 18 ore al giorno?
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
-Se siete preoccupati per sicurezza vostra o della vostra casa, i LED moderni producono poco calore e possono restare accesi 24 ore senza preoccuparsi di vampate o simili. Anche se la loro durata negli anni dipende dalla marca ed dal costo puoi probabilmente lasciarli accesso per 16 ore al giorno. Molti impianti commerciali restano accessi anche più si 16 ore.
+Se siete preoccupati per sicurezza vostra o della vostra casa, i LED moderni producono poco calore e possono restare accesi 24 ore senza preoccuparsi di vampate o simili. Anche se la loro durata negli anni dipende dalla marca ed dal costo puoi probabilmente lasciarli accessi per 16 ore al giorno. Molti impianti commerciali restano accessi anche più si 16 ore.
 </div>
 
 <br>
 
-Mentre per la pianta, molte ricerche hanno scoperto che le piante richiedono un periodo di respirazione giornaliero di almeno 6 ore al giorno per le piantine e idealmente 8-10 ore per le piante più mature. Pertanto non è consigliabile fornire più di 14-16 ore al giorno di luce, anche se si coltivano varietà che amano le lunghe giornate e si cerca di indurre la fioritura/frutta da esse.
+#### Quanta luce serve alle piante
+Molte ricerche hanno scoperto che le piante richiedono un periodo di respirazione giornaliero di almeno 6 ore al giorno per le piantine e di 8~10 ore per le piante mature. Pertanto non è consigliabile fornire più di 12~14 ore al giorno di luce. La regola vale anche se si coltivano varietà che amano le lunghe giornate o volete indurre la fioritura (o frutta) anticipata delle piante.
 
+<br>
 
 <img img width="1024" class="figure-img img-fluid lazyload blur-up"  src="images/301.webp" alt="logo del nostro progetto per la coltivazione idroponica con Mycodo"> 
 
 ## Conclusioni
 
 Nei prossimi post vedremo come realizzare un impianto idroponico "tecnologico" grazie a Mycodo e al Raspberry PI.
-Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della seri vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
+Tratteremo della costruzione elettrica e meccanica con i disegni in 3D per gli erogatori dei nutrienti. Alla fine della serie vedremo come implementare semplici algoritmi di machine learning per migliorare la resa e i costi dell'impianto.
 
 
 <!--
@@ -99,4 +101,4 @@ Il serbatoio, un altro componente essenziale del tuo sistema idroponico, svolge 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.136.1.1.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.136.1.2.1</p>  
