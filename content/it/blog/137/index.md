@@ -12,9 +12,10 @@ tags: ["motori", "arduino", "automazione"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
+mermaid: true
 ---
 
-### Come azionare Robot, servomandi e luci ad alto assorbimento usando un semplice transistor di tipo darlington, il TIP120 collegato al tuo Arduino.
+## Come azionare Robot, servomandi e luci ad alto assorbimento usando un semplice transistor di tipo darlington, il TIP120 collegato al tuo Arduino.
 
 <br>
 
@@ -75,7 +76,7 @@ Ecco altri esempi specifici di come può essere utilizzato un diodo N4001 per pr
 
 ##### Puoi scegliere il terminale 9 di Arduino perchè facilissimo da inviduare sulla scheda: se guardi altri progetti vedrai come molti abbiano fatto la stessa scelta. Non per esigenze tecniche dunque, ma solo per comodità.
 
-### Lo schema
+## Lo schema
 
 Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** al tuo Arduino in pochi minuti.
 
@@ -84,14 +85,30 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <br>
 <br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### La tabella delle connessioni:
-<pre class="prettyprint" style="border: 1px solid #d6d4d4;">     Breadboard               Arduino
+<pre class="prettyprint" style="border: 1px solid #d6d4d4;">     
+
+  Breadboard               Arduino
   -  VCC            &lt;------&gt;  5V
   -  base Tip 120   &lt;------&gt;  Pin 9
   -  GND            &lt;------&gt;  GND
+<br>
 </pre>
 
-#### E infine il codice completo:
+### E infine il codice completo:
 
 ```bash
 /* 
@@ -116,7 +133,7 @@ void loop() {
 }
 ```
 
-Una volta caricato il programma facendo copia e incolla devi compilarlo e fare l'upload sul tuo Arduino. Dopo il reset sentirai il tuo motorino brushed (con le spazzole) accellerare e rallentare ciclicamente.
+Fai copia e incolla nell'IDE di Arduino e quindi compila e fai l'upload programma. Dopo il reset dovresti sentire il motorino accellerare e rallentare ciclicamente...
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it -  post - R.137.2.0.0</p>  
