@@ -84,6 +84,7 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 <br>
 
 
+#### I collegamenti del "solo" Arduino
 {{< mermaid class="bg-light text-center" >}}
 graph TD
  VCC -->|5V| E[Arduino]
@@ -92,17 +93,7 @@ graph TD
 {{< /mermaid >}}
 
 
-#### La tabella delle connessioni:
-<pre class="prettyprint" style="border: 1px solid #d6d4d4;">     
-
-  Breadboard               Arduino
-  -  VCC            &lt;------&gt;  5V
-  -  base Tip 120   &lt;------&gt;  Pin 9
-  -  GND            &lt;------&gt;  GND
-<br>
-</pre>
-
-### Il codice completo:
+### Il codice completo
 
 ```bash
 int pinMotorino = 9;
