@@ -68,7 +68,7 @@ I costi come vedi possono essere bassi ma sono comunque superiori a quelli del g
 - non richiede irrigazione
 - non esistono posti in cui i parassiti o gli insetti possano nascondersi
 - grazie alla <a href="https://filodendro.it/giardinaggio/substrati/perlite/" target="_blank" rel="noopener">perlite</a> le piante cresco più alte e marciscono raramente
-- i costi iniziali vengono ammortizzati molto velocemente
+- i costi iniziali vengono ammortizzati velocemente
 
 ### È sicuro lasciare i LED accesi per 18 ore al giorno?
 
