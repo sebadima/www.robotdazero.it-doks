@@ -65,7 +65,7 @@ I costi come vedi possono essere bassi ma sono comunque superiori a quelli del g
 - non richiede diserbanti
 - non ti obbliga a sforzare la schiena (prova a dire che è una cosa secondaria!)
 - funziona benissimo dentro un appartamento
-- non richiedere irrigazione
+- non richiede irrigazione
 - non esistono posti in cui i parassiti o gli insetti possano nascondersi
 - grazie alla <a href="https://filodendro.it/giardinaggio/substrati/perlite/" target="_blank" rel="noopener">perlite</a> le piante cresco più alte e marciscono raramente
 - i costi iniziali vengono ammortizzati molto velocemente
