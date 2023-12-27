@@ -12,6 +12,7 @@ tags: ["motori", "arduino", "automazione"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
+mermaid: true
 ---
 
 
@@ -81,6 +82,15 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai colle
 
 <br>
 <br>
+
+
+{{< mermaid class="bg-light text-center" >}}
+graph TD
+ VCC -->|5V| E[Arduino]
+  base-TIP-120 -->|PIN 9| E[Arduino]
+  GND -->|GND| E[Scheda Arduino]
+{{< /mermaid >}}
+
 
 #### La tabella delle connessioni:
 <pre class="prettyprint" style="border: 1px solid #d6d4d4;">     
