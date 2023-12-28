@@ -25,7 +25,7 @@ https://randomnerdtutorials.com/esp32-erase-flash-memory/
 Questa è una guida rapida che mostra come cancellare la memoria flash dell'ESP32 per riportarla allo stato originale. "Flashare" l'ESP32 potrebbe essere utile se vuoi eliminare eventuali modifiche apportate al firmware o alle impostazioni di configurazione. E' inoltre una procedura consigliata se il sistema si blocca costantemente o non è possibile caricare nuovo codice C++.
 
 ## RESET IMMEDIATO
-In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante **EN** (Enable) = **RST** (Reset) per almeno 3 secondi come si vede nella foto.
+In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per resettare la scheda: basta tenere premuto il pulsante **EN** (Enable) = **RST** (Reset) per almeno un secondo come si vede nella foto.
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up" src="images/102.png" alt="il tasto di reset hardware della sheda ESP32">
 
