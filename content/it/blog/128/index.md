@@ -425,7 +425,7 @@ Per formattare una scheda SD-card in Windows usando il filesystem FAT, segui que
 - Apri <a href="https://support.microsoft.com/it-it/windows/trovare-e-aprire-esplora-file-ef370130-1cca-9dc5-e0df-2f7416fe1cb1" target="_blank" rel="noopener">Esplora file</a>
  premendo la Windows + E.
 
-<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schermata di Esplora file quando usi Windows 10 e 11">
+<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schermata di Esplora file quando usi Windows 10 e 11">
 
 
 - In Esplora file, seleziona "Questo PC".
