@@ -75,7 +75,7 @@ input[type='submit'] {
 In via preliminare ti ricordiamo che l'attivazione di un account non richiede nessun pagamento anticipato e neppure la carta di credito. Inoltre non esiste la clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
 </div>
 
-<!-- comment out formspree 
+<p>Vi preghiamo di inserire i vostri veri numeri personali e non di quelli di amici o estranei. In caso contrario il sito rischierebbe nuove sanzioni pecuniarie in violazione alla normativa 626/2003. Grazie!</p>
 <div class="bz-container">
 
   <form action="https://formspree.io/f/xqkveyej" method="POST">
@@ -92,7 +92,6 @@ In via preliminare ti ricordiamo che l'attivazione di un account non richiede ne
     <div class="bz-clear"></div>
   </form>
 </div>
--->
 
 ## FAQ
 
