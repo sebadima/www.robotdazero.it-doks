@@ -1,7 +1,7 @@
 ---
 title: "Ti richiamiamo noi"
 description: "Come farti richiamare per parlare con un nostro incaricato"
-lead: "Se hai dei dubbi sui termini di utilizzo, sui prezzi o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono."
+lead: "Carte Postepay e Visa/MCard sono metodi di pagamento accettati. Se hai dei dubbi sui termini di utilizzo o sulle modalità di pagamento puoi ricevere chiarimenti direttamente via telefono."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2023-12-15T15:21:01+02:00
 draft: false
