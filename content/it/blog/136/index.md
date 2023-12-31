@@ -40,7 +40,7 @@ Ecco una breve panoramica di come utilizzare Mycodo per automatizzare un sistema
 
 Automatizzando il tuo sistema idroponico con Raspberry Pi e Mycodo, puoi aumentare significativamente le tue rese e goderti un approccio più rilassato al giardinaggio, trascurando come come la irrigazione, la pulizia e la concimazione.
 
-<iframe width="800" src="https://www.youtube.com/embed/nyqykZK2Ev4?si=2NuAYExwlSx2DKru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nyqykZK2Ev4?si=2NuAYExwlSx2DKru" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Coltura idroponica vs. Coltivazione tradizionale
 
