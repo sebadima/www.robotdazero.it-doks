@@ -36,6 +36,54 @@ L'ESP32 è una piattaforma versatile che può essere utilizzata per una varietà
 </div>
 
 
+## La storia dell'ESP32
+
+L'ESP32 sembrava apparire dal nulla. Ora è ovunque! Semplificando la connettività con reti Wi-Fi e dispositivi Bluetooth, è diventato un punto fermo della comunità dei produttori. Diamo uno sguardo alla sua breve storia, come iniziare, e il supporto allo sviluppo che è in offerta.
+
+Il ESP32 è diventato un catch-all termine per una gamma di maker-friendly, schede di sviluppo Wi-Fi-capace e chip. Si basano sul silicio di Espressif, un fornitore di silicio fabless con sede in Cina fondato nel 2008. Il suo primo prodotto, un sistema Wi-Fi system-on-chip (SoC) a 2,4 GHz, è stato introdotto sul mercato nel 2013. Chiamato ESP8089, ha preso di mira tablet e applicazioni set-top box. Ma è l'ESP8266, rilasciato nel 2014, che ha portato questa famiglia di prodotti all'attenzione della comunità dei produttori.
+
+La visione di Espressif si concentra sul portare sul mercato soluzioni all'avanguardia di Intelligenza artificiale delle cose (AIoT) attraverso la tecnologia wireless a bassa potenza. L'ESP8266 ha unito questi thread fornendo un dispositivo single-chip facile da usare accoppiato al software necessario per comunicare tramite reti Wi-Fi.
+Cosa alimenta l'ESP32?
+Nel profondo, l'ESP8266 è alimentato da un processore RISC Tensilica Xtensa L106 a 32 bit. Questa architettura piuttosto esotica è fornita come proprietà intellettuale licenziabile (IP) da Cadence e, secondo un comunicato stampa del 2007, ha fornito più prestazioni Dhrystone MIPS rispetto a un Arm Cortex-M3. Inoltre, hanno affermato che il core funzionava a un mW inferiore per MHz, il che sarebbe interessante quando si affrontano applicazioni Internet-of-Things (IoT) alimentate a batteria.
+
+La comunità dei produttori è venuta a conoscenza di questi dispositivi quando, nel 2014, Hackaday ha annunciato l'introduzione di un nuovo modulo Wi-Fi da $5 venduto tramite Seeed Studio. Conosciuto come ESP-01, questo modulo è stato costruito dal produttore di terze parti Ai-Thinker, anch'esso con sede in Cina. Con solo otto pin, due dei quali fornivano un'interfaccia UART per controllare il modulo tramite comandi AT, il modulo era facile da integrare con la piattaforma Arduino, fornendo anche schede semplici come Arduino Uno con connettività Internet. L'unico punto critico: tutta la documentazione è stata scritta in cinese. Questo è stato, tuttavia, un piccolo ostacolo per la comunità maker come volontari set di tradurre la documentazione disponibile utilizzando Google Translate e la scrittura di librerie software.
+Come può l'ESP32 essere così economico?
+La bellezza dei moduli basati sull'ESP8266 (Figura 1) era il numero limitato di componenti necessari per costruire un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti necessitavano solo di una manciata di resistori e condensatori, un'antenna PCB, un flash seriale QSPI esterno e un cristallo funzionante tra 24 e 52 MHz. All'accensione, l'ESP8266 estrae il firmware dal flash e quindi lo copia nella SRAM interna da dove viene eseguito.
+ 
+ESP8266 DCF simu
+Figura 1: ESP8266 fornisce connettività Wi-Fi a un'applicazione di clock.
+Naturalmente, era palesemente ovvio che i moduli erano anche soluzioni di microcontrollore a tutti gli effetti. Il processore presentava ingressi/uscite generiche (GPIOs), uscite PWM (pulse-width modulated), un convertitore analogico-digitale (ADC) e tutte le interfacce seriali standard. Quindi, perché sviluppare il codice per un Arduino o un altro processore quando è possibile ritagliare l'intermediario e semplicemente programmare l'ESP8266 stesso?
+
+Entro la fine del 2014, Espressif aveva rilasciato un kit di sviluppo software (SDK) che permetteva di creare codice utente che funzionava insieme al software Wi-Fi. Infine, le applicazioni di tipo IoT potrebbero essere eseguite standalone su moduli come ESP-01. L'SDK è disponibile in due versioni: una versione basata sul sistema operativo in tempo reale FreeRTOS e un'altra che si basava su callback e timer per garantire che il codice utente condividesse il tempo di elaborazione in modo equo con lo stack software Wi-Fi. Secondo il foglio dati, gli sviluppatori sono stati lasciati con circa 50 kB di memoria per il loro codice.
+I nuovi prodotti ESP32 arrivano sul mercato
+Da allora, Espressif ha costruito costantemente sul successo dei suoi SOC wireless. Non solo forniscono il silicio, ma offrono anche una gamma di moduli pronti all'uso che consentono ai produttori e agli sviluppatori di prototipare rapidamente le loro applicazioni.
+
+I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un ultra-low-power (ULP) co-processore, che è fondamentalmente una macchina a stati finiti programmabile (FSM), è anche disponibile. Questo può monitorare alcune periferiche durante la modalità sleep, rendendolo ideale per rilevare i segnali di risveglio dai sensori in applicazioni alimentate a batteria.
+
+Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore Xtensa LX7 a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. Sia Wi-Fi e Bluetooth sono a bordo, anche se quest'ultimo è aggiornato alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta di USB on-the-go (OTG) e il TWAI™, o interfaccia automobilistica a due fili, modulo. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come CAN. La sicurezza è inoltre potenziata con la disponibilità di un avvio sicuro basato su RSA, crittografia flash e un acceleratore HMAC (Message Authentication Code) basato su hash.
+
+Più recentemente, la line-up ha visto l'introduzione di processori RISC-V. Mentre l'ESP32-C3 fornisce solo un'opzione single-core e un funzionamento fino a 160 MHz (Figura 2), le sue prestazioni di 2,55 CoreMark/MHz sono essenzialmente le stesse dell'Xtensa LX7 della serie ESP32-S. Altrimenti, in termini di periferiche e memoria, il set di funzionalità corrisponde approssimativamente all'ESP32-S ma con il numero di pin limitato a 32.
+ 
+210466-002-94-originale-blockdiagramesp32-c3.PNG
+Figura 2: L'ESP32-C3 offre essenzialmente le stesse opzioni periferiche della serie ESP32-S, ma con un numero di pin inferiore e un nucleo RISC-V che sostituisce l'Xtensa LX7.
+Costruzione di applicazioni ESP32
+Come sviluppatore, una vasta gamma di opzioni sono disponibili quando si tratta di costruire il codice dell'applicazione. Per i produttori con esperienza su Arduino, il punto di partenza più semplice è all'interno dell'installazione IDE Arduino esistente. Basta aggiungere la posizione dei pacchetti Arduino-ESP32 tramite File - > Preferenze, quindi selezionare ESP32 da Strumenti - > Board - > Board Manager (Figura 3). Una volta completato, una serie di esempi verrà visualizzata in File -> Esempi, proprio come con qualsiasi piattaforma Arduino standard. Il codice sorgente viene salvato con lo standard'.ino ' termina il file e la tua applicazione è scritta nelle funzioni setup() e loop() a cui sei abituato.
+ 
+ELK030-ESP32 Supporto di gestione della scheda-Arduino.png
+Figura 3: Chi ha familiarità con l'IDE Arduino può integrare il supporto per l'ESP32 attraverso il board manager.
+Una delle frustrazioni con lo sviluppo tipico del microcontrollore è la necessità di compilare e quindi scaricare il codice prima di poter verificare che funzioni. Questo può crescere fino a richiedere una notevole quantità di tempo e non è più veloce solo perché hai cambiato una riga di codice. Se si desidera un'esperienza di codifica più reattiva, è possibile guardare l'opzione di BASE offerta da Annex WiFi RDS. L'ambiente di sviluppo è basato su browser Web. L'ambiente viene scaricato sul dispositivo ESP32 di destinazione che si connette al Wi-Fi una volta che il codice è stato lampeggiato con il loro strumento. Una volta connesso, puoi scrivere il tuo codice (Elenco 1) usando il browser scelto e, poiché è interpretato piuttosto che compilato, il tuo codice viene eseguito non appena hai finito.
+ 
+led = 2 ' GPIO02. Cambiare con il pin in cui è collegato il led 
+pin.modalità led, uscita
+per z = 0 a 1000
+  pin (led) = 1 - pin (led)       
+  pausa 500
+prossima z
+Elenco 1: Esempio di codice di base per lampeggiare un LED utilizzando l'ambiente di sviluppo RDS WiFi Annex.
+
+Naturalmente, non si può trascurare la ricchezza di supporto da parte di terze parti per la creazione di soluzioni IoT. Insieme ad Amazon AWS, Espressif offre una soluzione completa di intelligenza artificiale per il riconoscimento delle immagini e l'elaborazione audio con la scheda di sviluppo ESP-EYE. Oppure, se stai cercando il supporto Amazon Alexa, ci sono anche le schede ESP32-Vaquita basate sulla serie di moduli ESP32-WROVER-E.
+
+
 ### Il processore
 
 Processore dual core a 32 bit
