@@ -1,6 +1,6 @@
 ---
-title: "Perchè l'ESP32 è così popolare?"
-description: "Perchè l'ESP32 è così popolare?"
+title: "ESP32: i segreti del suo successo"
+description: "ESP32: i segreti del suo successo"
 excerpt: "L’ESP32 è una scheda elettronica integrata (SoC) sviluppata da Espressif Systems. È un chip a basso costo e ad alte prestazioni che offre una varietà di funzionalità, tra cui..."
 date: 2024-01-01T09:19:42+01:00
 lastmod: 2024-01-01T09:19:42+01:0
