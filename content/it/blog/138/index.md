@@ -172,7 +172,7 @@ Molte schede di sviluppo basate su ESP32 aggiungono memoria esterna per un siste
 
 - Memoria ROM (448 KiB): questa memoria è di sola scrittura, cioè non è possibile riprogrammarla. È qui che vengono memorizzati i codici che gestiscono lo stack Bluetooth, il controllo del Wi-Fi e il bootloader per avviare i programmi utente.
 - Memoria SRAM interna (520 KiB): questa memoria viene utilizzata dal processore per memorizzare sia i dati che le istruzioni. Il suo vantaggio è che è molto più facile per il processore accedere rispetto alla SRAM esterna.
-- RTC SRAM (16 KiB): questa memoria viene utilizzata dal co-processore quando il dispositivo funziona in modalità deep sleep .
+- RTC SRAM (16 KiB): questa memoria viene utilizzata dal coprocessore quando il dispositivo funziona in modalità deep sleep .
 - Efuse (1Kb): 256 bit di questa memoria sono utilizzati dal sistema stesso e i restanti 768 bit sono riservati ad altre applicazioni.
 - Flash embedded (Embedded flash): questa memoria è dove è memorizzato il codice dell'applicazione. 
 
@@ -196,26 +196,27 @@ Uno dei fattori più importanti in qualsiasi sistema è la sicurezza. Ecco perch
 3. RSA
 4. ECC
 
-Questi acceleratori consentono di aumentare la velocità di funzionamento e ridurre la complessità del software consentendo la crittografia e la decrittografia dinamica. In questo modo, il sistema è protetto da possibili attacchi di hacking che cercano di ottenere il codice memorizzato.
+Questi acceleratori consentono di aumentare la velocità di funzionamento e ridurre la complessità del software consentendo la crittografia e la de-crittografia dinamica. In questo modo, il sistema è protetto da possibili attacchi di hacking che cercano di ottenere il codice memorizzato.
 
 
-### La scheda di sviluppo DevKitC
+#### La scheda di sviluppo DevKitC
 
-L'ESP32 è un chip versatile ed ampiamente adottato dalla industra "automotive" per esempio, ma per essere usato ad hobbisti e programmatori necessita di una scheda di sviluppo che provveda alla alimentazione e alla connessione seriale.
+L'ESP32 è un chip versatile ed ampiamente adottato dalla industria "automotive" per esempio, ma per essere usato da hobbysti e programmatori ha bisogno di una scheda di sviluppo che provveda alla alimentazione e alla connessione seriale.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/107.jpg" alt="La scheda di sviluppo completa di alimentatore e interfaccia serial UART con microUSB">
 
-#### La scheda di sviluppo  DevKitC completa di alimentatore e interfaccia serial UART con microUSB
+Il piccolo chip che provvede alla alimentazione si chiama AMS1117 e lo vedi al centro della scheda vicino al bridge UART. 
 
+<br>
 <br>
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="La piedinatura dell'ESP32">
 
-#### piedinatura del modulo ESP32 WROOM
+##### piedinatura del modulo ESP32 WROOM
 
 Come potete vedere dall'immagine sopra del diagramma di piedinatura del modulo ESP32 WROOM, tutti i diversi tipi di pin sono menzionati in diversi colori che spiegheremo in dettaglio di seguito .
 
-##### Pin digitali
+#### I pin digitali
 
 > L'ESP32 ha un totale di 34 pin digitali. Questi pin sono simili ai pin digitali Arduino che consentono di aggiungere display a LED, display OLED, sensori, pulsanti, cicalini, ecc. ai nostri progetti.
 
@@ -281,8 +282,11 @@ Per questo, l'ESP32 ha una risoluzione a 12 bit(0-4096, il che significa che qua
 
 
 DAC (Convertitori da digitali ad analogici)
-I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche . L'ESP32 ha due convertitori da digitale ad analogico a 8 bit .
+I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche . L'ESP32 ha due convertitori da digitale ad analogico a 8 bit.
 
+### Il successo del'ESP32
+
+Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software...
 
 <br>
 <br>
