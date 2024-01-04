@@ -19,13 +19,13 @@ mermaid: true
 
 ## Le principali caratteristiche tecniche
 
-L'ESP32 è una scheda elettronica integrata (SoC) sviluppata da Espressif Systems. È un chip a basso costo e ad alte prestazioni che offre una varietà di funzionalità, tra cui:
+L'<a href="https://www.espressif.com/en/products/socs/esp32" target="_blank">ESP32</a> è una scheda elettronica integrata (SoC) sviluppata da <a href="https://www.espressif.com/" target="_blank">Espressif Systems</a>. È un chip a basso costo e ad alte prestazioni che offre una varietà di funzionalità, tra cui:
 
 Processore dual core a 32 bit con clock fino a 240 MHz
-Wi-Fi 802.11 b/g/n
-Bluetooth 5.0
-25 pin GPIO
-Supporto per sensori e periferiche
+Wi-Fi 802.11 b/g/n,
+<a href="https://it.wikipedia.org/wiki/Bluetooth" target="_blank">Bluetooth</a> 5.0,
+25 pin <a href="https://www.renesas.com/us/en/support/engineer-school/mcu-programming-peripherals-01-gpio" target="_blank">GPIO</a>,
+Supporto per sensori e periferiche.
 
 L'ESP32 è una piattaforma versatile che può essere utilizzata per una varietà di applicazioni, tra cui:
 
@@ -39,13 +39,13 @@ L'ESP32 è una piattaforma versatile che può essere utilizzata per una varietà
 
 ## La storia dell'ESP32
 
-L'ESP32 ha conquistato dall'oggi al domani una larga fetta del mercato IOT. Nel 2024, grazie ale sue spiccate doti di connettività con reti Wi-Fi e dispositivi Bluetooth, è diventato un punto fermo della comunità dei "maker" Diamo uno sguardo alla sua breve storia, come iniziare, e il supporto allo sviluppo che è in offerta.
+L'ESP32 ha conquistato dall'oggi al domani una larga fetta del mercato IOT. Nel 2024, grazie ale sue spiccate doti di connettività con reti <a href="https://www.youtube.com/watch?v=aqmIOn3L_Sw" target="_blank">WI-FI</a> e dispositivi Bluetooth, è diventato un punto fermo della comunità dei "maker" Diamo uno sguardo alla sua breve storia, come iniziare, e il supporto allo sviluppo che è in offerta.
 
 ### La casa madre: Espressif
 
-Il ESP32 è prodotto dalla Espressif, una azienda di microelettronica con sede in Cina fondata appena nel 2008. Il suo primo prodotto, un sistema Wi-Fi system-on-chip (SoC) a 2,4 GHz, è stato introdotto sul mercato nel 2013. Si chiamava ESP8089, ha preso di mira tablet e applicazioni set-top box. Ma è l'ESP8266, rilasciato nel 2014, che ha portato questa famiglia di prodotti all'attenzione della comunità dei produttori.
+Il ESP32 è prodotto dalla Espressif, una azienda di microelettronica con sede in Cina fondata appena nel 2008. Il suo primo prodotto, un sistema Wi-Fi system-on-chip (<a href="https://it.wikipedia.org/wiki/System-on-a-chip" target="_blank">SoC</a>) a 2,4 GHz, è stato introdotto sul mercato nel 2013. Si chiamava <a href="https://taoic.oss-cn-hangzhou.aliyuncs.com/sku/pdf/613d09e7100ee9df8577807cd89192a7ed6c218d.pdf" target="_blank">ESP8089</a>, ha preso di mira tablet e applicazioni set-top box. Ma è l'<a href="https://it.wikipedia.org/wiki/ESP8266" target="_blank">ESP8266</a>, rilasciato nel 2014, che ha portato questa famiglia di prodotti all'attenzione della comunità dei produttori.
 
-La "mission" di Espressif si concentra sulle soluzioni per L'Intelligenza artificiale delle cose (AIoT). Con l'ESP32 è riuscita a conciliare una discreta potenza di elaborazione con i sistemi wireless a basso consumo. L'antenato dell'ESP32 e cioè la scheda ESP8266 ha creato una mini rivoluzione nel mondo IOT creando per la prima volata dispositivo single-chip facile da usare accoppiato al software necessario per comunicare tramite reti Wi-Fi.
+La "mission" di Espressif si concentra sulle soluzioni per L'Intelligenza artificiale delle cose (<a href="https://www.internet4things.it/iot-library/artificial-intelligence-of-things-aiot-che-cose-e-come-funziona/" target="_blank">AIoT</a>). Con l'ESP32 è riuscita a conciliare una discreta potenza di elaborazione con i sistemi wireless a basso consumo. L'antenato dell'ESP32 e cioè la scheda ESP8266 ha creato una mini rivoluzione nel mondo IOT creando per la prima volta un dispositivo single-chip facile da usare con tutto il software necessario per comunicare via Wi-Fi.
 
 ### I "motori" della Espressif
 
