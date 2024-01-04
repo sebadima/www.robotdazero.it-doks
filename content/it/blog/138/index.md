@@ -206,7 +206,17 @@ Uno dei fattori più importanti in qualsiasi sistema è la sicurezza. Ecco perch
 Questi acceleratori consentono di aumentare la velocità di funzionamento e ridurre la complessità del software consentendo la crittografia e la decrittografia dinamica. In questo modo, il sistema è protetto da possibili attacchi di hacking che cercano di ottenere il codice memorizzato.
 
 
-### Piedinatura dell'ESP32
+### La scheda di sviluppo DevKitC
+
+L'ESP32 è un chip versatile ed ampiamente adottato dalla industra "automotive" per esempio, ma per essere usato ad hobbisti e programmatori necessita di una scheda di sviluppo che provveda alla alimentazione e alla connessione seriale.
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/107.jpg" alt="La scheda di sviluppo completa di alimentatore e interfaccia serial UART con microUSB">
+
+#### La scheda di sviluppo  DevKitC completa di alimentatore e interfaccia serial UART con microUSB
+
+<br>
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="La piedinatura dell'ESP32">
 
 Come potete vedere dall'immagine sopra del diagramma di piedinatura del modulo ESP32 WROOM, tutti i diversi tipi di pin sono menzionati in diversi colori che spiegheremo in dettaglio di seguito .
 
