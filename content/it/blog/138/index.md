@@ -80,6 +80,7 @@ Al 2024 una vasta gamma di tools e codice sono già disponibili per gli sviluppa
 
  Basta aggiungere la posizione dei pacchetti Arduino-ESP32 tramite File - > Preferenze, quindi selezionare ESP32 da Strumenti - > Board - > Board Manager (Figura 3). Una volta completato, una serie di esempi verrà visualizzata in File -> Esempi, proprio come con qualsiasi piattaforma Arduino standard. Il codice sorgente viene salvato con lo standard '.ino ' come nome file e i programmi seguono la solita impostazione setup() e loop() a cui sei abituato.
  
+### Annex WiFi RDS
 
 Chi ha familiarità con l'IDE Arduino può integrare il supporto per l'ESP32 attraverso il board manager.
 Una delle frustrazioni con lo sviluppo tipico del microcontrollore è la necessità di compilare e quindi scaricare il codice prima di poter verificare che funzioni. Questo può crescere fino a richiedere una notevole quantità di tempo e non è più veloce solo perché hai cambiato una riga di codice. Se si desidera un'esperienza di codifica più reattiva, è possibile guardare l'opzione di BASE offerta da Annex WiFi RDS. L'ambiente di sviluppo è basato su browser Web. L'ambiente viene scaricato sul dispositivo ESP32 di destinazione che si connette al Wi-Fi una volta che il codice è stato lampeggiato con il loro strumento. Una volta connesso, puoi scrivere il tuo codice (Elenco 1) usando il browser scelto e, poiché è interpretato piuttosto che compilato, il tuo codice viene eseguito non appena hai finito.
@@ -108,12 +109,7 @@ L'ESP32 integra un modulo Bluetooth 5.0 che supporta velocità di trasmissione d
 25 pin GPIO
 
 ## La piedinatura
-L'ESP32 dispone di 25 pin GPIO che possono essere utilizzati per interfacciarsi con sensori e periferiche. Ciò lo rende versatile e adatto a una varietà di applicazioni.
-Supporto per sensori e periferiche
-L'ESP32 supporta una varietà di sensori e periferiche, tra cui sensori di temperatura, sensori di luce, sensori di movimento, display, motori e altro ancora. Ciò lo rende ideale per una varietà di applicazioni IoT.
-Applicazioni
-
-L'ESP32 è una piattaforma versatile che può essere utilizzata per una varietà di applicazioni, tra cui:
+L'ESP32 dispone di 25 pin GPIO che possono essere utilizzati per interfacciarsi con sensori e periferiche. Ciò lo rende versatile e adatto a una varietà di applicazioni. Supporta una ampia gamma di sensori e periferiche, tra cui sensori di temperatura, luce, movimento oltra a display, motori, servocomandi industriali e per modellismo. 
 
 Internet delle cose (IoT)
 L'ESP32 è una piattaforma ideale per lo sviluppo di dispositivi IoT. È economico, ad alte prestazioni e dispone di un'ampia gamma di funzionalità.
