@@ -70,7 +70,6 @@ input[type='submit'] {
 
 
 
-
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 In via preliminare ti ricordiamo che l'attivazione di un account non richiede nessun pagamento anticipato e neppure la carta di credito. Inoltre non esiste la clausola di rinnovo automatico: puoi fare disdetta in qualsiasi momento.
 </div>
