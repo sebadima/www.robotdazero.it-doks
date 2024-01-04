@@ -43,38 +43,41 @@ L'ESP32 ha conquistato dall'oggi al domani una larga fetta del mercato IOT. Nel 
 
 ### La casa madre: Espressif
 
-Il ESP32 è prodott dalla Espressif, una azienda di microelettronica con sede in Cina fondata appena nel 2008. Il suo primo prodotto, un sistema Wi-Fi system-on-chip (SoC) a 2,4 GHz, è stato introdotto sul mercato nel 2013. Si chiamava ESP8089, ha preso di mira tablet e applicazioni set-top box. Ma è l'ESP8266, rilasciato nel 2014, che ha portato questa famiglia di prodotti all'attenzione della comunità dei produttori.
+Il ESP32 è prodotto dalla Espressif, una azienda di microelettronica con sede in Cina fondata appena nel 2008. Il suo primo prodotto, un sistema Wi-Fi system-on-chip (SoC) a 2,4 GHz, è stato introdotto sul mercato nel 2013. Si chiamava ESP8089, ha preso di mira tablet e applicazioni set-top box. Ma è l'ESP8266, rilasciato nel 2014, che ha portato questa famiglia di prodotti all'attenzione della comunità dei produttori.
 
-La "mission" di Espressif si concentra sulle soluzioni per L'Intelligenza artificiale delle cose (AIoT). Con l'ESP32 è riuscita a concilira una discreta potenza di elaborazione con i sistemi wireless a basso consumo. L'antenato dell'ESP32 e cioè la scheda ESP8266 ha cretao una mini rivoluzione nel mondo IOT creando per la prima volata dispositivo single-chip facile da usare accoppiato al software necessario per comunicare tramite reti Wi-Fi.
+La "mission" di Espressif si concentra sulle soluzioni per L'Intelligenza artificiale delle cose (AIoT). Con l'ESP32 è riuscita a conciliare una discreta potenza di elaborazione con i sistemi wireless a basso consumo. L'antenato dell'ESP32 e cioè la scheda ESP8266 ha creato una mini rivoluzione nel mondo IOT creando per la prima volata dispositivo single-chip facile da usare accoppiato al software necessario per comunicare tramite reti Wi-Fi.
 
 ### I "motori" della Espressif
 
 Parlando della impostazione di base, l'ESP8266 è alimentato da un processore RISC Tensilica Xtensa L106 a 32 bit: questa tipo di architettura piuttosto originale deriva dai progetti originali della americana Cadence (un fornitore leader di IT con sede in San Jose - California con oltre 10.000 dipendenti).
 
- L'obiettivo dichiarato della azienda, secondo un comunicato stampa del 2007, era raggiungere Dhrystone MIPS superiori a quelle del noto Arm Cortex-M3. Inoltre, proprio per facilitare la connettività del processore hanno cercato il minimo consumo in mW per afevolare le applicazioni Internet-of-Things (IoT) alimentate a batteria.
+ L'obiettivo dichiarato della azienda, secondo un comunicato stampa del 2007, era raggiungere Dhrystone MIPS superiori a quelle del noto ARM Cortex-M3. Inoltre, proprio per facilitare la connettività del processore hanno cercato il minimo consumo in mW per agevolare le applicazioni Internet-of-Things (IoT) alimentate a batteria.
 
 La comunità dei produttori è venuta a conoscenza di questi dispositivi nel 2014, quando Hackaday ha annunciato l'introduzione di un nuovo modulo Wi-Fi da $5 venduto tramite Seeed Studio. Conosciuto come ESP-01, questo modulo è stato costruito dal produttore di terze parti Ai-Thinker, anch'esso con sede in Cina. 
 
-Questo primo prototipo dell ESP32 era severamente limitato dagli appena otto pin disponibili, due dei quali collegati alla interfaccia UART per controllare il modulo tramite comandi "AT". La scheda ESP-01 era facile da integrare con la piattaforma software di Arduino e ma aggiungeno la connettività Internet senza bisogno di schedine aggiuntive. L'unico punto critico: tutta la documentazione è stata scritta in cinese! 
+Questo primo prototipo dell'ESP32 era severamente limitato dagli appena otto pin disponibili, due dei quali collegati alla interfaccia UART per controllare il modulo tramite comandi "AT". La scheda ESP-01 era facile da integrare con la piattaforma software di Arduino e ma aggiungendo la connettività Internet senza bisogno di schedine aggiuntive. L'unico punto critico: tutta la documentazione è stata scritta in cinese! 
 
 ### Il costo dell'ESP32
 
 La bellezza dei moduli basati sull'ESP8266 era il minimo numero di componenti necessari per costruire un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti necessitavano solo di una manciata di resistori e condensatori, un'antenna, un programmatore seriale QSPI esterno. All'accensione, l'ESP8266 estrae il firmware dal flash e quindi lo copia nella SRAM interna da dove viene eseguito.
  
-Era ovvio che i moduli erano anche soluzioni di microcontrollore a tutti gli effetti. 
-Il processore presentava ingressi/uscite generiche (GPIOs), uscite PWM (pulse-width modulated), un convertitore analogico-digitale (ADC) e tutte le interfacce seriali standard. Con queste premesse non è passato molto tempo prima xhw qualche programmatore usasse la sterminata libreria già disponibile per Arduino sulla nuova scheda "cinese"...
+Era ovvio che i moduli erano anche dei microcontroller a tutti gli effetti. 
+Il processore presentava ingressi/uscite generiche (GPIOs), uscite PWM (pulse-width modulated), un convertitore analogico-digitale (ADC) e tutte le interfacce seriali standard. Con queste premesse non è passato molto tempo prima che qualche programmatore usasse la sterminata libreria già disponibile per Arduino sulla nuova scheda "cinese"...
 
 Prima del 2015 Espressif ha rilasciato un kit di sviluppo software (SDK) che permetteva di creare codice utente che funzionava insieme al software Wi-Fi. Il kit è disponibile in due versioni: una basata sul sistema operativo in tempo reale FreeRTOS e un'altra che si basava su callback e timer software per garantire che il programma utente condividesse il tempo di elaborazione in modo equo con lo stack software Wi-Fi. Secondo le specifiche della casa madre il kit e l'hardware potevano disporre di circa 50 kB di memoria per il loro codice.
 
 ### Gli sviluppi recenti
 
-I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un modulo integrato ultra-low-power (ULP) è disponibile sul chip dell'ESP32 per gestire la modalità "deep sleep". Questo modulo riesce a monitorare alcune periferiche (non tutte) durante la modalità sleep (una specie di ibernazione controllata) rendendonolo perfetto per progetti alientati a batteria.
+I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un modulo integrato ultra-low-power (ULP) è disponibile sul chip dell'ESP32 per gestire la modalità "deep sleep". Questo modulo riesce a monitorare alcune periferiche (non tutte) durante la modalità sleep (una specie di ibernazione controllata) rendendolo perfetto per progetti alimentati a batteria.
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.png" alt="Tensilica Xtensa 32-bit LX6">
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.png" alt="Schema a blocchi del Tensilica Xtensa 32-bit LX6">
+
+##### Schema a blocchi del Tensilica Xtensa 32-bit LX6
+<br>
 
 Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore Xtensa LX7 a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. 
 
-Comprende ovviamente Wi-Fi e Bluetooth, anche se quest'ultimo è aggiornato solo alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta del sistema TWAI, una interfaccia automobilistica a due fili. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come CAN, uno stabdard "storico" dei produttori di automobili occidentali. La sicurezza è inoltre potenziata con la disponibilità di crittografia flash e un acceleratore HMAC (Message Authentication Code) basato su hash.
+Comprende ovviamente Wi-Fi e Bluetooth, anche se quest'ultimo è aggiornato solo alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta del sistema TWAI, una interfaccia automobilistica a due fili. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come CAN, uno standard "storico" dei produttori di automobili occidentali. La sicurezza è inoltre potenziata con la disponibilità di crittografia flash e un acceleratore HMAC (Message Authentication Code) basato su hash.
 
 
 ### Il software della piattaforma ESP32
@@ -96,23 +99,9 @@ Bluetooth 5.0
 L'ESP32 integra un modulo Bluetooth 5.0 che supporta velocità di trasmissione dati fino a 2 Mbps. Ciò lo rende ideale per applicazioni che richiedono una connessione Bluetooth ad alta velocità, come la trasmissione di dati audio o la connessione di dispositivi IoT.
 25 pin GPIO
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## L'utilizzo dell'ESP32
 
-L'ESP32 dispone di 25 pin GPIO che possono essere utilizzati per interfacciarsi con sensori e periferiche. Ciò lo rende versatile e adatto a una varietà di applicazioni. Supporta una ampia gamma di sensori e periferiche, tra cui sensori di temperatura, luce, movimento oltra a display, motori, servocomandi industriali e per modellismo. 
+L'ESP32 dispone di 25 pin GPIO che possono essere utilizzati per interfacciarsi con sensori e periferiche. Ciò lo rende versatile e adatto a una varietà di applicazioni. Supporta una ampia gamma di sensori e periferiche, tra cui sensori di temperatura, luce, movimento oltre a display, motori, servocomandi industriali e per modellismo. 
 
 Inoltre è una piattaforma ideale per lo sviluppo di dispositivi indossabili come smartwatch, fitness tracker e altri. È molto piccolo e leggero, il che lo rende ideale per questo tipo di applicazioni.
 
@@ -165,7 +154,7 @@ Alcuno vantaggi rispetto ad Arduino UNO:
 - Consente di eseguire operazioni con numeri reali (numeri con virgole) in modo molto efficiente.
 - Consente di moltiplicare istantaneamente grandi numeri.
 
-Sebbene queste caratteristiche siano trasparenti durante la programmazione, hanno un grande impatto sull'efficienza e sulle dimensioni del codice scritto sul microcontrollore.
+Sebbene queste caratteristiche siano trasparenti durante la programmazione, hanno un grande impatto sull'efficienza e sulle dimensioni del codice scritto sul microcontroller.
 
 
 #### Memoria
@@ -173,9 +162,9 @@ Nella maggior parte dei microcontrollori basati su Arduino, ci sono tre tipi di 
 
 - Memoria di programma: per memorizzare il codice.
 - Memoria SRAM: per memorizzare le variabili utilizzate nel codice.
-- Memoria EEPROM: per memorizzare variabili syayiche che non perdono il loro valore anche quando il dispositivo è spento.
+- Memoria EEPROM: per memorizzare variabili statiche che non perdono il loro valore anche quando il dispositivo è spento.
 
-L'ESP32 funziona in modo leggermenye diverso, infatti possiede alri tipi di memorie che di solito sono classificate in interne ed esterne.Le memorie interne sono quelle che sono già incluse nel SoC, e quelle esterne sono quelle che possono essere aggiunte per espandere la capacità del sistema .
+L'ESP32 funziona in modo leggermente diverso, infatti ha altri tipi di memorie che di solito sono classificate in interne ed esterne. Le memorie interne sono quelle che sono già incluse nel SoC, e quelle esterne sono quelle che possono essere aggiunte per espandere la capacità del sistema.
 
 Molte schede di sviluppo basate su ESP32 aggiungono memoria esterna per un sistema più performante.
 
@@ -184,11 +173,14 @@ Molte schede di sviluppo basate su ESP32 aggiungono memoria esterna per un siste
 - Memoria ROM (448 KiB): questa memoria è di sola scrittura, cioè non è possibile riprogrammarla. È qui che vengono memorizzati i codici che gestiscono lo stack Bluetooth, il controllo del Wi-Fi e il bootloader per avviare i programmi utente.
 - Memoria SRAM interna (520 KiB): questa memoria viene utilizzata dal processore per memorizzare sia i dati che le istruzioni. Il suo vantaggio è che è molto più facile per il processore accedere rispetto alla SRAM esterna.
 - RTC SRAM (16 KiB): questa memoria viene utilizzata dal co-processore quando il dispositivo funziona in modalità deep sleep .
-- Efuse (1 Kilobit): 256 bit di questa memoria sono utilizzati dal sistema stesso e i restanti 768 bit sono riservati ad altre applicazioni.
-- Flash embedded (Embedded flash): Questa memoria è dove è memorizzato il codice dell'applicazione. La quantità di memoria varia a seconda del chip utilizzato:
+- Efuse (1Kb): 256 bit di questa memoria sono utilizzati dal sistema stesso e i restanti 768 bit sono riservati ad altre applicazioni.
+- Flash embedded (Embedded flash): questa memoria è dove è memorizzato il codice dell'applicazione. 
+
+La quantità di memoria varia a seconda del chip utilizzato:
 0 MB (chip ESP32-D0WDQ6, ESP32-D0WD, ESP32-S0WD)
 2 MB (circuito integrato ESP32-D2WD)
 4 MB (Chip ESP32-PICO-D4)
+
 Per ESP32S che non hanno memoria incorporata o semplicemente quando la memoria è insufficiente per l'applicazione, è possibile aggiungere più memoria esternamente :
 
 #### Espansione di memoria
