@@ -1,7 +1,7 @@
 ---
 title: Come pilotare un motore elettrico usando Arduino
 description: "Come Pilotare un motore elettrico usando Arduino."
-excerpt: "Nelle applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120.. "
+excerpt: "Nelle applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120..."
 date: 2018-06-15T09:19:42+01:00
 lastmod: 2018-06-15T09:19:42+01:0
 draft: false

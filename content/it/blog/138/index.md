@@ -72,7 +72,8 @@ I dispositivi della serie ESP32 attualmente disponibili dispongono di un micropr
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.png" alt="Schema a blocchi del Tensilica Xtensa 32-bit LX6">
 
-##### Schema a blocchi del Tensilica Xtensa 32-bit LX6
+Schema a blocchi del Tensilica Xtensa 32-bit LX6
+
 <br>
 
 Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore Xtensa LX7 a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. 
@@ -121,9 +122,7 @@ Di seguito è riportato lo schema a blocchi dell'ESP32 con tutti i blocchi funzi
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="esp32 diagramma a blocchi">
 
-##### Diagramma a blocchi dell'ESP32
-
-<br>
+Diagramma a blocchi dell'ESP32
 
 ### Connettività wireless:
 Il chip SOC ESP32 ha connettività WiFi, essendo compatibile con 802.11 b/g/n nella banda 2.4 GHz, raggiungendo velocità fino a 150 Mbit/s. Non funziona con i canali a 5GHz. Include anche la comunicazione Bluetooth compatibile con Bluetooth v4.2 e Bluetooth Low Energy (BLE).
@@ -133,7 +132,7 @@ Il processore è un Tensilica Xtensa 32-bit LX6 dual core. I nomi dei core sono 
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="Schema a blocchi del chip Tensilica Xtensa 32-bit LX6.">
 
-##### Schema a blocchi del chip Tensilica Xtensa 32-bit LX6
+Schema a blocchi del chip Tensilica Xtensa 32-bit LX6
 
 <br>
 <br>
@@ -142,7 +141,7 @@ I microprocessori Tensilica Xtensa LX6 e LX7 hanno un'architettura RISC a 32 bit
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/106.png" alt="Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7">
 
-##### Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7
+Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7
 
 <br>
 
