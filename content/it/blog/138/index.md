@@ -1,7 +1,7 @@
 ---
-title: "Cos'è l'ESP32"
-description: "Cos'è l'ESP32"
-excerpt: "..."
+title: "Perchè l'ESP32 è così popolare?"
+description: "Perchè l'ESP32 è così popolare?"
+excerpt: "L’ESP32 è una scheda elettronica integrata (SoC) sviluppata da Espressif Systems. È un chip a basso costo e ad alte prestazioni che offre una varietà di funzionalità, tra cui..."
 date: 2024-01-01T09:19:42+01:00
 lastmod: 2024-01-01T09:19:42+01:0
 draft: false
@@ -69,6 +69,8 @@ Prima del 2015 Espressif ha rilasciato un kit di sviluppo software (SDK) che per
 
 I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un modulo integrato ultra-low-power (ULP) è disponibile sul chip dell'ESP32 per gestire la modalità "deep sleep". Questo modulo riesce a monitorare alcune periferiche (non tutte) durante la modalità sleep (una specie di ibernazione controllata) rendendonolo perfetto per progetti alientati a batteria.
 
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.png" alt="Tensilica Xtensa 32-bit LX6">
+
 Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore Xtensa LX7 a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. 
 
 Comprende ovviamente Wi-Fi e Bluetooth, anche se quest'ultimo è aggiornato solo alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta del sistema TWAI, una interfaccia automobilistica a due fili. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come CAN, uno stabdard "storico" dei produttori di automobili occidentali. La sicurezza è inoltre potenziata con la disponibilità di crittografia flash e un acceleratore HMAC (Message Authentication Code) basato su hash.
@@ -80,21 +82,6 @@ Al 2024 una vasta gamma di tools e codice sono già disponibili per gli sviluppa
 
  Basta aggiungere la posizione dei pacchetti Arduino-ESP32 tramite File - > Preferenze, quindi selezionare ESP32 da Strumenti - > Board - > Board Manager (Figura 3). Una volta completato, una serie di esempi verrà visualizzata in File -> Esempi, proprio come con qualsiasi piattaforma Arduino standard. Il codice sorgente viene salvato con lo standard '.ino ' come nome file e i programmi seguono la solita impostazione setup() e loop() a cui sei abituato.
  
-### Annex WiFi RDS
-
-Chi ha familiarità con l'IDE Arduino può integrare il supporto per l'ESP32 attraverso il board manager.
-Una delle frustrazioni con lo sviluppo tipico del microcontrollore è la necessità di compilare e quindi scaricare il codice prima di poter verificare che funzioni. Questo può crescere fino a richiedere una notevole quantità di tempo e non è più veloce solo perché hai cambiato una riga di codice. Se si desidera un'esperienza di codifica più reattiva, è possibile guardare l'opzione di BASE offerta da Annex WiFi RDS. L'ambiente di sviluppo è basato su browser Web. L'ambiente viene scaricato sul dispositivo ESP32 di destinazione che si connette al Wi-Fi una volta che il codice è stato lampeggiato con il loro strumento. Una volta connesso, puoi scrivere il tuo codice (Elenco 1) usando il browser scelto e, poiché è interpretato piuttosto che compilato, il tuo codice viene eseguito non appena hai finito.
- 
-led = 2 ' GPIO02. Cambiare con il pin in cui è collegato il led 
-pin.modalità led, uscita
-per z = 0 a 1000
-  pin (led) = 1 - pin (led)       
-  pausa 500
-prossima z
-Elenco 1: Esempio di codice di base per lampeggiare un LED utilizzando l'ambiente di sviluppo RDS WiFi Annex.
-
-Naturalmente, non si può trascurare la ricchezza di supporto da parte di terze parti per la creazione di soluzioni IoT. Insieme ad Amazon AWS, Espressif offre una soluzione completa di intelligenza artificiale per il riconoscimento delle immagini e l'elaborazione audio con la scheda di sviluppo ESP-EYE. Oppure, se stai cercando il supporto Amazon Alexa, ci sono anche le schede ESP32-Vaquita basate sulla serie di moduli ESP32-WROVER-E.
-
 
 ### Il processore
 
@@ -108,149 +95,118 @@ Bluetooth 5.0
 L'ESP32 integra un modulo Bluetooth 5.0 che supporta velocità di trasmissione dati fino a 2 Mbps. Ciò lo rende ideale per applicazioni che richiedono una connessione Bluetooth ad alta velocità, come la trasmissione di dati audio o la connessione di dispositivi IoT.
 25 pin GPIO
 
-## La piedinatura
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## L'utilizzo dell'ESP32
+
 L'ESP32 dispone di 25 pin GPIO che possono essere utilizzati per interfacciarsi con sensori e periferiche. Ciò lo rende versatile e adatto a una varietà di applicazioni. Supporta una ampia gamma di sensori e periferiche, tra cui sensori di temperatura, luce, movimento oltra a display, motori, servocomandi industriali e per modellismo. 
 
-Internet delle cose (IoT)
-L'ESP32 è una piattaforma ideale per lo sviluppo di dispositivi IoT. È economico, ad alte prestazioni e dispone di un'ampia gamma di funzionalità.
-Dispositivi indossabili
-L'ESP32 è una buona scelta per lo sviluppo di dispositivi indossabili, come smartwatch, fitness tracker e altri dispositivi indossabili. È piccolo e leggero, il che lo rende ideale per questo tipo di applicazioni.
-Giochi e intrattenimento
-L'ESP32 può essere utilizzato per sviluppare giochi e applicazioni di intrattenimento. È potente e versatile, il che lo rende ideale per questo tipo di applicazioni.
-Sistemi di automazione domestica
-L'ESP32 può essere utilizzato per sviluppare sistemi di automazione domestica. È economico e facile da usare, il che lo rende ideale per questo tipo di applicazioni.
+Inoltre è una piattaforma ideale per lo sviluppo di dispositivi indossabili come smartwatch, fitness tracker e altri. È molto piccolo e leggero, il che lo rende ideale per questo tipo di applicazioni.
 
-Che cosa è ESP32?
-ESP32 è creato da Espressif Systems con una serie di SoC (System on a Chip) e moduli a basso costo con basso consumo energetico.
-
-Questo nuovo ESP32 è il successore del noto ESP8266 (diventato molto popolare con il suo WiFi integrato). ESP32 non solo ha costruito in WiFi, ma ha anche Bluetooth e Bluetooth a bassa energia. In altre parole possiamo definire ESP32 come "ESP8266 sugli steroidi".
-
-Il chip ESP32 ESP32-D0WDQ6 è basato su un microprocessore dual core Tensilica Xtensa LX6 con una frequenza operativa fino a 240 MHz.
-
-Il piccolo pacchetto ESP32 ha un alto livello di integrazioni come:
-
-Interruttori antenna
-Balun per controllare RF
-Amplificatore di potenza
-Amplificatore di ricezione a basso rumore
-Filtri e moduli di gestione dell'alimentazione
-Oltre a tutto ciò, raggiunge un consumo energetico molto basso attraverso funzioni di risparmio energetico, tra cui la sincronizzazione dell'orologio e molteplici modalità di funzionamento. La corrente di riposo del chip ESP32 è inferiore a 5 µA, il che lo rende lo strumento ideale per i progetti alimentati a batteria o le applicazioni IoT .
+L'ESP32 può essere utilizzato per sviluppare giochi e applicazioni di intrattenimento. 
 
 Differenza tra ESP32 e ESP8266
 Come già accennato in precedenza che ESP32 è il successore di ESP8266, Consente di imparare quali sono le differenze tra ESP32 e ESP8266 con le loro caratteristiche e le specifiche di seguito.
 
-ESP32 ha un core aggiuntivo rispetto a ESP8266
-Wi-Fi più veloce
-Aumento del numero di pin GPIO (input/output) 
-Compatibilità con Bluetooth 4.2 e Bluetooth low energy (low energy).
-Inoltre, l'ESP32 è dotato di pin sensibili al tocco che possono essere utilizzati per “svegliare” l'ESP32 dalla modalità deep sleep e un sensore ad effetto hall integrato.
+1. ESP32 ha un core aggiuntivo rispetto a ESP8266
+2. Il sistema Wi-Fi è più veloce
+3. Aumento del numero di pin GPIO (input/output) 
+4. Compatibilità con Bluetooth 4.2 e Bluetooth low energy (low energy).
 
-Sebbene entrambe le schede siano estremamente economiche, l'ESP32 è leggermente più costoso dell'ESP8266. ESP32 lo merita in quanto ha più funzionalità di ESP8266.
+## La scheda tecnica dell'ESP32
 
-Abbiamo differenziato le principali specifiche tecniche tra l'ESP8266 e l'ESP32 nella tabella sottostante.
+Di seguito è riportato lo schema a blocchi dell'ESP32 con tutti i blocchi funzionali del SOC.
 
-CARATTERISTICHE ESP8266 ESP32
-esp8266 circuito integrato esp32 circuito integrato
-Microprocessore Xtensa Single-core 32-bit L106 Xtensa Dual-Core 32-bit LX6 con 600 DMIPS
-Wi-Fi (802.11 b/g/n) HT20 HT40
-Bluetooth non dispone di Bluetooth 4.2 y BLE
-Frequenza di funzionamento (valore tipico) 80 MHz 160 MHz
-VERGOGNA Non disponibile 448 KB
-Flash non disponibile 520 KB
-GPIO 17 34
-PWM (hardware) Non disponibile Non disponibile
-PWM (software) 8 canali 16 canali
-SPI 2 4
-I2C 1 2
-I2S 2 2
-ARTICOLO 2 2
-Risoluzione ADC a 10 bit Risoluzione a 12 bit
-PUÒ No Sì
-Interfaccia MAC Ethernet No Sì
-Sensore di tocco No Sì
-Sensore di temperatura No Sì (solo le vecchie versioni)
-Sensore effetto hall No Sì
-Temperatura di lavoro-40ºC a 125ºC-40ºC a 125ºC
-ESP32 Blocchi funzionali e caratteristiche
-Sebbene nella tabella precedente si possano notare alcune caratteristiche tecniche principali dell'ESP32, la verità è che non tutto è nella tabella. In realtà, mancano molti dettagli. Per conoscere tutte le caratteristiche di questo magnifico SoC è necessario fare riferimento ai seguenti documenti offerti dallo sviluppatore Espressif.
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="esp32 diagramma a blocchi">
 
-Scheda tecnica ESP32
-Manuale di riferimento tecnico ESP32
-ESP32 Schema a blocchi architettonico
-Di seguito è riportato lo schema a blocchi architettonico di ESP32 che mostra tutti i blocchi funzionali di ESP32 SOC.
+#### Diagramma a blocchi dell'ESP32
 
-esp32 diagrammi blocco architettonico che vedete dal diagramma a blocchi di cui sopra consente di imparare tutti i singoli blocchi in dettaglio di seguito.
+<br>
 
-Connettività wireless:
-Il chip SOC ESP32 ha connettività WiFi, essendo compatibile con 802.11 b / g/n nella banda 2.4 GHz, raggiungendo velocità fino a 150 Mbit / s. Include anche la comunicazione Bluetooth compatibile con Bluetooth v4.2 e Bluetooth Low Energy (BLE).
+### Connettività wireless:
+Il chip SOC ESP32 ha connettività WiFi, essendo compatibile con 802.11 b/g/n nella banda 2.4 GHz, raggiungendo velocità fino a 150 Mbit/s. Non funziona con i canali a 5GHz. Include anche la comunicazione Bluetooth compatibile con Bluetooth v4.2 e Bluetooth Low Energy (BLE).
 
-esp32 wifi bluetooth e blocchi radio
+### Core
+Il processore è un Tensilica Xtensa 32-bit LX6 dual core. I nomi dei core sono PRO-CPU e APP-CPU. Pro-CPU sta per Protocol CPU e APP-CPU sta per Application CPU. La CPU Protocol è progettata per gestire funzionalità utente come Wi-Fi, Bluetooth e periferiche. La CPU dell'applicazione è progettata per gestire i codici in ESP 32. Entrambi questi core sono collegati ai registri di memoria e indirizzo. I core di LX6 hanno una frequenza di clock di 160 MHz e quella di LX7 è di 240 MHz. La figura seguente mostra la mappatura delle CPU alla memoria.
 
-Il blocco radio è strettamente legato ai moduli di comunicazione wireless . In realtà, questo è quello che effettivamente trasmette e riceve le informazioni.
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="Schema a blocchi del chip Tensilica Xtensa 32-bit LX6.">
 
-Cioè, prende i dati digitali dai moduli WiFi e Bluetooth e li converte in segnali elettromagnetici che viaggiano attraverso l'aria per comunicare con il telefono cellulare o il router .
+##### Schema a blocchi del chip Tensilica Xtensa 32-bit LX6
 
-Esegue anche l'operazione inversa: traduce le onde elettromagnetiche generate da altri dispositivi in dati digitali che i moduli WiFi e Bluetooth sono in grado di interpretare.
+<br>
+<br>
 
-Core
-Come abbiamo già detto che l'ESP32 ha microprocessori dual core a bassa potenza Tensilica Xtensa 32-bit LX6.
+I microprocessori Tensilica Xtensa LX6 e LX7 hanno un'architettura RISC a 32 bit. Pertanto, le unità di memoria e le periferiche sono progettate in modo tale da poter comunicare con registri di indirizzi a 32 bit. La mappatura dell'architettura è mostrata nel diagramma sottostante in cui si può vedere che tutte le periferiche, ROM e SRAM interne, memoria di comunicazione in tempo reale veloce e lenta, memoria cache e flash esterno, sono tutti mappati con registri a 32 bit.
 
-processori core esp32
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/106.png" alt="Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7">
 
-Come si può osservare dall'immagine del blocco core sopra, ha un co-processore a bassissima potenza che viene utilizzato per eseguire conversioni analogico-digitali e altre operazioni mentre il dispositivo funziona in modalità deep sleep low-power. In questo modo, si ottiene un consumo molto basso da parte del SoC.
+##### Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7
 
-È importante notare che questi processori offrono grandi vantaggi tipici di un processore di segnale digitale :
+<br>
 
-Frequenza di funzionamento: 240 MHz (esegue le istruzioni 15 volte più veloce di una scheda Arduino UNO)
-Consente di eseguire operazioni con numeri reali (numeri con virgole) in modo molto efficiente.
-Consente di moltiplicare istantaneamente grandi numeri.
+Il chip ha un co-processore a bassissima potenza che viene utilizzato per eseguire conversioni analogico-digitali e altre operazioni e può funzionare in modalità deep sleep - low-power. In questo modo, si ottiene un consumo elettrico ridottissimo.
+
+Alcuno vantaggi rispetto ad Arduino UNO:
+
+- Frequenza di funzionamento: 240 MHz (esegue le istruzioni 15 volte più veloce di una scheda Arduino UNO)
+- Consente di eseguire operazioni con numeri reali (numeri con virgole) in modo molto efficiente.
+- Consente di moltiplicare istantaneamente grandi numeri.
+
 Sebbene queste caratteristiche siano trasparenti durante la programmazione, hanno un grande impatto sull'efficienza e sulle dimensioni del codice scritto sul microcontrollore.
-Memoria
+
+
+#### Memoria
 Nella maggior parte dei microcontrollori basati su Arduino, ci sono tre tipi di memorie:
 
-Memoria di programma: per memorizzare lo schizzo.
-Memoria SRAM: per memorizzare le variabili utilizzate nel codice.
-Memoria EEPROM: per memorizzare variabili che non perdono il loro valore anche quando il dispositivo è spento.
-esp32 unità di memoria schema a blocchi
+- Memoria di programma: per memorizzare il codice.
+- Memoria SRAM: per memorizzare le variabili utilizzate nel codice.
+- Memoria EEPROM: per memorizzare variabili syayiche che non perdono il loro valore anche quando il dispositivo è spento.
 
-In ESP32 questo non accade, infatti ci sono più tipi di memorie che di solito sono classificate in interne ed esterne .
-
-Le memorie interne sono quelle che sono già incluse nel SoC, e quelle esterne sono quelle che possono essere aggiunte per espandere la capacità del sistema .
+L'ESP32 funziona in modo leggermenye diverso, infatti possiede alri tipi di memorie che di solito sono classificate in interne ed esterne.Le memorie interne sono quelle che sono già incluse nel SoC, e quelle esterne sono quelle che possono essere aggiunte per espandere la capacità del sistema .
 
 Molte schede di sviluppo basate su ESP32 aggiungono memoria esterna per un sistema più performante.
 
-ESP32 Memorie interne e loro funzioni:
+#### Quali sono le Memorie interne:
 
-Memoria ROM (448 KiB): questa memoria è di sola scrittura, cioè non è possibile riprogrammarla. È qui che vengono memorizzati i codici che gestiscono lo stack Bluetooth , il controllo del livello fisico Wi-Fi, alcune routine di uso generale e il bootloader per avviare il codice dalla memoria esterna .
-Memoria SRAM interna (520 KiB): questa memoria viene utilizzata dal processore per memorizzare sia i dati che le istruzioni. Il suo vantaggio è che è molto più facile per il processore accedere rispetto alla SRAM esterna.
-RTC SRAM (16 KiB): questa memoria viene utilizzata dal co-processore quando il dispositivo funziona in modalità deep sleep .
-Efuse (1 Kilobit): 256 bit di questa memoria sono utilizzati dal sistema stesso e i restanti 768 bit sono riservati ad altre applicazioni.
-Flash embedded (Embedded flash): Questa memoria è dove è memorizzato il codice dell'applicazione. La quantità di memoria varia a seconda del chip utilizzato:
+- Memoria ROM (448 KiB): questa memoria è di sola scrittura, cioè non è possibile riprogrammarla. È qui che vengono memorizzati i codici che gestiscono lo stack Bluetooth, il controllo del Wi-Fi e il bootloader per avviare i programmi utente.
+- Memoria SRAM interna (520 KiB): questa memoria viene utilizzata dal processore per memorizzare sia i dati che le istruzioni. Il suo vantaggio è che è molto più facile per il processore accedere rispetto alla SRAM esterna.
+- RTC SRAM (16 KiB): questa memoria viene utilizzata dal co-processore quando il dispositivo funziona in modalità deep sleep .
+- Efuse (1 Kilobit): 256 bit di questa memoria sono utilizzati dal sistema stesso e i restanti 768 bit sono riservati ad altre applicazioni.
+- Flash embedded (Embedded flash): Questa memoria è dove è memorizzato il codice dell'applicazione. La quantità di memoria varia a seconda del chip utilizzato:
 0 MB (chip ESP32-D0WDQ6, ESP32-D0WD, ESP32-S0WD)
 2 MB (circuito integrato ESP32-D2WD)
 4 MB (Chip ESP32-PICO-D4)
 Per ESP32S che non hanno memoria incorporata o semplicemente quando la memoria è insufficiente per l'applicazione, è possibile aggiungere più memoria esternamente :
 
-È possibile aggiungere fino a 16 MB di memoria flash esterna . In questo modo è possibile sviluppare applicazioni più complesse.
-Supporta anche fino a 8 MB di memoria SRAM esterna .
-Pertanto, è difficile per te trovarti limitato nella memoria quando implementi un'applicazione che utilizza questa piattaforma.
+#### Espansione di memoria
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">
+⚡️ È' possibile aggiungere fino a 16 MB di memoria flash esterna: in questo modo è possibile sviluppare applicazioni estremamente complesse. Supporta anche fino a 8 MB di memoria SRAM esterna. 
+</div>
 
-Acceleratori hardware di crittografia
-Blocco di accelerazione hardware di crittografia ESP32
-
+#### Acceleratori hardware di crittografia
 Uno dei fattori più importanti in qualsiasi sistema è la sicurezza. Ecco perché l'ESP32 ha acceleratori di algoritmi mirati alla crittografia:
 
-AES (FIPS PUB 197)
-SHA (FIPS PUB 180-4)
-RSA
-ECC
+1. AES (FIPS PUB 197)
+2. SHA (FIPS PUB 180-4)
+3. RSA
+4. ECC
+
 Questi acceleratori consentono di aumentare la velocità di funzionamento e ridurre la complessità del software consentendo la crittografia e la decrittografia dinamica. In questo modo, il sistema è protetto da possibili attacchi di hacking che cercano di ottenere il codice memorizzato.
 
-Caratteristiche periferiche
-L'ESP32 ha una grande serie di periferiche che puoi vedere dallo schema a blocchi sopra.
 
-ESP32 Schema di piedinatura e perni:
-ESP 32 schema di piedinatura
+### Piedinatura dell'ESP32
 
 Come potete vedere dall'immagine sopra del diagramma di piedinatura del modulo ESP32 WROOM, tutti i diversi tipi di pin sono menzionati in diversi colori che spiegheremo in dettaglio di seguito .
 
