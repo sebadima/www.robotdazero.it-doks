@@ -121,7 +121,7 @@ Di seguito è riportato lo schema a blocchi dell'ESP32 con tutti i blocchi funzi
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="esp32 diagramma a blocchi">
 
-#### Diagramma a blocchi dell'ESP32
+##### Diagramma a blocchi dell'ESP32
 
 <br>
 
