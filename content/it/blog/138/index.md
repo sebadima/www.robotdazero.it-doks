@@ -16,6 +16,7 @@ mermaid: true
 ---
 
 
+
 ## Le principali caratteristiche tecniche
 
 L'ESP32 è una scheda elettronica integrata (SoC) sviluppata da Espressif Systems. È un chip a basso costo e ad alte prestazioni che offre una varietà di funzionalità, tra cui:
@@ -218,10 +219,13 @@ L'ESP32 è un chip versatile ed ampiamente adottato dalla industra "automotive" 
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/108.png" alt="La piedinatura dell'ESP32">
 
+#### piedinatura del modulo ESP32 WROOM
+
 Come potete vedere dall'immagine sopra del diagramma di piedinatura del modulo ESP32 WROOM, tutti i diversi tipi di pin sono menzionati in diversi colori che spiegheremo in dettaglio di seguito .
 
-Pin digitali
-L'ESP32 ha un totale di 34 pin digitali . Questi pin sono simili ai pin digitali Arduino che consentono di aggiungere display a LED, display OLED, sensori, pulsanti, cicalini, ecc. ai nostri progetti.
+##### Pin digitali
+
+> L'ESP32 ha un totale di 34 pin digitali. Questi pin sono simili ai pin digitali Arduino che consentono di aggiungere display a LED, display OLED, sensori, pulsanti, cicalini, ecc. ai nostri progetti.
 
 La maggior parte di questi pin supporta anche l'uso di pull-up interno, pull-down e stato ad alta impedenza. Ciò li rende ideali per il collegamento di pulsanti e tastiere a matrice, nonché per l'applicazione di tecniche di controllo a LED come il noto Charlieplexing.
 
@@ -229,23 +233,25 @@ Il modulo WROOM ESP32 ha 25 pin GPIO di cui ci sono solo pin di ingresso, pin co
 
 La corrente massima assorbita per un singolo GPIO è 40mA secondo la sezione "Condizioni operative consigliate" nella scheda tecnica ESP32.
 
-Ingresso solo pin: 
+Ingresso solo pin (senza resistente di PULLUP)
 
-GPIO 34
-GPIO 35
-GPIO 36
-GPIO 39
-Pin con pull up INPUT_PULLUP
+- GPIO 34
+- GPIO 35
+- GPIO 36
+- GPIO 39
 
-GPIO14
-GPIO16
-GPIO17
-GPIO18
-GPIO19
-GPIO21
-GPIO22
-GPIO23
-Perni senza pull up interno
+##### Pin con pull up INPUT_PULLUP (dispongono di una resistenza di 10KOhm)
+
+- GPIO14
+- GPIO16
+- GPIO17
+- GPIO18
+- GPIO19
+- GPIO21
+- GPIO22
+- GPIO23
+
+##### Pin senza pull up interno
 
 GPIO13
 GPIO25
@@ -253,33 +259,35 @@ GPIO26
 GPIO27
 GPIO32
 GPIO33
-ADC (convertitori analogico-digitali)
-Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utilizzati per interagire con sensori analogici, come i pin analogici di una scheda Arduino .
+
+##### ADC (convertitori analogico-digitali)
+Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utilizzati per interagire con sensori analogici, come i pin analogici di una scheda Arduino.
 
 Per questo, l'ESP32 ha una risoluzione a 12 bit(0-4096, il che significa che quando la tensione osservata è 0 il valore è 0 e quando si osserva una tensione massima come 3,3 v il valore va a 4096), convertitore analogico-digitale a 18 canali, il che significa che è possibile prendere letture da un massimo di 18 sensori analogici.
 
-Ciò consente di sviluppare applicazioni connesse molto compatte, anche quando si utilizzano più sensori analogici.
 
-Pin di ingresso analogico:
+##### Questi i pin di ingresso analogico:
 
-ADC1_CH0 (GPIO 36)
-ADC1_CH1 (GPIO 37)
-ADC1_CH2 (GPIO 38)
-ADC1_CH3 (GPIO 39)
-ADC1_CH4 (GPIO 32)
-ADC1_CH5 (GPIO 33)
-ADC1_CH6 (GPIO 34)
-ADC1_CH7 (GPIO 35)
-ADC2_CH0 (GPIO 4)
-ADC2_CH1 (GPIO 0)
-ADC2_CH2 (GPIO 2)
-ADC2_CH3 (GPIO 15)
-ADC2_CH4 (GPIO 13)
-ADC2_CH5 (GPIO 12)
-ADC2_CH6 (GPIO 14)
-ADC2_CH7 (GPIO 27)
-ADC2_CH8 (GPIO 25)
-ADC2_CH9 (GPIO 26)
+- ADC1_CH0 (GPIO 36)
+- ADC1_CH1 (GPIO 37)
+- ADC1_CH2 (GPIO 38)
+- ADC1_CH3 (GPIO 39)
+- ADC1_CH4 (GPIO 32)
+- ADC1_CH5 (GPIO 33)
+- ADC1_CH6 (GPIO 34)
+- ADC1_CH7 (GPIO 35)
+- ADC2_CH0 (GPIO 4)
+- ADC2_CH1 (GPIO 0)
+- ADC2_CH2 (GPIO 2)
+- ADC2_CH3 (GPIO 15)
+- ADC2_CH4 (GPIO 13)
+- ADC2_CH5 (GPIO 12)
+- ADC2_CH6 (GPIO 14)
+- ADC2_CH7 (GPIO 27)
+- ADC2_CH8 (GPIO 25)
+- ADC2_CH9 (GPIO 26)
+
+
 DAC (Convertitori da digitali ad analogici)
 I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche . L'ESP32 ha due convertitori da digitale ad analogico a 8 bit .
 
