@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.jpg"]
 categories: ["News"]
-tags: ["motori", "arduino", "automazione"]
+tags: ["esp32"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
@@ -49,26 +49,26 @@ La "mission" di Espressif si concentra sulle soluzioni per L'Intelligenza artifi
 
 ### I "motori" della Espressif
 
-Parlando della impostazione di base, l'ESP8266 è alimentato da un processore RISC Tensilica Xtensa L106 a 32 bit: questa tipo di architettura piuttosto originale deriva dai progetti originali della americana Cadence (un fornitore leader di IT con sede in San Jose - California con oltre 10.000 dipendenti).
+Parlando della impostazione di base, l'ESP8266 è alimentato da un processore RISC <a href="https://www.cadence.com/en_US/home/tools/ip/tensilica-ip.html" target="_blank">Tensilica Xtensa</a> L106 a 32 bit: questa tipo di architettura piuttosto originale deriva dai progetti originali della americana <a href="https://www.cadence.com/en_US/home.html" target="_blank">Cadence</a> (un fornitore leader di IT con sede in San Jose - California con oltre 10.000 dipendenti).
 
- L'obiettivo dichiarato della azienda, secondo un comunicato stampa del 2007, era raggiungere Dhrystone MIPS superiori a quelle del noto ARM Cortex-M3. Inoltre, proprio per facilitare la connettività del processore hanno cercato il minimo consumo in mW per agevolare le applicazioni Internet-of-Things (IoT) alimentate a batteria.
+ L'obiettivo dichiarato della azienda, secondo un comunicato stampa del 2007, era raggiungere Dhrystone <a href="https://it.wikipedia.org/wiki/MIPS_(unit%C3%A0_di_misura)" target="_blank">MIPS</a> superiori a quelle del noto <a href="https://developer.arm.com/Processors/Cortex-M3" target="_blank">ARM Cortex-M3</a>. Inoltre, proprio per facilitare la connettività del processore hanno cercato il minimo consumo in mW per agevolare le applicazioni Internet-of-Things (IoT) alimentate a batteria.
 
-La comunità dei produttori è venuta a conoscenza di questi dispositivi nel 2014, quando Hackaday ha annunciato l'introduzione di un nuovo modulo Wi-Fi da $5 venduto tramite Seeed Studio. Conosciuto come ESP-01, questo modulo è stato costruito dal produttore di terze parti Ai-Thinker, anch'esso con sede in Cina. 
+La comunità dei produttori è venuta a conoscenza di questi dispositivi nel 2014, quando <a href="https://hackaday.com/" target="_blank">Hackaday</a> ha annunciato l'introduzione di un nuovo modulo Wi-Fi da $5 venduto tramite Seeed Studio. Conosciuto come ESP-01, questo modulo è stato costruito dal produttore di terze parti Ai-Thinker, anch'esso con sede in Cina. 
 
-Questo primo prototipo dell'ESP32 era severamente limitato dagli appena otto pin disponibili, due dei quali collegati alla interfaccia UART per controllare il modulo tramite comandi "AT". La scheda ESP-01 era facile da integrare con la piattaforma software di Arduino e ma aggiungendo la connettività Internet senza bisogno di schedine aggiuntive. L'unico punto critico: tutta la documentazione è stata scritta in cinese! 
+Questo primo prototipo dell'ESP32 era severamente limitato dagli appena otto pin disponibili, due dei quali collegati alla interfaccia UART per controllare il modulo tramite comandi "AT". La scheda ESP-01 era facile da integrare con la <a href="https://www.arduino.cc/en/software" target="_blank">piattaforma software</a> di Arduino e ma aggiungendo la connettività Internet senza bisogno di schedine aggiuntive. L'unico punto critico: tutta la documentazione è stata scritta in cinese! 
 
 ### Il costo dell'ESP32
 
-La bellezza dei moduli basati sull'ESP8266 era il minimo numero di componenti necessari per costruire un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti necessitavano solo di una manciata di resistori e condensatori, un'antenna, un programmatore seriale QSPI esterno. All'accensione, l'ESP8266 estrae il firmware dal flash e quindi lo copia nella SRAM interna da dove viene eseguito.
+La bellezza dei moduli basati sull'ESP8266 era il minimo numero di componenti necessari per costruire una scheda usabile dagli appassionati e da piccole aziende con un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti necessitavano solo di una manciata di resistori e condensatori, un'antenna, un <a href="https://www.digikey.it/it/ptm/n/nxp-semiconductors/quad-spi-flash-interface-spifi" target="_blank">programmatore seriale QSPI</a> esterno. All'accensione, l'ESP8266 estrae il firmware dal flash e quindi lo copia nella <a href="https://en.wikipedia.org/wiki/Static_random-access_memory" target="_blank">SRAM</a> interna da dove viene eseguito.
  
 Era ovvio che i moduli erano anche dei microcontroller a tutti gli effetti. 
-Il processore presentava ingressi/uscite generiche (GPIOs), uscite PWM (pulse-width modulated), un convertitore analogico-digitale (ADC) e tutte le interfacce seriali standard. Con queste premesse non è passato molto tempo prima che qualche programmatore usasse la sterminata libreria già disponibile per Arduino sulla nuova scheda "cinese"...
+Il processore presentava ingressi/uscite generiche (<a href="https://it.wikipedia.org/wiki/General_Purpose_Input/Output" target="_blank">GPIO</a>), uscite <a href="https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso" target="_blank">PWM</a> (pulse-width modulated), un convertitore analogico-digitale (<a href="https://it.wikipedia.org/wiki/Convertitore_analogico-digitale" target="_blank">ADC</a>) e tutte le interfacce seriali standard. Con queste premesse non è passato molto tempo prima che qualche programmatore usasse la sterminata libreria già disponibile per Arduino sulla nuova scheda "cinese"...
 
-Prima del 2015 Espressif ha rilasciato un kit di sviluppo software (SDK) che permetteva di creare codice utente che funzionava insieme al software Wi-Fi. Il kit è disponibile in due versioni: una basata sul sistema operativo in tempo reale FreeRTOS e un'altra che si basava su callback e timer software per garantire che il programma utente condividesse il tempo di elaborazione in modo equo con lo stack software Wi-Fi. Secondo le specifiche della casa madre il kit e l'hardware potevano disporre di circa 50 kB di memoria per il loro codice.
+Prima del 2015 Espressif ha rilasciato un <a href="https://www.espressif.com/en/products/software/esp-sdk/overview" target="_blank">kit</a> di sviluppo software (SDK) che permetteva di creare codice utente che funzionava insieme al software Wi-Fi. Il kit è disponibile in due versioni: una basata sul sistema operativo in tempo reale <a href="https://www.freertos.org/a00104.html" target="_blank">FreeRTOS</a> e un'altra che si basava su <a href="https://it.wikipedia.org/wiki/Callback" target="_blank">callback</a> e timer software per garantire che il programma utente condividesse il tempo di elaborazione in modo equo con lo stack software Wi-Fi. Secondo le specifiche della casa madre il kit e l'hardware potevano disporre di circa 50 kB di memoria per il loro codice.
 
 ### Gli sviluppi recenti
 
-I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un modulo integrato ultra-low-power (ULP) è disponibile sul chip dell'ESP32 per gestire la modalità "deep sleep". Questo modulo riesce a monitorare alcune periferiche (non tutte) durante la modalità sleep (una specie di ibernazione controllata) rendendolo perfetto per progetti alimentati a batteria.
+I dispositivi della serie ESP32 attualmente disponibili dispongono di un microprocessore dual-core Tensilica Xtensa LX6 a 32 bit. Con 48 pin, forniscono 520 kB di SRAM e, per alcuni dispositivi, tra 4 e 8 MB di memoria flash. 2.4 GHz Wi-Fi e Bluetooth/Bluetooth LE versione 4.2 sono disponibili sul lato connettività. Un modulo integrato ultra-low-power (<a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-ultra-low-power-mcus.html" target="_blank">ULP</a>) è disponibile sul chip dell'ESP32 per gestire la modalità "deep sleep". Questo modulo riesce a monitorare alcune periferiche (non tutte) durante la modalità sleep (una specie di ibernazione controllata) rendendolo perfetto per progetti alimentati a batteria.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.png" alt="Schema a blocchi del Tensilica Xtensa 32-bit LX6">
 
@@ -76,9 +76,10 @@ Schema a blocchi del Tensilica Xtensa 32-bit LX6
 
 <br>
 
-Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore Xtensa LX7 a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. 
+Con le serie ESP32-S2 (single-core) e ESP-S3 (dual-core) a 56 pin, gli sviluppatori beneficiano del processore <a href="https://www.cadence.com/en_US/home/resources/datasheets/xtensa-lx7-processor-ds.html" target="_blank">Xtensa LX7</a> a 32 bit. Questo core da 240 MHz offre istruzioni vettoriali, fornendo accelerazione per il codice utilizzato dalle reti neurali e dall'elaborazione del segnale. 
 
-Comprende ovviamente Wi-Fi e Bluetooth, anche se quest'ultimo è aggiornato solo alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta del sistema TWAI, una interfaccia automobilistica a due fili. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come CAN, uno standard "storico" dei produttori di automobili occidentali. La sicurezza è inoltre potenziata con la disponibilità di crittografia flash e un acceleratore HMAC (Message Authentication Code) basato su hash.
+Comprende ovviamente Wi-Fi e Bluetooth, anche se quest'ultimo è aggiornato solo alla versione 5.0. Le periferiche di interfaccia rimangono più o meno le stesse con l'aggiunta del sistema <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/twai.html" target="_blank">TWAI</a>
+, una interfaccia automobilistica a due fili. Quest'ultimo è compatibile con ISO 11898-1, altrimenti noto come <a href="https://protezione-auto.it/can-bus-come-funziona/" target="_blank">CAN</a>, uno standard "storico" dei produttori di automobili occidentali. La sicurezza è inoltre potenziata con la disponibilità di crittografia flash e un acceleratore <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/api-reference/peripherals/hmac.html" target="_blank">HMAC</a> (Message Authentication Code) basato su hash.
 
 
 ### Il software della piattaforma ESP32
@@ -289,4 +290,4 @@ Con queste premesse possiamo capire come la scheda abbia scalato le classifiche 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.0.5.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.0.0</p>  
