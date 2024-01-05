@@ -292,7 +292,6 @@ I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per gener
 
 ## Il successo del'ESP32
 Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software...
-
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.0.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.2.2</p>
