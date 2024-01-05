@@ -61,9 +61,9 @@ Era in sostanza il primo prototipo dell'ESP32 ed era severamente limitato dagli 
 
 ### Il costo dell'ESP32
 
-La bellezza dei moduli basati sull'ESP8266 era il minimo numero di componenti necessari per costruire una scheda usabile dagli appassionati e da piccole aziende con un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti necessitavano solo di una manciata di resistori e condensatori, un'antenna e un <a href="https://www.digikey.it/it/ptm/n/nxp-semiconductors/quad-spi-flash-interface-spifi" target="_blank">programmatore seriale QSPI</a> esterno. All'accensione, l'ESP8266 estraeva il firmware dal flash e quindi lo copiava nella <a href="https://en.wikipedia.org/wiki/Static_random-access_memory" target="_blank">SRAM</a> interna da dove veniva eseguito.
+La bellezza dei moduli basati sull'ESP8266 era il minimo numero di componenti necessari per costruire una scheda usabile dagli appassionati e da piccole aziende con un modulo Wi-Fi funzionale. Supponendo che fosse disponibile un'alimentazione a 3,3 V, i progetti avevano solo bisogno di poche <a href="https://www.robotdazero.it/blog/cosa-sono-le-resistenze-elettriche/" target="_blank">resistenze</a> e condensatori, un'antenna e un <a href="https://www.digikey.it/it/ptm/n/nxp-semiconductors/quad-spi-flash-interface-spifi" target="_blank">programmatore seriale QSPI</a> esterno. All'accensione, l'ESP8266 estraeva il firmware dal flash e quindi lo copiava nella <a href="https://en.wikipedia.org/wiki/Static_random-access_memory" target="_blank">SRAM</a> interna da dove veniva eseguito.
  
-Fu immediatamente chiaro che si potevano costruire dei microcontroller stile Arduino a bassissimo prezzo. 
+Fu immediatamente chiaro che si potevano costruire dei microcontroller stile <a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/" target="_blank">Arduino</a> a bassissimo prezzo. 
 Tecnicamente il processore presentava ingressi/uscite generiche (<a href="https://it.wikipedia.org/wiki/General_Purpose_Input/Output" target="_blank">GPIO</a>), uscite <a href="https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso" target="_blank">PWM</a> (pulse-width modulated), un convertitore analogico-digitale (<a href="https://it.wikipedia.org/wiki/Convertitore_analogico-digitale" target="_blank">ADC</a>) e tutte le interfacce seriali standard. 
 
 Con queste premesse non è passato molto tempo prima che qualche programmatore usasse la sterminata libreria già disponibile per Arduino sulla nuova scheda "cinese".
@@ -291,7 +291,10 @@ Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utiliz
 I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche. L'ESP32 ha due convertitori da digitale ad analogico a 8 bit.
 
 ## Il successo del'ESP32
-Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software...
+Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software.
+
+#### Ultimi arrivi della famiglia ESP32
+Il microcontroller <a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a> promette di migliorare ancora le prestazioni della nostra scheda. Con una CPU RISC-V dual-core con clock di 400 MHz e 768KB di SRAM on-chip il nuovo sistema garantisce elevate prestazioni e una più facile connessione di fotocamere ad alta risoluzione con protocollo MIPI-CSI.
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.2.2</p>
