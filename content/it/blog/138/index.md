@@ -211,7 +211,7 @@ L'ESP32 è un chip versatile ed ampiamente adottato dalla industria "automotive"
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/107.jpg" alt="La scheda di sviluppo completa di alimentatore e interfaccia serial UART con microUSB">
 
-Il piccolo chip che provvede alla alimentazione si chiama AMS1117 e lo vedi nella foro al centro della scheda, vicino al bridge UART. 
+Il piccolo chip che provvede alla alimentazione si chiama AMS1117 e lo vedi nella foto al centro della scheda, vicino al bridge UART. 
 
 <br>
 
