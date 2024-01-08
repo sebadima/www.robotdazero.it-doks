@@ -25,7 +25,15 @@ In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, 
 
 > Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da un controller (40mA ~ 5.0V).
 
-##### Solo per fare un esempio, la strisci di LED che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
+Solo per fare un esempio, la striscie di LED che useremo in questo progetto richiede correnti di 4~6 Ampere per un totale complessivo di circa 70Wper potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
+
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
+La corrente che può consumare una striscia di LED di 5mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.
+Ad esempio, una striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale striscia sarà quindi 72W/12V = 6A.
+</div>
+
+<br>
 
 Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
@@ -33,71 +41,61 @@ Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplic
 
 > Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
 
-##### Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog.
-
-Usando il **TIP120** come un interruttore velocissimo, possiamo controllare un a ventola a 12V dall'ESP32.
-Possiamo regolare la velocità del motorino usando la tecnica <a target="blank" href = "https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso">PWM </a> o Modulazione a larghezza di impulso. Per applicare la PWM al nostro controller useremo la piccola tensione proveniente dal pin 23 dell'ESP32 per attivare il Tip 120 in modo discontinuo. Con delle pause sempre più lunghe tra un impulso e l’altro possiamo rallentare la velocità del motorino, mentre con pause ridotte a zero possiamo mandarlo al massimo.
-
+##### Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog.
 
 <img img width="250" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schema dei PIN del TIP120">
 
 <br>
-<br>
 
-rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+## Il nostro progetto
 
-<br>
+La striscia LED RGB da 12 volt (**5 mt**) è stata collegata a un ESP32 perché la scheda non può pilotare direttamente la striscia LED. Abbiamo quindi un transistor NPN(TIP120) per pilotare la striscia. Le basi dei transistor sono collegate ai 3 pin PWM dell'ESP32: ciascuno per le linee rosse, verdi e blu della striscia LED.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert"> 👋
-Il <a href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode" target="_blank">diodo N4001</a> è un diodo di tipo NPN, con una tensione di soglia di circa 0,7 V. Questo significa che, se la tensione applicata al diodo è inferiore a 0,7 V, il diodo non condurrà corrente.
-Se la tensione applicata al diodo è superiore a 0,7 V, il diodo inizierà a condurre corrente. La corrente che fluisce attraverso il diodo è proporzionale alla differenza di tensione tra le due estremità del diodo.
-</div>
-
-<br>
-
-### Come proteggere un circuito dalle tensioni parassite
-Se un circuito è alimentato da una batteria, è possibile utilizzare un diodo N4001 per proteggere il circuito dalla tensione inversa della batteria. La batteria ha una tensione inversa di circa 2 V. Se la tensione inversa della batteria supera la tensione di soglia del diodo N4001, il diodo inizierà a condurre corrente. Questa corrente limiterà la tensione inversa applicata al circuito, proteggendolo da danni.
-
-> Un altro modo per utilizzare un diodo N4001 per proteggere un circuito è di collegarlo in parallelo al circuito. In questo modo, il diodo si accenderà in caso di sovraccarico del circuito. Il sovraccarico può essere causato da un aumento della corrente o della tensione applicata al circuito.
-Quando il diodo si accende, limita la corrente che fluisce attraverso il circuito, proteggendolo da danni.
-
-<br>
-
-Ecco altri esempi specifici di come può essere utilizzato un diodo N4001 per proteggere un circuito:
-
-- Protezione da tensione inversa: un diodo N4001 può essere utilizzato per proteggere un circuito alimentato da una batteria dalla tensione inversa della batteria.
-- Protezione da sovraccarico di corrente: un diodo N4001 può essere utilizzato per proteggere un circuito da un sovraccarico di corrente.
-- Protezione da sovraccarico di tensione: un diodo N4001 può essere utilizzato per proteggere un circuito da un sovraccarico di tensione.
-
-## Lo schema del circuito
-Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** al tuo Arduino in pochi minuti.
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del driver per motore elettrico con TIP120 per Arduino">
-
-<br>
-<br>
-
-#### I collegamenti del "solo" Arduino
-{{< mermaid class="bg-light text-center" >}}
-graph TD
- VCC -->|5V| E[Arduino]
-  base-TIP-120 -->|PIN 9| E[Arduino]
-  GND -->|GND| E[Scheda Arduino]
-{{< /mermaid >}}
+Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta di un server web minimale, senza AJAX automatico e per questo notrrai un breve refresh della pagina non appena premi un tasto.
 
 
-## Il codice completo
+### Lo schema elettrico del circuito
+Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** alla tua sctriscia LED a all'ESP32 in pochi minuti.
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
+
+1. Collegare i terminali R, G & B della striscia LED al collettore del transistor come mostrato.
+2. Attraverso una resistenza di 10Kohm collegare la base dei transistor ai pin D25, D26 e D27 dell'ESP32 NodeMCU.
+
+Tutti i disposotivi devono essere collegati tra di loro, la massa dell'ESP32, dei 3 transistor e la massa dell'alimentatore 12v utilizzato per la striscia LED RGB. L'ESP32 può essere alimentato ad esempio dalla USB.
+
+Nella immagine in alto il rettangolo rosso evidenzia i PIN 26,27,25 utilizzati per pilotare i tre colori della striscia LED.
+
+### L'hardware utilizzato 
+Il circuito comprende pochi pezzi facili da assemblare su una breadboard:
+
+- ESP32 (**1 pz**)
+- TIP120 (**1 pz**)
+- Resistenze 10K Ohm (**3 pz**)
+- Striscia di LED RGB (**1 pz**)  <a href="https://amzn.to/3Sb5V6S" target="_blank">vedi su Amazon</a>
+
+
+### Il codice completo
 
 ```bash
+// Carica la libreria  Wi-Fi
+#include <WiFi.h>
 #include <analogWrite.h>
 
-const int redPin = 26;
+// Sostituisci con le tue vere credenziali
+const char* ssid     = "SSID";
+const char* password = "Password";
+
+WiFiServer server(80);
+String header;
+
+const int redPin   = 26;
 const int greenPin = 27;
-const int bluePin = 25;
+const int bluePin  = 25;
 
 int greenValue = 0;
-int redValue = 0;
-int blueValue = 0;
+int redValue   = 0;
+int blueValue  = 0;
 
 String redValueString = String(redValue);
 String greenValueString = String(greenValue);
@@ -105,16 +103,180 @@ String blueValueString = String(blueValue);
 
 void setup() {
   Serial.begin(115200);
+
+  Serial.print("In connessione");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  
+  // Scrivi l'indirizzo IP del server web
+  Serial.println("");
+  Serial.println("WiFi connesso.");
+  Serial.println("Indirizzo IP: ");
+  Serial.println(WiFi.localIP());
+  server.begin();
+
   analogWriteResolution(8);
 }
 
 void loop(){
-    Serial.println("Client disconnected.");
+
+  WiFiClient client = server.available();   // In ascolto per le connessioni
+
+  if (client) {                             // Quando si connette un client,
+    Serial.println("New Client.");          // scrivi un messaggio sul monitor seriale
+    String currentLine = "";                // Crea una String per conservare i dati della connessione
+    while (client.connected()) {            // Loop... 
+      if (client.available()) {             // Se c'è un dato in arrivo dal client,
+        char c = client.read();             // leggi il caratter, 
+        Serial.write(c);                    // e scrivilo sul monitor seriale
+        header += c;
+        if (c == '\n') {                    // Se era "newline" esegui le 4 linee seguenti
+          if (currentLine.length() == 0) {
+            client.println("HTTP/1.1 200 OK");
+            client.println("Content-type:text/html");
+            client.println("Connection: close");
+            client.println();
+
+            if(header.indexOf("GET /-r") >=0 ) redValue -=1;
+            else if(header.indexOf("GET /+r") >=0) redValue +=1;
+            else if(header.indexOf("GET /+g") >=0) greenValue +=1;
+            else if(header.indexOf("GET /-g") >=0) greenValue -=1;
+            else if(header.indexOf("GET /+b") >=0)  blueValue +=1;
+            else if(header.indexOf("GET /-b") >=0) blueValue -=1;
+            else if(header.indexOf("GET /Red") >=0) if(redValue == 0) redValue = 254; else redValue = 0;
+            else if(header.indexOf("GET /Green") >=0) if(greenValue == 0) greenValue = 254; else greenValue = 0;
+            else if(header.indexOf("GET /Blue") >=0) {if(blueValue == 0) blueValue = 254; else blueValue = 0;}
+
+            analogWrite(redPin,redValue);
+            analogWrite(bluePin,blueValue);
+            analogWrite(greenPin,greenValue);
+
+            redValueString = String(redValue);  
+            greenValueString = String(greenValue);
+            blueValueString = String(blueValue);
+
+            // Mostra la pagina web
+            client.println("<!DOCTYPE html><html>");
+            client.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
+            client.println("<link rel=\"icon\" href=\"data:,\">");
+            // CSS to style the on/off buttons 
+            client.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">");
+            
+            // Heading della pagina web
+            client.println("</head>");
+            client.println("<center>");
+            client.println("<body><h1>ESP32 RGB Web Server</h1>"); 
+            client.println("<br>");
+
+            client.println("<a href = \" /+r \" ");
+            if(redValue == 254)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">+</button>"); 
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">+</button>"); 
+            client.println("</a>");
+
+            client.println("<a href = \" /Red\" ");
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">RED(" + redValueString + ")</button>");  
+            client.println("</a>");
+            
+            client.println("<a href = \" /-r \" ");
+            if(redValue == 0)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">-</button>");  
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">-</button>");  
+            client.println("</a>");
+
+            client.println("<br>");
+            client.println("<br>");
+
+            client.println("<a href = \" /+g \" ");
+            if(greenValue == 254)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">+</button>"); 
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">+</button>"); 
+            client.println("</a>");
+            
+            client.println("<a href = \" /Green \" ");
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">GREEN(" + greenValueString + ")</button>");  
+            client.println("</a>");
+
+            client.println("<a href = \" /-g \" ");
+            if(greenValue == 0)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">-</button>");  
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">-</button>");
+            client.println("</a>");
+
+            client.println("<br>");
+            client.println("<br>");
+
+            client.println("<a href = \" /+b \" ");
+            if(blueValue == 254)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">+</button>");  
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">+</button>");  
+            client.println("</a>");
+
+            client.println("<a href = \" /Blue \" ");
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">BLUE(" + blueValueString + ")</button>");  
+            client.println("</a>");
+
+            client.println("<a href = \" /-b \" ");
+            if(blueValue == 0)
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md disabled\">-</button>");  
+            else
+            client.println("<button type=\"button\" class=\"btn btn-primary btn-md\">-</button>");  
+            client.println("</a>");
+
+            client.println("<center>");
+            client.println("</body></html>");
+
+            
+            client.println();
+            break;
+          } else {
+            currentLine = "";
+          }
+        } else if (c != '\r') {
+          currentLine += c;
+        }
+      }
+    }
+    header = "";
+    client.stop();
+    Serial.println("Client disconnesso.");
+    Serial.println("");
   }
 }
 ```
-Fai copia e incolla nell'IDE di Arduino e quindi compila e fai l'upload programma. Dopo il reset dovresti sentire il motorino accelerare e rallentare ciclicamente...
+
+#### Il file make per PlatformIO
+
+Se decidi di utilizzare PlatformIO dallla linea di comando crea un file con questo contenuto:
+
+```bash
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+lib_deps = 
+  erropix/ESP32 AnalogWrite@^0.2
+```
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.4.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.6.0</p>  
