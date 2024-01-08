@@ -23,46 +23,45 @@ In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, 
 
 <br>
 
-> Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da un controller: parliamo per capirci di appena 40mA a 5.0V.
+> Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da un controller: Arduino, ad esempio può erogare appena 40mA a 5.0V e quindi 0.2W a fronte di richieste di 50~100W.
 
 Per fare un esempio, la striscia di LED RGB che useremo in questo progetto richiede correnti di 5~6 Ampere per un totale complessivo di circa 70W: pensate alla corrente che sarebbe necessaria per azionare un cancello automatico!
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
 La corrente che può consumare una striscia di LED di 5mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.
-Ad esempio, una striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale striscia sarà quindi 72W/12V = 6A.
+Ad esempio, una striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale assorbita dalla striscia sarà quindi 72W/12V = 6A.
 </div>
 
 <br>
 
 Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
-<br>
-
-> Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
-
-Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog di Robotdazero.
-
 <img img width="250" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schema dei PIN del TIP120">
 
-<br>
+Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
+
+Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog di Robotdazero.
 
 ## Il nostro progetto
 
 Una striscia LED RGB da 12 volt (**5 mt**) è stata collegata con 3 TIP 120 ad un ESP32. Le basi dei transistor sono collegate a 3 pin PWM dell'ESP32, uno ciascuno per le linee rosse, verdi e blu della striscia LED.
 
-Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta di un server web minimale, senza AJAX automatico e per questo noterai un breve refresh della pagina non appena premi un tasto.
+Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta di un server web minimale, senza AJAX e perciò noterai un breve refresh della pagina non appena premi un tasto.
 
 
 ### Lo schema elettrico del circuito
-Segui attentamente la disposizione dei connettori, studia la foto e potrai collegare Il **TIP120** alla tua sctriscia LED a all'ESP32 in pochi minuti.
+Segui attentamente la disposizione dei connettori, studia la foto e potrai illuminare in modo controllabile la striscia di LED in pochi minuti.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
 
-1. Collegare i terminali R, G & B della striscia LED al collettore del transistor come mostrato.
-2. Attraverso una resistenza di 10Kohm collegare la base dei transistor ai pin D25, D26 e D27 dell'ESP32 NodeMCU.
+<br>
+<br>
 
-Tutti i dispositivi devono essere collegati tra di loro, la massa dell'ESP32, dei 3 transistor e la massa dell'alimentatore 12V utilizzato per la striscia LED RGB. L'ESP32 può essere alimentato ad esempio dalla USB.
+1. Collega i terminali R,G & B della striscia LED al **collettore** del transistor come mostrato.
+2. Usando una resistenza di 10Kohm collega la base dei transistor ai pin D25, D26 e D27 dell'ESP32.
+
+Tutti i dispositivi devono essere collegati tra di loro: il GND dell'ESP32, dei 3 transistor e dell'alimentatore 12V utilizzato per la striscia LED RGB. L'ESP32 può essere alimentato per iniziare, da un semplice cavo USB.
 
 Nella immagine in alto il rettangolo rosso evidenzia i PIN 26,27,25 utilizzati per pilotare i tre colori della striscia LED.
 
