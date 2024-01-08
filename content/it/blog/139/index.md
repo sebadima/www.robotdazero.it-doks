@@ -19,35 +19,70 @@ mermaid: true
 
 ## L'ESP32 e i dispositivi ad alto assorbimento
 
-In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire. In questi casi, prima di passare ai relays elettronici o meccanici possiamo usare un economico transistor di media potenza come il TIP120.
+In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire. In questi casi, prima di passare ai relays elettronici o meccanici possiamo ricorrere ad un economico transistor di media potenza come il TIP120.
 
 <br>
 
-> Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da un controller: Arduino, ad esempio può erogare appena 40mA a 5.0V e quindi 0.2W a fronte di richieste di 50~100W.
+> Un malinteso comune tra i neofiti è quello di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo molti dispositivi esterni richiedono correnti e tensioni elevate, molto più alte di quelle erogabili da un controller. Arduino, ad esempio può erogare appena 40mA a 5.0V e quindi 0.2W a fronte di richieste di 50~100W.
 
 Per fare un esempio, la striscia di LED RGB che useremo in questo progetto richiede correnti di 5~6 Ampere per un totale complessivo di circa 70W: pensate alla corrente che sarebbe necessaria per azionare un cancello automatico!
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
-La corrente che può consumare una striscia di LED di 5mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.
-Ad esempio, una striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale assorbita dalla striscia sarà quindi 72W/12V = 6A.
+<strong>Come calcolare la corrente necessaria per questo progetto:</strong><br>La corrente che può consumare una striscia di LED di 5 mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.
+Nel nostro progetto la striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale assorbita dalla striscia sarà quindi 72W/12V = <strong>6A</strong>.
 </div>
 
 <br>
 
-Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
+Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: basta usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
 <img img width="250" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schema dei PIN del TIP120">
 
-Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente.
-
-Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog di Robotdazero.
+Non appena applichiamo una piccola tensione alla base di un transistor Darlington, il componente si attiva e permette alla corrente ad alto amperaggio di passare liberamente. Se vuoi approfondire la differenza tra corrente e tensione ti consiglio di leggere questo [articolo](https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione) del blog di Robotdazero.
 
 ## Il nostro progetto
 
-Una striscia LED RGB da 12 volt (**5 mt**) è stata collegata con 3 TIP 120 ad un ESP32. Le basi dei transistor sono collegate a 3 pin PWM dell'ESP32, uno ciascuno per le linee rosse, verdi e blu della striscia LED.
+Si tratta di pilotare da smartphone o desktop una striscia di LED RGB 12V: la striscia verrà collegata a 3 TIP 120, aloro volta connessi ad un singolo ESP32. Le basi dei transistor sono collegate a 3 pin PWM dell'ESP32, uno ciascuno per le linee rosse, verdi e blu della striscia LED.
 
-Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta di un server web minimale, senza AJAX e perciò noterai un breve refresh della pagina non appena premi un tasto.
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/107.png" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
+
+<br>
+<br>
+
+Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta comunque di un server web minimale, senza AJAX e perciò noterai un breve refresh della pagina non appena premi un tasto.
+
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
+<strong>Cosa è AJAX:</strong>
+AJAX, abbreviazione di Asynchronous JavaScript and XML, è un insieme di tecnologie che consentono di scambiare dati tra un browser web e un server web in modo asincrono. Ciò significa che l'utente può continuare a interagire con la pagina web, anche mentre i dati vengono caricati.<br><br>AJAX è composto da diverse tecnologie, tra cui:
+<strong>HTML/XHTML</strong>: il linguaggio di markup utilizzato per creare la struttura di una pagina web.
+<strong>CSS</strong>: il linguaggio di stile utilizzato per definire l'aspetto di una pagina web.
+<strong>JavaScript</strong>: il linguaggio di scripting utilizzato per aggiungere funzionalità dinamiche a una pagina web.
+<strong>XMLHttpRequest</strong>: un'API JavaScript che consente di inviare richieste al server web e ricevere le risposte.
+<br><br>AJAX viene utilizzato per creare pagine web più dinamiche e interattive. Ad esempio, può essere utilizzato per:
+Aggiornare il contenuto di una pagina web senza ricaricarla completamente.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Lo schema elettrico del circuito
@@ -255,7 +290,7 @@ void loop(){
 
 #### Il file make per PlatformIO
 
-Se decidi di utilizzare PlatformIO dallla linea di comando crea un file con questo contenuto:
+Se decidi di utilizzare PlatformIO dallla linea di comando crea un file "platformio.ini" con questo contenuto:
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -278,4 +313,4 @@ lib_deps =
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.7.0</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.7.1</p>  
