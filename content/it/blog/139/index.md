@@ -1,14 +1,14 @@
 ---
-title: "Come pilotare un motore elettrico usando ESP32"
-description: "Come Pilotare un motore elettrico usando ESP32"
-excerpt: "Nelle applicazioni industriali della Robotica ci troviamo in genere a lavorare con dispositivi ad alto assorbimento, assai più ostici di LED o piccoli servocomandi: nulla che i delicati circuiti della microelettronica potrebbero mai pilotare. Ci servono i muscoli dei transistor di grande e media potenza come il TIP120..."
+title: "Come pilotare una striscia di LED usando ESP32"
+description: "Come pilotare una striscia di LED usando ESP32"
+excerpt: "Nelle applicazioni per la domotica ti troverai spesso a lavorare con dispositivi ad alto assorbimento, assai più ostici di singoli LED o piccoli servocomandi: nulla che i delicati circuiti dei controller possano alimentare...."
 date: 2018-07-15T09:19:42+01:00
 lastmod: 2018-07-15T09:19:42+01:0
 draft: false
 weight: 50
 images: ["header.png"]
 categories: ["News"]
-tags: ["motori", "ESP32", "automazione"]
+tags: ["LED", "ESP32", "automazione"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
@@ -19,13 +19,13 @@ mermaid: true
 
 ## L'ESP32 e i dispositivi ad alto assorbimento
 
-In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire direttamente.In questi casi, prima di passare ai relays elrottronici o meccanici possiamo un transistor di media potenza come il TIP120.
+In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire direttamente.In questi casi, prima di passare ai relays elettronici o meccanici possiamo usare un economico transistor di media potenza come il TIP120.
 
 <br>
 
-> Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da Arduino (40mA ~ 5.0V).
+> Uno dei malintesi più comuni tra chi inizia con la microelettronica è la idea di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo questi dispositivi esterni richiedono correnti e tensioni molto più alte di quelle erogabili da un controller (40mA ~ 5.0V).
 
-##### Solo per fare un esempio, il piccolo motore elettrico che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
+##### Solo per fare un esempio, la strisci di LED che useremo in questo progetto richiede correnti di 500mA (milliampere) per potere funzionare: pensate alla corrente che sarebbe necessaria per spostare un cancello automatico!
 
 Detto questo, la soluzione ai problemi di corrente o tensione è davvero semplice: usare un transistor come interruttore o “switch”, e per questo compito non esiste nulla di meglio che usarne uno di tipo <a  target="_blank" href="https://it.wikipedia.org/wiki/Transistor_Darlington">Darlington</a> come ad esempio il TIP120.
 
@@ -44,7 +44,7 @@ Possiamo regolare la velocità del motorino usando la tecnica <a target="blank" 
 <br>
 <br>
 
-Nel circuito useremo anche un piccolo diodo, l'<a  target="_blank" href="https://en.wikipedia.org/wiki/1N400x_rectifier_diode">N4001</a> destinato a proteggere il transistor dalle correnti prodotte dal motorino quando, ad esempio, lo fai girare manualmente: il diodo serve appunto come una “conduttore a senso unico” e impedirà alle correnti parassite o in “reverse” di danneggiare il TIP120.
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 
 <br>
 
@@ -89,20 +89,28 @@ graph TD
 ## Il codice completo
 
 ```bash
-int pinMotorino = 9;
+#include <analogWrite.h>
+
+const int redPin = 26;
+const int greenPin = 27;
+const int bluePin = 25;
+
+int greenValue = 0;
+int redValue = 0;
+int blueValue = 0;
+
+String redValueString = String(redValue);
+String greenValueString = String(greenValue);
+String blueValueString = String(blueValue);
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(pinMotorino, OUTPUT);  
+  Serial.begin(115200);
+  analogWriteResolution(8);
 }
 
-void loop() {
-  Serial.println("Loop");
-    for(int x = 0; x <= 255; x++)
-      analogWrite(pinMotorino, x); 
-      delay(20); 
-    }    
-  delay(1);
+void loop(){
+    Serial.println("Client disconnected.");
+  }
 }
 ```
 Fai copia e incolla nell'IDE di Arduino e quindi compila e fai l'upload programma. Dopo il reset dovresti sentire il motorino accelerare e rallentare ciclicamente...
