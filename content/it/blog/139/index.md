@@ -24,7 +24,7 @@ In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, 
 
 <br>
 
-> Un errore comune tra i neofiti è provare a pilotare motori elettrici, servocomandi o decine di Led usando la corrente di uscita di un ESP32 o di un Arduino. Purtroppo tali dispositivi esterni possono richiedere correnti elevate, molto più alte di quelle erogabili da un controller. Arduino, ad esempio può erogare appena **40mA** a **5.0V** e quindi **0.2W** di potenza a fronte di richieste di **50**~**100W**!
+> Un errore comune tra i neofiti è provare a pilotare motori elettrici, servocomandi o decine di Led usando la corrente di uscita di un ESP32 o di un Arduino. Purtroppo tali dispositivi esterni possono richiedere correnti elevate, molto più alte di quelle erogabili da un controller. Arduino, ad esempio può erogare appena **40mA** a **5.0V** e quindi **0.2W** di potenza a fronte di richieste di oltre **50**~**100W**!
 
 Per fare un esempio, la striscia di **LED RGB** che useremo in questo progetto richiede correnti di **5**~**6** Ampere per una potenza complessiva di circa **70W**: pensa alla corrente che sarebbe necessaria per azionare un cancello automatico!
 
@@ -53,7 +53,7 @@ Obiettivo di questo prototipo è *pilotare* da smartphone o desktop una striscia
 <br>
 <br>
 
-Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo **IP** acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta comunque di un server web minimale, senza supporto per AJAX e perciò noterai un breve **refresh** della pagina dopo la pressione di un pulsante.
+Per quanto riguarda il software, abbiamo creato un *server* web minimale da caricare sul browser digitando l'indirizzo **IP** acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore. Ci sono anche pulsanti per mescolare i tre colori base e creare qualsiasi combinazione cromatica. Tengo a ricordarti che si tratta di un server web minimale e senza supporto per AJAX: per questo motivo noterai un breve ritardo (*refresh*) della pagina dopo la pressione di ogni pulsante.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -69,7 +69,7 @@ aggiornare il contenuto di una pagina web senza ricaricarla da zero.
 
 
 ### Lo schema elettrico del circuito
-Segui attentamente la disposizione dei connettori, studia la foto e in pochi minuti sarai in grado di creare ogni combinazione di colore RGB.
+Segui attentamente la disposizione dei connettori, studia la foto e in pochi minuti sarai in grado di creare ogni combinazione di colore RGB sulla striscia.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
 
@@ -79,7 +79,7 @@ Segui attentamente la disposizione dei connettori, studia la foto e in pochi min
 1. Collega i terminali **R**,**G** & **B** della striscia al pin di **collettore** del transistor come da immagine.
 2. Usando le tre resistenze da **10 Kohm** collega la **base** di ogni transistor ai rispettivi pin **D25**, **D26** e **D27** dell'ESP32.
 
-Le resistenze sono utili per limitare la corrente di ingresso nei transistor e non sono opzionali. Inoltre tutti i dispositivi devono essere collegati tra di loro: il **GND** dell'ESP32 deve essere collegato al **GND** dei transistor e a quello dell'alimentatore a 12V. L'ESP32 può essere alimentato da un semplice cavo USB collegato al PC. Nella immagine in alto puoi notare il rettangolo rosso attorno ai pin **26**,**27**,**25** dell'ESP32.
+Le resistenze sono utili per limitare la corrente di ingresso nei transistor e non sono opzionali. Inoltre tutti i dispositivi devono essere collegati tra di loro: il **GND** dell'ESP32 deve essere collegato al **GND** dei transistor e a quello disponibile nell'alimentatore esterno a 12V. L'ESP32 può essere alimentato da un semplice cavo USB collegato al PC. Nella immagine in alto puoi notare il rettangolo rosso attorno ai pin **26**,**27**,**25** dell'ESP32.
 
 ### L'hardware utilizzato 
 Il circuito comprende pochi pezzi facili da assemblare anche senza una breadboard:
@@ -292,14 +292,14 @@ lib_deps =
   erropix/ESP32 AnalogWrite@^0.2
 ```
 
-Dopo la compilazione puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione. Dopo la apertura della pagina potrai usare i cursori per regolare separatamente i livelli dei tre colori fondamentali. 
+Finita la compilazione e l'upload puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione. Dopo la apertura della pagina potrai usare i cursori per regolare separatamente i livelli dei tre colori fondamentali. 
 
 ### Conclusione
 
-Una delle competenze più importanti che è necessario imparare per utilizzare ESP32 è certamente il pilotaggio di carichi esterni. Potrai così creare sistemi di illuminazione automatizzati, centraline di sicurezza e magari sistemi di irrigazione regolati dall'ESP32. 
+Una delle competenze che vorrai imparare con l'ESP32 è il pilotaggio di carichi esterni. Potrai così creare sistemi di illuminazione automatizzati, centraline di sicurezza avanzate e magari sistemi di irrigazione regolati dal controller. 
 
-Potrai avvalerti non solo di transistor come il TIP120, ma anche di schede già pronte per il pilotaggio di grossi motori elettrici. Queste schede sono di utilizzo semplicissimo: basta collegare il loro pin di input ad uno dei pin dell'ESP32 (ad esempio **25**,**26**,**27** del nostro prototipo) e il gioco è fatto!
-Imparare a pilotare carichi esterni con ESP32 è uno *skill*  essenziale per chiunque voglia creare progetti di domotica avanzati.
+Per questi progetti potrai avvalerti di transistor come il TIP120, ma anche di schede commerciali in grado di azionare  grossi motori elettrici. Queste schede sono di utilizzo semplicissimo: basta collegare il loro pin di **input** ad uno dei pin dell'ESP32 (ad esempio **25**,**26**,**27** del nostro prototipo) e il gioco è fatto!
+Imparare a pilotare carichi esterni con ESP32 è certamente uno *skill*  essenziale per chiunque voglia creare progetti di domotica avanzati.
 
 <br>
 <br>
