@@ -2,8 +2,8 @@
 title: "Come pilotare una striscia di LED usando ESP32"
 description: "Come pilotare una striscia di LED usando ESP32"
 excerpt: "Nelle applicazioni per la domotica ti troverai spesso a lavorare con dispositivi ad alto assorbimento, assai più ostici di singoli LED o piccoli servocomandi: nulla che i delicati circuiti dei controller possano alimentare...."
-date: 2018-07-15T09:19:42+01:00
-lastmod: 2018-07-15T09:19:42+01:0
+date: 2024-01-02T09:19:42+01:00
+lastmod: 2024-01-02T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.png"]
