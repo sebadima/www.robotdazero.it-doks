@@ -28,9 +28,8 @@ In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, 
 Per fare un esempio, la striscia di LED RGB che useremo in questo progetto richiede correnti di 5~6 Ampere per un totale complessivo di circa 70W: pensate alla corrente che sarebbe necessaria per azionare un cancello automatico!
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
-<strong>Come calcolare la corrente necessaria per questo progetto:</strong><br>La corrente che può consumare una striscia di LED di 5 mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.
-Nel nostro progetto la striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale assorbita dalla striscia sarà quindi 72W/12V = <strong>6A</strong>.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Come calcolare la corrente necessaria per questo progetto:</strong><br>La corrente che può consumare una striscia di LED di 5 mt alimentata a 12V dipende dalla potenza nominale della striscia. La potenza nominale è indicata in Watt per metro lineare, quindi per calcolare la corrente totale della striscia basta moltiplicare la potenza nominale per la lunghezza della striscia.<br>Nel nostro progetto la striscia di LED da 14,4W/mt consuma 72W su una lunghezza di 5mt. La corrente totale assorbita dalla striscia sarà quindi 72W / 12V = <strong>6A</strong>.
 </div>
 
 <br>
@@ -53,36 +52,16 @@ Si tratta di pilotare da smartphone o desktop una striscia di LED RGB 12V: la st
 Per quanto riguarda il software, abbiamo creato un server web minimale da caricare sul browser digitando l'indirizzo IP acquisito del nostro ESP32. La pagina Web contiene alcuni pulsanti per attivare / disattivare ogni colore e ci sono anche pulsanti per mescolare i colori rosso, verde e blu per creare qualsiasi combinazione di colori. Si tratta comunque di un server web minimale, senza AJAX e perciò noterai un breve refresh della pagina non appena premi un tasto.
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">⚡️
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Cosa è AJAX:</strong>
 AJAX, abbreviazione di Asynchronous JavaScript and XML, è un insieme di tecnologie che consentono di scambiare dati tra un browser web e un server web in modo asincrono. Ciò significa che l'utente può continuare a interagire con la pagina web, anche mentre i dati vengono caricati.<br><br>AJAX è composto da diverse tecnologie, tra cui:
 <strong>HTML/XHTML</strong>: il linguaggio di markup utilizzato per creare la struttura di una pagina web.
 <strong>CSS</strong>: il linguaggio di stile utilizzato per definire l'aspetto di una pagina web.
 <strong>JavaScript</strong>: il linguaggio di scripting utilizzato per aggiungere funzionalità dinamiche a una pagina web.
 <strong>XMLHttpRequest</strong>: un'API JavaScript che consente di inviare richieste al server web e ricevere le risposte.
-<br><br>AJAX viene utilizzato per creare pagine web più dinamiche e interattive. Ad esempio, può essere utilizzato per:
-Aggiornare il contenuto di una pagina web senza ricaricarla completamente.
+<br><br>AJAX viene utilizzato per creare pagine web più dinamiche e interattive: ad esempio, viense spesso utilizzato per 
+aggiornare il contenuto di una pagina web senza ricaricarla da zero.
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Lo schema elettrico del circuito
@@ -94,17 +73,15 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai illum
 <br>
 
 1. Collega i terminali R,G & B della striscia LED al **collettore** del transistor come mostrato.
-2. Usando una resistenza di 10Kohm collega la base dei transistor ai pin D25, D26 e D27 dell'ESP32.
+2. Usando le tre resistenze da 10Kohm collega la base di ogni transistor al rispettivo pin D25, D26 e D27 dell'ESP32.
 
-Tutti i dispositivi devono essere collegati tra di loro: il GND dell'ESP32, dei 3 transistor e dell'alimentatore 12V utilizzato per la striscia LED RGB. L'ESP32 può essere alimentato per iniziare, da un semplice cavo USB.
-
-Nella immagine in alto il rettangolo rosso evidenzia i PIN 26,27,25 utilizzati per pilotare i tre colori della striscia LED.
+Tutti i dispositivi devono essere collegati tra di loro: il GND dell'ESP32 deve essere collegato al GND dei transistor e dell'alimentatore a 12V. L'ESP32 può essere alimentato da un semplice cavo USB collegato al PC. Nella immagine in alto puoi notare il rettangolo rosso attorno ai PIN 26,27,25 dell'ESP32.
 
 ### L'hardware utilizzato 
-Il circuito comprende pochi pezzi facili da assemblare su una breadboard:
+Il circuito comprende pochi pezzi facili da assemblare anche senza una breadboard:
 
 - ESP32 (**1 pz**)
-- TIP120 (**1 pz**)
+- TIP120 (**3 pz**)
 - Resistenze 10K Ohm (**3 pz**)
 - Striscia di LED RGB (**1 pz**)  <a href="https://amzn.to/3Sb5V6S" target="_blank">vedi su Amazon</a>
 
@@ -310,6 +287,9 @@ framework = arduino
 lib_deps = 
   erropix/ESP32 AnalogWrite@^0.2
 ```
+
+### Conclusione
+Dopo la compilazione puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione e potrai usare i cursori
 
 <br>
 <br>
