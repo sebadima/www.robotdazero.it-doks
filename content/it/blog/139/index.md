@@ -288,8 +288,20 @@ lib_deps =
   erropix/ESP32 AnalogWrite@^0.2
 ```
 
+Dopo la compilazione puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione e potrai usare i cursori per regolare separatamente i livelli dei tre colori fondamentali. 
+
 ### Conclusione
-Dopo la compilazione puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione e potrai usare i cursori
+
+Una delle competenze più importanti che è necessario imparare per utilizzare ESP32 nella domotica è il pilotaggio di carichi esterni. Ad esempio, è possibile creare sistemi di illuminazione automatizzati, sistemi di sicurezza e persino sistemi di irrigazione automatizzati. Oltre al TIP120  transistor similari esistono delle schede  già ottimizzati per il pilotaggio di motori elettrici di tipo "brushed". Sono di utilizzo assai semplice: basta collegare il loro pin di inpute ad uno dei pin dell'ESP32 (ad esempio 25,26,27). Imparare a pilotare carichi esterni con ESP32 è uno "skill"  essenziale per chiunque voglia creare progetti di domotica avanzati.
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>
