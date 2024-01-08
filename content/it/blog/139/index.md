@@ -24,9 +24,9 @@ In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, 
 
 <br>
 
-> Un malinteso comune tra i neofiti è quello di pilotare motori elettrici, servocomandi o decine di Led usando solo le uscite dell'ESP32 o di Arduino. Purtroppo molti dispositivi esterni richiedono correnti e tensioni elevate, molto più alte di quelle erogabili da un controller. Arduino, ad esempio può erogare appena 40mA a 5.0V e quindi 0.2W a fronte di richieste di 50~100W.
+> Un malinteso comune tra i neofiti è pensare di pilotare motori elettrici, servocomandi o decine di Led usando solo la corrente di uscita di un ESP32 o di Arduino. Purtroppo tali dispositivi esterni richiedono correnti e tensioni elevate, molto più alte di quelle erogabili da un micro controller. Arduino, ad esempio può erogare appena 40mA a 5.0V e quindi 0.2W di potenza a fronte di richieste di 50~100W.
 
-Per fare un esempio, la striscia di LED RGB che useremo in questo progetto richiede correnti di 5~6 Ampere per un totale complessivo di circa 70W: pensate alla corrente che sarebbe necessaria per azionare un cancello automatico!
+Per fare un esempio, la striscia di LED RGB che useremo in questo progetto richiede correnti di 5~6 Ampere per una potenza complessivao di circa 70W: pensate alla corrente che sarebbe necessaria per azionare un cancello automatico!
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -74,7 +74,7 @@ Segui attentamente la disposizione dei connettori, studia la foto e potrai illum
 <br>
 
 1. Collega i terminali R,G & B della striscia LED al **collettore** del transistor come mostrato.
-2. Usando le tre resistenze da 10Kohm collega la base di ogni transistor al rispettivo pin D25, D26 e D27 dell'ESP32.
+2. Usando le tre resistenze da 10Kohm collega la base di ogni transistor ai rispettivi pin D25, D26 e D27 dell'ESP32.
 
 Tutti i dispositivi devono essere collegati tra di loro: il GND dell'ESP32 deve essere collegato al GND dei transistor e dell'alimentatore a 12V. L'ESP32 può essere alimentato da un semplice cavo USB collegato al PC. Nella immagine in alto puoi notare il rettangolo rosso attorno ai PIN 26,27,25 dell'ESP32.
 
@@ -268,7 +268,7 @@ void loop(){
 
 #### Il file make per PlatformIO
 
-Se decidi di utilizzare PlatformIO dallla linea di comando crea un file "platformio.ini" con questo contenuto:
+Se decidi di utilizzare PlatformIO dalla linea di comando crea un file "platformio.ini" con questo contenuto:
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -293,16 +293,7 @@ Dopo la compilazione puoi lanciare il tuo browser all'indirizzo che apparirà do
 
 ### Conclusione
 
-Una delle competenze più importanti che è necessario imparare per utilizzare ESP32 nella domotica è il pilotaggio di carichi esterni. Ad esempio, è possibile creare sistemi di illuminazione automatizzati, sistemi di sicurezza e persino sistemi di irrigazione automatizzati. Oltre al TIP120  transistor similari esistono delle schede  già ottimizzati per il pilotaggio di motori elettrici di tipo "brushed". Sono di utilizzo assai semplice: basta collegare il loro pin di inpute ad uno dei pin dell'ESP32 (ad esempio 25,26,27). Imparare a pilotare carichi esterni con ESP32 è uno "skill"  essenziale per chiunque voglia creare progetti di domotica avanzati.
-
-
-
-
-
-
-
-
-
+Una delle competenze più importanti che è necessario imparare per utilizzare ESP32 nella domotica è il pilotaggio di carichi esterni. Ad esempio, è possibile creare sistemi di illuminazione automatizzati, sistemi di sicurezza e persino sistemi di irrigazione automatizzati. Oltre al TIP120  transistor similari esistono delle schede  già ottimizzate per il pilotaggio di motori elettrici di tipo "brushed". Sono di utilizzo assai semplice: basta collegare il loro pin di inpute ad uno dei pin dell'ESP32 (ad esempio 25,26,27). Imparare a pilotare carichi esterni con ESP32 è uno "skill"  essenziale per chiunque voglia creare progetti di domotica avanzati.
 
 <br>
 <br>
