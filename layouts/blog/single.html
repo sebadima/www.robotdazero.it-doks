@@ -95,7 +95,8 @@
       <br>
       <img width="220" src="/hog/footer.webp" alt="logo">
       <h4>Ciao! Siamo Sergio e Seba.</h4>
-      <p class="lead">Vogliamo costruire un'alternativa <strong>indipendente</strong> alle maxi piattaforme che gestiscono i dati dei nostri dispositivi IOT. Se vuoi accompagnarci nel nostro viaggio scoprirai cosa abbiamo imparato strada facendo...<p>
+      <p class="lead">Vogliamo costruire un'alternativa <strong>indipendente</strong> alle maxi piattaforme che gestiscono i dati dei nostri dispositivi IOT. Se vuoi accompagnarci nel nostro viaggio scoprirai cosa abbiamo imparato strada facendo...
+      <p>
       <div id="main">
          <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Segui questo blog</a>
          <a  href="" id="scroller"></a>
@@ -104,41 +105,31 @@
       <!--
          <p class="meta">Powered by Aweber - leggi la loro <a target="_blank" href="https://www.aweber.com/privacy.htm">privacy</a></p>
          <p class="meta">ecommerce by Stripe API <a target="_blank" href="https://stripe.com/docs/api/versioning">rel.2022-11-15</a></p>
-       -->
-
-
-
-         <br>
-         <br>
-
-
-
-<!--
-
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://robotdazero-it-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
--->
-
-
-
+         -->
+      <br>
+      <br>
+      <!--
+         <div id="disqus_thread"></div>
+         <script>
+             /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+             /*
+             var disqus_config = function () {
+             this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+             */
+             (function() { // DON'T EDIT BELOW THIS LINE
+             var d = document, s = d.createElement('script');
+             s.src = 'https://robotdazero-it-1.disqus.com/embed.js';
+             s.setAttribute('data-timestamp', +new Date());
+             (d.head || d.body).appendChild(s);
+             })();
+         </script>
+         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+         
+         -->
    </div>
 </div>
 <!-- klaviyo version
@@ -158,121 +149,98 @@
        <p class="meta">Powered by Klaviyo - leggi la loro <a target="_blank" href="https://www.klaviyo.com/legal/privacy/privacy-notice">privacy</a></p>
      </div>
    </div>
--->
-
+   -->
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
 <div class="related-posts">
-   <div class="row justify-content-center">
-      <div class="col">
-         <h2 class="section-title">Articoli collegati</h2>
-      </div>
+<div class="row justify-content-center">
+   <div class="col">
+      <h2 class="section-title">Articoli collegati</h2>
    </div>
-   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-lg-5">
-      {{ range . -}}
-      <div class="col">
-         <div class="card">
-            {{- .Scratch.Set "fillImageCard" "1270x620 Center" -}}
-            {{ partial "content/card-image.html" . }}
-            <div class="card-body">
-               <article>
-                  <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-                  <p>{{ .Params.excerpt | safeHTML }}</p>
-                  {{ partial "main/blog-meta.html" . -}}
-               </article>
-            </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-lg-5">
+   {{ range . -}}
+   <div class="col">
+      <div class="card">
+         {{- .Scratch.Set "fillImageCard" "1270x620 Center" -}}
+         {{ partial "content/card-image.html" . }}
+         <div class="card-body">
+            <article>
+               <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
+               <p>{{ .Params.excerpt | safeHTML }}</p>
+               {{ partial "main/blog-meta.html" . -}}
+            </article>
          </div>
       </div>
-      {{ end -}}
    </div>
-
-
-
+   {{ end -}}
+</div>
 <!-- ecwid shop -->
-     <div class="col">
-         <div class="card">
-            <div class="card-body">
-<article>
-<h2>Dai una occhiata al nostro Kit per profondimetro digitale!</h2>
-
-<img class="img-fluid blur-up lazyloaded" src="/prodotti/201.jpg" width="900" alt="">
-
-
-
-<h4>Dettagli del prodotto (hw103)</h4>
-
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert" style="font-size: 0.80em;">
-   Lista dei materiali (<a href="https://en.wikipedia.org/wiki/Bill_of_materials" target="_blank">BOM</a>)<br>
-  <br><strong>A.</strong> Modulo display seriale LCD 16X2 carattere blu con retroilluminazione (<strong>pz 1</strong>) - <a href="https://amzn.to/48IckLZ" target="_blank">vedi su Amazon</a>
-  <br><strong>B.</strong> Scheda sviluppo ESP-WROOM-32 (<strong>pz 1</strong>) - <a href="https://amzn.to/3tHlTfu" target="_blank">vedi su Amazon</a>
-  <br><strong>C.</strong> Sensore ad ultrasuoni impermeabile ANGEEK JSN-SR04T (<strong>pz 1</strong>) - <a href="https://amzn.to/3TPjjyI" target="_blank">vedi su Amazon</a>
-  <br><strong>D.</strong> Potenziometro 5 KOhm (<strong>pz 1</strong>) - <a href="https://amzn.to/4aQrBwk" target="_blank">vedi su Amazon</a>
-  <br><strong>E.</strong> Alimentatore USB da Muro 2 Porte 5V/2.1A (<strong>pz 1</strong>) - <a href="https://amzn.to/3H5Tvqu" target="_blank">vedi su Amazon</a></a>
-  <br><strong>F.</strong> Circuito stampato multifunzione <strong>Robotdazero</strong> “orange” (<strong>pz 1</strong>)</li> - <a href="https://robotdazero.company.site/RDO-r-NE240-circuito-stampato-multifunzione-per-ESP32-p552837369" target="_blank">vedi sul nostro ecommerce</a>
-  <br><strong>G.</strong> Cavo connessione USB "basic" tipo B per ESP32 (<strong>pz 1</strong>) - <a href="https://amzn.to/48ph8pO" target="_blank">vedi su Amazon</a>
-  <br><strong>H.</strong> Mammut bianchi (<strong>pz 1</strong>) - <a href="https://amzn.to/48m5QTu" target="_blank">vedi su Amazon</a>
-  <br><strong>I.</strong> Matassina fili per bassa tensione <12V (<strong>mt.2</strong>)
-  <br><strong>L.</strong> Cornicetta impermeabile stampata in 3D <strong>Robotdazero</strong> per il display LCD,
-  <br><strong></strong> &nbsp;&nbsp;&nbsp;in materiale <a href="https://it.wikipedia.org/wiki/Polietilene_tereftalato" target="_blank">PETG</a> di alta qualità - indispensabile per uso esterno (<strong>pz 1</strong>)
+<div class="col">
+   <div class="card">
+      <div class="card-body">
+         <article>
+            <h2>Dai una occhiata al nostro Kit per profondimetro digitale!</h2>
+            <img class="img-fluid blur-up lazyloaded" src="/prodotti/201.jpg" width="900" alt="">
+            <h4>Dettagli del prodotto (hw103)</h4>
+            <div class="alert alert-doks d-flexflex-shrink-1" role="alert" style="font-size: 0.80em;">
+               Lista dei materiali (<a href="https://en.wikipedia.org/wiki/Bill_of_materials" target="_blank">BOM</a>)<br>
+               <br><strong>A.</strong> Modulo display seriale LCD 16X2 carattere blu con retroilluminazione (<strong>pz 1</strong>) - <a href="https://amzn.to/48IckLZ" target="_blank">vedi su Amazon</a>
+               <br><strong>B.</strong> Scheda sviluppo ESP-WROOM-32 (<strong>pz 1</strong>) - <a href="https://amzn.to/3tHlTfu" target="_blank">vedi su Amazon</a>
+               <br><strong>C.</strong> Sensore ad ultrasuoni impermeabile ANGEEK JSN-SR04T (<strong>pz 1</strong>) - <a href="https://amzn.to/3TPjjyI" target="_blank">vedi su Amazon</a>
+               <br><strong>D.</strong> Potenziometro 5 KOhm (<strong>pz 1</strong>) - <a href="https://amzn.to/4aQrBwk" target="_blank">vedi su Amazon</a>
+               <br><strong>E.</strong> Alimentatore USB da Muro 2 Porte 5V/2.1A (<strong>pz 1</strong>) - <a href="https://amzn.to/3H5Tvqu" target="_blank">vedi su Amazon</a></a>
+               <br><strong>F.</strong> Circuito stampato multifunzione <strong>Robotdazero</strong> “orange” (<strong>pz 1</strong>)</li> - <a href="https://robotdazero.company.site/RDO-r-NE240-circuito-stampato-multifunzione-per-ESP32-p552837369" target="_blank">vedi sul nostro ecommerce</a>
+               <br><strong>G.</strong> Cavo connessione USB "basic" tipo B per ESP32 (<strong>pz 1</strong>) - <a href="https://amzn.to/48ph8pO" target="_blank">vedi su Amazon</a>
+               <br><strong>H.</strong> Mammut bianchi (<strong>pz 1</strong>) - <a href="https://amzn.to/48m5QTu" target="_blank">vedi su Amazon</a>
+               <br><strong>I.</strong> Matassina fili per bassa tensione <12V (<strong>mt.2</strong>)
+               <br><strong>L.</strong> Cornicetta impermeabile stampata in 3D <strong>Robotdazero</strong> per il display LCD,
+               <br><strong></strong> &nbsp;&nbsp;&nbsp;in materiale <a href="https://it.wikipedia.org/wiki/Polietilene_tereftalato" target="_blank">PETG</a> di alta qualità - indispensabile per uso esterno (<strong>pz 1</strong>)
+            </div>
+            <br>
+            <div id="my-store-87199052"></div>
+            <div>
+               <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?87199052&data_platform=code&data_date=2024-01-06" charset="utf-8"></script>
+               <script type="text/javascript"> 
+                  window.ec=window.ec||{}; 
+                  window.ec.storefront=window.ec.storefront||{}; 
+                  window.ec.storefront.enable_navigation=false;
+                  window.ec.storefront.product_details_layout="TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT";
+                  window.ec.storefront.product_details_gallery_layout="SINGLE_IMAGE";
+                  window.ec.storefront.product_details_two_columns_with_right_sidebar_show_product_description_on_sidebar=true;
+                  window.ec.storefront.product_details_two_columns_with_left_sidebar_show_product_description_on_sidebar=false;
+                  window.ec.storefront.product_details_show_product_name=true;
+                  window.ec.storefront.product_details_show_breadcrumbs=true;
+                  window.ec.storefront.product_details_show_product_sku=false;
+                  window.ec.storefront.product_details_show_product_price=true;
+                  window.ec.storefront.product_details_show_in_stock_label=true;
+                  window.ec.storefront.product_details_show_number_of_items_in_stock=true;
+                  window.ec.storefront.product_details_show_qty=false;
+                  window.ec.storefront.product_details_show_wholesale_prices=true;
+                  window.ec.storefront.product_details_show_product_options=true;
+                  window.ec.storefront.product_details_show_product_description=true;
+                  window.ec.storefront.product_details_show_delivery_time=undefined;
+                  window.ec.storefront.product_details_show_share_buttons=false;
+                  window.ec.storefront.product_details_position_product_name=100;
+                  window.ec.storefront.product_details_position_breadcrumbs=200;
+                  window.ec.storefront.product_details_position_product_sku=300;
+                  window.ec.storefront.product_details_position_product_price=400;
+                  window.ec.storefront.product_details_position_product_options=undefined;
+                  window.ec.storefront.product_details_position_buy_button=600;
+                  window.ec.storefront.product_details_position_wholesale_prices=700;
+                  window.ec.storefront.product_details_position_product_description=800;
+                  window.ec.storefront.product_details_position_delivery_time=undefined;
+                  window.ec.storefront.product_details_position_share_buttons=900;
+                  window.ec.storefront.product_details_position_subtitle=500;
+                  window.ec.storefront.product_details_show_subtitle=true;
+                  xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","defaultProductId=594459089","id=my-store-87199052");
+               </script>
+            </div>
+      </div>
+   </div>
+   </article>
+   <!-- ecwid shop -->
 </div>
-
-<br>
-
-
-
-
-
-
-
-
-
-<div id="my-store-87199052"></div>
-<div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?87199052&data_platform=code&data_date=2024-01-06" charset="utf-8"></script>
-<script type="text/javascript"> 
-window.ec=window.ec||{}; 
-window.ec.storefront=window.ec.storefront||{}; 
-window.ec.storefront.enable_navigation=false;
-window.ec.storefront.product_details_layout="TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT";
-window.ec.storefront.product_details_gallery_layout="SINGLE_IMAGE";
-window.ec.storefront.product_details_two_columns_with_right_sidebar_show_product_description_on_sidebar=true;
-window.ec.storefront.product_details_two_columns_with_left_sidebar_show_product_description_on_sidebar=false;
-window.ec.storefront.product_details_show_product_name=true;
-window.ec.storefront.product_details_show_breadcrumbs=true;
-window.ec.storefront.product_details_show_product_sku=false;
-window.ec.storefront.product_details_show_product_price=true;
-window.ec.storefront.product_details_show_in_stock_label=true;
-window.ec.storefront.product_details_show_number_of_items_in_stock=true;
-window.ec.storefront.product_details_show_qty=false;
-window.ec.storefront.product_details_show_wholesale_prices=true;
-window.ec.storefront.product_details_show_product_options=true;
-window.ec.storefront.product_details_show_product_description=true;
-window.ec.storefront.product_details_show_delivery_time=undefined;
-window.ec.storefront.product_details_show_share_buttons=false;
-window.ec.storefront.product_details_position_product_name=100;
-window.ec.storefront.product_details_position_breadcrumbs=200;
-window.ec.storefront.product_details_position_product_sku=300;
-window.ec.storefront.product_details_position_product_price=400;
-window.ec.storefront.product_details_position_product_options=undefined;
-window.ec.storefront.product_details_position_buy_button=600;
-window.ec.storefront.product_details_position_wholesale_prices=700;
-window.ec.storefront.product_details_position_product_description=800;
-window.ec.storefront.product_details_position_delivery_time=undefined;
-window.ec.storefront.product_details_position_share_buttons=900;
-window.ec.storefront.product_details_position_subtitle=500;
-window.ec.storefront.product_details_show_subtitle=true;
-xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","defaultProductId=594459089","id=my-store-87199052");
-</script>
-</div>
-</div>
-</div>
-</article>
-<!-- ecwid shop -->
-
-
-
-</div>
-
 <style>
    #popup { display: none; position: fixed; top: 10%; left: 10%; width: 80%; height: 80%; background-color: white; z-index: 10; }
    #popup iframe { width: 100%; height: 110%; border: 0; }
@@ -280,64 +248,62 @@ xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","cate
 </style>
 <div id="popup"><iframe id="popupiframe"></iframe></div>
 <div id="popupdarkbg"></div>
-
 <script>
-document.getElementById("link").onclick = function (e) {
-   e.preventDefault();
-   document.getElementById("popupdarkbg").style.display = "block";
-   document.getElementById("popup").style.display = "block";
-   document.getElementById('popupiframe').src = "https://dashboard.mailerlite.com/forms/217779/106846220269389458/share";
-   document.getElementById('popupdarkbg').onclick = function () {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("popupdarkbg").style.display = "none";
-   };
-   return false;
-}
-
-window.onkeydown = function (e) {
-   if (e.keyCode == 27) {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("popupdarkbg").style.display = "none";
+   document.getElementById("link").onclick = function (e) {
       e.preventDefault();
-      return;
+      document.getElementById("popupdarkbg").style.display = "block";
+      document.getElementById("popup").style.display = "block";
+      document.getElementById('popupiframe').src = "https://dashboard.mailerlite.com/forms/217779/106846220269389458/share";
+      document.getElementById('popupdarkbg').onclick = function () {
+         document.getElementById("popup").style.display = "none";
+         document.getElementById("popupdarkbg").style.display = "none";
+      };
+      return false;
    }
-}
-
-document.getElementById("scroller").onclick = function (e) {
-   e.preventDefault();
-   document.getElementById("popupdarkbg").style.display = "block";
-   document.getElementById("popup").style.display = "block";
-   document.getElementById('popupiframe').src = "https://dashboard.mailerlite.com/forms/217779/106846220269389458/share";
-   document.getElementById('popupdarkbg').onclick = function () {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("popupdarkbg").style.display = "none";
-   };
-   return false;
-}
-
-const percentLabel = document.querySelector("#percent");
-const originalTitle = document.title;
-
-window.addEventListener("scroll", () => {
-   let scrollTop = window.scrollY;
-   let docHeight = document.body.offsetHeight;
-   let winHeight = window.innerHeight;
-   let scrollPercent = scrollTop / (docHeight - winHeight);
-   let scrollPercentRounded = Math.round(scrollPercent * 100);
-   <!-- parametro per scroll -->
-   if (scrollPercentRounded > 101) {
-      const buttonElement = document.getElementById('scroller');
-      if (buttonElement) {
-         buttonElement.click();
-         buttonElement.remove();
-      } else {
-         console.error('Element with ID "scroller" not found');
+   
+   window.onkeydown = function (e) {
+      if (e.keyCode == 27) {
+         document.getElementById("popup").style.display = "none";
+         document.getElementById("popupdarkbg").style.display = "none";
+         e.preventDefault();
+         return;
       }
-      console.log("scroll eccellente");
    }
-   console.log(scrollPercentRounded);
-});
+   
+   document.getElementById("scroller").onclick = function (e) {
+      e.preventDefault();
+      document.getElementById("popupdarkbg").style.display = "block";
+      document.getElementById("popup").style.display = "block";
+      document.getElementById('popupiframe').src = "https://dashboard.mailerlite.com/forms/217779/106846220269389458/share";
+      document.getElementById('popupdarkbg').onclick = function () {
+         document.getElementById("popup").style.display = "none";
+         document.getElementById("popupdarkbg").style.display = "none";
+      };
+      return false;
+   }
+   
+   const percentLabel = document.querySelector("#percent");
+   const originalTitle = document.title;
+   
+   window.addEventListener("scroll", () => {
+      let scrollTop = window.scrollY;
+      let docHeight = document.body.offsetHeight;
+      let winHeight = window.innerHeight;
+      let scrollPercent = scrollTop / (docHeight - winHeight);
+      let scrollPercentRounded = Math.round(scrollPercent * 100);
+      <!-- parametro per scroll -->
+      if (scrollPercentRounded > 101) {
+         const buttonElement = document.getElementById('scroller');
+         if (buttonElement) {
+            buttonElement.click();
+            buttonElement.remove();
+         } else {
+            console.error('Element with ID "scroller" not found');
+         }
+         console.log("scroll eccellente");
+      }
+      console.log(scrollPercentRounded);
+   });
 </script>
-
 {{ end -}}
 {{ end }}
