@@ -74,6 +74,6 @@
   weight = 10
 
 [[footer]]
-  name = "Slack"
-  url = "https://app.slack.com/huddle/T044KLKAA1W/C043T0ZMHHB"
+  name = "Telegram"
+  url = "https://t.me/robotdazero_join"
   weight = 10
