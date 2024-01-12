@@ -1,0 +1,134 @@
+{{ define "main" }}
+
+
+
+<style>
+   .curved-div {
+   background: #ff3c00;
+   color: #FFF;
+   text-align: center;
+   }
+   .curved-div h1 {
+   font-size: 3rem;
+   }
+   .curved-div p {
+   font-size: 1.4rem;
+   font-weight: 200;
+   }
+   .bz-form {width: 684px; margin: 200px auto 0; }
+   .bz-container {
+   width: 100%;
+   background-color: #fff;
+   padding: 30px 40px 20px;
+   border-radius: 7px;
+   }
+   .bz-btmmargin {
+   margin-bottom: 14px !important;
+   }
+   .bz-topmargin {
+   margin-top: 6px !important;
+   }
+   .bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
+   .bz-right {float: left; width: 49%; min-width: 300px;}
+   .bz-clear {clear: both;}
+   input[type='text'], input[type='email'] {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   outline: 0;
+   display: block;
+   width: 100%;
+   padding: 7px;
+   border: 0;
+   border-bottom: 1px solid #ddd;
+   background: transparent;
+   margin-bottom: 10px;
+   height: 45px;
+   }
+   input[type='submit'] {
+   float: right;
+   }
+   @media only screen and (max-width: 600px) {
+   .bz-container {padding: 10px;}
+   .bz-form {width: 100%;}
+   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
+   input[type='submit'] {margin-left: 10px;}
+   }
+</style>
+
+
+
+{{ end }}
+{{ define "sidebar-prefooter" }}
+{{ if eq $.Site.Language.LanguageName "Italiano" }}
+{{ end }}
+{{ end }}
+{{ define "sidebar-footer" }}
+
+<div class="00curved-div">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40">
+      <path fill="#FF3C00" fill-opacity="1" d="M0,160L0,288L1440,288L1440,0L0,0L0,0Z" style="--darkreader-inline-fill: #cc3000;" data-darkreader-inline-fill=""></path>
+   </svg>
+   <section class="00section section-sm">
+      <div class="00container">
+         <h2>Grazie per esserti iscritto! </h2>
+
+
+
+<p>
+   
+Se la risposta a una di queste domande è sì, allora sei nel posto giusto.
+
+Il nostro corso online di microelettronica e Arduino ti aiuterà a fare un salto di qualità nel tuo hobby.
+
+Imparerai:
+
+- Le basi della microelettronica
+- Come utilizzare Arduino per costruire progetti
+- Le tecniche avanzate di microelettronica
+Con il nostro corso, sarai in grado di:
+
+
+
+
+<ul>
+  <li>Costruire progetti più complessi e sofisticati</li>
+  <li>Migliorare le tue capacità di risoluzione dei problemi</li>
+  <li>Acquisire nuove conoscenze e competenze</li>
+</ul>
+
+
+
+
+<p>Non importa se sei un principiante o un esperto, il nostro corso è adatto a tutti.</p>
+
+Iscriviti oggi stesso e inizia a migliorare il tuo hobby di microelettronica!
+
+CTA SCRIVITI ADESSO
+
+<!--
+Ecco alcuni altri dettagli che potrebbero essere inclusi nel copy:
+
+Testimonianze di altri studenti che hanno seguito il corso
+Un elenco dei progetti che gli studenti potranno imparare a costruire
+Un prezzo competitivo
+Utilizzando questi dettagli, il copy pubblicitario sarà ancora più efficace nel convincere il lettore a fare un cambio di passo nel suo hobby.
+-->
+
+</p>
+
+
+
+
+
+
+
+      </div>
+      <img width="25%" class="x figure-img img-fluid lazyload blur-up" src="/124.svg" alt="">
+   </section>
+   <svg viewBox="0 0 1440 319">
+      <path fill="#4F2872" fill-opacity="0.99" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+   </svg>
+</div>
+
+{{ end }}
