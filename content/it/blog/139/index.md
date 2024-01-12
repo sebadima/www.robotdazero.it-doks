@@ -6,7 +6,7 @@ date: 2024-01-02T09:19:42+01:00
 lastmod: 2024-01-02T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.png"]
+images: ["header.jpeg"]
 categories: ["News"]
 tags: ["LED", "ESP32", "automazione"]
 contributors: ["sebadima"]
@@ -21,8 +21,6 @@ mermaid: true
 ## L'ESP32 e i dispositivi ad alto assorbimento
 
 In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire. In questi casi, prima di passare ai relays elettronici o meccanici possiamo ricorrere ad un economico transistor di media potenza come il **TIP120**.
-
-<br>
 
 > Un errore comune tra i neofiti è provare a pilotare motori elettrici, servocomandi o decine di Led usando la corrente di uscita di un ESP32 o di un Arduino. Purtroppo tali dispositivi esterni possono richiedere correnti elevate, molto più alte di quelle erogabili da un controller. Arduino, ad esempio può erogare appena **40mA** a **5.0V** e quindi **0.2W** di potenza a fronte di richieste di oltre **50**~**100W**!
 
