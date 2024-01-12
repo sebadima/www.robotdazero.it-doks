@@ -41,7 +41,7 @@ blockquote {
     padding-right:  35px;
     padding-left:   35px;
     border-left:     5px solid #D8E3EB;
-    background-color: #F6F6F6;
+    # non funziona con il black ricordatelo background-color: #F6F6F6;
 
 }
 
