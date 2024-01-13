@@ -18,7 +18,7 @@ homepage: false
 
 ## In arrivo l'ESP32-P4
 
-Espressif oggi annuncia l'imminente rilascio del suo ultimo chip <a href="https://www.espressif.com/en/news/ESP32-P4" target="_blank" rel="noopener">ESP32-P4</a>. È alimentato da una CPU <a href="https://en.wikipedia.org/wiki/RISC-V" target="_blank" rel="noopener">RISC-V</a> dual-core con un'estensione delle istruzioni AI, un sottosistema di memoria avanzato e periferiche integrate ad alta velocità. 
+**Espressif** oggi annuncia l'imminente rilascio del suo ultimo chip <a href="https://www.espressif.com/en/news/ESP32-P4" target="_blank" rel="noopener">ESP32-P4</a>. È alimentato da una CPU <a href="https://en.wikipedia.org/wiki/RISC-V" target="_blank" rel="noopener">RISC-V</a> dual-core con un'estensione delle istruzioni AI, un sottosistema di memoria avanzato e periferiche integrate ad alta velocità. 
 ESP 32-P4 è progettato per applicazioni ad alte prestazioni che richiedono una forte sicurezza. 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
@@ -36,20 +36,22 @@ Il sistema ESP32-P4 ha 768KB di SRAM on-chip, che può diventare accessibile com
 
 ### La Sicurezza
 
-La sicurezza è al centro del progetto ESP32-P4. Caratteristiche, come avvio sicuro, crittografia Flash,acceleratori crittografici, TRNG, etc. forniscono la infrastruttura necessaria per blindare il dispositivo. Con l'aiuto della periferica di firma digitale e di un'unità di gestione delle chiavi dedicata, ESP32-P4 garantisce che le chiavi private siano generate sul SoC stesso e non siano compromesse da software e dati in chiaro (non crittografati). Il SoC supporta anche la protezione degli accessi hardware che gestisce i permessi di accesso.
+La sicurezza è al centro del progetto ESP32-P4. Caratteristiche, come avvio sicuro, crittografia Flash,acceleratori crittografici, TRNG, etc. forniscono la infrastruttura necessaria per blindare il dispositivo. 
+
+> **Con l'aiuto della periferica di firma digitale** e di un'unità di gestione delle chiavi dedicata, ESP32-P4 garantisce che le chiavi private siano generate sul SoC stesso e non siano compromesse da software e dati in chiaro (non *crittografati*). Il SoC supporta anche la protezione degli accessi hardware che gestisce i permessi di accesso.
 
 
 ## Ricca interfaccia uomo-macchina
 
-ESP32-P4 include il supporto per MIPI-CSI con ISP integrato e MIPI-DSI, consentendo così l'integrazione di una fotocamera ad alta risoluzione. Per consentire una maggiore connettività sono inclusi anche ingressi touch capacitivi e funzioni di riconoscimento vocale che questa dispositivo adattissimo ad ogni applicazione basata su HMI.
+**ESP32-P4** include il supporto per MIPI-CSI con ISP integrato e MIPI-DSI, consentendo così l'integrazione di una fotocamera ad alta risoluzione. Per consentire una maggiore connettività sono inclusi anche ingressi touch capacitivi e funzioni di riconoscimento vocale che questa dispositivo adattissimo ad ogni applicazione basata su HMI.
 
-Inoltre, ESP32-P4 integra acceleratori hardware per vari protocolli di codifica dei media, nonché protocolli di compressione evoluti per l'elaborazione delle immagini, incluso il supporto per la codifica H.264. Il chip possiede anche un hardware integrato **Pixel Processing Accelerator**, adatto per lo sviluppo di interfacce GUI.
+**Inoltre**, ESP32-P4 integra acceleratori hardware per vari protocolli di codifica dei media, nonché protocolli di compressione evoluti per l'elaborazione delle immagini, incluso il supporto per la codifica H.264. Il chip possiede anche un hardware integrato **Pixel Processing Accelerator**, adatto per lo sviluppo di interfacce GUI.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
 
 ### Periferiche altamente integrate
 
-ESP32-P4 ha più di 50 GPIO programmabili, che è significativamente più di quelli di qualsiasi altro chip costruito da Espressif. Supporta tutte le periferiche comunemente utilizzate, come SPI, I2S, I2C, LED PWM, MCPWM, RMT, ADC, DAC, UART e TWAITM. Inoltre, ESP32-P4 supporta USB OTG 2.0 HS, Ethernet e SDIO Host 3.0 per la connettività ad alta velocità.
+**ESP32-P4** ha più di 50 GPIO programmabili, che è significativamente più di quelli di qualsiasi altro chip costruito da Espressif. Supporta tutte le periferiche comunemente utilizzate, come SPI, I2S, I2C, LED PWM, MCPWM, RMT, ADC, DAC, UART e TWAITM. Inoltre, ESP32-P4 supporta USB OTG 2.0 HS, Ethernet e SDIO Host 3.0 per la connettività ad alta velocità.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
 🔑 Se l'applicazione richiede connettività wireless, ESP32-P4 può facilmente connettersi, come un chip compagno wireless, a qualsiasi prodotto della serie ESP32-C/S/H su SPI/SDIO / UART, utilizzando le soluzioni ESP-Hosted o ESP-AT. 
