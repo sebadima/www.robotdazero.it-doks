@@ -45,7 +45,7 @@ blockquote {
 
 blockquote:before {
     display: block;
-    font-size: 100%;
+    font-size: 97%;
     color: #4a9fc9;
     font-style: italic;
     padding-left: 12px;
