@@ -8,7 +8,7 @@ description = "Robotdazero.it fornisce la piattaforma Kaspian per la analisi in 
 breadCrumb = true
 
 ## Documentation
-# docsVersion = "0.6"
+# docsVersion = "0.5"
 
 ## Open Graph
 images = ["doks.png"]
