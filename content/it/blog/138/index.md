@@ -150,7 +150,7 @@ Mappatura dei chip RISC Tensilica Xtensa LX6 e LX7
 
 <br>
 
-I chip possiedono inoltre un co-processore a bassissima potenza che viene utilizzato per eseguire conversioni analogico-digitali e altre operazioni e può funzionare in modalità deep sleep - low-power. In questo modo, si ottiene un consumo elettrico ridottissimo.
+> **I chip possiedono un co-processore** a bassissima potenza che viene utilizzato per eseguire conversioni analogico-digitali e altre operazioni e può funzionare in modalità deep sleep - low-power. In questo modo, si ottiene un consumo elettrico ridottissimo.
 
 ### Un breve confronto con Arduino
 
@@ -225,11 +225,11 @@ Come potete vedere dall'immagine sopra del diagramma di piedinatura del modulo E
 
 #### I pin digitali
 
-> L'ESP32 ha un totale di 34 pin digitali. Questi pin sono simili ai pin digitali Arduino che consentono di aggiungere display a LED, display OLED, sensori, pulsanti, cicalini, ecc. ai nostri progetti.
+> **L'ESP32 ha un totale di 34 pin digitali**. Questi pin sono simili ai pin digitali Arduino che consentono di aggiungere display a LED, display OLED, sensori, pulsanti, cicalini, ecc. ai nostri progetti.
 
 La maggior parte di questi pin supporta anche l'uso di pull-up interno (in sostanza una resistenza da 10 KOhm). Ciò li rende ideali per il collegamento di pulsanti e tastiere a matrice, e per controllare gruppi di LED.
 
-> Il modulo WROOM ESP32 ha 25 pin GPIO e la corrente massima assorbita per un singolo GPIO è 40mA secondo la sezione "Condizioni operative consigliate" nella scheda tecnica dell'ESP32.
+> **Il modulo WROOM ESP32 ha 25 pin GPIO** e la corrente massima assorbita per un singolo GPIO è 40mA secondo la sezione "Condizioni operative consigliate" nella scheda tecnica dell'ESP32.
 
 ##### Ingresso solo pin (senza resistente di PULLUP)
 
