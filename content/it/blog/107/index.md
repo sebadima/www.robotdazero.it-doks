@@ -88,7 +88,6 @@ Altri moduli elettronici
 > Ad esempio, se si desidera alimentare un display LCD da 128x64 che consuma 100 mA, è possibile farlo utilizzando un alimentatore USB da 500 mA. Se si desidera alimentare un motore che consuma 1 A, è necessario utilizzare un alimentatore USB da 2 A o superiore.
 
 <br>
-<br>
 
 <img img width="800" style="border: 2px solid #eeeeee;" class="x figure-img img-fluid lazyload blur-up"  src="images/102.jpg" alt="display LCD da 128x64 ad alto assorbimento">
 

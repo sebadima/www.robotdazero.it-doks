@@ -22,7 +22,7 @@ homepage: false
 ESP 32-P4 è progettato per applicazioni ad alte prestazioni che richiedono una forte sicurezza. 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
- 👉 In effetti, ESP32-P4 mira a soddisfare la prossima era di applicazioni embedded che si baseranno su un solido supporto per ricche interfacce uomo-macchina, un efficiente edge computing e migliori requisiti di connettività.
+ 👉 <strong>ESP32-P4 mira a soddisfare</strong> la prossima era di applicazioni embedded che si baseranno su un solido supporto per ricche interfacce uomo-macchina, un efficiente edge computing e migliori requisiti di connettività.
 </div>
 
 
@@ -54,7 +54,7 @@ La sicurezza è al centro del progetto ESP32-P4. Caratteristiche, come avvio sic
 **ESP32-P4** ha più di 50 GPIO programmabili, che è significativamente più di quelli di qualsiasi altro chip costruito da Espressif. Supporta tutte le periferiche comunemente utilizzate, come SPI, I2S, I2C, LED PWM, MCPWM, RMT, ADC, DAC, UART e TWAITM. Inoltre, ESP32-P4 supporta USB OTG 2.0 HS, Ethernet e SDIO Host 3.0 per la connettività ad alta velocità.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
-🔑 Se l'applicazione richiede connettività wireless, ESP32-P4 può facilmente connettersi, come un chip compagno wireless, a qualsiasi prodotto della serie ESP32-C/S/H su SPI/SDIO / UART, utilizzando le soluzioni ESP-Hosted o ESP-AT. 
+🔑 <strong>Se l'applicazione richiede connettività wireless</strong> ESP32-P4 può facilmente connettersi, come un chip compagno wireless, a qualsiasi prodotto della serie ESP32-C/S/H su SPI/SDIO / UART, utilizzando le soluzioni ESP-Hosted o ESP-AT. 
 </div>
 
 
