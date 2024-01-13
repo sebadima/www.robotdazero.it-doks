@@ -292,13 +292,12 @@ lib_deps =
 
 Finita la compilazione e l'upload puoi lanciare il tuo browser all'indirizzo che apparirà dopo la connessione. Dopo la apertura della pagina potrai usare i cursori per regolare separatamente i livelli dei tre colori fondamentali. 
 
-### Conclusione
+## Conclusione
 
 Una delle competenze che vorrai imparare con l'ESP32 è il pilotaggio di carichi esterni. Potrai così creare sistemi di illuminazione automatizzati, centraline di sicurezza avanzate e magari sistemi di irrigazione regolati dal controller. 
 
-Per questi progetti potrai avvalerti di transistor come il TIP120, ma anche di schede commerciali in grado di azionare  grossi motori elettrici. Queste schede sono di utilizzo semplicissimo: basta collegare il loro pin di **input** ad uno dei pin dell'ESP32 (ad esempio **25**,**26**,**27** del nostro prototipo) e il gioco è fatto!
-Imparare a pilotare carichi esterni con ESP32 è certamente uno *skill*  essenziale per chiunque voglia creare progetti di domotica avanzati.
+Per questi progetti potrai avvalerti di transistor come il TIP120, ma anche di schede commerciali in grado di azionare  grossi motori elettrici. Queste schede sono di utilizzo semplicissimo: basta collegare il loro pin di **input** ad uno dei pin dell'ESP32 (ad esempio **25**, **26** e **27** del nostro prototipo) e il gioco è fatto!
+Imparare a pilotare carichi esterni con ESP32 è certamente uno *skill*  essenziale per chiunque voglia creare progetti di microelettronica avanzati.
 
 <br>
-<br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.7.1</p>  
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.8.0</p> 
