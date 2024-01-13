@@ -8,7 +8,7 @@ description = "Robotdazero.it fornisce la piattaforma Kaspian per la analisi in 
 breadCrumb = true
 
 ## Documentation
-# docsVersion = "0.5"
+# docsVersion = "0.6"
 
 ## Open Graph
 images = ["doks.png"]
@@ -66,7 +66,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "©2024 Robotdazero.it - P.IVA IT00378808885"
+footer = "© 2016 - 2024 Robotdazero - P.IVA IT00378808885"
 
 # Feed
 copyRight = "Copyright (c) 2018-2023 Robotdazero.it"
