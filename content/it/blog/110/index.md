@@ -246,7 +246,7 @@ Prima di entrare in modalità light sleep, ESP32 memorizza il suo stato interno 
 
 
 
-### Modalità #4: "Deep Sleep” (0,15mA ~ 10µA)
+### Modalità #4: "Deep Sleep” (0.15mA ~ 10µA)
 
 In modalità deep sleep, le CPU, la maggior parte della RAM e tutte le periferiche digitali sono disabilitate. Solo le seguenti parti del chip rimangono operative:
 
@@ -280,25 +280,23 @@ RTC_DATA_ATTR int myVar = 0;
 
 Quando il chip si sveglia dal sonno profondo, esegue un reset e inizia l'esecuzione del programma dall'inizio.
 
-Quando si sveglia dal sonno profondo, l'ESP32 può eseguire uno stub di veglia del sonno profondo. È un pezzo di codice che viene eseguito non appena il chip si sveglia, prima che venga eseguito qualsiasi normale inizializzazione, bootloader o codice ESP-IDF. Dopo aver eseguito il wake stub, il chip può tornare a dormire o continuare ad avviare ESP-IDF normalmente.
+Quando si sveglia dal "deep sleep", l'ESP32 può eseguire uno **wake stub** di sveglia del deep sleep. 
 
-Se sei interessato a saperne di più su ESP32 Deep Sleep e le sue fonti di risveglio, visita il nostro tutorial approfondito qui sotto.
-
-Tutorial per ESP32 Deep Sleep Wakeup Sources
-ESP32 Sonno profondo e le sue fonti di risveglio
-Quando il tuo progetto IoT è alimentato da un adattatore a muro, non ti importa troppo del consumo energetico. Ma se hai intenzione di alimentare il tuo...
+> Il **wake stub** è un pezzo di codice che viene eseguito non appena il chip si sveglia, PRIMA che venga eseguita qualsiasi normale inizializzazione, bootloader o codice utente. Dopo aver eseguito il wake stub, il chip può **1** - tornare a dormire oppure **2** - continuare ad eseguire il codice utente.
 
 ### Modalità #5: "Hibernation” (2.5µA)
 
 La modalità Hibernation o Ibernazione è molto simile al "deep sleep". L'unica differenza è che in modalità ibernazione, il chip disabilita l'<a href="https://it.wikipedia.org/wiki/Oscillatore" target="_blank">oscillatore</a>   interno a 8 MHz e il coprocessore ULP, lasciando solo un timer RTC e alcuni pin GPIO per "risvegliare" il chip.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 Poiché anche la memoria di ripristino RTC è disattivata, non è possibile salvare i dati in modalità ibernazione.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>Poiché anche la memoria</strong> di ripristino RTC è disattivata, non è possibile salvare i dati in modalità ibernazione!
 </div>
 
 <br>
 
-Di conseguenza, il consumo energetico del chip è ulteriormente ridotto; in modalità ibernazione, consuma solo circa 2,5 µA.
-Questa modalità è particolarmente utile se si sta lavorando su un progetto che non ha bisogno di essere attivo tutto il tempo.
+Di conseguenza, il consumo energetico del chip è ulteriormente ridotto: in modalità ibernazione consuma solo circa 2,5 µA.
+Questa modalità è particolarmente utile se si sta lavorando su un progetto che non ha bisogno di essere attivo tutto il tempo. 
+
+Ad esempio puoi sfruttare questa modalità per scattare delle foto ad animali, automobili, persone che transitano raramente in un luogo confinato. Un sensore ad <a href="https://www.robotdazero.it/blog/usare-gli-ultrasuoni-con-i-robot/" target="_blank">ultrasuoni</a> collegato ad un pin di "wake up" è in grado di svegliare l'ESP, scattare una foto e salvarla  su una micro SD-Card.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - 110.R.1.6.0 </p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - 110.R.1.6.2 </p>
