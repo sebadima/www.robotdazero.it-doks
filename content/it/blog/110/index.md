@@ -178,26 +178,26 @@ Questa funzione accetta un parametro che specifica il tempo di attesa prima che 
 
 ## LA ANALISI DETTAGLIATA DEI CONSUMI NELLE VARIE MODALITA'
 
-Quanye sono esattamente esattamente la modalità Sleep dell'ESP32?
+##### Quante sono esattamente esattamente la modalità Sleep dell'ESP32?
 
-Grazie alla sua hestione avanzata dell'alimentazione, l'ESP32 offre cinque modalità di alimentazione configurabili. Secondo il requisito di alimentazione:
+Grazie alla sua gestione avanzata dell'alimentazione, l'ESP32 offre cinque modalità di alimentazione configurabili. In ordine di consumo:
 
-- Modalità "Attiva" 
-- Modalità "Modem Sleep" 
-- Modalità "Light Sleep"
-- Modalità "Deep Sleep"
-- Modalità "Hibernation"
+- Modalità "**Attiva**" 
+- Modalità "**Modem Sleep**" 
+- Modalità "**Light Sleep**"
+- Modalità "**Deep Sleep**"
+- Modalità "**Hibernation**"
 
-Ogni modalità ha caratteristiche distinte e capacità di risparmio energetico. Diamo un'occhiata a loro uno per uno.
+Ogni modalità ha caratteristiche distinte e capacità di risparmio energetico. Proviamo a dare un'occhiata analitica.
 
 ### Modalità #1: "Attiva" (160 ~ 260mA)
 La modalità normale è anche indicata come modalità attiva. In questa modalità, tutte le periferiche del chip rimangono attive.
 
-Poiché tutto è sempre attivo in questa modalità (in particolare il modulo WiFi, il core di elaborazione e il modulo Bluetooth), il chip consuma circa 240 mA di potenza. Occasionalmente la scheda può assorbire più di 750 mA in particolare quando sia WiFi e Bluetooth sono utilizzati contemporaneamente.
+Poiché tutto è sempre attivo in questa modalità (in particolare il modulo WiFi, il core di elaborazione e il modulo Bluetooth), il chip consuma circa 240 mA di potenza. Occasionalmente la scheda può assorbire più di **750 mA** in particolare quando sia WiFi che Bluetooth sono utilizzati contemporaneamente.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Secondo la scheda tecnica ESP32</strong>, il consumo energetico durante le operazioni RF in modalità attiva è il seguente:
+<strong>In questa modalità il consumo energetico</strong> della scheda può variare moltissimo tra un istante e il successivo e possiamo quindi parlare solo di consumi medi. Tutti protocolli di comunicazione RF, infatti hanno dei picchi molto alti di consumo nelle operazioni di connessione e riconnessione.
 </div>
 
 <br>
@@ -215,11 +215,13 @@ In modalità sleep modem, tutto è attivo tranne il WiFi, il Bluetooth e la radi
 
 In questa modalità, il chip può consumare dai **3** mA fino a **20** mA.
 
-Per mantenere attiva la connessione, Wi-Fi, Bluetooth e la radio vengono svegliati a intervalli predefiniti. Durante questo schema di sospensione, ESP32 passa dalla modalità attiva alla modalità di sospensione del modem.
+**Per mantenere attiva la connessione, Wi-Fi, Bluetooth e la radio vengono svegliati a intervalli predefiniti. Durante questo schema di sospensione, ESP32 passa dalla modalità attiva alla modalità di sospensione del modem.**
 
 Per realizzare questo sofisticato sistema, l'ESP32 si collega al router in modalità "station mode" usando "DTIM beacon": il modulo Wi-Fi viene disabilitato tra due attivazioni del beacon DTIM e quindi ri-abilitato poco prima dell'arrivo del prossimo beacon. 
 
-Il tempo di sonno è determinato dall'intervallo del DTIM impostato nel router, parliamo di circa 200 ms a 1000 ms.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 Il tempo di "sonno" è determinato dall'intervallo del DTIM impostato nel router, parliamo di circa 200 ms fino a un massimo di 1000 ms.
+</div>
 
 #### Che cos'è il meccanismo DTIM Beacon?
 
@@ -254,14 +256,14 @@ In modalità deep sleep, le CPU, la maggior parte della RAM e tutte le periferic
 7. Periferiche RTC
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>L'ESP32 ha 8kB di memoria SRAM  </strong> che nella nomenclatura di Espressif diventano la "RTC fast memory". I dati salvati sulla RTC non vengono cancellati durante il sonno profondo. Tuttavia, verranno cancellati quando si preme il pulsante di reset (il pulsante etichettato **EN** o "RST" sulla scheda ESP32). </div>
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>L'ESP32 ha 8kB di memoria SRAM  </strong> che nella nomenclatura di Espressif diventano la "RTC fast memory". I dati salvati sulla RTC non vengono cancellati durante il deep sleep. Tuttavia, verranno cancellati quando si preme il pulsante di reset (il pulsante etichettato <strong>EN</strong> o <strong>RST</strong> sull'ESP32).</div>
 
 <br>
 
 In modalità deep sleep, il chip consuma tra **0,15** mA (quando il coprocessore ULP è acceso) e **10** µA. Parliamo di **µA** e quindi in questa modalità il consumo **può** scendere praticamente a zero!
 <br>
 
-> Durante la modalità deep sleep, la CPU principale viene spenta, mentre il coprocessore **ULP** (**Ultra-Low-Power**) può rilevare le letture del sensore e riattivare la CPU in base alle esigenze. Tutto ciò è utile per progettare applicazioni in cui la CPU deve essere svegliata da un evento esterno, come un **timer**, pur mantenendo un consumo energetico minimo.
+Durante la modalità deep sleep, la CPU principale viene spenta, mentre il coprocessore **ULP** (**Ultra-Low-Power**) può rilevare le letture del sensore e riattivare la CPU in base alle esigenze. Tutto ciò è utile per progettare applicazioni in cui la CPU deve essere svegliata da un evento esterno, come un **timer**, pur mantenendo un consumo energetico minimo.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>Tutto ciò che è memorizzato nella memoria principale viene cancellato</strong> e non è più possibile accedervi. Al contratio la piccolissima  memoria RTC viene mantenuta attiva e il suo contenuto viene conservato fino al "risveglio" del chip. Questo è il motivo per cui il chip memorizza i dati di connessione Wi-Fi e Bluetooth proprio nella memoria RTC!
 . </div>
@@ -285,16 +287,25 @@ Se sei interessato a saperne di più su ESP32 Deep Sleep e le sue fonti di risve
 Tutorial per ESP32 Deep Sleep Wakeup Sources
 ESP32 Sonno profondo e le sue fonti di risveglio
 Quando il tuo progetto IoT è alimentato da un adattatore a muro, non ti importa troppo del consumo energetico. Ma se hai intenzione di alimentare il tuo...
-ESP32 Modalità di ibernazione
-La modalità Hibernate è molto simile al sonno profondo. L'unica differenza è che in modalità ibernazione, il chip disabilita l'oscillatore interno a 8 MHz e il coprocessore ULP, lasciando solo un timer RTC (su clock lento) e alcuni GPIO RTC per riattivare il chip.
 
-Poiché anche la memoria di ripristino RTC è disattivata, non è possibile salvare i dati in modalità ibernazione.
 
-ESP32 Modalità di ibernazione Schema a blocchi funzionale
+
+
+
+
+
+
+### Modalità #5: "Hibernation” (2.5µA)
+
+La modalità Hibernation o Ibernazione è molto simile al "deep sleep". L'unica differenza è che in modalità ibernazione, il chip disabilita l'<a href="https://it.wikipedia.org/wiki/Oscillatore" target="_blank">oscillatore</a>   interno a 8 MHz e il coprocessore ULP, lasciando solo un timer RTC e alcuni pin GPIO per "risvegliare" il chip.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 Poiché anche la memoria di ripristino RTC è disattivata, non è possibile salvare i dati in modalità ibernazione.
+</div>
+
+<br>
+
 Di conseguenza, il consumo energetico del chip è ulteriormente ridotto; in modalità ibernazione, consuma solo circa 2,5 µA.
-
 Questa modalità è particolarmente utile se si sta lavorando su un progetto che non ha bisogno di essere attivo tutto il tempo.
-
-
-
+<br>
+<br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - 110.R.1.6.0 </p>
