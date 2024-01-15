@@ -296,7 +296,7 @@ La modalità Hibernation o Ibernazione è molto simile al "deep sleep". L'unica 
 Di conseguenza, il consumo energetico del chip è ulteriormente ridotto: in modalità ibernazione consuma solo circa 2,5 µA.
 Questa modalità è particolarmente utile se si sta lavorando su un progetto che non ha bisogno di essere attivo tutto il tempo. 
 
-Ad esempio puoi sfruttare questa modalità per scattare delle foto ad animali, automobili, persone che transitano raramente in un luogo confinato. Un sensore ad <a href="https://www.robotdazero.it/blog/usare-gli-ultrasuoni-con-i-robot/" target="_blank">ultrasuoni</a> collegato ad un pin di "wake up" è in grado di svegliare l'ESP, scattare una foto e salvarla  su una micro SD-Card.
+Ad esempio puoi sfruttare questa modalità per scattare delle foto ad animali, automobili, persone che transitano raramente in un luogo confinato. Un sensore ad <a href="https://www.robotdazero.it/blog/usare-gli-ultrasuoni-con-i-robot/" target="_blank">ultrasuoni</a> collegato ad un pin GPIO è in grado di svegliare l'ESP, scattare una foto e salvarla  su una micro SD-Card.
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - 110.R.1.6.2 </p>
