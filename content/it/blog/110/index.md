@@ -139,12 +139,6 @@ Quali sono le caratteristiche principali degli alimentatori elettrici da laborat
 <strong>Display</strong>: gli alimentatori moderni sono dotati di display LCD che forniscono informazioni sulla tensione e la corrente in uscita, consentendo un controllo accurato dei valori.
           <strong>Interfaccia</strong> <strong>utente</strong>: gli alimentatori moderni possono essere dotati di un&#8217;interfaccia utente facile da usare, composta da pulsanti e manopole per la regolazione dei valori di tensione e corrente.
       
-<br>
-
-> In conclusione, gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. Quando si sceglie un alimentatore elettrico da laboratorio, è importante valutare le caratteristiche principali come la regolazione della tensione e della corrente, la stabilità, le protezioni, il display e l&#8217;interfaccia utente per garantire un funzionamento sicuro ed efficace.
-
-<br>
-
 Indipendentemente dalla fonte di alimentazione scelta, **è importante assicurarsi che la tensione di alimentazione fornita sia stabile e costante**. Inoltre, è importante scegliere la giusta tensione di alimentazione in base alle <a href="https://www.mischianti.org/it/2020/05/30/esp32-piedinatura-specifiche-e-configurazione-dellarduino-ide-parte-1/" target="_blank" rel="noopener">specifiche</a> dell&#8217;ESP32.
 
 ### COME RIDURRE IL CONSUMO ENERGETICO 
@@ -171,32 +165,16 @@ In questo modo, il dispositivo ESP32 consumerà solo una piccola quantità di en
 
 ##### L'ESP32 offre due modalità sleep:
 
-Light sleep: 
-> In modalità light sleep, la CPU e la maggior parte della RAM rimangono attive, ma il loro consumo energetico è ridotto.
-
-Deep sleep: 
-> In modalità deep sleep, la CPU, la maggior parte della RAM e tutte le periferiche che sono clockate da <a href="https://stackoverflow.com/questions/74925441/esp32-attaching-an-interrupt-directly-to-system-time" target="_blank" rel="noopener">APB_CLK</a> vengono disattivate.
-La modalità deep sleep è più efficiente dal punto di vista energetico rispetto alla modalità light sleep, ma richiede più tempo per riattivare il dispositivo.
+> **Light sleep**: 
+In modalità light sleep, la CPU e la maggior parte della RAM rimangono attive, ma il loro consumo energetico è ridotto.
+<br>**Deep sleep**: 
+In modalità deep sleep, la CPU, la maggior parte della RAM e tutte le periferiche che sono clockate da <a href="https://stackoverflow.com/questions/74925441/esp32-attaching-an-interrupt-directly-to-system-time" target="_blank" rel="noopener">APB_CLK</a> vengono disattivate. La modalità deep sleep è più efficiente dal punto di vista energetico rispetto alla modalità light sleep, ma richiede più tempo per riattivare il dispositivo.
 
 Per entrare in modalità sleep, il programmatore deve utilizzare la funzione 
 ```bash
 esp_deep_sleep_start(). 
 ```
 Questa funzione accetta un parametro che specifica il tempo di attesa prima che il dispositivo venga riattivato. Se il parametro è impostato su 0, il dispositivo verrà riattivato da un evento di riattivazione.
-<br>
-<br>
-
-
-
-
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
 
 ## LA ANALISI DETTAGLIATA DEI CONSUMI NELLE VARIE MODALITA'
 
@@ -212,7 +190,7 @@ Grazie alla sua hestione avanzata dell'alimentazione, l'ESP32 offre cinque modal
 
 Ogni modalità ha caratteristiche distinte e capacità di risparmio energetico. Diamo un'occhiata a loro uno per uno.
 
-### Modalità #1: "Attiva" 
+### Modalità #1: "Attiva" (160 ~ 260mA)
 La modalità normale è anche indicata come modalità attiva. In questa modalità, tutte le periferiche del chip rimangono attive.
 
 Poiché tutto è sempre attivo in questa modalità (in particolare il modulo WiFi, il core di elaborazione e il modulo Bluetooth), il chip consuma circa 240 mA di potenza. Occasionalmente la scheda può assorbire più di 750 mA in particolare quando sia WiFi e Bluetooth sono utilizzati contemporaneamente.
@@ -231,20 +209,19 @@ Poiché tutto è sempre attivo in questa modalità (in particolare il modulo WiF
 Questa modalità consuma il massimo della potenza ed è la meno efficiente. Per risparmiare energia, è necessario disabilitare le funzionalità che non sono in uso passando a un'altra modalità di alimentazione.
 
 
-### Modalità #2: "Modem Sleep" 
+### Modalità #2: "Modem Sleep" (3 ~ 20mA)
 
 In modalità sleep modem, tutto è attivo tranne il WiFi, il Bluetooth e la radio. La CPU rimane attiva e l'orologio è configurabile.
 
-In questa modalità, il chip può consumaew dai **3** mA fino a **20** mA.
+In questa modalità, il chip può consumare dai **3** mA fino a **20** mA.
 
 Per mantenere attiva la connessione, Wi-Fi, Bluetooth e la radio vengono svegliati a intervalli predefiniti. Durante questo schema di sospensione, ESP32 passa dalla modalità attiva alla modalità di sospensione del modem.
 
 Per realizzare questo sofisticato sistema, l'ESP32 si collega al router in modalità "station mode" usando "DTIM beacon": il modulo Wi-Fi viene disabilitato tra due attivazioni del beacon DTIM e quindi ri-abilitato poco prima dell'arrivo del prossimo beacon. 
 
-Il tempo di sonno è determinato dal tempo di intervallo ddak timing DTIM del router, parliamo di circa 200 ms a 1000 ms.
+Il tempo di sonno è determinato dall'intervallo del DTIM impostato nel router, parliamo di circa 200 ms a 1000 ms.
 
 #### Che cos'è il meccanismo DTIM Beacon?
-
 
 > **DTIM è l'acronimo di Delivery Traffic Indication Message**:
 In questo meccanismo, il punto di accesso (AP)/router trasmette frame beacon periodicamente. Ogni frame contiene informazioni relative alla rete. Viene utilizzato per annunciare la presenza di una rete wireless e per sincronizzare tutti i membri connessi.
@@ -253,7 +230,7 @@ In questo meccanismo, il punto di accesso (AP)/router trasmette frame beacon per
 
 
 
-### Modalità #3: "Light Sleep”" 
+### Modalità #3: "Light Sleep” (0.8mA)
 
 Questa modalità è molto simile al "modem sleep" associazione. L'unica differenza è che in modalità light sleep, la CPU, la maggior parte della RAM e le periferiche digitali sono dotate di clock.
 
@@ -267,7 +244,7 @@ Prima di entrare in modalità light sleep, ESP32 memorizza il suo stato interno 
 
 
 
-### Modalità #4: "Deep Sleep”" 
+### Modalità #4: "Deep Sleep” (0,15mA ~ 10µA)
 
 In modalità deep sleep, le CPU, la maggior parte della RAM e tutte le periferiche digitali sono disabilitate. Solo le seguenti parti del chip rimangono operative:
 
@@ -291,7 +268,7 @@ In modalità deep sleep, il chip consuma tra **0,15** mA (quando il coprocessore
 
 <br>
 
-#### Come conservare i dati ad ogni riavvio nella modalità deep sleep
+#### Come conservare i dati nella modalità deep sleep
 
 Se vuoi utilizzare i dati dopo un riavvio, devi memorizzarli nella memoria **RTC** definendo una variabile globale con l'attributo *RTC_DATA_ATTR*. Ad esempio, RTC_DATA_ATTR int myVar = 0;
 
