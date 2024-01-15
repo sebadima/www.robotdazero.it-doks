@@ -178,7 +178,7 @@ Questa funzione accetta un parametro che specifica il tempo di attesa prima che 
 
 ## LA ANALISI DETTAGLIATA DEI CONSUMI NELLE VARIE MODALITA'
 
-##### Quante sono esattamente esattamente la modalità Sleep dell'ESP32?
+##### Quante sono esattamente esattamente la modalità di funzinamento dell'ESP32?
 
 Grazie alla sua gestione avanzata dell'alimentazione, l'ESP32 offre cinque modalità di alimentazione configurabili. In ordine di consumo:
 
