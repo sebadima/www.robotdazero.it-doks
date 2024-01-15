@@ -288,13 +288,6 @@ Tutorial per ESP32 Deep Sleep Wakeup Sources
 ESP32 Sonno profondo e le sue fonti di risveglio
 Quando il tuo progetto IoT è alimentato da un adattatore a muro, non ti importa troppo del consumo energetico. Ma se hai intenzione di alimentare il tuo...
 
-
-
-
-
-
-
-
 ### Modalità #5: "Hibernation” (2.5µA)
 
 La modalità Hibernation o Ibernazione è molto simile al "deep sleep". L'unica differenza è che in modalità ibernazione, il chip disabilita l'<a href="https://it.wikipedia.org/wiki/Oscillatore" target="_blank">oscillatore</a>   interno a 8 MHz e il coprocessore ULP, lasciando solo un timer RTC e alcuni pin GPIO per "risvegliare" il chip.
