@@ -122,7 +122,8 @@ Svantaggi:
 <br>
 <br>
 
-**L&#8217;alimentazione** tramite alimentatore esterno è un&#8217;altra opzione che può essere utile quando si lavora con l&#8217;ESP32. In questo caso, l&#8217;ESP32 viene alimentato attraverso un alimentatore esterno, il quale fornisce una tensione di alimentazione costante e stabile. Questa opzione è particolarmente utile quando si utilizzano sensori o componenti esterni che richiedono una maggiore quantità di corrente. 
+#### L&#8217;alimentazione tramite alimentatore esterno è un&#8217;altra opzione che può essere utile quando si lavora con l&#8217;ESP32. 
+In questo caso, l&#8217;ESP32 viene alimentato attraverso un alimentatore esterno, il quale fornisce una tensione di alimentazione costante e stabile. Questa opzione è particolarmente utile quando si utilizzano sensori o componenti esterni che richiedono una maggiore quantità di corrente. 
 
 Per realizzare progetti come la Centralina <a href="https://www.robotdazero.it/blog/una-centralina-elettronica-per-controllare-il-livello-di-un-serbatoio/" target="_blank" rel="noopener">controllo livello liquidi</a>  che puoi trovare in <a href="https://robotdazero.company.site/Kit-per-profondimetro-digitale-con-ESP32-p594459089" target="_blank" rel="noopener">kit</a> sul nostro <a href="https://robotdazero.company.site/" target="_blank" rel="noopener">ecommerce</a>, la soluzione con alimentatore esterno rimane al momento la soluzione migliore.
   
@@ -132,7 +133,7 @@ Per realizzare progetti come la Centralina <a href="https://www.robotdazero.it/b
 Gli alimentatori elettrici da laboratorio sono strumenti fondamentali per chi lavora con l&#8217;elettronica. Consentono di fornire tensione e corrente regolabili e stabili ai circuiti elettronici, sia per la verifica del funzionamento dei componenti che per la progettazione e la sperimentazione di nuovi circuiti. In questo articolo, esploreremo come funzionano gli alimentatori elettrici da laboratorio e quali sono le loro caratteristiche principali.
 
 ##### Come funzionano gli alimentatori elettrici da laboratorio?
-**Gli** alimentatori elettrici da laboratorio funzionano mediante la conversione di tensione alternata (AC) in tensione continua (DC). L&#8217;alimentatore dispone di un trasformatore che converte la tensione alternata della presa a muro in una tensione alternata di bassa frequenza, che viene quindi raddrizzata e filtrata per ottenere una tensione continua. Questa tensione continua viene quindi regolata e controllata mediante circuiti di regolazione per fornire alla uscita dell&#8217;alimentatore una tensione e una corrente costanti e regolabili.
+Gli alimentatori elettrici da laboratorio funzionano mediante la conversione di tensione alternata (AC) in tensione continua (DC). L&#8217;alimentatore dispone di un trasformatore che converte la tensione alternata della presa a muro in una tensione alternata di bassa frequenza, che viene quindi raddrizzata e filtrata per ottenere una tensione continua. Questa tensione continua viene quindi regolata e controllata mediante circuiti di regolazione per fornire alla uscita dell&#8217;alimentatore una tensione e una corrente costanti e regolabili.
 Quali sono le caratteristiche principali degli alimentatori elettrici da laboratorio?
           
 
@@ -149,14 +150,17 @@ Quali sono le caratteristiche principali degli alimentatori elettrici da laborat
 **Indipendentemente dalla fonte di alimentazione scelta, è importante assicurarsi che la tensione di alimentazione fornita sia stabile e costante**. Inoltre, è importante scegliere la giusta tensione di alimentazione in base alle <a href="https://www.mischianti.org/it/2020/05/30/esp32-piedinatura-specifiche-e-configurazione-dellarduino-ide-parte-1/" target="_blank" rel="noopener">specifiche</a> dell&#8217;ESP32.
 
 ### COME RIDURRE IL CONSUMO ENERGETICO 
-##### L'ESP32 è in grado di entrare in modalità sleep
+##### L'ESP32 è in grado di entrare in modalità "deep sleep":
 
-> **In modalità "deep sleep" il consumo energetico** è ridotto a soli 5 µA. Può essere utilizzata per estendere la durata della batteria di un dispositivo ESP32.
+> **In modalità "deep sleep" il consumo energetico** può essere ridotto fino a soli 5 µA. Può essere utilizzata per estendere la durata della batteria di un dispositivo ESP32.
 Ad esempio, un progetto di domotica che deve monitorare un sensore di temperatura potrebbe entrare in modalità sleep quando il sensore non rileva alcun cambiamento di temperatura. 
 
-In questo modo, il dispositivo ESP32 consumerà solo una piccola quantità di energia, anche se è in funzione 24 ore su 24, 7 giorni su 7.
 
-### COSA E LA MODALITÀ "SLEEP" DELL ESP32?
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+In questo modo, il dispositivo ESP32 consumerà solo una piccola quantità di energia, anche se è in funzione 24 ore su 24, 7 giorni su 7.</div>
+
+
+### LA MODALITÀ "SLEEP" DELL ESP32
 
 La modalità sleep dell'ESP32 è una modalità di funzionamento in cui il consumo energetico del chip è notevolmente ridotto. In modalità sleep, la CPU, la maggior parte della RAM e tutte le periferiche che sono clockate da <a href="https://stackoverflow.com/questions/74925441/esp32-attaching-an-interrupt-directly-to-system-time" target="_blank" rel="noopener">APB_CLK</a> vengono disattivate. 
 
@@ -244,7 +248,7 @@ Questa modalità è molto simile al "modem sleep" associazione. L'unica differen
 
 > **Clock gating è una tecnica di gestione dell'alimentazione** per ridurre il consumo di potenza dinamica rimuovendo o ignorando il segnale di clock della scheda. Il <a href="https://anysilicon.com/the-ultimate-guide-to-clock-gating/" target="_blank">Clock gating</a> riduce il consumo energetico ignorando alcuni cicli del clock (<a href="https://en.wikipedia.org/wiki/Clock_gating" target="_blank">pruning</a>). Con questo sistema vengono disabilitate alcune parti del circuito e in particolare vengono bloccati i circuiti di <a href="https://www.sciencedirect.com/topics/engineering/flip-flop-circuits" target="_blank">flip-flop</a>, impedendo loro di commutare stato. Poichè i circuiti di flip-flop consumano una buona dose di energia, il consumo energetico complessivo viene ridotto enormemente.
 
-Durante la modalità light sleep, la CPU viene messa in pausa disabilitando il suo impulso di clock. Il bmodulo RTC e il coprocessore ULP, d'altra parte, rimangono attivi. Ciò si traduce in un consumo energetico inferiore rispetto alla modalità sleep del modem, che è di circa **0,8** mA.
+Durante la modalità light sleep, la CPU viene messa in pausa disabilitando il suo impulso di clock. Il modulo **RTC** e il coprocessore **ULP** rimangono invece attivi. Ciò si traduce in un consumo energetico inferiore rispetto alla modalità "sleep del modem" intorno a **0,8 mA**.
 
 Prima di entrare in modalità light sleep, ESP32 memorizza il suo stato interno nella RAM e riprende il funzionamento al risveglio dal sonno. Questo è indicato come ritenzione RAM completa.
 
@@ -264,19 +268,19 @@ In modalità deep sleep, le CPU, la maggior parte della RAM e tutte le periferic
 
 <br>
 
-In modalità deep sleep, il chip consuma tra **0,15** mA (quando il coprocessore ULP è acceso) e **10** µA. Parliamo di **µA** e quindi in questa modalità il consumo **può** scendere praticamente a zero!
+In modalità deep sleep, il chip consuma tra **0,15 mA** (quando il coprocessore ULP è acceso) e **10 µA**. Parliamo di **µA** e quindi in questa modalità il consumo può scendere praticamente a zero!
 <br>
 
 Durante la modalità deep sleep, la CPU principale viene spenta, mentre il coprocessore **ULP** (**Ultra-Low-Power**) può rilevare le letture del sensore e riattivare la CPU in base alle esigenze. Tutto ciò è utile per progettare applicazioni in cui la CPU deve essere svegliata da un evento esterno, come un **timer**, pur mantenendo un consumo energetico minimo.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>Tutto ciò che è memorizzato nella memoria principale viene cancellato</strong> e non è più possibile accedervi. Al contratio la piccolissima  memoria RTC viene mantenuta attiva e il suo contenuto viene conservato fino al "risveglio" del chip. Questo è il motivo per cui il chip memorizza i dati di connessione Wi-Fi e Bluetooth proprio nella memoria RTC!
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>Tutto ciò che è memorizzato nella memoria principale viene cancellato</strong> e non è più possibile accedervi. Al contrario la piccolissima  memoria RTC viene mantenuta attiva e il suo contenuto viene conservato fino al "risveglio" del chip. Questo è il motivo per cui il chip memorizza i dati di connessione Wi-Fi e Bluetooth proprio nella memoria RTC!
 . </div>
 
 <br>
 
 #### Come conservare i dati nella modalità deep sleep
 
-Se vuoi utilizzare i dati dopo un riavvio, devi memorizzarli nella memoria **RTC** definendo una variabile globale con l'attributo *RTC_DATA_ATTR*. Ad esempio, RTC_DATA_ATTR int myVar = 0;
+Se vuoi utilizzare i dati dopo un riavvio, devi memorizzarli nella memoria **RTC** definendo una variabile globale con l'attributo *RTC_DATA_ATTR*. Ad esempio:
 
 ```bash
 RTC_DATA_ATTR int myVar = 0;
