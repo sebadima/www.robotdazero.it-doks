@@ -17,7 +17,10 @@ mermaid: true
 
 
 
+<hr>
+<br>
 <!-- https://diyusthad.com/2019/10/controlling-rgb-lights-from-esp32-web-server.html -->
+
 ## L'ESP32 e i dispositivi ad alto assorbimento
 
 In molte applicazioni IOT ti troverai a usare dispositivi ad alto assorbimento, che richiedono correnti che l'ESP32 non è in grado di fornire. In questi casi, prima di passare ai relays elettronici o meccanici possiamo ricorrere ad un economico transistor di media potenza come il **TIP120**.
