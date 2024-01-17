@@ -69,13 +69,19 @@ Il transistor fu un'invenzione rivoluzionaria perché offriva un'alternativa pi�
 
 ### Evoluzione e transistor moderni
 
-Dopo l'invenzione del transistor punto-contatto nel 1947, il campo dell'elettronica entrò in un periodo di rapida evoluzione e innovazione. Tuttavia, il transistor punto-contatto, mentre rivoluzionario, era difficile da produrre in modo affidabile e non era adatto per la produzione di massa. Questa richiesta spinse lo sviluppo del transistor di giunzione, un design più affidabile e più facile da produrre, nei primi anni 1950.
+Dopo l'invenzione del transistor unigiunzione nel 1947, il campo dell'elettronica entrò in un periodo di rapida innovazione. Nonostante questo il transistor, seppure rivoluzionario, era difficile da produrre in modo affidabile e non era adatto per la produzione di massa.
 
-Il transistor di giunzione, un dispositivo a tre strati con uno strato sottile di un tipo di materiale semiconduttore inserito tra due strati più spessi dell'altro tipo, era più robusto e affidabile del transistor a contatto puntuale. Di conseguenza, divenne rapidamente lo standard per la progettazione di transistor.
 
-Negli anni 1950 e 1960, il transistor ha subito un'ulteriore evoluzione con lo sviluppo del transistor a giunzione bipolare (BJT)e del transistor a effetto di campo (FET) 4. Mentre il BJT, operando su un principio diverso, è anche un dispositivo a tre strati, il FET è un dispositivo a quattro strati che controlla la larghezza di un "canale" attraverso il quale scorre la corrente.
+> Questa "debolezza" dei primi prototipi stimolò lo sviluppo del transistor a giunzione, un design più affidabile e più facile da produrre, nei primi anni 1950.
 
-Lo sviluppo di questi nuovi tipi di transistor ha aperto nuove possibilità per la progettazione elettronica. I transistor potrebbero ora essere utilizzati non solo per amplificare i segnali, ma anche per accenderli e spegnerli, rendendo possibile l'elettronica digitale. Questo avanzamento ha portato allo sviluppo di circuiti integrati, che sono collezioni di transistor e altri componenti su un singolo chip, nel 1958 Dal 1960, circuiti integrati sono stati utilizzati in una vasta gamma di dispositivi elettronici.
+Il transistor a giunzione era un dispositivo con tre strati di materiale semiconduttore, Uno degli strati che poi venne chiamato la base, era inserito tra due strati più spessi dell'altro tipo.
+
+Negli anni 1950 e 1960, il transistor ha subito un'ulteriore evoluzione con lo sviluppo del transistor a giunzione bipolare (BJT)e del transistor a effetto di campo (FET) 4. Mentre il BJT, operando su un principio diverso, resta sempre un dispositivo a tre strati, il FET è un dispositivo a quattro strati che controlla la larghezza di un "canale" attraverso il quale scorre la corrente.
+
+Lo sviluppo di questi nuovi tipi di transistor ha aperto nuove possibilità per la progettazione elettronica. I transistor sono adesso utilizzati non solo per amplificare i segnali, ma anche per accenderli e spegnerli, rendendo possibile l'elettronica digitale. 
+
+
+> Questo avanzamento ha portato allo sviluppo di circuiti integrati, che sono collezioni di transistor e altri componenti su un singolo chip, nel 1958 Dal 1960, circuiti integrati sono stati utilizzati in una vasta gamma di dispositivi elettronici.
 
 Nel 1970, è stato sviluppato il transistor a effetto di campo metallo-ossido-semiconduttore (MOSFET), che è diventato il tipo più comune di transistor in uso oggi, in quanto ha diversi vantaggi rispetto ai precedenti tipi di transistor. Ad esempio, è più facile da produrre, può essere reso molto piccolo e consuma pochissima energia.
 
@@ -83,7 +89,7 @@ Nel 1970, è stato sviluppato il transistor a effetto di campo metallo-ossido-se
 
 
 ### I diversi tipi di transistor in breve
-Esistono diversi tipi di transistor, che si differenziano per la struttura e il funzionamento. I principali tipi di transistor sono:
+Esistono dunque vari tipi di transistor, che si differenziano per la struttura e il funzionamento. Ricordiamoli brevemente e più avanti li analizzeremo in dettaglio:
 
 - Transistor a giunzione bipolare (BJT): è il tipo di transistor più comune. È costituito da una giunzione P-N, e il suo funzionamento si basa sulla corrente elettrica che scorre attraverso questa giunzione.
 - Transistor a giunzione di ioni mobili (IGBT): è un tipo di transistor che combina le caratteristiche dei BJT e dei FET. È caratterizzato da una bassa resistenza di ON, che lo rende adatto per applicazioni di potenza.
