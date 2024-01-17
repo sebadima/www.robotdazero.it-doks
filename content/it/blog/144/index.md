@@ -31,7 +31,7 @@ mermaid: true
 
 ## Cos'è un transistor?
 
-Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, come delle memorie RAM e degli hard disk SSD. E' facile dimenticare come questi e altri dispositivi siano sono fatti, alla fine, solo di un numero variabile di transistor. La quantità di transitor in un dispositivo può andare da un singolo transistor che pilota un motorino elettrico fino a decine di milardi per conservare i "GIGA" delle chiavette USB.
+Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, come delle memorie RAM e dei *controller* come l'ESP32. E' facile dimenticare come questi e altri dispositivi siano sono fatti, alla fine, solo di un numero variabile di transistor. La quantità di transitor in un dispositivo può andare da un singolo transistor che pilota un motorino elettrico fino a decine di milardi per conservare i "GIGA" delle chiavette USB.
 
 ##### Come mai il transistor è onnipresente nella moderna elettronica?
 
@@ -43,18 +43,15 @@ In due terminali (<strong>COLLETTORE</strong> e <strong>EMETTITORE</strong>) flu
 
 <br>
 
-Sfruttando questo principio funzionano, ad esempio le memorie RAM, dove gli stati **0** e **1** sono sono rappresentati da normali transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente)
+Sfruttando questo principio funzionano, ad esempio le memorie RAM, dove gli stati **0** e **1** sono sono rappresentati da normali transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente).
 
-> <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai già letto che il suo funzionamento di base è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
+> <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il suo funzionamento di base è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
 
 <br>
 
-Elettricamente, dunque funziona all'incirca come una valvola termoionica, ma la somiglianza finisce qui. Un transistor è un robusto componente elettronico a semiconduttore capace di gestire pichi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (I GigaHertz delle moderne CPU). Fisicamente ha un aspetto molto semplice ed è composto da tre terminali, chiamati:
-- base, 
-- collettore 
-- emettitore. 
+Elettricamente, dunque funziona all'incirca come una valvola termoionica, ma la somiglianza finisce qui. Un transistor è un robusto componente elettronico a semiconduttore capace di gestire pichi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (I GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
-Il transistor può anche essere utilizzato per interrompere un segnale elettrico. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
+Il transistor dunque può anche essere utilizzato per interrompere un segnale elettrico. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 Il funzionamento del transistor si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica bassa.</div>
@@ -64,9 +61,9 @@ Il funzionamento del transistor si basa sulla giunzione P-N, una regione di un s
 Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività della giunzione, che consente il passaggio di una corrente elettrica maggiore tra collettore ed emettitore.
 
 
-## La storia dei transistor
+## Una breve storia dei transistor
 
-La storia dei transistor risale all'inizio del 20 ° secolo. Il primo transistor fu inventato nel 1947 da un team di scienziati dei Bell Laboratories negli Stati Uniti, che comprendeva William Shockley, John Bardeen e Walter Brattain. Questa invenzione fu una svolta monumentale nell'elettronica, segnando l'inizio dell'era dei semiconduttori.
+L'esordio del transistor risale all'inizio del 20° secolo. Il primo transistor fu inventato nel 1947 da un team di scienziati dei Bell Laboratories negli Stati Uniti, che comprendeva William Shockley, John Bardeen e Walter Brattain. Questa invenzione fu una svolta monumentale nell'elettronica, segnando l'inizio dell'era dei semiconduttori.
 
 Il transistor fu un'invenzione rivoluzionaria perché offriva un'alternativa più affidabile e compatta ai tubi a vuoto utilizzati nei dispositivi elettronici dell'epoca. I tubi a vuoto erano ingombranti, consumavano molta energia e avevano una durata limitata, mentre i transistor erano piccoli, richiedevano meno energia e avevano una durata molto più lunga, rendendoli ideali per l'uso in una vasta gamma di dispositivi elettronici.
 
