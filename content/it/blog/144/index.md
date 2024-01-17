@@ -95,7 +95,7 @@ Esistono dunque vari tipi di transistor, che si differenziano per la struttura e
 - Transistor a giunzione di ioni mobili (IGBT): è un tipo di transistor che combina le caratteristiche dei BJT e dei FET. È caratterizzato da una bassa resistenza di ON, che lo rende adatto per applicazioni di potenza.
 - Transistor a effetto di campo (FET): è un tipo di transistor in cui il flusso di corrente è controllato da un campo elettrico. 
 
-I FET si suddividono a loro volta in due sotto categorie principali:
+I FET a loro volta si suddividono a loro volta in due sotto categorie principali:
 - FET a canale n (NMOS): il canale è di tipo n, e la corrente scorre dal drain verso il source.
 - FET a canale p (PMOS): il canale è di tipo p, e la corrente scorre dal source verso il drain.
 
