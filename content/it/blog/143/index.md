@@ -17,19 +17,23 @@ mermaid: true
 
 
 
+<!-- https://www.cnx-software.com/2024/01/16/arduinosimulator-is-an-open-source-arduino-simulator-that-runs-on-your-web-browser/ -->
 <hr>
 <br>
-<!-- https://www.cnx-software.com/2024/01/16/arduinosimulator-is-an-open-source-arduino-simulator-that-runs-on-your-web-browser/ -->
-
 ## Cosa è Arduino Simulator?
 
 <a href="https://github.com/lrusso/ArduinoSimulator/" target="_blank">Arduino Simulator</a> è un sofisticato simulatore Arduino che viene eseguito nel browser web senza bisogno di installare alcun applicativo. E' stato scritto da Leonardo Russo usando il linguaggio <a href="https://www.html.it/guide/guida-javascript-di-base/" target="_blank">javascript</a> ed è in grado di simulare la esecuzione del codice e lo stato dei pin digitali e analogici. Funziona per varie schede Arduino, ovvero Arduino UNO R3, MEGA2560 e NANO V3.
+
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="Arduino Simulator in esecuzione su un browser web">
 
 In passato su Robotdazero abbiamo già accennato nelle news riguardo a <a href="https://wokwi.com/" target="_blank">Wokwi</a> (per ESP32, Pi Pico, STM32) un grande strumento per emulare i circuiti che supporta anche l'ESP32-P4. ArduinoSimulator è però completamente open-source e funziona **interamente** in un browser web.
 
 Arduino Simulator non è complesso e completo come Wokwi, in quanto non si possono costruire dei circuiti, ma possiede una area per scrivere codice utente e salvarlo localmente. 
 
 > Fornisce delle icone per pin digitali (rosso = basso, verde = alto) e pin analogici (valore da 0 a 255) e un monitor seriale con un campo che consente di inviare comandi esattamente come si può fare con Arduino. 
+
+## Testare un programma
 
 Per testare un programma basta fare clic sul pulsante Esegui in alto, senza la fase di upload ovviamente.
 
