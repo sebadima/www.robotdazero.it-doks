@@ -1,6 +1,6 @@
 ---
-title: "Introduzione ai transistor"
-description: "Introduzione ai transistor"
+title: "Introduzione ai Transistor"
+description: "Introduzione ai Transistor"
 excerpt: "Un transistor è un componente elettronico a semiconduttore che può essere utilizzato per amplificare o interrompere un segnale elettrico. È composto da tre terminali, chiamati base, collettore ed emettitore...."
 date: 2024-01-16T09:19:42+01:00
 lastmod: 2024-01-16T09:19:42+01:00
@@ -39,22 +39,22 @@ Il transistor è così importante perchè elettricamente si comporta come una re
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-In due terminali (<strong>COLLETTORE</strong> e <strong>EMETTITORE</strong>) fluisce la corrente, mentre il terzo polo (<strong>BASE</strong>) ha il compito di regolarne il passaggio secondo la tensione che gli viene applicata.</div> 
+In due terminali (<strong>collettore</strong> e <strong>emettitore</strong>) fluisce la corrente, mentre il terzo polo (<strong>base</strong>) ha il compito di regolarne il passaggio secondo la tensione che gli viene applicata.</div> 
 
 <br>
 
-Sfruttando questo principio funzionano, ad esempio le memorie RAM, dove gli stati **0** e **1** sono sono rappresentati da normali transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente).
+Sfruttando questo principio funzionano, ad esempio le memorie RAM, dove gli stati **0** e **1** sono rappresentati da normali transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente).
 
 > <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il suo funzionamento di base è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
 
 <br>
 
-Elettricamente, dunque funziona all'incirca come una valvola termoionica, ma la somiglianza finisce qui. Un transistor è un robusto componente elettronico a semiconduttore capace di gestire pichi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (I GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
+Elettricamente, dunque funziona all'incirca come una valvola termoionica, ma la somiglianza finisce qui. Un transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
 Il transistor dunque può anche essere utilizzato per interrompere un segnale elettrico. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Il funzionamento del transistor si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica bassa.</div>
+<strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica relativamente bassa.</div>
 
 <br>
 
@@ -72,7 +72,7 @@ Il transistor fu un'invenzione rivoluzionaria perché offriva un'alternativa pi�
 Dopo l'invenzione del transistor unigiunzione nel 1947, il campo dell'elettronica entrò in un periodo di rapida innovazione. Nonostante questo il transistor, seppure rivoluzionario, era difficile da produrre in modo affidabile e non era adatto per la produzione di massa.
 
 
-> Questa "debolezza" dei primi prototipi stimolò lo sviluppo del transistor a giunzione, un design più affidabile e più facile da produrre, nei primi anni 1950.
+> <strong>Questa "debolezza" dei primi </strong>prototipi stimolò lo sviluppo del transistor a giunzione, un design più affidabile e più facile da produrre, nei primi anni 1950.
 
 Il transistor a giunzione era un dispositivo con tre strati di materiale semiconduttore, Uno degli strati che poi venne chiamato la base, era inserito tra due strati più spessi dell'altro tipo.
 
@@ -85,7 +85,7 @@ Lo sviluppo di questi nuovi tipi di transistor ha aperto nuove possibilità per 
 
 Nel 1970, è stato sviluppato il transistor a effetto di campo metallo-ossido-semiconduttore (MOSFET), che è diventato il tipo più comune di transistor in uso oggi, in quanto ha diversi vantaggi rispetto ai precedenti tipi di transistor. Ad esempio, è più facile da produrre, può essere reso molto piccolo e consuma pochissima energia.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑Oggi i transistor sono onnipresenti nell'elettronica moderna e la loro evoluzione è tutt'altro che finita. Sono utilizzati in tutto, dai computer e smartphone alle auto e agli elettrodomestici, guidando la rivoluzione digitale e consentendo lo sviluppo di dispositivi elettronici sempre più potenti e complessi.</div>
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 <strong>I transistor sono onnipresenti</strong> nell'elettronica moderna e la loro evoluzione è tutt'altro che finita. Sono utilizzati in tutto, dai computer e smartphone alle auto e agli elettrodomestici, guidando la rivoluzione digitale e consentendo lo sviluppo di dispositivi elettronici sempre più potenti e complessi.</div>
 
 
 ### I diversi tipi di transistor in breve
@@ -145,7 +145,7 @@ La chiave per il funzionamento di un transistor è la giunzione base-emettitore,
 I transistor bipolari sono componenti elettronici a semiconduttore che possono essere utilizzati per amplificare o interrompere un segnale elettrico. Sono composti da tre terminali, chiamati base, collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Il funzionamento del transistor bipolare si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica bassa.</div>
+<strong>Il funzionamento del transistor bipolare</strong> si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica bassa.</div>
 
 <br>
 
