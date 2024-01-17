@@ -96,13 +96,13 @@ Esistono dunque vari tipi di transistor, che si differenziano per la struttura e
 - Transistor a effetto di campo (FET): è un tipo di transistor in cui il flusso di corrente è controllato da un campo elettrico. 
 
 I FET a loro volta si suddividono a loro volta in due sotto categorie principali:
-- FET a canale n (NMOS): il canale è di tipo n, e la corrente scorre dal drain verso il source.
-- FET a canale p (PMOS): il canale è di tipo p, e la corrente scorre dal source verso il drain.
+- FET a canale **N** (NMOS): il canale è di tipo **N**, e la corrente scorre dal drain verso il source.
+- FET a canale **P** (PMOS): il canale è di tipo **P**, e la corrente scorre dal source verso il drain.
 
 
 ## Le Applicazioni dei transistor nel campo del digitale
 
-I transistor sono fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo, vediamo per sommi capi quali sono le maggiori applicazioni.
+I transistor sono dunque fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo, vediamo per sommi capi quali sono le maggiori applicazioni:
 
 #### Circuiti logici
 
@@ -110,7 +110,7 @@ I circuiti logici sono utilizzati per eseguire operazioni logiche, come AND, OR,
 
 Ad esempio, un circuito logico AND può essere realizzato utilizzando due transistor in configurazione OR. Quando entrambi i transistor sono nello stato ON, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH.
 
-#### Circuiti di memoria
+##### Circuiti di memoria
 
 I circuiti di memoria sono utilizzati per memorizzare dati. I transistor possono essere utilizzati per realizzare diversi tipi di circuiti di memoria, come la memoria statica (SRAM), la memoria dinamica (DRAM) e la memoria flash.
 
@@ -121,9 +121,6 @@ La SRAM è un tipo di memoria volatile, che significa che i dati vengono persi q
 I circuiti di calcolo sono utilizzati per eseguire operazioni matematiche. I transistor possono essere utilizzati per realizzare diversi tipi di circuiti di calcolo, come i circuiti additivi, i circuiti sottrazionali e i circuiti moltiplicativi.
 
 Ad esempio, un circuito additivo può essere realizzato utilizzando quattro transistor in configurazione OR. Quando le tensioni applicate ai quattro transistor sono entrambe HIGH, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH.
-
-I transistor sono quindi componenti essenziali per l'elettronica digitale, e sono utilizzati per realizzare una vasta gamma di circuiti digitali. Il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica digitale.
-
 
 
 
@@ -160,13 +157,13 @@ Tipi di transistor bipolari
 
 Esistono due tipi principali di transistor bipolari:
 
-Transistor NPN: la base è di tipo p, mentre l'emettitore e il collettore sono di tipo n.
-Transistor PNP: la base è di tipo n, mentre l'emettitore e il collettore sono di tipo p.
+- Transistor NPN: la base è di tipo p, mentre l'emettitore e il collettore sono di tipo n.
+- Transistor PNP: la base è di tipo n, mentre l'emettitore e il collettore sono di tipo p.
 Il funzionamento dei transistor bipolari NPN e PNP è identico, ma la polarità delle tensioni applicate ai terminali è invertita.
 
-Funzionamento dei transistor bipolari
+#### Il funzionamento dei transistor bipolari
 
-Il funzionamento dei transistor bipolari può essere spiegato utilizzando un modello semplificato che considera le giunzioni p-n come diodi. In questo modello, la giunzione base-emettitore viene chiamata diodo base, mentre la giunzione base-collettore viene chiamata diodo collettore.
+Il funzionamento dei transistor bipolari può essere spiegato utilizzando un modello semplificato che considera le giunzioni P-N come diodi. In questo modello, la giunzione base-emettitore viene chiamata diodo base, mentre la giunzione base-collettore viene chiamata diodo collettore.
 
 Il diodo base è polarizzato in avanti, quindi la corrente scorre dalla base all'emettitore. La corrente di base è molto piccola, ma è sufficiente per controllare la corrente del diodo collettore.
 
@@ -174,7 +171,7 @@ Quando la corrente di base è sufficientemente alta, il diodo collettore è pola
 
 Se la corrente di base è inferiore a una certa soglia, il diodo collettore è polarizzato in inverso e la corrente non scorre dal collettore all'emettitore. In questo caso, il transistor bipolare funziona come un interruttore.
 
-Applicazioni dei transistor bipolari
+#### Applicazioni dei transistor bipolari
 
 I transistor bipolari sono utilizzati in una vasta gamma di applicazioni, tra cui:
 
@@ -185,63 +182,53 @@ Vantaggi e svantaggi dei transistor bipolari
 
 I transistor bipolari presentano una serie di vantaggi e svantaggi rispetto ad altri tipi di transistor, come i transistor a effetto di campo.
 
-Vantaggi:
+##### Vantaggi:
 
-Ampio range di guadagno: i transistor bipolari possono fornire un guadagno molto elevato, rendendoli adatti per applicazioni di amplificazione.
-Bassa impedenza di uscita: i transistor bipolari hanno una bassa impedenza di uscita, rendendoli adatti per applicazioni di commutazione.
-Buona stabilità termica: i transistor bipolari sono relativamente stabili termicamente, rendendoli adatti per applicazioni in cui la temperatura può variare.
-Svantaggi:
+- Ampio range di guadagno: i transistor bipolari possono fornire un guadagno molto elevato, rendendoli adatti per applicazioni di amplificazione.
+- Bassa impedenza di uscita: i transistor bipolari hanno una bassa impedenza di uscita, rendendoli adatti per applicazioni di - commutazione.
+- Buona stabilità termica: i transistor bipolari sono relativamente stabili termicamente, rendendoli adatti per applicazioni in cui la temperatura può variare.
 
-Consumo di corrente: i transistor bipolari consumano una corrente relativamente elevata, rendendoli meno efficienti dei transistor a effetto di campo.
-Dimensioni: i transistor bipolari sono generalmente più grandi dei transistor a effetto di campo, rendendoli meno adatti per applicazioni in cui lo spazio è limitato.
-In generale, i transistor bipolari sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica.
+##### Svantaggi:
+
+- Consumo di corrente: i transistor bipolari consumano una corrente relativamente elevata, rendendoli meno efficienti dei - transistor a effetto di campo.
+- Dimensioni: i transistor bipolari sono generalmente più grandi dei transistor a effetto di campo, rendendoli meno adatti per applicazioni in cui lo spazio è limitato.
+
+
+> In generale, i transistor bipolari sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica.
 
 
 #### I Transistor a effetto di campo (FET) in dettaglio
 
-I transistor a effetto di campo (FET) sono un tipo di transistor in cui il flusso di corrente è controllato da un campo elettrico. I FET si suddividono in due categorie principali:
+I transistor a effetto di campo (FET) sono un tipo di transistor in cui il flusso di corrente è controllato da un campo elettrico. 
 
-FET a canale n (NMOS): il canale è di tipo n, e la corrente scorre dal drain verso il source.
-FET a canale p (PMOS): il canale è di tipo p, e la corrente scorre dal source verso il drain.
-Il funzionamento di un FET è basato sulla presenza di una regione di semiconduttore drogata, chiamata canale, che è circondata da due regioni drogate con tipo di conducibilità opposto. La tensione applicata al terminale di controllo, chiamato gate, crea un campo elettrico che modifica la conduttività del canale.
+##### I FET si suddividono in due categorie principali:
 
-Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico è in grado di creare un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio di corrente elettrica tra i terminali drain e source.
+- FET a canale n (NMOS): il canale è di tipo n, e la corrente scorre dal drain verso il source.
+- FET a canale p (PMOS): il canale è di tipo p, e la corrente scorre dal source verso il drain.
 
-La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate. Maggiore è la tensione applicata al gate, maggiore è la corrente che scorre tra i due terminali.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Il funzionamento di un FET è basato sulla presenza di una regione di semiconduttore drogata, chiamata canale, che è circondata da due regioni drogate con tipo di conducibilità opposto. La tensione applicata al terminale di controllo, chiamato gate, crea un campo elettrico che modifica la conduttività del canale.</div>
+
+<br>
+
+Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico crea un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio di corrente elettrica tra i terminali drain e source.
+
+##### La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate. Maggiore è la tensione applicata al gate, maggiore è la corrente che scorre tra i due terminali.
 
 I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
 
-Elevata impedenza di ingresso: l'impedenza di ingresso di un FET è molto elevata, il che significa che il transistor richiede una piccola quantità di corrente per essere controllato. Questo lo rende ideale per applicazioni in cui è necessario ridurre il consumo energetico.
-Alta efficienza: i FET sono più efficienti dei transistor bipolari, in quanto convertono più energia elettrica in corrente elettrica. Questo li rende ideali per applicazioni in cui è necessario ridurre le perdite di potenza.
-Alta velocità di commutazione: i FET possono essere commutati molto rapidamente, il che li rende ideali per applicazioni in cui è necessario generare segnali ad alta frequenza.
-I FET sono utilizzati in una vasta gamma di applicazioni, tra cui:
+- Elevata impedenza di ingresso: l'impedenza di ingresso di un FET è molto elevata, il che significa che il transistor richiede una piccola quantità di corrente per essere controllato. Questo lo rende ideale per applicazioni in cui è necessario ridurre il consumo energetico.
+- Alta efficienza: i FET sono più efficienti dei transistor bipolari, in quanto convertono più energia elettrica in corrente elettrica. Questo li rende ideali per applicazioni in cui è necessario ridurre le perdite di potenza.
+- Alta velocità di commutazione: i FET possono essere commutati molto rapidamente, il che li rende ideali per applicazioni in cui è necessario generare segnali ad alta frequenza.
 
-Elettronica digitale: i FET vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
-Elettronica analogica: i FET vengono utilizzati per amplificare, filtrare e generare segnali analogici.
-Elettronica di potenza: i FET vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
-I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
 
-Tipi di FET
+##### I FET sono utilizzati in una vasta gamma di applicazioni, tra cui:
 
-I FET si suddividono in due categorie principali, a seconda del tipo di canale:
+- Elettronica digitale: i FET vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
+- Elettronica analogica: i FET vengono utilizzati per amplificare, filtrare e generare segnali analogici.
+- Elettronica di potenza: i FET vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
 
-FET a canale n: il canale è di tipo n, e la corrente scorre dal drain verso il source.
-FET a canale p: il canale è di tipo p, e la corrente scorre dal source verso il drain.
-I FET a canale n sono più comuni dei FET a canale p. Questo perché i semiconduttori di tipo n sono più facili da realizzare e hanno una conduttività elettrica maggiore.
-
-Configurazioni di polarizzazione
-
-I FET possono essere polarizzati in due configurazioni principali:
-
-Configurazione di saturazione: in questa configurazione, la tensione applicata al gate è sufficientemente alta da creare un canale di conducibilità completamente aperto. In questo modo, la corrente che scorre tra i terminali drain e source è massima.
-Configurazione di triodo: in questa configurazione, la tensione applicata al gate è inferiore alla tensione di saturazione. In questo modo, il canale di conducibilità è parzialmente aperto. La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate.
-Aplicazioni
-
-I FET sono utilizzati in una vasta gamma di applicazioni, tra cui:
-
-Elettronica digitale: i FET vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
-Elettronica analogica: i FET vengono utilizzati per amplificare, filtrare e generare segnali analogici.
-Elettronica di potenza: i FET vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
 I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
 
 
