@@ -43,7 +43,7 @@ In due terminali (<strong>collettore</strong> e <strong>emettitore</strong>) flu
 
 <br>
 
-Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **0** e **1** sono rappresentati da transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente) e in tal modo riescono a conservare ogni tipo di dati video e immagini comprese.
+Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **0** e **1** sono rappresentati da transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente) e in tal modo riescono a conservare ogni tipo di dati, video e immagini comprese.
 
 > <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il  funzionamento del transistor è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
 
@@ -51,14 +51,18 @@ Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **
 
 Elettricamente il transistor funziona come una valvola termoionica, ma la somiglianza finisce qui. Il transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
-La funzione che più interessa il mondo del digitale è il suo funzionamento come interruttore. Possiamo utilizzarlo ad esempio per interrompere un segnale elettrico e spegnere un LED o un motorino;. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
+La funzione che più interessa il mondo del digitale è il suo funzionamento come interruttore. Possiamo utilizzarlo ad esempio per interrompere un segnale elettrico e spegnere un LED o un servo-motore. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, la porzione di un pezzo di silico in cui si trovano a contatto due zone con diversa conduttività elettrica. Una regione è di tipo P, con una conduttività elettrica elevata, mentre l'altra è di tipo N, con una conduttività elettrica relativamente bassa.</div>
+<strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, la porzione di un pezzo di silico in cui si trovano a contatto due zone con diversa conduttività elettrica. Una regione è di <strong>tipo P</strong>, con una conduttività elettrica elevata, mentre l'altra è di <strong>tipo N</strong>, con una conduttività elettrica relativamente bassa.</div>
 
 <br>
 
-Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività e favorisce il passaggio di una corrente elettrica <strong>maggiore</strong> tra collettore ed emettitore.
+##### La spiegazione passo dopo passo:
+
+1. Quando una tensione viene applicata alla <strong>base</strong> del transistor, si crea una corrente elettrica nella giunzione **P-N**.
+2. Questa corrente provoca un aumento della conduttività.
+3. La minore resistenza accresce il passaggio della corrente principale tra <strong>collettore</strong> ed <strong>emettitore</strong>.
 
 
 ## Una breve storia dei transistor
@@ -104,31 +108,36 @@ I FET a loro volta si suddividono a loro volta in due sotto categorie principali
 
 I transistor sono dunque fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo, vediamo per sommi capi quali sono le maggiori applicazioni:
 
-#### Circuiti logici
+##### Circuiti logici
 
 I circuiti logici sono utilizzati per eseguire operazioni logiche, come AND, OR, NOT, XOR e NAND. I transistor possono essere utilizzati per realizzare qualsiasi circuito logico, e sono la base di tutti i calcolatori digitali.
 
-Ad esempio, un circuito logico AND può essere realizzato utilizzando due transistor in configurazione OR. Quando entrambi i transistor sono nello stato ON, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Ad esempio, un circuito logico AND</strong> può essere realizzato utilizzando due transistor in configurazione OR. Quando entrambi i transistor sono nello stato ON, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH</div>
+
 
 ##### Circuiti di memoria
 
-I circuiti di memoria sono utilizzati per memorizzare dati. I transistor possono essere utilizzati per realizzare diversi tipi di circuiti di memoria, come la memoria statica (SRAM), la memoria dinamica (DRAM) e la memoria flash.
+I circuiti di memoria sono utilizzati per memorizzare dati. I transistor possono essere utilizzati per realizzare diversi tipi di circuiti di memoria, come la memoria statica (SRAM), la memoria dinamica (DRAM) e la memoria flash
 
-La SRAM è un tipo di memoria volatile, che significa che i dati vengono persi quando viene tolta l'alimentazione. La DRAM è un altro tipo di memoria volatile, ma è più economica della SRAM. La memoria flash è un tipo di memoria non volatile, che significa che i dati vengono conservati anche quando viene tolta l'alimentazione.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>La SRAM è un tipo di memoria volatile</strong>, cioè i dati vengono persi quando viene tolta l'alimentazione. La DRAM è un altro tipo di memoria volatile, ma è più economica della SRAM. La memoria flash è un tipo di memoria non volatile; i dati vengono conservati anche quando viene tolta l'alimentazione. SRAM, DRM e memoria flash (ROM) giocano un ruolo importante nel funzionamento dell'ESP32.
+</div>
 
 ##### Circuiti di calcolo
 
 I circuiti di calcolo sono utilizzati per eseguire operazioni matematiche. I transistor possono essere utilizzati per realizzare diversi tipi di circuiti di calcolo, come i circuiti additivi, i circuiti sottrazionali e i circuiti moltiplicativi.
 
-Ad esempio, un circuito additivo può essere realizzato utilizzando quattro transistor in configurazione OR. Quando le tensioni applicate ai quattro transistor sono entrambe HIGH, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Ad esempio, un circuito additivo (cioè che addiziona)</strong> può essere realizzato utilizzando quattro transistor in configurazione OR. Quando le tensioni applicate ai quattro transistor sono entrambe HIGH, la corrente scorre attraverso il circuito, e il circuito fornisce un output logico HIGH.</div>
 
 
 
 ## Principi di base dei transistor
 
-Seppure ne esistano, come vedi, decine di tipi diversi, i transistor funzionano in base agli stessi principi della fisica dei semiconduttori. Al centro di questi principi c'è il concetto di <strong>portatori di carica</strong>, che possono essere elettroni o <strong>buchi/lacune</strong> (l'assenza di un elettrone). Il comportamento di questi portatori di carica nel materiale semiconduttore di un transistor consente di controllare i segnali elettrici.
+Seppure ne esistano, come vedi, decine di tipi diversi, i transistor funzionano in base agli stessi, identici principi della fisica dei semiconduttori. Al centro di questi principi c'è il concetto di <strong>portatori di carica</strong>, che possono essere 1.<strong>elettroni</strong> o 2.<strong>"holes"</strong> (l'assenza di un elettrone). Il comportamento dei portatori di carica determina il flusso dei segnali elettrici.
 
-##### Tipicamente, un transistor è costituito da tre strati di materiale semiconduttore: 
+##### Fisicamente, un transistor è costituito da tre strati di materiale semiconduttore: 
 
 1. Emettitore
 2. Base 
@@ -153,7 +162,7 @@ Il transistor bipolare può quindi essere utilizzato per amplificare un segnale 
 
 Ma può anche essere utilizzato per interrompere un segnale elettrico. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
-Tipi di transistor bipolari
+#### Tipi di transistor bipolari
 
 Esistono due tipi principali di transistor bipolari:
 
@@ -161,7 +170,7 @@ Esistono due tipi principali di transistor bipolari:
 - Transistor PNP: la base è di tipo n, mentre l'emettitore e il collettore sono di tipo p.
 Il funzionamento dei transistor bipolari NPN e PNP è identico, ma la polarità delle tensioni applicate ai terminali è invertita.
 
-#### Applicazioni dei transistor bipolari
+#### Le applicazioni dei transistor bipolari
 
 I transistor bipolari sono utilizzati in una vasta gamma di applicazioni, tra cui:
 
@@ -185,7 +194,7 @@ I transistor bipolari presentano una serie di vantaggi e svantaggi rispetto ad a
 - Dimensioni: i transistor bipolari sono generalmente più grandi dei transistor a effetto di campo, rendendoli meno adatti per applicazioni in cui lo spazio è limitato.
 
 
-> In generale, i transistor bipolari sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica. Questo tipo di componente può essere una valida alternativa ai FET per pilotare motori elettrici o amplificatori o lampade con l'ESP32.
+> <strong>In generale, i transistor bipolari</strong> sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica. Questo tipo di componente può essere una valida alternativa ai FET per pilotare motori elettrici o amplificatori o lampade con l'ESP32.
 
 
 #### I Transistor a effetto di campo (FET) in dettaglio
@@ -207,23 +216,16 @@ Quando la tensione applicata al gate è sufficientemente alta, il campo elettric
 
 ##### La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate. Maggiore è la tensione applicata al gate, maggiore è la corrente che scorre tra i due terminali.
 
-I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
+##### I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
 
 - Elevata impedenza di ingresso: l'impedenza di ingresso di un FET è molto elevata, il che significa che il transistor richiede una piccola quantità di corrente per essere controllato. Questo lo rende ideale per applicazioni in cui è necessario ridurre il consumo energetico.
 - Alta efficienza: i FET sono più efficienti dei transistor bipolari, in quanto convertono più energia elettrica in corrente elettrica. Questo li rende ideali per applicazioni in cui è necessario ridurre le perdite di potenza.
 - Alta velocità di commutazione: i FET possono essere commutati molto rapidamente, il che li rende ideali per applicazioni in cui è necessario generare segnali ad alta frequenza.
 
-
-##### I FET sono utilizzati in una vasta gamma di applicazioni, tra cui:
-
-- Elettronica digitale: vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
-- Elettronica analogica: sono usati per amplificare, filtrare e generare segnali analogici.
-- Elettronica di potenza: sono usati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
-
 ## In conclusione
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
+I FET e i transistor in genere sono componenti fondamentali nella elettronica digitale. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
 </div>
 
 <br>
