@@ -230,4 +230,4 @@ Quando la tensione applicata al gate è sufficientemente alta, il campo elettric
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.144.1.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.144.1.4.0</p>
