@@ -225,7 +225,7 @@ Quando la tensione applicata al gate è sufficientemente alta, il campo elettric
 ## In conclusione
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-I FET e i transistor in genere sono componenti fondamentali nella elettronica digitale. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
+<strong>I FET e i transistor in genere</strong> sono componenti fondamentali nella moderna elettronica. Sono presenti in tutti i dispositivi tecnologici e il loro sviluppo ha contribuito in modo decisivo alla miniaturizzazione e diffusione dell'elettronica.
 </div>
 
 <br>
