@@ -100,7 +100,7 @@ I FET a loro volta si suddividono a loro volta in due sotto categorie principali
 - FET a canale **P** (PMOS): il canale è di tipo **P**, e la corrente scorre dal source verso il drain.
 
 
-## Le Applicazioni dei transistor nel campo del digitale
+## Le applicazioni dei transistor nel campo del digitale
 
 I transistor sono dunque fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo, vediamo per sommi capi quali sono le maggiori applicazioni:
 
@@ -225,13 +225,9 @@ I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono p
 
 ## In conclusione
 
-I transistor sono fondamentali per la microelettronica perché consentono di realizzare circuiti elettronici complessi in spazi molto ridotti. La miniaturizzazione dei transistor ha portato a un rapido sviluppo della microelettronica, consentendo la realizzazione di dispositivi sempre più sofisticati, come computer, smartphone, tablet e sistemi embedded.
-
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Nel caso specifico di ESP32 e Arduino, i transistor sono utilizzati per realizzare tutti i componenti elettronici presenti nei due dispositivi. I transistor sono utilizzati per amplificare i segnali digitali, per generare segnali analogici, per controllare l'alimentazione e per convertire i segnali.</div>
-
-Ad esempio, in ESP32, i transistor sono utilizzati per amplificare i segnali digitali provenienti dai pulsanti o dai sensori. I transistor sono inoltre utilizzati per generare segnali analogici per alimentare i circuiti analogici presenti nel dispositivo. I transistor sono infine utilizzati per controllare l'alimentazione dei vari componenti del dispositivo.
+I transistor sono fondamentali per la microelettronica perché consentono di realizzare circuiti elettronici complessi in spazi molto ridotti. La miniaturizzazione dei transistor ha portato a un rapido sviluppo della microelettronica, consentendo la realizzazione di dispositivi sempre più sofisticati, come computer, smartphone, tablet e sistemi embedded.</div>
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.144.1.0.0</p> 
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.144.1.2.1</p>
