@@ -43,22 +43,22 @@ In due terminali (<strong>collettore</strong> e <strong>emettitore</strong>) flu
 
 <br>
 
-Sfruttando questo principio funzionano, ad esempio le memorie RAM, dove gli stati **0** e **1** sono rappresentati da normali transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente).
+Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **0** e **1** sono rappresentati da transistor bloccati (senza passaggio di corente) o attivi (cioè conducono corrente) e in tal modo riescono a conservare ogni tipo di dati video e immagini comprese.
 
-> <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il suo funzionamento di base è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
+> <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il  funzionamento del transistor è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
 
 <br>
 
-Elettricamente, dunque funziona all'incirca come una valvola termoionica, ma la somiglianza finisce qui. Un transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
+Elettricamente, dunque il transistor funziona come una valvola termoionica, ma la somiglianza finisce qui. Il transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
-Il transistor dunque può anche essere utilizzato per interrompere un segnale elettrico. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
+La funzione che più interessa il mondo del digitale è il suo funzionamento come interruttore. Possiamo utilizzarlo ad esempio per interrompere un segnale elettrico e spegnere un LED o un motorino;. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, una regione di un semiconduttore in cui si trovano a contatto due regioni con diversa conduttività elettrica. Una regione è di tipo p, con una conduttività elettrica elevata, mentre l'altra è di tipo n, con una conduttività elettrica relativamente bassa.</div>
+<strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, la porzione di un pezzo di silico in cui si trovano a contatto due zone con diversa conduttività elettrica. Una regione è di tipo P, con una conduttività elettrica elevata, mentre l'altra è di tipo N, con una conduttività elettrica relativamente bassa.</div>
 
 <br>
 
-Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività della giunzione, che consente il passaggio di una corrente elettrica maggiore tra collettore ed emettitore.
+Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività della giunzione, che consente il passaggio di una corrente elettrica <strong>maggiore</strong> tra collettore ed emettitore.
 
 
 ## Una breve storia dei transistor
@@ -126,21 +126,21 @@ Ad esempio, un circuito additivo può essere realizzato utilizzando quattro tran
 
 ## Principi di base dei transistor
 
-I transistor funzionano in base ai principi della fisica dei semiconduttori. Al centro di questi principi c'è il concetto di portatori di carica, che possono essere elettroni o buchi (l'assenza di un elettrone). Il comportamento di questi portatori di carica nel materiale semiconduttore di un transistor consente di controllare e amplificare i segnali elettrici.
+Seppure ne esistano, come vedi, decine di tipi diversi, i transistor funzionano in base agli stessi principi della fisica dei semiconduttori. Al centro di questi principi c'è il concetto di <strong>portatori di carica</strong>, che possono essere elettroni o <strong>buchi/lacune</strong> (l'assenza di un elettrone). Il comportamento di questi portatori di carica nel materiale semiconduttore di un transistor consente di controllare i segnali elettrici.
 
 ##### Tipicamente, un transistor è costituito da tre strati di materiale semiconduttore: 
 
-- l'emettitore, 
-- la base 
-- il collettore. 
+1. - Emettitore
+2. - Base 
+3. - Collettore. 
 
 
-> L'emettitore e il collettore sono generalmente fortemente drogati, il che significa che hanno un'alta concentrazione di portatori di carica, mentre la base è leggermente drogata. L'emettitore e il collettore appartengono a un tipo di doping (tipo n o tipo p), mentre la base appartiene all'altro tipo.
+> <strong>L'emettitore e il collettore sono generalmente </strong>fortemente drogati, il che significa che hanno un'alta concentrazione di portatori di carica, mentre la base è SOLO leggermente drogata. L'emettitore e il collettore appartengono a un tipo di *doping* (tipo **N** o tipo **P**), mentre la base appartiene all'altro tipo.
 
 La chiave per il funzionamento di un transistor è la giunzione base-emettitore, che funge da gate. Applicando una piccola corrente alla base, consente a una corrente molto più grande di fluire dall'emettitore al collettore. Questo è l'effetto di amplificazione di un transistor.
 
 
-#### I Transistor bipolari in dettaglio
+#### Cosa ricordare dei transistor bipolari:
 
 I transistor bipolari sono componenti elettronici a semiconduttore che possono essere utilizzati per amplificare o interrompere un segnale elettrico. Sono composti da tre terminali, chiamati base, collettore ed emettitore.
 
@@ -160,19 +160,6 @@ Esistono due tipi principali di transistor bipolari:
 - Transistor NPN: la base è di tipo p, mentre l'emettitore e il collettore sono di tipo n.
 - Transistor PNP: la base è di tipo n, mentre l'emettitore e il collettore sono di tipo p.
 Il funzionamento dei transistor bipolari NPN e PNP è identico, ma la polarità delle tensioni applicate ai terminali è invertita.
-
-#### Il funzionamento dei transistor bipolari
-
-Il funzionamento dei transistor bipolari può essere spiegato utilizzando un modello semplificato che considera le giunzioni P-N come diodi. In questo modello, la giunzione base-emettitore viene chiamata diodo base, mentre la giunzione base-collettore viene chiamata diodo collettore.
-
-Il diodo base è polarizzato in avanti, quindi la corrente scorre dalla base all'emettitore. La corrente di base è molto piccola, ma è sufficiente per controllare la corrente del diodo collettore.
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Quando la corrente di base è sufficientemente alta, il diodo collettore è polarizzato in avanti e la corrente scorre dal collettore all'emettitore. La corrente del collettore è molto maggiore della corrente di base, quindi il transistor bipolare funziona come un amplificatore.</div>
-
-<br>
-
-Se la corrente di base è inferiore a una certa soglia, il diodo collettore è polarizzato in inverso e la corrente non scorre dal collettore all'emettitore. In questo caso, il transistor bipolare funziona come un interruttore.
 
 #### Applicazioni dei transistor bipolari
 
@@ -236,6 +223,14 @@ I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
 I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
 
 
+## In conclusione
+
+I transistor sono fondamentali per la microelettronica perché consentono di realizzare circuiti elettronici complessi in spazi molto ridotti. La miniaturizzazione dei transistor ha portato a un rapido sviluppo della microelettronica, consentendo la realizzazione di dispositivi sempre più sofisticati, come computer, smartphone, tablet e sistemi embedded.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Nel caso specifico di ESP32 e Arduino, i transistor sono utilizzati per realizzare tutti i componenti elettronici presenti nei due dispositivi. I transistor sono utilizzati per amplificare i segnali digitali, per generare segnali analogici, per controllare l'alimentazione e per convertire i segnali.</div>
+
+Ad esempio, in ESP32, i transistor sono utilizzati per amplificare i segnali digitali provenienti dai pulsanti o dai sensori. I transistor sono inoltre utilizzati per generare segnali analogici per alimentare i circuiti analogici presenti nel dispositivo. I transistor sono infine utilizzati per controllare l'alimentazione dei vari componenti del dispositivo.
 
 <br>
 <br>
