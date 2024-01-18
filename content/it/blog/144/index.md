@@ -167,7 +167,10 @@ Il funzionamento dei transistor bipolari può essere spiegato utilizzando un mod
 
 Il diodo base è polarizzato in avanti, quindi la corrente scorre dalla base all'emettitore. La corrente di base è molto piccola, ma è sufficiente per controllare la corrente del diodo collettore.
 
-Quando la corrente di base è sufficientemente alta, il diodo collettore è polarizzato in avanti e la corrente scorre dal collettore all'emettitore. La corrente del collettore è molto maggiore della corrente di base, quindi il transistor bipolare funziona come un amplificatore.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Quando la corrente di base è sufficientemente alta, il diodo collettore è polarizzato in avanti e la corrente scorre dal collettore all'emettitore. La corrente del collettore è molto maggiore della corrente di base, quindi il transistor bipolare funziona come un amplificatore.</div>
+
+<br>
 
 Se la corrente di base è inferiore a una certa soglia, il diodo collettore è polarizzato in inverso e la corrente non scorre dal collettore all'emettitore. In questo caso, il transistor bipolare funziona come un interruttore.
 
@@ -175,10 +178,11 @@ Se la corrente di base è inferiore a una certa soglia, il diodo collettore è p
 
 I transistor bipolari sono utilizzati in una vasta gamma di applicazioni, tra cui:
 
-Elettronica digitale: i transistor bipolari sono fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo.
-Elettronica analogica: i transistor bipolari vengono utilizzati per amplificare, filtrare e generare segnali analogici.
-Elettronica di potenza: i transistor bipolari vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
-Vantaggi e svantaggi dei transistor bipolari
+- Elettronica digitale: i transistor bipolari sono fondamentali per la realizzazione di circuiti logici, circuiti di memoria e circuiti di calcolo.
+- Elettronica analogica: i transistor bipolari vengono utilizzati per amplificare, filtrare e generare segnali analogici.
+- Elettronica di potenza: i transistor bipolari vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
+
+#### Vantaggi e svantaggi dei transistor bipolari
 
 I transistor bipolari presentano una serie di vantaggi e svantaggi rispetto ad altri tipi di transistor, come i transistor a effetto di campo.
 
@@ -194,7 +198,7 @@ I transistor bipolari presentano una serie di vantaggi e svantaggi rispetto ad a
 - Dimensioni: i transistor bipolari sono generalmente più grandi dei transistor a effetto di campo, rendendoli meno adatti per applicazioni in cui lo spazio è limitato.
 
 
-> In generale, i transistor bipolari sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica.
+> In generale, i transistor bipolari sono una buona scelta per applicazioni che richiedono un alto guadagno, una bassa impedenza di uscita o una buona stabilità termica. Questo tipo di componente può essere una valida alternativa ai FET per pilotare motori elettrici o amplificatori o lampade con l'ESP32.
 
 
 #### I Transistor a effetto di campo (FET) in dettaglio
@@ -208,11 +212,11 @@ I transistor a effetto di campo (FET) sono un tipo di transistor in cui il fluss
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Il funzionamento di un FET è basato sulla presenza di una regione di semiconduttore drogata, chiamata canale, che è circondata da due regioni drogate con tipo di conducibilità opposto. La tensione applicata al terminale di controllo, chiamato gate, crea un campo elettrico che modifica la conduttività del canale.</div>
+<strong>Il funzionamento di un FET è basato</strong> sulla presenza di una regione di semiconduttore drogata, chiamata <strong>CANALE</strong>, che è circondata da due regioni drogate con tipo di conducibilità opposto. La tensione applicata al terminale di controllo, chiamato <strong>GATE</strong>, crea un campo elettrico che modifica la conduttività del canale.</div>
 
 <br>
 
-Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico crea un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio di corrente elettrica tra i terminali drain e source.
+Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico crea un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio della orrente elettrica.
 
 ##### La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate. Maggiore è la tensione applicata al gate, maggiore è la corrente che scorre tra i due terminali.
 
@@ -225,9 +229,9 @@ I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
 
 ##### I FET sono utilizzati in una vasta gamma di applicazioni, tra cui:
 
-- Elettronica digitale: i FET vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
-- Elettronica analogica: i FET vengono utilizzati per amplificare, filtrare e generare segnali analogici.
-- Elettronica di potenza: i FET vengono utilizzati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
+- Elettronica digitale: vengono utilizzati per realizzare circuiti logici, circuiti di memoria e circuiti di calcolo.
+- Elettronica analogica: sono usati per amplificare, filtrare e generare segnali analogici.
+- Elettronica di potenza: sono usati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
 
 I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
 
