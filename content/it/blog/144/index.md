@@ -47,16 +47,12 @@ Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **
 
 > <strong>I transitor e le "valvole"</strong>: se hai già una qualche conoscenza di elettronica avrai letto che il  funzionamento del transistor è simile a quello delle antiche "valvole" termoioniche, ormai rintracciabili sono in alcuni amplificatori HI-FI per amatori.
 
-<br>
-
 Elettricamente il transistor funziona come una valvola termoionica, ma la somiglianza finisce qui. Il transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
 La funzione che più interessa il mondo del digitale è il suo funzionamento come interruttore. Possiamo utilizzarlo ad esempio per interrompere un segnale elettrico e spegnere un LED o un servo-motore. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Il funzionamento del transistor</strong> si basa sulla giunzione P-N, la porzione di un pezzo di silico in cui si trovano a contatto due zone con diversa conduttività elettrica. Una regione è di <strong>tipo P</strong>, con una conduttività elettrica elevata, mentre l'altra è di <strong>tipo N</strong>, con una conduttività elettrica relativamente bassa.</div>
-
-<br>
 
 ##### La spiegazione passo dopo passo:
 
@@ -65,7 +61,7 @@ La funzione che più interessa il mondo del digitale è il suo funzionamento com
 3. La minore resistenza accresce il passaggio della corrente principale tra <strong>collettore</strong> ed <strong>emettitore</strong>.
 
 
-## Una breve storia dei transistor
+## Una brevissima storia dei transistor
 
 L'esordio del transistor risale all'inizio del 20° secolo. Il primo transistor fu inventato nel 1947 da un team di scienziati dei Bell Laboratories negli Stati Uniti, che comprendeva William Shockley, John Bardeen e Walter Brattain. Questa invenzione fu una svolta monumentale nell'elettronica, segnando l'inizio dell'era dei semiconduttori.
 
