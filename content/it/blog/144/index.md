@@ -31,7 +31,7 @@ mermaid: true
 
 ## Cos'è un transistor?
 
-Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, memoria RAM o *controller* come il nostro ESP32. E' facile dimenticare che questi e molti altri dispositivi siano sono fatti, alla fine, solo di un numero variabile di transistor e pochi componenti secondari. Il numero dei transistor in un dispositivo può andare da un singolo transistor che pilota un LED fino a decine di milardi per conservare i "GIGA" nelle chiavette USB.
+Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, memoria RAM o *controller* come il nostro ESP32. E' facile dimenticare come questi e tanti altri dispositivi siano composti, alla fine, solo di una massa di transistor e pochi componenti secondari. Il numero dei transistor in un dispositivo può andare da un singolo transistor che pilota un LED fino a decine di milardi per conservare i "GIGA" delle chiavette USB.
 
 ##### Come mai il transistor è onnipresente nella moderna elettronica?
 
@@ -49,7 +49,7 @@ Sfruttando questo principio funzionano, ad esempio, le memorie RAM: Gli stati **
 
 <br>
 
-Elettricamente, dunque il transistor funziona come una valvola termoionica, ma la somiglianza finisce qui. Il transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
+Elettricamente il transistor funziona come una valvola termoionica, ma la somiglianza finisce qui. Il transistor è un robusto componente elettronico a semiconduttore capace di gestire picchi di corrente notevolissimi, di interrompere il passaggio della corrente a velocità formidabili (i GigaHertz delle moderne CPU) e di avere una durata quasi "eterna". 
 
 La funzione che più interessa il mondo del digitale è il suo funzionamento come interruttore. Possiamo utilizzarlo ad esempio per interrompere un segnale elettrico e spegnere un LED o un motorino;. In questo caso, quando la tensione applicata alla base è inferiore a una certa soglia, la giunzione P-N è isolata e non consente il passaggio di corrente elettrica tra collettore ed emettitore.
 
@@ -58,7 +58,7 @@ La funzione che più interessa il mondo del digitale è il suo funzionamento com
 
 <br>
 
-Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività della giunzione, che consente il passaggio di una corrente elettrica <strong>maggiore</strong> tra collettore ed emettitore.
+Quando una tensione viene applicata alla base del transistor, si crea una corrente elettrica nella giunzione P-N. Questa corrente provoca un aumento della conduttività e favorisce il passaggio di una corrente elettrica <strong>maggiore</strong> tra collettore ed emettitore.
 
 
 ## Una breve storia dei transistor
@@ -130,9 +130,9 @@ Seppure ne esistano, come vedi, decine di tipi diversi, i transistor funzionano 
 
 ##### Tipicamente, un transistor è costituito da tre strati di materiale semiconduttore: 
 
-1. - Emettitore
-2. - Base 
-3. - Collettore. 
+1. Emettitore
+2. Base 
+3. Collettore. 
 
 
 > <strong>L'emettitore e il collettore sono generalmente </strong>fortemente drogati, il che significa che hanno un'alta concentrazione di portatori di carica, mentre la base è SOLO leggermente drogata. L'emettitore e il collettore appartengono a un tipo di *doping* (tipo **N** o tipo **P**), mentre la base appartiene all'altro tipo.
@@ -220,13 +220,11 @@ I FET presentano una serie di vantaggi rispetto ai transistor bipolari, tra cui:
 - Elettronica analogica: sono usati per amplificare, filtrare e generare segnali analogici.
 - Elettronica di potenza: sono usati per controllare dispositivi ad alta potenza, come motori elettrici e trasformatori.
 
-I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
-
-
 ## In conclusione
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-I transistor sono fondamentali per la microelettronica perché consentono di realizzare circuiti elettronici complessi in spazi molto ridotti. La miniaturizzazione dei transistor ha portato a un rapido sviluppo della microelettronica, consentendo la realizzazione di dispositivi sempre più sofisticati, come computer, smartphone, tablet e sistemi embedded.</div>
+I FET sono componenti elettronici fondamentali per l'elettronica moderna. Sono presenti in tutti i dispositivi elettronici, e il loro sviluppo ha contribuito in modo determinante alla miniaturizzazione e alla diffusione dell'elettronica.
+</div>
 
 <br>
 <br>
