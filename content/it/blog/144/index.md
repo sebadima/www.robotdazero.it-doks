@@ -31,7 +31,7 @@ mermaid: true
 
 ## Cos'è un transistor?
 
-Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, come delle memorie RAM e dei *controller* come l'ESP32. E' facile dimenticare come questi e altri dispositivi siano sono fatti, alla fine, solo di un numero variabile di transistor. La quantità di transitor in un dispositivo può andare da un singolo transistor che pilota un motorino elettrico fino a decine di milardi per conservare i "GIGA" delle chiavette USB.
+Il transistor è la base della elettronica moderna e costituisce la parte essenziale di ogni CPU, memoria RAM o *controller* come il nostro ESP32. E' facile dimenticare che questi e molti altri dispositivi siano sono fatti, alla fine, solo di un numero variabile di transistor e pochi componenti secondari. Il numero dei transistor in un dispositivo può andare da un singolo transistor che pilota un LED fino a decine di milardi per conservare i "GIGA" nelle chiavette USB.
 
 ##### Come mai il transistor è onnipresente nella moderna elettronica?
 
