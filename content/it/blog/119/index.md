@@ -170,9 +170,6 @@ python -m esptool --chip esp32 erase_flash
 <br>
 
 In pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
-
-
-
 <br>
-<p style="font-size: 0.75em;">R.119.1.3.0</p>
 <br>
+<p style="font-size: 0.75em;">R.119.1.6.1</p>
