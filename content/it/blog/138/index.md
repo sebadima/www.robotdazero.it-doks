@@ -262,7 +262,7 @@ La maggior parte di questi pin supporta anche l'uso di pull-up interno (in sosta
 Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utilizzati per interagire con sensori analogici, come i pin analogici di Arduino.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
-🔑 I pin analogici di ESP32 hanno una risoluzione a 12 bit(0-4096, il che significa che quando la tensione osservata è 0 il valore è 0 e quando si osserva una tensione massima come 3,3 v il valore va a 4096)
+🔑 <strong>I pin analogici dell'ESP32</strong> hanno una risoluzione di 12 bit (0-4096). Se la tensione osservata è <strong>0</strong> il valore rilevato dalla CPU è <strong>0</strong>. Se la tensione arriva sul pin a <strong>3,3V</strong> il valore rilevato diventa <strong>4096</strong>.
 </div>
 
 ##### Questi i pin di ingresso analogico:
@@ -290,11 +290,11 @@ Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utiliz
 #### DAC (Convertitori da digitali ad analogici)
 I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche. L'ESP32 ha due convertitori da digitale ad analogico a 8 bit.
 
-## Il successo del'ESP32
+## Il successo commerciale dell'ESP32
 Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software.
 
 #### Ultimi arrivi della famiglia ESP32
 Il microcontroller <a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a> promette di migliorare ancora le prestazioni della nostra scheda. Con una CPU RISC-V dual-core con clock di 400 MHz e 768KB di SRAM on-chip il nuovo sistema garantisce elevate prestazioni e una più facile connessione di fotocamere ad alta risoluzione con protocollo MIPI-CSI.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.2.3</p>
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.2.4</p>
