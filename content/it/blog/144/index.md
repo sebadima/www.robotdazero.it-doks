@@ -208,7 +208,7 @@ I transistor a effetto di campo (FET) sono un tipo di transistor in cui il fluss
 
 <br>
 
-Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico crea un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio della orrente elettrica.
+Quando la tensione applicata al gate è sufficientemente alta, il campo elettrico crea un canale di conducibilità nella regione di semiconduttore drogata. Questo canale consente il passaggio della corrente elettrica.
 
 ##### La corrente che scorre tra i terminali drain e source dipende dalla tensione applicata al gate. Maggiore è la tensione applicata al gate, maggiore è la corrente che scorre tra i due terminali.
 

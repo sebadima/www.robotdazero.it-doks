@@ -147,6 +147,7 @@ void loop()
   lcd.print("(cm)");  
   delay(2000);  
 }
+
 ```
 
 ### COME COSTRUIRE LA CENTRALINA A COSTO ZERO
