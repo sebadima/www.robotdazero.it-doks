@@ -2,6 +2,61 @@
 <article>
 
 <style>
+.paypal {    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: josefin sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 3rem!important;
+    text-decoration: none!important;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 15px 40px;
+    display: inline-block;
+    background-color: #f9a743;
+    box-shadow: 0 15px 40px rgba(249,167,68,.5);
+    cursor: pointer;}
+</style>
+
+
+
+<style>
 .slider {
    position: relative;
    height: 100%;
@@ -100,20 +155,6 @@
 .dot:last-child {margin-right: 0;}
 .dot:hover {background-color: #fff;}
 .dot--active {background-color: rgba(255,255,255, 0.5);}
-
-button {
-   cursor: pointer;
-   margin-right: 8px;
-   border:none;
-   border-radius: 4px;
-   padding:10px;
-   background-color: #3066BE;
-   color:#FFF;
-   transition: all 0.5s;
-}
-button:last-child {margin-right: 0;}
-button:hover {background-color: #60AFFF;}
-button:focus {outline: none;}
 
 /* Mods */
 .disabled {
@@ -345,7 +386,12 @@ button:focus {outline: none;}
             <br>
 
 
-
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="F5RB8ALGXU3WL" />
+  <input type="hidden" name="currency_code" value="EUR" />
+  <input type="image"  class="paypal" src="/paypal/button.png" border="0" name="submit" title="PayPal, il metodo semplice e sicuro per pagare online" alt="Acquista ora" />
+</form>
 
 
 
@@ -363,6 +409,7 @@ button:focus {outline: none;}
          </div>
       </div>
    </div>
+
 <!-- simulazione ecwid shop -->
 
 
