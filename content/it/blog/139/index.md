@@ -72,7 +72,7 @@ aggiornare il contenuto di una pagina web senza ricaricarla da zero.
 ### Lo schema elettrico del circuito
 Segui attentamente la disposizione dei connettori, studia la foto e in pochi minuti sarai in grado di creare ogni combinazione di colore RGB sulla striscia.
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.svg" alt="schema del circuito per ESP32 per pilotare una sctriscia di LED RGB">
 
 <br>
 <br>
