@@ -36,7 +36,7 @@
      showgrid="false"
      inkscape:zoom="1.9773335"
      inkscape:cx="260.70463"
-     inkscape:cy="189.90221"
+     inkscape:cy="108.98516"
      inkscape:window-width="1482"
      inkscape:window-height="800"
      inkscape:window-x="0"
@@ -4461,7 +4461,8 @@
      id="g1605"
      inkscape:export-filename="/home/sebadima/Desktop/201_bb.png"
      inkscape:export-xdpi="2.46"
-     inkscape:export-ydpi="2.46">
+     inkscape:export-ydpi="2.46"
+     transform="matrix(0.79796095,0,0,1.1965723,63.413181,-26.602922)">
     <line
        stroke-linecap="round"
        stroke="#000000"
@@ -4752,7 +4753,7 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect39901);fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="175.55273"
        y="-112.42773"
-       id="tspan74294">4444</tspan></text>
+       id="tspan9185">4444</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:9.68706px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.242176"
@@ -4780,6 +4781,22 @@
        x="223.85078"
        y="36.064697"
        id="tspan61714" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:9.68706px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.242176"
+     x="155.28235"
+     y="155.1888"
+     id="text51939-5-83"><tspan
+       sodipodi:role="line"
+       id="tspan51937-3-1"
+       style="stroke-width:0.242176"
+       x="155.28235"
+       y="155.1888">ping GND</tspan><tspan
+       sodipodi:role="line"
+       style="stroke-width:0.242176"
+       x="155.28235"
+       y="167.29762"
+       id="tspan61714-8" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:9.68706px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.242176"
