@@ -97,10 +97,10 @@ Inoltre tutti i dispositivi devono essere collegati tra di loro: il GND dell'ESP
 ### L'hardware utilizzato 
 Il circuito comprende pochi pezzi facili da assemblare anche senza una breadboard:
 
-- ESP32 (**1 pz**)
-- TIP120 (**3 pz**)
-- Resistenze 10K Ohm (**3 pz**)
-- Striscia di LED RGB (**1 pz**)  <a href="https://amzn.to/3Sb5V6S" target="_blank">vedi su Amazon</a>
+- 1 **ESP32** 
+- 3  **Tip120**
+- 3 Resistenze **10K Ohm**
+- 1 **Striscia** di LED RGB <a href="https://amzn.to/3Sb5V6S" target="_blank">vedi su Amazon</a>
 
 
 ### Il codice completo
@@ -314,4 +314,4 @@ Per questi progetti potrai avvalerti di transistor come il TIP120, ma anche di s
 Imparare a pilotare carichi esterni con ESP32 è certamente uno *skill*  essenziale per chiunque voglia creare progetti di microelettronica avanzati.
 
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.8.0</p> 
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.139.2.9.0</p> 
