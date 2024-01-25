@@ -49,9 +49,9 @@ PlatformIO è scritto in Python e funziona (in linea di massima) su tutti i site
 - Linux (Ubuntu e Debian ovviamente ma anche FreeBSD e Linux ARMv6+ (la versione Raspberry )
 
 
-Nei nostri progetti usiamo spesso PlatformIO per programmare l'ESP32 e pensiamo sia una valida alternativa as Arduino IDE, in particolare la struttura intuitiva dei file lo rende facile da usare sia nel Terminale che in Visual Code.
+Nei nostri progetti usiamo spesso PlatformIO per programmare l'ESP32 e pensiamo sia una valida alternativa as Arduino IDE, in particolare la struttura intuitiva dei file lo rende facile da usare sia nel Terminale che in Visual Studio Code.
 
-Se non sopporti che l'IDE di Arduino ti *richieda* la creazione di una certa directory, con PlatformIO avrai a disposizione un ambiente di sviluppo flessibile con un solo file di configurazione modificabile da qualsiasi editor. In pratica basta fare copia e incolla di un progetto preesistente per crearne uno nuovo già configurato con parametri e librerie. Per molti programmatori un grosso vantaggio.
+Se non sopporti che l'IDE di Arduino ti *richieda* la creazione di una certa directory, con PlatformIO avrai a disposizione un ambiente di sviluppo flessibile con un solo file di configurazione. In pratica basta fare copia e incolla di un progetto preesistente per crearne uno nuovo già configurato con parametri e librerie varie. Per molti programmatori un grosso vantaggio.
 
 
 ## Come installare PlatformIO su Windows 11
@@ -111,11 +111,56 @@ Se vuoi avere accesso ai comandi da CMD.exe o da Terminale devi:
 Installare PlatformIO IDE come visto prima e cewaew dei link agli eseguibili di PlatformIO:
 
 
-#### Abilitare i comandi testuali su Windows
+## Abilitare i comandi testuali su Windows
 
-Si prega di leggere una di queste istruzioni Come posso impostare o modificare la variabile di sistema PATH?
+
+### come modificare la variabile PATH in Windows 11 e 10
+
 
 È necessario modificare la variabile di ambiente di sistema chiamata Path e aggiungere C:\Users\UserName\.platformio \ penv \ Scripts \ path all'inizio di un elenco (sostituire il nome utente con il nome dell'account).
+
+
+> La variabile PATH è una variabile di sistema utilizzata dal sistema operativo Windows per individuare gli eseguibili richiesti dalla riga di comando o dalla finestra del terminale. La variabile PATH è una stringa che contiene una serie di percorsi di directory, separati da punto e virgola. Quando si esegue un comando da riga di comando, Windows cerca l'eseguibile in ciascuna delle directory elencate nella variabile PATH.
+
+
+
+Per modificare la variabile PATH in Windows 11 o 10, è possibile utilizzare il Pannello di controllo o l'Prompt dei comandi.
+
+
+#### Come farlo dalla interfaccia di Windows 
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Apri il Pannello di controllo.
+Fai clic su Sistema e sicurezza.
+Fai clic su Sistema.
+Nella parte sinistra della finestra, fai clic su Impostazioni avanzate di sistema.
+Fare clic sulla scheda Avanzate.
+Nella sezione Variabili di ambiente, fare clic su Variabili di sistema.
+Nella sezione Variabili di sistema, individuare la variabile PATH.
+Fare clic su Modifica.
+Nella casella Valore della variabile, modificare il percorso della variabile PATH come desiderato.
+Fare clic su OK.
+Fare clic su OK per chiudere la finestra Variabili di sistema.
+Fare clic su OK per chiudere la finestra Impostazioni di sistema avanzate.
+</div>
+
+
+#### Come farlo dal Prompt dei comandi
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+
+Aprire l'Prompt dei comandi.
+Digitare il seguente comando:
+setx PATH "percorso1;percorso2;..."
+Sostituire "percorso1" e "percorso2" con i percorsi delle directory che si desidera aggiungere alla variabile PATH.
+3. Premere Invio.
+Ad esempio, per aggiungere il percorso "C:\Program Files\Java" alla variabile PATH, è possibile utilizzare il seguente comando:
+setx PATH "C:\Program Files\Java"
+Per aggiungere più percorsi alla variabile PATH, è possibile separare i percorsi con un punto e virgola. Ad esempio, per aggiungere i percorsi "C:\Program Files\Java" e "C:\Program Files\Python", è possibile utilizzare il seguente comando:
+setx PATH "C:\Program Files\Java;C:\Program Files\Python"
+Dopo aver modificato la variabile PATH, è necessario riavviare il computer o aprire una nuova finestra della riga di comando per rendere effettive le modifiche.</div>
+
+
 
 
 Nei sistemi Unix e Unix-like, è possibile creare collegamenti simbolici (link simbolici) nel proprio HOME HOME/.directory/bin / locale per gli eseguibili Platform necessari. Questo vi permetterà di eseguire i comandi platformio da qualsiasi emulatore di terminale fino a quando si è connessi come l'utente PlatformIO è installato e configurato per.
