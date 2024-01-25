@@ -18,11 +18,19 @@ mermaid: true
 
 
 <!-- 
+
 <a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a>
-<a href="/contatti">contatti</a>
+<a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">articolo</a>
+ 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
+
+<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/201.webp" alt="">
+
 ```bash
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
+
+⚡️ 😎 👋 🔑 ( https://yaytext.com/emoji/ )   L&#8217;alimentazione   L&#8217;alimentazione 
+
 -->
 
 <hr>
@@ -32,56 +40,55 @@ mermaid: true
 
 
 
+## Perchè usare PlatformIO
+
+PlatformIO è scritto in Python e funziona (in linea di massima) su tutti i sitemi dove può girare la versione 3.6 di Python, tra cui alcuni micro-computer basati su ARM come il Raspberry Pi. I sistemi operativi utilizzabili sono davvero molti:
+
+- Windows, 
+- macOS, 
+- Linux (Ubuntu e Debian ovviamente ma anche FreeBSD e Linux ARMv6+ (la versione Raspberry )
+
+
+Nei nostri progetti usiamo spesso PlatformIO per programmare l'ESP32 e pensiamo sia una valida alternativa as Arduino IDE, in particolare la struttura intuitiva dei file lo rende facile da usare nel Terminale tanto come estensione di Visual Code.
+
+Se non sopporti che l'IDE di Arduino ti *richieda* la creazione di una certa directory, con PlatformIO avrai a disposizione un ambiente flessibile (funziona da GUI e da Terminale) con un file di configurazione in formato testo modificabile da qualsiasi editor VS Code compreso. In pratica basta fare copia e incolla di un progetto preesistente per crearne uno già configurato con parametri e librerie varie. Per molti programmatori un grosso vantaggio.
+
+
+## Come installare PlatformIO su Windows 11
+
+Puoi seguire in sequenza questi passi che valgono anche per Windows 10:
+
+- apri il Microsoft Store e cerca "PlatformIO IDE".
+- fai clic su "Installa" per installare l'estensione PlatformIO per Visual Studio Code.
+
+Dopo l'installazione:
+
+1. avvia Visual Studio Code.
+2. nella barra laterale fai clic su "Estensioni".
+3. digita "PlatformIO".
+4. fai clic su "Installa"
 
 
 
+## La installazione di PlatformIO su Ubuntu
 
+Noi di Robotdazero consigliamo di installare Ubuntu tra le varie versione di Linux: i comandi seguenti funzioneranno su Debiane Ubuntu ma non u altre distro come Fedorala
 
+1. Apri un terminale e digita:
 
-
-
-Installazione di PlatformIO su Windows 11
-
-Aprire il Microsoft Store e cercare "PlatformIO IDE".
-Fare clic su "Installa" per installare l'estensione PlatformIO per Visual Studio Code.
-Dopo l'installazione, avviare Visual Studio Code.
-Nella barra laterale di Visual Studio Code, fare clic su "Estensioni".
-Nella barra di ricerca, digitare "PlatformIO".
-Fare clic su "Installa" per installare l'estensione PlatformIO IDE.
-Installazione di PlatformIO su Linux
-
-Aprire un terminale e digitare i seguenti comandi:
+```bash
 sudo apt update
 sudo apt install platformio
-Dopo l'installazione, avviare Visual Studio Code.
-Nella barra laterale di Visual Studio Code, fare clic su "Estensioni".
-Nella barra di ricerca, digitare "PlatformIO".
-Fare clic su "Installa" per installare l'estensione PlatformIO IDE.
-Installazione di PlatformIO su macOS
-
-Aprire un terminale e digitare i seguenti comandi:
-brew update
-brew install platformio
-Dopo l'installazione, avviare Visual Studio Code.
-Nella barra laterale di Visual Studio Code, fare clic su "Estensioni".
-Nella barra di ricerca, digitare "PlatformIO".
-Fare clic su "Installa" per installare l'estensione PlatformIO IDE.
-Una volta installata l'estensione PlatformIO IDE, è possibile iniziare a creare progetti per microcontrollori.
-
-Per creare un nuovo progetto, aprire Visual Studio Code e fare clic su "File" > "Nuovo" > "Progetto".
-
-Nella finestra di dialogo "Nuovo progetto", selezionare "PlatformIO" e fare clic su "Avanti".
-
-Nella finestra di dialogo "Nuovo progetto PlatformIO", selezionare la scheda "Nuovo" e immettere le informazioni sul progetto.
-
-Fare clic su "Fine" per creare il progetto.
-
-Il progetto verrà aperto in Visual Studio Code. È possibile iniziare a scrivere codice per il microcontrollore.
+```
 
 
+2. Dopo l'installazione avvia Visual Studio Code.
+3. Nella barra laterale fai clic su "Estensioni".
+4. Nella barra di ricerca,digita "PlatformIO".
+5. Fai clic su "Installa"
 
 
-
+Colami sistema precedente viene installata la versione di PlatformIO dispobibile nello "Store" di UbuntuNel sito ufficiale di PlatformIO puoi
 Script di installazione (consigliato).
 Avvertimento
 
