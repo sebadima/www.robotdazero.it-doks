@@ -17,21 +17,8 @@ mermaid: true
 
 
 
-<!-- 
-https://docs.platformio.org/en/latest/core/installation/requirements.html
-
-```bash
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
-
-⚡️ 😎 👋 🔑 ( https://yaytext.com/emoji/ )   L&#8217;alimentazione   L&#8217;alimentazione 
--->
-
 <hr>
 <br>
-
-
-
-
 
 ## Perchè usare PlatformIO
 
