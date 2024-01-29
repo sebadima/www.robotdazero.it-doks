@@ -87,29 +87,37 @@ Con il sistema appena visto puoi installare la versione *binaria* di PlatformIO 
 
 Per procedere con la installazione consigliata puoi scrivere su terminale:
 
-#### Usando curl
+#### Usando curl:
 
 ```bash
 curl -fsSL -o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 python3 get-platformio.py
 ```
 
-#### Usando wget
+#### Usando wget:
 
 ```bash
 wget -O get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 python3 get-platformio.py
 ```
 
+<br><br>
+
 ## Come usare Platformio da linea di comando
 
-Terminata la semplicissima installazione puoi iniziare ad usare Platformio da Visual Code, ma per usare il compilatore dalla linea di comando devi abilitare i comandi su Windows quando su Linux.
+Terminata questa semplice installazione puoi iniziare ad usare Platformio da Visual Code; ma per usare il compilatore dalla linea di comando devi abilitarne i comandi su Windows o Linux, a secondo dell'OS che vuoi usare
 
 
 ### Abilitare i comandi testuali su Windows
 
 
-È necessario modificare la variabile di ambiente di sistema chiamata Path e aggiungere C:\Users\UserName\.platformio \ penv \ Scripts \ path all'inizio di un elenco (sostituire il nome utente con il nome dell'account).
+È necessario modificare la variabile di ambiente di sistema chiamata "Path" e aggiungere 
+
+```bash
+C:\Users\UserName\.platformio\penv\Scripts\
+```
+
+all'inizio della lista. Ricorda di sostituire "UserName" con il tuo nome utente.
 
 
 > La variabile PATH è una variabile di sistema utilizzata dal sistema operativo Windows per individuare gli eseguibili richiesti dalla riga di comando o dalla finestra del terminale. La variabile PATH è una stringa che contiene una serie di percorsi di directory, separati da punto e virgola. Quando si esegue un comando da riga di comando, Windows cerca l'eseguibile in ciascuna delle directory elencate nella variabile PATH.
