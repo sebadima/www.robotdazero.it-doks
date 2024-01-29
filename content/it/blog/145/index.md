@@ -22,7 +22,7 @@ mermaid: true
 
 ## Perchè usare PlatformIO
 
-PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente come l'IDE di Arduino, funziona in modalità grafica (usando Visual Code) e in in modalità testo. Puoi scegliere indifferentemente l'uno o l'altro su computer di buona potenza, ma su computer dalle modeste prestazioni è consigliabile usare PlatformIO. E' scritto totalmente in Python e dispone delle stesse librerie di Arduino, ma su questo ha un grosso vantaggio: non usa la Java Virtual Machine.
+PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente come l'IDE di Arduino, funziona in modalità grafica (usando Visual Studio Code) e in in modalità testo. Puoi scegliere indifferentemente l'uno o l'altro su computer di buona potenza, ma su computer dalle modeste prestazioni è consigliabile usare PlatformIO. E' scritto totalmente in Python e dispone delle stesse librerie di Arduino, ma su questo ha un grosso vantaggio: non usa la Java Virtual Machine.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>L'IDE di Arduino è scritto in Java</strong>, un linguaggio di programmazione orientato agli oggetti che è stato sviluppato da Sun Microsystems nel 1995. Java deve sempre appoggiarsi alla Java Virtual Machine (JVM) che traduce il codice Java in linguaggio macchina. In tal modo i programmi sorgente vengono eseguiti dall'hardware: senza la JVM il codice Java non potrebbe essere eseguito su nessun computer.</div>
@@ -38,7 +38,7 @@ La JVM è un software complesso che richiede una notevole quantità di risorse h
 In generale, la JVM richiede più risorse hardware rispetto ad altri linguaggi di programmazione, come C o Python.</div>
 
 <br>
-Ciò è dovuto al fatto che la JVM deve eseguire il codice Java in un ambiente virtuale. Su alcuni computer come il Raspberry PI la JVM tende a girare troppo lentamente!
+Su alcuni computer come il Raspberry PI, Orange PI o ODROID N2+ la JVM tende a girare troppo lentamente: per questo ti consigliamo di adottare delle soluzione software alternative che non consumino CPU e RAM.
 
 <br>
 <br>
@@ -55,18 +55,21 @@ Puoi seguire in sequenza questi passi (che valgono anche per Windows 10):
 
 Dopo l'installazione:
 
-1. avvia Visual Studio Code.
-2. nella barra laterale fai clic su "Estensioni".
-3. digita "PlatformIO".
-4. fai clic su "Installa"
+<strong>1</strong>. avvia Visual Studio Code.
+
+<strong>2</strong>. nella barra laterale fai clic su "Estensioni".
+
+<strong>3</strong>. digita "PlatformIO".
+
+<strong>4</strong>. fai clic su "Installa"
 
 
 
 ## La installazione su Linux
 
-Noi di Robotdazero consigliamo di installare "Ubuntu" tra le molte *distro* di Linux: i comandi seguenti funzioneranno solo su "Debian" e Ubuntu ma non su altre distro come "Fedora" ad esempio.
+Noi di Robotdazero consigliamo di scegliere "Ubuntu" tra le molte *distro* di Linux: i comandi seguenti funzioneranno solo su "Debian" e Ubuntu ma non su altre distro come "Fedora" ad esempio.
 
-1. Apri un terminale e digita:
+<strong>1</strong>. Apri un terminale e digita:
 
 ```bash
 sudo apt update
@@ -74,13 +77,16 @@ sudo apt install platformio
 ```
 
 
-2. Dopo l'installazione avvia Visual Studio Code.
-3. Nella barra laterale fai clic su "Estensioni".
-4. Nella barra di ricerca digita "PlatformIO".
-5. Fai clic su "Installa"
+<strong>2</strong>. Dopo l'installazione avvia Visual Studio Code
+
+<strong>3</strong>. Nella barra laterale fai clic su "Estensioni"
+
+<strong>4</strong>. Nella barra di ricerca digita "PlatformIO"
+
+<strong>5</strong>.. Fai clic su "Installa"
 
 
-Con il sistema appena visto puoi installare la versione *binaria* di PlatformIO disponibile nello "Store" di Ubuntu, certamente funzionante ma talvolta non aggiornatissima. Nello stesso sito ufficiale di PlatformIO viene consigliato di usare il loro script universale per Linux.
+Con questo sistema puoi installare la versione *binaria* di PlatformIO disponibile nello "Store" di Ubuntu: certamente funzionante ma talvolta non aggiornatissima. Nello stesso sito ufficiale di PlatformIO viene consigliata una installazione alternativa che usa il loro *script* universale per Linux.
 
 
 ### La installazione su Linux usando lo script originale
@@ -101,17 +107,17 @@ wget -O get-platformio.py https://raw.githubusercontent.com/platformio/platformi
 python3 get-platformio.py
 ```
 
-<br><br>
+<br>
 
 ## Come usare Platformio da linea di comando
 
-Terminata questa semplice installazione puoi iniziare ad usare Platformio da Visual Code; ma per usare il compilatore dalla linea di comando devi abilitarne i comandi su Windows o Linux, a secondo dell'OS che vuoi usare
+Terminata questa semplice installazione puoi iniziare ad usare Platformio da Visual Studio Code: ma per usare il compilatore dalla linea di comando devi *abilitarne* i comandi su Windows o Linux, a secondo dell'OS che vuoi usare.
 
 
 ### Abilitare i comandi testuali su Windows
 
 
-È necessario modificare la variabile di ambiente di sistema chiamata "Path" e aggiungere 
+In questyo caso è necessario modificare la variabile di ambiente di sistema chiamata "Path" e aggiungere 
 
 ```bash
 C:\Users\UserName\.platformio\penv\Scripts\
@@ -120,29 +126,39 @@ C:\Users\UserName\.platformio\penv\Scripts\
 all'inizio della lista. Ricorda di sostituire "UserName" con il tuo nome utente.
 
 
-> La variabile PATH è una variabile di sistema utilizzata dal sistema operativo Windows per individuare gli eseguibili richiesti dalla riga di comando o dalla finestra del terminale. La variabile PATH è una stringa che contiene una serie di percorsi di directory, separati da punto e virgola. Quando si esegue un comando da riga di comando, Windows cerca l'eseguibile in ciascuna delle directory elencate nella variabile PATH.
+> La variabile PATH è una variabile di sistema utilizzata dal sistema operativo Windows per individuare gli eseguibili richiesti dalla riga di comando. La variabile PATH è una stringa che contiene una serie di percorsi di directory, separati da punto e virgola. Quando si esegue un comando da riga di comando, Windows cerca l'eseguibile in ciascuna delle directory elencate nella variabile PATH.
 
 
 
 Per modificare la variabile PATH in Windows 11 o 10, è possibile utilizzare il Pannello di controllo o l'Prompt dei comandi.
 
 
-#### Come farlo dalla interfaccia di Windows 
+#### Come farlo dalla interfaccia di Windows:
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Apri il Pannello di controllo.
-Fai clic su Sistema e sicurezza.
-Fai clic su Sistema.
-Nella parte sinistra della finestra, fai clic su Impostazioni avanzate di sistema.
-Fare clic sulla scheda Avanzate.
-Nella sezione Variabili di ambiente, fare clic su Variabili di sistema.
-Nella sezione Variabili di sistema, individuare la variabile PATH.
-Fare clic su Modifica.
-Nella casella Valore della variabile, modificare il percorso della variabile PATH come desiderato.
-Fare clic su OK.
-Fare clic su OK per chiudere la finestra Variabili di sistema.
-Fare clic su OK per chiudere la finestra Impostazioni di sistema avanzate.
-</div>
+<strong>1.</strong> Apri il Pannello di controllo
+
+<strong>2.</strong> Fai clic su Sistema e sicurezza
+
+<strong>3.</strong> Fai clic su Sistema
+
+<strong>4.</strong> Nella parte sinistra della finestra, fai clic su Impostazioni avanzate di sistema
+
+<strong>5.</strong> Fai clic sulla scheda Avanzate
+
+<strong>6.</strong> Nella sezione Variabili di ambiente, fai clic su Variabili di sistema
+
+<strong>7.</strong> Nella sezione Variabili di sistema, individua la variabile PATH
+
+<strong>8.</strong> Fai clic su Modifica
+
+<strong>9.</strong> Nella casella Valore della variabile, modifica il percorso della variabile PATH come desiderato
+
+<strong>A.</strong> Fai clic su OK
+
+<strong>B.</strong> Fai clic su OK per chiudere la finestra Variabili di sistema
+
+<strong>C.</strong> Fai clic su OK per chiudere la finestra Impostazioni di sistema avanzate
+
 
 
 #### Come farlo dal Prompt dei comandi
