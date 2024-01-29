@@ -161,33 +161,29 @@ Per modificare la variabile PATH in Windows 11 o 10, è possibile utilizzare il 
 
 
 
-#### Come farlo dal Prompt dei comandi
+#### Come farlo dal Prompt dei comandi:
 
 
 
-Apri l'Prompt dei comandi.
-Digita il seguente comando:
+Apri il Prompt dei comandi e digita il seguente comando:
 
 ```bash
 setx PATH "percorso1;percorso2;..."
 ```
 Sostituisci "percorso1" e "percorso2" con i percorsi delle directory che vuoi aggiungere alla variabile PATH.
 
-3. Premi Invio.
-Ad esempio, per aggiungere il percorso "C:\Program Files\Java" alla variabile PATH, è possibile utilizzare il seguente comando:
+Ad esempio per aggiungere il percorso<br> "C:\Users\\\<user>\\\.platformio\penv\Scripts;" alla variabile PATH, è possibile utilizzare il seguente comando:
 
 ```bash
-setx PATH "C:\Program Files\Java"
+setx PATH "C:\Users\<user>\.platformio\penv\Scripts;"
 ```
 
-Per aggiungere più percorsi alla variabile PATH, è possibile separare i percorsi con un punto e virgola. Ad esempio, per aggiungere i percorsi "C:\Program Files\Java" e "C:\Program Files\Python", è possibile utilizzare il seguente comando:
+
+> Dopo aver modificato la variabile PATH, è necessario riavviare il computer Al riavvio potresti lanciare il seguente comando per controllare la corretta installazione:
 
 ```bash
-setx PATH "C:\Program Files\Java;C:\Program Files\Python"
+run pio system info 
 ```
-
-Dopo aver modificato la variabile PATH, è necessario riavviare il computer o aprire una nuova finestra della riga di comando per rendere effettive le modifiche.
-
 
 ### Abilitare i comandi testuali su Linux
 
@@ -197,7 +193,7 @@ Su Linux si possono creare dei collegamenti simbolici (symlinks) all'interno del
 $HOME/.local/bin/ 
 ```
 
-In questo modo si possono lanciare tutti gli eseguibili di PlatformIO dal terminale. Per iniziare devi esportare la directory  $HOME/.local/bin/ nella variabile di ambiente PATH. Se usi *Bash* come shell predefinita puoi editare il file **~/.profile** aggiungendo alla fine qusta linea:
+In questo modo si possono lanciare tutti gli eseguibili di PlatformIO dal terminale. Per iniziare devi esportare la directory  $HOME/.local/bin/ nella variabile di ambiente PATH. Se usi *Bash* come shell predefinita puoi editare il file **~/.profile** aggiungendo alla fine questa linea:
 
 ```bash
 export PATH=$PATH:$HOME/.local/bin
@@ -205,7 +201,7 @@ export PATH=$PATH:$HOME/.local/bin
 Se usi la shell *Zsh* come shell di default puoi modificare **~/.zprofile** e aggiungere lo stesso codice visto sopra.
 
 
-Dopo tutto ciò puoi creare i link simbolici dal terminale facendo copia e incolla:
+Puoi adesso creare i link simbolici dal terminale facendo copia e incolla:
 
 ```bash
 ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
@@ -213,7 +209,7 @@ ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio
 ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
 ```
 
-Fai ripartire il terminale facendo "*logout*" e "*login*"" nuovamente e puoi proseguire. Da questo monento in poi dovresti essere in gardo di usare tutti i comandi di PlatformIO dal terminale e senza fare restart del computer.
+Fai ripartire il terminale facendo "*logout*" e "*login*"" nuovamente e puoi proseguire. Da questo momento in poi dovresti essere in grado di usare tutti i comandi di PlatformIO dal terminale e senza fare "restart" del computer.
 
 <br>
 <br>
