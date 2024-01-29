@@ -1,7 +1,7 @@
 ---
 title: "Come installare PlatformIO"
 description: "Come installare PlatformIO"
-excerpt: "..."
+excerpt: "PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare sia in modalità grafica (usando Visual Code) sia in modalità testo da terminale..."
 date: 2024-01-23T09:19:42+01:00
 lastmod: 2024-01-23T09:19:42+01:00
 draft: false
@@ -22,7 +22,7 @@ mermaid: true
 
 ## Perchè usare PlatformIO
 
-PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare in modalità grafica (appoggiandosi a Visual Code) ma anche in modalità testo su ogni tipo di PC. Scegliere Arduino o PlatformIO su computer di buona potenza è solo una questione di gusti, ma su su computer poco performanti PlatformIO rappresenta la scelta migliore: è scritto totalmente in in Python, mebtre l'IDE di Arduino si affida a Java.
+PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare sia in modalità grafica (usando Visual Code) sia in modalità testo da terminale. Puoi scegliere indifferentemente Arduino o PlatformIO su computer di buona potenza, ma su computer dalle modeste prestazioni è consigliabile usare PlatformIO. E' scritto totalmente in Python e dispone delle stesse librerie di Arduino, ma su questo ha un grosso vantaggio: elimina completamente la necessità di usare la Java Virtual Machine.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>L'IDE di Arduino è scritto in Java</strong>. Java è un linguaggio di programmazione orientato agli oggetti che è stato sviluppato da Sun Microsystems nel 1995. Java deve usare la Java Virtual Machine (JVM). La JVM è un software che traduce il codice Java in linguaggio macchina, che può essere eseguito dall'hardware del computer. Senza la JVM, il codice Java non potrebbe essere eseguito su alcun computer.</div>
