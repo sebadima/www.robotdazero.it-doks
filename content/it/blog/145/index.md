@@ -146,52 +146,57 @@ Fare clic su OK per chiudere la finestra Impostazioni di sistema avanzate.
 
 #### Come farlo dal Prompt dei comandi
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 
-Aprire l'Prompt dei comandi.
-Digitare il seguente comando:
+
+Apri l'Prompt dei comandi.
+Digita il seguente comando:
+
+```bash
 setx PATH "percorso1;percorso2;..."
-Sostituire "percorso1" e "percorso2" con i percorsi delle directory che si desidera aggiungere alla variabile PATH.
-3. Premere Invio.
+```
+Sostituisci "percorso1" e "percorso2" con i percorsi delle directory che vuoi aggiungere alla variabile PATH.
+
+3. Premi Invio.
 Ad esempio, per aggiungere il percorso "C:\Program Files\Java" alla variabile PATH, è possibile utilizzare il seguente comando:
+
+```bash
 setx PATH "C:\Program Files\Java"
+```
+
 Per aggiungere più percorsi alla variabile PATH, è possibile separare i percorsi con un punto e virgola. Ad esempio, per aggiungere i percorsi "C:\Program Files\Java" e "C:\Program Files\Python", è possibile utilizzare il seguente comando:
+
+```bash
 setx PATH "C:\Program Files\Java;C:\Program Files\Python"
+```
+
 Dopo aver modificato la variabile PATH, è necessario riavviare il computer o aprire una nuova finestra della riga di comando per rendere effettive le modifiche.</div>
 
 
 ### Abilitare i comandi testuali su Linux
 
-Nei sistemi Unix e Unix-like, è possibile creare collegamenti simbolici (link simbolici) nel proprio HOME HOME/.directory/bin / locale per gli eseguibili Platform necessari. Questo vi permetterà di eseguire i comandi platformio da qualsiasi emulatore di terminale fino a quando si è connessi come l'utente PlatformIO è installato e configurato per.
+Su Linux si possono creare dei collegamenti simbolici (symlinks) all'interno della directory: 
+```bash
+$HOME/.local/bin/ 
+```
 
-Innanzitutto, se non è già il caso, dovresti esportare il tuo HOME HOME/.directory locale / bin / alla variabile ambientale PATH. Se usi Bash come shell predefinita, puoi farlo modificando ~/.profilo o ~/.bash_profile e aggiungendo la seguente riga:
+In questo modo si possono lanciare tutti gli eseguibili di PlatformIO dal terminale. Per iniziare devi esportare la directory  $HOME/.local/bin/ nella variabile di ambiente PATH. Se usi *Bash* come shell predefinita puoi editare ~/.profile aggiungendo alla fine qusta linea:
 
-esporta PERCORSO=PATH PERCORSO:HOME HOME/.locale / bin
-Se si utilizza Zsh, è possibile modificare ~/.zprofile e aggiungi il codice sopra, o per supportare entrambi, Bash e Zsh, puoi prima modificare ~/.profilo e aggiungere il codice sopra, quindi modificare ~/.zprofile e aggiungere la seguente riga:
-
-emula sh-c'. ~/.profilo'
-Se non conosci la differenza tra i due, controlla questa pagina.
-
-Ora che è fatto, o se HOME HOME/.local / bin / è già stato esportato nella variabile ambientale PATH, è possibile creare i collegamenti simbolici aprendo l'app del terminale di sistema e incollare questi comandi.
-
-ln-s ~/.platformio / penv / bin /platformio~/.locale / bin / platformio
-ln-s ~/.platformio / penv/bin /pio~/.locale / bin / pio
-ln-s ~/.platformio / penv/bin /piodebuggdb~/.locale / bin / piodebuggdb
-Dopo che tutto è stato fatto, riavvia la sessione (esci e accedi di nuovo) e sei a posto.
-
-Metodo 2
-È possibile creare collegamenti simbolici a livello di sistema. Questo metodo non è raccomandato se hai più utenti sul tuo computer perché i collegamenti simbolici saranno interrotti per altri utenti e otterranno errori durante l'esecuzione dei comandi PlatformIO. Se questo non è un problema, apri l'app terminale di sistema e incolla questi comandi. (PROBABILMENTE richiede l'accesso amministratore sudo):
-
-mkdir-p/usr / locale / bin
-ln-s ~/.platformio / penv / bin / platformio / usr / local / bin / platformio
-ln-s ~/.platformio / penv / bin / pio / usr / locale / bin / pio
-ln-s ~/.platformio / penv / bin / piodebuggdb / usr / locale / bin / piodebuggdb
-Dopodiché, dovresti essere in grado di eseguire PlatformIO dal terminale. Non è necessario riavviare.
+```bash
+export PATH=$PATH:$HOME/.local/bin
+```
+Se usi la shell *Zsh* come shell di default puoi modificare ~/.zprofile e aggiungere lo stesso codice visto sopra.
 
 
+Dopo tutto ciò puoi creare i link simbolici dal terminale facendo copia e incolla:
 
+```bash
+ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
+ln -s ~/.platformio/penv/bin/pio ~/.local/bin/pio
+ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb
 
+```
 
+Fai ripartire il terminale facendo "*logout* e *login* nuovamente e puoi proseguire. Da questo monento in poi dovresti essere in gardo di usare tutti i comandi di PlatformIO dal terminale e senza fare restart del computer.
 
 
 
