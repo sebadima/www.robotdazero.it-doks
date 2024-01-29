@@ -18,19 +18,12 @@ mermaid: true
 
 
 <!-- 
-
-<a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a>
-<a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione">articolo</a>
- 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="">
-
-<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/201.webp" alt="">
+https://docs.platformio.org/en/latest/core/installation/requirements.html
 
 ```bash
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
 
 ⚡️ 😎 👋 🔑 ( https://yaytext.com/emoji/ )   L&#8217;alimentazione   L&#8217;alimentazione 
-
 -->
 
 <hr>
@@ -42,16 +35,20 @@ mermaid: true
 
 ## Perchè usare PlatformIO
 
-PlatformIO è scritto in Python e funziona (in linea di massima) su tutti i sitemi dove può girare la versione 3.6 di Python, tra cui alcuni micro-computer basati su ARM come il Raspberry Pi. I sistemi operativi utilizzabili sono davvero molti:
-
-- Windows, 
-- macOS, 
-- Linux (Ubuntu e Debian ovviamente ma anche FreeBSD e Linux ARMv6+ (la versione Raspberry )
+PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare in modalità grafica (appoggiandosi a Visual Code) ma in modalità testo su ogni tipo di PC. Scegliere Arduino o PlatformIO su computer di buona potenza è solo una questione di gusti, ma su su computer poco performanti PlatformIO rappresenta la scelta migliore: è scritto totalmente in in Python, mebtre l'IDE di Arduino si affida a Java.
 
 
-Nei nostri progetti usiamo spesso PlatformIO per programmare l'ESP32 e pensiamo sia una valida alternativa as Arduino IDE, in particolare la struttura intuitiva dei file lo rende facile da usare sia nel Terminale che in Visual Studio Code.
 
-Se non sopporti che l'IDE di Arduino ti *richieda* la creazione di una certa directory, con PlatformIO avrai a disposizione un ambiente di sviluppo flessibile con un solo file di configurazione. In pratica basta fare copia e incolla di un progetto preesistente per crearne uno nuovo già configurato con parametri e librerie varie. Per molti programmatori un grosso vantaggio.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>L'IDE di Arduino è scritto in Java</strong>. Java è un linguaggio di programmazione orientato agli oggetti che è stato sviluppato da Sun Microsystems nel 1995. Java deve usare la Java Virtual Machine (JVM). La JVM è un software che traduce il codice Java in linguaggio macchina, che può essere eseguito dall'hardware del computer. Senza la JVM, il codice Java non potrebbe essere eseguito su alcun computer.</div>
+
+
+### I problemi della Java Machine
+
+La JVM è un software complesso che richiede una certa quantità di risorse hardware. La quantità di risorse richieste dipende da diversi fattori, tra cui la complessità del codice Java che viene eseguito, la versione della JVM utilizzata e le librerie e i framework che vengono utilizzati. In generale, la JVM richiede più risorse hardware rispetto ad altri linguaggi di programmazione, come C o Python. Ciò è dovuto al fatto che la JVM deve eseguire il codice Java in un ambiente virtuale.
+Su alcuni computer come il Raspberry PI usare la JVM tende a girare troppo lentamente.
+
+> con PlatformIO avrai a disposizione un ambiente di sviluppo flessibile con un solo file di configurazione. In pratica basta fare copia e incolla di un progetto preesistente per crearne uno nuovo già configurato con parametri e librerie varie. Per molti programmatori un grosso vantaggio rispetto alla gestione *condivisa* delle librerie di Arduino.
 
 
 ## Come installare PlatformIO su Windows 11
@@ -70,9 +67,9 @@ Dopo l'installazione:
 
 
 
-## La installazione di PlatformIO su Ubuntu
+## La installazione su Linux
 
-Noi di Robotdazero consigliamo di installare Ubuntu tra le varie versione di Linux: i comandi seguenti funzioneranno su Debiane Ubuntu ma non su altre distro come Fedora.
+Noi di Robotdazero consigliamo di installare Ubuntu tra le mille *distro* di Linux: i comandi seguenti funzioneranno solo su Debian e Ubuntu ma non su altre distro come Fedora.
 
 1. Apri un terminale e digita:
 
@@ -88,33 +85,35 @@ sudo apt install platformio
 5. Fai clic su "Installa"
 
 
-Con il sistema appena visto puoi installare la versione *binaria* di PlatformIO dispobibile nello "Store" di Ubuntu, certamente funzionnate ma mnon necessariamente aggiornatissima. Nello stesso sito ufficiel di PlatformIO consigliano per i più esperti di installarlo con uno script:
+Con il sistema appena visto puoi installare la versione *binaria* di PlatformIO disponibile nello "Store" di Ubuntu, certamente funzionate ma non necessariamente aggiornatissima. Nello stesso sito ufficiale di PlatformIO viene consigliato di uare il loro uno script per Linux.
 
 
-##### Usando curl
+### La installazione su Linux usando curl
+
+Per procedere con la installazione consigliata puoi scrivere su terminale:
+
+#### Usando curl
+
 ```bash
 curl-fsSL-o get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 pitone 3 get-platformio.py
 ```
 
-##### Usando wget
+#### Usando wget
 
 ```bash
 wget-O get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 pitone 3 get-platformio.py
 ```
 
-### Come usare Platformio da linea di comando
+## Come usare Platformio da linea di comando
+
+Terminata la semplicissima installazione puoi iniziare ad usare il compilatore dalla linea di comando.
 
 Se vuoi avere accesso ai comandi da CMD.exe o da Terminale devi:
 
-Installare PlatformIO IDE come visto prima e cewaew dei link agli eseguibili di PlatformIO:
 
-
-## Abilitare i comandi testuali su Windows
-
-
-### come modificare la variabile PATH in Windows 11 e 10
+### Abilitare i comandi testuali su Windows
 
 
 È necessario modificare la variabile di ambiente di sistema chiamata Path e aggiungere C:\Users\UserName\.platformio \ penv \ Scripts \ path all'inizio di un elenco (sostituire il nome utente con il nome dell'account).
@@ -161,7 +160,7 @@ setx PATH "C:\Program Files\Java;C:\Program Files\Python"
 Dopo aver modificato la variabile PATH, è necessario riavviare il computer o aprire una nuova finestra della riga di comando per rendere effettive le modifiche.</div>
 
 
-
+### Abilitare i comandi testuali su Linux
 
 Nei sistemi Unix e Unix-like, è possibile creare collegamenti simbolici (link simbolici) nel proprio HOME HOME/.directory/bin / locale per gli eseguibili Platform necessari. Questo vi permetterà di eseguire i comandi platformio da qualsiasi emulatore di terminale fino a quando si è connessi come l'utente PlatformIO è installato e configurato per.
 
