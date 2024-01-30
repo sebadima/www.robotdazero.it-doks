@@ -1,6 +1,6 @@
 ---
-title: "Come compilare un breve programma con PlatformIO"
-description: "Come compilare un breve programma con PlatformIO"
+title: "Come compilare un programma con PlatformIO"
+description: "Come compilare un programma con PlatformIO"
 excerpt: "PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare sia in modalità grafica (usando Visual Code) sia in modalità testo da terminale..."
 date: 2024-01-29T09:19:42+01:00
 lastmod: 2024-01-29T09:19:42+01:00
@@ -255,7 +255,7 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
 <br>
 
-E' importante non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
+<strong>E' importante</strong> non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
 
 
 
