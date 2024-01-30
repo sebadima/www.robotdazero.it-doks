@@ -1,7 +1,7 @@
 ---
 title: "Come compilare un programma con PlatformIO"
 description: "Come compilare un programma con PlatformIO"
-excerpt: "PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente Come l'IDE si Arduino può funzionare sia in modalità grafica (usando Visual Code) sia in modalità testo da terminale..."
+excerpt: "Ti serviranno tre files per creare un progetto con Platformio, ma per fortuna li abbiamo assemblati in un file .ZIP che troverai più avanti. Prima di partire con la parte pratica..."
 date: 2024-01-29T09:19:42+01:00
 lastmod: 2024-01-29T09:19:42+01:00
 draft: false
