@@ -131,6 +131,8 @@ Dopo avere estratto i tre files digita questo comando per compilare e caricare i
 make upload
 ```
 
+##### Il risultato sul terminale sarà: 
+
 ```bash
 make upload
 
@@ -224,7 +226,7 @@ Dopo avere compilato e fatto l'upload del programma possiamo lanciare il monitor
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Il risultato sul terminale sarà:
+##### Il risultato sul terminale sarà:
 
 
 ```bash
@@ -258,8 +260,47 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 <strong>E' importante</strong> non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
 
 
+## Creare un progetto con la ESP32-CAM
 
+Se vuoi usare la vesrione dell'ESP32 con la CAM OV2640 incoporata il progetto è sostanzialmente uguale ma dovrai modificare il file:
+
+
+### File: platformio.ini
+
+```bash
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32cam]
+platform = espressif32
+board = esp32cam
+framework = arduino
+monitor_speed=115200
+lib_ldf_mode=deep
+build_flags =
+   -I../lib/esp32-camera
+
+lib_deps =
+```
+
+
+
+board = esp32dev
+framework = arduino
+lib_deps = 
+
+> <strong>Come vedi sono camiate due righe</strong>: 1. la riga "[env:esp32dev]" diventa "[env:esp32cam]", 2. la riga "board = esp32dev" diventa "board = esp32cam" e inoltre abbiamo dovuto aggiungere il flag: "build_flags = -I../lib/esp32-camera".
+
+
+Il file main.ino e il Makefile rimangono invariati
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.146.0.5.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.146.1.2.0</p>
