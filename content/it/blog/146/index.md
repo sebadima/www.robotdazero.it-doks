@@ -108,10 +108,10 @@ update:
 Se hai problemi nel download dei tre files <a href="/zip/platformio-template.zip">zippati</a>, prova a fare copia e incolla dell'indirizzo URL del file:
 
 ```bash
-https://www.robotdazero.it/zip/platformio-template.zip"
+https://www.robotdazero.it/zip/platformio-template.zip
 ```
 
-Dopo il download troverai il file nella cartella di default del tuo browser e potrai copiarla dove preferisci, ad esempio in una cartella di lavoro. quindi fai click destro da Windows/Linux e scegli "scompatta" o "estrai". Se stai usando un terminale a linea di comando scrivi:
+> Dopo il download troverai il file nella cartella di default del tuo browser e potrai copiarla dove preferisci, ad esempio in una cartella di lavoro. quindi fai click destro da Windows/Linux e scegli "scompatta" o "estrai". Se stai usando un terminale a linea di comando scrivi:
 
 ```bash
 unzip platformio-template.zip
