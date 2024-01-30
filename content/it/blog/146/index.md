@@ -24,13 +24,13 @@ mermaid: true
 <hr>
 <br>
 
-## La preparazione dei files
+## I files di base
 
-Ti serviranno tre file per partire con Platformio, ma per fortuna li trovi già pronti in un file ZIP che troverai più avanti. Per il momento vediamo in linea di massima come compilare con PlatformIO. Innazitutto vediamo quali files ci servono.
+Ti serviranno tre files per creare un progetto con Platformio, ma per fortuna li abbiamo assemblati in un file .ZIP che troverai più avanti. Prima di partire con la parte pratica vediamo in dettaglio quali files ci servono e quali comandi lanciare da terminale.
 
 ### Il codice sorgente
 
-Si tratta del file dove inserirai le istruzioni in C++, un esempio lo trovi qua sotto. Il brevissimo file di esempio serve ad ottenere l'indirizzo MAC di un ESP32, un dato che ti servirà sempre quando lo usi in una rete MESH o semplicemente per progetti di networking vari.
+Si tratta del file dove inserirai le istruzioni in C++, un esempio lo trovi qua sotto. Il brevissimo file di esempio serve ad ottenere l'indirizzo MAC di un ESP32, un dato che ti servirà sempre quando lo usi in una rete MESH o per ogni progetto di networking.
 
 
 ###  File: main.ino
@@ -74,11 +74,10 @@ framework = arduino
 lib_deps = 
 ```
 
-Opzioni avanzate: Puoi passare varie opzioni al comando platformio run per personalizzare il processo di compilazione, ad esempio, specificare la directory di output, abilitare/disabilitare la generazione di mappe dei simboli, ecc.
-Nel mio caso ho specificato la opezione "upload_port = /dev/ttyUSB0" perchè volevo usare una specifica porta del mio Raspberry PI.
+> <strong>Opzioni avanzate</strong>: puoi passare varie opzioni al comando platformio per personalizzare il processo di compilazione. Puoi ad esempio, specificare la directory di output, abilitare/disabilitare la generazione di mappe dei simboli, ecc.
+Nel mio caso ho specificato la opzione "upload_port = /dev/ttyUSB0" perchè volevo usare una specifica porta del mio Raspberry PI.
 
-
-Il terzo file (ricorda che più avanti) li troverai già pronti in formato zippato) è un classico di Linux, si chiama "Makefile" con il primo carattere maiuscolo. Makefile deve essere presente nella directory e non richiede nessuna modifica per adattarlo ai diversi progetti.
+Il terzo file (eccoli <a href="/zip/platformio-template.zip">tutti</a> in formato zippato) è un classico di Linux e si chiama "Makefile" con il primo carattere maiuscolo. Makefile non richiede nessuna modifica per adattarlo ai diversi progetti ma deve essere sempre presente nella directory del progetto.
 
 ###  File: Makefile
 
@@ -106,8 +105,13 @@ update:
 	pio -f -c vim update
 ```
 
-La cartella già pronta all'uso la trovi a questo <a href="/zip/platformio-template.zip">link</a> in formato ZIP.
-Dopo il download la troverai nella cartella di default del tuo browser e potrai copiarla dove preferisci, ad esempio in una cartella di lavoro. quindi fai click destro da Windows/Linux e scegli "scompatta" o "estrai". Se stai usando un terminale a linea di comando scrivi:
+Se hai problemi nel download dei tre files <a href="/zip/platformio-template.zip">zippati</a>, prova a fare copia e incolla dell'indirizzo URL del file:
+
+```bash
+https://www.robotdazero.it/zip/platformio-template.zip"
+```
+
+Dopo il download troverai il file nella cartella di default del tuo browser e potrai copiarla dove preferisci, ad esempio in una cartella di lavoro. quindi fai click destro da Windows/Linux e scegli "scompatta" o "estrai". Se stai usando un terminale a linea di comando scrivi:
 
 ```bash
 unzip platformio-template.zip
@@ -121,18 +125,11 @@ sudo apt-get install unzip
 
 ## La compilazione da terminale
 
-Dopo avere estratto i tre files puoi digitare:
-
+Dopo avere estratto i tre files digita questo comando per compilare e caricare il codice oggetto su ESP32 o Arduino:
 
 ```bash
 make upload
 ```
-
-
-### La fase di compilazione / upload
-
-Per caricare il programma su Esp32 o Arduino:
-
 
 ```bash
 make upload
@@ -258,7 +255,7 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
 <br>
 
-E' importante non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presebza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
+E' importante non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
 
 
 
