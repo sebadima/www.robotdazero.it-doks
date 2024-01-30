@@ -26,7 +26,7 @@ mermaid: true
 
 ## La preparazione dei files
 
-Ti serviranno tre file per partire con Platformio, ma per fortuna li trovi hià pront in uno ZIP "template" che trovi più avanti. Per il momento vediamo in line adi massima come procedere e quindo vedremo i files in dettaglio.
+Ti serviranno tre file per partire con Platformio, ma per fortuna li trovi già pronti in un file ZIP che troverai più avanti. Per il momento vediamo in linea di massima come compilare con PlatformIO. Innazitutto vediamo quali files ci servono.
 
 ### Il codice sorgente
 
@@ -119,7 +119,7 @@ Il programma "unzip" potrebbe non essere installato di default su Linux, in ques
 sudo apt-get install unzip
 ```
 
-## La compilazione dal terminale
+## La compilazione da terminale
 
 Dopo avere estratto i tre files puoi digitare:
 
@@ -129,7 +129,7 @@ make upload
 ```
 
 
-### La fae di compilazione / upload
+### La fase di compilazione / upload
 
 Per caricare il programma su Esp32 o Arduino:
 
@@ -218,6 +218,9 @@ sebadima@raspberrypi:~/esp32/esp_now_ESP32_mac_address $
 
 ```
 
+
+### Il monitor seriale 
+
 Dopo avere compilato e fatto l'upload del programma possiamo lanciare il monitor per vedere i messaggi della sched e leggere l'indirzzo MAC, lo scopo finale del programmino...
 
 ```bash
@@ -229,7 +232,7 @@ Il risultato sul terminale sarà:
 
 ```bash
 
-
+platformio device monitor --baud 115200  --rts 0 --dtr 0
 --- forcing DTR inactive
 --- forcing RTS inactive
 --- Terminal on /dev/ttyUSB0 | 115200 8-N-1
@@ -250,13 +253,15 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
 ```
 
-Come vedi alla fine delle compilazione ho lanciato il comando:
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Il monitor di PlatformIO</strong> funziona anche in remoto se siete collegati con SSH e soprattutto senza lanciare il "pesante" IDE di Visual studio Code (in genere assone più di un GB di RAM) o di Arduino. </div>
 
-```bash
-platformio device monitor --baud 115200  --rts 0 --dtr 0
-```
+<br>
 
-Per vedere l'outup del programmino anche in remoto senza usare l'IDE di Visual studio Code o di Arduino. E' importante non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM
+E' importante non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presebza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
+
+
+
 
 <br>
 <br>
