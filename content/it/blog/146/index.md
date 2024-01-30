@@ -24,7 +24,7 @@ mermaid: true
 <hr>
 <br>
 
-## Prepara i files per la compilazine
+## La preparazione dei files
 
 Ti serviranno tre file per partire con Platformio, ma per fortuna li trovi hià pront in uno ZIP "template" che trovi più avanti. Per il momento vediamo in line adi massima come procedere e quindo vedremo i files in dettaglio.
 
@@ -33,7 +33,7 @@ Ti serviranno tre file per partire con Platformio, ma per fortuna li trovi hià 
 Si tratta del file dove inserirai le istruzioni in C++, un esempio lo trovi qua sotto. Il brevissimo file di esempio serve ad ottenere l'indirizzo MAC di un ESP32, un dato che ti servirà sempre quando lo usi in una rete MESH o semplicemente per progetti di networking vari.
 
 
-#### File: main.ino
+###  File: main.ino
 
 ```bash
 #include "WiFi.h"
@@ -53,7 +53,7 @@ void loop(){
 Ti servirà inoltre un file di configurazione chiamato "platformio.ini". Questo è il file di configurazione principale per il tuo progetto. Puoi specificare qui la piattaforma hardware, l'ambiente di sviluppo, le librerie utilizzate, ecc. Ad esempio:
 
 
-#### File: platformio.ini
+### File: platformio.ini
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -80,7 +80,7 @@ Nel mio caso ho specificato la opezione "upload_port = /dev/ttyUSB0" perchè vol
 
 Il terzo file (ricorda che più avanti) li troverai già pronti in formato zippato) è un classico di Linux, si chiama "Makefile" con il primo carattere maiuscolo. Makefile deve essere presente nella directory e non richiede nessuna modifica per adattarlo ai diversi progetti.
 
-#### File: Makefile
+###  File: Makefile
 
 ```bash
 # Uncomment lines below if you have problems with $PATH
@@ -119,7 +119,7 @@ Il programma "unzip" potrebbe non essere installato di default su Linux, in ques
 sudo apt-get install unzip
 ```
 
-### La compilazione dal terminale
+## La compilazione dal terminale
 
 Dopo avere estratto i tre files puoi digitare:
 
@@ -128,10 +128,13 @@ Dopo avere estratto i tre files puoi digitare:
 make upload
 ```
 
-per caricare il programma su Esp32 o Arduino. 
+
+### La fae di compilazione / upload
+
+Per caricare il programma su Esp32 o Arduino:
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+```bash
 make upload
 
 pio -f -c vim run --target upload
@@ -213,9 +216,9 @@ Hard resetting via RTS pin...
 
 sebadima@raspberrypi:~/esp32/esp_now_ESP32_mac_address $ 
 
-</div>
+```
 
-Sopo avere compilato e fatto l'upload del programma possiamo lanciare il monitor per vedere i messaggi della sched e leggere l'indirzzo MAC, lo scopo finale del programmino...
+Dopo avere compilato e fatto l'upload del programma possiamo lanciare il monitor per vedere i messaggi della sched e leggere l'indirzzo MAC, lo scopo finale del programmino...
 
 ```bash
 platformio device monitor --baud 115200  --rts 0 --dtr 0
@@ -224,9 +227,9 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 Il risultato sul terminale sarà:
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+```bash
 
-platformio device monitor --baud 115200  --rts 0 --dtr 0
+
 --- forcing DTR inactive
 --- forcing RTS inactive
 --- Terminal on /dev/ttyUSB0 | 115200 8-N-1
@@ -245,7 +248,7 @@ load:0x40080400,len:3028
 entry 0x400805e4
 indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
-</div>
+```
 
 Come vedi alla fine delle compilazione ho lanciato il comando:
 
