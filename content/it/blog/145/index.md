@@ -17,6 +17,10 @@ mermaid: true
 
 
 
+<!--
+https://community.platformio.org/t/platformio-ide-messes-up-path-with-incorrect-default-folders-windows-10/22006/3
+-->
+
 <hr>
 <br>
 
