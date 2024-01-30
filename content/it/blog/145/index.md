@@ -1,7 +1,7 @@
 ---
 title: "Come installare PlatformIO"
 description: "Come installare PlatformIO"
-excerpt: "PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente come l'IDE di Arduino può funzionare sia in modalità grafica (usando Visual Code) che in modalità testo..."
+excerpt: "PlatformIO è il compilatore che usiamo di preferenza per l'ESP32. Esattamente come l'IDE di Arduino può funzionare sia in modalità grafica (usando Visual Studio Code) che in modalità testo..."
 date: 2024-01-23T09:19:42+01:00
 lastmod: 2024-01-23T09:19:42+01:00
 draft: false
