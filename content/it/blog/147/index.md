@@ -33,7 +33,7 @@ mermaid: true
 
 <strong>3</strong>. <span style="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
 
-> **Flusso di lavoro (Workflow) ramificato**: *GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto. Ciò facilita molto 	la creazione di nuove features in modo estemporaneo.*
+> **Flusso di lavoro (workflow) ramificato**: *GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto. Ciò facilita molto 	la creazione di nuove features in modo estemporaneo.*
 
 
 ## Come installare GIT
@@ -117,7 +117,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". Clicca su Next.
 
-> **Notepad++**: *è un editor di testo avanzato e <a href="https://it.wikipedia.org/wiki/Differenza_tra_software_libero_e_open_source" target="_blank">open source</a> per il sistema operativo Windows. È progettato per essere una miglioria del blocco note predefinito di Windows, offrendo una vasta gamma di funzionalità per gli sviluppatori e gli utenti che lavorano con file di testo, codice sorgente e markup.*
+> **Notepad++**: *E' un editor di testo avanzato e <a href="https://it.wikipedia.org/wiki/Differenza_tra_software_libero_e_open_source" target="_blank">open source</a> per il sistema operativo Windows. È progettato per essere una miglioria del blocco note predefinito di Windows, offrendo una vasta gamma di funzionalità per gli sviluppatori e gli utenti che lavorano con file di testo, codice sorgente e markup.*
 
 <br>
 
@@ -131,7 +131,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### In questa schermata puoi scegliere il nome del "branch" iniziale nei nuovi repository GIT: il nome predefinito è 'master' e ti consiglio di lasciare questo valore. Clicca su Next.
 
-> **Il branch iniziale di un repository GIT**: *è il punto di partenza da cui si sviluppano altri branch. Solitamente, quando viene creato un nuovo repository GIT, viene creato automaticamente un branch di default, che solitamente è chiamato "master" o "main" (a seconda delle convenzioni del progetto o della piattaforma di hosting).*
+> **Il branch iniziale di un repository GIT**: *E' il punto di partenza da cui si sviluppano altri branch. Solitamente, quando viene creato un nuovo repository GIT, viene creato automaticamente un branch di default, che solitamente è chiamato "master" o "main" (a seconda delle convenzioni del progetto o della piattaforma di hosting).*
 
 <br>
 
@@ -145,7 +145,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### Scegli il programma client Secure Shell da utilizzare per GIT. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche. <br>Clicca su Next.
 
-> **OpenSSH**: *è un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file, etc.*
+> **OpenSSH**: *E' un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file, etc.*
 
 <br>
 
@@ -159,7 +159,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): lascia le impostazione di default. Clicca su Next.
 
-> **Il termine "CRFL"**: *identifica la sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.*
+> **Il termine "CRFL"**: *Identifica la sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.*
 
 <br>
 <br>
@@ -168,7 +168,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consiglio di lasciare MinTTY come predefinito. Clicca su Next.
 
-> **Mintty**: *è un emulatore di terminale open-source per sistemi operativi Windows, noto per essere il terminale predefinito di <a href="https://www.cygwin.com/" target="_blank">Cygwin</a>. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like sui sistemi Windows.*
+> **Mintty**: *Un emulatore di terminale open-source per sistemi operativi Windows, noto per essere il terminale predefinito di <a href="https://www.cygwin.com/" target="_blank">Cygwin</a>. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like sui sistemi Windows.*
 
 Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema operativo Windows utilizzando un ambiente molto simile a quello di Unix.
 
@@ -178,7 +178,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 ###### Usa il comportamento predefinito del comando "git pull". Clicca su Next.
 
-> **Il comando "git pull"**: *è utilizzato in GIT per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, "git pull" combina due operazioni: "git fetch", che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e "git merge", che unisce i commit scaricati nel ramo attuale.*
+> **Il comando "git pull"**: *Viene utilizzato in GIT per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, "git pull" combina due operazioni: "git fetch", che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e "git merge", che unisce i commit scaricati nel ramo attuale.*
 
 <br>
 
@@ -186,7 +186,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 ###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential Manager (selezione predefinita) è il più stabile del lotto.
 
-> **GIT Credential Manager**: *è uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.*
+> **GIT Credential Manager**: *Uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.*
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Il GIT Credential Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, evitando agli utenti di inserire manualmente le loro credenziali. Risulta comodissimo per interagire con un repository, come durante l'esecuzione di "git push" o "git pull".</div>
@@ -201,7 +201,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala **soltanto** se sai di cosa stiamo parlando, ma ti consiglio di lasciarla inattiva.
 
-> **Supporto per symlink**: *può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository GIT tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).*
+> **Supporto per symlink**: *Può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository GIT tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).*
 
 <br>
 <br>
@@ -211,8 +211,6 @@ L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti s
 ###### Adesso la installazione è terminata e puoi cliccare su "Finish"
 
 <br>
-<br>
-
 
 Terminata la installazione, apri il Prompt dei comandi di Windows o PowerShell ed esegui:
 
@@ -229,16 +227,14 @@ Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguen
 ## Perchè usare Github.com
 
 
-Github.com è un colossale sito gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
+Github.com è un colossale sito gestito dalla Microsoft che ospita centinaia di migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
 
-Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di github. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su github:
+Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di Github. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su Github:
 
-Utilizza la barra di ricerca di <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">github.com</a> e inserisci parole chiave come "IoT", "Arduino", "ESP32" per trovare progetti correlati.
-Filtra i risultati per "Repositories" per visualizzare solo i progetti ospitati su github.
-Esplora i repository risultanti per trovare progetti che soddisfino le tue esigenze specifiche.
+Utilizza la barra di ricerca di <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">Github.com</a> e inserisci parole chiave come "IoT", "Arduino", "ESP32" per trovare progetti correlati. Esplora i repository risultanti per trovare progetti che soddisfino le tue esigenze specifiche.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Su Github ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare *legalmente i loro programmi, chiedere supporto, leggere i "Wiki" e le "FAQ" di ogni singolo progetto.</div>
+<strong>Su Github ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare *legalmente i loro programmi, chiedere supporto, leggere  le "FAQ" di ogni singolo progetto.</div>
 
 <br>
 Ricorda che la comunità open source è dinamica e in continua evoluzione, quindi il numero di progetti disponibili su github può variare nel tempo.
@@ -267,9 +263,9 @@ git commit -am "Descrizione delle modifiche"
 git push origin master 
 ```
 
-> **Pull delle modifiche**: *se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.*
+> **Pull delle modifiche**: *Se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.*
 
-Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su github.com. 
+Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su Github.com. 
 
 <br>
 <br>
