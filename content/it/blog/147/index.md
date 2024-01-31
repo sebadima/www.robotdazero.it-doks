@@ -41,7 +41,7 @@ GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a 
 Vediamo le istruzioni passo passo per installare questo tool nei due sistemi operativi più diffusi tra i "maker", Linux e Windows 10/11.
 
 
-### Installiazione da terminale su Linux:
+### Installazione da terminale su Linux:
 Puoi aprire il terminale utilizzando il menu delle applicazioni o usando la combinazione di tasti Ctrl + Alt + T.
 
 Aggiorna i pacchetti: Assicurati di avere l'elenco dei pacchetti aggiornato eseguendo il comando:
