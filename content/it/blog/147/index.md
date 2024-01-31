@@ -34,8 +34,6 @@ mermaid: true
 
 3. Backup e ripristino: Utilizzando Git e piattaforme di hosting come GitHub, è possibile creare backup dei tuoi progetti e ripristinare versioni precedenti se necessario. Questo fornisce una forma di sicurezza per i tuoi dati.
 
-4. Tracciabilità delle modifiche: Git tiene traccia delle modifiche apportate ai file nel tempo, consentendo di esaminare la storia delle modifiche, confrontare versioni diverse e identificare quando e da chi sono state apportate modifiche specifiche.
-
 Flusso di lavoro ramificato: Git supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in branch separati senza influenzare il ramo principale del progetto fino a quando non sei pronto per integrare le modifiche.
 
 
@@ -79,7 +77,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="La pagina iniziale di git-scm.com">
 
-######  La pagina iniziale di git-scm.com. Clicca su Next.
+######  La pagina iniziale di git-scm.com. Clicca su Windows come vedi nella schermata.
 <br>
 <br>
 
@@ -117,7 +115,9 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/107.webp" alt="selezione di Notepad come editor prt GIT durante la installazione di GIT su Windows">
 
 ###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". Clicca su Next.
-<br>
+
+> **Notepad++ è un editor di testo avanzato** e open source per il sistema operativo Windows. È progettato per essere una miglioria del blocco note predefinito di Windows, offrendo una vasta gamma di funzionalità per gli sviluppatori e gli utenti che lavorano con file di testo, codice sorgente e markup.
+
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/108.webp" alt="La conferma di Notepad++ come editor di default di GIT durante la installazione di GIT su Windows">
@@ -129,19 +129,23 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/109.webp" alt="La scelta del branch di default per GIT durante la installazione di GIT su Windows">
 
 ###### In questa schermata puoi scegliere il nome del "branch" iniziale nei nuovi repository GIT: il nome predefinito è 'master' e ti consiglio di lasciare questo valore. Clicca su Next.
-<br>
+
+> **Il branch iniziale di un repository Git** è il punto di partenza da cui si sviluppano altri branch. Solitamente, quando viene creato un nuovo repository Git, viene creato automaticamente un branch di default, che solitamente è chiamato "master" o "main" (a seconda delle convenzioni del progetto o della piattaforma di hosting).
+
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/110.webp" alt="settaggio di PATH per GIT  durante la installazione di GIT su Windows">
 
-###### In questa schermata viene chiesto se aggiungere l'ambiente PATH per Git quando si eseguono comandi da applicazioni della riga di comando (come CMD e PowerShell). Clicca su Next.
+###### In questa schermata viene chiesto se aggiungere l'ambiente PATH per Git quando si eseguono comandi da applicazioni della riga di comando (come CMD e PowerShell). <br>Clicca su Next.
 <br>
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/111.webp" alt="La scelta dei certificati SSL per GIT durante la installazione di GIT su Windows">
 
-###### Scegli il programma client Secure Shell da utilizzare per Git. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche qui (a meno che non si desideri utilizzare un OpenSSH esterno). Clicca su Next.
-<br>
+###### Scegli il programma client Secure Shell da utilizzare per Git. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche. <br>Clicca su Next.
+
+> OpenSSH è un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file e tunneling di connessioni
+
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/112.webp" alt="La scelta di SSL per GIT  durante la installazione di GIT su Windows">
@@ -162,7 +166,11 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/114.webp" alt="La scelta dell'emulatore di terminale durante la installazione di GIT su Windows">
 
 ###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consigliamo di attaccare con il MinTTY predefinito. Clicca su Next.
-<br>
+
+> **Mintty è un emulatore di terminale open-source** per sistemi operativi Windows, noto per essere il terminale predefinito di Cygwin. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like su sistemi Windows.
+
+Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema operativo Windows utilizzando un ambiente simile a quello di Unix.
+
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di git pull durante la installazione di GIT su Windows">
