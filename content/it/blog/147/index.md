@@ -98,7 +98,10 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="I componenti da installare con GIT durante la installazione di GIT su Windows">
 
 ######  In questa schermata puoi selezionare i componenti da installare. A meno che non sia necessario modificare qualcosa in modo specifico, consigliamo di mantenere le opzioni impostate su default. Clicca su Next.
-<br>
+
+
+> **Integrazione con la shell**: *Permette di associare il programma GIT al click destro del mouse e aprire un menu contestuale comodissimo. Dal menu puoi lanciare comandi come GIT log. Da lasciare sempre attivato anche nelle opzioni.*
+
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/105.webp" alt="Le opzioni del menu per GIT durante la installazione di GIT su Windows">
@@ -199,7 +202,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 ###### Resta poco altro da configurare: la prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. Clicca su Next.
 
-L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala **soltanto** se sai di cosa stiamo parlando, ma ti consiglio di lasciarla inattiva.
+L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala soltanto se sai di cosa stiamo parlando, ma ti consiglio di lasciarla inattiva.
 
 > **Supporto per symlink**: *Può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository GIT tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).*
 
