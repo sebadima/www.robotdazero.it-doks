@@ -6,7 +6,7 @@ date: 2024-01-30T09:19:42+01:00
 lastmod: 2024-01-30T09:19:42+01:00
 draft: false
 weight: 50
-images: ["header.jpg"]
+images: ["header.png"]
 categories: ["News"]
 tags: ["GIT", "IOT", "Programmazione"]
 contributors: ["sergio rame"]
