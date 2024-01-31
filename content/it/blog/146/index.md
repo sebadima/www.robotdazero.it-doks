@@ -257,7 +257,7 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
 <br>
 
-<strong>E' importante</strong> non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore e necessita di un modulo di alimentazione esterno.
+<strong>E' importante</strong> non omettere i flag: "--rts 0 --dtr 0" perchè avresti molti problemi nel visualizzare il "monitoring" dell'ESP32-CAM. La ESP32-CAM ha caratteristiche hardware molto diverse dalla scheda normale e, a parte la presenza della camera OV2640 ha un numero di piedini molto inferiore. Inolre necessita di un modulo di alimentazione esterno.
 
 
 ## Creare un progetto con la ESP32-CAM
