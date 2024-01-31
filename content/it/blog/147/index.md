@@ -118,7 +118,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/107.webp" alt="selezione di Notepad come editor prt GIT durante la installazione di GIT su Windows">
 
-###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". Clicca su Next.
+###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". <br>Clicca su Next.
 
 > **Notepad++**: *E' un editor di testo avanzato e <a href="https://it.wikipedia.org/wiki/Differenza_tra_software_libero_e_open_source" target="_blank">open source</a> per il sistema operativo Windows. È progettato per essere una miglioria del blocco note predefinito di Windows, offrendo una vasta gamma di funzionalità per gli sviluppatori e gli utenti che lavorano con file di testo, codice sorgente e markup.*
 
