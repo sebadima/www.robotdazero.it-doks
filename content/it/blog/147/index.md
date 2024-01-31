@@ -160,7 +160,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/113.webp" alt="la scelta del carattere di fine riga per i repository di GIT durante la installazione di GIT su Windows">
 
-###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): lascia le impostazione di default. Clicca su Next.
+###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): <br>lascia le impostazione di default. Clicca su Next.
 
 > **Il termine "CRFL"**: *Identifica la sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.*
 
@@ -187,12 +187,15 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
 
-###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential Manager (selezione predefinita) è il più stabile del lotto.
+###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential
+ Manager (selezione predefinita) è il più stabile del lotto.
 
-> **GIT Credential Manager**: *Uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.*
+> **GIT Credential
+ Manager**: *Uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.*
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il GIT Credential Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, evitando agli utenti di inserire manualmente le loro credenziali. Risulta comodissimo per interagire con un repository, come durante l'esecuzione di "git push" o "git pull".</div>
+<strong>Il Credential
+ Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, evitando agli utenti di inserire manualmente le loro credenziali. Risulta comodissimo per interagire con un repository, come durante l'esecuzione di "git push" o "git pull".</div>
 
 <br>
 <br>
