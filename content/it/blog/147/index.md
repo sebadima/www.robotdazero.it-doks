@@ -226,7 +226,7 @@ Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguen
 
 
 
-## Perchè usare GITHUB.COM
+## Perchè usare Github.com
 
 
 Github.com è un colossale sito gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
@@ -244,7 +244,7 @@ Esplora i repository risultanti per trovare progetti che soddisfino le tue esige
 Ricorda che la comunità open source è dinamica e in continua evoluzione, quindi il numero di progetti disponibili su github può variare nel tempo.
 
 
-### Come usare github.com
+### Come usare Github.com
 
 Per utilizzare GIT con github, è necessario:
 
@@ -262,14 +262,14 @@ git clone https://github.com/username/repository.git
 <strong>4</strong>. <span style="background-color:#eeeeee"> Aggiungere file e apportare modifiche</span>: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
 
 ```bash
-git  add .
-git  commit -m "Descrizione delle modifiche"
-git  push origin master 
+git add .
+git commit -am "Descrizione delle modifiche"
+git push origin master 
 ```
 
-> Pull delle modifiche: Se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.
+> **Pull delle modifiche**: Se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.
 
-Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni nostri programmi ospitati su github.com. 
+Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su github.com. 
 
 <br>
 <br>
