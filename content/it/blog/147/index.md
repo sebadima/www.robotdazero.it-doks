@@ -197,24 +197,15 @@ In particolare, il Git Credential Manager memorizza le credenziali di autenticaz
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/118.webp" alt="">
-
-###### aaaaaaaaas
-<br>
-<br>
-
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
 
-###### bbbbbbbbbbbbbbbsu Next.
+###### Adesso la installazioe è terminata e puoi cliccare su "Finish"
+
 <br>
 <br>
 
 
-
-
-
-
-Verifica l'installazione: Dopo l'installazione, apri il Prompt dei comandi di Windows o PowerShell e esegui:
+Dopo la installazione, apri il Prompt dei comandi di Windows o PowerShell e esegui:
 
 ```bash
 git --version
