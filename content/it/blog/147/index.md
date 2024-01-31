@@ -196,24 +196,24 @@ In particolare, il Git Credential Manager memorizza le credenziali di autenticaz
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="La scelta dei collegamenti simbolici - symlink - di GIT durante la installazione su Windows">
 
-###### Resta poco altro da configurare: lLa prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. 
+###### Resta poco altro da configurare: la prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. Clicca su Next.
 
-###### L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionalo se sai come usarli, ma ti consiglio di lasciarlo inattivo. Clicca su Next.
+L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala **soltanto** se sai come usarli, ma ti consiglio di lasciarla inattiva.
 
-> Tuttavia, è importante notare che il supporto per symlink può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository Git tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).
+> Il supporto per symlink può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository Git tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).
 
 <br>
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
 
-###### Adesso la installazioe è terminata e puoi cliccare su "Finish"
+###### Adesso la installazione è terminata e puoi cliccare su "Finish"
 
 <br>
 <br>
 
 
-Dopo la installazione, apri il Prompt dei comandi di Windows o PowerShell e esegui:
+Terminata la installazione, apri il Prompt dei comandi di Windows o PowerShell ed esegui:
 
 ```bash
 git --version
@@ -221,22 +221,25 @@ git --version
 
 Questo dovrebbe mostrare la versione di Git appena installata sul tuo sistema.
 
-Una volta installato Git su entrambe le piattaforme, puoi iniziare a utilizzarlo eseguendo comandi come git clone, git init, 
+Una volta installato Git su Windows o Linux, puoi iniziare a utilizzarlo eseguendo comandi come "git clone", "git init", etc.
 
 
 
 ## Perchè usare GITHUB.COM
 
 
-Ci sono migliaia di progetti open source relativi all'IoT, ad Arduino e all'ESP32 su <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">Github.com</a>.
+Github.com è un colossale sito gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
 
 Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di GitHub. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su GitHub:
 
 Utilizza la barra di ricerca di <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">Github.com</a> e inserisci parole chiave come "IoT", "Arduino", "ESP32" per trovare progetti correlati.
 Filtra i risultati per "Repositories" per visualizzare solo i progetti ospitati su GitHub.
 Esplora i repository risultanti per trovare progetti che soddisfino le tue esigenze specifiche.
-Inoltre, ci sono molti elenchi e raccolte curate da comunità o utenti che raccolgono progetti open source relativi a queste tecnologie su GitHub. Puoi esaminare queste raccolte per scoprire una vasta gamma di progetti.
 
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Su GitHub ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare *legalmente i loro programmi, chiedere supporto, leggere i "Wiki" e le "FAQ" di ogni singolo progetto.</div>
+
+<br>
 Ricorda che la comunità open source è dinamica e in continua evoluzione, quindi il numero di progetti disponibili su GitHub può variare nel tempo.
 
 
@@ -271,14 +274,6 @@ git push origin nome-del-branch
 > Pull delle modifiche: Se altri collaboratori hanno apportato modifiche al repository remoto su GitHub, puoi utilizzare il comando git pull per aggiornare il tuo repository locale con le modifiche più recenti.
 
 Questi sono solo alcuni passaggi di base per utilizzare Git con GitHub. Ci sono molte altre funzionalità e concetti avanzati da esplorare mentre diventi più esperto nell'utilizzo di queste tecnologie.
-
-
-
-
-
-
-
-
 
 <br>
 <br>
