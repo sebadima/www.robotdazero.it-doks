@@ -154,23 +154,61 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): lascia le impostazione di default. Clicca su Next.
 
->In Windows, il termine "CRFL" si riferisce alla sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.
+>**In Windows, il termine "CRFL" si riferisce** alla sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.
 
 <br>
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/114.webp" alt="La scelta dell'emulatore di terminale durante la installazione di GIT su Windows">
 
-###### scegli il tuo emulatore di terminale. Ancora una volta, ti consigliamo di attaccare con il MinTTY predefinito.
+###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consigliamo di attaccare con il MinTTY predefinito. Clicca su Next.
 <br>
 <br>
 
+<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di git pull durante la installazione di GIT su Windows">
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="">
+###### Usa il comportamento predefinito del comando "git pull". Clicca su Next.
+
+>**Il comando git pull è utilizzato in Git** per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, git pull combina due operazioni: git fetch, che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e git merge, che unisce i commit scaricati nel ramo attuale.
+
+<br>
+
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="">
+
+###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali. Il core di Git Credential Manager (selezione predefinita) è il più stabile del lotto,
+
+> Il "Git Credential Manager" è uno strumento utilizzato con Git per la gestione delle credenziali di autenticazione. Questo strumento viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository Git remoti che richiedono l'autenticazione.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+In particolare, il Git Credential Manager memorizza le credenziali di autenticazione in modo sicuro, permettendo agli utenti di evitare di dover inserire manualmente le loro credenziali (come nome utente e password) ogni volta che devono interagire con un repository Git remoto, come durante l'esecuzione di comandi come git push o git pull.</div>
+
+<br>
+<br>
+
+
+<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="La scelta dei collegamenti simbolici - symlink - di GIT durante la installazione su Windows">
+
+###### Resta poco altro da configurare: lLa prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. 
+
+###### L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionalo se sai come usarli, ma ti consiglio di lasciarlo inattivo. Clicca su Next.
+
+> Tuttavia, è importante notare che il supporto per symlink può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository Git tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).
+
+<br>
+<br>
+
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/118.webp" alt="">
+
+###### aaaaaaaaas
+<br>
+<br>
+
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
+
+###### bbbbbbbbbbbbbbbsu Next.
+<br>
+<br>
+
 
 
 
