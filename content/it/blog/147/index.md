@@ -229,7 +229,7 @@ Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguen
 ## Perchè usare GITHUB.COM
 
 
-github.com è un colossale sito gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
+Github.com è un colossale sito gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
 
 Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di github. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su github:
 
