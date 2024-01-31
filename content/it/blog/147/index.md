@@ -100,7 +100,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 ######  In questa schermata puoi selezionare i componenti da installare. A meno che non sia necessario modificare qualcosa in modo specifico, consigliamo di mantenere le opzioni impostate su default. Clicca su Next.
 
 
-> **Integrazione con la shell**: *Permette di associare il programma GIT al click destro del mouse e aprire un menu contestuale comodissimo. Dal menu puoi lanciare comandi come GIT log. Da lasciare sempre attivato anche nelle opzioni.*
+> **Integrazione con la shell**: *Permette di associare il programma GIT al click destro del mouse e aprire un menu contestuale comodissimo. Dal menu puoi lanciare comandi come GIT log. Da lasciare sempre attivo anche quando vai a cambiare  le opzioni DOPO la installazione.*
 
 <br>
 
@@ -248,17 +248,17 @@ Ricorda che la comunità open source è dinamica e in continua evoluzione, quind
 Per utilizzare GIT con github, è necessario:
 
 
-<strong>1</strong>. <span style="background-color:#eeeeee"> Creare un account github</span>: Vai su github e crea un account se non ne possiedi già uno.
+<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Creare un account github</span>: Vai su github e crea un account ovviamente se non ne possiedi già uno.
 
-<strong>2</strong>. <span style="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
+<strong>2</strong>. <span sty0le="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
 
-<strong>3</strong>. <span style="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository github sul tuo computer locale. Ad esempio:
+<strong>3</strong>. <span sty0le="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository github sul tuo computer locale. Ad esempio:
 
 ```bash
 git clone https://github.com/username/repository.git
 ```
 
-<strong>4</strong>. <span style="background-color:#eeeeee"> Aggiungere file e apportare modifiche</span>: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
+<strong>4</strong>. <span sty0le="background-color:#eeeeee"> Aggiungere file e apportare modifiche</span>: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
 
 ```bash
 git add .
@@ -270,6 +270,5 @@ git push origin master
 
 Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su Github.com. 
 
-<br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.4.0</p>
