@@ -145,7 +145,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### Scegli il programma client Secure Shell da utilizzare per GIT. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche. <br>Clicca su Next.
 
-> OpenSSH è un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file e tunneling di connessioni
+> **OpenSSH** è un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file e tunneling di connessioni
 
 <br>
 
@@ -168,28 +168,28 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 ###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consigliamo di attaccare con il MinTTY predefinito. Clicca su Next.
 
-> **Mintty è un emulatore di terminale open-source** per sistemi operativi Windows, noto per essere il terminale predefinito di Cygwin. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like su sistemi Windows.
+> **Mintty è un emulatore di terminale** open-source per sistemi operativi Windows, noto per essere il terminale predefinito di Cygwin. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like sui sistemi Windows.
 
-Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema operativo Windows utilizzando un ambiente simile a quello di Unix.
+Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema operativo Windows utilizzando un ambiente molto simile a quello di Unix.
 
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di GIT pull durante la installazione di GIT su Windows">
 
-###### Usa il comportamento predefinito del comando "GIT pull". Clicca su Next.
+###### Usa il comportamento predefinito del comando "git pull". Clicca su Next.
 
->**Il comando GIT pull è utilizzato in GIT** per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, GIT pull combina due operazioni: GIT fetch, che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e GIT merge, che unisce i commit scaricati nel ramo attuale.
+>**Il comando "git pull** è utilizzato in GIT per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, "git pull" combina due operazioni: "git fetch", che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e "git merge", che unisce i commit scaricati nel ramo attuale.
 
 <br>
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
 
-###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali. Il core di GIT Credential Manager (selezione predefinita) è il più stabile del lotto,
+###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential Manager (selezione predefinita) è il più stabile del lotto.
 
-> Il "GIT Credential Manager" è uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Questo strumento viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti che richiedono l'autenticazione.
+> Il "GIT Credential Manager" è uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Questo strumento viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il GIT Credential Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, permettendo agli utenti di evitare di dover inserire manualmente le loro credenziali (come nome utente e password) ogni volta che devono interagire con un repository GIT remoto, come durante l'esecuzione di comandi come GIT push o GIT pull.</div>
+<strong>Il GIT Credential Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, evitando agli utenti di inserire manualmente le loro credenziali. Risulta comodissimo per interagire con un repository, come durante l'esecuzione di "git push" o "git pull".</div>
 
 <br>
 <br>
@@ -199,7 +199,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 ###### Resta poco altro da configurare: la prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. Clicca su Next.
 
-L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala **soltanto** se sai come usarli, ma ti consiglio di lasciarla inattiva.
+L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala **soltanto** se sai di cosa stiamo parlando, ma ti consiglio di lasciarla inattiva.
 
 > Il supporto per symlink può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository GIT tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).
 
@@ -222,7 +222,7 @@ GIT --version
 
 Questo dovrebbe mostrare la versione di GIT appena installata sul tuo sistema.
 
-Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguendo comandi come "GIT clone", "GIT init", etc.
+Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguendo comandi come "git clone", "git init", etc.
 
 
 
