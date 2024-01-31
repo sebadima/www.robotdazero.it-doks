@@ -230,14 +230,14 @@ Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguen
 ## Perchè usare Github.com
 
 
-Github.com è un colossale sito gestito dalla Microsoft che ospita centinaia di migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
+Github.com è un enorme portale gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
 
 Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di Github. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su Github:
 
 Utilizza la barra di ricerca di <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">Github.com</a> e inserisci parole chiave come "IoT", "Arduino", "ESP32" per trovare progetti correlati. Esplora i repository risultanti per trovare progetti che soddisfino le tue esigenze specifiche.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Su Github ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare *legalmente i loro programmi, chiedere supporto, leggere  le "FAQ" di ogni singolo progetto.</div>
+<strong>Su Github ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare (legalmente) programmi, chiedere supporto, leggere  le "FAQ" di ogni singolo progetto.</div>
 
 <br>
 Ricorda che la comunità open source è dinamica e in continua evoluzione, quindi il numero di progetti disponibili su github può variare nel tempo.
