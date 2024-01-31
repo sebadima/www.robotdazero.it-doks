@@ -105,7 +105,7 @@ update:
 	pio -f -c vim update
 ```
 
-Se hai problemi nel download dei tre files <a href="/zip/platformio-template.zip">zippati</a>, prova a fare copia e incolla dell'indirizzo URL del file:
+Se hai problemi nel download dei tre files <a href="/zip/platformio-template.zip">zippati</a>, prova a fare copia e incolla dell'URL nella barra indirizzi del tuo browser:
 
 ```bash
 https://www.robotdazero.it/zip/platformio-template.zip
@@ -262,7 +262,7 @@ indirizzo MAC=indirizzo MAC=08:D1:F9:99:2D:84
 
 ## Creare un progetto con la ESP32-CAM
 
-Se vuoi usare la vesrione dell'ESP32 con la CAM OV2640 incoporata il progetto è sostanzialmente uguale ma dovrai modificare il file:
+Se vuoi usare la versione dell'ESP32 con la CAM OV2640 incoporata il progetto è sostanzialmente uguale ma dovrai modificare il file:
 
 
 ### File: platformio.ini
@@ -291,16 +291,14 @@ lib_deps =
 ```
 
 
-
-board = esp32dev
-framework = arduino
-lib_deps = 
-
-> <strong>Come vedi sono camiate due righe</strong>: 1. la riga "[env:esp32dev]" diventa "[env:esp32cam]", 2. la riga "board = esp32dev" diventa "board = esp32cam" e inoltre abbiamo dovuto aggiungere il flag: "build_flags = -I../lib/esp32-camera".
+<strong>Come vedi sono cambiate due righe</strong>: 
+1. la riga "[env:esp32<strong>dev</strong>]" diventata "[env:esp32<strong>cam</strong>]"
+2. la riga "board = esp32<strong>dev</strong>" diventa "board = esp32<strong>cam</strong>"
+3. inoltre abbiamo dovuto aggiungere il flag: "build_flags = -I../lib/esp32-camera".
 
 
 Il file main.ino e il Makefile rimangono invariati
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.146.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.146.1.3.0</p>
