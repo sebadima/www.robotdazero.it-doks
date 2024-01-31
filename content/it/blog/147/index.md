@@ -91,7 +91,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/103.webp" alt="La scelta della direcory destinazione di GIT  durante la installazione di GIT su Windows">
 
-######  La scelta della directory destinazione: basta lasciare quella di default. Clicca su Next.
+######  La scelta della directory destinazione: basta lasciare quella di default. <br>Clicca su Next.
 <br>
 <br>
 
