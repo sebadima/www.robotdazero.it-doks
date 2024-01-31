@@ -29,7 +29,7 @@ GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a 
 
 <strong>1</strong>. <span sty0le="background-color:#eeeeee"> Controllo delle versioni</span>: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
 
-<strong>2</strong>. <span sty0le="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
+<strong>2</strong>. <span sty0le="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">Github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
 
 <strong>3</strong>. <span sty0le="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
 
@@ -248,14 +248,14 @@ Ricorda che la comunità open source è dinamica e in continua evoluzione, quind
 
 ### Come usare Github.com
 
-Per utilizzare GIT con github, è necessario:
+Per utilizzare GIT con Github, è necessario:
 
 
-<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Creare un account github</span>: Vai su github e crea un account ovviamente se non ne possiedi già uno.
+<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Creare un account Github</span>: Vai su Github e crea un account ovviamente se non ne possiedi già uno.
 
-<strong>2</strong>. <span sty0le="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
+<strong>2</strong>. <span sty0le="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a Github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
 
-<strong>3</strong>. <span sty0le="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository github sul tuo computer locale. Ad esempio:
+<strong>3</strong>. <span sty0le="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository Github sul tuo computer locale. Ad esempio:
 
 ```bash
 git clone https://github.com/username/repository.git
@@ -269,9 +269,9 @@ git commit -am "Descrizione delle modifiche"
 git push origin master 
 ```
 
-> **Pull delle modifiche**: *Se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.*
+> **Pull delle modifiche**: *Se altri collaboratori hanno apportato modifiche al repository remoto su Github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.*
 
-Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su Github.com. 
+Questi sono solo alcuni passaggi di base per utilizzare GIT con Github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su Github.com. 
 
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.4.0</p>
