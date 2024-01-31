@@ -27,13 +27,13 @@ mermaid: true
 
 È importante installare GIT per molti motivi:
 
-<strong>1</strong>. Controllo delle versioni: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
+<strong>1</strong>. <span style="background-color:#eeeeee"> Controllo delle versioni</span>: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
 
-<strong>2</strong>. Collaborazione: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
+<strong>2</strong>. <span style="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
 
-<strong>3</strong>. Backup e ripristino: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
+<strong>3</strong>. <span style="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
 
-<strong>4</strong>. Flusso di lavoro (Workflow) ramificato: GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto.
+<strong>4</strong>. <span style="background-color:#eeeeee">Flusso di lavoro (Workflow) ramificato</span>: GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto.
 
 
 ## Come installare GIT
@@ -248,34 +248,29 @@ Ricorda che la comunità open source è dinamica e in continua evoluzione, quind
 
 Per utilizzare GIT con github, è necessario:
 
-- Creare un account github: Vai su github e crea un account se non ne hai già uno.
 
-- Creare un repository: Dopo aver effettuato l'accesso a github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
+<strong>1</strong>. <span style="background-color:#eeeeee"> Creare un account github</span>: Vai su github e crea un account se non ne possiedi già uno.
 
-- Clonare il repository: Utilizza il comando GIT clone nel tuo terminale per clonare il repository github sul tuo computer locale. Ad esempio:
+<strong>2</strong>. <span style="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
+
+<strong>3</strong>. <span style="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository github sul tuo computer locale. Ad esempio:
 
 ```bash
-GIT clone https://github.com/username/repository.GIT
+git clone https://github.com/username/repository.git
 ```
 
-Aggiungere file e apportare modifiche: Aggiungi i tuoi file al repository clonato sul tuo computer locale e apporta le modifiche desiderate.
-
-Commit e push delle modifiche: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
+<strong>4</strong>. <span style="background-color:#eeeeee"> Aggiungere file e apportare modifiche</span>: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
 
 ```bash
-
-GIT add .
-
-GIT commit -m "Descrizione delle modifiche"
-
-GIT push origin nome-del-branch
-
+git  add .
+git  commit -m "Descrizione delle modifiche"
+git  push origin master 
 ```
 
 > Pull delle modifiche: Se altri collaboratori hanno apportato modifiche al repository remoto su github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.
 
-Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da esplorare mentre diventi più esperto nell'utilizzo di queste tecnologie.
+Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni nostri programmi ospitati su github.com. 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.147.0.4.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.2.0</p>
