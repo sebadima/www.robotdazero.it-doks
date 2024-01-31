@@ -78,7 +78,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="La pagina iniziale di GIT-scm.com">
 
-######  La pagina iniziale di GIT-scm.com. Clicca su Windows come vedi nella schermata.
+######  La pagina iniziale del sito <a href="https://git-scm.com/" target="_blank">Git-scm</a>. Clicca su Windows come vedi nella schermata.
 <br>
 <br>
 
