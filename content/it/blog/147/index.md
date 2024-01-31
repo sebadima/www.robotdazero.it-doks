@@ -272,4 +272,4 @@ Questi sono solo alcuni passaggi di base per utilizzare GIT con github. Ci sono 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.4.0</p>
