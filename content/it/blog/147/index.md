@@ -76,26 +76,26 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 #### La guida visiva alla installazione:
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="La pagina iniziale di GIT-scm.com">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="La pagina iniziale di GIT-scm.com">
 
 ######  La pagina iniziale del sito <a href="https://git-scm.com/" target="_blank">Git-scm</a>. Clicca su Windows come vedi nella schermata.
 <br>
 <br>
 
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/102.webp" alt="La pagina della licenza open source di GIT">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/102.webp" alt="La pagina della licenza open source di GIT">
 
 ######  La pagina della licenza open source di GIT. Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/103.webp" alt="La scelta della direcory destinazione di GIT  durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/103.webp" alt="La scelta della direcory destinazione di GIT  durante la installazione di GIT su Windows">
 
-######  La scelta della directory destinazione: basta lasciare quella di default. <br>Clicca su Next.
+######  La scelta della directory destinazione: basta lasciare quella di default. Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="I componenti da installare con GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="I componenti da installare con GIT durante la installazione di GIT su Windows">
 
 ######  In questa schermata puoi selezionare i componenti da installare. A meno che non sia necessario modificare qualcosa in modo specifico, consigliamo di mantenere le opzioni impostate su default. Clicca su Next.
 
@@ -104,19 +104,19 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/105.webp" alt="Le opzioni del menu per GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/105.webp" alt="Le opzioni del menu per GIT durante la installazione di GIT su Windows">
 
 ######  Le opzioni del menu per GIT, fai semplicemente clic su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/106.webp" alt="la scelta dell'editor di default per GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/106.webp" alt="la scelta dell'editor di default per GIT durante la installazione di GIT su Windows">
 
 ###### La scelta dell'editor di default. Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/107.webp" alt="selezione di Notepad come editor prt GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/107.webp" alt="selezione di Notepad come editor prt GIT durante la installazione di GIT su Windows">
 
 ###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". <br>Clicca su Next.
 
@@ -124,13 +124,13 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/108.webp" alt="La conferma di Notepad++ come editor di default di GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/108.webp" alt="La conferma di Notepad++ come editor di default di GIT durante la installazione di GIT su Windows">
 
 ###### La conferma di Notepad++ come editor di default di GIT. Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/109.webp" alt="La scelta del branch di default per GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/109.webp" alt="La scelta del branch di default per GIT durante la installazione di GIT su Windows">
 
 ###### In questa schermata puoi scegliere il nome del "branch" iniziale nei nuovi repository GIT: il nome predefinito è 'master' e ti consiglio di lasciare questo valore. Clicca su Next.
 
@@ -138,13 +138,13 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/110.webp" alt="settaggio di PATH per GIT  durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/110.webp" alt="settaggio di PATH per GIT  durante la installazione di GIT su Windows">
 
 ###### In questa schermata viene chiesto se aggiungere l'ambiente PATH per GIT quando si eseguono comandi da applicazioni della riga di comando (come CMD e PowerShell). <br>Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/111.webp" alt="La scelta dei certificati SSL per GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/111.webp" alt="La scelta dei certificati SSL per GIT durante la installazione di GIT su Windows">
 
 ###### Scegli il programma client Secure Shell da utilizzare per GIT. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche. <br>Clicca su Next.
 
@@ -152,13 +152,13 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/112.webp" alt="La scelta di SSL per GIT  durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/112.webp" alt="La scelta di SSL per GIT  durante la installazione di GIT su Windows">
 
 ###### Quando si scelgono i certificati del server, ti consiglio di usare la libreria OpenSSL predefinita. Clicca su Next.
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/113.webp" alt="la scelta del carattere di fine riga per i repository di GIT durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/113.webp" alt="la scelta del carattere di fine riga per i repository di GIT durante la installazione di GIT su Windows">
 
 ###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): <br>lascia le impostazione di default. Clicca su Next.
 
@@ -167,7 +167,7 @@ Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa 
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/114.webp" alt="La scelta dell'emulatore di terminale durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/114.webp" alt="La scelta dell'emulatore di terminale durante la installazione di GIT su Windows">
 
 ###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consiglio di lasciare MinTTY come predefinito. Clicca su Next.
 
@@ -177,7 +177,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di GIT pull durante la installazione di GIT su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di GIT pull durante la installazione di GIT su Windows">
 
 ###### Usa il comportamento predefinito del comando "git pull". Clicca su Next.
 
@@ -185,7 +185,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
 
 ###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential
  Manager (selezione predefinita) è il più stabile del lotto.
@@ -201,7 +201,7 @@ Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema o
 <br>
 
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="La scelta dei collegamenti simbolici - symlink - di GIT durante la installazione su Windows">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="La scelta dei collegamenti simbolici - symlink - di GIT durante la installazione su Windows">
 
 ###### Resta poco altro da configurare: la prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. Clicca su Next.
 
@@ -212,7 +212,7 @@ L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti s
 <br>
 <br>
 
-<img img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
+<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
 
 ###### Adesso la installazione è terminata e puoi cliccare su "Finish"
 
