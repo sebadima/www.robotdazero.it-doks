@@ -1,7 +1,7 @@
 ---
 title: "Come installare il programma GIT"
 description: "Come installare il programma GIT"
-excerpt: "..."
+excerpt: "GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a disposizione per molti motivi: controllo delle versioni, collaborazione, backup e ripristino..."
 date: 2024-01-30T09:19:42+01:00
 lastmod: 2024-01-30T09:19:42+01:00
 draft: false
@@ -25,13 +25,13 @@ mermaid: true
 
 ##  Perchè installare GIT
 
-È importante installare GIT per molti motivi:
+GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a disposizione per molti motivi:
 
-<strong>1</strong>. <span style="background-color:#eeeeee"> Controllo delle versioni</span>: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
+<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Controllo delle versioni</span>: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
 
-<strong>2</strong>. <span style="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
+<strong>2</strong>. <span sty0le="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
 
-<strong>3</strong>. <span style="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
+<strong>3</strong>. <span sty0le="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
 
 > **Flusso di lavoro (workflow) ramificato**: *GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto. Ciò facilita molto 	la creazione di nuove features in modo estemporaneo.*
 
