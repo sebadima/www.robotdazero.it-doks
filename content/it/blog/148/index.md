@@ -1,15 +1,15 @@
 ---
-title: "Come installare il programma GIT"
-description: "Come installare il programma GIT"
-excerpt: "GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a disposizione per molti motivi: controllo delle versioni, collaborazione, backup e ripristino..."
-date: 2024-01-30T09:19:42+01:00
-lastmod: 2024-01-30T09:19:42+01:00
+title: "Come leggere una porta analogica con ESP32"
+description: "Come leggere una porta analogica con ESP32"
+excerpt: "..."
+date: 2024-01-31T09:19:42+01:00
+lastmod: 2024-01-31T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.png"]
 categories: ["News"]
-tags: ["GIT", "IOT", "Programmazione"]
-contributors: ["sergio rame"]
+tags: ["ESP32", "Teoria", "Programmazione"]
+contributors: ["sebadima"]
 pinned: false
 homepage: false
 mermaid: true
@@ -18,260 +18,142 @@ mermaid: true
 
 
 <!--
+https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/	
 -->
 
 <hr>
 <br>
 
-##  Perchè installare GIT
 
-GIT è un tool fondamentale nella programmazione Iot, ed è importante averlo a disposizione per molti motivi:
+Questo articolo mostra come leggere gli ingressi analogici con l'ESP32 utilizzando l'IDE Arduino. La lettura analogica è utile per leggere i valori da resistori variabili come potenziometri o sensori analogici.
 
-<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Controllo delle versioni</span>: GIT è un sistema di controllo delle versioni distribuito che consente di tenere traccia delle modifiche apportate ai file nel tempo. E' uno strumento basilare per gestire progetti software, documentazione, file di configurazione e altro ancora.
+ESP32 ADC Leggere valori analogici con Arduino IDE
+Leggere gli ingressi analogici con ESP32 è facile come usare la funzione analogRead(GPIO), che accetta come argomento, il GPIO che si desidera leggere.
 
-<strong>2</strong>. <span sty0le="background-color:#eeeeee">Collaborazione</span>: GIT facilita la collaborazione sui progetti condivisi. Piattaforme di hosting come <a href="https://github.com/" target="_blank">Github.com</a> consentono a più persone di lavorare su un progetto contemporaneamente, tenere traccia delle modifiche e consentire facile coordinamento delle modifiche ai programmi.
+Abbiamo anche altri tutorial su come utilizzare pin analogici con scheda ESP:
 
-<strong>3</strong>. <span sty0le="background-color:#eeeeee">Backup e ripristino</span>: Con GIT e github.com puoi backup dei tuoi progetti e ripristinare versioni precedenti. Questo fornisce una preziosa forma di sicurezza per i tuoi dati.
-
-> **Flusso di lavoro (workflow) ramificato**: *GIT supporta flussi di lavoro ramificati, consentendo di lavorare su nuove funzionalità o correzioni di bug in "zone" separate senza influenzare la parte principale del progetto. Ciò facilita molto 	la creazione di nuove features in modo estemporaneo.*
-
-
-## Come installare GIT
-
-Vediamo le istruzioni passo passo per installare questo tool nei due sistemi operativi più diffusi tra i "maker", Linux e Windows 10/11.
+ESP8266 ADC-Leggere i valori analogici con Arduino IDE, MicroPython e Lua
+ESP32 Letture analogiche con MicroPython
+Guarda il video
+È possibile guardare il video tutorial o continuare a leggere questa pagina per le istruzioni scritte.
 
 
-### Installazione da terminale su Linux:
-Puoi aprire il terminale utilizzando il menu delle applicazioni o usando la combinazione di tasti Ctrl + Alt + T.
 
-Aggiorna i pacchetti: Assicurati di avere l'elenco dei pacchetti aggiornato eseguendo il comando:
+Ingressi analogici (ADC)
+La lettura di un valore analogico con l'ESP32 significa che è possibile misurare diversi livelli di tensione tra 0 V e 3,3 V.
 
-```bash
-sudo apt update
-```
+La tensione misurata viene quindi assegnata a un valore compreso tra 0 e 4095, in cui 0 V corrisponde a 0 e 3,3 V corrisponde a 4095. Qualsiasi tensione tra 0 V e 3.3 V sarà dato il valore corrispondente in mezzo.
 
-Installa GIT: Puoi installare GIT utilizzando il gestore dei pacchetti della tua distribuzione Linux. Per Ubuntu e derivate, esegui:
+ESP32 ADC Analogico ingressi di lettura Valore della gamma
+L'ADC non è lineare
+Idealmente, ci si aspetterebbe un comportamento lineare quando si utilizzano i pin ADC ESP32. Tuttavia, ciò non accade. Quello che otterrai è un comportamento come mostrato nella seguente tabella:
 
-```bash
-sudo apt install GIT
-```
+ESP32 ESP32 ADC Ingressi analogici di lettura Range Value behavior
+Visualizza sorgente
+Questo comportamento significa che il tuo ESP32 non è in grado di distinguere 3,3 V da 3,2 V. Otterrai lo stesso valore per entrambe le tensioni: 4095.
 
-Verifica l'installazione: Dopo l'installazione, verifica che GIT sia correttamente installato eseguendo:
+Lo stesso accade per valori di tensione molto bassi: per 0 V e 0.1 V si otterrà lo stesso valore: 0. È necessario tenere questo in mente quando si utilizzano i pin ADC ESP32.
 
-```bash
-GIT --version
-```
+C'è una discussione su GitHub su questo argomento.
 
-Questo dovrebbe mostrare la versione di GIT installata sul tuo sistema.
+analogRead () Funzione
+Leggere un ingresso analogico con l'ESP32 utilizzando l'IDE Arduino è semplice come usare la funzione analogRead (). Accetta come argomento, il GPIO che vuoi leggere:
 
-### Installazione su Windows 10/11:
+analogRead(GPIO);
+L'ESP32 supporta le misure in 18 canali diversi. Solo 15 sono disponibili nella scheda DEVKIT V1 DOIT (versione con 30 GPIO).
 
-- Scarica l'installer: Vai al sito ufficiale di GIT a questo <a href="https://git-scm.com/" target="_blank">link</a> e scarica l'installer per Windows.
+Afferra la piedinatura della scheda ESP32 e individua i pin ADC. Questi sono evidenziati con un bordo rosso nella figura sottostante.
 
-- Esegui l'installer: Dopo aver scaricato l'installer, fai doppio clic su di esso per avviare il processo di installazione.
+ESP32 ADC GPIOs Pins
+Ulteriori informazioni sul ESP32 GPIOs: ESP32 piedinatura di riferimento.
 
-- Configura l'installazione: Durante l'installazione, segui le istruzioni visualizzate sull'installer. Di solito puoi lasciare le opzioni predefinite a meno che tu non abbia esigenze particolari.
+Questi pin di ingresso analogici hanno una risoluzione a 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo può variare da 0 a 4095.
 
-Completa l'installazione: Dopo aver configurato le opzioni desiderate, completa il processo di installazione. Lascia selezionata l'opzione per aggiungere GIT al PATH di Windows durante l'installazione.
+Nota: i pin ADC2 non possono essere utilizzati quando si utilizza il Wi-Fi. Quindi, se stai usando il Wi-Fi e hai problemi a ottenere il valore da un GPIO ADC2, potresti prendere in considerazione l'utilizzo di un GPIO ADC1, che dovrebbe risolvere il tuo problema.
 
-#### La guida visiva alla installazione:
+Altre funzioni utili
+Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono essere utili in altri progetti.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="La pagina iniziale di GIT-scm.com">
+analogReadResolution (risoluzione): imposta i bit e la risoluzione del campione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
+Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
+analogSetCycles (cicli): impostare il numero di cicli per campione. Il valore predefinito è 8. Intervallo: da 1 a 255.
+analogSetSamples (samples): imposta il numero di campioni nell'intervallo. Il valore predefinito è 1 campione. Ha un effetto di aumentare la sensibilità.
+Analsetclockdiv (attenuazione): impostare il divisore per l'orologio ADC. Il valore predefinito è 1. Intervallo: da 1 a 255.
+Analsetattenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Il valore predefinito è ADC_11db. Valori accettati:
+ADC_0db: non imposta attenuazione. ADC può misurare fino a circa 800 mV (ingresso 1V = lettura ADC di 1088).
+ADC_2_5db: La tensione di ingresso di ADC sarà attenuata, estendendo il campo di misura fino a ca. 1100 mV. (Ingresso 1V = lettura ADC di 3722).
+ADC_6db: La tensione di ingresso di ADC sarà attenuata, estendendo il campo di misura fino a ca. 1350 mV. (Ingresso 1V = lettura ADC di 3033).
+ADC_11db: La tensione di ingresso di ADC sarà attenuata, estendendo il campo di misura fino a ca. 2600 mV. (Ingresso 1V = lettura ADC di 1575).
+Analsetpinattenuation (pin, attenuazione): imposta l'attenuazione di ingresso per il pin specificato. Il valore predefinito è ADC_11db. I valori di attenuazione sono gli stessi della funzione precedente.
+adcAttachPin (pin): collega un pin ad ADC (cancella anche qualsiasi altra modalità analogica che potrebbe essere attiva). Restituisce il risultato VERO o FALSO.
+adcStart(pin), adcBusy(pin) e resultadcEnd (pin): avvia una conversione ADC sul bus del pin collegato. Controlla se la conversione sul bus ADC del pin è attualmente in esecuzione (restituisce TRUE o FALSE). Ottieni il risultato della conversione: restituisce un intero a 16 bit.
+C'è un ottimo video che spiega queste funzioni che puoi guardare qui.
 
-######  La pagina iniziale del sito <a href="https://git-scm.com/" target="_blank">Git-scm</a>. Clicca su Windows come vedi nella schermata.
-<br>
-<br>
+Leggere i valori analogici da un potenziometro con ESP32
+Per vedere come tutto si lega insieme, faremo un semplice esempio per leggere un valore analogico da un potenziometro.
+
+Per questo esempio, sono necessarie le seguenti parti:
+
+ESP32 DOIT DEVKIT V1 Consiglio (leggi migliori schede di sviluppo ESP32)
+Potenziometro
+Breadboard
+Ponticelli
+È possibile utilizzare i link precedenti o andare direttamente a MakerAdvisor.com/tools per trovare tutte le parti per i tuoi progetti al miglior prezzo!
 
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/102.webp" alt="La pagina della licenza open source di GIT">
 
-######  La pagina della licenza open source di GIT. Clicca su Next.
-<br>
-<br>
+Schematico
+Collegare un potenziometro al vostro ESP32. Il perno centrale del potenziometro deve essere collegato a GPIO 34. È possibile utilizzare il seguente schema schematico come riferimento.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/103.webp" alt="La scelta della direcory destinazione di GIT  durante la installazione di GIT su Windows">
+Leggere il valore dal potenziometro ESP32 Arduino IDE
+Codice
+Programmeremo l'ESP32 usando l'IDE Arduino, quindi assicurati di avere installato l'add-on ESP32 prima di procedere:
 
-######  La scelta della directory destinazione: basta lasciare quella di default. Clicca su Next.
-<br>
-<br>
+Istruzioni di Windows-Scheda ESP32 in Arduino IDE
+Istruzioni per Mac e Linux-Scheda ESP32 in Arduino IDE
+Apri il tuo IDE Arduino e copia il seguente codice.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="I componenti da installare con GIT durante la installazione di GIT su Windows">
+// Potenziometro è collegato a GPIO 34 (analogico ADC1_CH6) 
+const int potPin = 34;
 
-######  In questa schermata puoi selezionare i componenti da installare. A meno che non sia necessario modificare qualcosa in modo specifico, consigliamo di mantenere le opzioni impostate su default. Clicca su Next.
+// variabile per memorizzare il valore del potenziometro
+valore nominale int = 0;
 
+void setup() {
+  Seriale.inizio (115200);
+  ritardo(1000);
+}
 
-> **Integrazione con la shell**: *Permette di associare il programma GIT al click destro del mouse e aprire un menu contestuale comodissimo. Dal menu puoi lanciare comandi come GIT log. Da lasciare sempre attivo anche quando vai a cambiare  le opzioni DOPO la installazione.*
+loop vuoto () {
+  // Lettura potenziometro valore
+  potValue = analogRead (potPin ) ;
+  Seriale.println (valore aggiunto);
+  ritardo(500);
+}
+Visualizza codice raw
 
-<br>
+Questo codice legge semplicemente i valori dal potenziometro e li stampa nel monitor seriale.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/105.webp" alt="Le opzioni del menu per GIT durante la installazione di GIT su Windows">
+Nel codice, si inizia definendo il GPIO a cui è collegato il potenziometro. In questo esempio, GPIO 34.
 
-######  Le opzioni del menu per GIT, fai semplicemente clic su Next.
-<br>
-<br>
+const int potPin = 34;
+In setup(), inizializzare una comunicazione seriale a una velocità di trasmissione di 115200.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/106.webp" alt="la scelta dell'editor di default per GIT durante la installazione di GIT su Windows">
+Seriale.inizio (115200);
+Nel loop (), utilizzare la funzione analogRead () per leggere l'ingresso analogico dal potPin.
 
-###### La scelta dell'editor di default. Clicca su Next.
-<br>
-<br>
+potValue = analogRead (potPin ) ;
+Infine, stampare i valori letti dal potenziometro nel monitor seriale.
 
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/107.webp" alt="selezione di Notepad come editor prt GIT durante la installazione di GIT su Windows">
+Seriale.println (valore aggiunto);
+Carica il codice fornito sul tuo ESP32. Assicurati di avere la scheda e la porta COM giuste selezionate nel menu Strumenti.
 
-###### Scegli Visual Studio Code o altrimenti un editor più minimalista come "Notepad". <br>Clicca su Next.
+Testare l'esempio
+Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, aprire il monitor seriale a una velocità di trasmissione di 115200. Ruotare il potenziometro e vedere i valori che cambiano.
 
-> **Notepad++**: *E' un editor di testo avanzato e <a href="https://it.wikipedia.org/wiki/Differenza_tra_software_libero_e_open_source" target="_blank">open source</a> per il sistema operativo Windows. È progettato per essere una miglioria del blocco note predefinito di Windows, offrendo una vasta gamma di funzionalità per gli sviluppatori e gli utenti che lavorano con file di testo, codice sorgente e markup.*
+Leggi potenziometro ESP32 analogRead
 
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/108.webp" alt="La conferma di Notepad++ come editor di default di GIT durante la installazione di GIT su Windows">
-
-###### La conferma di Notepad++ come editor di default di GIT. Clicca su Next.
-<br>
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/109.webp" alt="La scelta del branch di default per GIT durante la installazione di GIT su Windows">
-
-###### In questa schermata puoi scegliere il nome del "branch" iniziale nei nuovi repository GIT: il nome predefinito è 'master' e ti consiglio di lasciare questo valore. Clicca su Next.
-
-> **Il branch iniziale di un repository GIT**: *E' il punto di partenza da cui si sviluppano altri branch. Solitamente, quando viene creato un nuovo repository GIT, viene creato automaticamente un branch di default, che solitamente è chiamato "master" o "main" (a seconda delle convenzioni del progetto o della piattaforma di hosting).*
-
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/110.webp" alt="settaggio di PATH per GIT  durante la installazione di GIT su Windows">
-
-###### In questa schermata viene chiesto se aggiungere l'ambiente PATH per GIT quando si eseguono comandi da applicazioni della riga di comando (come CMD e PowerShell). <br>Clicca su Next.
-<br>
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/111.webp" alt="La scelta dei certificati SSL per GIT durante la installazione di GIT su Windows">
-
-###### Scegli il programma client Secure Shell da utilizzare per GIT. Poiché il programma di installazione viene fornito in bundle con OpenSSH, non sono necessarie modifiche. <br>Clicca su Next.
-
-> **OpenSSH**: *E' un'implementazione open source del protocollo SSH (Secure Shell), che fornisce un ambiente di comunicazione sicuro e crittografato tra due dispositivi su una rete non sicura. SSH è ampiamente utilizzato per connettersi in modo sicuro a server remoti per scopi di gestione remota, trasferimento di file, etc.*
-
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/112.webp" alt="La scelta di SSL per GIT  durante la installazione di GIT su Windows">
-
-###### Quando si scelgono i certificati del server, ti consiglio di usare la libreria OpenSSL predefinita. Clicca su Next.
-<br>
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/113.webp" alt="la scelta del carattere di fine riga per i repository di GIT durante la installazione di GIT su Windows">
-
-###### La scelta tra il caratteri di fine linea tipo UNIX (LF) o Windows (CRLF): <br>lascia le impostazione di default. Clicca su Next.
-
-> **Il termine "CRFL"**: *Identifica la sequenza di caratteri di controllo utilizzata per indicare una nuova riga in un file di testo. Questa sequenza è composta dai caratteri Carriage Return (CR) e Line Feed (LF), rappresentati rispettivamente dai byte 13 e 10 in formato ASCII.*
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
 <br>
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/114.webp" alt="La scelta dell'emulatore di terminale durante la installazione di GIT su Windows">
-
-###### Scegli il tuo emulatore di terminale. Ancora una volta, ti consiglio di lasciare MinTTY come predefinito. Clicca su Next.
-
-> **Mintty**: *Un emulatore di terminale open-source per sistemi operativi Windows, noto per essere il terminale predefinito di <a href="https://www.cygwin.com/" target="_blank">Cygwin</a>. Cygwin è un ambiente di runtime che consente di eseguire applicazioni Unix-like sui sistemi Windows.*
-
-Mintty fornisce un'interfaccia a riga di comando per interagire con il sistema operativo Windows utilizzando un ambiente molto simile a quello di Unix.
-
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/115.webp" alt="La scelta del comportamento di GIT pull durante la installazione di GIT su Windows">
-
-###### Usa il comportamento predefinito del comando "git pull". Clicca su Next.
-
-> **Il comando "git pull"**: *Viene utilizzato in GIT per recuperare le modifiche da un repository remoto e unirle con il ramo attuale del repository locale. In sostanza, "git pull" combina due operazioni: "git fetch", che scarica i commit dal repository remoto nel repository locale senza applicare alcuna modifica, e "git merge", che unisce i commit scaricati nel ramo attuale.*
-
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/116.webp" alt="">
-
-###### Devi scegliere un "helper di credenziali" che ti aiuterà a ottenere e salvare le credenziali.<br> Il core di GIT Credential
- Manager (selezione predefinita) è il più stabile del lotto.
-
-> **GIT Credential
- Manager**: *Uno strumento utilizzato con GIT per la gestione delle credenziali di autenticazione. Viene utilizzato principalmente su piattaforme Windows per semplificare il processo di autenticazione quando si lavora con repository GIT remoti.*
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il Credential
- Manager </strong> memorizza le credenziali di autenticazione in modo sicuro, evitando agli utenti di inserire manualmente le loro credenziali. Risulta comodissimo per interagire con un repository, come durante l'esecuzione di "git push" o "git pull".</div>
-
-<br>
-<br>
-
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/117.webp" alt="La scelta dei collegamenti simbolici - symlink - di GIT durante la installazione su Windows">
-
-###### Resta poco altro da configurare: la prima opzione (selezionata per default) è quella di “Abilitare la memorizzazione nella cache del file system”. E' utile lasciarla attivata perchè migliora le prestazioni del sistema. Clicca su Next.
-
-L'altra opzione riguarda i "symlink" ed è quella di "Abilitare i collegamenti simbolici" che sono simili alle scorciatoie da riga di comando. Selezionala soltanto se sai di cosa stiamo parlando, ma ti consiglio di lasciarla inattiva.
-
-> **Supporto per symlink**: *Può variare tra i sistemi operativi e può comportare alcuni **comportamenti imprevisti**, specialmente quando si sposta il repository GIT tra sistemi operativi che gestiscono symlink in modi diversi (ad esempio, tra sistemi Windows e sistemi Unix-like come Linux o macOS).*
-
-<br>
-<br>
-
-<img img width="680" class="x figure-img img-fluid lazyload blur-up"  src="images/119.webp" alt="">
-
-###### Adesso la installazione è terminata e puoi cliccare su "Finish"
-
-<br>
-
-Terminata la installazione, apri il Prompt dei comandi di Windows o PowerShell ed esegui:
-
-```bash
-GIT --version
-```
-
-Questo dovrebbe mostrare la versione di GIT appena installata sul tuo sistema.
-
-Una volta installato GIT su Windows o Linux, puoi iniziare a utilizzarlo eseguendo comandi come "git clone", "git init", etc.
-
-
-
-## Perchè usare Github.com
-
-
-Github.com è un enorme portale gestito dalla Microsoft che ospita migliaia di progetti open source relativi ad IoT, Arduino ed ESP32. Lo trovi cliccando su questo <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">link</a>.
-
-Puoi facilmente trovare questi progetti utilizzando la funzione di ricerca di Github. Ecco alcuni suggerimenti su come trovare progetti open source relativi a queste tecnologie su Github:
-
-Utilizza la barra di ricerca di <a href="https://github.com/search?q=ESP32&type=repositories&s=stars&o=desc" target="_blank">Github.com</a> e inserisci parole chiave come "IoT", "Arduino", "ESP32" per trovare progetti correlati. Esplora i repository risultanti per trovare progetti che soddisfino le tue esigenze specifiche.
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Su Github ci sono moltissimi elenchi </strong> curati dalla comunità che raggruppano i migliori progetti open source per la robotica e l'IoT. Puoi esaminare queste raccolte per clonare (legalmente) programmi, chiedere supporto, leggere  le "FAQ" di ogni singolo progetto.</div>
-
-<br>
-Ricorda che la comunità open source è dinamica e in continua evoluzione, quindi il numero di progetti disponibili su github può variare nel tempo.
-
-
-### Come usare Github.com
-
-Per utilizzare GIT con Github, è necessario:
-
-
-<strong>1</strong>. <span sty0le="background-color:#eeeeee"> Creare un account Github</span>: Vai su Github e crea un account ovviamente se non ne possiedi già uno.
-
-<strong>2</strong>. <span sty0le="background-color:#eeeeee"> Creare un repository</span>: Dopo aver effettuato l'accesso a Github, puoi creare un nuovo repository facendo clic sul pulsante "New" nella tua dashboard.
-
-<strong>3</strong>. <span sty0le="background-color:#eeeeee"> Clonare il repository</span>: Utilizza il comando GIT clone nel tuo terminale per clonare il repository Github sul tuo computer locale. Ad esempio:
-
-```bash
-git clone https://github.com/username/repository.git
-```
-
-<strong>4</strong>. <span sty0le="background-color:#eeeeee"> Aggiungere file e apportare modifiche</span>: Utilizza i comandi GIT add, GIT commit e GIT push per inviare le tue modifiche al repository remoto su github. Ad esempio:
-
-```bash
-git add .
-git commit -am "Descrizione delle modifiche"
-git push origin master 
-```
-
-> **Pull delle modifiche**: *Se altri collaboratori hanno apportato modifiche al repository remoto su Github, puoi utilizzare il comando GIT pull per aggiornare il tuo repository locale con le modifiche più recenti.*
-
-Questi sono solo alcuni passaggi di base per utilizzare GIT con Github. Ci sono molte altre funzionalità e concetti avanzati da <a href="https://stackoverflow.com/questions/9282998/git-setup-best-practices" target="_blank">esplorare</a> mentre diventi più esperto nell'utilizzo di queste tecnologie. Più avanti vederemo come usare il comando GIT clone per scaricare alcuni dei nostri programmi ospitati su Github.com. 
-
-<br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.147.1.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.0.1.0</p>
