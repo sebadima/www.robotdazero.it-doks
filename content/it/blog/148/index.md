@@ -1,7 +1,7 @@
 ---
 title: "Come leggere una porta analogica con ESP32"
 description: "Come leggere una porta analogica con ESP32"
-excerpt: "..."
+excerpt: "La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ingresso: la operazione di lettura non presenta particolari difficoltà ma talvolta può essere noioso trovare i piedini liberi..."
 date: 2024-01-31T09:19:42+01:00
 lastmod: 2024-01-31T09:19:42+01:00
 draft: false
@@ -18,28 +18,21 @@ mermaid: true
 
 
 <!--
-https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/	
+https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
 -->
 
 <hr>
 <br>
 
 
-Questo articolo mostra come leggere gli ingressi analogici con l'ESP32 utilizzando l'IDE Arduino. La lettura analogica è utile per leggere i valori da resistori variabili come potenziometri o sensori analogici.
+## La scheme dei pin analogici
 
-ESP32 ADC Leggere valori analogici con Arduino IDE
-Leggere gli ingressi analogici con ESP32 è facile come usare la funzione analogRead(GPIO), che accetta come argomento, il GPIO che si desidera leggere.
+La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ingresso: la operazione di lettura non presenta particolari difficoltà ma talvolta può essere noioso trovare i piedini liberi o adatti per l'uso. Nella immagine sotto vedi la piedinatura completa della ESP32-WROOM. I piedini disponibili per l'ingresso analogico sono evidenzati in rosso.
 
-Abbiamo anche altri tutorial su come utilizzare pin analogici con scheda ESP:
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="">
 
-ESP8266 ADC-Leggere i valori analogici con Arduino IDE, MicroPython e Lua
-ESP32 Letture analogiche con MicroPython
-Guarda il video
-È possibile guardare il video tutorial o continuare a leggere questa pagina per le istruzioni scritte.
+## La lettura degli ingressi analogici (ADC)
 
-
-
-Ingressi analogici (ADC)
 La lettura di un valore analogico con l'ESP32 significa che è possibile misurare diversi livelli di tensione tra 0 V e 3,3 V.
 
 La tensione misurata viene quindi assegnata a un valore compreso tra 0 e 4095, in cui 0 V corrisponde a 0 e 3,3 V corrisponde a 4095. Qualsiasi tensione tra 0 V e 3.3 V sarà dato il valore corrispondente in mezzo.
@@ -151,9 +144,22 @@ Carica il codice fornito sul tuo ESP32. Assicurati di avere la scheda e la porta
 Testare l'esempio
 Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, aprire il monitor seriale a una velocità di trasmissione di 115200. Ruotare il potenziometro e vedere i valori che cambiano.
 
-Leggi potenziometro ESP32 analogRead
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.0.1.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.0.0</p>
