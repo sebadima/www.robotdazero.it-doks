@@ -53,16 +53,16 @@ La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i
 
 ### Le istruzioni C++ per leggere un pin analogico con ESP32
 
-La funzione "analogRead(GPIO)" legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere: nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
+La funzione **analogRead(GPIO)** legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere: nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
 
 Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo numerico può variare da 0 a 4095.
 
-> <strong>analogReadResolution</strong>(). E' una istruzione preliminare ad ogni uso degli ADC. Serve a impostare i bit e la risoluzione del campionamento. Il parametro può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095) con un valore predefinito di 12 bit.
+> <strong>analogReadResolution(resolution)</strong>. E' una istruzione preliminare ad ogni uso degli ADC. Serve a impostare i bit e la risoluzione del campionamento. Il parametro può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095) con un valore predefinito di 12 bit.
 
 
 #### Altre funzioni utili
 
-Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono risulatare utili in altri progetti.
+Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono risultare utili in altri progetti.
 
 - Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
 
