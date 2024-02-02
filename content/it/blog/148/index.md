@@ -79,13 +79,10 @@ Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono ess
 
 Per questo progetto, sono necessarie le seguenti 4 parti:
 
-<strong>1</strong>. ESP32 DOIT DEVKIT V1 (30 pin)
-
-<strong>2</strong>. Potenziometro
-
-<strong>3</strong>. Breadboard
-
-<strong>4</strong>. Ponticelli
+- <strong>1</strong>. ESP32 DOIT DEVKIT V1 (30 pin)
+- <strong>2</strong>. Potenziometro
+- <strong>3</strong>. Breadboard
+- <strong>4</strong>. Ponticelli
 
 
 ## Lo schema
@@ -177,15 +174,36 @@ void loop() {
 }
 ```
 
-Carica il codice fornito sul tuo ESP32. Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, scrivi le 2 seguenti istruzione nel terminale (fai copia e incolla): 
+
+Carica il codice fornito su un file main.ino e inoltre crea un file platformio.ini con il seguente contenuto:
+
+```bash
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+lib_deps = 
+
+```
+
+Quindi scrivi le 2 seguenti istruzione nel terminale (fai copia e incolla): 
 
 ```bash
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Anche in questo caso puoi vedere il funzionamento del canale ADS ruotando il potenziometro.
-
+Anche in questo caso puoi vedere il funzionamento del canale ADS ruotando il potenziometro...
 
 <br>
 <br>
