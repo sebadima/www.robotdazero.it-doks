@@ -1,6 +1,6 @@
 ---
-title: "Come scrivere il Makefile di PlatformIO"
-description: "Come scrivere il Makefile di PlatformIO"
+title: "Come funziona il Makefile di PlatformIO"
+description: "Come funziona il Makefile di PlatformIO"
 excerpt: "Il compilatore PlatformIO che noi usiamo per l’ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando..."
 date: 2024-02-02T09:19:42+01:00
 lastmod: 2024-02-02T09:19:42+01:00
