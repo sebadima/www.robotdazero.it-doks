@@ -8,7 +8,7 @@
          <p class="lead">{{ .Params.lead | safeHTML }}</p>
          <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}piattaforma/quick-start/" role="button">{{ i18n "get-started" }}</a>
          <p class="meta">Open-source MIT Licensed. <a  aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
-         <img width="300" src="/hog/1001.webp" alt="">
+         <img width="300" src="/logo/102.png" alt="">
          <!--
             <div class=bg-dots></div>
             -->
