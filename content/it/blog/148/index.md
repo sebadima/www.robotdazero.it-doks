@@ -25,44 +25,45 @@ https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
 <br>
 
 
-## La scheme dei pin analogici
 
-La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ingresso: la operazione di lettura non presenta particolari difficoltà ma talvolta può essere noioso trovare i piedini liberi o adatti per l'uso. Nella immagine sotto vedi la piedinatura completa della ESP32-WROOM. I piedini disponibili per l'ingresso analogico sono evidenzati in rosso.
+## Introduzione:
+
+L'ESP32 è un microcontrollore che supporta la lettura di segnali analogici attraverso i suoi pin ADC (Analog to Digital Converter). Per leggere i canali analogici, useremo il linguaggio di programmazione C++ insieme alla libreria Arduino per ESP32.
+
+## La schema dei pin analogici
+
+La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ingresso: la operazione di lettura non presenta particolari difficoltà ma talvolta può essere noioso trovare i piedini liberi o adatti per l'uso. Nella immagine sotto vedi la piedinatura completa della ESP32 DEVKIT-V1. 
+
+#### I piedini disponibili per l'ingresso analogico sono evidenzati in rosso.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="">
 
-## La lettura degli ingressi analogici (ADC)
+### La lettura degli ingressi analogici (ADC)
 
-La lettura di un valore analogico con l'ESP32 significa che è possibile misurare diversi livelli di tensione tra 0 V e 3,3 V.
 
-La tensione misurata viene quindi assegnata a un valore compreso tra 0 e 4095, in cui 0 V corrisponde a 0 e 3,3 V corrisponde a 4095. Qualsiasi tensione tra 0 V e 3.3 V sarà dato il valore corrispondente in mezzo.
+> ADC è l'acronimo di "Analog-to-Digital Converter", che in italiano significa "Convertitore Analogico-Digitale". 
 
-ESP32 ADC Analogico ingressi di lettura Valore della gamma
-L'ADC non è lineare
-Idealmente, ci si aspetterebbe un comportamento lineare quando si utilizzano i pin ADC ESP32. Tuttavia, ciò non accade. Quello che otterrai è un comportamento come mostrato nella seguente tabella:
+Si tratta di un componente elettronico utilizzato per convertire segnali analogici, come tensioni o correnti, in valori digitali che possono essere elaborati da un microcontrollore o un computer. Gli ADC sono comunemente utilizzati in dispositivi elettronici per misurare e monitorare segnali provenienti da sensori o da altre sorgenti analogiche.
 
-ESP32 ESP32 ADC Ingressi analogici di lettura Range Value behavior
-Visualizza sorgente
-Questo comportamento significa che il tuo ESP32 non è in grado di distinguere 3,3 V da 3,2 V. Otterrai lo stesso valore per entrambe le tensioni: 4095.
 
-Lo stesso accade per valori di tensione molto bassi: per 0 V e 0.1 V si otterrà lo stesso valore: 0. È necessario tenere questo in mente quando si utilizzano i pin ADC ESP32.
+La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i livelli di tensione tra 0V e 3,3V.
 
-C'è una discussione su GitHub su questo argomento.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>In teoria ci apettiamo un comportamento lineare</strong> nella lettura dei pin ADC, tuttavia, ciò non è sempre vero. In linea generale l'ESP32 non riesce a distinguere la differenza tra 3,3V e 3,2V: Otterremo sempre lo stesso valore per e cioè 4095. Lo stesso accade per valori di tensione molto bassi: Per 0V e 0.1V otteniamo o stesso valore di 0! 
+<br>È necessario tenere questo in mente quando si utilizzano i pin ADC ESP32.
+</div>
 
-analogRead () Funzione
-Leggere un ingresso analogico con l'ESP32 utilizzando l'IDE Arduino è semplice come usare la funzione analogRead (). Accetta come argomento, il GPIO che vuoi leggere:
 
-analogRead(GPIO);
-L'ESP32 supporta le misure in 18 canali diversi. Solo 15 sono disponibili nella scheda DEVKIT V1 DOIT (versione con 30 GPIO).
 
-Afferra la piedinatura della scheda ESP32 e individua i pin ADC. Questi sono evidenziati con un bordo rosso nella figura sottostante.
+In linea generale l'ESP32 non è riesce a distinguere la differenza tra 3,3V e 3,2V: Otterremo sempre lo stesso valore per entrambe le tensioni: 4095.Lo stesso accade per valori di tensione molto bassi: per 0V e 0.1V otteniamo o stesso valore: 0. 
+<br>È necessario tenere questo in mente quando si utilizzano i pin ADC ESP32.
 
-ESP32 ADC GPIOs Pins
-Ulteriori informazioni sul ESP32 GPIOs: ESP32 piedinatura di riferimento.
 
-Questi pin di ingresso analogici hanno una risoluzione a 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo può variare da 0 a 4095.
+### Le istruzioni per leggere un pin analogico
 
-Nota: i pin ADC2 non possono essere utilizzati quando si utilizza il Wi-Fi. Quindi, se stai usando il Wi-Fi e hai problemi a ottenere il valore da un GPIO ADC2, potresti prendere in considerazione l'utilizzo di un GPIO ADC1, che dovrebbe risolvere il tuo problema.
+La funzione analogRead(GPIO) legge un ingresso analogico dove GPIO indice il piedino che vuoi leggere , nel nostro cso useremo il pin 34. L'ESP32 supporta le misure in 18 pin ma solo 15 sono disponibili nella scheda DEVKIT V1 DOIT (versione con 30 pin) che noi usiamo di preferenza.
+
+Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo può variare da 0 a 4095.
 
 Altre funzioni utili
 Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono essere utili in altri progetti.
@@ -106,43 +107,61 @@ Istruzioni di Windows-Scheda ESP32 in Arduino IDE
 Istruzioni per Mac e Linux-Scheda ESP32 in Arduino IDE
 Apri il tuo IDE Arduino e copia il seguente codice.
 
-// Potenziometro è collegato a GPIO 34 (analogico ADC1_CH6) 
-const int potPin = 34;
 
-// variabile per memorizzare il valore del potenziometro
-valore nominale int = 0;
 
+
+
+
+```bash
 void setup() {
-  Seriale.inizio (115200);
-  ritardo(1000);
+
+  // Setta la seriale a 115200 baud
+  Serial.begin(115200);
+  // Setta la precisione a 12 bits (0-4096)
+  // Il valore 4095 corrisponde a 3.3V
+  analogReadResolution(12);
+
 }
 
-loop vuoto () {
-  // Lettura potenziometro valore
-  potValue = analogRead (potPin ) ;
-  Seriale.println (valore aggiunto);
-  ritardo(500);
+
+void loop() {
+
+  // Leggi il valore del potenziometro al pin 34
+  int ValoreAnalogico = analogRead(34);
+  // Scrivi il valore appena rilevato 
+  Serial.printf("Valore del potenziometro = %d\n", ValoreAnalogico);
+  delay(100); // Un decimo di secondo tra due letture consecutive
+
 }
-Visualizza codice raw
+```
+
+
+
 
 Questo codice legge semplicemente i valori dal potenziometro e li stampa nel monitor seriale.
 
-Nel codice, si inizia definendo il GPIO a cui è collegato il potenziometro. In questo esempio, GPIO 34.
+- Nel codice, si inizia definendo il GPIO a cui è collegato il potenziometro. In questo esempio, GPIO 34.
 
-const int potPin = 34;
-In setup(), inizializzare una comunicazione seriale a una velocità di trasmissione di 115200.
+- In setup(), Si inizializza la comunicazione seriale a una velocità di trasmissione di 115200.
 
-Seriale.inizio (115200);
-Nel loop (), utilizzare la funzione analogRead () per leggere l'ingresso analogico dal potPin.
+- Nel loop (), la funzione analoRead(34) legge l'ingresso analogico dal pin 34.
 
-potValue = analogRead (potPin ) ;
-Infine, stampare i valori letti dal potenziometro nel monitor seriale.
+- Seriale.println (valore aggiunto);
 
-Seriale.println (valore aggiunto);
+
+
 Carica il codice fornito sul tuo ESP32. Assicurati di avere la scheda e la porta COM giuste selezionate nel menu Strumenti.
 
 Testare l'esempio
-Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, aprire il monitor seriale a una velocità di trasmissione di 115200. Ruotare il potenziometro e vedere i valori che cambiano.
+Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, scrivi la seguente istruzione nel terminalr (fai copia e incolla) 
+
+```bash
+platformio device monitor --baud 115200  --rts 0 --dtr 0
+```
+
+La istruzione lancia il monitor seriale di PlatformIO ad una velocità di trasmissione di 115200. Prova a ruotare il potenziometro per vedere i valori che cambiano...
+
+
 
 
 
@@ -162,4 +181,4 @@ Dopo aver caricato il codice e aver premuto il pulsante di reset ESP32, aprire i
 
 
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.0.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.2.0</p>
