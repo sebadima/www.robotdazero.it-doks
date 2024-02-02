@@ -201,6 +201,10 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 
 Il programma partirà dopo pochi secondi e anche in questo caso puoi vedere il funzionamento del canale ADC 34 ruotando il potenziometro...
 
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="output del programma ESP32 per la lettura di un potenziometro usando un canale ADC">
+
+
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.2.0</p>
