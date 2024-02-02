@@ -46,18 +46,18 @@ Si tratta di un componente elettronico utilizzato per convertire segnali analogi
 La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i livelli di tensione tra 0V e 3.3V. Ci aspetteremo che i dispositivi ADC abbiano sempre un comportament neutro e lineare: ma non + sempre così, leggi la sezione sotto per saperne di più.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il comportamento dei circuiti ADC</strong> non è sempre lineare. In linea generale l'ESP32 non riesce a distinguere la differenza tra 3,3V e 3,2V: Otterremo sempre lo stesso valore per e cioè 4095. Lo stesso accade per valori di tensione molto bassi: Per 0V e 0.1V otteniamo o stesso valore di 0! 
-<br><br>È necessario tenerlo bene a mente quando si utilizzano i pin ADC dell'ESP32.
+<strong>Il comportamento dei circuiti ADC non è sempre lineare.</strong> In linea generale l'ESP32 non riesce a distinguere la differenza tra 3,3V e 3,2V: Otterremo sempre lo stesso valore per e cioè 4095. Lo stesso accade per valori di tensione molto bassi: Per 0V e 0.1V otteniamo o stesso valore di 0! 
+<br>È necessario tenerlo bene a mente quando si utilizzano i pin ADC dell'ESP32.
 </div>
 
 
 ### Le istruzioni C++ per leggere un pin analogico
 
-La funzione analogRead(GPIO) legge un ingresso analogico dove GPIO indice il piedino che vuoi leggere , nel nostro caso useremo il pin 34. L'ESP32 supporta le misure in 18 pin ma solo 15 sono disponibili nella scheda DEVKIT V1 DOIT (versione con 30 pin) che noi usiamo di preferenza.
+La funzione analogRead(GPIO) legge un ingresso analogico dove GPIO indice il piedino che vuoi leggere , nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
 
 Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo può variare da 0 a 4095.
 
-> analogReadResolution (risoluzione): imposta i bit e la risoluzione del campione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
+> <strong>analogReadResolution</strong> (risoluzione): imposta i bit e la risoluzione del campionamento. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
 
 
 #### Altre funzioni utili
@@ -66,27 +66,31 @@ Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono ess
 
 - Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
 
-- analogSetCycles (cicli): impostare il numero di cicli per campione. Il valore predefinito è 8. Intervallo: da 1 a 255.
-analogSetSamples (samples): imposta il numero di campioni nell'intervallo. Il valore predefinito è 1 campione. Ha un effetto di aumentare la sensibilità.
+- analogSetCycles (cicli): imposta il numero di cicli per campionamento. Il valore predefinito è 8. Intervallo: da 1 a 255.
 
-- analogSetClockDiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1. L'intervallo va da 1 a 255.
+- analogSetSamples (samples): imposta il numero di campionamenti nell'intervallo. Il valore predefinito è 1. Ha l'effetto di aumentare la sensibilità.
+
+- analogSetClockDiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1, l'intervallo va da 1 a 255.
 
 - analogSetAttenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Valore predefinito = ADC_11db. 
 
 
 ## I componenti necessari
 
-Per questo progetto, sono necessarie le seguenti parti:
+Per questo progetto, sono necessarie le seguenti 4 parti:
 
-1. ESP32 DOIT DEVKIT V1 Consiglio (leggi migliori schede di sviluppo ESP32)
-2. Potenziometro
-3. Breadboard
-4. Ponticelli
+<strong>1</strong>. ESP32 DOIT DEVKIT V1 (30 pin)
+
+<strong>2</strong>. Potenziometro
+
+<strong>3</strong>. Breadboard
+
+<strong>4</strong>. Ponticelli
 
 
 ## Lo schema
 
-Collega un potenziometro all'ESP32, il perno centrale del potenziometro deve essere collegato al pin GPIO 34. Puoi usare lo schema in basso come riferimento.
+Collega un potenziometro all'ESP32, fai attenzione a collegare il perno centrale del potenziometro al pin GPIO 34. Puoi usare lo schema in basso come riferimento.
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="scheme di montaggio del progetto per ESP32">
 
@@ -95,8 +99,11 @@ Collega un potenziometro all'ESP32, il perno centrale del potenziometro deve ess
 
 ## Come eseguire il programma
 
-Programmeremo l'ESP32 usando il compilatore PlatformIO e quindi assicurati di avere installato il programma secondo le instruzioni del nostro <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> prima di procedere.
-Per compilare e testare il programma basta fare copia e incolla delle tre righe successive: la prima copia sul tuo PC il codice sorgente dal nostro account Github. la seconda lo compila e la terza lancia il monitor seriale.
+Programmeremo l'ESP32 usando il compilatore PlatformIO e quindi assicurati di avere installato il programma secondo le instruzioni di questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> prima di procedere.
+Per compilare e testare il programma basta fare copia e incolla delle tre righe che vedi nello specchietto in basso:<br> 
+- la prima copia sul tuo PC il codice sorgente dal nostro account Github, 
+- la seconda lo compila,
+- la terza lancia il monitor seriale.
 
 ```bash
 git clone git@github.com:sebadima/analog_read.git
@@ -106,7 +113,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 
 
 
-Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di installare PlatformIO sultuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il tempo à stato compresso particamante a zero.
+Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di installare PlatformIO sul tuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il lavoro manuale è stato compresso particamente a zero.
 
 Dopo avere lanciato il monitor seriale di PlatformIO (la terza riga) vedrai l'output del programma:
 
