@@ -53,11 +53,11 @@ La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i
 
 ### Le istruzioni C++ per leggere un pin analogico con ESP32
 
-La funzione analogRead(GPIO) legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere , nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
+La funzione "analogRead(GPIO)" legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere: nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
 
 Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo numerico può variare da 0 a 4095.
 
-> <strong>analogReadResolution</strong> (risoluzione): imposta i bit e la risoluzione del campionamento. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
+> <strong>analogReadResolution</strong>(). E' una istruzione preliminare ad ogni uso degli ADC. Serve a impostare i bit e la risoluzione del campionamento. Il parametro può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095) con un valore predefinito di 12 bit.
 
 
 #### Altre funzioni utili
@@ -93,7 +93,7 @@ Collega un potenziometro all'ESP32, fai attenzione a collegare il perno centrale
 
 <br>
 <br>
-Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) rosso e nero ai pin esterni del potenziometro, mentre il jumper giallo serve a collegare il pin centrale del potenziometro con il pin 34 dell'ESP32. <br>Il jumper nero è collegato alla "massa" della breadboard e quindi al pin "GND" dell'ESP32; il jumper rosso è collegato al positivo della breadboard e quindi al pin "VIN" dell'ESP32.
+Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) rosso e nero ai pin esterni del potenziometro, mentre il jumper giallo serve a collegare il pin centrale del potenziometro con il pin 34 dell'ESP32. <br>Il jumper nero è collegato al negativo della breadboard e quindi al pin "GND" dell'ESP32.<br>Il jumper rosso è collegato al positivo della breadboard e quindi al pin "VIN" dell'ESP32.
 
 <br>
 <br>
@@ -148,7 +148,7 @@ Valore del potenziometro = 4095
 
 Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e quindo modificarlo a tuo piacimento. Puoi creare il tuo template "*universale*" in una directory e fare copia/incolla della intera directory per avere in un attimo il tuo progetto pronto all'uso. Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
 
-> Se sei appena agli inizi però, può essere interessante creare da zero i tuoi files e scoprire qualche trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
+> Se sei agli inizi può essere interessante creare da zero i tuoi files e scoprire qualche trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
 Il programma come dicevamo legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
 
@@ -156,7 +156,7 @@ Il programma come dicevamo legge semplicemente i valori dal potenziometro e li s
 - Nel <strong>loop</strong>(), la funzione analoRead(34) legge l'ingresso analogico dal pin 34,
 - Serial.<strong>println</strong>() stampa il valore ottenuto.
 
-#### Codice
+#### main.ino
 
 ```bash
 void setup() {
@@ -181,8 +181,9 @@ void loop() {
 ```
 
 
-Carica il codice fornito su un file **main.ino** e inoltre crea un file **platformio.ini** con il seguente contenuto:
+Carica il codice fornito sopra in un file **main.ino** e inoltre crea un file platformio.ini con il seguente contenuto:
 
+#### platformio.ini
 ```bash
 ; PlatformIO Project Configuration File
 ;
