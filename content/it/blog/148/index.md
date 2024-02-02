@@ -27,7 +27,7 @@ https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
 
 ## Introduzione:
 
-L'ESP32 è un microcontrollore che supporta la lettura di segnali analogici attraverso i suoi pin ADC (Analog to Digital Converter). Per leggere i canali analogici, useremo il linguaggio di programmazione C++ insieme alla libreria Arduino per ESP32.
+L'ESP32 è un microcontroller che supporta la lettura di segnali analogici attraverso i suoi pin ADC (Analog to Digital Converter). Per leggere i canali analogici, useremo il linguaggio di programmazione C++ insieme alla libreria Arduino per ESP32.
 
 ## I pin analogici dell'ESP32
 
@@ -37,32 +37,32 @@ La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ing
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/104.webp" alt="">
 
-### Cosa sono gli ingressi analogici ADC
+### Gli ingressi analogici ADC
 
 > ADC è l'acronimo di "Analog-to-Digital Converter", che in italiano significa "Convertitore Analogico-Digitale". 
 
-Si tratta di un componente elettronico utilizzato per convertire segnali analogici, come tensioni o correnti, in valori digitali che possono essere elaborati da un microcontrollore o un computer. Gli ADC sono comunemente utilizzati in dispositivi elettronici per misurare e monitorare segnali provenienti da sensori o da altre sorgenti analogiche.
+Si tratta di un componente elettronico utilizzato per convertire segnali come tensioni o correnti, in valori digitali che possono essere elaborati da un microcontroller o da un computer. Gli ADC sono comunemente utilizzati in dispositivi elettronici per misurare e monitorare i segnali dei sensori o da altre sorgenti analogiche.
 
-La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i livelli di tensione tra 0V e 3.3V. Ci aspetteremo che i dispositivi ADC abbiano sempre un comportament neutro e lineare: ma non + sempre così, leggi la sezione sotto per saperne di più.
+La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i livelli di tensione tra 0V e 3.3V. Ci aspetteremo che i dispositivi ADC abbiano sempre un comportamento neutro e accurato, ma non è sempre così. Leggi la sezione sotto per saperne di più.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Il comportamento dei circuiti ADC non è sempre lineare.</strong> In linea generale l'ESP32 non riesce a distinguere la differenza tra 3,3V e 3,2V: Otterremo sempre lo stesso valore per e cioè 4095. Lo stesso accade per valori di tensione molto bassi: Per 0V e 0.1V otteniamo o stesso valore di 0! 
+<strong>Il comportamento dei circuiti ADC non è sempre lineare.</strong> In linea di massima l'ESP32 non riesce a distinguere la differenza tra 3,3V e 3,2V: otterremo sempre lo stesso valore numerico e cioè 4095. Lo stesso problema si presenta per valori di tensione molto bassi: Per 0V e 0.1V otteniamo lo stesso valore e cioè 0! 
 <br>È necessario tenerlo bene a mente quando si utilizzano i pin ADC dell'ESP32.
 </div>
 
 
-### Le istruzioni C++ per leggere un pin analogico
+### Le istruzioni C++ per leggere un pin analogico con ESP32
 
-La funzione analogRead(GPIO) legge un ingresso analogico dove GPIO indice il piedino che vuoi leggere , nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
+La funzione analogRead(GPIO) legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere , nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
 
-Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo può variare da 0 a 4095.
+Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo numerico può variare da 0 a 4095.
 
 > <strong>analogReadResolution</strong> (risoluzione): imposta i bit e la risoluzione del campionamento. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
 
 
 #### Altre funzioni utili
 
-Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono essere utili in altri progetti.
+Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono risulatare utili in altri progetti.
 
 - Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
 
@@ -108,14 +108,9 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
+Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di <a href="https://www.robotdazero.it/blog/come-installare-platformio/">installare</a> PlatformIO sul tuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il lavoro manuale è stato compresso praticamente a zero.
 
-
-Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di installare PlatformIO sul tuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il lavoro manuale è stato compresso particamente a zero.
-
-Dopo avere lanciato il monitor seriale di PlatformIO (la terza riga) vedrai l'output del programma:
-
-
-La istruzione lancia il monitor seriale di PlatformIO ad una velocità di trasmissione di 115200. Prova a ruotare il potenziometro per vedere i valori che cambiano...
+Dopo avere lanciato il monitor seriale di PlatformIO (*la terza riga*) vedrai l'output del programma: prova a ruotare il potenziometro per vedere i valori che cambiano...
 
 ```bash
 Valore del potenziometro = 0
@@ -139,17 +134,19 @@ Valore del potenziometro = 4095
 Valore del potenziometro = 4095
 ```
 
-### Il codice completo del progetto
+### Come costruire da zero il progetto
 
+Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e quindo modificarlo a tuo piacimento. Puoi creare il tuo template *vuoto* in una directory e copiare la intera directory per avere un un progetto già pronto senza combattere con librerie o settaggi della scheda in Arduino IDE. 
 
-Il codice legge semplicemente i valori dal potenziometro e li stampa nel monitor seriale.
+> Se sei appena agli inizi però, può essere interessante creare da zero i tuoi files e scoprire qualche trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
-- Tieni a mente che stiamo leggendo il pin 34 cui è  collegato il pin centrale del potenzimetro.
-- In setup(), Si inizializza la comunicazione seriale a una velocità di trasmissione di 115200.
-- Nel loop (), la funzione analoRead(34) legge l'ingresso analogico dal pin 34 e lo stampa con:
-  Serial.println();
+Il programma come dicevamo legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
 
+- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud,
+- Nel <strong>loop</strong>(), la funzione analoRead(34) legge l'ingresso analogico dal pin 34,
+- Serial.<strong>println</strong>() stampa il valore ottenuto.
 
+#### Codice
 
 ```bash
 void setup() {
@@ -161,7 +158,6 @@ void setup() {
   analogReadResolution(12);
 
 }
-
 
 void loop() {
 
@@ -175,7 +171,7 @@ void loop() {
 ```
 
 
-Carica il codice fornito su un file main.ino e inoltre crea un file platformio.ini con il seguente contenuto:
+Carica il codice fornito su un file **main.ino** e inoltre crea un file **platformio.ini** con il seguente contenuto:
 
 ```bash
 ; PlatformIO Project Configuration File
@@ -203,7 +199,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Anche in questo caso puoi vedere il funzionamento del canale ADS ruotando il potenziometro...
+Il programma partirà dopo pochi secondi e anche in questo caso puoi vedere il funzionamento del canale ADC 34 ruotando il potenziometro...
 
 <br>
 <br>
