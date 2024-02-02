@@ -39,7 +39,7 @@ La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ing
 
 ### Gli ingressi analogici ADC
 
-> ADC è l'acronimo di "Analog-to-Digital Converter", che in italiano significa "Convertitore Analogico-Digitale". 
+> <strong>ADC</strong> è l'acronimo di "Analog-to-Digital Converter", che in italiano significa "Convertitore Analogico-Digitale". 
 
 Si tratta di un componente elettronico utilizzato per convertire segnali come tensioni o correnti, in valori digitali che possono essere elaborati da un microcontroller o da un computer. Gli ADC sono comunemente utilizzati in dispositivi elettronici per misurare e monitorare i segnali dei sensori o da altre sorgenti analogiche.
 
@@ -93,7 +93,7 @@ Collega un potenziometro all'ESP32, fai attenzione a collegare il perno centrale
 
 <br>
 <br>
-Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) rosso e nero ai pin esterni del potenziometro, mentre il jumper giallo serve a collegare il pin centrale del potenziometro con il pin 34 dell'ESP32. <br>Il jumper nero è collegato alla "massa" della breadboard e quindi al pin "GND" dell'ESP32, il jumper rosso è collegato al positivo della breadboard e quindi al pin "VIN" dell'ESP32.
+Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) rosso e nero ai pin esterni del potenziometro, mentre il jumper giallo serve a collegare il pin centrale del potenziometro con il pin 34 dell'ESP32. <br>Il jumper nero è collegato alla "massa" della breadboard e quindi al pin "GND" dell'ESP32; il jumper rosso è collegato al positivo della breadboard e quindi al pin "VIN" dell'ESP32.
 
 <br>
 <br>
@@ -108,7 +108,7 @@ Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) ro
 
 Programmeremo l'ESP32 usando il compilatore PlatformIO e quindi assicurati di avere installato il programma secondo le instruzioni di questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> prima di procedere.
 Per compilare e testare il programma basta fare copia e incolla delle tre righe che vedi nello specchietto in basso:<br> 
-- la prima copia sul tuo PC il codice sorgente dal nostro account Github, 
+- la prima riga "clona" sul tuo PC il codice originale dal nostro account Github, 
 - la seconda lo compila,
 - la terza lancia il monitor seriale.
 
@@ -146,7 +146,7 @@ Valore del potenziometro = 4095
 
 ### Come costruire da zero il progetto
 
-Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e quindo modificarlo a tuo piacimento. Puoi creare il tuo template *vuoto* in una directory e copiare la intera directory per avere un un progetto già pronto senza combattere con librerie o settaggi della scheda in Arduino IDE. 
+Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e quindo modificarlo a tuo piacimento. Puoi creare il tuo template "*universale*" in una directory e fare copia/incolla della intera directory per avere in un attimo il tuo progetto pronto all'uso. Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
 
 > Se sei appena agli inizi però, può essere interessante creare da zero i tuoi files e scoprire qualche trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
