@@ -205,7 +205,36 @@ lib_deps =
 
 ```
 
-Quindi scrivi le 2 seguenti istruzione nel terminale (fai copia e incolla): 
+
+Segui lo stesso procedimento per creare un file "Makefile" con il seguente contenuto:
+
+#### Makefile
+```bash
+# Uncomment lines below if you have problems with $PATH
+#SHELL := /bin/bash
+#PATH := /usr/local/bin:$(PATH)
+
+all:
+	pio -f -c vim run
+
+upload:
+	pio -f -c vim run --target upload
+
+clean:
+	pio -f -c vim run --target clean
+
+program:
+	pio -f -c vim run --target program
+
+uploadfs:
+	pio -f -c vim run --target uploadfs
+
+update:
+	pio -f -c vim update
+```
+
+
+E quindi scrivi le 2 seguenti istruzione nel terminale (fai copia e incolla): 
 
 ```bash
 make upload
@@ -213,7 +242,6 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
 Il programma partirà dopo pochi secondi e anche in questo caso puoi vedere il funzionamento del canale ADC 34 ruotando il potenziometro...
-
 
 <br>
 <br>
