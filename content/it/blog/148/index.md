@@ -51,30 +51,6 @@ La lettura di un valore analogico con l'ESP32 significa semplicemente misurare i
 </div>
 
 
-### Le istruzioni C++ per leggere un pin analogico con ESP32
-
-La funzione **analogRead(GPIO)** legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere: nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
-
-Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo numerico può variare da 0 a 4095.
-
-> <strong>analogReadResolution(resolution)</strong>. E' una istruzione preliminare ad ogni uso degli ADC. Serve a impostare i bit e la risoluzione del campionamento. Il parametro può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095) con un valore predefinito di 12 bit.
-
-
-#### Altre funzioni utili
-
-Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono risultare utili in altri progetti.
-
-- Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
-
-- analogSetCycles (cicli): imposta il numero di cicli per campionamento. Il valore predefinito è 8. Intervallo: da 1 a 255.
-
-- analogSetSamples (samples): imposta il numero di campionamenti nell'intervallo. Il valore predefinito è 1. Ha l'effetto di aumentare la sensibilità.
-
-- analogSetClockDiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1, l'intervallo va da 1 a 255.
-
-- analogSetAttenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Valore predefinito = ADC_11db. 
-
-
 ## I componenti necessari
 
 Per questo progetto, sono necessarie le seguenti 4 parti:
@@ -85,7 +61,7 @@ Per questo progetto, sono necessarie le seguenti 4 parti:
 - <strong>4</strong>. Ponticelli
 
 
-## Lo schema
+## Lo schema elettrico
 
 Collega un potenziometro all'ESP32, fai attenzione a collegare il perno centrale del potenziometro al pin GPIO 34. Puoi usare lo schema in basso come riferimento.
 
@@ -101,8 +77,7 @@ Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) ro
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="">
 
 
-<br>
-<br>
+
 
 ## Come eseguire il programma
 
@@ -144,9 +119,36 @@ Valore del potenziometro = 4095
 Valore del potenziometro = 4095
 ```
 
-### Come costruire da zero il progetto
 
-Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e poi modificarlo a tuo piacimento. Puoi usare questo stesso progetto come "template universale" e clonarlo in una directory differente per avere in un attimo un progetto pronto all'uso!<br> Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
+### Le istruzioni C++ per leggere un pin analogico
+
+La funzione **analogRead(GPIO)** legge un ingresso analogico, dove GPIO indice il piedino che vuoi leggere: nel nostro caso useremo il pin 34. L'ESP32 supporta le misure ADC in 18 pin, ma solo 15 di questi sono disponibili nella scheda *DEVKIT V1 DOIT* (versione con 30 pin) che noi usiamo di preferenza.
+
+Questi pin di ingresso analogici hanno una risoluzione massima di 12 bit. Ciò significa che quando si legge un ingresso analogico, il suo intervallo numerico può variare da 0 a 4095.
+
+> <strong>analogReadResolution(resolution)</strong>. E' una istruzione preliminare ad ogni uso degli ADC. Serve a impostare i bit e la risoluzione del campionamento. Il parametro può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095) con un valore predefinito di 12 bit.
+
+
+#### Altre funzioni utili
+
+Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono risultare utili in altri progetti.
+
+- Analsetwidth (width): imposta i bit di esempio e la risoluzione. Può essere un valore compreso tra 9 (0 – 511) e 12 bit (0-4095). Il valore predefinito è la risoluzione a 12 bit.
+
+- analogSetCycles (cicli): imposta il numero di cicli per campionamento. Il valore predefinito è 8. Intervallo: da 1 a 255.
+
+- analogSetSamples (samples): imposta il numero di campionamenti nell'intervallo. Il valore predefinito è 1. Ha l'effetto di aumentare la sensibilità.
+
+- analogSetClockDiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1, l'intervallo va da 1 a 255.
+
+- analogSetAttenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Valore predefinito = ADC_11db. 
+
+
+
+
+### Come costruire da zero il programma
+
+Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e poi modificarlo a tuo piacimento. Inoltre puoi usare questo stesso progetto come "template universale" e clonarlo in una directory differente per avere in un attimo un nuovo progetto!<br> Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
 
 > <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
@@ -181,7 +183,7 @@ void loop() {
 ```
 
 
-Carica il codice fornito sopra in un file **main.ino** e inoltre crea un file platformio.ini con il seguente contenuto:
+Carica il codice fornito sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un file platformio.ini con il seguente contenuto:
 
 #### platformio.ini
 ```bash
