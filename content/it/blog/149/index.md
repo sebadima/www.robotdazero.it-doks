@@ -4,11 +4,11 @@ description: "Come far lampeggiare il LED interno dell'ESP32"
 excerpt: "..."
 date: 2024-02-01T09:19:42+01:00
 lastmod: 2024-02-01T09:19:42+01:00
-draft: false
+draft: true
 weight: 50
-images: ["header.png"]
+images: ["header.webp"]
 categories: ["News"]
-tags: ["ESP32", "LED", "Programmazione"]
+tags: ["ESP32", "LED", "PlatformIO"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
@@ -16,16 +16,9 @@ mermaid: true
 ---
 
 
-<!--
-https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
--->
+
 <hr>
 <br>
-
-
-
-## Introduzione:
-
 
 ## Come eseguire il programma
 
@@ -36,20 +29,15 @@ Per compilare e testare il programma basta fare copia e incolla delle tre righe 
 - la terza lancia il monitor seriale.
 
 ```bash
-git clone git@github.com:sebadima/analog_read.git
+git clone git@github.com:sebadima/blinky.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
 Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di <a href="https://www.robotdazero.it/blog/come-installare-platformio/">installare</a> PlatformIO sul tuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il lavoro manuale è stato compresso praticamente a zero.
 
-Dopo avere lanciato il monitor seriale di PlatformIO (*la terza riga*) vedrai l'output del programma: prova a ruotare il potenziometro per vedere i valori che cambiano...
 
-```bash
-```
-
-
-### Le istruzioni C++ per leggere un pin analogico
+### Le istruzioni C++ per scrivere sulle ...
 
 
 
@@ -69,6 +57,24 @@ Il programma, come dicevamo prima, legge semplicemente i valori dal potenziometr
 #### main.ino
 
 ```bash
+#define LED 2
+
+void setup() {
+  // Setta il baud rate della seriale a 115200
+  Serial.begin(115200);
+  // Setta il pin 2 in modalità OUTPUT
+  pinMode(LED,OUTPUT);
+}
+
+void loop() {
+  delay(50);
+  digitalWrite(LED,HIGH);
+  Serial.println("Led è HIGH");
+  delay(50);
+  digitalWrite(LED,LOW);
+  Serial.println("Led è LOW");
+}
+
 ```
 
 

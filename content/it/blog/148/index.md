@@ -8,7 +8,7 @@ draft: false
 weight: 50
 images: ["header.png"]
 categories: ["News"]
-tags: ["ESP32", "Teoria", "Programmazione"]
+tags: ["ESP32", "PlatformIO", "Programmazione"]
 contributors: ["sebadima"]
 pinned: false
 homepage: false
