@@ -24,21 +24,21 @@ mermaid: true
 
 ## Introduzione
 
-Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usarlo nel Terminale a linea di comando. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, viene spostaneo scrivere semplicemente "**make upload**" e compilare il tutto.
+Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usarlo nel CMD di Windows o dentro la shell di Linux. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, viene spostaneo scrivere semplicemente "**make upload**" e compilare il tutto.
 
 Per i progetti predisposti per PlatformIO non ci sono problemi, ma come facciamo a creare da zero i due file "**platformio.ini**" e "**Makefile**" quando sono assenti nel progetto originario? E soprattutto a cosa serve il Makefile?
 
 
-> <strong>I file di tipo "make"</strong> sono dei normali file di testo desinato alla utility "MAKE" di Unix/Linux. Questa <a href="https://linuxhandbook.com/using-make/" target="_blank">utility</a> automatizza la fase di compilazione conservando i flag del compilatore, gli indirizzi delle librerie, etc. senza doverle inserirle a mano di volta in volta. Per nostra fortuna il Makefile usato da PlatformIO ha raramente bisogno di modifiche e funziona benissimo con con il 99% dei progetti. 
+> <strong>I file di tipo "make"</strong> sono dei normali file di testo destinati alla utility "MAKE" di Linux. Questa <a href="https://linuxhandbook.com/using-make/" target="_blank">utility</a> automatizza la fase di compilazione conservando i flag del compilatore, gli indirizzi delle librerie, etc. senza doverle inserirle a mano di volta in volta. Per nostra fortuna il Makefile usato da PlatformIO ha raramente bisogno di modifiche e funziona benissimo con con il 99% dei progetti. 
 
 ##### A differenza di "platformio.ini" che contiene l'elenco delle librerie da usare nel progetto e cambia di volta in volta, il Makefile resta dunque sempre uguale.
 
-Per questo motivo abbiamo scritto un breve post dove pubblicare una volta per tutte la versione standard del Makefile da copiare e incollare nel vostro editor preferito.
+Per questo motivo abbiamo scritto un breve post dove pubblicare una volta per tutte la versione standard del Makefile di PlatformIO, da copiare e incollare nel vostro editor preferito.
 
 
 ## Il codice
 
-Potete copiare spostando il mouse "dentro" la zona gialla del codice: dovrebbe apparire un rettangolo colorato con la scritta "Copy". Cliccate sulla scritta e il testo verrà copiato nella clipboard senza problemi.
+Potete copiare spostando il mouse "dentro" la zona gialla del codice: dovrebbe apparire un rettangolo colorato con la scritta "Copy". Cliccate sulla scritta e il codice verrà copiato nella clipboard senza problemi.
 
 #### Makefile
 ```bash
