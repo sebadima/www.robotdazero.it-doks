@@ -69,9 +69,12 @@ Ci sono altre funzioni più avanzate da utilizzare con i pin ADC che possono ess
 - analogSetCycles (cicli): impostare il numero di cicli per campione. Il valore predefinito è 8. Intervallo: da 1 a 255.
 analogSetSamples (samples): imposta il numero di campioni nell'intervallo. Il valore predefinito è 1 campione. Ha un effetto di aumentare la sensibilità.
 
-- Analsetclockdiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1. L'intervallo va da 1 a 255.
+- analogSetClockDiv (attenuazione): imposta il divisore per l'orologio ADC. Il valore predefinito è 1. L'intervallo va da 1 a 255.
 
-- Analsetattenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Il valore predefinito è ADC_11db. 
+- analogSetAttenuation (attenuazione): imposta l'attenuazione di ingresso per tutti i pin ADC. Valore predefinito = ADC_11db. 
+
+
+## I componenti necessari
 
 Per questo progetto, sono necessarie le seguenti parti:
 
@@ -90,6 +93,8 @@ Collega un potenziometro all'ESP32, il perno centrale del potenziometro deve ess
 <br>
 <br>
 
+## Come eseguire il programma
+
 Programmeremo l'ESP32 usando il compilatore PlatformIO e quindi assicurati di avere installato il programma secondo le instruzioni del nostro <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> prima di procedere.
 Per compilare e testare il programma basta fare copia e incolla delle tre righe successive: la prima copia sul tuo PC il codice sorgente dal nostro account Github. la seconda lo compila e la terza lancia il monitor seriale.
 
@@ -99,7 +104,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-### Il test del programma
+
 
 Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di installare PlatformIO sultuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il tempo à stato compresso particamante a zero.
 
