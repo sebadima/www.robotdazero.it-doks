@@ -1,7 +1,7 @@
 ---
-title: "Come funziona il Makefile di PlatformIO"
-description: "Come funziona il Makefile di PlatformIO"
-excerpt: "..."
+title: "Come scrivere il Makefile di PlatformIO"
+description: "Come scrivere il Makefile di PlatformIO"
+excerpt: "Il compilatore PlatformIO che noi usiamo per l’ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando..."
 date: 2024-02-02T09:19:42+01:00
 lastmod: 2024-02-02T09:19:42+01:00
 draft: false
@@ -24,12 +24,14 @@ mermaid: true
 
 ## Introduzione
 
-Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando. Per usare PlatformiIO in questa modalità abbiamo sempre bisogno del file sorgente, del file di configurazione (*platformio.ini*) del file "make". 
+Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, risulta assai facile scrivere semplicemente "**make upload**" e compilare tutto.
 
-> <strong>Il file "make"</strong> è un normale file di testo desinato alla utility "MAKE" di Unix/Linux e per nostra fortuna non ha alcun bisogno di modifiche per compilare qualunque programma per ESP32 o Arduino 
+Per i progetti predisposti per PlatformIO non ci sono problemi, come facciamo a creare da zero il file "platformio.ini" e il "Makefile" quando sono assenti nel progetto originario? E soprattutto a cosa serve il Makefile?
 
-Per questo motivo abbiamo scritto un breve post dove pubblicare una volta per tutte la versione standard del Makefile da copiare e incollare nel vostro editor preferito.
 
+> <strong>I file di tipo"make"</strong> sono dei normali file di testo desinato alla utility "MAKE" di Unix/Linux e per nostra fortuna quello creato per PlatformIO non ha mai bisogno di modifiche per compilare il 99% dei programmi. A differenza di "platformio.ini" che contiene l'elenco delle librerie da usare nel progetto e cambia di vola in volta, il Makefile resta sempre uguale.
+
+Per questo motivo abbiamo scritto questo breve post dove pubblicare una volta per tutte la versione standard del Makefile da copiare e incollare nel vostro editor preferito. Vi basterà sia presente nelle directory del progetto e potete compilare.
 
 
 ## Il codice
