@@ -146,11 +146,11 @@ Valore del potenziometro = 4095
 
 ### Come costruire da zero il progetto
 
-Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e quindo modificarlo a tuo piacimento. Puoi creare il tuo template "*universale*" in una directory e fare copia/incolla della intera directory per avere in un attimo il tuo progetto pronto all'uso. Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
+Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e poi modificarlo a tuo piacimento. Puoi usare questo stesso progetto come "template universale" e clonarlo in una directory differente per avere in un attimo un progetto pronto all'uso!<br> Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
 
-> Se sei agli inizi può essere interessante creare da zero i tuoi files e scoprire qualche trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
+> <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
-Il programma come dicevamo legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
+Il programma, come dicevamo prima, legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
 
 - In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud,
 - Nel <strong>loop</strong>(), la funzione analoRead(34) legge l'ingresso analogico dal pin 34,
