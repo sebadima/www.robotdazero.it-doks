@@ -24,14 +24,16 @@ mermaid: true
 
 ## Introduzione
 
-Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, risulta assai facile scrivere semplicemente "**make upload**" e compilare tutto.
+Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usarlo nel Terminale a linea di comando. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, viene spostanep scrivere semplicemente "**make upload**" e compilare in un istante.
 
-Per i progetti predisposti per PlatformIO non ci sono problemi, come facciamo a creare da zero il file "platformio.ini" e il "Makefile" quando sono assenti nel progetto originario? E soprattutto a cosa serve il Makefile?
+Per i progetti predisposti per PlatformIO non ci sono problemi, ma come facciamo a creare da zero il file "**platformio.ini**" e il "**Makefile**" quando sono assenti nel progetto originario? E soprattutto a cosa serve il Makefile?
 
 
-> <strong>I file di tipo"make"</strong> sono dei normali file di testo desinato alla utility "MAKE" di Unix/Linux e per nostra fortuna quello creato per PlatformIO non ha mai bisogno di modifiche per compilare il 99% dei programmi. A differenza di "platformio.ini" che contiene l'elenco delle librerie da usare nel progetto e cambia di vola in volta, il Makefile resta sempre uguale.
+> <strong>I file di tipo "make"</strong> sono dei normali file di testo desinato alla utility "MAKE" di Unix/Linux. Per nostra fortuna quello usato da PlatformIO non ha mai bisogno di modifiche per funzionare con il 99% dei programmi. 
 
-Per questo motivo abbiamo scritto questo breve post dove pubblicare una volta per tutte la versione standard del Makefile da copiare e incollare nel vostro editor preferito. Vi basterà sia presente nelle directory del progetto e potete compilare.
+##### A differenza di "platformio.ini" che contiene l'elenco delle librerie da usare nel progetto e cambia di vola in volta, il Makefile resta dunque sempre uguale.
+
+Per questo motivo abbiamo scritto un breve post dove pubblicare una volta per tutte la versione standard del Makefile da copiare e incollare nel vostro editor preferito. Dovrete solo copiarlo copiarlo nelle directory del progetto ESP32.
 
 
 ## Il codice
