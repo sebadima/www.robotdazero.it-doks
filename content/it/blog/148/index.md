@@ -91,6 +91,15 @@ Collega un potenziometro all'ESP32, fai attenzione a collegare il perno centrale
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="scheme di montaggio del progetto per ESP32">
 
+<br><br>
+
+Puoi vedere nella immagine sotto come abbiamo collegato i jumper (ponticelli) rosso e nero ai pin esterni del potenziometro, mentre il jumper giallo serve a collegare il pin centrale del potenziometro con il pin 34 dell'ESP32.
+
+<br>
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="">
+
+
 <br>
 <br>
 
