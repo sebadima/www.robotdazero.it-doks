@@ -20,8 +20,6 @@ mermaid: true
 <hr>
 <br>
 
-
-
 ## Introduzione
 
 Il compilatore PlatformIO che noi usiamo per l'ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usarlo nel CMD di Windows o dentro la shell di Linux. Ad esempio quanto usiamo il comando "**git clone**" per scaricare un progetto da Github, viene spostaneo scrivere semplicemente "**make upload**" e compilare il tutto.

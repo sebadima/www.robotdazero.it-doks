@@ -22,19 +22,67 @@ mermaid: true
 
 ## Come eseguire il programma
 
-Programmeremo l'ESP32 usando il compilatore PlatformIO e quindi assicurati di avere installato il programma secondo le instruzioni di questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> prima di procedere.
-Per compilare e testare il programma basta fare copia e incolla delle tre righe che vedi nello specchietto in basso:<br> 
-- la prima riga "clona" sul tuo PC il codice originale dal nostro account Github, 
-- la seconda lo compila,
-- la terza lancia il monitor seriale.
+Il programma per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè si tratta di un passaggio obbligato per ogni appassionato lo trattiamo in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
+
+## Compilare i programmi ESP32 con Arduino IDE
+
+
+Apri l'Arduino IDE.
+
+- Vai su File -> Preferenze.
+- Nella finestra delle preferenze, aggiungi l'URL seguente nella casella "URL aggiuntivi per il gestore schede":
+
+```bash
+https://dl.espressif.com/dl/package_esp32_index.json
+```
+
+- Clicca su "OK" per chiudere la finestra delle preferenze.
+- Vai su Strumenti -> Scheda -> Gestore Schede.
+- Cerca "esp32" e installa "ESP32 by Espressif Systems".
+
+### Selezione della scheda ESP32:
+
+Dopo aver installato il supporto ESP32, seleziona la scheda giusta. 
+
+- Vai su Strumenti -> Scheda e seleziona la tua scheda ESP32 dalla lista.
+
+### Il programma "Blinky" per ESP32
+
+Ora puoi aprire l'esempio di "blinky" predefinito in Arduino IDE. 
+<br>Vai su File > Esempi > ESP32 > Basics > Blink.
+
+### Compilazione e caricamento del programma:
+
+- Collega il tuo ESP32 al computer tramite un cavo USB.
+- Seleziona la porta corretta sotto Strumenti -> Porta.
+- Cicca su Sketch -> Verifica/Compila.
+
+Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo clic su Sketch -> Carica.
+
+
+
+
+
+
+
+
+
+
+
+## Scriviamo da zero "Blinky" per PlatformIO
+
+Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Githuh.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>"" sulla linea di comando. Switchare ad Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
+
+Per compilare e testare il programma fai copia e del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows.:<br> 
+- la prima riga copia sul tuo PC il codice originale dal nostro account Github, 
+- la seconda compila usando le istruzioni contenute nelMakefile e in platformio.ini,
+- la terza lancia il monitor sulla seriale.
 
 ```bash
 git clone git@github.com:sebadima/blinky.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
-
-Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino IDE, al solo *costo* di <a href="https://www.robotdazero.it/blog/come-installare-platformio/">installare</a> PlatformIO sul tuo PC. Spesso si ha la sensazione erronea che lavorare in modalità testo sia più lento che usare interfacce grafiche, ma come vedi il lavoro manuale è stato compresso praticamente a zero.
 
 
 ### Le istruzioni C++ per scrivere sulle ...
@@ -44,15 +92,15 @@ Come vedi si tratta di una operazione velocissima, molto più veloce di Arduino 
 
 ### Come costruire da zero il programma
 
-Lavorando con PlatformIO puoi semplicemente "clonare" un progetto da Github e poi modificarlo a tuo piacimento. Inoltre puoi usare questo stesso progetto come "template universale" e clonarlo in una directory differente per avere in un attimo un nuovo progetto!<br> Eviterai in questo modo di combattere con librerie, PATH, configurazione della "board", etc. tipici di Arduino IDE. 
+Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve scaricare il file (https://dl.espressif.com/dl/package_esp32_index.json) e non devi settare la "board" come sei costretto a fare con Arduino IDE. 
 
 > <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
 Il programma, come dicevamo prima, legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
 
-- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud,
-- Nel <strong>loop</strong>(), la funzione analoRead(34) legge l'ingresso analogico dal pin 34,
-- Serial.<strong>println</strong>() stampa il valore ottenuto.
+- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud e inoltra Setta il pin 2 in modalità OUTPUT
+- Nel <strong>loop</strong>(), la funzione digitalWrite() commuta continuamente lo stato del LED da HIGH a LOW.
+
 
 #### main.ino
 
@@ -82,19 +130,52 @@ Carica il codice fornito sopra in un file **main.ino** e inoltre usa il tuo edit
 
 #### platformio.ini
 ```bash
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+lib_deps = 
 ```
 
 
-Segui lo stesso procedimento per creare un file "Makefile" con il seguente contenuto:
+Per creare il Makefile puoi leggere questo <a href="/blog/come-funziona-il-makefile-di-platformio/">post</a> per creare il file oppure fare copia e incolla del codice in basso:
 
 #### Makefile
 ```bash
+# Uncomment lines below if you have problems with $PATH
+#SHELL := /bin/bash
+#PATH := /usr/local/bin:$(PATH)
+
+all:
+  pio -f -c vim run
+
+upload:
+  pio -f -c vim run --target upload
+
+clean:
+  pio -f -c vim run --target clean
+
+program:
+  pio -f -c vim run --target program
+
+uploadfs:
+  pio -f -c vim run --target uploadfs
+
+update:
+  pio -f -c vim update
 ```
 
-E quindi scrivi le 2 seguenti istruzione nel terminale (fai copia e incolla): 
-
-```bash
-```
+Alla fine lancia la compilazione con "make" oppure carica sulla scheda scrivendo: "make upload" nel terminale.
 
 <br>
 <br>
