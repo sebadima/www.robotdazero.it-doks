@@ -4,7 +4,7 @@ description: "Come far lampeggiare il LED interno dell'ESP32"
 excerpt: "..."
 date: 2024-02-01T09:19:42+01:00
 lastmod: 2024-02-01T09:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.webp"]
 categories: ["News"]
