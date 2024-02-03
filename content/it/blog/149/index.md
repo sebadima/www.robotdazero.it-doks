@@ -39,7 +39,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 - Vai su Strumenti -> Scheda -> Gestore Schede.
 - Cerca "esp32" e installa "ESP32 by Espressif Systems".
 
-### Selezione della scheda ESP32
+#### Selezione della scheda ESP32
 
 Dopo aver installato il supporto ESP32, seleziona la scheda giusta. 
 
@@ -50,7 +50,7 @@ Dopo aver installato il supporto ESP32, seleziona la scheda giusta.
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
-### Compilazione e caricamento del programma
+### Compilazione e upload del programma
 
 - Collega il tuo ESP32 al computer tramite un cavo USB.
 - Seleziona la porta corretta sotto Strumenti -> Porta.
@@ -58,7 +58,7 @@ Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE.
 
 Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo clic su Sketch -> Carica.
 
-## Come compilare "Blink" da Github.com
+## Come compilare "Blink" usando Github.com
 
 Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
 
