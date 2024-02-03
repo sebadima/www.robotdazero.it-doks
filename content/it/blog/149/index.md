@@ -20,11 +20,11 @@ mermaid: true
 <hr>
 <br>
 
-## Come eseguire il programma
+## Il programma "Blinky"
 
 Il programma per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè si tratta di un passaggio obbligato per ogni appassionato lo trattiamo in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
 
-## Compilare i programmi ESP32 con Arduino IDE
+## Compilare il programma "Blinky" con Arduino IDE
 
 
 Apri l'Arduino IDE.
@@ -69,13 +69,13 @@ Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo cl
 
 
 
-## Scriviamo da zero "Blinky" per PlatformIO
+## Come compilare "Blinky" da Github.com
 
-Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Githuh.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>"" sulla linea di comando. Switchare ad Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
+Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>"" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
 
-Per compilare e testare il programma fai copia e del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows.:<br> 
-- la prima riga copia sul tuo PC il codice originale dal nostro account Github, 
-- la seconda compila usando le istruzioni contenute nelMakefile e in platformio.ini,
+Per compilare e testare il programma fai copia e del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows:<br> 
+- la prima riga copia sul tuo PC il codice dal nostro account Github, 
+- la seconda lo compila usando le istruzioni contenute nel Makefile e in platformio.ini,
 - la terza lancia il monitor sulla seriale.
 
 ```bash
@@ -83,12 +83,6 @@ git clone git@github.com:sebadima/blinky.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
-
-
-### Le istruzioni C++ per scrivere sulle ...
-
-
-
 
 ### Come costruire da zero il programma
 
