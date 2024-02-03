@@ -60,9 +60,9 @@ Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo cl
 
 ## Come compilare "Blink" da Github.com
 
-Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>"" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
+Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
 
-Per compilare e testare il programma fai copia e del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows:<br> 
+Per compilare e testare il programma fai copia e incolla del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows:<br> 
 - la prima riga copia sul tuo PC il codice dal nostro account Github, 
 - la seconda lo compila usando le istruzioni contenute nel Makefile e in platformio.ini,
 - la terza lancia il monitor sulla seriale.
@@ -79,7 +79,7 @@ Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve 
 
 > <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
-Il è davvero breve e qui lo spieghiamo in dettaglio:
+Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 
 - In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud e inoltra setta il pin 2 in modalità OUTPUT
 - Nel <strong>loop</strong>(), la funzione digitalWrite() commuta continuamente lo stato del LED da HIGH a LOW.
@@ -109,7 +109,7 @@ void loop() {
 ```
 
 
-Carica il codice fornito sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un file platformio.ini con il seguente contenuto:
+Carica il codice sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
 
 #### platformio.ini
 ```bash
@@ -158,7 +158,7 @@ update:
   pio -f -c vim update
 ```
 
-Alla fine lancia la compilazione con "make" oppure carica sulla scheda scrivendo: "make upload" nel terminale.
+Alla fine lancia la compilazione con "make" oppure carica direttamente sulla scheda scrivendo "make upload" nel terminale.
 
 <br>
 <br>
