@@ -20,12 +20,11 @@ mermaid: true
 <hr>
 <br>
 
-## Il programma "Blinky"
+## Il programma "Blink"
 
-Il programma per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè si tratta di un passaggio obbligato per ogni appassionato lo trattiamo in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
+Il programma "Blink" per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
 
-## Compilare il programma "Blinky" con Arduino IDE
-
+## Come compilare il programma "Blink" con Arduino IDE
 
 Apri l'Arduino IDE.
 
@@ -46,9 +45,9 @@ Dopo aver installato il supporto ESP32, seleziona la scheda giusta.
 
 - Vai su Strumenti -> Scheda e seleziona la tua scheda ESP32 dalla lista.
 
-### Il programma "Blinky" per ESP32
+### Il programma "Blink" per ESP32
 
-Ora puoi aprire l'esempio di "blinky" predefinito in Arduino IDE. 
+Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
 ### Compilazione e caricamento del programma:
@@ -69,7 +68,7 @@ Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo cl
 
 
 
-## Come compilare "Blinky" da Github.com
+## Come compilare "Blink" da Github.com
 
 Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>"" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
 
@@ -79,7 +78,7 @@ Per compilare e testare il programma fai copia e del testo sottostante e incolla
 - la terza lancia il monitor sulla seriale.
 
 ```bash
-git clone git@github.com:sebadima/blinky.git
+git clone git@github.com:sebadima/blinkESP32.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
@@ -90,9 +89,9 @@ Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve 
 
 > <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
-Il programma, come dicevamo prima, legge semplicemente i valori dal potenziometro e li scrive nel monitor seriale: questi sono i 3 punti chiave del programma:
+Il è davvero breve e qui lo spieghiamo in dettaglio:
 
-- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud e inoltra Setta il pin 2 in modalità OUTPUT
+- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud e inoltra setta il pin 2 in modalità OUTPUT
 - Nel <strong>loop</strong>(), la funzione digitalWrite() commuta continuamente lo stato del LED da HIGH a LOW.
 
 
