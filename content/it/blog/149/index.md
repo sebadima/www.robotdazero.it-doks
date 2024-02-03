@@ -41,7 +41,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 #### Selezione della scheda ESP32
 
-Dopo aver installato il supporto ESP32, seleziona la scheda giusta. 
+Dopo aver installato il supporto per ESP32, seleziona la scheda giusta. 
 
 - Vai su Strumenti -> Scheda e seleziona la tua scheda ESP32 dalla lista.
 
@@ -77,7 +77,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 
 Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve scaricare il file (https://dl.espressif.com/dl/package_esp32_index.json) e non devi settare la "board" come sei costretto a fare con Arduino IDE. 
 
-> <strong>Se sei agli inizi con ESP32</strong> troverai comunque interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
+> <strong>Se sei agli inizi con ESP32</strong> troverai interessante creare da zero i tuoi files e scoprire così qualche nuovo trucco di PlatformIO. Continua a leggere questa sezione per conoscere i dettagli.
 
 Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 
@@ -131,7 +131,7 @@ lib_deps =
 ```
 
 
-Per creare il Makefile puoi leggere questo <a href="/blog/come-funziona-il-makefile-di-platformio/">post</a> per creare il file oppure fare copia e incolla del codice in basso:
+Per creare il Makefile puoi leggere questo <a href="/blog/come-funziona-il-makefile-di-platformio/">post</a> oppure fare copia e incolla del codice in basso in un file con lo stesso nome:
 
 #### Makefile
 ```bash
@@ -158,7 +158,7 @@ update:
   pio -f -c vim update
 ```
 
-Alla fine lancia la compilazione con "make" oppure carica direttamente sulla scheda scrivendo "make upload" nel terminale.
+Dopo avere creato il file, lancia la compilazione con "make" oppure carica il programma sulla scheda scrivendo "make upload".
 
 <br>
 <br>
