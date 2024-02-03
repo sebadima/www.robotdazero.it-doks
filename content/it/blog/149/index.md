@@ -39,7 +39,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 - Vai su Strumenti -> Scheda -> Gestore Schede.
 - Cerca "esp32" e installa "ESP32 by Espressif Systems".
 
-### Selezione della scheda ESP32:
+### Selezione della scheda ESP32
 
 Dopo aver installato il supporto ESP32, seleziona la scheda giusta. 
 
@@ -50,23 +50,13 @@ Dopo aver installato il supporto ESP32, seleziona la scheda giusta.
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
-### Compilazione e caricamento del programma:
+### Compilazione e caricamento del programma
 
 - Collega il tuo ESP32 al computer tramite un cavo USB.
 - Seleziona la porta corretta sotto Strumenti -> Porta.
 - Cicca su Sketch -> Verifica/Compila.
 
 Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo clic su Sketch -> Carica.
-
-
-
-
-
-
-
-
-
-
 
 ## Come compilare "Blink" da Github.com
 
