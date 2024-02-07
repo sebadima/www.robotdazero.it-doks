@@ -60,6 +60,7 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire s
 Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se possibile, su questa Applicazione nonché, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui è in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina, facendo riferimento alla data di ultima modifica indicata in fondo. Qualora le modifiche interessino trattamenti la cui base giuridica è il consenso, il Titolare provvederà a raccogliere nuovamente il consenso dell’Utente, se necessario. 
 
 #### Definizioni e riferimenti legali 
+p2mxsajrqwkd9c7g
 
 ##### Ultima modifica: 
 03 Luglio 2023   
