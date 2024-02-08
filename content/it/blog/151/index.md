@@ -50,11 +50,11 @@ Ricorda che due LED di colore diverso hanno un assorbimento diverso. Comunque co
 
 #### Le breadboard per l'ESP32
 
-L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32. Puoi però ricorrere ad un facile trucco:  tutte le breadbord "maxi" possono essere incastrate in parallelo a patto di togliere il corridoio centrale (puoi usare un taglierino).
+L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32. Puoi però ricorrere ad un facile trucco:  tutte le breadboard "maxi" possono essere incastrate in parallelo a patto di togliere il corridoio centrale (puoi usare un taglierino).
 
 ##### Se usi il trucco delle due breadboard affiancate il montaggio dell'ESP32 viene reso molto più semplice
 
-Nello schema in basso per semplificare ti mostriamo il montaggio "classico". Il pin GND (cioè la massa) della scheda ESP32 viende collegato al Catodo del LED (il polo negativo). Il <strong>pin 18</strong> dell'ESP32 va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED (il polo positivo con il connettore più lungo).
+Nello schema in basso per semplificare ti mostriamo il montaggio "classico". Il pin GND (cioè la massa) della scheda ESP32 viene collegato al Catodo del LED (il polo negativo). Il <strong>pin 18</strong> dell'ESP32 va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED (il polo positivo con il connettore più lungo).
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Nel contesto dei componenti elettronici</strong>, i termini "anodo" e "catodo" sono comunemente associati ai diodi normali e ad emissione laser (LED). 
@@ -129,7 +129,7 @@ Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="
 
 Per compilare e testare il programma fai copia e incolla del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows:<br> 
 - la prima riga copia sul tuo PC il codice dal nostro account Github, 
-- la seconda lo compila usando le istruzioni contenute nel Makefile e in platformio.ini.
+- la seconda lo compila usando le istruzioni contenute nel "Makefile" e in "platformio.ini".
 
 ```bash
 git clone git@github.com:sebadima/blinkESP32.git
