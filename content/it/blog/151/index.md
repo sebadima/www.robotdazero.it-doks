@@ -16,9 +16,6 @@ mermaid: true
 ---
 
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="scheme di montaggio del progetto per ESP32">
-
-
 <hr>
 <br>
 
@@ -26,17 +23,46 @@ mermaid: true
 
 Il programma "Blink" per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
 
+
+## Lo schema del progetto
+
+Come si tratta di pochi componenti esterne, ma fai attenzione che la presenza del resistore è necessaria non opzionale. In caso contratio la corrente assorbita del LED lo farebbe "bruciare" in meno di un secondo.
+
+### Componenti necessari
+
+- LED di colore rosso
+- Resistenza da 220 Ohm
+- Breadboard 
+- 2 Jumper o connettori Dupont
+
+> **L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard**, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32 oppure ricorri ad un facile trucco. Tutte le breadbord possono essere incastrate in parallelo a patto di togliere il corridoio centrale. 
+
+
+##### In questo modo potresti avere una Maxi breadboard ideale per l'ESP32. 
+
+
+Nello schema in basso ti mostriamo il montaggio "classico" visto che stiamo usando appena due componenti e riuscirai a montarli in ogni caso. Il pin GND (cioè la massa) della scheda viende collegata al Catodo del LED. Il pin 18 dell'ESP va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED.
+
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Nel contesto dei componenti elettronici, i termini "anodo" e "catodo" sono comunemente associati ai diodi e ai componenti a semiconduttore come i LED e i diodi laser. Questi termini si riferiscono alle due estremità di un diodo, che è un dispositivo a due terminali.
+<br><br><strong>Anodo</strong>: È il terminale positivo di un diodo o di un altro dispositivo a semiconduttore. In un diodo a giunzione p-n, l'anodo è la parte del diodo in cui la corrente entra quando il diodo è polarizzato in avanti (cioè quando la tensione applicata è positiva rispetto all'anodo). L'anodo è solitamente indicato con un simbolo o una marcatura sul corpo del componente.
+<br><br><strong>Catodo</strong>: È il terminale negativo di un diodo o di un altro dispositivo a semiconduttore. Nel caso di un diodo a giunzione p-n, il catodo è la parte del diodo in cui la corrente esce quando il diodo è polarizzato in avanti (cioè quando la tensione applicata è negativa rispetto al catodo). Il catodo è generalmente identificato da un simbolo o una marcatura sul corpo del componente, spesso attraverso una striscia o un punto.</div>
+
+<br>
+
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="scheme di montaggio del progetto per ESP32">
+
+Non appena avrai completato lo schema elettrico potrai provvedere alla compilazione del programma.
+
+
+
 ## Come compilare il programma "Blink" con Arduino IDE
 
 Apri l'Arduino IDE.
 
 - Vai su File -> Preferenze.
 - Nella finestra delle preferenze, aggiungi l'URL seguente nella casella "URL aggiuntivi per il gestore schede":
-
-```bash
-https://dl.espressif.com/dl/package_esp32_index.json
-```
-
 - Clicca su "OK" per chiudere la finestra delle preferenze.
 - Vai su Strumenti -> Scheda -> Gestore Schede.
 - Cerca "esp32" e installa "ESP32 by Espressif Systems".
@@ -51,6 +77,32 @@ Dopo aver installato il supporto per ESP32, seleziona la scheda giusta.
 
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
+
+Quindi per sicurezza fai copie e incolla del programa in basso:
+
+#### da incollare nell'IDE di Arduino
+
+```bash
+#define LED 18
+
+void setup() {
+  // Setta il baud rate della seriale a 115200
+  Serial.begin(115200);
+  // Setta il pin 2 in modalità OUTPUT
+  pinMode(LED,OUTPUT);
+}
+
+void loop() {
+  delay(50);
+  digitalWrite(LED,HIGH);
+  Serial.println("Led è HIGH");
+  delay(50);
+  digitalWrite(LED,LOW);
+  Serial.println("Led è LOW");
+}
+
+```
+
 
 ### Compilazione e upload del programma
 
@@ -90,7 +142,7 @@ Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 #### main.ino
 
 ```bash
-#define LED 2
+#define LED 18
 
 void setup() {
   // Setta il baud rate della seriale a 115200
@@ -161,20 +213,6 @@ update:
 ```
 
 Dopo avere creato il file, lancia la compilazione con "make" oppure carica il programma sulla scheda scrivendo "make upload".
-
-
-
-
-
-
-
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="scheme di montaggio del progetto per ESP32">
-
-<br>
-<br>
-
-
 
 <br>
 <br>
