@@ -225,4 +225,4 @@ Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risulta
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.151.0.1.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.151.1.2.0</p>
