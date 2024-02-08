@@ -6,7 +6,7 @@ date:    2024-02-03T01:19:42+01:00
 lastmod: 2024-02-03T01:19:42+01:00
 draft: false
 weight: 50
-images: ["header.png"]
+images: ["header.jpg"]
 categories: ["News"]
 tags: ["ESP32", "PlatformIO", "LED"]
 contributors: ["sebadima"]
