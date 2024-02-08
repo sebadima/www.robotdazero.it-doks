@@ -25,7 +25,7 @@ mermaid: true
 Il programma "Blink" per far lampeggiare l'ESP32 è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" la tratteremo in modo esteso e vedremo come portarla a termine sia con Arduino Ide che con PlatformIO.
 
 
-## Lo schema del progetto
+## Lo schema del progetto per collegare un LED esterno ad ESP32
 
 Come vedi dalla foto si tratta di assemblare pochi componenti esterni: nonostante questo non stiamo parlando di un progetto banale. Il calcolo della resistenza non è infatti semplicissimo e lo trovi già svolto nello specchietto in basso. Applicando correttamente la legge di Ohm possiamo ottenere dal LED una luminosità brillante senza bruciarlo in un attimo.
 
@@ -62,7 +62,10 @@ Nello schema in basso per semplificare ti mostriamo il montaggio "classico". Il 
 
 <br>
 
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="scheme di montaggio del progetto per ESP32">
+<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="scheme di montaggio su: come collegare un LED esterno ad ESP32">
+
+<br>
+<br>
 
 La resistenza non ha un "verso" particolare mentre l'anodo del LED (quello con il terminale più lungo) deve essere collegato alla resistenza. Non appena avrai completato lo schema elettrico puoi compilare il programma.
 
