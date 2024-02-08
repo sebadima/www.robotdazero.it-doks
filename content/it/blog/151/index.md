@@ -1,5 +1,5 @@
 ---
-title:       "Come collegare un LED esterno ad ESP32"
+title: "Come collegare un LED esterno ad ESP32"
 description: "Come collegare un LED esterno ad ESP32"
 excerpt: "Come collegare un LED esterno ad ESP32..."
 date:    2024-02-03T01:19:42+01:00
@@ -16,17 +16,29 @@ mermaid: true
 ---
 
 
+
 <hr>
 <br>
 
 ## Il programma "Blink"
 
-Il programma "Blink" per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
+Il programma "Blink" per far lampeggiare l'ESP32 è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
 
 
 ## Lo schema del progetto
 
-Come si tratta di pochi componenti esterne, ma fai attenzione che la presenza del resistore è necessaria non opzionale. In caso contratio la corrente assorbita del LED lo farebbe "bruciare" in meno di un secondo.
+Come vedi si tratta di pochi componenti esterni ma il calcolo della resistenza non è facilissimo e per questo lo trovi per esteso nello specchietto in basso. Senza resistenza la pur debole corrente dell'ESP32 (20 mA) brucerebbe il LED in un attimo.
+
+#### Come calcolare la resistenza:
+
+>Nel nostro circuito supponiamo che il diodo rosso abbia una caduta di tensione diretta di <strong>1.7 V</strong> e vogliamo far passare una corrente di <strong>20 mA</strong>:<br>
+<strong>5 V − 1.7 V</strong> (la caduta di tensione del LED) = <strong>3.3 V</strong>
+<br><strong>3.3 V / 20 mA</strong>  scritto in maniera più semplice diventa:
+<br><strong>3.3 / 0.02 = 165</strong> Ohm
+<br>Per sicurezza useremo una resistenza di <strong>220 Ohm</strong>, il valore di poco superiore disponibile in commercio.
+
+Ricorda che due LED di colore diverso hanno un assorbimento diverso. Comunque con la resistenza adottata puoi usare tutti gli altri LED compreso quello a luce bianca.
+
 
 ### Componenti necessari
 
@@ -35,19 +47,19 @@ Come si tratta di pochi componenti esterne, ma fai attenzione che la presenza de
 - Breadboard 
 - 2 Jumper o connettori Dupont
 
-> **L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard**, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32 oppure ricorri ad un facile trucco. Tutte le breadbord possono essere incastrate in parallelo a patto di togliere il corridoio centrale. 
+
+#### Le breabiard per l'ESP32
+
+L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32 oppure ricorri ad un facile trucco. Tutte le breadbord possono essere incastrate in parallelo a patto di togliere il corridoio centrale (puoi usare un taglierino).
 
 
-##### In questo modo potresti avere una Maxi breadboard ideale per l'ESP32. 
+Nello schema in basso ti mostriamo il montaggio "classico" visto che stiamo usando appena due componenti e riuscirai a montarli in ogni caso. Il pin GND (cioè la massa) della scheda viende collegata al Catodo del LED. Il <strong>pin 18</strong> dell'ESP32 va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED.
 
-
-Nello schema in basso ti mostriamo il montaggio "classico" visto che stiamo usando appena due componenti e riuscirai a montarli in ogni caso. Il pin GND (cioè la massa) della scheda viende collegata al Catodo del LED. Il pin 18 dell'ESP va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED.
-
+<br>
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-Nel contesto dei componenti elettronici, i termini "anodo" e "catodo" sono comunemente associati ai diodi e ai componenti a semiconduttore come i LED e i diodi laser. Questi termini si riferiscono alle due estremità di un diodo, che è un dispositivo a due terminali.
-<br><br><strong>Anodo</strong>: È il terminale positivo di un diodo o di un altro dispositivo a semiconduttore. In un diodo a giunzione p-n, l'anodo è la parte del diodo in cui la corrente entra quando il diodo è polarizzato in avanti (cioè quando la tensione applicata è positiva rispetto all'anodo). L'anodo è solitamente indicato con un simbolo o una marcatura sul corpo del componente.
-<br><br><strong>Catodo</strong>: È il terminale negativo di un diodo o di un altro dispositivo a semiconduttore. Nel caso di un diodo a giunzione p-n, il catodo è la parte del diodo in cui la corrente esce quando il diodo è polarizzato in avanti (cioè quando la tensione applicata è negativa rispetto al catodo). Il catodo è generalmente identificato da un simbolo o una marcatura sul corpo del componente, spesso attraverso una striscia o un punto.</div>
+<strong>Nel contesto dei componenti elettronici</strong>, i termini "anodo" e "catodo" sono comunemente associati ai diodi e ai componenti a semiconduttore come i LED e i diodi laser. Questi termini si riferiscono alle due estremità di un diodo, che è un dispositivo a due terminali.
+<br><br><strong>Anodo</strong> è il terminale positivo di un diodo, <strong>Catodo</strong> è il terminale negativo.</div>
 
 <br>
 
@@ -55,14 +67,16 @@ Nel contesto dei componenti elettronici, i termini "anodo" e "catodo" sono comun
 
 Non appena avrai completato lo schema elettrico potrai provvedere alla compilazione del programma.
 
-
-
 ## Come compilare il programma "Blink" con Arduino IDE
 
 Apri l'Arduino IDE.
 
 - Vai su File -> Preferenze.
 - Nella finestra delle preferenze, aggiungi l'URL seguente nella casella "URL aggiuntivi per il gestore schede":
+
+```bash
+https://dl.espressif.com/dl/package_esp32_index.json
+```
 - Clicca su "OK" per chiudere la finestra delle preferenze.
 - Vai su Strumenti -> Scheda -> Gestore Schede.
 - Cerca "esp32" e installa "ESP32 by Espressif Systems".
@@ -78,7 +92,7 @@ Dopo aver installato il supporto per ESP32, seleziona la scheda giusta.
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
-Quindi per sicurezza fai copie e incolla del programa in basso:
+Quindi per sicurezza fai copia e e incolla del programma in basso, in questo modo sarai sicuro che venga usato il pin 18 della scheda.
 
 #### da incollare nell'IDE di Arduino
 
