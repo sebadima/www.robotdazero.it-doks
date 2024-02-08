@@ -139,7 +139,7 @@ make upload
 Dopo la fine della compilazione il LED dovrebbe iniziare a lampeggiare, in caso contrario vai alla fine del post e leggi la sezione sul Test del programma.
 
 
-### Come scrivere da zero il programma per collegare un LED esterno ad ESP32
+## Come scrivere da zero il programma per collegare un LED esterno ad ESP32
 
 Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve scaricare il file (https://dl.espressif.com/dl/package_esp32_index.json) e non devi settare la "board" come sei costretto a fare con Arduino IDE. 
 
@@ -221,7 +221,7 @@ Dopo avere creato il file, lancia la compilazione con "make" oppure carica il pr
 
 #### Il test del programma
 
-Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risulato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED, la connessione tra il filo rosso e il pin 18 dell'ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
+Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risultato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED, la connessione tra il filo rosso e il pin 18 dell'ESP32 e la connessione tra il filo nero e la massa dell'ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
 
 <br>
 <br>
