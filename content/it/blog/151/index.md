@@ -169,7 +169,7 @@ void loop() {
 }
 ```
 
-Carica il codice sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
+Crea una directory "src" e carica il codice sopra in un file **src/main.ino**. Usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
 
 #### platformio.ini
 ```bash
@@ -221,7 +221,7 @@ Dopo avere creato il file, lancia la compilazione con "make" oppure carica il pr
 
 #### Il test del programma
 
-Sia che tu abbia usato Arduino IDE o PlatformIO dovresti vare lo stesso risulato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED e di controllare che il filo rosso sia collegato al pin 18 dell'ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
+Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risulato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED, la connessione tra il filo rosso e il pin 18 dell'ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
 
 <br>
 <br>
