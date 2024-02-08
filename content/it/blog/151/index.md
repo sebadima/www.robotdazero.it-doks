@@ -136,7 +136,10 @@ git clone git@github.com:sebadima/blinkESP32.git
 make upload
 ```
 
-### Come scrivere da zero il programma
+Dopo la fine della compilazione il LED dovrebbe iniziare a lampeggiare, in caso contrario vai alla fine del post e leggi la sezione sul Test del programma.
+
+
+### Come scrivere da zero il programma per collegare un LED esterno ad ESP32
 
 Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve scaricare il file (https://dl.espressif.com/dl/package_esp32_index.json) e non devi settare la "board" come sei costretto a fare con Arduino IDE. 
 
