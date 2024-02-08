@@ -22,16 +22,16 @@ mermaid: true
 
 ## Il programma "Blink"
 
-Il programma "Blink" per far lampeggiare l'ESP32 è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
+Il programma "Blink" per far lampeggiare l'ESP32 è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" la tratteremo in modo esteso e vedremo come portarla a termine sia con Arduino Ide che con PlatformIO.
 
 
 ## Lo schema del progetto
 
-Come vedi si tratta di pochi componenti esterni ma il calcolo della resistenza non è facilissimo e per questo lo trovi per esteso nello specchietto in basso. Senza resistenza la pur debole corrente dell'ESP32 (20 mA) brucerebbe il LED in un attimo.
+Come vedi dalla foto si tratta di assemblare pochi componenti esterni: nonostante questo non stiamo parlando di un progetto banale. Il calcolo della resistenza non è infatti semplicissimo e lo trovi già svolto nello specchietto in basso. Applicando correttamente la legge di Ohm possiamo ottenere dal LED una luminosità brillante senza bruciarlo in un attimo.
 
 #### Come calcolare la resistenza:
 
->Nel nostro circuito supponiamo che il diodo rosso abbia una caduta di tensione diretta di <strong>1.7 V</strong> e vogliamo far passare una corrente di <strong>20 mA</strong>:<br>
+>Dalle specifiche del prodotto sappiamo che il diodo rosso ha una caduta di tensione diretta di <strong>1.7 V</strong> e noi vogliamo far passare una corrente di <strong>20 mA</strong>:<br>
 <strong>5 V − 1.7 V</strong> (la caduta di tensione del LED) = <strong>3.3 V</strong>
 <br><strong>3.3 V / 20 mA</strong>  scritto in maniera più semplice diventa:
 <br><strong>3.3 / 0.02 = 165</strong> Ohm
@@ -42,30 +42,29 @@ Ricorda che due LED di colore diverso hanno un assorbimento diverso. Comunque co
 
 ### Componenti necessari
 
-- LED di colore rosso
-- Resistenza da 220 Ohm
-- Breadboard 
+- un LED di colore rosso
+- una Resistenza da 220 Ohm
+- una o due Breadboard 
 - 2 Jumper o connettori Dupont
 
 
-#### Le breabiard per l'ESP32
+#### Le breadboard per l'ESP32
 
-L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32 oppure ricorri ad un facile trucco. Tutte le breadbord possono essere incastrate in parallelo a patto di togliere il corridoio centrale (puoi usare un taglierino).
+L'ESP32 non può essere ospitato "comodamente" sulla singola breadboard, anche nel modello più grande: o ne colleghi due affiancate o inserisci il connettore dentro lo "stesso foro" in cui entra il GND dell'ESP32. Puoi però ricorrere ad un facile trucco:  tutte le breadbord "maxi" possono essere incastrate in parallelo a patto di togliere il corridoio centrale (puoi usare un taglierino).
 
+##### Se usi il trucco delle due breadboard affiancate il montaggio dell'ESP32 viene reso molto più semplice
 
-Nello schema in basso ti mostriamo il montaggio "classico" visto che stiamo usando appena due componenti e riuscirai a montarli in ogni caso. Il pin GND (cioè la massa) della scheda viende collegata al Catodo del LED. Il <strong>pin 18</strong> dell'ESP32 va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED.
-
-<br>
+Nello schema in basso per semplificare ti mostriamo il montaggio "classico". Il pin GND (cioè la massa) della scheda ESP32 viende collegato al Catodo del LED (il polo negativo). Il <strong>pin 18</strong> dell'ESP32 va a pilotare la resistenza da 220 Ohm che a sua volta viene collegata all'Anodo del LED (il polo positivo con il connettore più lungo).
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Nel contesto dei componenti elettronici</strong>, i termini "anodo" e "catodo" sono comunemente associati ai diodi e ai componenti a semiconduttore come i LED e i diodi laser. Questi termini si riferiscono alle due estremità di un diodo, che è un dispositivo a due terminali.
-<br><br><strong>Anodo</strong> è il terminale positivo di un diodo, <strong>Catodo</strong> è il terminale negativo.</div>
+<strong>Nel contesto dei componenti elettronici</strong>, i termini "anodo" e "catodo" sono comunemente associati ai diodi normali e ad emissione laser (LED). 
+<br><strong>Anodo</strong> è il terminale positivo di un diodo, <strong>Catodo</strong> è il terminale negativo.</div>
 
 <br>
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="scheme di montaggio del progetto per ESP32">
 
-Non appena avrai completato lo schema elettrico potrai provvedere alla compilazione del programma.
+La resistenza non ha un "verso" particolare mentre l'anodo del LED (quello con il terminale più lungo) deve essere collegato alla resistenza. Non appena avrai completato lo schema elettrico puoi compilare il programma.
 
 ## Come compilare il programma "Blink" con Arduino IDE
 
@@ -92,29 +91,24 @@ Dopo aver installato il supporto per ESP32, seleziona la scheda giusta.
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
-Quindi per sicurezza fai copia e e incolla del programma in basso, in questo modo sarai sicuro che venga usato il pin 18 della scheda.
+Quindi per sicurezza fai copia e e incolla del programma in basso: in questo modo sarai sicuro che venga usato il pin 18 della scheda.
 
 #### da incollare nell'IDE di Arduino
 
 ```bash
-#define LED 18
+const int pinLED = 18;
 
 void setup() {
-  // Setta il baud rate della seriale a 115200
-  Serial.begin(115200);
-  // Setta il pin 2 in modalità OUTPUT
-  pinMode(LED,OUTPUT);
+  // Setta il Pin D18 come uscita (OUTPUT)
+  pinMode (pinLED, OUTPUT);
 }
 
 void loop() {
-  delay(50);
-  digitalWrite(LED,HIGH);
-  Serial.println("Led è HIGH");
-  delay(50);
-  digitalWrite(LED,LOW);
-  Serial.println("Led è LOW");
+  digitalWrite (pinLED, HIGH);  // Accendi il LED
+  delay(1000);  // Pausa di un secondo
+  digitalWrite (pinLED, LOW); // Spegni il LED
+  delay(1000);  // Pausa di un secondo 
 }
-
 ```
 
 
@@ -132,16 +126,14 @@ Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="
 
 Per compilare e testare il programma fai copia e incolla del testo sottostante e incollalo nel terminale di Linux o nel CMD di Windows:<br> 
 - la prima riga copia sul tuo PC il codice dal nostro account Github, 
-- la seconda lo compila usando le istruzioni contenute nel Makefile e in platformio.ini,
-- la terza lancia il monitor sulla seriale.
+- la seconda lo compila usando le istruzioni contenute nel Makefile e in platformio.ini.
 
 ```bash
 git clone git@github.com:sebadima/blinkESP32.git
 make upload
-platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-### Come costruire da zero il programma
+### Come scrivere da zero il programma
 
 Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve scaricare il file (https://dl.espressif.com/dl/package_esp32_index.json) e non devi settare la "board" come sei costretto a fare con Arduino IDE. 
 
@@ -149,33 +141,27 @@ Con PlatformIO puoi "clonare" il programma da Github: come hai notato non serve 
 
 Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 
-- In <strong>setup</strong>(), il programma inizializza la comunicazione seriale ad una velocità di trasmissione di 115200 baud e inoltra setta il pin 2 in modalità OUTPUT
+- In <strong>setup</strong>(), il programma setta il pin 18 in modalità OUTPUT
 - Nel <strong>loop</strong>(), la funzione digitalWrite() commuta continuamente lo stato del LED da HIGH a LOW.
 
 
 #### main.ino
 
 ```bash
-#define LED 18
+const int pinLED = 18;
 
 void setup() {
-  // Setta il baud rate della seriale a 115200
-  Serial.begin(115200);
-  // Setta il pin 2 in modalità OUTPUT
-  pinMode(LED,OUTPUT);
+  // Setta il Pin D18 come uscita (OUTPUT)
+  pinMode (pinLED, OUTPUT);
 }
 
 void loop() {
-  delay(50);
-  digitalWrite(LED,HIGH);
-  Serial.println("Led è HIGH");
-  delay(50);
-  digitalWrite(LED,LOW);
-  Serial.println("Led è LOW");
+  digitalWrite (pinLED, HIGH);  // Accendi il LED
+  delay(1000);  // Pausa di un secondo
+  digitalWrite (pinLED, LOW); // Spegni il LED
+  delay(1000);  // Pausa di un secondo 
 }
-
 ```
-
 
 Carica il codice sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
 
@@ -197,7 +183,6 @@ board = esp32dev
 framework = arduino
 lib_deps = 
 ```
-
 
 Per creare il Makefile puoi leggere questo <a href="/blog/come-funziona-il-makefile-di-platformio/">post</a> oppure fare copia e incolla del codice in basso in un file con lo stesso nome:
 
@@ -227,6 +212,10 @@ update:
 ```
 
 Dopo avere creato il file, lancia la compilazione con "make" oppure carica il programma sulla scheda scrivendo "make upload".
+
+#### Il test del programma
+
+Sia che tu abbia usato Arduino IDE o PlatformIO dovresti vare lo stesso risulato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED e di controllare che il filo rosso sia collegato al pin 18 dell'ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
 
 <br>
 <br>
