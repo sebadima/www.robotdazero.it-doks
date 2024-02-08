@@ -4,7 +4,7 @@ description: "Come collegare un LED esterno ad ESP32"
 excerpt: "Come collegare un LED esterno ad ESP32..."
 date:    2024-02-03T01:19:42+01:00
 lastmod: 2024-02-03T01:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.png"]
 categories: ["News"]
