@@ -23,11 +23,11 @@ mermaid: true
 ## Il sensore DHT11
 
 
-Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa. Sono dei modelli estremamente popolari in parte per il basso costo in parte per la facilità di collegamento ad ESP32 e Arduino. Sono dei sensori digitali e pertanto non necessitano di conversione del voltaggio in uscita e inoltr non richiedono una resistenza di pull-up/pull-down. Un resisore da 10 KOhm si trova sempre incorporato nella basetta (salvo modelli super economici) e pertanto basta semplicemente collegarlo alla uscita a 5V di ESP32.
+Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa. Sono dei modelli estremamente popolari in parte per il basso costo in parte per la facilità di collegamento ad ESP32 e Arduino. Sono dei sensori digitali e pertanto non necessitano di conversione del voltaggio in uscita e inoltre non richiedono una resistenza di pull-up/pull-down. Un resistore da 10 KOhm si trova sempre incorporato nella basetta (salvo modelli super economici) e pertanto basta semplicemente collegarlo alla uscita a 5V di ESP32.
 
 #### Il DHT22
 
-Il DHT11 possiede un quasi gemello, il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e puoi effettuare letture ad intervalli di 2 secondi. Nel nostro tutorial useremo solo il DHT11.
+Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e puoi effettuare letture ad intervalli di 2 secondi. Nel nostro tutorial useremo solo il DHT11.
 
 ### Le specifiche del DHT11
 
@@ -41,7 +41,7 @@ Il DHT11 possiede un quasi gemello, il DHT22 con delle specifiche similari. Il s
 - Periodo di campionamento 1 secondo 
 
 
-### La piedinatura del DHT11
+### Il pinout del DHT11
 
 I sensori DHT hanno quattro pin come mostrato nella figura seguente. Tuttavia, se si ottiene il sensore DHT in una scheda breakout, viene fornito con solo tre pin e con una resistenza di pull-up interna sul pin 2.
 
@@ -50,7 +50,7 @@ I sensori DHT hanno quattro pin come mostrato nella figura seguente. Tuttavia, s
 
 La tabella seguente mostra il pinout del DHT11 a <strong>4 pin</strong>. Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
-- pin1: Alimentazionr da 3.3V fino a 5V
+- pin1: Alimentazione da 3.3V fino a 5V
 - pin2: Qualsiasi GPIO digitale dell'ESP32 (con una resistenza)
 - pin3: Non collegato
 - pin4: GND
@@ -69,7 +69,7 @@ Nel progetto pilota useremo la versione a 3 pin.
 
 ## Il programma per leggere il sensore DHT11 con ESP32
 
-Per compilare un programma con Arduino Ide e con Platformo a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog, per installare PlatformIO puoi fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. In questo progetto e in altri progetti più complessi useremo soprattutto PlatformIO. Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
+Per compilare un programma con Arduino Ide e con PlatformIO a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog, per installare PlatformIO puoi fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. In questo progetto e in altri progetti più complessi useremo soprattutto PlatformIO. Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-dht11-basic.git
@@ -77,7 +77,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare schedao o porta o installare librerie "a mano". Non serve neppure seguire i consigli di Arduin IDE che richiede una directory con un nome random prima di compilare.
+Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare scheda, porta e installare librerie "a mano", un vantaggio non da poco. Il trucco è semplicissimo, i nomi e le versioni delle librerie sono scritte nel file platformio.ini e il comando "make" si occupa di scaricarle da internet, compilarle e linkarle.
 
 ### Il programma main.ino
 
@@ -127,7 +127,7 @@ void loop(){
 }
 ```
 
-Se hai scaricato da Github avrai l'amniente di sciluppo già pronto compreso il file sorgente, ma è utile dargli una occhiata se vuoi, ad esempio, apportare delle piccole modifiche.
+Se hai scaricato da Github avrai l'ambiente di sviluppo già pronto compreso il file sorgente, ma è utile dargli una occhiata se vuoi, ad esempio, apportare delle piccole modifiche.
 
 <strong>La struttura dati:<br></strong> 
 DHT dht(DHTPIN, DHTTYPE);<br>
@@ -145,13 +145,13 @@ permette di controllare se il DHT11 è davvero collegato e se arrivano i dati.
 
 <strong>Infine la istruzione:  </strong>
 <br>delay(1000);<br>
-serve ad introdurre un breve intervallo di un secondo, abbastzanza veloce per conreollare il movimento di un accendino nei paraggi del sensore
+serve ad introdurre un breve intervallo di un secondo, abbastanza veloce per rilevare il movimento di un accendino nei paraggi del sensore
 
 <img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="">
 
 ### Il collaudo del programma per leggere il sensore DHT11 con ESP32
 
-Dopo avere lanciato il monitor seriale dovresti leggere la temperatura e la umidità come nella immagine sopra. Se ciò non accade controlla di avere collegato il pin GPIO13 di ESP al connettore centrale del DHT11. Ricontrolla la connesssione del cavetto collegato al pin 5V dell'ESP e in casi estremi prova a cambiare il cavo USB.
+Dopo avere lanciato il monitor seriale dovresti leggere la temperatura e la umidità come nella immagine sopra. Se ciò non accade controlla di avere collegato il pin GPIO13 di ESP al connettore centrale del DHT11. Ricontrolla la connessione del cavetto di alimentazione (rosso) collegato al pin 5V dell'ESP. In casi estremi prova a cambiare il cavo USB.
 
 <br>
 <br>
