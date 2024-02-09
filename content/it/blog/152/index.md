@@ -22,14 +22,14 @@ mermaid: true
 
 ## Il sensore DHT11
 
-Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa dell'aria. E' probabilmente il sensore digitale più popolare, in parte per il basso costo e in parte per la semplicità di collegamento. Proprio perchè digitale infatti, non necessita di calcoli per la conversione e funzionare perfettamente senza componenti aggiuntivi. I progettisti hanno pensato bene di saldare una resistenza di pull-up da 10 KOhm nella mini basetta che lo ospita e in questo modo sono riusciti a semplificare il lavoro di progettisti e assemblatori. 
+Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa dell'aria. E' probabilmente il sensore digitale più popolare, in parte per il basso costo e in parte per la semplicità di collegamento. Proprio perchè digitale infatti, non necessita di calcoli per la conversione e può inoltre essere adoperato senza componenti aggiuntivi. I progettisti hanno pensato bene di saldare una resistenza di pull-up da 10 KOhm nella mini basetta che lo ospita e in questo modo sono riusciti a semplificare il lavoro di progettisti e assemblatori. 
 
-Per collegarlo basta quindi fornirgli la alimentazione e collegare il pin centrale ad un GPIO digitale di ESP32. Anche la alimentazione è molto semplice: visto il basso assorbimento lo possiamo collegare senza problemi al pin 5V di ESP32.
+Per collegarlo basta perciò fornirgli l'alimentazione e connettere il pin "dati" ad un pin GPIO digitale. Anche la alimentazione è molto semplice: visto il basso assorbimento lo possiamo collegare senza problemi al pin 5V di ESP32.
 
 
 #### Il DHT22
 
-Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e non può effettuare letture ad intervalli di 1 secondo. Nel nostro tutorial useremo solo il DHT11.
+Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia è più costoso e non può effettuare letture ad intervalli di 1 secondo. Nel nostro tutorial useremo solo il DHT11.
 
 ### Le specifiche del DHT11
 
@@ -44,12 +44,14 @@ Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il senso
 
 ### Il pinout del DHT11
 
-I vecchi sensori DHT avevano quattro pin come mostrato nella figura seguente. 
+I vecchi sensori DHT11 avevano quattro pin come mostrato nella figura seguente: 
 
-<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
+<img width="110" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
+<br>
+<br>
 
-Nella prossima tabella vedi il pinout del DHT11 a <strong>4 pin</strong>. 
+Nella prossima tabella puoi vedere il pinout del DHT11 a <strong>4 pin</strong>. 
 Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
 - pin1: Alimentazione da 3.3V fino a 5V
@@ -57,19 +59,19 @@ Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da 
 - pin3: Non collegato
 - pin4: GND
 
-
 ##### Le versioni più moderne del DHT11
 
 Le versioni recenti del sensore sono fornite con una scheda breakout con solo tre pin e con una resistenza di pull-up interna sul pin 2.
 
-<img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="">
+<img width="380" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="">
 
+<br>
 
 In basso trovi il pinout del DHT11 a <strong>3 pin</strong>. 
 
-- Pin 1: (GND) - Massa del circuito
-- Pin 2: (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
-- Pin 3: (VCC) - Alimentazione da 3.3V fino a 5V
+- Pin 1 - (GND) - Massa del circuito
+- Pin 2 - (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
+- Pin 3 - (VCC) - Alimentazione da 3.3V fino a 5V
 
 Nel nostro progetto useremo solo la versione a 3 pin.
 
@@ -92,7 +94,9 @@ Nello schema in basso:
 
 ## Il programma per leggere il sensore DHT11 con ESP32
 
-Per compilare un programma con Arduino Ide e con PlatformIO a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog, per installare PlatformIO puoi fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. In questo progetto e in altri progetti più complessi useremo soprattutto PlatformIO. Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
+Se vuoi sapere come compilare un programma con Arduino Ide e con PlatformIO a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog. Per installare PlatformIO puoi invece fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. Nei progetti più complessi useremo soprattutto PlatformIO per sua semplice interazione con il comando GIT. 
+
+Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-dht11-basic.git
@@ -100,7 +104,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare scheda, porta e installare librerie "a mano", un vantaggio non da poco. Il trucco è semplicissimo, i nomi e le versioni delle librerie sono scritte nel file platformio.ini e il comando "make" si occupa di scaricarle da internet, compilarle e linkarle.
+Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare scheda, porta e installare librerie "a mano", un vantaggio non da poco. Il trucco è semplicissimo: i nomi e le versioni delle librerie sono scritte nel file platformio.ini e il comando "make" si occupa di scaricarle da internet, compilarle e *linkarle*.
 
 ### Il file main.ino
 
