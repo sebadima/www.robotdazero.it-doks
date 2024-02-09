@@ -122,7 +122,7 @@ void loop(){
       Serial.println(h);
     }
 
-    delay(2000);
+    delay(1000);
 }
 ```
 
@@ -143,7 +143,7 @@ if (isnan(newT)) ...<br>
 permette di controllare se il DHT11 è davvero collegato e se arrivano i dati.
 
 <strong>Infine la istruzione:  </strong>
-<br>delay(2000);<br>
+<br>delay(1000);<br>
 serve ad introdurre un breve intervallo di un secondo, abbastzanza veloce per conreollare il movimento di un accendino nei paraggi del sensore
 
 
