@@ -69,6 +69,14 @@ Nel progetto pilota useremo la versione a 3 pin.
 
 ### Lo schema elettrico
 
+Nello schema in basso:
+
+- il filo nero collega il pin <strong>GND</strong> dell'ESP32 al <strong>pin1</strong> del DHT11 (il pin più a sinistra),
+
+- il filo giallo connette il pin <strong>GPIO 13</strong> dell'ESP con il <strong>pin centrale</strong> del DHT11,
+
+- il filo rosso serve a collegare la alimentazione prelevata dal <strong>pin 5V</strong> della scheda con il <strong>terzo pin</strong> a destra del sensore.
+
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/152_bb.png" alt="schema Fritzing del circuito per leggere il sensore DHT11 con ESP32">
 
 
