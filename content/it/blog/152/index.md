@@ -24,7 +24,7 @@ mermaid: true
 
 Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa dell'aria. E' probabilmente il sensore digitale più popolare, in parte per il basso costo e in parte per la semplicità di collegamento. Proprio perchè digitale infatti, non necessita di calcoli per la conversione e funzionare perfettamente senza componenti aggiuntivi. I progettisti hanno pensato bene di saldare una resistenza di pull-up da 10 KOhm nella mini basetta che lo ospita e in questo modo sono riusciti a semplificare il lavoro di progettisti e assemblatori. 
 
-Per collegarlo basta quindi fornirgli la alimentazione e collegare il pin centrale ad un GPIO digitale di ESP32. Anche la alimentazione è molto semplice: visto il basso assorbimento (20 mA) lo possiamo collegare al pin 5V di ESP32.
+Per collegarlo basta quindi fornirgli la alimentazione e collegare il pin centrale ad un GPIO digitale di ESP32. Anche la alimentazione è molto semplice: visto il basso assorbimento lo possiamo collegare senza problemi al pin 5V di ESP32.
 
 
 #### Il DHT22
@@ -36,21 +36,21 @@ Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il senso
 - Intervallo di temperatura da 0 a 50 ºC + / -2 ºC
 - Intervallo di umidità da 20 a 90% + / -5% 
 - Risoluzione Umidità: 1%
-- Temperatura: 1ºC Umidità: 0.1%
-- Temperatura: 0.1 ºC
-- Tensione di funzionamento 3-5. 5 V 
-- Corrente di alimentazione 0.5 – 2.5 mA 
-- Periodo di campionamento 1 secondo 
+- Risoluzione Temperatura: 0.1 ºC
+- Tensione di funzionamento 3.3V ~ 5V 
+- Corrente di alimentazione 0.5 mA ~ 2.5 mA 
+- Periodo di campionamento < 1 secondo 
 
 
 ### Il pinout del DHT11
 
-I sensori DHT hanno quattro pin come mostrato nella figura seguente. Tuttavia, se si ottiene il sensore DHT in una scheda breakout, viene fornito con solo tre pin e con una resistenza di pull-up interna sul pin 2.
+I vecchi sensori DHT avevano quattro pin come mostrato nella figura seguente. 
 
 <img width="150" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
 
-La tabella seguente mostra il pinout del DHT11 a <strong>4 pin</strong>. Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
+La prossima tabella mostra il pinout del DHT11 a <strong>4 pin</strong>. 
+Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
 - pin1: Alimentazione da 3.3V fino a 5V
 - pin2: Qualsiasi GPIO digitale dell'ESP32 (con una resistenza)
@@ -58,13 +58,20 @@ La tabella seguente mostra il pinout del DHT11 a <strong>4 pin</strong>. Quando 
 - pin4: GND
 
 
-La prossima mostra invece il pinout del DHT11 a <strong>3 pin</strong> e quindi con resistenza di pull-up incorporata. 
+##### Le versioni più moderne del DHT11
 
-- pin1: (GND)
-- pin2: (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
-- pin3: (VCC) - Alimentazione da 3.3V fino a 5V
+Tuttavia, le versioni recenti del sensore sono fornite con una scheda breakout con solo tre pin e con una resistenza di pull-up interna sul pin 2.
 
-Nel progetto pilota useremo la versione a 3 pin.
+<img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="">
+
+
+In basso trovi il pinout del DHT11 a <strong>3 pin</strong>. 
+
+- Pin 1: (GND) - Massa del circuito
+- Pin 2: (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
+- Pin 3: (VCC) - Alimentazione da 3.3V fino a 5V
+
+Nel nostro pilota useremo la versione a 3 pin.
 
 > <strong>Le resistenze di pull-up</strong> sono componenti utilizzate nei circuiti digitali per garantire che un segnale rimanga a un livello logico alto (1 logico) quando non è altrimenti definito. Questo è particolarmente importante in dispositivi a logica aperta (open-drain o open-collector) o quando si lavora con dispositivi a bassa corrente come i MOSFET.
 
