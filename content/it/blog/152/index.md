@@ -49,7 +49,7 @@ I vecchi sensori DHT avevano quattro pin come mostrato nella figura seguente.
 <img width="150" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
 
-La prossima tabella mostra il pinout del DHT11 a <strong>4 pin</strong>. 
+Nella prossima tabella vedi il pinout del DHT11 a <strong>4 pin</strong>. 
 Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
 - pin1: Alimentazione da 3.3V fino a 5V
@@ -60,7 +60,7 @@ Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da 
 
 ##### Le versioni più moderne del DHT11
 
-Tuttavia, le versioni recenti del sensore sono fornite con una scheda breakout con solo tre pin e con una resistenza di pull-up interna sul pin 2.
+Le versioni recenti del sensore sono fornite con una scheda breakout con solo tre pin e con una resistenza di pull-up interna sul pin 2.
 
 <img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/105.png" alt="">
 
@@ -71,7 +71,7 @@ In basso trovi il pinout del DHT11 a <strong>3 pin</strong>.
 - Pin 2: (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
 - Pin 3: (VCC) - Alimentazione da 3.3V fino a 5V
 
-Nel nostro pilota useremo la versione a 3 pin.
+Nel nostro progetto useremo solo la versione a 3 pin.
 
 > <strong>Le resistenze di pull-up</strong> sono componenti utilizzate nei circuiti digitali per garantire che un segnale rimanga a un livello logico alto (1 logico) quando non è altrimenti definito. Questo è particolarmente importante in dispositivi a logica aperta (open-drain o open-collector) o quando si lavora con dispositivi a bassa corrente come i MOSFET.
 
@@ -179,4 +179,4 @@ Dopo avere lanciato il monitor seriale dovresti leggere la temperatura e la umid
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.152.1.0.3</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.152.1.4.0</p>
