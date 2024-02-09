@@ -132,7 +132,7 @@ Per compilare e testare il programma fai copia e incolla del testo sottostante e
 - la seconda lo compila usando le istruzioni contenute nel "Makefile" e in "platformio.ini".
 
 ```bash
-git clone git@github.com:sebadima/blinkESP32.git
+git clone https://github.com/sebadima/corso-ESP32-blink-external.git
 make upload
 ```
 
