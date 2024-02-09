@@ -88,7 +88,7 @@ Per compilare e testare il programma basta fare copia e incolla delle tre righe 
 - la terza lancia il monitor seriale.
 
 ```bash
-git clone git@github.com:sebadima/analog_read.git
+git clone https://github.com/sebadima/corso-ESP32-analog_read.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
