@@ -67,6 +67,12 @@ Nel progetto pilota useremo la versione a 3 pin.
 > <strong>Le resistenze di pull-up</strong> sono componenti utilizzate nei circuiti digitali per garantire che un segnale rimanga a un livello logico alto (1 logico) quando non è altrimenti definito. Questo è particolarmente importante in dispositivi a logica aperta (open-drain o open-collector) o quando si lavora con dispositivi a bassa corrente come i MOSFET.
 
 
+### Lo schema elettrico
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/152_bb.png" alt="schema Fritzing del circuito per leggere il sensore DHT11 con ESP32">
+
+
+
 ## Il programma per leggere il sensore DHT11 con ESP32
 
 Per compilare un programma con Arduino Ide e con PlatformIO a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog, per installare PlatformIO puoi fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. In questo progetto e in altri progetti più complessi useremo soprattutto PlatformIO. Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
@@ -148,6 +154,7 @@ permette di controllare se il DHT11 è davvero collegato e se arrivano i dati.
 serve ad introdurre un breve intervallo di un secondo, abbastanza veloce per rilevare il movimento di un accendino nei paraggi del sensore
 
 <img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="">
+
 
 ### Il collaudo del programma per leggere il sensore DHT11 con ESP32
 
