@@ -22,8 +22,7 @@ mermaid: true
 
 ## Il sensore DHT11
 
-
-Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa. E' probabilmente il sensore digitale più popolare in parte per il basso costo in parte per la sua semplicità di collegamento. E' infatti un sensore digitali e pertanto non necessita di alcub calcolo per la conversione e fornisce immediatamente i valori rilevate senza neppure richiedere una resistenza di pull-up. I progettisti pensato di usare per default un resistore da 10 KOhm in tutte le basette embedded con cui il sensore viene venduto in in commercio. Per collegarlo basta quindi fornirgli la alimentazione e leggere il valore numerico dal pin centrale. Per alimentazione, visto il basso assornimento, possiamo usare il pin 5V di ESP32.
+Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa dell'aria. E' probabilmente il sensore digitale più popolare, in parte per il basso costo e in parte per la semplicità di collegamento. Essendo infatti un sensore digitale non necessita di calcoli  per la conversione: fornisce immediatamente i valori rilevate senza neppure richiedere una resistenza di pull-up. I progettisti pensato di usare per default un resistore da 10 KOhm in tutte le basette con cui viene venduto in commercio. Per collegarlo, quindi basta fornirgli la alimentazione e collegare il pin centrale. Anche la sua alimentazione è molto semplice, visto il basso assorbimento ci basta collegarlo al pin 5V di ESP32.
 
 
 #### Il DHT22
