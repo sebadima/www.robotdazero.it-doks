@@ -17,6 +17,7 @@ mermaid: true
 
 
 
+<!-- https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/ -->
 <hr>
 <br>
 
@@ -100,6 +101,7 @@ Per installare il progetto completo dal nostro account Github fai copia e incoll
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-dht11-basic.git
+cd corso-ESP32-dht11-basic
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
