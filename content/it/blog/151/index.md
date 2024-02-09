@@ -1,7 +1,7 @@
 ---
 title: "Come collegare un LED esterno ad ESP32"
 description: "Come collegare un LED esterno ad ESP32"
-excerpt: "Come collegare un LED esterno ad ESP32..."
+excerpt: "Il programma Blink per far lampeggiare l'ESP32 è l'equivalente IoT del classico \"Hello world\" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni Maker..."
 date: 2024-02-03T01:19:42+01:00
 lastmod: 2024-02-03T01:19:42+01:00
 draft: false
@@ -42,7 +42,7 @@ Ricorda che due LED di colore diverso hanno un assorbimento diverso. Comunque co
 
 ### Componenti necessari
 
-- un LED di colore rosso
+- un LED di colore rosso o bianco
 - una Resistenza da 220 Ohm
 - una o due Breadboard 
 - 2 Jumper o connettori Dupont
