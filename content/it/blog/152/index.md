@@ -131,7 +131,7 @@ Se hai scaricato da Github avrai l'amniente di sciluppo già pronto compreso il 
 
 <strong>La struttura dati:<br></strong> 
 DHT dht(DHTPIN, DHTTYPE);<br>
-serve a far funzionare il DHT11 isolandolo in un "oggetto" incapsulato, cui accedere solo chiamando le funzioni predefinite senza leggere variabili/puntatori.
+serve a far funzionare il DHT11 isolandolo in un "oggetto" incapsulato, cui accedere solo attraverso delle chiamate di funzione senza leggere o peggio modificare variabili e puntatori.
 
 <strong>La funzione</strong>:
 <br>setup()<br> 
