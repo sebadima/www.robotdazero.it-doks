@@ -63,12 +63,19 @@ Pin #3 (VCC) - 3.3 V ~ 5.V
 
 Nel progetto pilota useremo la versione a 3 pin.
 
+## Il programma per leggere il sensore DHT11 con ESP32
+
+Per compilare un programma con Arduino Ide e con Platformo a linea di comando puoi leggere questo <a href="/blog/come-collegare-un-led-esterno-ad-esp32/">post</a> del nostro blog, per installare PlatformIO puoi fare riferimento a questo altro <a href="/blog/come-installare-platformio/">post</a>. In questo progetto e in altri progetti più complessi useremo soprattutto PlatformIO. Per installare il progetto completo dal nostro account Github fai copia e incolla dalla casella sottostante:
+
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-dht11-basic.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
-### Il collaudo del programma 
+
+Dopo alcuni istanti senza settare scheda o porta o lanciare il Monitoe Serial di Arduino vedrai i valori di Temperatura e Umidità rilevati dal sensore.
+
+### Il collaudo del programma per leggere il sensore DHT11 con ESP32
 
 Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risultato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED, la connessione tra il filo rosso e il pin 18 dell’ESP32 e la connessione tra il filo nero e la massa dell’ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
 
