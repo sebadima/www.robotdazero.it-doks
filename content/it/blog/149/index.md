@@ -45,8 +45,6 @@ Dopo aver installato il supporto per ESP32, seleziona la scheda giusta.
 
 - Vai su Strumenti -> Scheda e seleziona la tua scheda ESP32 dalla lista.
 
-### Il programma "Blink" per ESP32
-
 Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE. 
 <br>Vai su File > Esempi > ESP32 > Basics > Blink.
 
@@ -94,18 +92,19 @@ Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 void setup() {
   // Setta la seriale a 115200 baud
   Serial.begin(115200);
-  // Setta il pin 2 in modalità OUT
+  // Setta la porta 2 in modalità OUT
   pinMode(LED,OUTPUT);
 }
 
 void loop() {
   digitalWrite(LED,HIGH);
   Serial.println("Led è HIGH");
-  delay(2000);
+  delay(1000);
   digitalWrite(LED,LOW);
   Serial.println("Led è LOW");
-  delay(2000);
-}```
+  delay(1000);
+}
+```
 
 
 Carica il codice sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
