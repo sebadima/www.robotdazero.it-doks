@@ -47,6 +47,7 @@ I sensori DHT hanno quattro pin come mostrato nella figura seguente. Tuttavia, s
 
 <img width="150" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
+
 La tabella seguente mostra il pinout del DHT11 a <strong>4 pin</strong>. Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
 - pin1: Alimentazionr da 3.3V fino a 5V
@@ -146,13 +147,11 @@ permette di controllare se il DHT11 è davvero collegato e se arrivano i dati.
 <br>delay(1000);<br>
 serve ad introdurre un breve intervallo di un secondo, abbastzanza veloce per conreollare il movimento di un accendino nei paraggi del sensore
 
-
-
-
+<img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="">
 
 ### Il collaudo del programma per leggere il sensore DHT11 con ESP32
 
-Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risultato finale, con il LED esterno che viene attivato per un secondo ed effettua una pausa di un secondo. In caso di malfunzionamento ti consiglio di controllare il verso del diodo LED, la connessione tra il filo rosso e il pin 18 dell’ESP32 e la connessione tra il filo nero e la massa dell’ESP32. Se neppure in questo caso riesci a far funzionare il programma prova a cambiare il cavetto USB.
+Dopo avere lanciato il monitor seriale dovresti leggere la temperatura e la umidità come nella immagine sopra. Se ciò non accade controlla di avere collegato il pin GPIO13 di ESP al connettore centrale del DHT11. Ricontrolla la connesssione del cavetto collegato al pin 5V dell'ESP e in casi estremi prova a cambiare il cavo USB.
 
 <br>
 <br>
