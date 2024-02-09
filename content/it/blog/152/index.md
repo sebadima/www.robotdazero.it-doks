@@ -25,9 +25,9 @@ mermaid: true
 
 Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa. Sono dei modelli estremamente popolari in parte per il basso costo in parte per la facilità di collegamento ad ESP32 e Arduino. Sono dei sensori digitali e pertanto non necessitano di conversione del voltaggio in uscita e inoltr non richiedono una resistenza di pull-up/pull-down. Un resisore da 10 KOhm si trova sempre incorporato nella basetta (salvo modelli super economici) e pertanto basta semplicemente collegarlo alla uscita a 5V di ESP32.
 
-Il DHT22
+#### Il DHT22
 
-Il DHT11 poddide un quasi gemello, il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e puoi effettuare letture solo ad intervalli di 2 secondi. Nel nostro tutorial useremo il DHT11.
+Il DHT11 possiede un quasi gemello, il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e puoi effettuare letture ad intervalli di 2 secondi. Nel nostro tutorial useremo solo il DHT11.
 
 ### Le specifiche del DHT11
 
@@ -45,23 +45,26 @@ Il DHT11 poddide un quasi gemello, il DHT22 con delle specifiche similari. Il se
 
 I sensori DHT hanno quattro pin come mostrato nella figura seguente. Tuttavia, se si ottiene il sensore DHT in una scheda breakout, viene fornito con solo tre pin e con una resistenza di pull-up interna sul pin 2.
 
-<img width="200" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
+<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="images/101.webp" alt="">
 
-La tabella seguente mostra il pinout del DHT11 a 4 pin. Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
+La tabella seguente mostra il pinout del DHT11 a <strong>4 pin</strong>. Quando il sensore è rivolto verso di te, la numerazione dei pin inizia da 1 da sinistra verso destra.
 
-Pin #1 3.3 V ~ 5.V
-Pin #2 Qualsiasi GPIO digitale dell'ESP32 (puoi anche collegare una resistenza di pull-up da 10 k Ohm)
-Pin #3 Non collegato
-Pin #4 GND
+- pin1: Alimentazionr da 3.3V fino a 5V
+- pin2: Qualsiasi GPIO digitale dell'ESP32 (con una resistenza)
+- pin3: Non collegato
+- pin4: GND
 
 
-La prossima mostra invece il pinout del DHT11 a 3 pin e quindi con resistenza di pull-up incorporata. 
+La prossima mostra invece il pinout del DHT11 a <strong>3 pin</strong> e quindi con resistenza di pull-up incorporata. 
 
-Pin #1 (GND) 
-Pin #2 (DATA) - Qualsiasi GPIO digitale dell'ESP32 
-Pin #3 (VCC) - 3.3 V ~ 5.V
+- pin1: (GND)
+- pin2: (DATA) - Uscita dati verso qualsiasi GPIO digitale dell'ESP32 
+- pin3: (VCC) - Alimentazione da 3.3V fino a 5V
 
 Nel progetto pilota useremo la versione a 3 pin.
+
+> <strong>Le resistenze di pull-up</strong> sono componenti utilizzate nei circuiti digitali per garantire che un segnale rimanga a un livello logico alto (1 logico) quando non è altrimenti definito. Questo è particolarmente importante in dispositivi a logica aperta (open-drain o open-collector) o quando si lavora con dispositivi a bassa corrente come i MOSFET.
+
 
 ## Il programma per leggere il sensore DHT11 con ESP32
 
@@ -73,7 +76,79 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Dopo alcuni istanti senza settare scheda o porta o lanciare il Monitoe Serial di Arduino vedrai i valori di Temperatura e Umidità rilevati dal sensore.
+Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare schedao o porta o installare librerie "a mano". Non serve neppure seguire i consigli di Arduin IDE che richiede una directory con un nome random prima di compilare.
+
+### Il programma main.ino
+
+
+```bash
+#include <Arduino.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+
+#define DHTPIN  13    // Pin #13 dell ESP32
+#define DHTTYPE DHT11 // DHT 11
+DHT dht(DHTPIN, DHTTYPE);
+
+float t;
+float h;
+
+
+void setup(){
+  Serial.begin(115200);
+  dht.begin();
+}
+
+void loop(){  
+    float newT = dht.readTemperature();
+
+    if (isnan(newT)) {
+      Serial.println("Non riesco a leggere il sensore DHT!");
+    }
+    else {
+      t = newT;
+      Serial.print("Temperatura = ");
+      Serial.println(t);
+    }
+
+    float newH = dht.readHumidity();
+
+    if (isnan(newH)) {
+      Serial.println("Non riesco a leggere il sensore DHT!");
+    }
+    else {
+      h = newH;
+      Serial.print("Umidità = ");
+      Serial.println(h);
+    }
+
+    delay(2000);
+}
+```
+
+Se hai scaricato da Github avrai l'amniente di sciluppo già pronto compreso il file sorgente, ma è utile dargli una occhiata se vuoi, ad esempio, apportare delle piccole modifiche.
+
+La struttura dati:<br> 
+DHT dht(DHTPIN, DHTTYPE);<br>
+serve a far funzionare il DHT11 isolandolo in un "oggetto" incapsulato, cui accedere solo chamando le funzioni predefinite senza andare a leggere variabili e puntatori.
+
+La funzione 
+<br>setup()<br> 
+non serve a nulla di speciale ma serve a settare la seriale a 115200 baud ed a inizlizzare in automatico l'"oggetto" per il DHT11.
+
+La istruzione: 
+<br>float newT = dht.readTemperature();<br>
+legge le temperatura mentre la if:<br>
+if (isnan(newT)) ...<br>
+permette di controllare se il DHT11 è davveo collegato e se arrivano i dati.
+
+Infine la istruzione:  
+<br>delay(2000);<br>
+serve ad introdurre un breve intervallo di un secondo, abbastzanza veloce per conreollare il movimento di un accendino nei paraggi del sensore
+
+
+
+
 
 ### Il collaudo del programma per leggere il sensore DHT11 con ESP32
 
