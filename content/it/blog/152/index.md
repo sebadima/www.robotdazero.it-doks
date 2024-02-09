@@ -128,21 +128,21 @@ void loop(){
 
 Se hai scaricato da Github avrai l'amniente di sciluppo già pronto compreso il file sorgente, ma è utile dargli una occhiata se vuoi, ad esempio, apportare delle piccole modifiche.
 
-La struttura dati:<br> 
+<strong>La struttura dati:<br></strong> 
 DHT dht(DHTPIN, DHTTYPE);<br>
-serve a far funzionare il DHT11 isolandolo in un "oggetto" incapsulato, cui accedere solo chamando le funzioni predefinite senza andare a leggere variabili e puntatori.
+serve a far funzionare il DHT11 isolandolo in un "oggetto" incapsulato, cui accedere solo chiamando le funzioni predefinite senza leggere variabili/puntatori.
 
-La funzione 
+<strong>La funzione</strong>:
 <br>setup()<br> 
-non serve a nulla di speciale ma serve a settare la seriale a 115200 baud ed a inizlizzare in automatico l'"oggetto" per il DHT11.
+non serve a nulla di speciale ma serve a settare la seriale a 115200 baud ed a inizializzare in automatico l'"oggetto" per il DHT11.
 
-La istruzione: 
+<strong>La istruzione: </strong>
 <br>float newT = dht.readTemperature();<br>
-legge le temperatura mentre la if:<br>
+legge le temperatura mentre la istruzione:<br>
 if (isnan(newT)) ...<br>
-permette di controllare se il DHT11 è davveo collegato e se arrivano i dati.
+permette di controllare se il DHT11 è davvero collegato e se arrivano i dati.
 
-Infine la istruzione:  
+<strong>Infine la istruzione:  </strong>
 <br>delay(2000);<br>
 serve ad introdurre un breve intervallo di un secondo, abbastzanza veloce per conreollare il movimento di un accendino nei paraggi del sensore
 
