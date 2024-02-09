@@ -22,7 +22,7 @@ mermaid: true
 
 ## Il programma "Blink"
 
-Il programma "Blink" per far lampeggiare l'ESP32 (o Arduino) è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni "Maker" lo vogliamo trattare in modo esteso prevedendo la compilazione sia con Arduino Ide che con PlatformIO.
+Il programma "Blink" per far lampeggiare l'ESP32 è l'equivalente IoT del classico "Hello world" dei linguaggi di programmazione. In questo articolo vederemo come compilarlo sia con Arduino Ide che con PlatformIO.
 
 ## Come compilare il programma "Blink" con Arduino IDE
 
@@ -58,6 +58,7 @@ Ora puoi aprire l'esempio di "Blink" predefinito in Arduino IDE.
 
 Se la compilazione ha successo, puoi caricare il programma sull'ESP32 facendo clic su Sketch -> Carica.
 
+
 ## Come compilare "Blink" usando Github.com
 
 Se non hai ancora installato PlatformIO sul tuo PC puoi leggere questo <a href="https://www.robotdazero.it/blog/come-installare-platformio/">post</a> del nostro blog. Usando questo compilatore, gli strumenti a linea di comando e i files presi da Github.com puoi migliorare la tua produttività in modo importante. <br>Infatti quando svilupperai i tuoi progetti sarai "sempre" alle prese con complessi comandi "<a href="/blog/come-installare-il-programma-git/">GIT</a>" sulla linea di comando. E commutare su Arduino Ide o Visual Studio ti costa molto più tempo che scrivere "make" sulla tastiera! 
@@ -68,7 +69,7 @@ Per compilare e testare il programma fai copia e incolla del testo sottostante e
 - la terza lancia il monitor sulla seriale.
 
 ```bash
-git clone git@github.com:sebadima/blinkESP32.git
+git clone https://github.com/sebadima/corso-ESP32-blink.git
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
@@ -91,22 +92,20 @@ Il codice è davvero breve e qui lo spieghiamo in dettaglio:
 #define LED 2
 
 void setup() {
-  // Setta il baud rate della seriale a 115200
+  // Setta la seriale a 115200 baud
   Serial.begin(115200);
-  // Setta il pin 2 in modalità OUTPUT
+  // Setta il pin 2 in modalità OUT
   pinMode(LED,OUTPUT);
 }
 
 void loop() {
-  delay(50);
   digitalWrite(LED,HIGH);
   Serial.println("Led è HIGH");
-  delay(50);
+  delay(2000);
   digitalWrite(LED,LOW);
   Serial.println("Led è LOW");
-}
-
-```
+  delay(2000);
+}```
 
 
 Carica il codice sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un **file platformio.ini** con il seguente contenuto:
@@ -162,4 +161,4 @@ Dopo avere creato il file, lancia la compilazione con "make" oppure carica il pr
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.149.0.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.149.1.2.2</p>
