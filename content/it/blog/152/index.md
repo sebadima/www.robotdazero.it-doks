@@ -27,7 +27,7 @@ Il sensore DHT11 viene usato per misurare la temperatura e l'umidità relativa. 
 
 #### Il DHT22
 
-Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e puoi effettuare letture ad intervalli di 2 secondi. Nel nostro tutorial useremo solo il DHT11.
+Il DHT11 ha un "quasi gemello", il DHT22 con delle specifiche similari. Il sensore DHT22 ha una risoluzione migliore e un campo di misura di temperatura e umidità più ampio. Tuttavia, è un poco più costoso e non può effettuare letture ad intervalli di 1 secondo. Nel nostro tutorial useremo solo il DHT11.
 
 ### Le specifiche del DHT11
 
@@ -67,7 +67,7 @@ Nel progetto pilota useremo la versione a 3 pin.
 > <strong>Le resistenze di pull-up</strong> sono componenti utilizzate nei circuiti digitali per garantire che un segnale rimanga a un livello logico alto (1 logico) quando non è altrimenti definito. Questo è particolarmente importante in dispositivi a logica aperta (open-drain o open-collector) o quando si lavora con dispositivi a bassa corrente come i MOSFET.
 
 
-### Lo schema elettrico
+## Lo schema elettrico
 
 Nello schema in basso:
 
@@ -93,7 +93,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0
 
 Dopo alcuni istanti vedrai i valori di Temperatura e Umidità rilevati dal sensore. Con Platformio non è necessario settare scheda, porta e installare librerie "a mano", un vantaggio non da poco. Il trucco è semplicissimo, i nomi e le versioni delle librerie sono scritte nel file platformio.ini e il comando "make" si occupa di scaricarle da internet, compilarle e linkarle.
 
-### Il programma main.ino
+### Il file main.ino
 
 
 ```bash
