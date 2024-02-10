@@ -133,6 +133,7 @@ Per compilare e testare il programma fai copia e incolla del testo sottostante e
 
 ```bash
 git clone https://github.com/sebadima/corso-ESP32-blink-external.git
+cd corso-ESP32-blink-external
 make upload
 ```
 
@@ -225,4 +226,4 @@ Sia che tu abbia usato Arduino IDE o PlatformIO dovresti avere lo stesso risulta
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.151.1.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.151.1.4.1</p>
