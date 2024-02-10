@@ -68,6 +68,7 @@ Per compilare e testare il programma fai copia e incolla del testo sottostante e
 
 ```bash
 git clone https://github.com/sebadima/corso-ESP32-blink.git
+cd corso-ESP32-blink
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
@@ -160,4 +161,4 @@ Dopo avere creato il file, lancia la compilazione con "make" oppure carica il pr
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.149.1.2.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.149.1.2.4</p>
