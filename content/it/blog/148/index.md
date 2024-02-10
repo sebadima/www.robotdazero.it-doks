@@ -89,6 +89,7 @@ Per compilare e testare il programma basta fare copia e incolla delle tre righe 
 
 ```bash
 git clone https://github.com/sebadima/corso-ESP32-analog_read.git
+cd corso-ESP32-analog_read
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
@@ -245,4 +246,4 @@ Il programma partirà dopo pochi secondi e anche in questo caso puoi vedere il f
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.2.1</p>
