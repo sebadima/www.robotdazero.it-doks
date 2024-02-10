@@ -184,7 +184,7 @@ void loop() {
 ```
 
 
-Carica il codice fornito sopra in un file **main.ino** e inoltre usa il tuo editor preferito per creare un file platformio.ini con il seguente contenuto:
+Crea una directory "**src**" e scrivi il codice fornito sopra in un file "**src\main.ino**". Inoltre usa il tuo editor preferito per creare un file platformio.ini con il seguente contenuto:
 
 #### platformio.ini
 ```bash
