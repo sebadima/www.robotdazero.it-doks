@@ -1,7 +1,7 @@
 ---
 title: "Come collegare un LED esterno ad ESP32"
 description: "Come collegare un LED esterno ad ESP32"
-excerpt: "Il programma Blink per far lampeggiare l'ESP32 è l'equivalente IoT del classico \"Hello world\" dei linguaggi di programmazione. Poichè la sua compilazione è un passaggio obbligato per ogni Maker..."
+excerpt: "L'ESP32 è diventato un componente essenziale per gli appassionati di elettronica e IoT, grazie alla sua flessibilità e potenza computazionale. Oggi, ci addentriamo nell'universo dell'ESP32 per imparare come collegare un semplice LED esterno e controllarlo attraverso questo microcontrollore, aprendo le porte a una vasta gamma di applicazioni creative...."
 date: 2024-02-03T01:19:42+01:00
 lastmod: 2024-02-03T01:19:42+01:00
 draft: false

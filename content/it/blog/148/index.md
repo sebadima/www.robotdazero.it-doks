@@ -1,7 +1,7 @@
 ---
 title: "Come leggere una porta analogica con ESP32"
 description: "Come leggere una porta analogica con ESP32"
-excerpt: "La scheda ESP32 riesce a leggere valori digitali e analogici dai suoi pin di ingresso: la operazione di lettura non presenta particolari difficoltà ma talvolta può essere noioso trovare i piedini liberi..."
+excerpt: "Le porte analogiche dell'ESP32 offrono un'interessante opportunità per acquisire dati di natura non digitale, aprendo la strada a una vasta gamma di applicazioni sensoriali. Scopriremo insieme come configurare e leggere con precisione queste porte per progetti di monitoraggio ambientale, controllo di dispositivi e molto altro...."
 date: 2024-01-31T09:19:42+01:00
 lastmod: 2024-01-31T09:19:42+01:00
 draft: false

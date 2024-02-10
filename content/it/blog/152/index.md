@@ -1,9 +1,9 @@
 ---
-title:       "Come leggere il sensore DHT11 con ESP32"
+title: "Come leggere il sensore DHT11 con ESP32"
 description: "Come leggere il sensore DHT11 con ESP32"
-excerpt:     "Il sensore DHT11 viene usato per misurare la temperatura e l’umidità relativa dell’aria. E' probabilmente il sensore digitale più popolare, in parte per il basso costo e in parte per la semplicità di collegamento..."
-date:        2024-02-07T01:19:42+01:00
-lastmod:     2024-02-07T01:19:42+01:00
+excerpt: "L'accurata misurazione della temperatura e dell'umidità è cruciale in molte applicazioni, dall'agricoltura all'automazione domestica. Grazie alla sua flessibilità e capacità di connessione, l'ESP32 si presenta come una scelta ideale per acquisire dati da sensori come il DHT11. Scopriamo insieme come configurare e leggere questo sensore utilizzando l'ESP32...."
+date: 2024-02-07T01:19:42+01:00
+lastmod: 2024-02-07T01:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
