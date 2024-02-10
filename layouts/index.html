@@ -7,8 +7,14 @@
       <div class="col-lg-9 col-xl-8 text-center">
          <p class="lead">{{ .Params.lead | safeHTML }}</p>
          <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}piattaforma/quick-start/" role="button">{{ i18n "get-started" }}</a>
-         <p class="meta">Open-source MIT Licensed. <a  aria-label="GitHub v0.5.0" href="https://gist.github.com/sebadima">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
-         <img width="400" src="/logo/esp32.png" alt="">
+
+
+         <!--
+         <p class="meta">Programmi free - licenza MIT: <a target="_blank" aria-label="GitHub v0.5.0" href="https://github.com/topics/robotdazero-corso-esp32">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+         -->
+
+         <p class="meta">Programmi free - licenza MIT: <a style="text-decoration:none;" aria-label="GitHub rel.1.2" href="https://github.com/topics/robotdazero-corso-esp32">GitHub rel.1.2</a></p>
+         <img width="256" src="/hog/builder-hog-03-VIQAWXPS.png" alt="">
          <!--
             <div class=bg-dots></div>
             -->
