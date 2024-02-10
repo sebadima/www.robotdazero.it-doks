@@ -1,7 +1,7 @@
 ---
 title: "Come funziona il Makefile di PlatformIO"
 description: "Come funziona il Makefile di PlatformIO"
-excerpt: "Il compilatore PlatformIO che noi usiamo per l’ESP32 funziona ottimamente con Visual Studio Code, ma spesso risulta più comodo usare la interfaccia a linea di comando..."
+excerpt: "Quando si tratta di progetti embedded, l'ottimizzazione del flusso di lavoro di sviluppo è fondamentale per il successo del progetto. Il file Makefile di PlatformIO si presenta come una soluzione elegante per semplificare e automatizzare il processo di compilazione, consentendo agli sviluppatori di concentrarsi maggiormente sullo sviluppo effettivo del codice...."
 date: 2024-02-02T09:19:42+01:00
 lastmod: 2024-02-02T09:19:42+01:00
 draft: false
@@ -65,4 +65,4 @@ update:
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.148.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.150.1.3.0</p>
