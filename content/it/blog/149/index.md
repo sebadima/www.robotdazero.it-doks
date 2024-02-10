@@ -1,7 +1,7 @@
 ---
 title: "Come far lampeggiare il LED interno dell'ESP32"
 description: "Come far lampeggiare il LED interno dell'ESP32"
-excerpt: "..."
+excerpt: "Vi mostreremo come mettere alla prova le vostre capacità di programmazione facendo lampeggiare il diodo LED interno dell'ESP32. Che siate principianti o esperti, questa guida vi aiuterà a sviluppare competenze pratiche e a scoprire nuovi modi per sfruttare al meglio questo incredibile dispositivo...."
 date: 2024-02-01T09:19:42+01:00
 lastmod: 2024-02-01T09:19:42+01:00
 draft: false
