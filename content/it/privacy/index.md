@@ -10,7 +10,7 @@ images: []
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
 
-<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="/hog/101.webp" alt="">
+<img width="115" class="x figure-img img-fluid lazyload blur-up"  src="/hog/101.webp" alt="">
 
 #### Titolare del Trattamento dei Dati:
 
