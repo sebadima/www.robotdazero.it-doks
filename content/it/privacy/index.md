@@ -1,6 +1,6 @@
 ---
 title: "La nostra privacy policy"
-description: "Non usiamo cookie di marketing e non raccogliamo alcun dato personale."
+description: "La nostra privacy policy"
 date: 2023-06-27T19:23:18+02:00
 lastmod: 2023-06-27T19:23:18+02:00
 draft: false
@@ -9,6 +9,8 @@ images: []
 
 
 Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i soggetti con cui i dati vengono condivisi, contatta il Titolare. 
+
+<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="/hog/101.webp" alt="">
 
 #### Titolare del Trattamento dei Dati:
 
@@ -59,11 +61,8 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire s
 ### Modifiche a questa privacy policy 
 Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se possibile, su questa Applicazione nonché, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui è in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina, facendo riferimento alla data di ultima modifica indicata in fondo. Qualora le modifiche interessino trattamenti la cui base giuridica è il consenso, il Titolare provvederà a raccogliere nuovamente il consenso dell’Utente, se necessario. 
 
-#### Definizioni e riferimenti legali 
-p2mxsajrqwkd9c7g
-
 ##### Ultima modifica: 
-03 Luglio 2023   
+08 Gennaio 2024   
 
 ##### Dove siamo: 
 Viale Akradina, 1 – 96100 – Siracusa
