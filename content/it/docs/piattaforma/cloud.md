@@ -14,8 +14,9 @@ toc: true
 ---
 
 
+<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="/124/img01002.svg" alt="">
 
-### Introduzione
+<br>
 
 Puoi preparare da solo la tua infrastruttura per far funzionare la nostra piattaforma ma ti suggeriamo di partire con la versione ospitata sui nostri computer che puoi richiedere gratuitamente visitando questa <a href="/docs/piattaforma/trial/">pagina</a>.
 
