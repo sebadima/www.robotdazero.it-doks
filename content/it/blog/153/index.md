@@ -44,7 +44,9 @@ Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-mod
 
 Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a resistenza variabile. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la concentrazione del gas nell'ambiente.
 
-Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un circuito di controllo e un dispositivo di rilevamento delle variazioni di resistenza. 
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un circuito di controllo e un dispositivo di rilevamento delle variazioni di resistenza.</div> 
 
 
 ##### L'elemento sensibile è solitamente un film sottile di materiale sensibile ai gas, che viene esposto all'ambiente circostante attraverso una griglia. 
@@ -57,29 +59,22 @@ Una delle caratteristiche distintive del sensore MQ-2 è la sua sensibilità e l
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Tuttavia, è importante notare</strong> che il sensore MQ-2 può essere influenzato da vari fattori ambientali come temperatura, umidità e interferenze da altri gas, il che può influire sulla sua precisione e affidabilità. Pertanto, è fondamentale calibrare e configurare il sensore correttamente per garantire prestazioni ottimali.</div><br>
 
-In conclusione, il sensore di gas MQ-2 è uno strumento prezioso per il rilevamento dei gas infiammabili e nocivi in ​​una varietà di contesti applicativi. Grazie alla sua sensibilità e alla sua capacità di rilevare una vasta gamma di gas, è ampiamente utilizzato in sistemi di monitoraggio e sicurezza per proteggere le persone, le strutture e l'ambiente da potenziali pericoli associati alla presenza di gas.
+Il sensore di gas MQ-2 è uno strumento prezioso per il rilevamento dei gas infiammabili e nocivi in una varietà di contesti applicativi. Grazie alla sua sensibilità e alla sua capacità di rilevare una vasta gamma di gas, è ampiamente utilizzato in sistemi di monitoraggio e sicurezza per proteggere le persone, le strutture e l'ambiente da potenziali pericoli associati alla presenza di gas.
 
 
 
-0000
+### Il funzionamento del sensore di gas MQ-2
 
-### +647854
+Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla <a href="https://incoedile.altervista.org/blog/le-unita-di-misura-dei-gas/" target="_blank">concentrazioni</a> di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
 
+> La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente
 
+### Le caratteristiche del sensore di gas MQ-2
 
-## Funzionamento del sensore di gas MQ-2
-
-Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
-
-> La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
-
-### Caratteristiche del sensore di gas MQ-2
-
-### we68f7
 
 Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
-Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 2 secondi.
+Tempo di risposta rapido: Il sensore ha un <a href="https://www.tecnosoft.eu/it/faq/tempo-di-risposta/" target="_blank">tempo di risposta</a> rapido, inferiore a 2 secondi.
 Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
 Costo contenuto: Il sensore ha un costo relativamente basso.
 Applicazioni:
@@ -88,7 +83,7 @@ Il sensore di gas MQ-2 è utilizzato in diverse applicazioni, tra cui:
 
 - Rilevamento di fughe di gas: Il sensore può essere utilizzato per rilevare fughe di gas in abitazioni, industrie e ambienti commerciali.
 - Sistemi di allarme antincendio: Il sensore può essere utilizzato in sistemi di allarme antincendio per rilevare la presenza di fumi e gas combustibili.
-- Controllo della qualità dell'aria: Il sensore può essere utilizzato per monitorare la qualità dell'aria in ambienti interni ed esterni.
+- Controllo della <a href="https://waqi.info/it/" target="_blank">qualità dell'aria</a>: Il sensore può essere utilizzato per monitorare la qualità dell'aria in ambienti interni ed esterni.
 - Domotica: Il sensore può essere utilizzato in sistemi di domotica per controllare la ventilazione e altri dispositivi in base alla qualità dell'aria.
 
 
@@ -124,18 +119,20 @@ Esistono diversi sensori di gas alternativi al sensore MQ-2, tra cui ti ricordo:
 
 Il sensore di gas MQ135 è un sensore a semiconduttore di tipologia chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
 
-Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica.
+> Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica.
 Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante.
-In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività.
+
+
+In presenza di gas, le molecole di gas si <a href="https://it.wikipedia.org/wiki/Adsorbimento" target="_blank">adsorbono</a> sulla superficie dell'<a href="https://it.wikipedia.org/wiki/Ossido" target="_blank">ossido</a> di stagno, provocando una diminuzione della conduttività.
 La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
 Caratteristiche:
 
-#### Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
+##### Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 
 Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
 
-#### Vantaggi dell' MQ135:
-
+### Perchè abbiamo usato l'MQ135 nel progetto
+  
 - Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 2 secondi.
 - Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
 - Costo contenuto: Il sensore ha un costo relativamente basso.
@@ -169,17 +166,17 @@ Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice
 Costo contenuto: Il sensore ha un costo relativamente basso.
 Applicazioni:
 
-Monitoraggio ambientale: Il sensore DHT11 può essere utilizzato per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni.
-Domotica: Il sensore DHT11 può essere utilizzato in sistemi di domotica per controllare la temperatura e l'umidità di casa.
-Stazioni meteorologiche: Il sensore DHT11 può essere utilizzato in stazioni meteorologiche per misurare la temperatura e l'umidità dell'aria.
-Incubatrici: Il sensore DHT11 può essere utilizzato in incubatrici per monitorare la temperatura e l'umidità.
-Serre: Il sensore DHT11 può essere utilizzato in serre per monitorare la temperatura e l'umidità.
-Vantaggi:
+##### Monitoraggio ambientale
 
+Questa mini stazione meteo con il sensore DHT11 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, come ad esempio:
 
+- Domotica: Il sensore può essere utilizzato per controllare la temperatura e l'umidità delle singole stanze.
+- Stazioni meteo per per misurare la temperatura e l'umidità dell'aria.
+- Serre: Il DHT11 può essere usato in serre per monitorare temperatura e umidità.
 
-<hr>
 <br>
+
+Vediamo adesso come installare il programma sull'ESP32: procederemo inizialmente ad usare PltformIO e poi vederemo come compiare con Arduino IDE. Andiamo sul terminale di Linux o sulla Windows *PowerShell* e facciamo copia e incolla del riquadro sotto.
 
 ```bash
 git clone git@github.com:sebadima/corso-esp32-centralina-multisensore.git
@@ -187,6 +184,37 @@ cd corso-esp32-centralina-multisensore
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
+
+Dopo avere premuto il tasto invio avremo questa sequenza dal terminale:
+
+```bash
+Cloning into 'corso-esp32-centralina-multisensore'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 36 (delta 11), reused 34 (delta 9), pack-reused 0
+Receiving objects: 100% (36/36), 6.22 KiB | 1.24 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+pio -f -c vim run --target upload
+Processing esp32dev (platform: espressif32; board: esp32dev; framework: arduino)
+```
+
+Platformio provvederà a compilare il programma, a scaricare le librerie e a linkarle al codice oggetto. Il codice oggetto compilato verrà quindi *uplodato* sulla scheda. In caso di problrmi con l'upload devi cambiare il file *platformio.ini* e modificare la porta utilizzata dall'ESP32. 
+
+> Se usi Linux in puoi trovare la porta utilizzata dalla scheda scrivendo: 
+
+```bash
+ls /dev/ttyUS*
+```
+
+mentre su Windows puoi usare il comando:
+
+```bash
+Get-CimInstance -Class Win32_SerialPort | Select-Object Name, Description, DeviceID
+```
+
+Il codice sorgente è molto semplice e puoi vederlo nel riquadro sotto:
+
 
 ```bash
 #include <Arduino.h>
@@ -251,7 +279,67 @@ void loop() {
 }
 ```
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="">
+
+
+
+##### La linea:
+
+```bash
+DHT dht(DHTPIN, DHTTYPE);
+```
+
+serve ad inizializzare nella RAM l'oggetto usato dalla librerie del drivere DHT11; poichè questo sensore effettua delle elaborazioni sul segnale elettrico rilevato è necessario usare un *oggetto* che nei lingauggi di programmazionw server  acontenere in modo ""sicuro" variabili e funzioni per il sensore.
+
+
+##### La linea:
+
+```bash
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
+```
+
+viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensioni di alimentazione e poichè stiamo usando l'ESP32 collegato al cavetto USB a 5V esatti preferiamo disabilitarlo per evitare (possibili) segnalazioni di errore. Nell'utilizzo con batterie a litio probabilmente può avere un senso riabilitarlo.
+
+##### Le linee:
+
+```bash
+  dht.begin();
+  pinMode(Gas_1, INPUT);
+  pinMode(Gas_2, INPUT);
+```
+
+servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le due successive servono soltanto a segnalare alla scheda che devono usare i due *pin* 33 e 35 come input.
+
+##### La linee:
+
+```bash
+h   = dht.readHumidity();
+t   = dht.readTemperature();  
+```
+servono a leggere umidità e temperatura usando le funzioni *intrinseche* dell'oggetto dht. Le funzioni sono introdotte dal "." come avviene per molti dei linguaggi di programmazione ad oggetti e nel C++ nel nostro caso.
+
+##### La linee:
+
+```bash
+g_1 = analogRead(Gas_1);
+g_2 = analogRead(Gas_2);
+```
+leggere invece solo il valore elettrico e quindi la tensione dei pin 33 e 35 usando una funzione standard di Arduino.
+La elaborazione del valore viene lasciata al codice dell'utente, a differenza di quanto riesce a fare il DHT11.
+
+##### Le linee:
+
+```bash
+if (isnan(g_1) )
+if (isnan(g_2) )
+if (isnan(t) )   
+```
+
+sono usate per tracciare gli errori dei tre sensori. Le causa degli errori potrebbero essere nell'ordine di probabilità 1. un errato collegamento dei connettori, 2. un problema grave come la rottura del sensore, un problema alla tensione della USB del computer, 4. un cavo USB difettoso parzialmente spezzato all'interno.
+
+<br>
+<br>
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schema elettrico fritzing della centralina multi sensore con ESP32">
 
 <br>
 <br>
