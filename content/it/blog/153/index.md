@@ -61,16 +61,21 @@ In conclusione, il sensore di gas MQ-2 è uno strumento prezioso per il rilevame
 
 
 
+0000
 
-+++
+### +647854
 
-### Funzionamento del sensore di gas MQ-2:
+
+
+## Funzionamento del sensore di gas MQ-2
 
 Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
 
 > La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
 
-### Caratteristiche del sensore di gas MQ-2:
+### Caratteristiche del sensore di gas MQ-2
+
+### we68f7
 
 Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
@@ -117,7 +122,61 @@ Esistono diversi sensori di gas alternativi al sensore MQ-2, tra cui ti ricordo:
 
 ## Il sensore di gas MQ135
 
+Il sensore di gas MQ135 è un sensore a semiconduttore di tipologia chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
+
+Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica.
+Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante.
+In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività.
+La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
+Caratteristiche:
+
+#### Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
+
+Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
+
+#### Vantaggi dell' MQ135:
+
+- Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 2 secondi.
+- Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
+- Costo contenuto: Il sensore ha un costo relativamente basso.
+
+In genere il sensore vienere usato per rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti amniente con un sensore a basso costo.
+
+
+
+
+
 ## Il sensore DHT11
+
+Come funziona il sensore DHT11:
+Il sensore DHT11 è un sensore digitale di temperatura e umidità dell'aria. 
+
+#### Sensore di temperatura: 
+Il sensore utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
+
+#### Sensore di umidità: 
+Per misurare l'umidità relativa, il DHT11 utilizza un condensatore a film polimerico con un dielettrico che varia in base all'umidità. Il cambiamento dell'umidità modifica la capacità del condensatore, che viene quindi convertita in un segnale elettrico.
+
+Circuito di controllo: Il DHT11 contiene un circuito integrato che regola il funzionamento del sensore, compresa la conversione delle variazioni di resistenza e capacità in segnali digitali interpretabili.
+
+Segnali digitali: Il sensore trasmette i dati di temperatura e umidità attraverso un segnale digitale seriale. Questi dati sono codificati in una sequenza di impulsi elettrici che possono essere letti da un microcontrollore o da un altro dispositivo elettronico.
+
+Accuratezza: ±1°C per la temperatura e ±5% per l'umidità.
+Risoluzione: 1°C per la temperatura e 1% per l'umidità.
+Gamma di misurazione: 0-50°C per la temperatura e 20-90% per l'umidità.
+Tempo di risposta: 1 secondo.
+Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
+Costo contenuto: Il sensore ha un costo relativamente basso.
+Applicazioni:
+
+Monitoraggio ambientale: Il sensore DHT11 può essere utilizzato per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni.
+Domotica: Il sensore DHT11 può essere utilizzato in sistemi di domotica per controllare la temperatura e l'umidità di casa.
+Stazioni meteorologiche: Il sensore DHT11 può essere utilizzato in stazioni meteorologiche per misurare la temperatura e l'umidità dell'aria.
+Incubatrici: Il sensore DHT11 può essere utilizzato in incubatrici per monitorare la temperatura e l'umidità.
+Serre: Il sensore DHT11 può essere utilizzato in serre per monitorare la temperatura e l'umidità.
+Vantaggi:
+
+
 
 <hr>
 <br>
