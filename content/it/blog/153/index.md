@@ -1,14 +1,14 @@
 ---
 title: "Una centralina multi sensore con ESP32"
 description: "Una centralina multi sensore con ESP32"
-excerpt: "Cattura ogni impurità dell'aria con questo semplicissimo progetto per ESP32! Puoi monitorare in modo estremamente preciso e in tempo reale la concentrazione di una decina di gas differenti nel tuo appartamento. Mai più gas non rilevati e cattiva qualità dell'aria con questa mini centralina. Scopri come usare i sensori MQ-2, MQ135 e DHT11 per..."
+excerpt: "Cattura ogni impurità dell'aria con questo semplicissimo progetto per ESP32! Puoi monitorare in modo estremamente preciso e in tempo reale la concentrazione di una decina di gas differenti nel tuo appartamento. Mai più gas non rilevati e cattiva qualità dell'aria con questa mini centralina. Scopri come usare i sensori MQ-2, MQ-135 e DHT11 per..."
 date: 2024-02-08T01:19:42+01:00
 lastmod: 2024-02-08T01:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["ESP32", "PlatformIO", "DHT11", "sensori", "MQ-2", "MQ135"]
+tags: ["ESP32", "PlatformIO", "DHT11", "sensori", "MQ-2", "MQ-135"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
@@ -115,9 +115,9 @@ Esistono diversi sensori di gas alternativi al sensore MQ-2, tra cui ti ricordo:
 **3**. Sensori a <a href="https://www.fisica.unina.it/documents/12375590/13725484/2790_VerdeC_18-12-2018.pdf/55f3bdb0-9060-47ee-95fc-870804ca16c0" target="_blank">stato solido</a>: Questi sensori sono più stabili e affidabili rispetto al sensore MQ-2.
 
 
-## Il sensore di gas MQ135
+## Il sensore di gas MQ-135
 
-Il sensore di gas MQ135 è un sensore a semiconduttore di tipologia chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
+Il sensore di gas MQ-135 è un sensore a semiconduttore di tipologia chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
 
 > Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica.
 Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante.
@@ -131,7 +131,7 @@ Caratteristiche:
 
 Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
 
-### Perchè abbiamo usato l'MQ135 nel progetto
+### Perchè abbiamo usato l'MQ-135 nel progetto
   
 - Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 2 secondi.
 - Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
@@ -311,7 +311,7 @@ viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta 
 
 servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le due successive servono soltanto a segnalare alla scheda che devono usare i due *pin* 33 e 35 come input.
 
-##### La linee:
+##### Le linee:
 
 ```bash
 h   = dht.readHumidity();
@@ -319,7 +319,7 @@ t   = dht.readTemperature();
 ```
 servono a leggere umidità e temperatura usando le funzioni *intrinseche* dell'oggetto dht. Le funzioni sono introdotte dal "." come avviene per molti dei linguaggi di programmazione ad oggetti e nel C++ nel nostro caso.
 
-##### La linee:
+##### Le linee:
 
 ```bash
 g_1 = analogRead(Gas_1);
@@ -336,7 +336,11 @@ if (isnan(g_2) )
 if (isnan(t) )   
 ```
 
-sono usate per tracciare gli errori dei tre sensori. Le causa degli errori potrebbero essere nell'ordine di probabilità 1. un errato collegamento dei connettori, 2. un problema grave come la rottura del sensore, un problema alla tensione della USB del computer, 4. un cavo USB difettoso parzialmente spezzato all'interno.
+sono usate per tracciare gli errori dei tre sensori. Le causa degli errori potrebbero essere nell'ordine di probabilità 
+- un errato collegamento dei connettori, 
+- un problema grave come la rottura del sensore, 
+- un problema alla tensione della USB del computer, 
+- un cavo USB difettoso e cioè parzialmente spezzato all'interno.
 
 <br>
 
@@ -353,4 +357,4 @@ Le connessioni (+) e (-) dei sensori sono facilitate dall breadboard e sono abba
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.0.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.2.0</p>
