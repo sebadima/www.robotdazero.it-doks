@@ -34,9 +34,9 @@ Il progetto è rivolto a hobbisti ed appassionati di elettronica con un livello 
 
 Cosa troverai in questo articolo:
 
-- Lista dei componenti necessari,
-- Schema elettrico della centralina,
-- Programma free per ESP32.
+- La lista dei componenti necessari,
+- Lo schema elettrico della centralina,
+- Il programma free per ESP32.
 
 ## Il sensore di gas MQ-2
 
@@ -147,18 +147,19 @@ In genere il sensore viene usato per rilevamento di fughe di gas e sistemi di si
 
 ## Il sensore DHT11
 
-Come funziona il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a>:
-Il sensore DHT11 è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale di temperatura e umidità dell'aria. 
+Il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a> è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale di temperatura e umidità dell'aria. Può svolgere il doppio ruolo di rilevazione della temperatura e della umidità: nel resto della sezione vedremo meglio come funziona in entrambi i casi.
 
-#### Sensore di temperatura: 
-Il sensore utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
+#### Sensore di temperatura
+Il DHT11 utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
 
-#### Sensore di umidità: 
+#### Sensore di umidità
 Per misurare l'umidità relativa, il DHT11 utilizza un condensatore a film polimerico con un dielettrico che varia in base all'umidità. Il cambiamento dell'umidità modifica la capacità del condensatore, che viene quindi convertita in un segnale elettrico.
 
-Circuito di controllo: Il DHT11 contiene un circuito integrato che regola il funzionamento del sensore, compresa la conversione delle variazioni di resistenza e capacità in segnali digitali interpretabili.
+#### I collegamenti
+Il DHT11 contiene un circuito integrato che regola il funzionamento del sensore, compresa la conversione delle variazioni di resistenza e capacità in segnali digitali interpretabili. Il DHT11 trasmette i dati di temperatura e umidità attraverso un segnale digitale seriale. Questi dati sono codificati in una sequenza di impulsi elettrici che sono letti dall'ESP32.
 
-Segnali digitali: Il sensore trasmette i dati di temperatura e umidità attraverso un segnale digitale seriale. Questi dati sono codificati in una sequenza di impulsi elettrici che possono essere letti da un microcontrollore o da un altro dispositivo elettronico.
+
+#### Le caratteristiche tecniche del DHT11
 
 - Accuratezza: ±1°C per la temperatura e ±5% per l'umidità.
 - Risoluzione: 1°C per la temperatura e 1% per l'umidità.
@@ -381,7 +382,7 @@ sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuor
 
 ### Troubleshooting
 
-Le causa degli errori potrebbero essere nell'ordine di probabilità:
+Se il progetto sembra non funzionare correttamente le cause degli errori potrebbero essere in ordine di probabilità:
 - un errato collegamento dei connettori, 
 - un problema grave come la rottura del sensore, 
 - un problema alla tensione della USB del computer, 
@@ -402,18 +403,17 @@ C'è un componente specifico che sembra essere la causa del problema?
 
 Una volta identificato il problema, è necessario controllare i collegamenti.
 Assicurati che tutti i collegamenti siano ben saldi e che non ci siano fili allentati o danneggiati.
-Controlla che i componenti siano collegati correttamente alla scheda <a href="/blog/esp32-i-segreti-del-suo-successo">ESP32</a>.
+Controlla che i componenti siano collegati correttamente all'<a href="/blog/esp32-i-segreti-del-suo-successo">ESP32</a>.
 
 <strong>3</strong>. Testare i componenti:
 
-Se il codice è corretto, è necessario testare i vari componenti elettronici.
 È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti.
 È possibile anche utilizzare un <a href="https://it.wikipedia.org/wiki/Oscilloscopio">oscilloscopio</a> per testare i segnali elettrici dei componenti.
 
 <strong>4</strong>. Sostituire i componenti danneggiati:
 
 Se un componente è danneggiato, è necessario sostituirlo.
-Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale, puoi usare i nostri link su Amazon o se preferisci usare componenti acquistate su Aliexpress.
+Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale. Puoi usare i nostri link su Amazon o se preferisci puoi acquistare i componenti da siti alternativi come Aliexpress.
 
 <br>
 <br>
