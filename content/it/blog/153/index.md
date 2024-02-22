@@ -25,8 +25,8 @@ L'avvento dell'Internet of Things (IoT) ha rivoluzionato il modo in cui interagi
 
 In questo articolo, presenteremo un progetto per la realizzazione di una centralina multi-sensore basata sulla scheda ESP32. La centralina sarà in grado di:
 
-- Rilevare la temperatura e l'umidità dell'ambiente.
-- Monitorare la qualità dell'aria.
+- Rilevare la temperatura e l'umidità dell'ambiente,
+- Monitorare la qualità dell'aria,
 - Rilevare la presenza di gas combustibili.
 
 
@@ -172,9 +172,31 @@ Applicazioni:
 
 Questa mini stazione meteo con il sensore DHT11 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, come ad esempio:
 
-- Domotica: Il sensore può essere utilizzato per controllare la temperatura e l'umidità delle singole stanze.
-- Stazioni meteo per per misurare la temperatura e l'umidità dell'aria.
+- Domotica: Il sensore può essere utilizzato per controllare la temperatura e l'umidità delle singole stanze,
+- Stazioni meteo per per misurare la temperatura e l'umidità dell'aria,
 - Serre: Il DHT11 può essere usato in serre per monitorare temperatura e umidità.
+
+
+### Componenti del progetto
+
+Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard
+
+- Sensore MQ-2 - vedi su <a href="https://amzn.to/49pwhrF" target="_blank">Amazon</a>
+- Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
+- Sensore DHT11 - vedi su <a href="https://amzn.to/49f2fqF" target="_blank">Amazon</a>
+- Scheda ESP32 - vedi su <a href="https://amzn.to/49Gig8Q" target="_blank">Amazon</a>
+
+
+## Lo schema elettrico
+
+Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa dell'ESP32 deve essere collegata al negativo comune della breadboard (non viene mostrato nella immagine per chiarezza, lo stesso per il cavo USB). 
+
+
+Le connessioni (+) e (-) dei sensori sono facilitate dall breadboard e sono abbastanza semplici: basta seguire il disegno. Le line dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
+<br>
+<br>
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schema elettrico fritzing della centralina multi sensore con ESP32">
 
 <br>
 
@@ -344,19 +366,5 @@ sono usate per tracciare gli errori dei tre sensori. Le causa degli errori potre
 - un problema alla tensione della USB del computer, 
 - un cavo USB difettoso e cioè parzialmente spezzato all'interno.
 
-<br>
-
-## Lo schema elettrico
-
-Per assemblare il progetto della centralina dovesti usare un breadboard o megli oancora unire due breadboard unite per la linea di mezzeria. La massa dell'ESP32 deve essere collegata al negativo comune della breadboard (non viene mostrato nella immagine per chiarezza, lo stesso per il cavo USB). 
-
-
-Le connessioni (+) e (-) dei sensori sono facilitate dall breadboard e sono abbastanza semplici: basta seguire il disegno. Le line dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
-<br>
-<br>
-
-<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schema elettrico fritzing della centralina multi sensore con ESP32">
-
-<br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.2.1</p>
