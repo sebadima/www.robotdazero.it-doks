@@ -160,15 +160,15 @@ Circuito di controllo: Il DHT11 contiene un circuito integrato che regola il fun
 
 Segnali digitali: Il sensore trasmette i dati di temperatura e umidità attraverso un segnale digitale seriale. Questi dati sono codificati in una sequenza di impulsi elettrici che possono essere letti da un microcontrollore o da un altro dispositivo elettronico.
 
-Accuratezza: ±1°C per la temperatura e ±5% per l'umidità.
-Risoluzione: 1°C per la temperatura e 1% per l'umidità.
-Gamma di misurazione: 0-50°C per la temperatura e 20-90% per l'umidità.
-Tempo di risposta: 1 secondo.
-Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
-Costo contenuto: Il sensore ha un costo relativamente basso.
-Applicazioni:
+- Accuratezza: ±1°C per la temperatura e ±5% per l'umidità.
+- Risoluzione: 1°C per la temperatura e 1% per l'umidità.
+- Gamma di misurazione: 0-50°C per la temperatura e 20-90% per l'umidità.
+- Tempo di risposta: 1 secondo.
+- Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
+- Costo contenuto: Il sensore ha un costo relativamente basso.
 
-##### Monitoraggio ambientale
+
+##### Usare il DHT11 per il monitoraggio ambientale
 
 Questa mini stazione meteo con il sensore DHT11 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, come ad esempio:
 
@@ -179,7 +179,7 @@ Questa mini stazione meteo con il sensore DHT11 può essere utilizzata per monit
 
 ### Componenti del progetto
 
-Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard
+Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard sono sufficienti per completare il montaggio. Ti ricordo che dovresti sempre usare dei colori *consistenti* nella scelta dei fili di collegamento ed usare, ad esempio solo Dupont neri o blu o marrone scuri per il negativo, Solo rossi per il positivo e gialli/verdi per il segnale elettrico. 
 
 - Sensore MQ-2 - vedi su <a href="https://amzn.to/49pwhrF" target="_blank">Amazon</a>
 - Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
