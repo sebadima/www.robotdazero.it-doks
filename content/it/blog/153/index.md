@@ -65,7 +65,6 @@ Il sensore è composto da un elemento riscaldante in <a href="https://it.wikiped
 
 ### Le caratteristiche del sensore di gas MQ-2
 
-
 Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
 Tempo di risposta rapido: Il sensore ha un <a href="https://www.tecnosoft.eu/it/faq/tempo-di-risposta/" target="_blank">tempo di risposta</a> rapido, inferiore a 2 secondi.
@@ -73,24 +72,25 @@ Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice
 Costo contenuto: Il sensore ha un costo relativamente basso.
 Applicazioni:
 
-Il sensore di gas MQ-2 è utilizzato in diverse applicazioni, tra cui:
+
+### I campi di applicazione del sensore di gas MQ-2
+A parte il semplice progetto che ti presentiamo, il sensore MQ-2 viene utilizzato in svariate applicazioni con Arduino ed ESP32 tra cui:
 
 - Rilevamento di fughe di gas: Il sensore può essere utilizzato per rilevare fughe di gas in abitazioni, industrie e ambienti commerciali.
 - Sistemi di allarme antincendio: Il sensore può essere utilizzato in sistemi di allarme antincendio per rilevare la presenza di fumi e gas combustibili.
 - Controllo della <a href="https://waqi.info/it/" target="_blank">qualità dell'aria</a>: Il sensore può essere utilizzato per monitorare la qualità dell'aria in ambienti interni ed esterni.
-- Domotica: Il sensore può essere utilizzato in sistemi di domotica per controllare la ventilazione e altri dispositivi in base alla qualità dell'aria.
+- Domotica: Il sensore può essere utilizzato in sistemi di domotica per controllare la ventilazione in base alla qualità dell'aria.
 
 #### Perchè abbiamo scelto il sensore MQ-2
 
-**Sensibilità elevata**: Il sensore è in grado di rilevare anche piccole concentrazioni di gas.
-Ampia gamma di rilevamento: Il sensore è in grado di rilevare una varietà di gas combustibili.
-Tempo di risposta rapido: Il sensore è in grado di rilevare la presenza di gas in modo rapido.
-Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione.
-Costo contenuto: Il sensore ha un costo relativamente basso.
+Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case. Le caratteristiche complessive del sensore sono comunque perfettamente adeguate e tra queste ti segnalo:
+
+- **Ampia gamma di rilevamento**: è in grado di rilevare una estesa varietà di gas combustibili.
+- **Facilità di utilizzo**: è facile da collegare e richiede solo una semplici alimentazione.
 
 ##### Sensori di gas alternativi:
 
-Esistono diversi sensori di gas alternativi al sensore MQ-2, tra cui ti ricordo:
+Esistono in commercio molti sensori di gas alternativi al sensore MQ-2 e tra questi ti ricordo:
 
 **1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
 
@@ -367,7 +367,7 @@ Se il progetto sembra non funzionare correttamente le cause degli errori potrebb
 - un cavo USB difettoso e cioè parzialmente spezzato all'interno.
 
 
-##### Come fare il Troubleshooting per un progetto con ESP32
+##### Come fare il troubleshooting per un progetto con ESP32
 
 
 <strong>1</strong>. Identificare il problema:
