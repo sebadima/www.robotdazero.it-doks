@@ -189,10 +189,10 @@ Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di sa
 
 ## Lo schema elettrico
 
-Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa dell'ESP32 deve essere collegata al negativo comune della breadboard (non viene mostrato nella immagine per chiarezza, lo stesso per il cavo USB). 
+Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa (**GND**) dell'ESP32 deve essere collegata al negativo comune della breadboard e il pin **5V** sempre dell'ESP32 deve essere collegato alla linea rossa della breadboard. 
 
 
-Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abbastanza semplici: basta seguire il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
+Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abbastanza semplici: basta seguire scrupolosamente il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
 <br>
 <br>
 
@@ -202,7 +202,7 @@ Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abb
 
 ## Il programma
 
-Vediamo adesso come installare il programma sull'ESP32: procederemo inizialmente ad usare PltformIO e poi vederemo come compilare con Arduino IDE. Andiamo sul terminale di Linux o sulla Windows *PowerShell* e facciamo copia e incolla del riquadro sotto.
+Vediamo adesso come installare il programma sull'ESP32: procederemo inizialmente ad usare PlatformIO e poi vederemo come compilare con Arduino IDE. Andiamo sul terminale di Linux o sulla Windows *PowerShell* e facciamo copia e incolla del riquadro sotto.
 
 ```bash
 git clone git@github.com:sebadima/corso-esp32-centralina-multisensore.git
@@ -306,7 +306,7 @@ void loop() {
 ```
 
 
-
+#### Un breve commento alle istruzioni del programma
 
 ##### La linea:
 
@@ -360,7 +360,17 @@ if (isnan(g_2) )
 if (isnan(t) )   
 ```
 
-sono usate per tracciare gli errori dei tre sensori. Le causa degli errori potrebbero essere nell'ordine di probabilità 
+sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infinitesimi. 
+
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>In informatica, NaN (Not a Number)</strong>, è un particolare simbolo che non è rappresentabile come un numero. Ad esempio il risultato della operazione 0/0 non è rappresentabile come un numero.L'uso sistematico delle NAN è stato introdotto dallo standard IEEE 754 in virgola mobile nel 1985, insieme alla rappresentazione di altre quantità non finite come gli infiniti.</div>
+
+
+
+### Troubleshooting
+
+Le causa degli errori potrebbero essere nell'ordine di probabilità 
 - un errato collegamento dei connettori, 
 - un problema grave come la rottura del sensore, 
 - un problema alla tensione della USB del computer, 
