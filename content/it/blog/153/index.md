@@ -50,7 +50,7 @@ Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di ga
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Dal punto di vista tecnico</strong>, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.</div> 
 
-
+<br>
 
 <strong>Il circuito di controllo</strong> è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
 
@@ -393,4 +393,4 @@ Assicurati di utilizzare un componente con le stesse caratteristiche del compone
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.4</p>
