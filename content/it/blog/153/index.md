@@ -132,9 +132,6 @@ Il sensore contiene un circuito integrato che si occupa di leggere la resistenza
 - Risoluzione: 1°C per la temperatura e 1% per l'umidità.
 - Gamma di misurazione: 0-50°C per la temperatura e 20-90% per l'umidità.
 - Tempo di risposta: 1 secondo.
-- Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
-- Costo contenuto: Il sensore ha un costo relativamente basso.
-
 
 ## Come usare questo progetto
 
@@ -149,7 +146,7 @@ Questa mini-stazione di controllo dotata di sensori DHT11, MQ-2 e MQ-135 può es
 
 Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard sono sufficienti per completare il montaggio. Ti ricordo che dovresti sempre usare dei colori *consistenti* nella scelta dei fili di collegamento ed usare, ad esempio solo Dupont neri o blu scuro per il negativo, solo rossi per il positivo e gialli/verdi per il segnale elettrico. 
 
-Lo schema di colori che ti ho suggerito è solo indicativo e puoi modificarlo secondo le tue preferenze ma ti consiglio di adottarne solo *uno* e di mantenere le tue scelte nel tempo. Oltre ai connettori ti servirà solo una breadboard.
+Lo schema di colori che ti ho suggerito è solo indicativo e puoi modificarlo secondo le tue preferenze ma ti consiglio di adottarne solo *uno* e di mantenere le tue scelte nel tempo. Oltre ai connettori ti servirà una breadboard.
 
 - Sensore MQ-2 - vedi su <a href="https://amzn.to/49pwhrF" target="_blank">Amazon</a>
 - Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
@@ -160,9 +157,9 @@ Lo schema di colori che ti ho suggerito è solo indicativo e puoi modificarlo se
 
 ## Lo schema elettrico
 
-Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa (**GND**) dell'ESP32 deve essere collegata al negativo comune della breadboard e il pin **5V** sempre dell'ESP32 deve essere collegato alla linea rossa della breadboard. 
+La massa (**GND**) dell'ESP32 deve essere collegata al negativo comune della breadboard e il pin **5V** sempre dell'ESP32 deve essere collegato alla linea rossa della breadboard. 
 
-Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abbastanza semplici: basta seguire scrupolosamente il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
+Le connessioni (+) e (-) dei sensori finiscono sulle righe rosse e blu della breadboard. L'assemblaggio non presenta grosse difficoltà: basta seguire scrupolosamente il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegati ai pin 33 e 35.
 <br>
 <br>
 
@@ -195,9 +192,9 @@ pio -f -c vim run --target upload
 Processing esp32dev (platform: espressif32; board: esp32dev; framework: arduino)
 ```
 
-Platformio provvederà a compilare il programma, a scaricare le librerie e a linkarle al codice oggetto. Il codice oggetto compilato verrà quindi *caricato* sulla scheda. In caso di problemi con l'upload devi cambiare il file *platformio.ini* e modificare la porta utilizzata dall'ESP32. 
+Platformio provvederà a compilare il programma, a scaricare le librerie e a linkarle al codice oggetto. Il codice oggetto compilato verrà quindi *caricato* sulla scheda. In caso di problemi con l'upload devi editare il file *platformio.ini* e modificare la porta utilizzata dall'ESP32. 
 
-> Se usi Linux in puoi trovare la porta utilizzata dalla scheda scrivendo: 
+> Se usi Linux puoi trovare la porta utilizzata dalla scheda scrivendo: 
 
 ```bash
 ls /dev/ttyUS*
@@ -295,7 +292,7 @@ Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori d
 DHT dht(DHTPIN, DHTTYPE);
 ```
 
-serve ad inizializzare nella RAM l'oggetto usato dalla librerie del driver DHT11; poichè questo sensore effettua delle elaborazioni sul segnale elettrico rilevato è necessario usare un *oggetto* che nei linguaggi di programmazione serve a contenere in modo ""sicuro" variabili e funzioni per il sensore.
+serve ad inizializzare nella RAM l'oggetto che rappresenta il *driver* per il DHT11. La istruzione *mappa* nella area "codice" di ESP32 funzioni e variabili interne tipiche della programmazione ad oggetti. A questi valori si può accedere solo usando i metodi di *interfaccia* tipici dei linguaggi "Object Oriented". Più in basso vedremo come il programma riesca ad usare l'oggetto "DHT dht()" per leggere istantaneamente la temperatura.
 
 
 ##### La linea:
@@ -304,7 +301,7 @@ serve ad inizializzare nella RAM l'oggetto usato dalla librerie del driver DHT11
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
 ```
 
-viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensioni di alimentazione. Poichè stiamo usando l'ESP32 collegato al cavetto USB preferiamo disabilitarlo per evitare improbabili e inutili segnalazioni di errore. Nel caso di alimentazione a batteria probabilmente può avere un senso riabilitarlo.
+viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensione di alimentazione. Poichè stiamo usando l'ESP32 collegato al cavetto USB preferiamo disabilitarlo per evitare improbabili e inutili segnalazioni di errore. Nel caso di alimentazione a batteria probabilmente può avere un senso riabilitarlo.
 
 ##### Le linee:
 
@@ -314,7 +311,7 @@ viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta 
   pinMode(Gas_2, INPUT);
 ```
 
-servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le due successive servono a segnalare alla scheda che deve usare i due *pin* 33 e 35 come input.
+servono la prima a lanciare la funzione di *start up* dell'oggetto DHT, mentre le due successive servono a segnalare alla scheda che deve usare i due *pin* 33 e 35 come input.
 
 ##### Le linee:
 
@@ -322,7 +319,7 @@ servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le 
 h   = dht.readHumidity();
 t   = dht.readTemperature();  
 ```
-servono a leggere umidità e temperatura usando le funzioni *intrinseche* dell'oggetto dht. Le funzioni sono introdotte dal "." come avviene per molti dei linguaggi di programmazione ad oggetti e nel C++ nel nostro caso.
+servono a leggere umidità e temperatura usando le funzioni *di interfaccia* dell'oggetto dht ovvero le funzioni *sicure* pensate dai progettisti per nascondere la reale complessità del codice interno. Le funzioni sono introdotte dal "." come avviene per molti dei linguaggi di programmazione ad oggetti e nel C++ in questo caso.
 
 ##### Le linee:
 
