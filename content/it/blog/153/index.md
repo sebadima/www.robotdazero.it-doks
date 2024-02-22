@@ -393,4 +393,4 @@ Assicurati di utilizzare un componente con le stesse caratteristiche del compone
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.2</p>
