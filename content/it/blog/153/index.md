@@ -305,6 +305,20 @@ void loop() {
 }
 ```
 
+### Come compilare con Arduino IDE
+
+segui questi passaggi:
+
+1. Apri Arduino IDE,
+2. Crea un nuovo progetto e clicca su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
+3. Incolla il codice "main.ino" che trovi sotto nell'area di testo principale, 
+4. Inserisci il codice facendo copia e incolla,
+5. Clicca sul pulsante "Verifica" nella barra degli strumenti,
+6. Collega la scheda Arduino al computer tramite un cavo USB,
+7. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
+8. Clicca sul pulsante "Carica" nella barra degli strumenti.
+
+Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
 #### Un breve commento alle istruzioni del programma
 
@@ -352,29 +366,30 @@ g_2 = analogRead(Gas_2);
 leggere invece solo il valore elettrico e quindi la tensione dei pin 33 e 35 usando una funzione standard di Arduino.
 La elaborazione del valore viene lasciata al codice dell'utente, a differenza di quanto riesce a fare il DHT11.
 
-##### Le linee:
+##### Infine le tre linee:
 
 ```bash
-if (isnan(g_1) )
-if (isnan(g_2) )
-if (isnan(t) )   
+if (isnan(g_1) ) ...
+if (isnan(g_2) ) ...
+if (isnan(t) )   ...
 ```
 
-sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infinitesimi. 
+sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infiniti (NaN). 
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>In informatica, NaN (Not a Number)</strong>, è un particolare simbolo che non è rappresentabile come un numero. Ad esempio il risultato della operazione 0/0 non è rappresentabile come un numero.L'uso sistematico delle NAN è stato introdotto dallo standard IEEE 754 in virgola mobile nel 1985, insieme alla rappresentazione di altre quantità non finite come gli infiniti.</div>
+<strong>In informatica, NaN (Not a Number)</strong>, è un particolare simbolo che non è rappresentabile come un numero. Ad esempio il risultato della operazione "0/0" non è rappresentabile come un numero. L'uso sistematico delle <strong>NAN</strong> è stato introdotto dallo <a href="https://en.wikipedia.org/wiki/IEEE_754"_blank">standard IEEE 754</a> in virgola mobile nel 1985.</div>
 
 
 
 ### Troubleshooting
 
-Le causa degli errori potrebbero essere nell'ordine di probabilità 
+Le causa degli errori potrebbero essere nell'ordine di probabilità:
 - un errato collegamento dei connettori, 
 - un problema grave come la rottura del sensore, 
 - un problema alla tensione della USB del computer, 
 - un cavo USB difettoso e cioè parzialmente spezzato all'interno.
 
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.2.1</p>
+<br>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.0</p>
