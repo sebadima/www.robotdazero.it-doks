@@ -311,7 +311,7 @@ viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta 
   pinMode(Gas_2, INPUT);
 ```
 
-servono la prima a lanciare la funzione di *start up* dell'oggetto DHT, mentre le due successive servono a segnalare alla scheda che deve usare i due *pin* 33 e 35 come input.
+servono la prima a lanciare la funzione di *start up* dell'oggetto "dht", mentre le due successive servono a segnalare all' ESP32 che deve usare i due *pin* 33 e 35 come input.
 
 ##### Le linee:
 
@@ -319,7 +319,7 @@ servono la prima a lanciare la funzione di *start up* dell'oggetto DHT, mentre l
 h   = dht.readHumidity();
 t   = dht.readTemperature();  
 ```
-servono a leggere umidità e temperatura usando le funzioni *di interfaccia* dell'oggetto dht ovvero le funzioni *sicure* pensate dai progettisti per nascondere la reale complessità del codice interno. Le funzioni sono introdotte dal "." come avviene per molti dei linguaggi di programmazione ad oggetti e nel C++ in questo caso.
+servono a leggere umidità e temperatura usando le funzioni *di interfaccia* dell'oggetto "dht" ovvero le funzioni sicure pensate dai progettisti per nascondere la complessità del codice interno. Le funzioni sono introdotte dal "." come stabilito dalla sintassi del C++.
 
 ##### Le linee:
 
@@ -327,8 +327,8 @@ servono a leggere umidità e temperatura usando le funzioni *di interfaccia* del
 g_1 = analogRead(Gas_1);
 g_2 = analogRead(Gas_2);
 ```
-servono a leggere la tensione fornita dai pin 33 e 35 usando la funzione standard di Arduino: analogRead().
-La elaborazione del valore viene lasciata al software, a differenza di quanto riesce a fare il DHT11.
+servono a leggere la tensione fornita dai pin 33 e 35 usando una funzione predefinita di Arduino: analogRead().
+La interpretazione del valore viene lasciata al software e all'utente, a differenza di quanto riesce a fare il DHT11.
 
 ##### Infine le tre linee:
 
