@@ -88,9 +88,7 @@ Il sensore di gas MQ-2 è utilizzato in diverse applicazioni, tra cui:
 - Controllo della <a href="https://waqi.info/it/" target="_blank">qualità dell'aria</a>: Il sensore può essere utilizzato per monitorare la qualità dell'aria in ambienti interni ed esterni.
 - Domotica: Il sensore può essere utilizzato in sistemi di domotica per controllare la ventilazione e altri dispositivi in base alla qualità dell'aria.
 
-
-
-#### Vantaggi:
+#### Perchè abbiamo scelto il sensore MQ-2
 
 **Sensibilità elevata**: Il sensore è in grado di rilevare anche piccole concentrazioni di gas.
 Ampia gamma di rilevamento: Il sensore è in grado di rilevare una varietà di gas combustibili.
@@ -98,23 +96,15 @@ Tempo di risposta rapido: Il sensore è in grado di rilevare la presenza di gas 
 Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione.
 Costo contenuto: Il sensore ha un costo relativamente basso.
 
-#### Svantaggi:
-
-**Sensibilità a interferenze**: Il sensore può essere sensibile a interferenze da parte di altri gas e vapori.
-Non selettivo: Il sensore non è in grado di distinguere tra diversi tipi di gas combustibili.
-Richiede calibrazione: Il sensore richiede una calibrazione periodica per mantenere la sua accuratezza.
-Durata limitata: Il sensore ha una durata limitata, che varia in base alle condizioni di utilizzo.
-Alternative:
-
 ##### Sensori di gas alternativi:
 
 Esistono diversi sensori di gas alternativi al sensore MQ-2, tra cui ti ricordo:
 
-**1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: Questi sensori sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
+**1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
 
-**2**. Sensori a infrarossi: Questi sensori sono in grado di rilevare la presenza di gas senza entrare in contatto con essi.
+**2**. Sensori a <a href="https://it.wikipedia.org/wiki/Sensore_a_infrarossi_passivo" target="_blank">infrarossi</a>: questi sensori sono in grado di rilevare la presenza di gas senza entrare in contatto con essi.
 
-**3**. Sensori a <a href="https://www.fisica.unina.it/documents/12375590/13725484/2790_VerdeC_18-12-2018.pdf/55f3bdb0-9060-47ee-95fc-870804ca16c0" target="_blank">stato solido</a>: Questi sensori sono più stabili e affidabili rispetto al sensore MQ-2.
+**3**. Sensori a <a href="https://www.fisica.unina.it/documents/12375590/13725484/2790_VerdeC_18-12-2018.pdf/55f3bdb0-9060-47ee-95fc-870804ca16c0" target="_blank">stato solido</a>: sono più stabili e affidabili rispetto al sensore MQ-2.
 
 
 ## Il sensore di gas MQ-135
@@ -140,10 +130,6 @@ Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilev
 - Costo contenuto: Il sensore ha un costo relativamente basso.
 
 In genere il sensore viene usato per rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti ambiente con un sensore a basso costo.
-
-
-
-
 
 ## Il sensore DHT11
 
