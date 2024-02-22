@@ -25,24 +25,26 @@ L'avvento dell'Internet of Things (IoT) ha rivoluzionato il modo in cui interagi
 
 In questo articolo, presenteremo un progetto per la realizzazione di una centralina multi-sensore basata sulla scheda ESP32. La centralina sarà in grado di:
 
-Rilevare la temperatura e l'umidità dell'ambiente.
-Monitorare la qualità dell'aria.
-Rilevare la presenza di gas combustibili.
+- Rilevare la temperatura e l'umidità dell'ambiente.
+- Monitorare la qualità dell'aria.
+- Rilevare la presenza di gas combustibili.
+
+
 Il progetto è rivolto a hobbisti ed appassionati di elettronica con un livello di conoscenza intermedio. La realizzazione della centralina richiede l'utilizzo di componenti elettronici di base, facilmente reperibili online o nei negozi di elettronica.
 
 Cosa troverai in questo articolo:
 
-Lista dei componenti necessari.
-Schema elettrico della centralina.
-Programma per ESP32.
+- Lista dei componenti necessari,
+- Schema elettrico della centralina,
+- Programma free per ESP32.
 
 ## Il sensore di gas MQ-2
 
-Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-modul" target="_blank">MQ-2</a> è un dispositivo elettronico ampiamente utilizzato per rilevare la presenza di vari gas nel suo ambiente circostante. Questo sensore è particolarmente noto per la sua capacità di rilevare gas <a href="https://www.vigilfuoco.it/sitiComandi/GestioneSiti/downloadFile.asp?s=181&f=106408" target="_blank">infiammabili</a> come metano, propano, butano, idrogeno e altri gas combustibili, oltre a essere sensibile anche a gas nocivi come fumi di sigaretta, alcol, ammoniaca e vapori di <a href="https://www.issalute.it/index.php/la-salute-dalla-a-alla-z-menu/b/benzene" target="_blank">benzene</a>. 
+Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-modul" target="_blank">MQ-2</a> è un dispositivo elettronico ampiamente utilizzato per rilevare la presenza di vari gas nel suo ambiente circostante. Questo sensore è particolarmente noto per la sua capacità di rilevare gas <a href="https://www.vigilfuoco.it/sitiComandi/GestioneSiti/downloadFile.asp?s=181&f=106408" target="_blank">infiammabili</a> come metano, propano, butano, idrogeno e altri gas combustibili, oltre a essere sensibile anche a gas nocivi come fumi di sigaretta, alcol, <a href="https://www.chemos.de/import/data/msds/IT_it/1336-21-6-A0023969-IT-it.pdf" target="_blank">ammoniaca</a> e vapori di <a href="https://www.issalute.it/index.php/la-salute-dalla-a-alla-z-menu/b/benzene" target="_blank">benzene</a>. 
 
 > Grazie alla sua versatilità e alle sue prestazioni affidabili, il sensore MQ-2 trova impiego in una vasta gamma di applicazioni, che vanno dalla sicurezza domestica e industriale al monitoraggio ambientale e alla sicurezza sul lavoro.
 
-Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a resistenza variabile. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la concentrazione del gas nell'ambiente.
+Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a <a href="https://it.emcelettronica.com/i-sensori-resistivi" target="_blank">resistenza variabile</a>. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la concentrazione del gas nell'ambiente.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -357,4 +359,4 @@ Le connessioni (+) e (-) dei sensori sono facilitate dall breadboard e sono abba
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.2.1</p>
