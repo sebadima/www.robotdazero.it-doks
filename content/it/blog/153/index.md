@@ -129,10 +129,10 @@ Il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a> è
 Il DHT11 utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
 
 #### Sensore di umidità
-Per misurare l'umidità relativa, il DHT11 utilizza un condensatore a film polimerico con un dielettrico che varia in base all'umidità. Il cambiamento dell'umidità modifica la capacità del condensatore, che viene quindi convertita in un segnale elettrico.
+Il DHT11 misura l'umidità relativa e per fare questo utilizza un condensatore a film polimerico con un dielettrico. Il dielettrico (isolante) al cambiamento dell'umidità modifica la capacità del condensatore. Le variazioni vengono quindi convertite in un segnale elettrico.
 
 #### I collegamenti
-Il DHT11 contiene un circuito integrato che regola il funzionamento del sensore, compresa la conversione delle variazioni di resistenza e capacità in segnali digitali interpretabili. Il DHT11 trasmette i dati di temperatura e umidità attraverso un segnale digitale seriale. Questi dati sono codificati in una sequenza di impulsi elettrici che sono letti dall'ESP32.
+Il sensore contiene un circuito integrato che si occupa di leggere la resistenza e la capacità in segnali digitali. Il circuito riesce a convertire i valori di temperatura e umidità in un segnale digitale standard. I dati così ottenuti vengono inviati all'ESP32 che con questo sistema non deve effettuare nessuna conversione.
 
 
 #### Le caratteristiche tecniche del DHT11
@@ -145,13 +145,13 @@ Il DHT11 contiene un circuito integrato che regola il funzionamento del sensore,
 - Costo contenuto: Il sensore ha un costo relativamente basso.
 
 
-##### Usare il DHT11 per il monitoraggio ambientale
+### Come usare questo progetto
 
-Questa mini stazione meteo con il sensore DHT11 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, come ad esempio:
+La nostra mini-stazione di controllo dotata di sensori DHT11, MQ-2 e MQ-135 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, e risulta ideale per applicazioni in questi settori:
 
-- Domotica: Il sensore può essere utilizzato per controllare la temperatura e l'umidità delle singole stanze,
-- Stazioni meteo per per misurare la temperatura e l'umidità dell'aria,
-- Serre: Il DHT11 può essere usato in serre per monitorare temperatura e umidità.
+- Domotica in genere: La centralina può controllare la temperatura e l'umidità delle singole stanze,
+- Rilevamento di gas pericolosi: La combinazione di MQ2 e MQ135 permette di controllare la maggior parte dei gas domestici pericolosi,
+- Gestione delle serre: Il DHT11 può essere usato nelle serre per monitorare temperatura e umidità.
 
 
 ### Componenti del progetto
