@@ -139,7 +139,7 @@ Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilev
 - Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
 - Costo contenuto: Il sensore ha un costo relativamente basso.
 
-In genere il sensore vienere usato per rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti amniente con un sensore a basso costo.
+In genere il sensore viene usato per rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti ambiente con un sensore a basso costo.
 
 
 
@@ -192,7 +192,7 @@ Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di sa
 Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa dell'ESP32 deve essere collegata al negativo comune della breadboard (non viene mostrato nella immagine per chiarezza, lo stesso per il cavo USB). 
 
 
-Le connessioni (+) e (-) dei sensori sono facilitate dall breadboard e sono abbastanza semplici: basta seguire il disegno. Le line dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
+Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abbastanza semplici: basta seguire il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
 <br>
 <br>
 
@@ -225,7 +225,7 @@ pio -f -c vim run --target upload
 Processing esp32dev (platform: espressif32; board: esp32dev; framework: arduino)
 ```
 
-Platformio provvederà a compilare il programma, a scaricare le librerie e a linkarle al codice oggetto. Il codice oggetto compilato verrà quindi *uplodato* sulla scheda. In caso di problrmi con l'upload devi cambiare il file *platformio.ini* e modificare la porta utilizzata dall'ESP32. 
+Platformio provvederà a compilare il programma, a scaricare le librerie e a linkarle al codice oggetto. Il codice oggetto compilato verrà quindi *caricato* sulla scheda. In caso di problemi con l'upload devi cambiare il file *platformio.ini* e modificare la porta utilizzata dall'ESP32. 
 
 > Se usi Linux in puoi trovare la porta utilizzata dalla scheda scrivendo: 
 
@@ -314,7 +314,7 @@ void loop() {
 DHT dht(DHTPIN, DHTTYPE);
 ```
 
-serve ad inizializzare nella RAM l'oggetto usato dalla librerie del drivere DHT11; poichè questo sensore effettua delle elaborazioni sul segnale elettrico rilevato è necessario usare un *oggetto* che nei lingauggi di programmazionw server  acontenere in modo ""sicuro" variabili e funzioni per il sensore.
+serve ad inizializzare nella RAM l'oggetto usato dalla librerie del driver DHT11; poichè questo sensore effettua delle elaborazioni sul segnale elettrico rilevato è necessario usare un *oggetto* che nei linguaggi di programmazione serve a contenere in modo ""sicuro" variabili e funzioni per il sensore.
 
 
 ##### La linea:
