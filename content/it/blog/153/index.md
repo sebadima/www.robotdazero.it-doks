@@ -55,15 +55,8 @@ Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti 
 
 Il circuito di controllo è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
 
-Una delle caratteristiche distintive del sensore MQ-2 è la sua sensibilità e la sua capacità di rilevare una vasta gamma di gas in modo rapido ed efficiente. 
-
-
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Tuttavia, è importante notare</strong> che il sensore MQ-2 può essere influenzato da vari fattori ambientali come temperatura, umidità e interferenze da altri gas, il che può influire sulla sua precisione e affidabilità. Pertanto, è fondamentale calibrare e configurare il sensore correttamente per garantire prestazioni ottimali.</div><br>
-
-Il sensore di gas MQ-2 è uno strumento prezioso per il rilevamento dei gas infiammabili e nocivi in una varietà di contesti applicativi. Grazie alla sua sensibilità e alla sua capacità di rilevare una vasta gamma di gas, è ampiamente utilizzato in sistemi di monitoraggio e sicurezza per proteggere le persone, le strutture e l'ambiente da potenziali pericoli associati alla presenza di gas.
-
-
 
 ### Il funzionamento del sensore di gas MQ-2
 
