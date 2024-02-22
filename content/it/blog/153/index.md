@@ -88,7 +88,7 @@ Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni cas
 - **Ampia gamma di rilevamento**: è in grado di rilevare una estesa varietà di gas combustibili.
 - **Facilità di utilizzo**: è facile da collegare e richiede solo una semplici alimentazione.
 
-##### Sensori di gas alternativi:
+##### Quali sono i sensori di gas alternativi
 
 Esistono in commercio molti sensori di gas alternativi al sensore MQ-2 e tra questi ti ricordo:
 
@@ -101,27 +101,25 @@ Esistono in commercio molti sensori di gas alternativi al sensore MQ-2 e tra que
 
 ## Il sensore di gas MQ-135
 
-Il sensore di gas MQ-135 è un sensore a semiconduttore di tipologia chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
+Il sensore di gas MQ-135 è un sensore a semiconduttore di tipo chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
 
-> Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica.
-Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria circostante.
+> Il sensore dell'MQ-135 è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. <br>Dopo il pre-riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria.
 
 
 In presenza di gas, le molecole di gas si <a href="https://it.wikipedia.org/wiki/Adsorbimento" target="_blank">adsorbono</a> sulla superficie dell'<a href="https://it.wikipedia.org/wiki/Ossido" target="_blank">ossido</a> di stagno, provocando una diminuzione della conduttività.
 La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
 Caratteristiche:
 
-##### Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
+##### Il punto saliente di questo sensore è sicuramente la sensibilità elevata: L'MQ-135 è fra i migliori dispositivi per tracciare gas potenzialmente pericolosi come GPL, propano e metano.
 
 Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
 
 ### Perchè abbiamo usato l'MQ-135 nel progetto
   
-- Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 2 secondi.
-- Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
-- Costo contenuto: Il sensore ha un costo relativamente basso.
+- Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 1.5 secondi.
+- Facilità di di utilizzo: è un prodotto "da scaffale" facile da utilizzare e richiede una banale alimentazione a 5V.
 
-In genere il sensore viene usato per rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti ambiente con un sensore a basso costo.
+In genere questo sensore viene usato per il rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti ambiente con un solo sensore a basso costo.
 
 ## Il sensore DHT11
 
