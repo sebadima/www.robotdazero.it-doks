@@ -44,7 +44,7 @@ Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-mod
 
 > Grazie alla sua versatilità e alle sue prestazioni affidabili, il sensore MQ-2 trova impiego in una vasta gamma di applicazioni, che vanno dalla sicurezza domestica e industriale al monitoraggio ambientale e alla sicurezza sul lavoro.
 
-Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a <a href="https://it.emcelettronica.com/i-sensori-resistivi" target="_blank">resistenza variabile</a>. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la concentrazione del gas nell'ambiente.
+Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a <a href="https://it.emcelettronica.com/i-sensori-resistivi" target="_blank">resistenza variabile</a>. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la <a href="https://www.arpa.veneto.it/temi-ambientali/aria/qualita-dellaria/approfondimenti/metodi-di-misura-inquinanti-atmosferici" target="_blank">concentrazione</a> del gas nell'ambiente.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -53,7 +53,7 @@ Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti 
 
 ##### L'elemento sensibile è solitamente un film sottile di materiale sensibile ai gas, che viene esposto all'ambiente circostante attraverso una griglia. 
 
-Il circuito di controllo è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un convertitore analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un microcontrollore o da un altro dispositivo elettronico.
+Il circuito di controllo è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
 
 Una delle caratteristiche distintive del sensore MQ-2 è la sua sensibilità e la sua capacità di rilevare una vasta gamma di gas in modo rapido ed efficiente. 
 
@@ -67,7 +67,7 @@ Il sensore di gas MQ-2 è uno strumento prezioso per il rilevamento dei gas infi
 
 ### Il funzionamento del sensore di gas MQ-2
 
-Il sensore è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla <a href="https://incoedile.altervista.org/blog/le-unita-di-misura-dei-gas/" target="_blank">concentrazioni</a> di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si adsorbono sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
+Il sensore è composto da un elemento riscaldante in <a href="https://it.wikipedia.org/wiki/Diossido_di_stagno" target="_blank">ossido di stagno</a> (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla <a href="https://incoedile.altervista.org/blog/le-unita-di-misura-dei-gas/" target="_blank">concentrazioni</a> di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si <a href="https://www.treccani.it/enciclopedia/adsorbimento/" target="_blank">adsorbono</a> sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
 
 > La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente
 
@@ -147,8 +147,8 @@ In genere il sensore vienere usato per rilevamento di fughe di gas e sistemi di 
 
 ## Il sensore DHT11
 
-Come funziona il sensore DHT11:
-Il sensore DHT11 è un sensore digitale di temperatura e umidità dell'aria. 
+Come funziona il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a>:
+Il sensore DHT11 è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale di temperatura e umidità dell'aria. 
 
 #### Sensore di temperatura: 
 Il sensore utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
