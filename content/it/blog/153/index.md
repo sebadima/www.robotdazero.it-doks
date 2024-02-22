@@ -42,22 +42,16 @@ Cosa troverai in questo articolo:
 
 Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-modul" target="_blank">MQ-2</a> è un dispositivo elettronico ampiamente utilizzato per rilevare la presenza di vari gas nel suo ambiente circostante. Questo sensore è particolarmente noto per la sua capacità di rilevare gas <a href="https://www.vigilfuoco.it/sitiComandi/GestioneSiti/downloadFile.asp?s=181&f=106408" target="_blank">infiammabili</a> come metano, propano, butano, idrogeno e altri gas combustibili, oltre a essere sensibile anche a gas nocivi come fumi di sigaretta, alcol, <a href="https://www.chemos.de/import/data/msds/IT_it/1336-21-6-A0023969-IT-it.pdf" target="_blank">ammoniaca</a> e vapori di <a href="https://www.issalute.it/index.php/la-salute-dalla-a-alla-z-menu/b/benzene" target="_blank">benzene</a>. 
 
-> Grazie alla sua versatilità e alle sue prestazioni affidabili, il sensore MQ-2 trova impiego in una vasta gamma di applicazioni, che vanno dalla sicurezza domestica e industriale al monitoraggio ambientale e alla sicurezza sul lavoro.
-
-Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a <a href="https://it.emcelettronica.com/i-sensori-resistivi" target="_blank">resistenza variabile</a>. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la <a href="https://www.arpa.veneto.it/temi-ambientali/aria/qualita-dellaria/approfondimenti/metodi-di-misura-inquinanti-atmosferici" target="_blank">concentrazione</a> del gas nell'ambiente.
-
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Dal punto di vista tecnico</strong>, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.</div> 
+> Il sensore MQ-2 si basa su una tecnologia di rilevamento nota come sensore di gas a <a href="https://it.emcelettronica.com/i-sensori-resistivi" target="_blank">resistenza variabile</a>. Questo tipo di sensore utilizza un elemento sensibile che reagisce chimicamente alla presenza di gas specifici, causando una variazione nella sua resistenza elettrica. Quando il gas viene rilevato, la resistenza dell'elemento sensibile cambia e questa variazione viene misurata per determinare la <a href="https://www.arpa.veneto.it/temi-ambientali/aria/qualita-dellaria/approfondimenti/metodi-di-misura-inquinanti-atmosferici" target="_blank">concentrazione</a> del gas nell'ambiente.
 
 <br>
 
+<strong>Dal punto di vista tecnico</strong>, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.
+
 <strong>Il circuito di controllo</strong> è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>Tuttavia, è importante notare</strong> che il sensore MQ-2 può essere influenzato da vari fattori ambientali come temperatura, umidità e interferenze da altri gas, il che può influire sulla sua precisione e affidabilità. Pertanto, è fondamentale calibrare e configurare il sensore correttamente per garantire prestazioni ottimali.</div><br>
 
-### Il funzionamento del sensore di gas MQ-2
+### Come funziona il sensore di gas MQ-2
 
 Il sensore è composto da un elemento riscaldante in <a href="https://it.wikipedia.org/wiki/Diossido_di_stagno" target="_blank">ossido di stagno</a> (SnO2) posizionato su un substrato di ceramica. Al riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla <a href="https://incoedile.altervista.org/blog/le-unita-di-misura-dei-gas/" target="_blank">concentrazioni</a> di gas combustibili presenti nell'aria circostante. In presenza di gas, le molecole di gas si <a href="https://www.treccani.it/enciclopedia/adsorbimento/" target="_blank">adsorbono</a> sulla superficie dell'ossido di stagno, provocando una diminuzione della conduttività. 
 
@@ -90,7 +84,7 @@ Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni cas
 
 ##### Quali sono i sensori di gas alternativi
 
-Esistono in commercio molti sensori di gas alternativi al sensore MQ-2 e tra questi ti ricordo:
+Esistono in commercio oltre +20 sensori di gas alternativi a MQ-2 e tra questi ti ricordo:
 
 **1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
 
