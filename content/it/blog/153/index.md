@@ -161,7 +161,6 @@ Lo schema di colori che ti ho suggerito è solo indicativo e puoi modificarlo se
 
 Per assemblare il progetto della centralina dovesti usare un breadboard o meglio ancora due breadboard unite per la linea di *mezzeria*. La massa (**GND**) dell'ESP32 deve essere collegata al negativo comune della breadboard e il pin **5V** sempre dell'ESP32 deve essere collegato alla linea rossa della breadboard. 
 
-
 Le connessioni (+) e (-) dei sensori sono facilitate dalla breadboard e sono abbastanza semplici: basta seguire scrupolosamente il disegno. Le linee dati dei sensori sono rappresentate in giallo. Il pin centrale del DHT11 viene collegato al pin 13 dell'ESP32 mentre i due sensori MQ sono collegate ai pin 33 e 35.
 <br>
 <br>
