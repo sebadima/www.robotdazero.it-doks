@@ -239,9 +239,7 @@ mentre su Windows puoi usare il comando:
 Get-CimInstance -Class Win32_SerialPort | Select-Object Name, Description, DeviceID
 ```
 
-Il codice sorgente è molto semplice e puoi vederlo nel riquadro sotto:
-
-
+### Il file principale "main.ino"
 ```bash
 #include <Arduino.h>
 #include "DHT.h"
