@@ -10,6 +10,11 @@ Per avere informazioni circa i tuoi dati personali raccolti, le finalità ed i s
 #### Titolare del Trattamento dei Dati:
 Robotdazero.it – Viale Acradina 1 – 96100 – Siracusa
 Indirizzo email del Titolare: info@robotdazero.it
+
+
+<img width="400" class="x figure-img img-fluid lazyload blur-up"  src="/hog/107.webp" alt="">
+
+
 ### Tipologie di Dati raccolti
 Il Titolare non fornisce una lista di tipologie di Dati Personali raccolti. Dettagli completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa privacy policy o mediante specifici testi informativi visualizzati prima della raccolta dei dati stessi. I Dati Personali possono essere liberamente forniti dall’Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente durante l’uso di questa Applicazione. Se non diversamente specificato, tutti i Dati richiesti da questa Applicazione sono obbligatori. Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per questa Applicazione fornire il Servizio. Nei casi in cui questa Applicazione indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ciò abbia alcuna conseguenza sulla disponibilità del Servizio o sulla sua operatività.
 Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare. L’eventuale utilizzo di Cookie – o di altri strumenti di tracciamento – da parte di questa Applicazione o dei titolari dei servizi terzi utilizzati da questa Applicazione, ove non diversamente precisato, ha la finalità di fornire il Servizio richiesto dall’Utente, oltre alle ulteriori finalità descritte nel presente documento e nella Cookie Policy, se disponibile. L’Utente si assume la responsabilità dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante questa Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilità verso terzi. Modalità e luogo del trattamento dei Dati raccolti
