@@ -46,7 +46,7 @@ Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-mod
 
 <br>
 
-<strong>Dal punto di vista tecnico</strong>, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.
+Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.
 
 <strong>Il circuito di controllo</strong> è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
 
@@ -57,14 +57,13 @@ Il sensore è composto da un elemento riscaldante in <a href="https://it.wikiped
 
 > La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente
 
-### Le caratteristiche del sensore di gas MQ-2
+### Le migliori qualità del sensore di gas MQ-2
 
-Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
-Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
-Tempo di risposta rapido: Il sensore ha un <a href="https://www.tecnosoft.eu/it/faq/tempo-di-risposta/" target="_blank">tempo di risposta</a> rapido, inferiore a 2 secondi.
-Facile da usare: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V.
-Costo contenuto: Il sensore ha un costo relativamente basso.
-Applicazioni:
+- Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
+- Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da **200** ppm a **10000** ppm.
+- Tempo di risposta rapido: Il sensore ha un <a href="https://www.tecnosoft.eu/it/faq/tempo-di-risposta/" target="_blank">tempo di risposta</a> rapido, inferiore a 2 secondi.
+- Facilità di utilizzo: Il sensore è facile da utilizzare e richiede solo una semplice alimentazione a 5V, erogabile dalla uscita a 5V di ESP32.
+- Costo contenuto: Il sensore ha un costo relativamente basso.
 
 
 ### I campi di applicazione del sensore di gas MQ-2
@@ -77,14 +76,11 @@ A parte il semplice progetto che ti presentiamo, il sensore MQ-2 viene utilizzat
 
 #### Perchè abbiamo scelto il sensore MQ-2
 
-Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case. Le caratteristiche complessive del sensore sono comunque perfettamente adeguate e tra queste ti segnalo:
-
-- **Ampia gamma di rilevamento**: è in grado di rilevare una estesa varietà di gas combustibili.
-- **Facilità di utilizzo**: è facile da collegare e richiede solo una semplici alimentazione.
+Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case. 
 
 ##### Quali sono i sensori di gas alternativi
 
-Esistono in commercio oltre +20 sensori di gas alternativi a MQ-2 e tra questi ti ricordo:
+Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2 e tra questi ti ricordo:
 
 **1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
 
@@ -139,9 +135,9 @@ Il sensore contiene un circuito integrato che si occupa di leggere la resistenza
 - Costo contenuto: Il sensore ha un costo relativamente basso.
 
 
-### Come usare questo progetto
+## Come usare questo progetto
 
-La nostra mini-stazione di controllo dotata di sensori DHT11, MQ-2 e MQ-135 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, e risulta ideale per applicazioni in questi settori:
+Questa mini-stazione di controllo dotata di sensori DHT11, MQ-2 e MQ-135 può essere utilizzata per monitorare la temperatura e l'umidità dell'aria in ambienti interni ed esterni, e risulta ideale per applicazioni in questi settori:
 
 - Domotica in genere: La centralina può controllare la temperatura e l'umidità delle singole stanze,
 - Rilevamento di gas pericolosi: La combinazione di MQ2 e MQ135 permette di controllare la maggior parte dei gas domestici pericolosi,
@@ -150,12 +146,15 @@ La nostra mini-stazione di controllo dotata di sensori DHT11, MQ-2 e MQ-135 può
 
 ### Componenti del progetto
 
-Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard sono sufficienti per completare il montaggio. Ti ricordo che dovresti sempre usare dei colori *consistenti* nella scelta dei fili di collegamento ed usare, ad esempio solo Dupont neri o blu o marrone scuri per il negativo, Solo rossi per il positivo e gialli/verdi per il segnale elettrico. 
+Il progetto non usa resistenze o altri componenti passivi e non ha bisogno di saldature: i connettori Dupont e una breadboard sono sufficienti per completare il montaggio. Ti ricordo che dovresti sempre usare dei colori *consistenti* nella scelta dei fili di collegamento ed usare, ad esempio solo Dupont neri o blu scuro per il negativo, solo rossi per il positivo e gialli/verdi per il segnale elettrico. 
+
+Lo schema di colori che ti ho suggerito è solo indicativo e puoi modificarlo secondo le tue preferenze ma ti consiglio di adottarne solo *uno* e di mantenere le tue scelte nel tempo. Oltre ai connettori ti servirà solo una breadboard.
 
 - Sensore MQ-2 - vedi su <a href="https://amzn.to/49pwhrF" target="_blank">Amazon</a>
 - Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
 - Sensore DHT11 - vedi su <a href="https://amzn.to/49f2fqF" target="_blank">Amazon</a>
 - Scheda ESP32 - vedi su <a href="https://amzn.to/49Gig8Q" target="_blank">Amazon</a>
+- Breadboard per montaggi elettronici (oppure 2 breadboard unite lungo la linea di mezzeria)
 
 
 ## Lo schema elettrico
