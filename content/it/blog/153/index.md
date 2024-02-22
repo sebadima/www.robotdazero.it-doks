@@ -307,16 +307,15 @@ void loop() {
 
 ### Come compilare con Arduino IDE
 
-segui questi passaggi:
+Segui questi passaggi:
 
 1. Apri Arduino IDE,
-2. Crea un nuovo progetto e clicca su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
+2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
 3. Incolla il codice "main.ino" che trovi sotto nell'area di testo principale, 
-4. Inserisci il codice facendo copia e incolla,
-5. Clicca sul pulsante "Verifica" nella barra degli strumenti,
-6. Collega la scheda Arduino al computer tramite un cavo USB,
-7. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
-8. Clicca sul pulsante "Carica" nella barra degli strumenti.
+4. Clicca sul pulsante "Verifica" nella barra degli strumenti,
+5. Se non ci sono errori collega la scheda Arduino al computer,
+6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
+7. Clicca sul pulsante "Carica" nella barra degli strumenti.
 
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
