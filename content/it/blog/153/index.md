@@ -48,7 +48,8 @@ Il sensore di gas <a href="https://www.az-delivery.de/it/products/gas-sensor-mod
 
 Dal punto di vista tecnico, il sensore MQ-2 è costituito da diversi componenti chiave, tra cui l'elemento sensibile, un <strong>circuito di controllo</strong> e un dispositivo di rilevamento delle variazioni di resistenza.
 
-<strong>Il circuito di controllo</strong> è responsabile della gestione delle operazioni del sensore, inclusa la conversione del segnale di resistenza in un segnale elettrico utilizzabile. Il dispositivo di rilevamento delle variazioni di resistenza è in genere un <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale che trasforma il segnale di resistenza in una lettura digitale che può essere interpretata da un <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollore</a> o da un altro dispositivo elettronico.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>Il circuito di controllo</strong> gestisce tutte le operazioni del sensore, inclusa la conversione del valore di resistenza in un segnale elettrico. Il dispositivo che legge il valore della resistenza si chiama <a href="https://it.wikipedia.org/wiki/Conversione_analogico-digitale" target="_blank">convertitore</a> analogico-digitale ed è in grado di trasformare la tensione analogica in un valore digitale. Tutti i moderni <a href="https://eurek.it/microcontrollori-cosa-sono-e-a-cosa-servono-nell-elettronica/" target="_blank">microcontrollori</a> come il nostro ESP32 riescono a leggere senza problemi i segnali digitali.</div>
 
 
 ### Come funziona il sensore di gas MQ-2
@@ -57,7 +58,7 @@ Il sensore è composto da un elemento riscaldante in <a href="https://it.wikiped
 
 > La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente
 
-### Le migliori qualità del sensore di gas MQ-2
+### Le caratteristiche del sensore di gas MQ-2
 
 - Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 - Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da **200** ppm a **10000** ppm.
@@ -78,9 +79,9 @@ A parte il semplice progetto che ti presentiamo, il sensore MQ-2 viene utilizzat
 
 Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case. 
 
-##### Quali sono i sensori di gas alternativi
+##### Le altre tipologie di sensori di gas
 
-Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2 e tra questi ti ricordo:
+Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2, grossomodo riconducibili a tre sole categorie:
 
 **1**. Sensori <a href="https://www.processsensing.com/it-it/blog/come-funzionano-i-sensori-elettrochimici.htm" target="_blank">elettrochimici</a>: sono più selettivi rispetto al sensore MQ-2 e sono in grado di distinguere tra diversi tipi di gas.
 
@@ -91,37 +92,37 @@ Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2 e tra questi ti
 
 ## Il sensore di gas MQ-135
 
-Il sensore di gas MQ-135 è un sensore a semiconduttore di tipo chemioresistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
+Il sensore di gas MQ-135 è un sensore a semiconduttore di tipo chemio-resistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
 
 > Il sensore dell'MQ-135 è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. <br>Dopo il pre-riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria.
 
 
 In presenza di gas, le molecole di gas si <a href="https://it.wikipedia.org/wiki/Adsorbimento" target="_blank">adsorbono</a> sulla superficie dell'<a href="https://it.wikipedia.org/wiki/Ossido" target="_blank">ossido</a> di stagno, provocando una diminuzione della conduttività.
 La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente.
-Caratteristiche:
 
-##### Il punto saliente di questo sensore è sicuramente la sensibilità elevata: L'MQ-135 è fra i migliori dispositivi per tracciare gas potenzialmente pericolosi come GPL, propano e metano.
+##### La qualità chiave di questo sensore è la sensibilità elevata:<br> L'MQ-135 è fra i migliori dispositivi per tracciare gas potenzialmente pericolosi come GPL, propano e metano.
 
 Possiede inoltre una ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da 200 ppm a 10000 ppm.
 
-### Perchè abbiamo usato l'MQ-135 nel progetto
+### Perchè abbiamo usato l'MQ-135 in questo progetto
   
-- Tempo di risposta rapido: Il sensore ha un tempo di risposta rapido, inferiore a 1.5 secondi.
-- Facilità di di utilizzo: è un prodotto "da scaffale" facile da utilizzare e richiede una banale alimentazione a 5V.
+A parte la somiglianza con l'MQ-2 e quindi la estrema robustezza del case metallico lo abbiamo selezionato per due motivi ben precisi:
 
-In genere questo sensore viene usato per il rilevamento di fughe di gas e sistemi di sistemi di allarme antincendio. Si può utilizzare vantaggiosamente per il controllo della qualità dell'aria e la Domotica in generale laddove abbiamo bisogno di monitorare molti ambiente con un solo sensore a basso costo.
+- Il tempo di risposta rapido: MQ-135 ha un tempo di risposta assai rapido, inferiore ai 2 secondi. Grazie a questa possiamo usarlo con vantaggio in questo prototipo, dove verosimilmente proveremo a testarlo "live" con svariati gas e vapori.
+- La facilità di di utilizzo: è un prodotto "da scaffale" facile da utilizzare e richiede una banale alimentazione a 5V. Le connessioni sono adatte ai connettori Dupont a differenza dei sensori industriali che *possono* richiedere saldature o connettori speciali.
+
 
 ## Il sensore DHT11
 
-Il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a> è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale di temperatura e umidità dell'aria. Può svolgere il doppio ruolo di rilevazione della temperatura e della umidità: nel resto della sezione vedremo meglio come funziona in entrambi i casi.
+Il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a> è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale che può svolgere il doppio ruolo di rilevazione della temperatura e della umidità: vediamo brevemente come funziona in entrambi i casi.
 
-#### Sensore di temperatura
+#### 1 - Sensore di temperatura
 Il DHT11 utilizza un termistore per rilevare la temperatura ambiente. Un termistore è un dispositivo resistivo la cui resistenza varia in base alla temperatura. Nel caso del DHT11, il termistore è costituito da un materiale il cui valore di resistenza diminuisce al crescere della temperatura.
 
-#### Sensore di umidità
+#### 2 - Sensore di umidità
 Il DHT11 misura l'umidità relativa e per fare questo utilizza un condensatore a film polimerico con un dielettrico. Il dielettrico (isolante) al cambiamento dell'umidità modifica la capacità del condensatore. Le variazioni vengono quindi convertite in un segnale elettrico.
 
-#### I collegamenti
+#### I collegamenti del DHT11
 Il sensore contiene un circuito integrato che si occupa di leggere la resistenza e la capacità in segnali digitali. Il circuito riesce a convertire i valori di temperatura e umidità in un segnale digitale standard. I dati così ottenuti vengono inviati all'ESP32 che con questo sistema non deve effettuare nessuna conversione.
 
 
@@ -303,7 +304,7 @@ serve ad inizializzare nella RAM l'oggetto usato dalla librerie del driver DHT11
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
 ```
 
-viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensioni di alimentazione e poichè stiamo usando l'ESP32 collegato al cavetto USB a 5V esatti preferiamo disabilitarlo per evitare (possibili) segnalazioni di errore. Nell'utilizzo con batterie a litio probabilmente può avere un senso riabilitarlo.
+viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensioni di alimentazione. Poichè stiamo usando l'ESP32 collegato al cavetto USB preferiamo disabilitarlo per evitare improbabili e inutili segnalazioni di errore. Nel caso di alimentazione a batteria probabilmente può avere un senso riabilitarlo.
 
 ##### Le linee:
 
@@ -313,7 +314,7 @@ viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta 
   pinMode(Gas_2, INPUT);
 ```
 
-servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le due successive servono soltanto a segnalare alla scheda che devono usare i due *pin* 33 e 35 come input.
+servono la prima a lanciare il codice di *start up* del driver DHT11, mentre le due successive servono a segnalare alla scheda che deve usare i due *pin* 33 e 35 come input.
 
 ##### Le linee:
 
@@ -329,8 +330,8 @@ servono a leggere umidità e temperatura usando le funzioni *intrinseche* dell'o
 g_1 = analogRead(Gas_1);
 g_2 = analogRead(Gas_2);
 ```
-leggere invece solo il valore elettrico e quindi la tensione dei pin 33 e 35 usando una funzione standard di Arduino.
-La elaborazione del valore viene lasciata al codice dell'utente, a differenza di quanto riesce a fare il DHT11.
+servono a leggere la tensione fornita dai pin 33 e 35 usando la funzione standard di Arduino: analogRead().
+La elaborazione del valore viene lasciata al software, a differenza di quanto riesce a fare il DHT11.
 
 ##### Infine le tre linee:
 
