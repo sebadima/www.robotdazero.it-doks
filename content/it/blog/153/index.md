@@ -387,6 +387,34 @@ Le causa degli errori potrebbero essere nell'ordine di probabilità:
 - un problema alla tensione della USB del computer, 
 - un cavo USB difettoso e cioè parzialmente spezzato all'interno.
 
+
+##### Come fare il Troubleshooting per un progetto con ESP32
+
+
+<strong>1</strong>. Identificare il problema:
+
+Il primo passo è identificare il problema che si sta verificando con il progetto.
+Quali sono i sintomi del problema?
+Quando si verifica il problema?
+C'è un componente specifico che sembra essere la causa del problema?
+
+<strong>2</strong>. Controllare i collegamenti:
+
+Una volta identificato il problema, è necessario controllare i collegamenti.
+Assicurati che tutti i collegamenti siano ben saldi e che non ci siano fili allentati o danneggiati.
+Controlla che i componenti siano collegati correttamente alla scheda <a href="/blog/esp32-i-segreti-del-suo-successo">ESP32</a>.
+
+<strong>3</strong>. Testare i componenti:
+
+Se il codice è corretto, è necessario testare i vari componenti elettronici.
+È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti.
+È possibile anche utilizzare un <a href="https://it.wikipedia.org/wiki/Oscilloscopio">oscilloscopio</a> per testare i segnali elettrici dei componenti.
+
+<strong>4</strong>. Sostituire i componenti danneggiati:
+
+Se un componente è danneggiato, è necessario sostituirlo.
+Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale, puoi usare i nostri link su Amazon o se preferisci usare componenti acquistate su Aliexpress.
+
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.0</p>
