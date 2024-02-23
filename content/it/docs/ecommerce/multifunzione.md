@@ -1,5 +1,5 @@
 ---
-title: "Multifunzione"
+title: "Scheda Multifunzione"
 description: "Multifunzione2."
 lead: "La nostra scheda Multifunzione presaldata"
 date: 2024-02-06T08:48:57+00:00
@@ -55,3 +55,5 @@ Semplifica il processo di apprendimento: Perfettamente adatta per principianti c
 Riduci i rischi di errori: La scheda pre-assemblata garantisce un minor numero di errori di connessione.
 Espandi le tue possibilità: Offre la possibilità di aggiungere ulteriori funzionalità con moduli aggiuntivi.
 Scegli la nostra scheda presaldati ESP32 e svela il tuo potenziale creativo!
+
+
