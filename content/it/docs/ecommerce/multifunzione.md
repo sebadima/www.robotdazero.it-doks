@@ -15,6 +15,8 @@ toc: true
 
 
 
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/multifunzione/101.webp" alt="">
+
 ### I vantaggi della nostra scheda Multifunzione
 
 Sblocca il potenziale dell'IoT con la nostra scheda presaldati ESP32!
@@ -56,4 +58,5 @@ Riduci i rischi di errori: La scheda pre-assemblata garantisce un minor numero d
 Espandi le tue possibilità: Offre la possibilità di aggiungere ulteriori funzionalità con moduli aggiuntivi.
 Scegli la nostra scheda presaldati ESP32 e svela il tuo potenziale creativo!
 
-
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/multifunzione/102.webp" alt="">
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/multifunzione/103.webp" alt="">
