@@ -411,8 +411,7 @@ Queste funzioni possono essere utilizzate per ottenere informazioni più precise
 <br>Utilizzare una <a href="https://www.aripordenone.it/progetto-sonda-alta-impedenza/" target="_blank">sonda</a> con un'impedenza di ingresso elevata per evitare di caricare il circuito.
 Impostare la scala di tensione e di tempo in modo da visualizzare correttamente il segnale.
 Utilizzare la funzione di trigger per catturare la porzione di segnale desiderata.
-Salvare le tracce acquisite per un'analisi successiva.
-Consultare il manuale dell'oscilloscopio per informazioni specifiche sulle sue funzioni.
+Salvare le tracce acquisite per un'analisi successiva e infine consultare il manuale dell'oscilloscopio per informazioni specifiche sulle sue funzioni.
 
 <br><strong>4</strong>. Sostituire i componenti danneggiati:
 
@@ -420,8 +419,8 @@ Se un componente è danneggiato, è necessario sostituirlo.
 Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale. Puoi usare i nostri link su Amazon o se preferisci puoi acquistare i componenti da siti alternativi come Aliexpress.
 
 ## Conclusioni
-Questo progetto di media complessità permette di controllare in modo estremamente preciso la qualità dell'aria e la presenza di gas nocivi e combustibili. Potreste assemblare la centralina in un contenitore chiuso per montaggi elettronici e magari aggiungere un display LCD per ottenere un prodotto realmente funzionale. Nel prossimo capitolo presenteremo una evoluzione di questo progetto dotandolo di un server web che può condividere i dati in tempo reale su un qualunque smartphone o PC collegato al Wi-Fi.
+Questo progetto di media complessità permette di controllare in modo estremamente preciso la qualità dell'aria e la presenza di gas nocivi e combustibili. Potresti assemblare la centralina in un contenitore chiuso per montaggi elettronici e magari aggiungere un display LCD per ottenere un prodotto funzionale. In seguito presenteremo una evoluzione di questo progetto dotandolo di un server web che può condividere i dati in tempo reale su un qualunque smartphone o PC collegato al Wi-Fi.
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.6.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.6.3</p>
