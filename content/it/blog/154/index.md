@@ -1,7 +1,7 @@
 ---
 title: "Come scrivere su un display LCD con ESP32"
 description: "Come scrivere su un display LCD con ESP32"
-excerpt: "Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario seguire questi passaggi..."
+excerpt: "In un mondo sempre più interconnesso, gli schermi a cristalli liquidi (LCD) giocano un ruolo fondamentale nell'Internet delle cose (IoT). Questa convergenza tra tecnologie tradizionali e moderne offre una vasta gamma di possibilità innovative e applicazioni pratiche. In questo articolo esploreremo il ruolo degli LCD nel mondo dell'IoT..."
 date: 2024-02-24T01:19:42+01:00
 lastmod: 2024-02-24T01:19:42+01:00
 draft: true
@@ -22,15 +22,18 @@ I display a cristalli liquidi (LCD) sono una tecnologia di visualizzazione ampia
 
 I cristalli liquidi sono una fase della materia che si trova tra lo stato solido e quello liquido. A differenza dei cristalli solidi, che hanno una struttura ordinata, i cristalli liquidi hanno una struttura disordinata. Tuttavia, a differenza dei liquidi, i cristalli liquidi hanno la capacità di allineare le loro molecole in un campo elettrico.
 
-> Nei display LCD, le molecole di cristalli liquidi sono disposte tra due strati di materiale polarizzante. Quando un campo elettrico viene applicato alle molecole, esse si allineano in modo da ruotare la polarizzazione della luce che le attraversa. La luce ruotata può quindi essere vista da un osservatore.
+> <strong>Nei display LCD</strong> le molecole di cristalli liquidi sono disposte tra due strati di materiale polarizzante. Quando un campo elettrico viene applicato alle molecole, esse si allineano in modo da ruotare la polarizzazione della luce che le attraversa. La luce ruotata può quindi essere vista da un osservatore.
 
 I display LCD sono composti da diversi componenti principali:
 
-Un pannello di vetro: Il pannello di vetro fornisce una superficie di supporto per gli altri componenti del display.
-Un filtro polarizzante: Il filtro polarizzante polarizza la luce che attraversa il display.
-Uno strato di cristalli liquidi: Lo strato di cristalli liquidi modula la luce che lo attraversa in base al campo elettrico applicato.
-Un altro filtro polarizzante: Il secondo filtro polarizzante blocca la luce che non è stata ruotata dalle molecole di cristalli liquidi.
-Un elettroluminescente (EL): L'elettroluminescente fornisce la luce che illumina il display.
+- Un pannello di vetro: Il pannello di vetro fornisce una superficie di supporto per gli altri componenti del display.
+- Un filtro polarizzante: Il filtro polarizzante polarizza la luce che attraversa il display.
+- Uno strato di cristalli liquidi: Lo strato di cristalli liquidi modula la luce che lo attraversa in base al campo elettrico applicato.
+- Un altro filtro polarizzante: Il secondo filtro polarizzante blocca la luce che non è stata ruotata dalle molecole di cristalli liquidi.
+- Un elettroluminescente (EL): L'elettroluminescente fornisce la luce che illumina il display.
+
+
+
 I display LCD sono disponibili in diverse varietà, tra cui:
 
 Display LCD a matrice passiva: I display LCD a matrice passiva sono i più semplici e convenienti. Tuttavia, hanno un tempo di risposta più lento e un angolo di visione più ristretto rispetto ad altri tipi di display LCD.
