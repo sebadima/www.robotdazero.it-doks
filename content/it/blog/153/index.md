@@ -94,7 +94,7 @@ Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2, grossomodo ric
 
 Il sensore di gas MQ-135 è un sensore a semiconduttore di tipo chemio-resistivo, progettato per rilevare la presenza di gas combustibili come GPL, propano, metano, idrogeno e fumi in aria.
 
-> Il sensore dell'MQ-135 è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. <br>Dopo il pre-riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria.
+> <strong>Il sensore dell'MQ-135</strong> è composto da un elemento riscaldante in ossido di stagno (SnO2) posizionato su un substrato di ceramica. <br>Dopo il pre-riscaldamento, l'elemento sensibile presenta una conduttività elettrica che varia in base alla concentrazione di gas combustibili presenti nell'aria.
 
 
 In presenza di gas, le molecole di gas si <a href="https://it.wikipedia.org/wiki/Adsorbimento" target="_blank">adsorbono</a> sulla superficie dell'<a href="https://it.wikipedia.org/wiki/Ossido" target="_blank">ossido</a> di stagno, provocando una diminuzione della conduttività.
