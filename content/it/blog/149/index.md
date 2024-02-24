@@ -1,7 +1,7 @@
 ---
 title: "Come far lampeggiare il LED interno dell'ESP32"
 description: "Come far lampeggiare il LED interno dell'ESP32"
-excerpt: "Se stai cercando un modo per aggiungere un tocco di dinamismo ai tuoi progetti con ESP32, il controllo del LED interno è un ottimo punto di partenza. In questa guida, impareremo a utilizzare le librerie Arduino per accendere, spegnere e modulare l'intensità luminosa di questo LED, aprendo la strada a una vasta gamma di applicazioni creative...."
+excerpt: "Se stai cercando un modo per aggiungere un tocco di dinamismo ai tuoi progetti con ESP32, il controllo del LED interno è un ottimo punto di partenza. In questa guida, impareremo a utilizzare le librerie Arduino per accendere, spegnere e modulare l'intensità luminosa di questo LED, aprendo ...."
 date: 2024-02-01T09:19:42+01:00
 lastmod: 2024-02-01T09:19:42+01:00
 draft: false
