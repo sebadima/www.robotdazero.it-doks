@@ -58,7 +58,7 @@ Il sensore è composto da un elemento riscaldante in <a href="https://it.wikiped
 
 > La variazione di conduttività viene misurata da un circuito elettrico e convertita in un segnale analogico proporzionale alla concentrazione di gas presente
 
-### Le caratteristiche del sensore di gas MQ-2
+### Le migliori qualità del sensore di gas MQ-2
 
 - Sensibilità elevata: Il sensore è particolarmente sensibile a gas combustibili come GPL, propano e metano.
 - Ampia gamma di rilevamento: Il sensore è in grado di rilevare concentrazioni di gas da **200** ppm a **10000** ppm.
@@ -75,10 +75,6 @@ A parte il semplice progetto che ti presentiamo, il sensore MQ-2 viene utilizzat
 - Controllo della <a href="https://waqi.info/it/" target="_blank">qualità dell'aria</a>: Il sensore può essere utilizzato per monitorare la qualità dell'aria in ambienti interni ed esterni.
 - Domotica: Il sensore può essere utilizzato in sistemi di domotica per controllare la ventilazione in base alla qualità dell'aria.
 
-#### Perchè abbiamo scelto il sensore MQ-2
-
-Noi di Robotdazero abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case. 
-
 ##### Le altre tipologie di sensori di gas
 
 Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2, grossomodo riconducibili a tre sole categorie:
@@ -88,6 +84,11 @@ Esistono in commercio oltre 40 sensori di gas alternativi a MQ-2, grossomodo ric
 **2**. Sensori a <a href="https://it.wikipedia.org/wiki/Sensore_a_infrarossi_passivo" target="_blank">infrarossi</a>: questi sensori sono in grado di rilevare la presenza di gas senza entrare in contatto con essi.
 
 **3**. Sensori a <a href="https://www.fisica.unina.it/documents/12375590/13725484/2790_VerdeC_18-12-2018.pdf/55f3bdb0-9060-47ee-95fc-870804ca16c0" target="_blank">stato solido</a>: sono più stabili e affidabili rispetto al sensore MQ-2.
+
+#### Perchè abbiamo scelto proprio il sensore MQ-2
+
+Abbiamo testato molti dei sensori alternativi e in alcuni casi abbiamo rilevato tempi di risposta più rapidi o maggiore omogeneità di risultati. Abbiamo comunque preferito l'MQ-2 per il rapporto qualità prezzo imbattibile e la robustezza del case metallico, ideale per la costruzione di un prototipo. 
+
 
 
 ## Il sensore di gas MQ-135
@@ -122,8 +123,8 @@ Il DHT11 utilizza un termistore per rilevare la temperatura ambiente. Un termist
 #### 2 - Sensore di umidità
 Il DHT11 misura l'umidità relativa e per fare questo utilizza un condensatore a film polimerico con un dielettrico. Il dielettrico (isolante) al cambiamento dell'umidità modifica la capacità del condensatore. Le variazioni vengono quindi convertite in un segnale elettrico.
 
-#### I collegamenti del DHT11
-Il sensore contiene un circuito integrato che si occupa di leggere la resistenza e la capacità in segnali digitali. Il circuito riesce a convertire i valori di temperatura e umidità in un segnale digitale standard. I dati così ottenuti vengono inviati all'ESP32 che con questo sistema non deve effettuare nessuna conversione.
+### Il funzionamento del DHT11
+Il sensore contiene un <a href="https://it.wikipedia.org/wiki/Circuito_integrato" target="_blank">circuito integrato</a> che si occupa di leggere la resistenza e la capacità in <a href="https://vitolavecchia.altervista.org/differenza-tra-segnale-digitale-e-analogico-in-elettronica/" target="_blank">segnali digitali</a>. Il circuito riesce a convertire i valori di temperatura e umidità in un segnale digitale standard. I dati così ottenuti vengono inviati all'ESP32 che con questo sistema non deve effettuare nessuna <a href="http://www.elemania.altervista.org/adda/campionamento/campdig.html" target="_blank">conversione</a>.
 
 
 #### Le caratteristiche tecniche del DHT11
