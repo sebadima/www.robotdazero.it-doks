@@ -127,6 +127,19 @@ Il DHT11 misura l'umidità relativa e per fare questo utilizza un condensatore a
 Il sensore contiene un <a href="https://it.wikipedia.org/wiki/Circuito_integrato" target="_blank">circuito integrato</a> che si occupa di leggere la resistenza e la capacità in <a href="https://vitolavecchia.altervista.org/differenza-tra-segnale-digitale-e-analogico-in-elettronica/" target="_blank">segnali digitali</a>. Il circuito riesce a convertire i valori di temperatura e umidità in un segnale digitale standard. I dati così ottenuti vengono inviati all'ESP32 che con questo sistema non deve effettuare nessuna <a href="http://www.elemania.altervista.org/adda/campionamento/campdig.html" target="_blank">conversione</a>.
 
 
+> <strong>I segnali digitali</strong> assumono solo due valori discreti, solitamente rappresentati come "0" e "1". In termini elettrici, questi valori possono corrispondere a due tensioni differenti, come 0V e 5V, oppure a due stati logici, come "vero" e "falso".
+<br>Caratteristiche:
+<br><strong>Ampiezza</strong>: I segnali digitali hanno un'ampiezza ben definita e non possono assumere valori intermedi tra i due livelli discreti.
+<br><strong>Frequenza</strong>: La frequenza di un segnale digitale rappresenta il numero di volte al secondo in cui il segnale cambia stato.
+<br><strong>Forma d'onda</strong>: La forma d'onda di un segnale digitale può essere quadrata, sinusoidale o di altra forma, a seconda dell'applicazione.
+<br>Esempi di segnali digitali: 1. Bit in un computer 2. Segnali di clock 3.Dati binari 4. 
+<br><br><strong>Segnali Analogici</strong>:
+I segnali analogici assumono un'ampiezza continua all'interno di un intervallo specificato. In altre parole, possono assumere qualsiasi valore all'interno di tale intervallo.
+<br>Caratteristiche:<br>
+<strong>Ampiezza</strong>: L'ampiezza di un segnale analogico varia in modo continuo in base al valore che rappresenta.
+<strong>Frequenza</strong>: La frequenza di un segnale analogico può essere costante o variabile, a seconda del tipo di segnale.
+<strong>Forma d'onda</strong>: La forma d'onda di un segnale analogico può essere sinusoidale, quadrata, triangolare o di altra forma, a seconda dell'applicazione.
+
 #### Le caratteristiche tecniche del DHT11
 
 - Accuratezza: ±1°C per la temperatura e ±5% per l'umidità.
@@ -336,7 +349,7 @@ La interpretazione del valore viene lasciata al software e all'utente, a differe
 ```bash
 if (isnan(g_1) ) ...
 if (isnan(g_2) ) ...
-if (isnan(t) )   ...
+if (isnan(t) ) ...
 ```
 
 sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infiniti (NaN). 
@@ -377,11 +390,38 @@ Controlla che i componenti siano collegati correttamente all'<a href="/blog/esp3
 È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti.
 È possibile anche utilizzare un <a href="https://it.wikipedia.org/wiki/Oscilloscopio">oscilloscopio</a> per testare i segnali elettrici dei componenti.
 
-<strong>4</strong>. Sostituire i componenti danneggiati:
+<br>
+
+> L'oscilloscopio può essere utilizzato per testare circuiti elettronici digitali con ESP32 in diversi modi:
+<br>1. <strong>Misurare la tensione</strong>:
+<br>L'oscilloscopio può essere utilizzato per misurare la tensione ai pin dell'ESP32 per verificare se i livelli logici sono corretti.
+<br>È importante utilizzare una sonda con una <a href="https://www.electroyou.it/vis_resource.php?section=DomRisp&id=364" target="_blank">impedenza</a> di ingresso elevata per evitare di caricare il circuito e influenzare le misure.
+<br>2. <strong>Misurare la frequenza</strong>:
+<br>L'oscilloscopio può essere utilizzato per misurare la frequenza di un segnale digitale, come ad esempio il clock del microcontrollore.La funzione di frequenza automatica (<a href="https://youtu.be/XF_RkKm_O2U?si=Ae0fCXvQXFmvJns0" target="_blank">autorange</a>) dell'oscilloscopio può facilitare questa misurazione.
+<br><strong>3. Visualizzare la forma d'onda</strong>:
+<br>L'oscilloscopio può essere utilizzato per visualizzare la forma d'onda di un segnale digitale.
+Questo può essere utile per identificare problemi come i ritardi di propagazione, i tempi di salita e discesa e le distorsioni del segnale.
+<br>4. <strong>"Triggerare" su un evento specifico</strong>:
+<br>L'oscilloscopio può essere configurato per triggerare l'acquisizione di una traccia su un evento specifico, come ad esempio un fronte di salita o discesa di un segnale.
+Questo può essere utile per catturare dettagli specifici del segnale che si desidera analizzare.
+<br>5. <strong>Usare le funzioni di analisi avanzate</strong>:
+<br>Gli oscilloscopi moderni offrono diverse funzioni di analisi avanzate, come ad esempio la misura del <a href="https://logicaprogrammabile.it/duty-cycle-guida-definitiva/" target="_blank">duty cycle</a>, la demodulazione AM/FM e l'analisi FFT.
+Queste funzioni possono essere utilizzate per ottenere informazioni più precise sul comportamento del circuito in esame.
+<br><br><strong>Consigli</strong> per testare circuiti digitali con ESP32:
+<br>Utilizzare una <a href="https://www.aripordenone.it/progetto-sonda-alta-impedenza/" target="_blank">sonda</a> con un'impedenza di ingresso elevata per evitare di caricare il circuito.
+Impostare la scala di tensione e di tempo in modo da visualizzare correttamente il segnale.
+Utilizzare la funzione di trigger per catturare la porzione di segnale desiderata.
+Salvare le tracce acquisite per un'analisi successiva.
+Consultare il manuale dell'oscilloscopio per informazioni specifiche sulle sue funzioni.
+
+<br><strong>4</strong>. Sostituire i componenti danneggiati:
 
 Se un componente è danneggiato, è necessario sostituirlo.
 Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale. Puoi usare i nostri link su Amazon o se preferisci puoi acquistare i componenti da siti alternativi come Aliexpress.
 
+## Conclusioni
+Questo progetto di media complessità permette di controllare in modo estremamente preciso la qualità dell'aria e la presenza di gas nocivi e combustibili. Potreste assemblare la centralina in un contenitore chiuso per montaggi elettronici e magari aggiungere un display LCD per ottenere un prodotto realmente funzionale. Nel prossimo capitolo presenteremo una evoluzione di questo progetto dotandolo di un server web che può condividere i dati in tempo reale su un qualunque smartphone o PC collegato al Wi-Fi.
+
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.4.4</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.153.1.6.2</p>
