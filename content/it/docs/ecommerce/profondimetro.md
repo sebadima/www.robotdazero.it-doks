@@ -23,7 +23,7 @@ toc: true
 
 ### Scegli la professione del futuro
 - in offerta a soli €139.00 - puoi pagare in 3 rate con Paypal o Klarna!
-- Il software è totalmente gratuito (<a href="https://github.com/sebadima/corso-esp32-profondimetro-digitale/blob/main/src/main.ino" target="_blank">link</a>) e la realizzazione del KIT alla portata di una persona con 6 mesi di esperienza nella microelettronica. 
+- Il software è totalmente gratuito (<a href="https://github.com/sebadima/corso-esp32-profondimetro-digitale/blob/main/src/main.ino" target="_blank">link</a>) e la realizzazione del KIT alla portata di una persona con 3 mesi di esperienza nella microelettronica. 
 - L'intero progetto è disponibile in scatola di montaggio con tutti i componenti, compresa la scatola semi-impermeabile in ABS e la minuteria per il montaggio. Permette di controllare mediante ultrasuoni il livello di ogni liquido fino alla profondità di 4 mt. 
 - La sonda a ultrasuoni è in resina impermeabile e resiste ai liquidi leggermente corrosivi. Il diametro della sonda è pari a 2.52 cm, perfetto per tubi e manicotti da un pollice (standard industriale) con gioco di 1 mm da sigillare con silicone neutro.
 
