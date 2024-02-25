@@ -44,16 +44,16 @@ toc: true
 - M. Scatola Derivazione Esterna dim. 30x22x12cm (pz 1)
 
 ### Acquistalo adesso
-Puoi pagare in tre rate con Paypal, Klarna o con carta di credito.
+Puoi pagare con carta di credito oppure in tre rate con Paypal e Klarna.
 
 <a class="btn btn-primary btn-lg px-4 mb-2" href="https://buy.stripe.com/28oeYmbIjbXvfUQbIV" role="button">Acquista</a>
 <br>
 <br>
 
-### Il kit completamente assemblato
+### Il kit completamente assemblato senza copertura
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/profondimetro/101.jpg" alt="">
 
-### La cornice del display in 3D Robotdazero
+### Il retro del display LCD 16x2 montato sul case
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/profondimetro/103.jpg" alt="">
 
