@@ -1,6 +1,6 @@
 ---
-title: "Profondimetro digitale"
-description: "Profondimetro digitale"
+title: "Profondimetro Digitale"
+description: "Profondimetro Digitale"
 lead: "Il nostro profondimetro digitale HW103 disponibile in scatola di montaggio."
 date: 2024-02-12T15:22:20+01:00
 lastmod: 2024-02-15T15:22:20+01:00
