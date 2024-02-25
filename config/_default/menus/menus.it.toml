@@ -39,7 +39,14 @@
   name = "Ecommerce"
   weight = 70
   identifier = "ecommerce"
-  url = "https://robotdazero.company.site/"
+  url = "/docs/ecommerce/"
+  parent = "get-started"
+
+[[main]]
+  name = "Profondimetro digitale"
+  weight = 80
+  identifier = "prondimetro-digitale"
+  url = "/docs/ecommerce/profondimetro/"
   parent = "get-started"
 
 [[social]]
