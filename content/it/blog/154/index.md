@@ -43,37 +43,32 @@ Fisicamente sono composti da almeno 4 diversi componenti principali:
 
 
 ## Utilizzo dei display LCD nel mondo IoT
-I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi.
+I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senzra gravare sui consumi ma anche nella economicitù del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IOT a basso costo, rendendoli il mezzo preferiro per la visualizzazione di informazioni testuali e grafiche.
 
-Vantaggi:
+Nella Domotica i display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti e il loro utilizzo non si limita alle "abitazioni" civili ma si estende all cosiddetta "Industria 4.0": I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
 
-Flessibilità: I display LCD sono disponibili in diverse dimensioni, risoluzioni e colori, adattandosi a differenti esigenze di visualizzazione.
-Efficienza energetica: I display LCD a basso consumo sono ideali per dispositivi alimentati a batteria, comuni nell'IoT.
-Costo: I display LCD sono relativamente economici, rendendoli accessibili per progetti IoT a basso budget.
-Interfaccia intuitiva: La visualizzazione di informazioni su un display LCD facilita la comprensione e l'interazione con un dispositivo IoT.
-Applicazioni:
-
-Domotica: I display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti.
-Industria 4.0: I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
-Wearables: I display LCD possono mostrare dati su fitness, salute e notifiche su smartwatch e fitness tracker.
-Monitoraggio ambientale: I display LCD possono mostrare dati su temperatura, inquinamento e altri parametri ambientali.
-Esempi di utilizzo:
-
-Termostato intelligente: Visualizza la temperatura ambiente e permette di regolare il setpoint.
-Smartwatch: Mostra l'ora, la frequenza cardiaca, le notifiche e altri dati fitness.
-Sensore di temperatura: Visualizza la temperatura ambiente in tempo reale.
-Sistema di irrigazione intelligente: Mostra lo stato del sistema e permette di regolare l'irrigazione.
-Integrazione con l'IoT:
+E se questo non bastasse a giustificare l'interesse ti ricordo come nelgi ultimi anni gli Smartwatch che mostrano: Ora, la frequenza cardiaca, le notifiche e altri dati fitness sono diventati accessorio comune tra gli appassionati di sport all'aria aperta.
 
 ## Protocolli di comunicazione per i display LCD
-I display LCD possono essere integrati con l'IoT utilizzando diversi protocolli di comunicazione, come:
+I display LCD non comunicano con segnali elettrici "grezzi" o solo con la seriali ma hanno attrirato nel tempo la attenzione dei progettisti che li hanno dotato di molteplici *protocolli* di comunicazione standard, tra cui il più interessante è il protocollo I2C, sviluppato in Origine da Samsung per i suoi televisori "smart".
 
-I2C: Protocollo di comunicazione seriale a due fili, adatto per brevi distanze.
-SPI: Protocollo di comunicazione seriale a quattro fili, più veloce di I2C.
-UART: Protocollo di comunicazione seriale asincrono, adatto per lunghe distanze.
-Wi-Fi: Permette la comunicazione wireless con altri dispositivi e server IoT.
-Bluetooth: Permette la comunicazione wireless a corto raggio con altri dispositivi IoT.
-Librerie e framework:
+> *Il protocollo I2C nell'IoT
+Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione seriale a due fili ampiamente utilizzata nell'Internet of Things (IoT) per la comunicazione tra dispositivi a corto raggio.
+<br>Il fattore chiave per la sua diffusione è stato certamente la semplicità di connessione: I2C richiede solo due fili di segnale (SDA e SCL) per la comunicazione, rendendolo facile da implementare e cablare.*
+
+
+Inoltre I2C è un protocollo a basso costo, poiché non richiede componenti costosi o complessi, può essere utilizzato per collegare una varietà di dispositivi, come sensori, attuatori, display e memorie.
+Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispositivi alimentati a batteria.
+
+#### Esempi di utilizzo di I2C
+
+I2C viene utilizzato nell'IoT in questi settori:
+
+**Smart home**: I2C viene utilizzato per collegare sensori e attuatori in sistemi di domotica intelligente, come termostati intelligenti, serrature intelligenti e luci intelligenti.
+**Industria 4.0**: I2C viene utilizzato per collegare sensori e attuatori in sistemi industriali, come robot, sistemi di monitoraggio e controllo e sistemi di automazione.
+**Wearables**: I2C viene utilizzato per collegare sensori e altri dispositivi a dispositivi indossabili, come smartwatch, fitness tracker e occhiali intelligenti.
+
+Esistono altri protocolli di comunicazione per collegare i display LCD, come ad esempio l'SPI: Protocollo di comunicazione seriale a quattro fili, più veloce di I2C e l'UART: Un Protocollo di comunicazione seriale asincrono, adatto per lunghe distanze. 
 
 Esistono diverse librerie e framework per semplificare l'utilizzo dei display LCD con l'IoT, come:
 
@@ -81,11 +76,7 @@ LiquidCrystal_I2C: Libreria per Arduino per la gestione di display LCD con inter
 U8g2: Libreria per la gestione di diversi tipi di display grafici.
 Adafruit_GFX: Libreria per la gestione di display grafici con diverse interfacce.
 
-
-
-
-
-
+Noi useremo il protocollo I2C per realizzare un progetto pilota per un sistema completo di monitoraggio ambientale a lunga distanza, basato sul protocollo ESP-Now.
 
 ## Come scrivere su un display LCD con I2C e ESP32
 Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario seguire questi passaggi:
