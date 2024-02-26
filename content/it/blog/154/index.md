@@ -20,22 +20,23 @@ mermaid: true
 ## Cosa sono i display LCD?
 I display a cristalli liquidi (LCD) sono una tecnologia di visualizzazione ampiamente utilizzata in un'ampia varietà di dispositivi, tra cui computer, smartphone, televisori e monitor. Funzionano sfruttando le proprietà ottiche dei cristalli liquidi per modulare la luce.
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>I cristalli liquidi sono una fase della materia</strong> che si trova tra lo stato solido e quello liquido. A differenza dei cristalli solidi, che hanno una struttura ordinata, i cristalli liquidi hanno una struttura disordinata. Tuttavia, a differenza dei liquidi, i cristalli liquidi hanno la capacità di allineare le loro molecole in un campo elettrico.</div>
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑 
+<strong>I cristalli liquidi sono</strong>  una fase della materia che si trova tra lo stato solido e quello liquido. A differenza dei cristalli solidi, che hanno una struttura ordinata, i cristalli liquidi hanno una struttura disordinata. Tuttavia, a differenza dei liquidi, i cristalli liquidi hanno la capacità di allineare le loro molecole in un campo elettrico.<br>Nei display LCD le molecole di cristalli liquidi sono disposte tra due strati di materiale polarizzante. Quando un campo elettrico viene applicato alle molecole, esse si allineano in modo da ruotare la polarizzazione della luce che le attraversa. La luce ruotata, infine viene quindi "notata" da un osservatore.</div>
 
-> <strong>Nei display LCD</strong> le molecole di cristalli liquidi sono disposte tra due strati di materiale polarizzante. Quando un campo elettrico viene applicato alle molecole, esse si allineano in modo da ruotare la polarizzazione della luce che le attraversa. La luce ruotata può quindi essere vista da un osservatore.
+<br>
 
-I display LCD sono composti da diversi componenti principali:
+Fisicamente sono composti da almeno 4 diversi componenti principali:
 
-- Un pannello di vetro: Il pannello di vetro fornisce una superficie di supporto per gli altri componenti del display.
-- Un filtro polarizzante: Il filtro polarizzante polarizza la luce che attraversa il display.
-- Uno strato di cristalli liquidi: Lo strato di cristalli liquidi modula la luce che lo attraversa in base al campo elettrico applicato.
-- Un altro filtro polarizzante: Il secondo filtro polarizzante blocca la luce che non è stata ruotata dalle molecole di cristalli liquidi.
-- Un elettroluminescente (EL): L'elettroluminescente fornisce la luce che illumina il display.
+- **Un pannello di vetro**: Il pannello di vetro fornisce una superficie di supporto per gli altri componenti del display.
+- **Un filtro polarizzante**: Il filtro polarizzante polarizza la luce che attraversa il display.
+- **Uno strato di cristalli liquidi*: Lo strato di cristalli liquidi modula la luce che lo attraversa in base al campo elettrico applicato.
+- **Un altro filtro polarizzante**: Il secondo filtro polarizzante blocca la luce che non è stata ruotata dalle molecole di cristalli liquidi.
+
+> *Nei display con retroilluminazione esiste un altro componente: Un **elettroluminescente (EL)**, in genere formato da più LED dello stesso colore, che fornisce la luce che illumina il display.*
 
 
 
-#### I display LCD sono disponibili in diverse varietà, tra cui:
+##### I display LCD sono disponibili in diverse varietà, tra cui:
 
 - Display LCD a matrice passiva: I display LCD a matrice passiva sono i più semplici e convenienti. Tuttavia, hanno un tempo di risposta più lento e un angolo di visione più ristretto rispetto ad altri tipi di display LCD.
 - Display LCD a matrice attiva: I display LCD a matrice attiva offrono una migliore qualità dell'immagine e un angolo di visione più ampio rispetto ai display LCD a matrice passiva. Tuttavia, sono anche più costosi.
@@ -65,7 +66,7 @@ Sistema di irrigazione intelligente: Mostra lo stato del sistema e permette di r
 Integrazione con l'IoT:
 
 ## Protocolli di comunicazione per i display LCD
-,I display LCD possono essere integrati con l'IoT utilizzando diversi protocolli di comunicazione, come:
+I display LCD possono essere integrati con l'IoT utilizzando diversi protocolli di comunicazione, come:
 
 I2C: Protocollo di comunicazione seriale a due fili, adatto per brevi distanze.
 SPI: Protocollo di comunicazione seriale a quattro fili, più veloce di I2C.
