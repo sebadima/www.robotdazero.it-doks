@@ -43,14 +43,14 @@ Fisicamente sono composti da almeno 4 diversi componenti principali:
 
 
 ## Utilizzo dei display LCD nel mondo IoT
-I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senzra gravare sui consumi ma anche nella economicitù del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IOT a basso costo, rendendoli il mezzo preferiro per la visualizzazione di informazioni testuali e grafiche.
+I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senza gravare sui consumi ma anche nella economicità del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IOT a basso costo, rendendoli il mezzo preferito per la visualizzazione di informazioni testuali e grafiche.
 
-Nella Domotica i display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti e il loro utilizzo non si limita alle "abitazioni" civili ma si estende all cosiddetta "Industria 4.0": I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
+Nella Domotica i display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti e il loro utilizzo non si limita alle "abitazioni" civili ma si estende alla cosiddetta "Industria 4.0": I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
 
-E se questo non bastasse a giustificare l'interesse ti ricordo come nelgi ultimi anni gli Smartwatch che mostrano: Ora, la frequenza cardiaca, le notifiche e altri dati fitness sono diventati accessorio comune tra gli appassionati di sport all'aria aperta.
+E se questo non bastasse a giustificare l'interesse ti ricordo come negli ultimi anni gli Smartwatch che mostrano: Ora, la frequenza cardiaca, le notifiche e altri dati fitness sono diventati accessorio comune tra gli appassionati di sport all'aria aperta.
 
 ## Protocolli di comunicazione per i display LCD
-I display LCD non comunicano con segnali elettrici "grezzi" o solo con la seriali ma hanno attrirato nel tempo la attenzione dei progettisti che li hanno dotato di molteplici *protocolli* di comunicazione standard, tra cui il più interessante è il protocollo I2C, sviluppato in Origine da Samsung per i suoi televisori "smart".
+I display LCD non comunicano con segnali elettrici "grezzi" o solo con la seriali ma hanno attirato nel tempo la attenzione dei progettisti che li hanno dotato di molteplici *protocolli* di comunicazione standard, tra cui il più interessante è il protocollo I2C, sviluppato in Origine da Samsung per i suoi televisori "smart".
 
 > *Il protocollo I2C nell'IoT
 Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione seriale a due fili ampiamente utilizzata nell'Internet of Things (IoT) per la comunicazione tra dispositivi a corto raggio.
@@ -74,7 +74,7 @@ Esistono diverse librerie e framework per semplificare l'utilizzo dei display LC
 
 LiquidCrystal_I2C: Libreria per Arduino per la gestione di display LCD con interfaccia I2C.
 U8g2: Libreria per la gestione di diversi tipi di display grafici.
-Adafruit_GFX: Libreria per la gestione di display grafici con diverse interfacce.
+Adafruit GFX: Libreria per la gestione di display grafici con diverse interfacce.
 
 Noi useremo il protocollo I2C per realizzare un progetto pilota per un sistema completo di monitoraggio ambientale a lunga distanza, basato sul protocollo ESP-Now.
 
@@ -243,11 +243,6 @@ Assicurati di Collega correttamente il display LCD ad ESP32.
 Controlla l'indirizzo I2C del tuo display LCD.
 Usa la funzione lcd.clear() per cancellare il contenuto del display.
 Puoi utilizzare la funzione lcd.setCursor(0, 0) per posizionare il cursore all'inizio del display.
-
-
-
-
-
 
 <br>
 <br>
