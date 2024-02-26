@@ -149,9 +149,6 @@ void loop()
 
 ```
 
-
-## Commento al programma
-
 ### Come compilare "main.ino" con Arduino IDE
 
 Segui questi passaggi:
@@ -168,22 +165,23 @@ Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori d
 
 #### Un breve commento alle istruzioni del programma
 
-##### La linea:
+##### Le linee:
 
 ```bash
-DHT dht(DHTPIN, DHTTYPE);
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
 ```
 
-serve ad inizializzare nella RAM l'oggetto che rappresenta il *driver* per il DHT11. La istruzione *mappa* nella area "codice" di ESP32 funzioni e variabili interne tipiche della programmazione ad oggetti. A questi valori si può accedere solo usando i metodi di *interfaccia* tipici dei linguaggi "Object Oriented". Più in basso vedremo come il programma riesca ad usare l'oggetto "DHT dht()" per leggere istantaneamente la temperatura.
+.....
 
-
-##### La linea:
+##### Le linee:
 
 ```bash
-  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
+#define I2C_SDA 23
+#define I2C_SCL 18
 ```
 
-viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensione di alimentazione. Poichè stiamo usando l'ESP32 collegato al cavetto USB preferiamo disabilitarlo per evitare improbabili e inutili segnalazioni di errore. Nel caso di alimentazione a batteria probabilmente può avere un senso riabilitarlo.
+...
 
 ##### Le linee:
 
@@ -195,32 +193,44 @@ viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta 
 
 servono la prima a lanciare la funzione di *start up* dell'oggetto "dht", mentre le due successive servono a segnalare all' ESP32 che deve usare i due *pin* 33 e 35 come input.
 
+##### Le linea:
+
+```bash
+Wire.begin(I2C_SDA, I2C_SCL, 10000); 
+```
+
+....
+
+
 ##### Le linee:
 
 ```bash
-h   = dht.readHumidity();
-t   = dht.readTemperature();  
-```
-servono a leggere umidità e temperatura usando le funzioni *di interfaccia* dell'oggetto "dht" ovvero le funzioni sicure pensate dai progettisti per nascondere la complessità del codice interno. Le funzioni sono introdotte dal "." come stabilito dalla sintassi del C++.
+  lcd.init(); 
+  lcd.clear();
+  lcd.backlight();
+  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
+  lcd.setCursor(0,0);  
 
-##### Le linee:
+```
+
+..................
+
+
+##### Infine le linee:
 
 ```bash
-g_1 = analogRead(Gas_1);
-g_2 = analogRead(Gas_2);
-```
-servono a leggere la tensione fornita dai pin 33 e 35 usando una funzione predefinita di Arduino: analogRead().
-La interpretazione del valore viene lasciata al software e all'utente, a differenza di quanto riesce a fare il DHT11.
-
-##### Infine le tre linee:
-
-```bash
-if (isnan(g_1) ) ...
-if (isnan(g_2) ) ...
-if (isnan(t) ) ...
+for (int ix=1; ix<=10; ix++) 
+{
+    lcd.clear();
+    Serial.println(ix);  
+    lcd.print(ix); 
+    delay(1000);  
+}
 ```
 
-sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infiniti (NaN). 
+servono a creare un loop ripetuto 10 volte dove, ad ogni ciclo 
+
+,..........
 
 
 ### Risorse utili
