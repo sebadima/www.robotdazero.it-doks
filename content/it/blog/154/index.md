@@ -20,7 +20,8 @@ mermaid: true
 ## Cosa sono i display LCD?
 I display a cristalli liquidi (LCD) sono una tecnologia di visualizzazione ampiamente utilizzata in un'ampia varietà di dispositivi, tra cui computer, smartphone, televisori e monitor. Funzionano sfruttando le proprietà ottiche dei cristalli liquidi per modulare la luce.
 
-I cristalli liquidi sono una fase della materia che si trova tra lo stato solido e quello liquido. A differenza dei cristalli solidi, che hanno una struttura ordinata, i cristalli liquidi hanno una struttura disordinata. Tuttavia, a differenza dei liquidi, i cristalli liquidi hanno la capacità di allineare le loro molecole in un campo elettrico.
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>I cristalli liquidi sono una fase della materia</strong> che si trova tra lo stato solido e quello liquido. A differenza dei cristalli solidi, che hanno una struttura ordinata, i cristalli liquidi hanno una struttura disordinata. Tuttavia, a differenza dei liquidi, i cristalli liquidi hanno la capacità di allineare le loro molecole in un campo elettrico.</div>
 
 > <strong>Nei display LCD</strong> le molecole di cristalli liquidi sono disposte tra due strati di materiale polarizzante. Quando un campo elettrico viene applicato alle molecole, esse si allineano in modo da ruotare la polarizzazione della luce che le attraversa. La luce ruotata può quindi essere vista da un osservatore.
 
@@ -34,15 +35,10 @@ I display LCD sono composti da diversi componenti principali:
 
 
 
-I display LCD sono disponibili in diverse varietà, tra cui:
+#### I display LCD sono disponibili in diverse varietà, tra cui:
 
-Display LCD a matrice passiva: I display LCD a matrice passiva sono i più semplici e convenienti. Tuttavia, hanno un tempo di risposta più lento e un angolo di visione più ristretto rispetto ad altri tipi di display LCD.
-Display LCD a matrice attiva: I display LCD a matrice attiva offrono una migliore qualità dell'immagine e un angolo di visione più ampio rispetto ai display LCD a matrice passiva. Tuttavia, sono anche più costosi.
-Display LCD transflective: I display LCD transflective sono progettati per essere utilizzati in ambienti con luce intensa. Riflettono la luce ambientale per migliorare la visibilità.
-Display LCD a basso consumo: I display LCD a basso consumo sono progettati per consumare meno energia rispetto ad altri tipi di display LCD. Sono ideali per dispositivi alimentati a batteria.
-
-
-
+- Display LCD a matrice passiva: I display LCD a matrice passiva sono i più semplici e convenienti. Tuttavia, hanno un tempo di risposta più lento e un angolo di visione più ristretto rispetto ad altri tipi di display LCD.
+- Display LCD a matrice attiva: I display LCD a matrice attiva offrono una migliore qualità dell'immagine e un angolo di visione più ampio rispetto ai display LCD a matrice passiva. Tuttavia, sono anche più costosi.
 
 
 ## Utilizzo dei display LCD nel mondo IoT
@@ -68,7 +64,8 @@ Sensore di temperatura: Visualizza la temperatura ambiente in tempo reale.
 Sistema di irrigazione intelligente: Mostra lo stato del sistema e permette di regolare l'irrigazione.
 Integrazione con l'IoT:
 
-I display LCD possono essere integrati con l'IoT utilizzando diversi protocolli di comunicazione, come:
+## Protocolli di comunicazione per i display LCD
+,I display LCD possono essere integrati con l'IoT utilizzando diversi protocolli di comunicazione, come:
 
 I2C: Protocollo di comunicazione seriale a due fili, adatto per brevi distanze.
 SPI: Protocollo di comunicazione seriale a quattro fili, più veloce di I2C.
@@ -89,7 +86,7 @@ Adafruit_GFX: Libreria per la gestione di display grafici con diverse interfacce
 
 
 
-Scrivere su un display LCD con I2C e ESP32:
+## Come scrivere su un display LCD con I2C e ESP32
 Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario seguire questi passaggi:
 
 1. Collega il display LCD ad ESP32:
@@ -100,7 +97,7 @@ Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario s
 - Collega il pin SCL del display LCD al pin SCL (GPIO 18) di ESP32.
 - Collega il pin di contrasto del display LCD a un pin analogico di ESP32 (ad esempio, A0).
 
-2. Installare la libreria LiquidCrystal_I2C:
+#### La libreria LiquidCrystal_I2C
 
 - Aprire l'IDE di Arduino.
 - Cliccare su "Strumenti" -> "Gestisci librerie".
@@ -111,21 +108,6 @@ Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario s
 
 Puoi utilizzare i metodi della classe LiquidCrystal_I2C per scrivere testo, numeri e simboli sul display.
 Puoi anche posizionare il cursore, modificare la dimensione del carattere e attivare la retroilluminazione.
-
-5. Risorse utili:
-
-Libreria LiquidCrystal_I2C: https://github.com/marcoschwartz/LiquidCrystal_I2C
-Tutorial sull'utilizzo di I2C con ESP32: [URL non valido rimosso]
-Suggerimenti:
-
-Assicurati di Collega correttamente il display LCD ad ESP32.
-Controlla l'indirizzo I2C del tuo display LCD.
-Usa la funzione lcd.clear() per cancellare il contenuto del display.
-Puoi utilizzare la funzione lcd.setCursor(0, 0) per posizionare il cursore all'inizio del display.
-
-
-
-
 
 
 ```bash
@@ -176,6 +158,90 @@ void loop()
 ```
 
 
+## Commento al programma
+
+### Come compilare "main.ino" con Arduino IDE
+
+Segui questi passaggi:
+
+1. Apri Arduino IDE,
+2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
+3. Incolla il codice "main.ino" nell'area di testo principale, 
+4. Clicca sul pulsante "Verifica" nella barra degli strumenti,
+5. Se non ci sono errori collega la scheda Arduino al computer,
+6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
+7. Clicca sul pulsante "Carica" nella barra degli strumenti.
+
+Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
+
+#### Un breve commento alle istruzioni del programma
+
+##### La linea:
+
+```bash
+DHT dht(DHTPIN, DHTTYPE);
+```
+
+serve ad inizializzare nella RAM l'oggetto che rappresenta il *driver* per il DHT11. La istruzione *mappa* nella area "codice" di ESP32 funzioni e variabili interne tipiche della programmazione ad oggetti. A questi valori si può accedere solo usando i metodi di *interfaccia* tipici dei linguaggi "Object Oriented". Più in basso vedremo come il programma riesca ad usare l'oggetto "DHT dht()" per leggere istantaneamente la temperatura.
+
+
+##### La linea:
+
+```bash
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
+```
+
+viene usata per disabilitare il controllo del *BROWNOUT* dell'ESP32.  Si tratta di un controllo elettrico voluto dai progettisti per segnalare anomalie nella tensione di alimentazione. Poichè stiamo usando l'ESP32 collegato al cavetto USB preferiamo disabilitarlo per evitare improbabili e inutili segnalazioni di errore. Nel caso di alimentazione a batteria probabilmente può avere un senso riabilitarlo.
+
+##### Le linee:
+
+```bash
+  dht.begin();
+  pinMode(Gas_1, INPUT);
+  pinMode(Gas_2, INPUT);
+```
+
+servono la prima a lanciare la funzione di *start up* dell'oggetto "dht", mentre le due successive servono a segnalare all' ESP32 che deve usare i due *pin* 33 e 35 come input.
+
+##### Le linee:
+
+```bash
+h   = dht.readHumidity();
+t   = dht.readTemperature();  
+```
+servono a leggere umidità e temperatura usando le funzioni *di interfaccia* dell'oggetto "dht" ovvero le funzioni sicure pensate dai progettisti per nascondere la complessità del codice interno. Le funzioni sono introdotte dal "." come stabilito dalla sintassi del C++.
+
+##### Le linee:
+
+```bash
+g_1 = analogRead(Gas_1);
+g_2 = analogRead(Gas_2);
+```
+servono a leggere la tensione fornita dai pin 33 e 35 usando una funzione predefinita di Arduino: analogRead().
+La interpretazione del valore viene lasciata al software e all'utente, a differenza di quanto riesce a fare il DHT11.
+
+##### Infine le tre linee:
+
+```bash
+if (isnan(g_1) ) ...
+if (isnan(g_2) ) ...
+if (isnan(t) ) ...
+```
+
+sono usate per tracciare gli errori dei tre sensori, come ad esempio valori fuori scala o infiniti (NaN). 
+
+
+### Risorse utili
+
+Libreria LiquidCrystal_I2C: https://github.com/marcoschwartz/LiquidCrystal_I2C
+Tutorial sull'utilizzo di I2C con ESP32: [URL non valido rimosso]
+Suggerimenti:
+
+Assicurati di Collega correttamente il display LCD ad ESP32.
+Controlla l'indirizzo I2C del tuo display LCD.
+Usa la funzione lcd.clear() per cancellare il contenuto del display.
+Puoi utilizzare la funzione lcd.setCursor(0, 0) per posizionare il cursore all'inizio del display.
+
 
 
 
@@ -183,4 +249,4 @@ void loop()
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.0.5.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.0.8.0</p>
