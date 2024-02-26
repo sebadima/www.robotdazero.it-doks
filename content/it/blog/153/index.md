@@ -390,28 +390,24 @@ Controlla che i componenti siano collegati correttamente all'<a href="/blog/esp3
 È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti.
 È possibile anche utilizzare un <a href="https://it.wikipedia.org/wiki/Oscilloscopio">oscilloscopio</a> per testare i segnali elettrici dei componenti.
 
-<br>
-
-> L'oscilloscopio può essere utilizzato per testare circuiti elettronici digitali con ESP32 in diversi modi:
-<br>1. <strong>Misurare la tensione</strong>:
+> *L'oscilloscopio può essere utilizzato per testare circuiti elettronici digitali con ESP32 in diversi modi*:
+<br><br><strong>Misurare la tensione</strong>:
 <br>L'oscilloscopio può essere utilizzato per misurare la tensione ai pin dell'ESP32 per verificare se i livelli logici sono corretti.
 <br>È importante utilizzare una sonda con una <a href="https://www.electroyou.it/vis_resource.php?section=DomRisp&id=364" target="_blank">impedenza</a> di ingresso elevata per evitare di caricare il circuito e influenzare le misure.
-<br>2. <strong>Misurare la frequenza</strong>:
+<br><strong>Misurare la frequenza</strong>:
 <br>L'oscilloscopio può essere utilizzato per misurare la frequenza di un segnale digitale, come ad esempio il clock del microcontrollore.La funzione di frequenza automatica (<a href="https://youtu.be/XF_RkKm_O2U?si=Ae0fCXvQXFmvJns0" target="_blank">autorange</a>) dell'oscilloscopio può facilitare questa misurazione.
-<br><strong>3. Visualizzare la forma d'onda</strong>:
+<br><strong>Visualizzare la forma d'onda</strong>:
 <br>L'oscilloscopio può essere utilizzato per visualizzare la forma d'onda di un segnale digitale.
 Questo può essere utile per identificare problemi come i ritardi di propagazione, i tempi di salita e discesa e le distorsioni del segnale.
-<br>4. <strong>"Triggerare" su un evento specifico</strong>:
+<br><strong>"Triggerare" su un evento specifico</strong>:
 <br>L'oscilloscopio può essere configurato per triggerare l'acquisizione di una traccia su un evento specifico, come ad esempio un fronte di salita o discesa di un segnale.
 Questo può essere utile per catturare dettagli specifici del segnale che si desidera analizzare.
-<br>5. <strong>Usare le funzioni di analisi avanzate</strong>:
+<br><strong>Usare le funzioni di analisi avanzate</strong>:
 <br>Gli oscilloscopi moderni offrono diverse funzioni di analisi avanzate, come ad esempio la misura del <a href="https://logicaprogrammabile.it/duty-cycle-guida-definitiva/" target="_blank">duty cycle</a>, la demodulazione AM/FM e l'analisi FFT.
 Queste funzioni possono essere utilizzate per ottenere informazioni più precise sul comportamento del circuito in esame.
-<br><br><strong>Consigli</strong> per testare circuiti digitali con ESP32:
+<br><br><strong>Consigli per usare un oscilloscopio con ESP32</strong>:
 <br>Utilizzare una <a href="https://www.aripordenone.it/progetto-sonda-alta-impedenza/" target="_blank">sonda</a> con un'impedenza di ingresso elevata per evitare di caricare il circuito.
-Impostare la scala di tensione e di tempo in modo da visualizzare correttamente il segnale.
-Utilizzare la funzione di trigger per catturare la porzione di segnale desiderata.
-Salvare le tracce acquisite per un'analisi successiva e infine consultare il manuale dell'oscilloscopio per informazioni specifiche sulle sue funzioni.
+Impostare la scala di tensione e di tempo in modo da visualizzare correttamente il segnale e infine usare la funzione di trigger per catturare il segnale desiderato.
 
 <br><strong>4</strong>. Sostituire i componenti danneggiati:
 
