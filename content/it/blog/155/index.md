@@ -21,6 +21,7 @@ mermaid: true
 
 ## Inizio
 
+> *The normal method of connecting to a WiFi network in an ESP32 sketch is to code your network login parameters (SSID and password) directly in plain text. While this is certainly sufficient when you are just experimenting, it has a number of disadvantage.*
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.155.0.2.0</p>
