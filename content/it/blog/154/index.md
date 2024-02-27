@@ -74,7 +74,7 @@ Esistono diverse librerie e *framework* per semplificare l'utilizzo dei display 
 - *Adafruit GFX*: Per la gestione di display grafici **con diverse interfacce**.
 
 
-### Le connessioni elettriche del display con l'ESP32
+### Le connessioni del display con l'ESP32
 
 Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti hardware per testare le librerie I2C.
 Per collegare il display LCD all'ESP32 usando l'interfaccia I2C, puoi seguire questi facili passaggi:
@@ -293,9 +293,13 @@ Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare 
 
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
-### Altre risorse utili
+#### I link delle librerie I2C
 
 Libreria LiquidCrystal_I2C: <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">link</a>.
+
+Libreria Wire: <a href="https://www.arduino.cc/reference/en/language/functions/communication/wire/" target="_blank">link</a>.
+
+
 
 <br>
 <br>
