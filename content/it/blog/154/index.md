@@ -58,7 +58,7 @@ Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione 
 <br><br>**Inoltre I2C è un protocollo a basso costo**, poiché non richiede componenti costosi o complessi, può essere utilizzato per collegare una varietà di dispositivi, come sensori, attuatori, display e memorie.
 Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispositivi alimentati a batteria.*
 
-### Le caratteristiche elettriche di I2C
+### Le caratteristiche elettriche del protocollo I2C
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
 <strong>Il bus Inter-Integrated Circuit (I2C)</strong> è un meccanismo di comunicazione seriale a livello di chip che opera su soli due fili. Alcuni sviluppatori pronunciano il nome del bus eye-two-see, altri eye-squared-see, ma entrambi si riferiscono alla stessa cosa. Dal 1982 è diventato uno standard de facto supportato da molti dispositivi come Arduino, ESP32 o Raspberry Pi. <br><strong>Il bus fisico</strong><br>I2C si compone di due fili. Una linea I2C trasmette i dati, l'altra i segnali di clock che sincronizzano la conversazione tra dispositivi. La linea dati è chiamata 'SDA‘, la linea di clock’SCL'.
@@ -72,10 +72,10 @@ Esistono diverse librerie e *framework* per semplificare l'utilizzo dei display 
 
 - *LiquidCrystal_I2C*: Una libreria per Arduino o ESP32 per l'uso dei display LCD con la **interfaccia I2C**.
 - *U8g2*: Una libreria per la gestione di diversi tipi di display grafici.
-Adafruit GFX: Libreria per la gestione di display grafici **con diverse interfacce**.
+- *Adafruit GFX*: Per la gestione di display grafici **con diverse interfacce**.
 
 
-## Come scrivere su un display LCD con I2C e ESP32
+### Come scrivere su un display LCD con I2C e ESP32
 
 Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti eletrici per testare le librerie.
 Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire questi passaggi:
@@ -89,12 +89,118 @@ Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire qu
 
 Esaurita la parte dei collegamenti che puoi portare a termine usando semplice connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
+## Il software completo per scrivere sul display LCD
+
+Questo è il programma completo per testare il funzionamento di software e hardware: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Più in basso trovi le istruzioni per compilarlo con PlatformIO e eArduino IDE.
+
+#### il file "main.ino"
+
+```bash
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+
+#define I2C_SDA 23
+#define I2C_SCL 18
+
+LiquidCrystal_I2C lcd(0x27,16,2);
+
+void setup() 
+{
+  Serial.begin(115200);
+  Wire.begin(I2C_SDA, I2C_SCL, 10000); 
+  lcd.init(); 
+  lcd.clear();
+  lcd.backlight();
+  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
+  lcd.setCursor(0,0);  
+  lcd.print("Inizio conteggio"); 
+  delay(3000);  
+ 
+  for (int ix=1; ix<=10; ix++) 
+  {
+    lcd.clear();
+    Serial.println(ix);  
+    lcd.print(ix); 
+    delay(1000);  
+  }
+
+  lcd.clear();
+  lcd.print("Fine conteggio"); 
+}
+
+void loop() 
+{
+}
+
+```
+
+#### L'output del programma
+
+Dopo la compilazione se tutto è andato nel modo previsto dovresti vedere sul display la scritta "Inizio conteggio" e quindi la sequenza di numeri dall'uno al dieci. Alla fine della sequenza dovrebbe apparire il messaggio "Fine conteggio".
+
+
+### Un breve commento alle istruzioni del programma
+
+
+##### Le linee:
+
+```bash
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+```
+servono a caricare la libreria <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">LiquidCrystal_I2C</a> di Marco Schwartz e la libreria complementare <a href="https://www.arduino.cc/reference/en/language/functions/communication/wire/" target="_blank">Wire</a>, entrambe destinate alla gestione dei dispositivi I2C.
+
+##### Le linee:
+
+```bash
+#define I2C_SDA 23
+#define I2C_SCL 18
+```
+
+servono a definire i pin dell'ESP32 che useremo per la comunicazione I2C: Il protocollo è così semplice da richiedere appena due pin. Dopo la definizione possiamo fare riferimento ai pin con il loro equivalente simbolico. Se vogliamo cambiare pin e connessione ci basta cambiare **solo** queste due righe senza modificare oltre il programma originale.
+
+##### La linea:
+
+```bash
+Wire.begin(I2C_SDA, I2C_SCL, 10000); 
+```
+permette all'ESP32 di collegarsi all'I2C come "master": Se stai usando (come in questo caso) un display LCD devi sempre collegarti come "master".
+
+##### Le linee:
+
+```bash
+  lcd.init(); 
+  lcd.clear();
+  lcd.backlight();
+  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
+  lcd.setCursor(0,0);  
+
+```
+
+servono a impostare i parametri di base del display, in particolare la prima istruzione "lcd.init();" serve a inizializzare il dispositivo mentre la ultima istruzione "lcd.setCursor(0,0);" permette di portare il cursore a inizio riga.
+
+
+##### Infine le linee:
+
+```bash
+for (int ix=1; ix<=10; ix++) 
+{
+    lcd.clear();
+    Serial.println(ix);  
+    lcd.print(ix); 
+    delay(1000);  
+}
+```
+
+dichiarano una variabile **ix** da usare per un loop a 10 steps: Ad ogni step viene ripulito il display con la istruzione "lcd.clear();". Quindi la istruzione "lcd.print(ix);" *stampa* il valore numerico sul display e la istruzione successiva "delay(1000);" effettua una pausa di un secondo. La istruzione "lcd.print()" non ha bisogno di conversione da numerico ad alfanumerico.
+
+
 ### Come compilare il programma con PlatformIO
 
 Per usare PlatformIO abbiamo predisposto la solita procedura copie e incolla che non richiedere alcun intervento manuale a condizione che tu abbia installato PlatformIO come spiegato in questo <a href="/blog/come-installare-platformio">post</a> del nostro blog.
 
-Fai copia e incolla del testo in basso. Se sposti il mouse sopra la zona gialla apparirà la scritta "Copy" in rosso.
-Vai sul CMD.exe o la PowerShell di Windows 10/11 oppure sul terminale di Linux e fai incolla.
+Fai copia e incolla del testo in basso. Se sposti il mouse sopra la zona gialla apparirà la scritta "**Copy**" in rosso;
+quindi vai sulla PowerShell di Windows o sul terminale di Linux e fai incolla.
 
 ```bash
 git clone git@github.com:sebadima/corso-esp32-scrittura-display-LCD.git
@@ -103,7 +209,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
-Dopo avere premuto "INVIO" apparirà il *log* della compilazione e del *link* del programma come vedi nello specchietto in basso:
+Dopo avere premuto "INVIO" apparirà il *log* della compilazione e del *linking* del programma come vedi nello specchietto in basso:
 
 ```bash
 Cloning into 'corso-esp32-scrittura-display-LCD'...
@@ -173,7 +279,7 @@ Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria de
 
 ### Come compilare il programma con Arduino IDE
 
-Se non hai usato PlaformIo come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
+Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
 
 1. Apri Arduino IDE,
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
@@ -186,126 +292,6 @@ Se non hai usato PlaformIo come nell'esempio precedente puoi comunque compilare 
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
 
-
-#### Il file "main.ino"
-
-Questo è il programma completo per testare il funzionamento di software e hardware: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Puoi fare copia e incolla per usarlo con Arduino IDE. Se hai usato la procedura con Github e Platformio lo troverai già caricato nel tuo PC grazie al singolo comando:
-
-```bash
-git clone git@github.com:sebadima/corso-esp32-scrittura-display-LCD.git
-```
-
-## Il software completo per scrivere sul display LCD
-
-```bash
-#include <LiquidCrystal_I2C.h>
-#include <Wire.h>
-
-#define I2C_SDA 23
-#define I2C_SCL 18
-
-LiquidCrystal_I2C lcd(0x27,16,2);
-
-void setup() 
-{
-  Serial.begin(115200);
-  Wire.begin(I2C_SDA, I2C_SCL, 10000); 
-  lcd.init(); 
-  lcd.clear();
-  lcd.backlight();
-  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
-  lcd.setCursor(0,0);  
-  lcd.print("Inizio conteggio"); 
-  delay(3000);  
- 
-  for (int ix=1; ix<=10; ix++) 
-  {
-    lcd.clear();
-    Serial.println(ix);  
-    lcd.print(ix); 
-    delay(1000);  
-  }
-
-  lcd.clear();
-  lcd.print("Fine conteggio"); 
-}
-
-void loop() 
-{
-}
-
-```
-
-
-### Un breve commento alle istruzioni del programma
-
-
-##### Le linee:
-
-```bash
-#include <LiquidCrystal_I2C.h>
-#include <Wire.h>
-```
-
-.....
-
-##### Le linee:
-
-```bash
-#define I2C_SDA 23
-#define I2C_SCL 18
-```
-
-...
-
-##### Le linee:
-
-```bash
-  dht.begin();
-  pinMode(Gas_1, INPUT);
-  pinMode(Gas_2, INPUT);
-```
-
-servono la prima a lanciare la funzione di *start up* dell'oggetto "dht", mentre le due successive servono a segnalare all' ESP32 che deve usare i due *pin* 33 e 35 come input.
-
-##### Le linea:
-
-```bash
-Wire.begin(I2C_SDA, I2C_SCL, 10000); 
-```
-
-....
-
-
-##### Le linee:
-
-```bash
-  lcd.init(); 
-  lcd.clear();
-  lcd.backlight();
-  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
-  lcd.setCursor(0,0);  
-
-```
-
-..................
-
-
-##### Infine le linee:
-
-```bash
-for (int ix=1; ix<=10; ix++) 
-{
-    lcd.clear();
-    Serial.println(ix);  
-    lcd.print(ix); 
-    delay(1000);  
-}
-```
-
-servono a creare un loop ripetuto 10 volte dove, ad ogni ciclo 
-
-,..........
 
 
 ## Altre risorse utili
