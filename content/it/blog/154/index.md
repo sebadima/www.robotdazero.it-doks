@@ -85,7 +85,7 @@ Per collegare il display LCD all'ESP32 usando l'interfaccia I2C, puoi seguire qu
 - Collega il pin **SDA** del display LCD al pin **SDA** (GPIO 23) di ESP32.
 - Collega il pin **SCL** del display LCD al pin **SCL** (GPIO 18) di ESP32.
 
-Esaurita la parte dei collegamenti che puoi portare a termine usando dei semplici connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
+Esaurita la parte dei collegamenti, che puoi portare a termine usando dei semplici connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
 ## Il software completo per scrivere sul display LCD
 
@@ -284,16 +284,16 @@ Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare 
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
 3. Incolla il codice "main.ino" nell'area di testo principale, 
 
-> *Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi clicare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". Al termine della installazione apparirà la dicitura “INSTALLED“: Premi tasto "Chiudi" per uscire.*
+> *Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi cliccare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". <br>Al termine della installazione apparirà la dicitura “INSTALLED“: Premi il tasto "Chiudi" per uscire.*
 
-4. Adesso puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
-5. Se non ci sono errori collega la scheda Arduino al computer,
-6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
+4. Finalmente puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
+5. Se non ci sono errori collega la scheda al computer,
+6. Seleziona la scheda ESP32 corretta dal menu "Strumenti" > "Scheda",
 7. Clicca sul pulsante "Carica" nella barra degli strumenti.
 
-Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
+Adesso Il programma verrà caricato sulla scheda ESP32. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
-#### Questi i link delle librerie I2C
+### Questi i link delle librerie I2C
 
 Libreria LiquidCrystal_I2C: <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">link</a>.
 
