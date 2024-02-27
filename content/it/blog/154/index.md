@@ -89,7 +89,7 @@ Esaurita la parte dei collegamenti, che puoi portare a termine usando dei sempli
 
 ## Il software completo per scrivere sul display LCD
 
-Questo è il programma completo per testare il funzionamento del dispositivo: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Più in basso trovi le istruzioni per compilarlo con PlatformIO e eArduino IDE.
+Questo è il programma completo per testare il funzionamento del dispositivo: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Più in basso trovi le istruzioni per compilarlo con PlatformIO e Arduino IDE.
 
 #### il file "main.ino"
 
