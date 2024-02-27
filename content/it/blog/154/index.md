@@ -89,7 +89,7 @@ Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire qu
 
 Esaurita la parte dei collegamenti che puoi portare a termine usando semplice connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
-### Come usare PlatformIO con LiquidCrystal_I2C
+### Come compilare il programma con PlatformIO
 
 Per usare PlatformIO abbiamo predisposto la solita procedura copie e incolla che non richiedere alcun intervento manuale a condizione che tu abbia installato PlatformIO come spiegato in questo <a href="/blog/come-installare-platformio">post</a> del nostro blog.
 
@@ -171,6 +171,21 @@ Successfully created esp32 image.
 
 Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria dell'ESP32 e a lanciare il monitor seriale di PlatformIO. 
 
+### Come compilare il programma con Arduino IDE
+
+Se non hai usato PlaformIo come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
+
+1. Apri Arduino IDE,
+2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
+3. Incolla il codice "main.ino" nell'area di testo principale, 
+4. Clicca sul pulsante "Verifica" nella barra degli strumenti,
+5. Se non ci sono errori collega la scheda Arduino al computer,
+6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
+7. Clicca sul pulsante "Carica" nella barra degli strumenti.
+
+Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
+
+
 
 #### Il file "main.ino"
 
@@ -221,19 +236,6 @@ void loop()
 
 ```
 
-### Come compilare "main.ino" con Arduino IDE
-
-Se non hai usato PlaformIo come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
-
-1. Apri Arduino IDE,
-2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
-3. Incolla il codice "main.ino" nell'area di testo principale, 
-4. Clicca sul pulsante "Verifica" nella barra degli strumenti,
-5. Se non ci sono errori collega la scheda Arduino al computer,
-6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
-7. Clicca sul pulsante "Carica" nella barra degli strumenti.
-
-Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
 ### Un breve commento alle istruzioni del programma
 
