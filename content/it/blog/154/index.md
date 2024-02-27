@@ -54,11 +54,11 @@ I moderni display LCD sono dispositivi sofisticati e non "comunicano" con segnal
 
 > *Il protocollo I2C nell'IoT
 Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione seriale a due fili ampiamente utilizzata nell'Internet of Things (IoT) per la comunicazione tra dispositivi a corto raggio.
-<br>Il fattore chiave per la sua diffusione è stato certamente la semplicità di connessione: I2C richiede solo due fili di segnale (SDA e SCL) per la comunicazione, rendendolo facile da implementare e cablare.*
-Inoltre I2C è un protocollo a basso costo, poiché non richiede componenti costosi o complessi, può essere utilizzato per collegare una varietà di dispositivi, come sensori, attuatori, display e memorie.
-Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispositivi alimentati a batteria.
+<br>Il fattore chiave per la sua diffusione è stato certamente la semplicità di connessione: I2C richiede solo due fili di segnale (SDA e SCL) per la comunicazione, rendendolo facile da implementare e cablare.
+<br><br>**Inoltre I2C è un protocollo a basso costo**, poiché non richiede componenti costosi o complessi, può essere utilizzato per collegare una varietà di dispositivi, come sensori, attuatori, display e memorie.
+Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispositivi alimentati a batteria.*
 
-#### Le caratteristiche di I2C
+### Le caratteristiche elettriche di I2C
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
 <strong>Il bus Inter-Integrated Circuit (I2C)</strong> è un meccanismo di comunicazione seriale a livello di chip che opera su soli due fili. Alcuni sviluppatori pronunciano il nome del bus eye-two-see, altri eye-squared-see, ma entrambi si riferiscono alla stessa cosa. Dal 1982 è diventato uno standard de facto supportato da molti dispositivi come Arduino, ESP32 o Raspberry Pi. <br><strong>Il bus fisico</strong><br>I2C si compone di due fili. Una linea I2C trasmette i dati, l'altra i segnali di clock che sincronizzano la conversazione tra dispositivi. La linea dati è chiamata 'SDA‘, la linea di clock’SCL'.
@@ -66,37 +66,32 @@ Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispo
 
 <br>Esistono altri protocolli di comunicazione per collegare i display LCD, come ad esempio l'SPI: Protocollo di comunicazione seriale a quattro fili, più veloce di I2C e l'UART: Un Protocollo di comunicazione seriale asincrono, adatto per lunghe distanze.
 
-Esistono diverse librerie e framework per semplificare l'utilizzo dei display LCD con l'IoT, come:
+#### Il software per i display LCD
 
-LiquidCrystal_I2C: Libreria per Arduino per la gestione di display LCD con interfaccia I2C.
-U8g2: Libreria per la gestione di diversi tipi di display grafici.
-Adafruit GFX: Libreria per la gestione di display grafici con diverse interfacce.
+Esistono diverse librerie e *framework* per semplificare l'utilizzo dei display LCD con l'IoT, come ad esempio:
 
-Noi useremo il protocollo I2C per realizzare un progetto pilota per un sistema completo di monitoraggio ambientale a lunga distanza, basato sul protocollo ESP-Now.
+- *LiquidCrystal_I2C*: Una libreria per Arduino o ESP32 per l'uso dei display LCD con la **interfaccia I2C**.
+- *U8g2*: Una libreria per la gestione di diversi tipi di display grafici.
+Adafruit GFX: Libreria per la gestione di display grafici **con diverse interfacce**.
 
-## Come scrivere su un display LCD con I2C e ESP32
-Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, è necessario seguire questi passaggi:
 
-1. Collega il display LCD ad ESP32:
+### Come scrivere su un display LCD con I2C e ESP32
+
+Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti eletrici per testare le librerie.
+Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire questi passaggi:
+
+##### Per collegare il display LCD ad ESP32 puoi procedere in questo modo in questo modo:
 
 - Collega il pin Vcc del display LCD al pin 5V di ESP32.
 - Collega il pin GND del display LCD al pin GND di ESP32.
 - Collega il pin SDA del display LCD al pin SDA (GPIO 23) di ESP32.
 - Collega il pin SCL del display LCD al pin SCL (GPIO 18) di ESP32.
-- Collega il pin di contrasto del display LCD a un pin analogico di ESP32 (ad esempio, A0).
 
-#### La libreria LiquidCrystal_I2C
+Esaurita la parte dei collegamenti che puoi portare a termine usando semplice connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
-- Aprire l'IDE di Arduino.
-- Cliccare su "Strumenti" -> "Gestisci librerie".
-- Cercare la libreria "LiquidCrystal_I2C" e installarla.
+#### Come usare PlatformIO con LiquidCrystal_I2C
 
-- 3. Caricare il programma "main.ino"
-
-
-Puoi utilizzare i metodi della classe LiquidCrystal_I2C per scrivere testo, numeri e simboli sul display.
-Puoi anche posizionare il cursore, modificare la dimensione del carattere e attivare la retroilluminazione.
-
+Per usare PlatformIO abbiamo predisposto la solita procedura copie e incolla che non richiedere alcun intervento manuale a condizione che tu abbia installato PlatformIO come spiegato in questo <a href="/blog/come-installare-platformio">post</a> del nostro blog.
 
 ```bash
 git clone git@github.com:sebadima/corso-esp32-scrittura-display-LCD.git
