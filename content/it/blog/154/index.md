@@ -75,7 +75,7 @@ Esistono diverse librerie e *framework* per semplificare l'utilizzo dei display 
 Adafruit GFX: Libreria per la gestione di display grafici **con diverse interfacce**.
 
 
-### Come scrivere su un display LCD con I2C e ESP32
+## Come scrivere su un display LCD con I2C e ESP32
 
 Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti eletrici per testare le librerie.
 Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire questi passaggi:
@@ -89,9 +89,12 @@ Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire qu
 
 Esaurita la parte dei collegamenti che puoi portare a termine usando semplice connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
-#### Come usare PlatformIO con LiquidCrystal_I2C
+### Come usare PlatformIO con LiquidCrystal_I2C
 
 Per usare PlatformIO abbiamo predisposto la solita procedura copie e incolla che non richiedere alcun intervento manuale a condizione che tu abbia installato PlatformIO come spiegato in questo <a href="/blog/come-installare-platformio">post</a> del nostro blog.
+
+Fai copia e incolla del testo in basso. Se sposti il mouse sopra la zona gialla apparirà la scritta "Copy" in rosso.
+Vai sul CMD.exe o la PowerShell di Windows 10/11 oppure sul terminale di Linux e fai incolla.
 
 ```bash
 git clone git@github.com:sebadima/corso-esp32-scrittura-display-LCD.git
@@ -100,6 +103,84 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0
 ```
 
+Dopo avere premuto "INVIO" apparirà il *log* della compilazione e del *link* del programma come vedi nello specchietto in basso:
+
+```bash
+Cloning into 'corso-esp32-scrittura-display-LCD'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 18 (delta 4), reused 17 (delta 3), pack-reused 0
+Receiving objects: 100% (18/18), done.
+Resolving deltas: 100% (4/4), done.
+pio -f -c vim run
+Processing esp32dev (platform: espressif32; board: esp32dev; framework: arduino)
+---------------------------------------------------------------------------------
+Library Manager: Installing marcoschwartz/LiquidCrystal_I2C @ ^1.1.4
+Unpacking  [####################################]  100%
+Library Manager: LiquidCrystal_I2C@1.1.4 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.4.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20011.230801 (2.0.11) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+Converting main.ino
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 34 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- LiquidCrystal_I2C @ 1.1.4
+|-- Wire @ 2.0.0
+Building in release mode
+Compiling .pio/build/esp32dev/src/main.ino.cpp.o
+Building .pio/build/esp32dev/bootloader.bin
+Generating partitions .pio/build/esp32dev/partitions.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio/build/esp32dev/lib253/Wire/Wire.cpp.o
+Compiling .pio/build/esp32dev/libe44/LiquidCrystal_I2C/LiquidCrystal_I2C.cpp.o
+Compiling .pio/build/esp32dev/FrameworkArduino/Esp.cpp.o
+
+...
+...
+
+Compiling .pio/build/esp32dev/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/esp32dev/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/esp32dev/libFrameworkArduino.a
+Indexing .pio/build/esp32dev/libFrameworkArduino.a
+Linking .pio/build/esp32dev/firmware.elf
+Retrieving maximum program size .pio/build/esp32dev/firmware.elf
+Checking size .pio/build/esp32dev/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]   6.6% (used 21760 bytes from 327680 bytes)
+Flash: [==        ]  21.5% (used 281933 bytes from 1310720 bytes)
+Building .pio/build/esp32dev/firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+
+```
+
+Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria dell'ESP32 e a lanciare il monitor seriale di PlatformIO. 
+
+
+#### Il file "main.ino"
+
+Questo è il programma completo per testare il funzionamento di software e hardware: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Puoi fare copia e incolla per usarlo con Arduino IDE. Se hai usato la procedura con Github e Platformio lo troverai già caricato nel tuo PC grazie al singolo comando:
+
+```bash
+git clone git@github.com:sebadima/corso-esp32-scrittura-display-LCD.git
+```
+
+## Il software completo per scrivere sul display LCD
 
 ```bash
 #include <LiquidCrystal_I2C.h>
@@ -142,7 +223,7 @@ void loop()
 
 ### Come compilare "main.ino" con Arduino IDE
 
-Segui questi passaggi:
+Se non hai usato PlaformIo come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
 
 1. Apri Arduino IDE,
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
@@ -155,6 +236,7 @@ Segui questi passaggi:
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
 ### Un breve commento alle istruzioni del programma
+
 
 ##### Le linee:
 
@@ -224,7 +306,7 @@ servono a creare un loop ripetuto 10 volte dove, ad ogni ciclo
 ,..........
 
 
-### Altre risorse utili
+## Altre risorse utili
 
 <a href="Libreria LiquidCrystal_I2C: https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">LiquidCrystal_I2C</a> di Marco Schwartz.
 
