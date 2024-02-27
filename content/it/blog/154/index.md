@@ -277,32 +277,25 @@ Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria de
 
 ### Come compilare il programma con Arduino IDE
 
+
 Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò ti basta seguire questi passaggi:
 
 1. Apri Arduino IDE,
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
 3. Incolla il codice "main.ino" nell'area di testo principale, 
-4. Clicca sul pulsante "Verifica" nella barra degli strumenti,
+
+> Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi clicare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". Al termine della installazione apparirà la dicitura “INSTALLED“: Premi tasto "Chiudi" per uscire.
+
+4. Adesso puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
 5. Se non ci sono errori collega la scheda Arduino al computer,
 6. Seleziona la scheda Arduino corretta dal menu "Strumenti" > "Scheda",
 7. Clicca sul pulsante "Carica" nella barra degli strumenti.
 
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
+### Altre risorse utili
 
-
-
-## Altre risorse utili
-
-<a href="Libreria LiquidCrystal_I2C: https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">LiquidCrystal_I2C</a> di Marco Schwartz.
-
-Tutorial sull'utilizzo di I2C con ESP32: [URL non valido rimosso]
-Suggerimenti:
-
-Assicurati di Collega correttamente il display LCD ad ESP32.
-Controlla l'indirizzo I2C del tuo display LCD.
-Usa la funzione lcd.clear() per cancellare il contenuto del display.
-Puoi utilizzare la funzione lcd.setCursor(0, 0) per posizionare il cursore all'inizio del display.
+Libreria LiquidCrystal_I2C: <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">link</a>.
 
 <br>
 <br>
