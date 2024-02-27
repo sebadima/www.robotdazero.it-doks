@@ -284,7 +284,7 @@ Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare 
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
 3. Incolla il codice "main.ino" nell'area di testo principale, 
 
-> Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi clicare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". Al termine della installazione apparirà la dicitura “INSTALLED“: Premi tasto "Chiudi" per uscire.
+> *Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi clicare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". Al termine della installazione apparirà la dicitura “INSTALLED“: Premi tasto "Chiudi" per uscire.*
 
 4. Adesso puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
 5. Se non ci sono errori collega la scheda Arduino al computer,
@@ -293,7 +293,7 @@ Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare 
 
 Adesso Il programma verrà caricato sulla scheda Arduino. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
-#### I link delle librerie I2C
+#### Questi i link delle librerie I2C
 
 Libreria LiquidCrystal_I2C: <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">link</a>.
 
