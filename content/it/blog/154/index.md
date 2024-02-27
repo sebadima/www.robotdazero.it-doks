@@ -4,7 +4,7 @@ description: "Come scrivere su un display LCD con ESP32"
 excerpt: "In un mondo sempre più interconnesso, gli schermi a cristalli liquidi (LCD) giocano un ruolo fondamentale nell'Internet delle cose (IoT). Questa convergenza tra tecnologie tradizionali e moderne offre una vasta gamma di possibilità innovative e applicazioni pratiche. In questo articolo esploreremo il ruolo degli LCD nel mondo dell'IoT..."
 date: 2024-02-24T01:19:42+01:00
 lastmod: 2024-02-24T01:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpg"]
 categories: ["News"]
