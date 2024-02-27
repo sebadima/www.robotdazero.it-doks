@@ -293,14 +293,12 @@ Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare 
 
 Adesso Il programma verrà caricato sulla scheda ESP32. Per leggere i valori dei sensori ti basta andare su "Strumenti" > "Monitor Seriale".
 
-### Questi i link delle librerie I2C
+### I link delle librerie I2C
 
 Libreria LiquidCrystal_I2C: <a href="https://github.com/marcoschwartz/LiquidCrystal_I2C" target="_blank">link</a>.
 
 Libreria Wire: <a href="https://www.arduino.cc/reference/en/language/functions/communication/wire/" target="_blank">link</a>.
 
-
-
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.1.0.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.1.2.0</p>
