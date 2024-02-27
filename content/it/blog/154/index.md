@@ -36,7 +36,7 @@ Fisicamente sono composti da almeno 4 diversi componenti principali:
 
 
 
-##### I display LCD sono disponibili in diverse varietà, tra cui:
+##### I display LCD sono disponibili in due almeno due diverse varietà, e precisamente:
 
 - **Display LCD a matrice passiva**: I display LCD a matrice passiva sono i più semplici e convenienti. Tuttavia, hanno un tempo di risposta più lento e un angolo di visione più ristretto rispetto ad altri tipi di display LCD.
 - **Display LCD a matrice attiva**: I display LCD a matrice attiva offrono una migliore qualità dell'immagine e un angolo di visione più ampio rispetto ai display LCD a matrice passiva. Tuttavia, sono anche più costosi.
@@ -47,13 +47,12 @@ I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT)
 
 Nella Domotica i display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti e il loro utilizzo non si limita alle "abitazioni" civili ma si estende alla cosiddetta "Industria 4.0": I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
 
-E se questo non bastasse a giustificare l'interesse ti ricordo come negli ultimi anni gli Smartwatch che mostrano: Ora, la frequenza cardiaca, le notifiche e altri dati fitness sono diventati accessorio comune tra gli appassionati di sport.
+E se questo non bastasse a giustificare l'interesse ti ricordo come negli ultimi anni gli Smartwatch con LCD possono mostrare Ora, frequenza cardiaca, notifiche e molto altro con ingombri ridottissimi, una vera mini rivoluzione nel campo IoT.
 
 ### Protocolli di comunicazione per i display LCD
-I moderni display LCD sono dispositivi sofisticati e non "comunicano" con segnali elettrici "grezzi" o solo con la interfaccia seriale, ma hanno attirato nel tempo la attenzione dei progettisti che li hanno dotato di molteplici *protocolli* di comunicazione. Tra questi cui il più interessante è il protocollo <a href="https://en.wikipedia.org/wiki/I%C2%B2C" target="_blank">I2C</a>, sviluppato in origine da Philips negli anni '80.
+I moderni display LCD sono dispositivi sofisticati e non "comunicano" con segnali elettrici "grezzi" o solo con la interfaccia seriale. Nel tempo hanno attirato la attenzione dei progettisti che li hanno dotati di molteplici *protocolli* di comunicazione ad alto livello. Tra questi il più interessante è il protocollo <a href="https://en.wikipedia.org/wiki/I%C2%B2C" target="_blank">I2C</a>, sviluppato in origine da Philips negli anni '80.
 
-> *Il protocollo I2C nell'IoT
-Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione seriale a due fili ampiamente utilizzata nell'Internet of Things (IoT) per la comunicazione tra dispositivi a corto raggio.
+> *Il protocollo I2C (Inter-Integrated Circuit) è una tecnologia di comunicazione seriale a due fili ampiamente utilizzata nell'Internet of Things (IoT) per la comunicazione tra dispositivi a corto raggio.
 <br>Il fattore chiave per la sua diffusione è stato certamente la semplicità di connessione: I2C richiede solo due fili di segnale (SDA e SCL) per la comunicazione, rendendolo facile da implementare e cablare.
 <br><br>**Inoltre I2C è un protocollo a basso costo**, poiché non richiede componenti costosi o complessi, può essere utilizzato per collegare una varietà di dispositivi, come sensori, attuatori, display e memorie.
 Possiede inoltre una elevata efficienza energetica che lo rende ideale per dispositivi alimentati a batteria.*
@@ -75,23 +74,22 @@ Esistono diverse librerie e *framework* per semplificare l'utilizzo dei display 
 - *Adafruit GFX*: Per la gestione di display grafici **con diverse interfacce**.
 
 
-### Come scrivere su un display LCD con I2C e ESP32
+### Le connessioni elettriche del display con l'ESP32
 
-Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti eletrici per testare le librerie.
-Per scrivere su un display LCD usando l'interfaccia I2C e ESP32, puoi seguire questi passaggi:
+Avendo illustrato quali librerie sono a disposizione per il funzionamento del software, vediamo adesso quali sono i collegamenti hardware per testare le librerie I2C.
+Per collegare il display LCD all'ESP32 usando l'interfaccia I2C, puoi seguire questi facili passaggi:
 
-##### Per collegare il display LCD ad ESP32 puoi procedere in questo modo in questo modo:
 
-- Collega il pin Vcc del display LCD al pin 5V di ESP32.
-- Collega il pin GND del display LCD al pin GND di ESP32.
-- Collega il pin SDA del display LCD al pin SDA (GPIO 23) di ESP32.
-- Collega il pin SCL del display LCD al pin SCL (GPIO 18) di ESP32.
+- Collega il pin **Vcc** del display LCD al pin **5V** di ESP32.
+- Collega il pin **GND** del display LCD al pin **GND** di ESP32.
+- Collega il pin **SDA** del display LCD al pin **SDA** (GPIO 23) di ESP32.
+- Collega il pin **SCL** del display LCD al pin **SCL** (GPIO 18) di ESP32.
 
-Esaurita la parte dei collegamenti che puoi portare a termine usando semplice connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
+Esaurita la parte dei collegamenti che puoi portare a termine usando dei semplici connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
 ## Il software completo per scrivere sul display LCD
 
-Questo è il programma completo per testare il funzionamento di software e hardware: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Più in basso trovi le istruzioni per compilarlo con PlatformIO e eArduino IDE.
+Questo è il programma completo per testare il funzionamento del dispositivo: Provvede a settare delle impostazioni standard per il display, a caricare la libreria e lanciare un semplice conteggio da uno a dieci. Più in basso trovi le istruzioni per compilarlo con PlatformIO e eArduino IDE.
 
 #### il file "main.ino"
 
@@ -279,7 +277,7 @@ Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria de
 
 ### Come compilare il programma con Arduino IDE
 
-Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò fi basta seguire questi questi passaggi:
+Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò ti basta seguire questi passaggi:
 
 1. Apri Arduino IDE,
 2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
