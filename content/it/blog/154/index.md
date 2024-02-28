@@ -43,7 +43,7 @@ Fisicamente sono composti da almeno 4 diversi componenti principali:
 
 
 ### Utilizzo dei display LCD nel mondo IoT
-I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senza gravare sui consumi ma anche nella economicità del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IOT a basso costo, rendendoli il mezzo preferito per la visualizzazione di informazioni testuali e grafiche.
+I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senza gravare sui consumi ma anche nella economicità del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IoT a basso costo, rendendoli il mezzo preferito per la visualizzazione di informazioni testuali e grafiche.
 
 Nella <a href="https://it.wikipedia.org/wiki/Domotica" target="_blank">Domotica</a> i display LCD possono mostrare dati su temperatura, umidità, consumo energetico e controllare dispositivi intelligenti e il loro utilizzo non si limita alle "abitazioni" civili ma si estende alla cosiddetta "Industria 4.0": I display LCD possono visualizzare informazioni su macchinari, produzione e manutenzione in tempo reale.
 
@@ -227,7 +227,7 @@ Verbose mode can be enabled via `-v, --verbose` option
 CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
 PLATFORM: Espressif 32 (6.4.0) > Espressif ESP32 Dev Module
 HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
-DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, IoT-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
 PACKAGES: 
  - framework-arduinoespressif32 @ 3.20011.230801 (2.0.11) 
  - tool-esptoolpy @ 1.40501.0 (4.5.1) 
