@@ -146,196 +146,26 @@ WiFi.modalità(WIFI_AP_STA);
 
 Con questo semplice cambiamento, si risolve il 70% dei problemi della rete mista con ESP32, ma non tutti. La anomalia sui dati potrebbe rispresentarsi cambiando router, schede e configurazione, proprio perchè serve piuttosto risolvere ala rasie il problema del canale Wi-Fi! Per questo motivo progetti che funzionano per ore apparentemente in modo perfetto smettono di funzionare semplicemente riavviando il router. 
 
-La soluzione definitiva consiste nell'aggiungere qualche riga in più ai programmi che scriverai per collegare ESP32 al Wi-fi e in basso trovi il codice commentato come lo utilizziamo bei nostri progetti.
+La soluzione definitiva consiste nell'aggiungere qualche riga in più ai programmi che scriverai per collegare ESP32 al Wi-fi e in basso trovi il codice commentato come lo utilizziamo bei nostri progetti. Dopo questi aggiustamenti il collegamento in rete mista dovrebbe sempre funzionare: La funzione "getWiFiChannel()" infatti aggancia in automatico il canale della ricevente. In questo modo la connessione diventa stabile e la useremo per "potezionare" la nostra centralina di controllo della qualità dell'aria. Con la ESP-NOW possiamo infatti piazzare molteplici sensori anche a distanza di oltre 200 metri dalla centralina. Con l'utilizzo di una antenna ricevente ad alto guadagno possiamo intercettare i segnali delle ESP32 lontane senza manomettere il router e l'antenna del router.
 
-++++
+Il codice finale sarebbe simile a questo, ovviamente si tratta solo delle "differenze" imposte da ESP-NOW e non di un programma completo che presenteremo piu avanti con schemi di montaggio e immagini del prototipo:
 
-Dopo questi aggiustamenti dovrebbe funzionare per te, ma se nel tuo caso non conosci il canale o ti succede come se fosse automatico, potrebbe essere meglio per te rilevare automaticamente il canale del tuo router. Per questo puoi usare questo codice:
-
-Che passando l'SSID del router restituisce il canale corrente. Grazie a Randomnerdtutorial che mi ha aiutato con quest'ultima soluzione.
-
-Con entrambe le modifiche il codice finale sarebbe simile a questo:
-
+##### Codice della scheda ESP32 "ricevente"
 ```bash
-++++
-
-#include "ESPAsyncWebServer.h"
-#include <Arduino_JSON.h>
-#include <Arduino.h>
-#include <esp_now.h>
-#include <esp_wifi.h>
-#include <WiFi.h>
-#include "soc/soc.h"
-#include "soc/rtc_cntl_reg.h"
-#include "BluetoothSerial.h"
-
-constexpr char WIFI_SSID[] = "rda0";
-constexpr char WIFI_PASS[] = "pippo1243";
-
-// Setta un indirizzo IP Fisso
-IPAddress local_IP(192, 168, 1, 200);
-// Setta l'indirizzo del Gateway
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 0, 0);
-IPAddress primaryDNS(8, 8, 8, 8); //opzionale
-IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
-
-// Struttura dati, deve corrispondere a quella del mittente
-typedef struct struttura_dati {
-  char  v0[32];
-  int   v1;
-  float v2;
-  float v3;
-  float v4;
-  unsigned int progressivo;
-} struttura_dati;
-
-struttura_dati LettureSensori;
-
-#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
-#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
-#endif
-
-BluetoothSerial SerialBT;
-JSONVar board;
-AsyncWebServer server(80);
-AsyncEventSource events("/events");
-
-volatile int interruptCounter;
-int totalInterruptCounter;
-hw_timer_t * timer = NULL;
-portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-#define DELAY_RECONNECT 60
-
-
-
-void IRAM_ATTR onTimer() 
-{
-  // https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Timer/RepeatTimer/RepeatTimer.ino
-  portENTER_CRITICAL_ISR(&timerMux);
-  interruptCounter++;
-  if (WiFi.status() != WL_CONNECTED)
-  {
-    ESP.restart();
-  }
-  portEXIT_CRITICAL_ISR(&timerMux);
-}
-
-void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int len) { 
-  // Copi l'indirizzo MAC del mittente
-  char macStr[18];
-  Serial.print("Pacchetto ricevuto da: ");
-  snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
-           mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
-  Serial.println(macStr);
-  memcpy(&LettureSensori, incomingData, sizeof(LettureSensori));
-  
-  board["v1"] = LettureSensori.v1;
-  board["v2"] = LettureSensori.v2;
-  board["v3"] = LettureSensori.v3;
-  board["v4"] = LettureSensori.v4;
-  board["progressivo"] = String(LettureSensori.progressivo);
-  String jsonString = JSON.stringify(board);
-  events.send(jsonString.c_str(), "new_readings", millis());
-  
-  Serial.printf("Board ID %u: %u bytes\n", LettureSensori.v1, len);
-  Serial.printf("t valore: %4.2f \n", LettureSensori.v2);
-  Serial.printf("h valore: %4.2f \n", LettureSensori.v3);
-  Serial.printf("Progressivo: %d \n", LettureSensori.progressivo);
-  Serial.println();
-}
-
-const char index_html[] PROGMEM = R"rawliteral(
-<!DOCTYPE HTML><html>
-<head>
-  <title>Robotdazero - rete "Ambientale" con ESP32</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="icon" href="data:,">
-  <style>
-    html {font-family: Arial; display: inline-block; text-align: center;}
-    p {  font-size: 1.2rem;}
-    body {  margin: 0;}
-    .topnav { overflow: hidden; background-color: #2f4468; color: white; font-size: 1.7rem; }
-    .content { padding: 20px; }
-    .card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
-    .cards { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .reading { font-size: 2.8rem; }
-    .packet { color: #bebebe; }
-    .card.temperature { color: #fd7e14; }
-    .card.humidity { color: #1b78e2; }
-  </style>
-</head>
-<body>
-  <div class="topnav">
-    <h3>ROBOTDAZERO - rete "Ambientale" con ESP32</h3>
-  </div>
-  <div class="content">
-    <div class="cards">
-      <div class="card temperature">
-        <h4><i class="fas fa-thermometer-half"></i> SCHEDA #1 - TEMPERATURA</h4><p><span class="reading"><span id="t1"></span> &deg;C</span></p><p class="packet">sensore DHT11: <span id="rt1"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="fas fa-tint"></i> SCHEDA #1 - UMIDITA'</h4><p><span class="reading"><span id="h1"></span> &percnt;</span></p><p class="packet">sensore DHT11: <span id="rh1"></span></p>
-      </div>
-      <div class="card temperature">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Fumo/Metano</h4><p><span class="reading"><span id="t2"></span> ppm</span></p><p class="packet">sensore MQ-2: <span id="rt2"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Qualita' dell'aria</h4><p><span class="reading"><span id="h2"></span> ppm</span></p><p class="packet">sensore MQ-135: <span id="rh2"></span></p>
-      </div>
-    </div>
-  </div>
-<script>
-if (!!window.EventSource) {
- var source = new EventSource('/events');
- 
- source.addEventListener('open', function(e) {
-  console.log("Events Connected");
- }, false);
- source.addEventListener('error', function(e) {
-  if (e.target.readyState != EventSource.OPEN) {
-    console.log("Events Disconnected");
-  }
- }, false);
- 
- source.addEventListener('message', function(e) {
-  console.log("message", e.data);
- }, false);
- 
- source.addEventListener('new_readings', function(e) {
-  console.log("new_readings", e.data);
-  var obj = JSON.parse(e.data);
-  document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;
-  document.getElementById("h1").innerHTML = obj.v1;
-  document.getElementById("t2").innerHTML = obj.v3;
-  document.getElementById("h2").innerHTML = obj.v4;
- }, false);
-}
-</script>
-</body>
-</html>)rawliteral";
-
-void initBT() {
-  SerialBT.begin("ESP32-sensori");    
-  Serial.println("Dispositivo avviato, puoi accoppiarlo con bluetooth...");
-}
-
 void initWiFi() {
     WiFi.mode(WIFI_MODE_APSTA);
 
     if(!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-      Serial.println("STA Failed to configure");
+      Serial.println("Errore di configurazione");
     }
 
     WiFi.begin(WIFI_SSID, WIFI_PASS);
 
-    Serial.printf("Connecting to %s .", WIFI_SSID);
+    Serial.printf("In connessione a %s .", WIFI_SSID);
     while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }
     Serial.println("ok");
 
     IPAddress ip = WiFi.localIP();
-
     Serial.printf("SSID: %s\n", WIFI_SSID);
     Serial.printf("Channel: %u\n", WiFi.channel());
     Serial.printf("IP: %u.%u.%u.%u\n", ip & 0xff, (ip >> 8) & 0xff, (ip >> 16) & 0xff, ip >> 24);
@@ -343,48 +173,103 @@ void initWiFi() {
 
 void initEspNow() {
     if (esp_now_init() != ESP_OK) {
-        Serial.println("ESP NOW failed to initialize");
+        Serial.println("Errore di inizializzazione di ESP NOW");
         while (1);
     }
     esp_now_register_recv_cb(suDatiRicevuti);
 }
 
 void setup() {
-  Serial.begin(115200);
-  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disabilita brownout detector
+  initWiFi();
+  initEspNow();
+}
+```
+
+##### Codice della ESP32 "trasmittente"
+```bash
+int32_t getWiFiChannel(const char *ssid) {
+
+    if (int32_t n = WiFi.scanNetworks()) {
+        for (uint8_t i=0; i<n; i++) {
+            if (!strcmp(ssid, WiFi.SSID(i).c_str())) {
+                return WiFi.channel(i);
+            }
+        }
+    }
+
+    return 0;
+}
+
+void initWiFi() {
+
+    WiFi.mode(WIFI_MODE_STA);
+
+    // acquisice il canale usato dalla WIFI
+    int32_t channel = getWiFiChannel(WIFI_SSID);
+
+    esp_wifi_set_promiscuous(true);
+    esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
+    esp_wifi_set_promiscuous(false);
+
+    Serial.printf("SSID: %s\n", WIFI_SSID);
+    Serial.printf("Channel: %u\n", WiFi.channel());
+}
+
+
+void initEspNow() {
+
+    if (esp_now_init() != ESP_OK) {
+        Serial.println("ESP NOW failed to initialize");
+        while (1);
+    }
+
+    memcpy(peerInfo.peer_addr, ESP_NOW_RECEIVER, 6);
+    peerInfo.ifidx   =  WIFI_IF_STA;
+    peerInfo.encrypt = false;
+
+    if (esp_now_add_peer(&peerInfo) != ESP_OK) {
+        Serial.println("ESP NOW pairing failure");
+        while (1);
+    }
+}
+
+void setup() {
 
   initWiFi();
   initEspNow();
-  initBT();
 
-  timer = timerBegin(0, 80, true);
-  timerAttachInterrupt(timer, &onTimer, true);
-  timerAlarmWrite(timer, DELAY_RECONNECT * 1000000, true);
-  timerAlarmEnable(timer);
+}
+```
 
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send_P(200, "text/html", index_html);
-  });
-   
-  events.onConnect([](AsyncEventSourceClient *client){
-    if(client->lastId()){
-      Serial.printf("Riconnessione! Ultmo messaggio ricevuto: %u\n", client->lastId());
+E questo è infine il pezzo di programma che riesce a sicncornizzare le due schede ESP32 in versione ricevente e trasmittenye sullo stesso canale. Un semplice ciclo "for" effettua la scansione dei canali disponibili sulla rete = "WIFI_SSID".
+
+```bash
+int32_t getWiFiChannel(const char *ssid) {
+
+    if (int32_t n = WiFi.scanNetworks()) {
+        for (uint8_t i=0; i<n; i++) {
+            if (!strcmp(ssid, WiFi.SSID(i).c_str())) {
+                return WiFi.channel(i);
+            }
+        }
     }
-    client->send("hello!", NULL, millis(), 10000);
-  });
-  server.addHandler(&events);
-  server.begin();
+
+    return 0;
 }
- 
-void loop() {
-  static unsigned long lastEventTime = millis();
-  static const unsigned long EVENT_INTERVAL_MS = 5000;
-  if ((millis() - lastEventTime) > EVENT_INTERVAL_MS) {
-    events.send("ping",NULL,millis());
-    lastEventTime = millis();
-  }
+
+void initWiFi() {
+
+    WiFi.mode(WIFI_MODE_STA);
+    
+    // la parte chiva del programma
+    int32_t channel = getWiFiChannel(WIFI_SSID);
+    
+    esp_wifi_set_promiscuous(true);
+    esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
+    esp_wifi_set_promiscuous(false);
+    Serial.printf("SSID: %s\n", WIFI_SSID);
+    Serial.printf("Channel: %u\n", WiFi.channel());
 }
-++++
 ```
 
 
