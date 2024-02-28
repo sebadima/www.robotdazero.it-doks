@@ -35,7 +35,7 @@ ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la com
 
 ### Un programma basico per commettersi ad ESP-NOW
 
-La trasmissione dati tra due ESP32 utilizzando il protocollo ESP-NOW è ben documentata da Espressif e il codice per inviare dati ad una scheda di cui conosciamo l'indirizzo <a href="https://it.wikipedia.org/wiki/Indirizzo_MAC" target="_blank">MAC</a> si riduce apoche semplici righe:
+La trasmissione dati tra due ESP32 utilizzando il protocollo ESP-NOW è ben documentata da Espressif e il codice per inviare dati ad una scheda di cui conosciamo l'indirizzo <a href="https://it.wikipedia.org/wiki/Indirizzo_MAC" target="_blank">MAC</a> si limita a queste poche righe:
 
 ##### Esempio di base per ESP-NOW:
 ```bash
@@ -76,26 +76,26 @@ void loop() {
 
 ## I problemi nell'utilizzo simultaneo di Wi-Fi e ESP-NOW
 
-Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta delle sfide non banali, come ad esempio l'utilizzo della unica radio (e antenna) che deve essere condivisa tra i due sistemi.
+Dall'esempio precedente si nota come ESP-NOW non sia un protocollo "difficile" da inserire nei nostri programmi, ma la sua coesistenza con il Wi-Fi sull'ESP32 presenta delle sfide non banali. Tra queste la maggiore è sicuramente la dotazione di una singola radio (e antenna) che deve essere condivisa tra i due sistemi.
 Questa limitazione tecnica può causare, e spesso causa, conflitti e rallentamenti in entrambe le connessioni.
 
 ### Possibili soluzioni
 
-Poichè avevamo deciso di implentare una centralina di monitoraggio dell'aria con accesso ai sensori ESP-NOW e con server WEB integrato, abbiamo provato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per l'utilizzo in simultanea che riassumiamo in breve:
+Poichè avevamo deciso di implentare una centralina di monitoraggio dell'aria con accesso ai sensori ESP-NOW e con server WEB integrato, abbiamo sperimentato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per il loro uso in simultanea che riassumiamo in breve:
 
 > *- La schede ESP32 trasmittente deve utilizzare lo stesso canale Wi-Fi della scheda ricevente.
 Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router WiFi e questo è già una fonte di potenziali problemi.
 <br>- La modalità Wi-Fi della scheda ricevente deve essere "access point e station" e quindi deve essere definita con il parametro (**WIFI_AP_STA**).
-È possibile impostare manualmente (sul router) lo stesso canale Wi-Fi, ma è preferibile aggiungere una funzione software per "agganciare" il canale Wi-Fi della scheda ricevente.*
+È possibile impostare manualmente (sul router) lo stesso canale Wi-Fi, ma è preferibile scrivere una funzione software per "agganciare" il canale Wi-Fi delle due schede.*
 
 
 
 
 ### I problemi dell'approccio basico ad ESP-NOW
 
-Se, come noi, hai compilato ed usato questo esempio base con il protocollo ESP-NOW e il Wi-Fi, sicuramente avrai notato che, non appena si utilizzano WiFi ed ESP-NOW **ASSIEME**, la maggior parte dei pacchetti ESP-NOW non arriva affatto. Questa anomalia sembra essere correlata al modo in cui funziona il WiFi in genere e non solo con ESP32. Vediamo meglio come risolvere il problema e cominciamo dai problemi pratici.
+Se, come noi, hai usato l'esempio base aggiungendo la connessione Wi-Fi, avrai notato che, non appena questa viene attivata, la maggior parte dei pacchetti ESP-NOW non arriva affatto. Questa anomalia sembra essere correlata al modo in cui funziona il Wi-Fi in genere e non solo con ESP32. Vediamo meglio come risolvere il problema e cominciamo dai problemi pratici:
 
-#### L'esempio di base e i problemi con il Master
+#### L'esempio di base e i problemi con il "Master"
 
 Il master è il nodo che invierà i dati ESP-NOW allo slave, che a sua volta si occuperà di connettersi al WiFi. Il Master non si connetterà al WiFi e quindi lo useremo solo per inviare.
 
@@ -104,13 +104,12 @@ Il master è il nodo che invierà i dati ESP-NOW allo slave, che a sua volta si 
 <br>- Master: Invia dati ad altri dispositivi (slave), avvia la comunicazione con gli slave, può comunicare con più slave contemporaneamente.
 <br>- Slave:
 Riceve dati dal master, Risponde alle richieste del master, Può comunicare con un solo master alla volta.
-<br>- Configurazione Master/Slave:
+<br><br>- Configurazione Master/Slave:
 <br>La configurazione del ruolo master/slave avviene tramite software.
-<br>La libreria software ESP-NOW (<a href="https://github.com/yoursunny/WifiEspNow" target="_blank">link</a>) fornisce funzioni per impostare il ruolo del dispositivo ESP32, mentre questa <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/espnow.html" target="_blank">pagina</a> fornisce in inglese la documentazione completa dell'intero pacchetto.*
+<br>La libreria software ESP-NOW (<a href="https://github.com/yoursunny/WifiEspNow" target="_blank">link</a>) fornisce funzioni per impostare il ruolo del dispositivo ESP32, mentre questa <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/espnow.html" target="_blank">pagina</a> fornisce (in inglese) la documentazione completa dell'intero pacchetto.*
 
-#### Slave non funzionale
-Lo slave sarà il nodo che si connette al WiFi per poter inviare i dati su Internet. È proprio in questo nodo che troveremo il problema dei pacchetti che *non arrivano* con conseguente perdita di dati. Se per il master non si poteva parlare di un vero e proprio *difetto* in questo caso siamo costretti modificare il programma di base fornito da Expressif per la sua scheda.
-
+#### I problemi della scheda "Slave"
+Lo slave sarà dunque il nodo che si connette al WiFi per poter inviare i dati su Internet. È proprio in questo nodo che troveremo il problema dei pacchetti che *non arrivano* con conseguente perdita di dati. Se per il master non si poteva parlare di un vero e proprio difetto di progettazione, con lo slave siamo costretti a modificare il programma di base fornito da Expressif.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Perchè la colpa è realmente della connessione WI-FI</strong>:
