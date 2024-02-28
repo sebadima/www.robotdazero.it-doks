@@ -301,4 +301,4 @@ Libreria Wire: <a href="https://www.arduino.cc/reference/en/language/functions/c
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.1.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.154.1.2.2</p>
