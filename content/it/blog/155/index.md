@@ -35,7 +35,7 @@ ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la com
 
 ### Un programma basico per commettersi ad ESP-NOW
 
-Vediamo con un esempio pratico come l'ESP32 può connettersi a 
+La trasmissione dati tra due ESP32 utilizzando il protocollo ESP-NOW è ben documentata da Espressif e il codice per inviare dati ad una scheda di cui conosciamo l'indirizzo <a href="https://it.wikipedia.org/wiki/Indirizzo_MAC" target="_blank">MAC</a> si riduce apoche semplici righe:
 
 ##### Esempio di base per ESP-NOW:
 ```bash
@@ -74,21 +74,19 @@ void loop() {
 }
 ```
 
-
-
 ## I problemi nell'utilizzo simultaneo di Wi-Fi e ESP-NOW
 
-Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta delle sfide non banali, come ad esempio l'utilizzo della unica radio (e antenna) che deve essere condivisa tra Wi-Fi e ESP-NOW.
-Questa limitazione tecnica può causare (e spesso causa) conflitti e rallentamenti in entrambi i tipi di connessione.
+Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta delle sfide non banali, come ad esempio l'utilizzo della unica radio (e antenna) che deve essere condivisa tra i due sistemi.
+Questa limitazione tecnica può causare, e spesso causa, conflitti e rallentamenti in entrambe le connessioni.
 
 ### Possibili soluzioni
 
-Poichè avevamo deciso di implentare una centralina di monitoraggio dell'aria con accesso ai sensori ESP-NOW e con server WEB integrato, abbiamo provato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per i due protocolli in simultanea che riassumiamo in breve:
+Poichè avevamo deciso di implentare una centralina di monitoraggio dell'aria con accesso ai sensori ESP-NOW e con server WEB integrato, abbiamo provato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per l'utilizzo in simultanea che riassumiamo in breve:
 
-> *- La schede mittente ESP32 devono utilizzare lo stesso canale Wi-Fi della scheda ricevente.
-Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router WiFi.
-<br>- La modalità Wi-Fi della scheda ricevente deve essere access point e station (**WIFI_AP_STA**).
-È possibile impostare manualmente (sul router) lo stesso canale Wi-Fi, ma è preferibile aggiungere una funzione software per "agganciarsi" al canale Wi-Fi della scheda ricevente.*
+> *- La schede ESP32 trasmittente deve utilizzare lo stesso canale Wi-Fi della scheda ricevente.
+Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router WiFi e questo è già una fonte di potenziali problemi.
+<br>- La modalità Wi-Fi della scheda ricevente deve essere "access point e station" e quindi deve essere definita con il parametro (**WIFI_AP_STA**).
+È possibile impostare manualmente (sul router) lo stesso canale Wi-Fi, ma è preferibile aggiungere una funzione software per "agganciare" il canale Wi-Fi della scheda ricevente.*
 
 
 
@@ -103,10 +101,10 @@ Il master è il nodo che invierà i dati ESP-NOW allo slave, che a sua volta si 
 
 
 > *Master e Slave in ESP-NOW di Espressif per ESP32:
-<br><strong>Master</strong>: Invia dati ad altri dispositivi (slave), avvia la comunicazione con gli slave, può comunicare con più slave contemporaneamente.
-<br><strong>Slave</strong>:
+<br>- Master: Invia dati ad altri dispositivi (slave), avvia la comunicazione con gli slave, può comunicare con più slave contemporaneamente.
+<br>- Slave:
 Riceve dati dal master, Risponde alle richieste del master, Può comunicare con un solo master alla volta.
-<br><br><strong>Configurazione Master/Slave</strong>:
+<br>- Configurazione Master/Slave:
 <br>La configurazione del ruolo master/slave avviene tramite software.
 <br>La libreria software ESP-NOW (<a href="https://github.com/yoursunny/WifiEspNow" target="_blank">link</a>) fornisce funzioni per impostare il ruolo del dispositivo ESP32, mentre questa <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/espnow.html" target="_blank">pagina</a> fornisce in inglese la documentazione completa dell'intero pacchetto.*
 
