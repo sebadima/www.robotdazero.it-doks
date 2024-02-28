@@ -20,11 +20,11 @@ mermaid: true
 <!-- https://randomnerdtutorials.com/esp32-ESP-NOW-wi-fi-web-server/  -->
 
 
-## Una panoramica complessiva
+## Una breve premessa
 
-La connessione simultanea WIFI ed ESP-NOW presenta alcune sfide di programmazione non indifferenti e per questo abbiamo deciso di approfondire l'argomento con un paragrafo dedicaro solo a questo argomento.
+La connessione simultanea WIFI ed ESP-NOW con l'ESP32 presenta alcune sfide di programmazione non indifferenti e per questo abbiamo deciso di trattare l'argomento in modo esteso, prima di presentare dei nuovi progetti che sfruttano a fondo entrambe le tecnologie.
 
-## Cosa è ESP-NOW
+### Cosa è ESP-NOW
 
 ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la comunicazione a bassa latenza e basso consumo energetico tra dispositivi ESP32. Offre un'alternativa al Wi-Fi per la connessione di dispositivi in reti locali, con alcuni vantaggi:
 
@@ -33,42 +33,11 @@ ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la com
 - Minore consumo energetico: ESP-NOW consuma meno energia rispetto al Wi-Fi, prolungando la durata della batteria dei dispositivi.
 
 
-### I problemi nell'utilizzo simultaneo di Wi-Fi e ESP-NOW
-
-Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta alcune sfide:
-
-- Condivisione delle risorse
-
-L'ESP32 ha un'unica radio Wi-Fi che deve essere condivisa tra Wi-Fi e ESP-NOW.
-Questo può causare conflitti e rallentamenti in entrambi i tipi di connessione, soprattutto in ambienti con traffico intenso.
-
-- Gestione del software
-
-La gestione di due connessioni di rete separate richiede un software più complesso, aumentando la complessità di sviluppo e la possibilità di errori.
-La sincronizzazione dei dati tra le due reti può essere un problema, richiedendo un'attenta progettazione del software.
-
-- Consumo energetico
-
-Sebbene ESP-NOW consumi meno energia del Wi-Fi, la gestione di due connessioni contemporaneamente può comunque avere un impatto significativo sulla durata della batteria.
-3. Soluzioni per le sfide:
-
-
-## 
-
-Ci sono alcune cose che dovete prendere in considerazione se si desidera utilizzare Wi-Fi per ospitare un server web e utilizzare ESP-NOW contemporaneamente per ricevere le letture dei sensori da altre schede:
-
-Le schede mittente ESP32 devono utilizzare lo stesso canale Wi-Fi della scheda ricevente.
-Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router WiFi.
-La modalità Wi-Fi della scheda ricevente deve essere access point e station (WIFI_AP_STA).
-È possibile impostare manualmente lo stesso canale Wi-Fi, oppure è possibile aggiungere una semplice spinetta di codice sul mittente per impostare il proprio canale Wi-Fi sullo stesso della scheda ricevente.
-
-
-
-## Un programma basico per commettersi ad ESP-NOW
+### Un programma basico per commettersi ad ESP-NOW
 
 Vediamo con un esempio pratico come l'ESP32 può connettersi a 
 
-##### Sketch di base per ESP-NOW:
+##### Esempio di base per ESP-NOW:
 ```bash
 #include <WiFi.h>
 #include <esp_now.h>
@@ -106,6 +75,24 @@ void loop() {
 ```
 
 
+
+## I problemi nell'utilizzo simultaneo di Wi-Fi e ESP-NOW
+
+Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta delle sfide non banali, come ad esempio l'utilizzo della unica radio (e antenna) che deve essere condivisa tra Wi-Fi e ESP-NOW.
+Questa limitazione tecnica può causare (e spesso causa) conflitti e rallentamenti in entrambi i tipi di connessione.
+
+### Possibili soluzioni
+
+Poichè avevamo deciso di implentare una centralina di monitoraggio dell'aria con accesso ai sensori ESP-NOW e con server WEB integrato, abbiamo provato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per i due protocolli in simultanea che riassumiamo in breve:
+
+> *- La schede mittente ESP32 devono utilizzare lo stesso canale Wi-Fi della scheda ricevente.
+Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router WiFi.
+<br>- La modalità Wi-Fi della scheda ricevente deve essere access point e station (**WIFI_AP_STA**).
+È possibile impostare manualmente (sul router) lo stesso canale Wi-Fi, ma è preferibile aggiungere una funzione software per "agganciarsi" al canale Wi-Fi della scheda ricevente.*
+
+
+
+
 ### I problemi dell'approccio basico ad ESP-NOW
 
 Se, come noi, hai compilato ed usato questo esempio base con il protocollo ESP-NOW e il Wi-Fi, sicuramente avrai notato che, non appena si utilizzano WiFi ed ESP-NOW **ASSIEME**, la maggior parte dei pacchetti ESP-NOW non arriva affatto. Questa anomalia sembra essere correlata al modo in cui funziona il WiFi in genere e non solo con ESP32. Vediamo meglio come risolvere il problema e cominciamo dai problemi pratici.
@@ -129,7 +116,7 @@ Lo slave sarà il nodo che si connette al WiFi per poter inviare i dati su Inter
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Perchè la colpa è realmente della connessione WI-FI</strong>:
-<br>Se hai provato lo Sketch di base ed hai aggiunto i comandi per collgarsi al tuo Wi-Fi, avrai osservato che i pacchetti non riescono a passare tra il nodo master e lo slave solo <strong>DOPO</strong> che viene attivato il WiFi. Infatti, se commenti la linea "WiFi.begin()" nel tuo programmi o spegni il router Wi-Fi l'errore scompare!</div>
+<br>Se hai provato l'esempio di base ed hai aggiunto i comandi per collegarsi al tuo Wi-Fi, avrai osservato che i pacchetti non riescono a passare tra il nodo master e lo slave solo <strong>DOPO</strong> che viene attivato il WiFi. Infatti, se commenti la linea "WiFi.begin()" nel tuo programmi o spegni il router Wi-Fi l'errore scompare!</div>
 
 <br>
 
