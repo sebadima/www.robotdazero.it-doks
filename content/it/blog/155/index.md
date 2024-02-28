@@ -17,7 +17,7 @@ mermaid: true
 
 
 
-<!-- https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/  -->
+<!-- https://randomnerdtutorials.com/esp32-ESP-NOW-wi-fi-web-server/  -->
 
 
 ## Una panoramica complessiva
@@ -37,35 +37,20 @@ ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la com
 
 Sebbene ESP-NOW offra diversi vantaggi, la sua coesistenza con il Wi-Fi sull'ESP32 presenta alcune sfide:
 
-1. Condivisione delle risorse:
+- Condivisione delle risorse
 
 L'ESP32 ha un'unica radio Wi-Fi che deve essere condivisa tra Wi-Fi e ESP-NOW.
 Questo può causare conflitti e rallentamenti in entrambi i tipi di connessione, soprattutto in ambienti con traffico intenso.
 
-2. Gestione del software:
+- Gestione del software
 
 La gestione di due connessioni di rete separate richiede un software più complesso, aumentando la complessità di sviluppo e la possibilità di errori.
 La sincronizzazione dei dati tra le due reti può essere un problema, richiedendo un'attenta progettazione del software.
 
-3. Consumo energetico:
+- Consumo energetico
 
 Sebbene ESP-NOW consumi meno energia del Wi-Fi, la gestione di due connessioni contemporaneamente può comunque avere un impatto significativo sulla durata della batteria.
 3. Soluzioni per le sfide:
-
-Esistono diverse strategie per mitigare le sfide:
-
-a) Prioritizzazione delle connessioni:
-
-Stabilire la priorità di una connessione rispetto all'altra in base alle esigenze dell'applicazione.
-Ad esempio, se l'applicazione richiede una bassa latenza, ESP-NOW dovrebbe avere la priorità.
-b) Ottimizzazione del software:
-
-Sviluppare software efficiente che gestisca le due connessioni in modo ottimale, minimizzando i conflitti e l'utilizzo di risorse.
-c) Gestione intelligente dell'alimentazione:
-
-Disattivare una delle due connessioni quando non è in uso per risparmiare energia.
-Utilizzare modalità di risparmio energetico per entrambe le connessioni quando possibile.
-
 
 
 ## 
@@ -77,6 +62,47 @@ Il canale WiFi della scheda ricevente viene assegnato automaticamente dal router
 La modalità Wi-Fi della scheda ricevente deve essere access point e station (WIFI_AP_STA).
 È possibile impostare manualmente lo stesso canale Wi-Fi, oppure è possibile aggiungere una semplice spinetta di codice sul mittente per impostare il proprio canale Wi-Fi sullo stesso della scheda ricevente.
 
+
+
+## Un programma basico per commettersi ad ESP-NOW
+
+Vediamo con un esempio pratico come l'ESP32 può connettersi a 
+
+```bash
+#include <WiFi.h>
+#include <esp_now.h>
+
+// Indirizzo MAC della scheda slave
+uint8_t slave_mac[] = {0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX};
+
+// Messaggio da inviare
+char message[] = "Ciao da ESP32 Master!";
+
+void setup() {
+  Serial.begin(115200);
+
+  // Inizializzazione ESP-NOW
+  if (esp_now_init() != ESP_OK) {
+    Serial.println("Errore durante l'inizializzazione!");
+    while(1);
+  }
+
+  // Imposta la scheda come master
+  esp_now_set_self_role(ESP_NOW_ROLE_MASTER);
+
+  // Aggiungi la scheda slave
+  esp_now_add_peer(slave_mac);
+}
+
+void loop() {
+  // Invia il messaggio alla scheda slave
+  esp_now_send(slave_mac, (uint8_t*)message, strlen(message));
+  Serial.println("Messaggio inviato: " + String(message));
+
+  // Attendi 10 secondi prima di inviare di nuovo il messaggio
+  delay(10000);
+}
+```
 
 > *.*
 
