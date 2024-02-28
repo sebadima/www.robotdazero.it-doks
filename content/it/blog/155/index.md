@@ -121,7 +121,7 @@ Lo slave sarà dunque il nodo che si connette al WiFi per poter inviare i dati s
 <strong>Perchè la colpa è realmente della connessione WI-FI</strong>:
 <br>Se hai provato l'esempio di base ed hai aggiunto i comandi per collegarsi al tuo Wi-Fi, avrai osservato che i pacchetti non riescono a passare tra il nodo master e lo slave solo <strong>DOPO</strong> che viene attivato il WiFi. Infatti, se commenti la linea "WiFi.begin()" nel tuo programma l'errore scompare!</div>
 
-### Una prima soluzione
+### Una prima parziale soluzione
 
 Abbiamo visto, per esempio in questo <a href="https://www.hackster.io/news/timm-bogner-s-farm-data-relay-system-uses-esp8266-esp32-nodes-and-gateways-for-sensor-networks-b87a75c69f46" target="_blank">sito</a> che in alcuni casi i progettisti ricorrevano a due schede "gateway" che scambiano dati via <a href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">JSON</a> sulla porta seriale, con il primo gateway collegato ai sensori ESP-NOW e il secondo a Wi-Fi. 
 
@@ -129,29 +129,24 @@ Abbiamo visto, per esempio in questo <a href="https://www.hackster.io/news/timm-
 
 Nel box in rosso si vede come le due schede ESP32 provvedano a dividersi i compiti e a scambiare i dati via JSON. In questo modo si risolve la anomalia ma si introduce un nuovo elemento di complessità alla rete mista con ESP-NOW/Wi-Fi. E sappiamo per esperienza che la complessità si porta appresso un sacco di conseguenza "indesiderate".
 
-Abbiamo dunque cercato per la nostra centralina una soluzione più semplice.
+Abbiamo dunque cercato per la nostra centralina una soluzione più semplice e abbiamo trovato una traccia a questo <a href="https://www.electrosoftcloud.com/en/esp32-wifi-and-esp-now-simultaneously/" target="_blank">link</a> su Electrosoftcloud.com dove si suggerisce non connettersi alla Wi-Fi con la istruzione:
+
+```bash
+WiFi.modalità(WIFI_STA);
+```
+ma di usare invece questa istruzione:
+
+```bash
+WiFi.modalità(WIFI_AP_STA);
+```
 
 > *Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep mentre non si ha lavoro. Ciò significa che non ascolta per ricevere i pacchetti ESP-NOW e quindi sono persi. Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Rilassati, non sarà necessario esporre il microcontrollore, basta dirgli di configurarsi come AP e Stazione allo stesso tempo.*
 
+### Ls soluzione definitiva al problema
 
- Per questo cambieremo questa linea:
+Con questo semplice cambiamento, si risolve il 70% dei problemi della rete mista con ESP32, ma non tutti. La anomalia sui dati potrebbe rispresentarsi cambiando router, schede e configurazione, proprio perchè serve piuttosto risolvere ala rasie il problema del canale Wi-Fi! Per questo motivo progetti che funzionano per ore apparentemente in modo perfetto smettono di funzionare semplicemente riavviando il router. 
 
-WiFi.modalità(WIFI_STA);
-Per questo:
-
-WiFi.modalità(WIFI_AP_STA);
-
-E con questo semplice cambiamento, si risolve un problema che sembra aver trasformato molti su Internet. Non sto dicendo che le persone sono molto goffe, forse quando l'hanno provato non è riuscito o non è stato implementato. Ecco perché vi porto questo modo facile nella speranza che servirà a molti.
-
-
-
-
-
-Difficile
-Se l'opzione sopra non ti è riuscita, c'è un'opzione alternativa che è quella di mettere il canale WiFi sul master, che sembra essere anche un requisito per farlo funzionare. Nel mio caso senza andare oltre, al momento della pubblicazione della prima parte di questa guida ha funzionato perfettamente per me, ma quando sono andato a implementarlo due giorni dopo nel mio progetto ha iniziato a fallire. Forse è stato un cambio di canale dal mio router o simili, così ho deciso di espandere questa guida con l'altra opzione che avevo visto.
-
-Non essere spaventato dal titolo, il "modo difficile" è perché devi aggiungere qualche riga in più, ma non è davvero difficile. Le linee da aggiungere sono l'intestazione per poter configurare il canale e la linea in cui è indicato il canale.
-
+La soluzione definitiva consiste nell'aggiungere qualche riga in più ai programmi che scriverai per collegare ESP32 al Wi-fi e in basso trovi il codice commentato come lo utilizziamo bei nostri progetti.
 
 ++++
 
