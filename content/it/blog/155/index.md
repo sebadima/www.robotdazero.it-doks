@@ -108,19 +108,27 @@ Riceve dati dal master, Risponde alle richieste del master, Può comunicare con 
 <br>La configurazione del ruolo master/slave avviene tramite software.
 <br>La libreria software ESP-NOW (<a href="https://github.com/yoursunny/WifiEspNow" target="_blank">link</a>) fornisce funzioni per impostare il ruolo del dispositivo ESP32, mentre questa <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/espnow.html" target="_blank">pagina</a> fornisce (in inglese) la documentazione completa dell'intero pacchetto.*
 
+
+
+
 #### I problemi della scheda "Slave"
 Lo slave sarà dunque il nodo che si connette al WiFi per poter inviare i dati su Internet. È proprio in questo nodo che troveremo il problema dei pacchetti che *non arrivano* con conseguente perdita di dati. Se per il master non si poteva parlare di un vero e proprio difetto di progettazione, con lo slave siamo costretti a modificare il programma di base fornito da Expressif.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 <strong>Perchè la colpa è realmente della connessione WI-FI</strong>:
-<br>Se hai provato l'esempio di base ed hai aggiunto i comandi per collegarsi al tuo Wi-Fi, avrai osservato che i pacchetti non riescono a passare tra il nodo master e lo slave solo <strong>DOPO</strong> che viene attivato il WiFi. Infatti, se commenti la linea "WiFi.begin()" nel tuo programmi o spegni il router Wi-Fi l'errore scompare!</div>
+<br>Se hai provato l'esempio di base ed hai aggiunto i comandi per collegarsi al tuo Wi-Fi, avrai osservato che i pacchetti non riescono a passare tra il nodo master e lo slave solo <strong>DOPO</strong> che viene attivato il WiFi. Infatti, se commenti la linea "WiFi.begin()" nel tuo programma l'errore scompare!</div>
 
 <br>
 
-WiFi facile e ESP-NOW soluzione
-Nonostante quanto sia stato difficile per me trovare la soluzione, navigando nei forum con esempi che non funzionavano, la gente diceva che bisognava usare due schede, una per il WiFi e l'altra per l'ESP-NOW collegate dalla porta seriale .. e si scopre che la soluzione è la più semplice.
+### Una prima soluzione
+Abbiamo visto per esempio in questo <a href="https://www.hackster.io/news/timm-bogner-s-farm-data-relay-system-uses-esp8266-esp32-nodes-and-gateways-for-sensor-networks-b87a75c69f46" target="_blank">sito</a> nonostante quanto sia stato difficile per me trovare la soluzione, navigando nei forum con esempi che non funzionavano, la gente diceva che bisognava usare due schede, una per il WiFi e l'altra per l'ESP-NOW collegate dalla porta seriale .. e si scopre che la soluzione è la più semplice.
 
-Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep mentre non si ha lavoro. Ciò significa che non ascolta per ricevere i pacchetti ESP-NOW e quindi sono persi. Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Rilassati, non sarà necessario esporre il microcontrollore, basta dirgli di configurarsi come AP e Stazione allo stesso tempo. Per questo cambieremo questa linea:
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="logo contatti">
+
+> *Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep mentre non si ha lavoro. Ciò significa che non ascolta per ricevere i pacchetti ESP-NOW e quindi sono persi. Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Rilassati, non sarà necessario esporre il microcontrollore, basta dirgli di configurarsi come AP e Stazione allo stesso tempo.*
+
+
+ Per questo cambieremo questa linea:
 
 WiFi.modalità(WIFI_STA);
 Per questo:
