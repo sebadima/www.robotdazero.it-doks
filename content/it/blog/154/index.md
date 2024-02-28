@@ -280,16 +280,16 @@ Il comando proseguirà inoltre a fare l'upload del file oggetto nella memoria de
 
 Se non hai usato PlaformIO come nell'esempio precedente puoi comunque compilare il file "main.ino" con il software di Arduino e per fare ciò ti basta seguire questi passaggi:
 
-<strong>1</strong>. Apri Arduino IDE,
-<br><strong>2</strong>. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
-<br><strong>3</strong>. Incolla il codice "main.ino" nell'area di testo principale, 
+1. Apri Arduino IDE,
+2. Crea un nuovo progetto cliccando su "File" > "Nuovo". Verrà creato un nuovo progetto vuoto,
+3. Incolla il codice "main.ino" nell'area di testo principale, 
 
 > *Con Arduino devi installare manualmente la libreria "LiquidCrystal_I2C" e per fare ciò puoi cliccare su Sketch> #Includi libreria> Gestione librerie. Il programma verificherà tutte le librerie presenti e mostrerà una casella di ricerca, a questo punto digita il nome della libreria "LiquidCrystal_I2C" e clicca su "Installa". <br>Al termine della installazione apparirà la dicitura “INSTALLED“: Premi il tasto "Chiudi" per uscire.*
 
-<br><strong>4</strong>. Finalmente puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
-<br><strong>5</strong>. Se non ci sono errori collega la scheda al computer,
-<br><strong>6</strong>. Seleziona la scheda ESP32 corretta dal menu "Strumenti" > "Scheda",
-<br><strong>7</strong>. Clicca sul pulsante "Carica" nella barra degli strumenti.
+4. Finalmente puoi cliccare sul pulsante "Verifica" nella barra degli strumenti,
+5. Se non ci sono errori collega la scheda al computer,
+6. Seleziona la scheda ESP32 corretta dal menu "Strumenti" > "Scheda",
+7. Clicca sul pulsante "Carica" nella barra degli strumenti.
 
 Adesso Il programma verrà caricato sulla scheda ESP32. Per leggere i messaggi di log del programma ti basta andare su "Strumenti" > "Monitor Seriale".
 
