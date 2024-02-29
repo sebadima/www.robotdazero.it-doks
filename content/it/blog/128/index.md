@@ -1,6 +1,6 @@
 ---
-title: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
-description: "Come usare la ESP32 Cam per sorvegliare la nostra vettura"
+title: "Come usare la ESP32 per sorvegliare la vettura"
+description: "Come usare la ESP32 per sorvegliare la vettura"
 excerpt: "In questo post vedremo come utilizzare la scheda ESP32 Cam per controllare la nostra vettura durante il parcheggio. La OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
 date: 2023-11-18T09:19:42+01:00
 lastmod: 2023-11-18T09:19:42+01:00
@@ -19,13 +19,12 @@ mermaid: true
 
 <hr>
 
-## Usiamo la ESP32 Cam per monitorare la vettura durante il parcheggio
+## Usiamo la ESP32 Cam per ESP32 per sorvegliare la vettura
 
 La ESP32 nella versione con la OV2640 Cam è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare nel link in basso a 12~13 euro su Amazon o prezzi ancora più bassi su Aliexpress.
 Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di auto o accessi. Si può connettere al WI-fi se disponibile o meglio ancora ad un smartphone con connessione dati, ormai disponibile a basso costo. 
 
-Abbiamo predisposto un KIT completo   ++++++++++++++++++++++++++++++++++
-
+Possiamo usarla con una connessione remota via smarphone per controllare la vettura in parcheggio oppure per monitorare qualche angolo nascosto delle nostra cassa/giardino se possiamo usare la connessione Wi-fi. Se volete partire con i componenti da noi utilizzati puoi acquistare il KIT completo sul nostro ecommerce, oppure utilizzare una ESP32-Cam in tuo possesso e caricare il programma free di Robotdazero. 
 
 > **Poiché la registrazione dei video potrebbe** in certi casi scaricare la batteria abbiamo pensato ad una versione *soft* del sistema di monitoraggio, con una serie di accortezze per risparmiare la batteria e avere delle foto ad intervalli di 10 secondi circa.
 
