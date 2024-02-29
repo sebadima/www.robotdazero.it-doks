@@ -85,6 +85,13 @@ Per collegare il display LCD all'ESP32 usando l'interfaccia I2C, puoi seguire qu
 - Collega il pin **SDA** del display LCD al pin **SDA** (GPIO 23) di ESP32.
 - Collega il pin **SCL** del display LCD al pin **SCL** (GPIO 18) di ESP32.
 
+
+<br>
+<br>
+<img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/154.png" alt="schema connessioni su come scrivere su un display LCD con ESP32">
+<br>
+<br>
+
 Esaurita la parte dei collegamenti, che puoi portare a termine usando dei semplici connettori Dupont femmina/femmina e senza breadboard, non ci resta che occuparci del software e di come compilarlo con PlatformIO e Arduino IDE.
 
 <br>
