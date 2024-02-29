@@ -18,6 +18,7 @@ mermaid: true
 
 
 <!-- 
+https://www.electrosoftcloud.com/en/esp32-wifi-and-esp-now-simultaneously/
 https://randomnerdtutorials.com/esp32-ESP-NOW-wi-fi-web-server/  
 https://rntlab.com/question/how-to-know-and-or-set-the-wifi-channel-on-an-esp32/?utm_source=pocket_saves
 https://github.com/HarringayMakerSpace/ESP-Now/blob/master/espnow-sensor-minimal/espnow-sensor-minimal.ino
@@ -140,9 +141,14 @@ ma di usare invece questa istruzione:
 WiFi.modalità(WIFI_AP_STA);
 ```
 
-> *Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep mentre non si ha lavoro. Ciò significa che non ascolta per ricevere i pacchetti ESP-NOW e quindi sono persi. Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Rilassati, non sarà necessario esporre il microcontrollore, basta dirgli di configurarsi come AP e Stazione allo stesso tempo.*
+> *Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep mentre non si ha lavoro. Ciò significa che non ascolta per ricevere i pacchetti ESP-NOW e quindi sono persi. 
+<br><br>Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Rilassati, non sarà necessario esporre il microcontrollore, basta dirgli di configurarsi come AP e Stazione allo stesso tempo.*
 
-### Ls soluzione definitiva al problema
+<br><br>
+<img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione">
+<br><br>
+
+### La soluzione definitiva al problema
 
 Con questo semplice cambiamento, si risolve il 70% dei problemi della rete mista con ESP32, ma non tutti. La anomalia sui dati potrebbe rispresentarsi cambiando router, schede e configurazione, proprio perchè serve piuttosto risolvere ala rasie il problema del canale Wi-Fi! Per questo motivo progetti che funzionano per ore apparentemente in modo perfetto smettono di funzionare semplicemente riavviando il router. 
 
@@ -271,9 +277,6 @@ void initWiFi() {
     Serial.printf("Channel: %u\n", WiFi.channel());
 }
 ```
-
-
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.155.0.3.1</p>
-
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.155.1.0.2</p>
