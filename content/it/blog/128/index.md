@@ -22,7 +22,10 @@ mermaid: true
 ## Usiamo la ESP32 Cam per monitorare la vettura durante il parcheggio
 
 La ESP32 nella versione con la OV2640 Cam è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare nel link in basso a 12~13 euro su Amazon o prezzi ancora più bassi su Aliexpress.
-Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di auto o accessi. Permette di registrare video con media risoluzione o scattare foto ad alta risoluzione ad intervalli prefissati. 
+Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di auto o accessi. Si può connettere al WI-fi se disponibile o meglio ancora ad un smartphone con connessione dati, ormai disponibile a basso costo. 
+
+Abbiamo predisposto un KIT completo   ++++++++++++++++++++++++++++++++++
+
 
 > **Poiché la registrazione dei video potrebbe** in certi casi scaricare la batteria abbiamo pensato ad una versione *soft* del sistema di monitoraggio, con una serie di accortezze per risparmiare la batteria e avere delle foto ad intervalli di 10 secondi circa.
 
