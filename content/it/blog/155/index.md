@@ -8,7 +8,7 @@ draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["ESP32", "PlatformIO", "ESPNOW", "WIFI"]
+tags: ["ESP32", "Programmazione", "ESPNOW", "WIFI"]
 contributors: ["sergio rame"]
 pinned: false
 homepage: false
@@ -36,10 +36,9 @@ ESP-NOW è un protocollo di rete proprietario sviluppato da Espressif per la com
 - Minore latenza: ESP-NOW offre una latenza inferiore rispetto al Wi-Fi, rendendola ideale per applicazioni in tempo reale.
 - Minore consumo energetico: ESP-NOW consuma meno energia rispetto al Wi-Fi, prolungando la durata della batteria dei dispositivi.
 
-
 ### Il programma basico per commettersi ad ESP-NOW
 
-La trasmissione dati tra due ESP32 utilizzando il protocollo ESP-NOW è ben documentata da Espressif e il codice per inviare dati ad una scheda di cui conosciamo l'indirizzo <a href="https://it.wikipedia.org/wiki/Indirizzo_MAC" target="_blank">MAC</a> si limita a queste poche righe:
+La trasmissione dati tra due ESP32 utilizzando il protocollo ESP-NOW è ben documentata da Espressif e il codice per inviare dati ad una scheda di cui conosciamo l'indirizzo <a href="https://it.wikipedia.org/wiki/Indirizzo_MAC" target="_blank">MAC</a> si limita a poche righe come queste:
 
 ##### Esempio di base per ESP-NOW
 ```bash
@@ -85,7 +84,7 @@ Questa limitazione tecnica può causare, e spesso causa, conflitti e rallentamen
 
 ### Possibili soluzioni
 
-Avendo deciso di costruire una centralina di monitoraggio dell'aria con sensori ESP-NOW e server WEB, abbiamo sperimentato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per l'uso in simultanea dei duw protocolli che ti riassumiamo in breve:
+Avendo deciso di costruire una centralina di monitoraggio dell'aria con sensori ESP-NOW e server WEB, abbiamo sperimentato alcune scappatoie per aggirare il problema. Il primo passo è stato studiare le limitazioni per l'uso in simultanea dei due protocolli che ti riassumiamo in breve:
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -94,12 +93,11 @@ Purtroppo il canale WiFi della scheda ricevente viene assegnato in automato dal 
 
 ### I problemi dell'approccio basico ad ESP-NOW
 
-Se, come noi, hai usato l'esempio base aggiungendo la connessione Wi-Fi, avrai notato che, non appena questa viene attivata, la maggior parte dei pacchetti ESP-NOW non arriva affatto. Questa anomalia sembra essere correlata al modo in cui funziona il Wi-Fi in genere e non solo con ESP32. Vediamo meglio come risolvere il problema e cominciamo dai problemi pratici:
+Se, come noi, hai usato l'esempio base aggiungendo la connessione Wi-Fi, avrai notato come non appena questa viene attivata, la maggior parte dei pacchetti ESP-NOW smette di arrivre. Questa anomalia sembra essere correlata al modo in cui funzionano  i router Wi-Fi in genere e non direttamente all'ESP32. Vediamo meglio come risolvere il problema e analizziamo nello specifico il ruolo di master e slave:
 
 #### L'esempio di base e i problemi con il "Master"
 
 Il master è il nodo che invierà i dati ESP-NOW allo slave, che a sua volta si occuperà di connettersi al WiFi. Il Master non si connetterà al WiFi e quindi lo useremo solo per inviare.
-
 
 > <strong>*Cosa sono Master e Slave in ESP-NOW di Espressif per ESP32</strong>:
 <br>- Master: Invia dati ad altri dispositivi (slave), avvia la comunicazione con gli slave, può comunicare con più slave contemporaneamente.
@@ -123,14 +121,14 @@ Lo slave sarà dunque il nodo che si connette al WiFi per poter inviare i dati s
 
 Abbiamo visto, per esempio in questo <a href="https://www.hackster.io/news/timm-bogner-s-farm-data-relay-system-uses-esp8266-esp32-nodes-and-gateways-for-sensor-networks-b87a75c69f46" target="_blank">sito</a> che i progettisti sono ricorsi a due schede "gateway" che scambiano dati via <a href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">JSON</a> sulla porta seriale, con il primo gateway collegato ai sensori ESP-NOW e il secondo alla rete Wi-Fi. 
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="logo contatti">
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="anteprima sito web">
 
 <br>
 <br>
 
-Nel box in rosso si vede come le due schede ESP32 provvedano a dividersi i compiti e a scambiarsi i dati dei sensori usando JSON su un cavetto seriale. In questo modo si risolve l'anomalia ma si è costretti ad usare una seconda ESP32 e un "terzo" protocollo (JSON) solo per aggirare il problema. Viene dunque introdotto un nuovo livello di complessità al sistema  e sappiamo per esperienza che la complessità provoca molte conseguenze "indesiderate".
+Nel box in rosso si vede come le due schede ESP32 provvedano a dividersi i compiti e a scambiarsi i dati dei sensori usando JSON su un cavetto seriale. In questo modo si risolve l'anomalia ma si è costretti ad usare una seconda ESP32 e un "terzo" protocollo (JSON) solo per aggirare il problema. Viene dunque introdotto un nuovo livello di complessità al sistema  e sappiamo per esperienza che la complessità provoca sempre conseguenze "indesiderate".
 
-Ovviamente abbiamo scartato questa soluzione di ripiego e abbiamo dunque cercato degli approfondimenti sulla questione e li abbiamo trovati a questo <a href="https://www.electrosoftcloud.com/en/esp32-wifi-and-esp-now-simultaneously/" target="_blank">link</a> di Electrosoftcloud.com. Nell'articolo si suggerisce **non** connettersi alla Wi-Fi con la istruzione:
+Ovviamente abbiamo scartato questa soluzione di ripiego, abbiamo cercato nuovi approfondimenti sulla questione e li abbiamo trovati a questo <a href="https://www.electrosoftcloud.com/en/esp32-wifi-and-esp-now-simultaneously/" target="_blank">link</a> di Electrosoftcloud.com. Nell'articolo si suggerisce di **non** connettersi alla Wi-Fi usando la istruzione:
 
 ```bash
 WiFi.modalità(WIFI_STA);
@@ -141,12 +139,12 @@ ma di usare invece questa istruzione:
 WiFi.modalità(WIFI_AP_STA);
 ```
 
-che permette di riconfigurare la *ricetrasmittente* hardware della scheda per i motivi che comprenderai meglio leggendo la prossima nota:
+che permette di riconfigurare la *ricetrasmittente* hardware della scheda ESP32. I motivi precisi per cui questo accade vengono meglio spiegati nella prossima nota:
 
 <br>
 
 > *Il problema principale sembra essere causato dalla modalità station WiFi che entra in modalità sleep non appena smette di ricevere dati. Ciò significa che non "ascolta" mentre gli vengono inviati i pacchetti ESP-NOW, che vengono dunque persi. 
-<br><br>Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Forzando la scheda a funzionare come "AP" e Stazione allo stesso tempo abbiamo realizzato un grande passo verso la soluzione definitiva.*
+<br><br>Per risolvere questo problema dovremo forzare il nostro microcontrollore ad ascoltare continuamente, e questo si ottiene trasformandolo in un AP (Access Point). Forzando la scheda a funzionare come "AP" e Stazione allo stesso tempo abbiamo realizzato un passo importante verso la soluzione definitiva.*
 
 <br>
 <br>
@@ -156,14 +154,14 @@ che permette di riconfigurare la *ricetrasmittente* hardware della scheda per i 
 
 ## La soluzione definitiva
 
-Con il semplice cambiamento descritto nella sezione precedente, si risolve il 70% dei problemi della rete mista con ESP32, ma non tutti. La anomalia sui dati potrebbe ripresentarsi cambiando router, schede e configurazione, proprio perchè dobbiamo ancora risolvere ala radice il problema del canale Wi-Fi. Per questo motivo abbiamo sperimentato come progetti che funzionavano per ore apparentemente in modo perfetto,  smettevano di funzionare semplicemente riavviando il router! 
+Con il semplice cambiamento descritto nella sezione precedente, si risolve il 70% dei problemi della rete mista con ESP32, ma non tutti. La anomalia sui dati potrebbe ripresentarsi cambiando router, schede e configurazione, proprio perchè dobbiamo ancora risolvere alla radice il problema del canale Wi-Fi. Per questo motivo abbiamo sperimentato come progetti che funzionavano per ore apparentemente in modo perfetto,  smettevano di funzionare semplicemente riavviando il router! 
 
-La soluzione definitiva consiste nell'aggiungere qualche riga in più ai programmi che scriverai per collegare ESP32 al Wi-fi e in basso trovi il codice commentato come lo utilizziamo bei nostri progetti. Dopo questi aggiustamenti il collegamento in rete mista dovrebbe sempre funzionare: La funzione "getWiFiChannel()" infatti aggancia in automatico il canale della ricevente. 
+La soluzione definitiva consiste nell'aggiungere qualche riga in più ai programmi che scriverai per collegare ESP32 al Wi-fi e in basso trovi il codice commentato come lo utilizziamo nei nostri progetti. Dopo questi aggiustamenti il collegamento in rete mista dovrebbe **sempre** funzionare: La funzione "*getWiFiChannel()*" infatti aggancia in automatico il canale della ricevente. 
 
 
-In questo modo la connessione diventa stabile e la possiamo usare per "potenziare" la nostra centralina di controllo della qualità dell'aria. Con la ESP-NOW possiamo infatti piazzare più sensori anche a distanza di 200 metri dalla ricevente. E con l'utilizzo di una antenna ad alto guadagno possiamo intercettare i segnali delle ESP32 più lontane superando di molto la portata del router Wi-Fi.
+Con questo accorgimento la connessione diventa stabile e la possiamo usare per "potenziare" la nostra centralina di controllo della qualità dell'aria. Con la ESP-NOW possiamo infatti piazzare più sensori anche a distanza di 200 metri dalla ricevente. Con l'utilizzo di una antenna ad alto guadagno possiamo intercettare i segnali delle ESP32 più lontane superando di molto la portata del router Wi-Fi.
 
-In basso trovi lo "scheletro" del codice definitivo per far convivere ESP-NOW e Wi-Fi. Lo presentiamo separatamente per il "master" e lo "slave", ma tieni a mente che non sono dei programmi completi, ma delle "patch" che spiegano *come* scrivere dei programmi che usano entrambe le tecnologie.
+In basso trovi lo "scheletro" del codice definitivo per far convivere ESP-NOW e Wi-Fi. Lo presentiamo separatamente per il "master" e lo "slave", ma tieni a mente che non sono dei programmi completi, ma delle "patch" che spiegano *come* scrivere dei programmi compatibili con entrambe le tecnologie.
 
 ##### Codice della scheda ESP32 "ricevente"
 ```bash
@@ -256,7 +254,7 @@ void setup() {
 }
 ```
 
-E questo è infine il pezzo di programma che riesce a sicncornizzare le due schede ESP32 in versione ricevente e trasmittente sullo stesso canale. Un semplice ciclo "for" effettua la scansione dei canali disponibili sulla rete = "WIFI_SSID".
+E questo è infine il pezzo di programma che riesce a sincronizzare le due schede ESP32 in versione ricevente e trasmittente sullo stesso canale. Un semplice ciclo "*for*" effettua la scansione dei canali disponibili sulla rete = "WIFI_SSID".
 
 ```bash
 int32_t getWiFiChannel(const char *ssid) {
@@ -276,7 +274,7 @@ void initWiFi() {
 
     WiFi.mode(WIFI_MODE_STA);
     
-    // la parte chiva del programma
+    // la parte chiave del programma
     int32_t channel = getWiFiChannel(WIFI_SSID);
     
     esp_wifi_set_promiscuous(true);
@@ -286,6 +284,13 @@ void initWiFi() {
     Serial.printf("Channel: %u\n", WiFi.channel());
 }
 ```
+<br>
+<img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione">
+
+### Conclusione
+
+Se vuoi vedere il programma completo con la doppia connessione e server Web AJAX integrato e lettura di sensori multipli ti rimando alle sezioni successive con piani dettagliati, programmi e istruzioni per il montaggio
+
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.155.1.0.2</p>
