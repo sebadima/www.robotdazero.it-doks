@@ -1,7 +1,7 @@
 ---
 title:        "Come implementare un server web con ESP32"
 description:  "Come implementare un server web con ESP32"
-excerpt:      "..."
+excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server Web con ESP32 - La prima parte della guida completa per creare e gestire un Server Web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:18:42+01:00
 lastmod:      2024-03-01T01:18:42+01:00
 draft:        false
@@ -33,6 +33,10 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 
 ## Perchè implementare un server web con ESP32
+
+Ci occuperemo in questa sezione di di programmare un server statico HTML minimale per definire la struttura di base per ESP32 e capire come fare il *rendering* di una pagina web semplicissima che mostra una foto presa dal web.
+
+Nelle sezione successiva vedremo come aggiungere Javascript ....
 
 
 
