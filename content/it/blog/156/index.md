@@ -65,6 +65,9 @@ In linea di massima dovrai dunque:
 
 - Chiarire il ruolo delle resistenze di pull-up o pull-down: Alcuni sensori digitali o sensori utilizzati con protocolli di comunicazione come I2C possono richiedere resistenze di pull-up o pull-down sui pin di segnale dati. Consulta il datasheet del sensore per determinare se sono necessarie e dove posizionarle.
 
+## Conclusione
+Questo articolo offre una introduzione dettagliata su come i nuovi sensori per IoT ed l'ESP32 possano trasformare il modo in cui monitoriamo e interagiamo con l'ambiente circostante. Con un focus sull'efficienza energetica, l'accessibilità e le applicazioni pratiche, nelle prossime sezioni scoprirai come usare questa potente sinergia per migliorare la tua comprensione del mondo IoT e della sostenibilità ambientale.
+
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.156.1.2.0</p>
