@@ -30,7 +30,7 @@ mermaid: true
 
 ## Perchè parliamo di sensori ambientali ed ESP32
 
-L'inquinamento atmosferico può avere gravi conseguenze sulla nostra salute. La esposizione prolungata a inquinanti come polveri sottili, ossidi di azoto, biossido di zolfo e ozono può causare importanti problemi respiratori oltre ad una serie di malattie specifiche di cui non ci occupiamo perchè estranee al nucleo delle nostre competenze.
+L'inquinamento atmosferico può avere gravi conseguenze sulla nostra salute. La esposizione prolungata a inquinanti come polveri sottili, ossidi di azoto, biossido di zolfo e ozono può causare importanti problemi respiratori oltre ad una serie di malattie specifiche di cui non ci occuperemo perchè estranee al nucleo delle nostre competenze.
 
 Non possediamo i titoli per illustrare i risvolti medici del problema, ma come informatici vogliamo sottolineare un fatto: L'utilizzo esteso dei sensori per IoT permette di dare un contributo nuovo e decisivo al monitoraggio dell'ambiente. <br>
 E ciò sta avvenendo per due motivi principali:
@@ -70,4 +70,4 @@ Questo articolo offre una breve introduzione su come i nuovi sensori per IoT ed 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.156.1.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.156.2.0.0</p>
