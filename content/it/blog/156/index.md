@@ -66,7 +66,7 @@ In linea di massima per collegare un sensore "ignoto" all'ESP32 dovrai:
 - E infine dovrai chiarire il ruolo delle resistenze di pull-up o pull-down: Alcuni sensori digitali o con protocollo di comunicazione I2C, possono richiedere resistenze di pull-up o pull-down sui pin dati. Consulta il datasheet del sensore per determinare se sono necessarie e dove posizionarle.
 
 ## Conclusione
-Questo articolo offre una breve introduzione su come i nuovi sensori per IoT ed l'ESP32 possano trasformare il modo in cui monitoriamo e interagiamo con l'ambiente circostante. Mantenendo il giusto focus sull'efficienza energetica, l'accessibilità e le applicazioni pratiche, nelle prossime sezioni useremo tale hardware un progetto piuttosto complesso.
+Questo articolo offre una breve introduzione su come i nuovi sensori per IoT ed l'ESP32 possano trasformare il modo in cui monitoriamo e interagiamo con l'ambiente circostante. Mantenendo il giusto focus sull'efficienza energetica, l'accessibilità e le applicazioni pratiche, nelle prossime sezioni useremo tale hardware per un progetto abbastanza complesso.
 
 <br>
 <br>
