@@ -2,7 +2,7 @@
 title: "I sensori ambientali ed ESP32"
 description: "I sensori ambientali ed ESP32"
 excerpt: "Esplora  il Futuro Sostenibile con ESP32: Scopri come connettere il mondo della natura alla tecnologia avanzata con i nuovi Sensori Digitali ed ESP32 - Scopri come questa scheda sta rivoluzionando il Monitoraggio Ambientale e le Applicazioni Smart!..."
-date: 2024-03-01T01:19:42+01:00
+date:    2024-03-01T01:19:42+01:00
 lastmod: 2024-03-01T01:19:42+01:00
 draft: false
 weight: 50
