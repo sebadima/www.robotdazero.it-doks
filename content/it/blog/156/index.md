@@ -67,4 +67,4 @@ In linea di massima dovrai dunque:
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.156.1.0.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.156.1.2.0</p>
