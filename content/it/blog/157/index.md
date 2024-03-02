@@ -77,7 +77,18 @@ const char index_html[] PROGMEM = R"rawliteral(
 ```
 
 
-> La istruzione *rawliteral(* di Arduino...
+> In C++ con Arduino, la parola chiave R"()" (raw string literal) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa.Ad esempio, considera il seguente codice:cpp
+Copy code
+String str = R"(C:\Users\Arduino\)";
+In questo caso, la stringa str conterrà il percorso C:\Users\Arduino\ senza che i caratteri di escape come \U, \A o \r vengano interpretati.
+
+Questo è particolarmente utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
+
+
+ Utilizzando raw string literals, è possibile evitare la necessità di inserire doppie barre invertite (\\) per rappresentare una singola barra invertita (\) nei percorsi file, ad esempio.
+
+Tuttavia, è importante notare che l'uso di stringhe raw può comportare il rischio di includere caratteri non desiderati nella stringa se non vengono gestiti correttamente, quindi è sempre consigliabile prestare attenzione quando si manipolano stringhe in questo modo.
+
 
 
 ### La connessione al WI-Fi
@@ -140,4 +151,4 @@ In connessione a D-Link-3D1BBF000 .....
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.0.2.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.0.4.0</p>
