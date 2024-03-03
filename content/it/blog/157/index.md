@@ -56,12 +56,10 @@ Per iniziare vediamo come caricare le librerie che ci servono e usiamo le prime 
 Ma in questo caso useremo i fil header per include due librerie, della prima abbiamo gia parato mentre la seconda "*WiFi.h*" serve a caricare le funzini per collegarsi alla rete Wi-Fi.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>I Vantaggi dell'utilizzo dei file header:</strong>
-Apparentemente usare aggiunger una altra istrizuzione solo per dichiarare "quello" che abbiamo intenzione di fare nel resto del programma sembra una inutile complicazione, ma nella pratca della programmazione C++ è emerso come dichiarare esplicitamente classi, funzioni e librerie permetta di ottenere dei seri vantaggi come:
-
-1. Modularità: Permettono di dividere il codice in moduli separati e riutilizzabili.
-2. Organizzazione: Migliorano la leggibilità e la manutenibilità del codice.
-3. Condivisione del codice: Facilitano la condivisione di codice con altri sviluppatori.</div>
+<strong>I Vantaggi dell'utilizzo dei file header:</strong><br><br>
+Aggiungere altre istruzioni solo per dichiarare "quello" che vogliamo fare nel resto del programma sembra una complicazione inutile, ma nella pratcia del C++ è emerso come dichiarare esplicitamente funzioni e librerie sia una pratica vantaggiosa che ottilizza la qualità del codice in questi settori:
+<br><br><strong>Modularità</strong>, perchè permettono di dividere il codice in moduli separati e riutilizzabili - <strong>Organizzazione</strong>, in quanto migliorano la leggibilità e la manutenibilità del codice - <strong>Condivisione del codice</strong> perchè facilitano la condivisione di funzioni e librerie con altri sviluppatori.
+</div>
 
 ### Gli header del programma
 
