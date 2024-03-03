@@ -2,8 +2,8 @@
 title:        "Come implementare un server web con ESP32"
 description:  "Come implementare un server web con ESP32"
 excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server Web con ESP32 - La prima parte della guida completa per creare e gestire un Server Web Utilizzando la potente piattaforma ESP32!..."
-date:         2024-03-01T01:18:42+01:00
-lastmod:      2024-03-01T01:18:42+01:00
+date:         2024-03-01T01:20:42+01:00
+lastmod:      2024-03-01T01:20:42+01:00
 draft:        false
 weight:       50
 images:       ["header.jpeg"]
@@ -24,9 +24,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ```bash
 ```     
-
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
-⚡️ 😎 👋 🔑 ( https://yaytext.com/emoji/ )   L&#8217;alimentazione   L&#8217;alimentazione 
 
 -->
 
@@ -34,11 +32,36 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Perchè implementare un server web con ESP32
 
-Ci occuperemo in questa sezione di di programmare un server statico HTML minimale per definire la struttura di base per ESP32 e capire come fare il *rendering* di una pagina web semplicissima che mostra una foto presa dal web.
+Poter leggere i valori dei sensori collegati ad ESP32 attraverdo il "Monitor Seriale" di Arduino IDe o PlatformIO è un passaggio obbligato nella crescita di un programmatore IoT. Presto però la esigenza di convidere in rete i valori rilevati conduce alla creazione di un "sito" web da condividere in LAN o magari su Internet. In questa sezione vedremo quali sono le struttre dati e le funzioni per creare un server HTML minimale. Lo stesso programma verrà quindi "inglobato" nella versione evoluta della Centralina Multisensore che userà contemporaneamente HTML, Javascript, JSON, CSS e il protocollo di rete ESP-NOW per creare un prodotto "installabile" ve valido commercialmente.
 
-Nelle sezione successiva vedremo come aggiungere Javascript ....
+## Cosa è un server WEB
 
+Un server HTTP è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni.In ambito IoT, un server HTTP può essere implementato su un dispositivo Arduino per:
 
+- Fornire un'interfaccia web per controllare il dispositivo.
+- Restituire dati in formato JSON o XML per l'analisi.
+- Ricevere comandi da client remoti.
+
+## Come usare un server web con ESP32
+
+ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e per questa chi ha familiarità con la piattaforma non dovrà reinventare la ruota e apprendere nuovi comandi di programmazione. In generale per dei compiti complessi come la creazione di un server http conviene appoggiarsi a delle librerie già esistenti come la libreria "*WiFiServer*"" inclusa nell'IDE di Arduino. 
+Per i tuo progetti "basici" Iot con Arduino puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 e la necessita di inglonbre via JSON i valori forniti dalla rete ESP-NOW di Espressif abbiamo preferito utilizzare la più "*potente*" libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>. Si tratta di una versione evoluta del server di base con la capacità di eseguire dei compiti in background. 
+
+Per iniziare vediamo come caricare le librerie che ci servono e usiamo le prime due lineed del codice per caricare gli *header* delle 2 librerie che ci servono:
+
+> I file header, o file di intestazione, sono file di testo con estensione .h che contengono informazioni utili per la compilazione del codice C++. <br>Le funzioni dei file header sono :<br>- Dichiarazioni di funzioni: Prototipi di funzioni che definiscono il nome, il tipo di ritorno e i parametri, 
+<br>- Dichiarazioni di classi: Struttura e membri di classi C++.
+<br>- Definizioni di macro: Costanti simboliche utilizzate nel codice.
+<br>- Inclusione di librerie: Collegamento del codice con librerie esterne.
+Ma in questo caso useremo i fil header per include due librerie, della prima abbiamo gia parato mentre la seconda "*WiFi.h*" serve a caricare le funzini per collegarsi alla rete Wi-Fi.
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>I Vantaggi dell'utilizzo dei file header:</strong>
+Apparentemente usare aggiunger una altra istrizuzione solo per dichiarare "quello" che abbiamo intenzione di fare nel resto del programma sembra una inutile complicazione, ma nella pratca della programmazione C++ è emerso come dichiarare esplicitamente classi, funzioni e librerie permetta di ottenere dei seri vantaggi come:
+
+1. Modularità: Permettono di dividere il codice in moduli separati e riutilizzabili.
+2. Organizzazione: Migliorano la leggibilità e la manutenibilità del codice.
+3. Condivisione del codice: Facilitano la condivisione di codice con altri sviluppatori.</div>
 
 ### Gli header del programma
 
@@ -121,9 +144,7 @@ void initWiFi() {
 
 ```bash
 ```
-
 <br><br><img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
-
 
 ### Il programma con il monitor seriale
 
@@ -151,4 +172,4 @@ In connessione a D-Link-3D1BBF000 .....
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.0.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.0.0</p>
