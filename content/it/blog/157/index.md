@@ -65,24 +65,23 @@ Per i tuo progetti "basici" IoT puoi tranquillamente usare "*WebServer*", ma per
 
 ## Il codice
 
-Per iniziare con il codice vediamo come caricare le librerie che ci servono e lo faremo nelle prime due linee "caricando" gli **header** di due librerie.
+Per iniziare vediamo come caricare le librerie che ci servono. Ci bastano le prime due linee con gli #include **header** delle librerie utilizzate.
 
-> I file header, o file di intestazione, sono file di testo con estensione .h che contengono informazioni utili per la compilazione del codice C++. <br><br>Le funzioni dei file header sono molteplici e non si limitano ad *agganciare* librerie come nel nostro caso:<br>- Dichiarazioni di funzioni: Prototipi di funzioni che definiscono il nome, il tipo di ritorno e i parametri, 
+> I file header, o file di intestazione, sono file di testo con estensione .h che contengono informazioni utili per la compilazione del codice C++. <br><br>Le funzioni dei file header sono molteplici e non si limitano ad *agganciare* librerie come nel nostro caso, ma servono a vari altri scopi come:<br>- Dichiarazioni di funzioni: Prototipi di funzioni che definiscono il nome, il tipo di ritorno e i parametri, 
 <br>- Dichiarazioni di classi: Struttura e membri di classi C++.
 <br>- Definizioni di macro: Costanti simboliche utilizzate nel codice.
-<br>- Inclusione di librerie: Collegamento del codice con librerie esterne.
 
 <br>
 
-Per chi inizia con il C++, aggiungere altre istruzioni solo per dichiarare "quello" che vogliamo fare nel resto del programma può sembrare una complicazione inutile, ma non è così.
+Per chi inizia con il C++, aggiungere altre istruzioni solo per definire quello che vogliamo fare nel resto del programma può sembrare una complicazione inutile, ma non è così. Inoltre parrebbe più semplice caricare tutto nello stesso file sorgente, magari molto lungo e fare delle chiamate a funzioni. Ma le "best practices" della programmazione strutturata sconsigliano tale approccio:
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>I Vantaggi dell'utilizzo dei file header:</strong><br>
-Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librerie sia una pratica vantaggiosa per migliorare la qualità del codice in questi settori:
+<strong>I Vantaggi dell'utilizzo dei file header</strong><br>
+Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librerie sia una pratica vantaggiosa per migliorare la qualità del codice in molti settori come:
 <br><br><strong>Modularità</strong>, perchè permettono di dividere il codice in moduli separati e riutilizzabili - <strong>Organizzazione</strong>, in quanto migliorano la leggibilità e la manutenibilità del codice - <strong>Condivisione del codice</strong> perchè facilitano la condivisione di funzioni e librerie con altri sviluppatori.
 </div>
 
-#### Gli header del programma:
+#### Ecco dunque gli header del programma:
 
 ```bash
 #include "ESPAsyncWebServer.h"
@@ -141,11 +140,11 @@ WebServer server(80);
 
 La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le istruzioni successive nella zona di memoria flash di ESP32. 
 
-Si tratta dunque di un trucco specifico per l'ESP32: Nel nostro caso specifico, vista la ridotta lunghezza della variabile, potevamo fare a meno di usarlo, ma ti ricordo che questa versione del programma serve solo a spiegarne il funzionamento. Nella versione finale da usare nella nostra Centralina Multisensore tale accorgimento diventerà indispensabile per compilare il programma. Nella nota seguente cercheremo di chiare l'altro comando *misterioso* della riga e cioè il costrutto sintattico "R()".
+Si tratta dunque di un trucco specifico per l'ESP32: Nel caso attualeo, vista la ridotta lunghezza della stringa, potevamo fare a meno di usarlo, ma ti ricordo che stiamo solo illustrando il funzionamento di un server HTTP minimale. Nella versione completa che useremo nella Centralina Multi-sensore, l'accorgimento di usare la memoria flash diventerà indispensabile per compilare il programma. Nella nota seguente cercheremo di chiarire l'altro comando *misterioso* della riga e cioè il costrutto sintattico "R()".
 
 > Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono i caratteri "slash" e "back-slash" onnipresenti nei tag del codice HTML e XML.
 
-Invece della parola "<strong>rawliteral</strong>" puoi usare qualsiasi altra parola come delimitatore.
+La parola <strong>rawliteral</strong>" non ha un valore particolare e viene usata solo per consuetudine: puoi usare qualsiasi altra parola come delimitatore.
 
 
 #### La connessione al WI-Fi:
@@ -174,7 +173,7 @@ void initWiFi() {
 
 ```
 
-La funzione "*initWiFi()*" viene definita dal nostro codice e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni senza parametro, destinata ad essere invocata dal setup del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". La prima chiamata di funzione che incontriamo è: "Fi.mode(WIFI_MODE_STA);" che assegna alla radio di ESP32 la funzione "STATION" per collegarsi al Wi-Fi. Esistono altre modalita ad esempio di tipo misto "APSTA" ma ce ne occuperemo solo in seguito.
+La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni, destinata ad essere invocata dal "setup()" del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". La prima istruzione che incontriamo è: "WiFi.mode(WIFI_MODE_STA);" che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
 
 La chiamata "if(!WiFi.config(local_IP, gateway ..." serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipo dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
 
