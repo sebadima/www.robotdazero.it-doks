@@ -34,9 +34,18 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 Un progetto che esibisca i dati di un sensore sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di condividere i dati rilevati e magari inviarli a qualche App che giri su smartphone. Per realizzare questo salto di qualità dobbiamo imparare delle semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
-In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale: Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati dei sensori sfruttando il protocollo di rete HTTP, e su di esso costruire un sito dinamico con HTML, Javascript e JSON. La presenza del protocollo JSON è utile per acquisire in modo dinamico (cioè senza premere *refresh* sul browser) i dati forniti ogni secondo dal sistema di comunicazione "ESP-NOW". 
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale: Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati dei sensori e aggiungere un sito dinamico con HTML, Javascript e JSON. Il protocollo JSON è necessario per implementare il sistema Ajax e mostrare quindi in modo dinamico (cioè senza premere *refresh* sul browser).
 
-Se vorrete costruire la nostra centralina con il programma che vi presentiamo potrete realizzare a basso costo un prodotto IoT dalla reale valenza commerciale...
+> AJAX (Asynchronous JavaScript and XML) è una tecnica di sviluppo web che permette di aggiornare una pagina web in modo dinamico, senza ricaricare l'intera pagina.<br><strong>Come funziona Ajax</strong><br>- Richiesta: L'utente invia una richiesta al server tramite JavaScript. <br>- Elaborazione: Il server elabora la richiesta e restituisce una risposta in formato XML, JSON o testo.
+<br>- Aggiornamento: Il client JavaScript aggiorna la pagina web in base alla risposta ricevuta.
+Vantaggi di AJAX:
+
+Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per motivi i benefici che apporta nella esperienza utente (Le pagine web sono più fluide e reattive.) ma anche per la grande risuzione del traffico da e verso l'ESP32. Seppure i microcontroller come aggiornati siano molto superiori ad Arduino versione UNO R3, le loro capacità di elaborazioni sono tuttora molto lontanel dalle CPU per Desktop/Laptop.
+
+
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Se vorrete costruire la nostra centralina con il programma che vi presentiamo potrete realizzare a basso costo un prodotto IoT dalla reale valenza commerciale.</div>
 
 ## Cosa è un server HTTP
 
