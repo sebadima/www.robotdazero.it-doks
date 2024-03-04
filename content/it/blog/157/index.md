@@ -1,6 +1,6 @@
 ---
-title:        "Come funziona un server web con ESP32"
-description:  "Come funziona un server web con ESP32"
+title:        "Come scrivere un server web con ESP32"
+description:  "Come scrivere un server web con ESP32"
 excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server web con ESP32 - La prima parte della guida completa per creare e gestire un Server web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:20:42+01:00
 lastmod:      2024-03-01T01:20:42+01:00
@@ -35,7 +35,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Cosa è un server web
 
-Un server web (server HTTP) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
+Un server web (server HTTP) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o app per mobile. In ambito IoT, un server web può essere implementato su un dispositivo ESP32 per:
 
 - Fornire un'interfaccia web che gestisca un dispositivo,
 - Restituire dati in formato JSON o XML per l'analisi,
@@ -43,9 +43,9 @@ Un server web (server HTTP) è un software che gestisce le richieste HTTP (Hyper
 
 ### Perchè usare un server web con ESP32
 
-Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
+Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" web.
 
-In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati usando un sito web dinamico con HTML, Javascript e JSON. Il protocollo aggiuntivo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>.
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server web minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati usando un sito web dinamico con HTML, Javascript e JSON. Il protocollo aggiuntivo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>.
 
 > AJAX (Asynchronous JavaScript and XML) è una tecnica di sviluppo web che permette di aggiornare una pagina web in modo dinamico, senza ricaricare l'intera pagina e senza cliccare sul tasto *Aggiorna* del browser.<br><strong>Come funziona Ajax</strong><br>Il meccanismo software si può dividere per semplicità in tre parti:<br>- Richiesta: L'utente invia una richiesta al server tramite JavaScript. <br>- Elaborazione: Il server elabora la richiesta e restituisce una risposta in formato XML, JSON o testo.
 <br>- Aggiornamento: Il client JavaScript aggiorna la pagina web in base alla risposta ricevuta.
@@ -55,9 +55,9 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 ##### "Se vorrete costruire la nostra centralina con le modifiche che vi presentiamo potrete realizzare a basso costo un efficiente prodotto IoT dalla reale valenza commerciale."
 
-## Come usare un server web con ESP32
+## Come scrivere un server web con ESP32
 
-ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/webServer" target="_blank">webServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
+ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server web, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/webServer" target="_blank">webServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
 Per i tuo progetti "basici" IoT puoi tranquillamente usare "*webServer*", ma per il nostro server ESP32 con il sistema asincrono AJAX e il rendering dei valori in background, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncwebServer" target="_blank">ESPAsyncwebServer</a>, asincrona come suggerisce il nome e specifica per l'ESP32.
 
@@ -204,7 +204,7 @@ La funzione loop è vuota perchè stiamo considerando solo la struttura minima d
 
 ## Conclusioni
 
-I server HTTP per ESP32 e Arduino offrono una serie di grandi vantaggi nello sviluppo di applicazioni IoT:
+I server web (server http) per ESP32 e Arduino offrono una serie di grandi vantaggi nello sviluppo di applicazioni IoT:
 
 - Controllo e monitoraggio remoti: Permettono di controllare e monitorare i dispositivi IoT da qualsiasi luogo con un dispositivo connesso a internet.
 - Interfacce utente web: Consentono di creare interfacce utente web per interagire con i dispositivi IoT.
