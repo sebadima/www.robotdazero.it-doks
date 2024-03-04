@@ -33,7 +33,15 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 
 
-## Perchè usare un server web con ESP32
+## Cosa è un server HTTP
+
+Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
+
+- Fornire un'interfaccia web che gestisca un dispositivo,
+- Restituire dati in formato JSON o XML per l'analisi,
+- Ricevere comandi da client remoti.
+
+### Perchè usare un server HTTP con ESP32
 
 Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
@@ -49,21 +57,13 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 <br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
-### Cosa è un server HTTP
-
-Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
-
-- Fornire un'interfaccia web che gestisca un dispositivo,
-- Restituire dati in formato JSON o XML per l'analisi,
-- Ricevere comandi da client remoti.
-
-## Come usare un server web con ESP32
+## Come usare un server HTTP con ESP32
 
 ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
 Per i tuo progetti "basici" IoT puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 con il sistema asincrono AJAX e il rendering dei valori in background, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>, asincrona come suggerisce il nome e specifica per l'ESP32.
 
-## Il codice
+### Il codice
 
 Per iniziare vediamo come caricare le librerie che ci servono. Ci bastano le prime due linee con gli #include **header** delle librerie utilizzate.
 
@@ -200,7 +200,7 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Lo puoi considerare una zona di *buffer* sono conservate e aggiornate molte informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Lo puoi considerare una zona di *buffer* dove sono conservate e manipolate moltissime informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
 
 ## Conclusioni
 
@@ -214,4 +214,4 @@ I server HTTP per ESP32 e Arduino offrono una serie di grandi vantaggi nello svi
 Capire questo versione minimale del programma sarà di grande aiuto nell'affrontare progetti software più sofisticati.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.4.0</p>
