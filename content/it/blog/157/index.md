@@ -81,7 +81,7 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 #include "ESPAsyncWebServer.h"
 #include <WiFi.h>
 ```    
-Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo serve a *caricare* tutte le funzioni per il wireless dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
+Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo serve a *caricare* tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
 
 
 #### Le variabili statiche
@@ -97,7 +97,7 @@ IPAddress primaryDNS(8, 8, 8, 8);
 IPAddress secondaryDNS(8, 8, 4, 4);
 ```
 
-Le prime due righe usano la istruzione "*constexpr*" per motivi di ottimizzazione del codice. Con "*constexpr*" possiamo assegnare il valore di espressioni (anche complesse) nel momento della compilazione, anziché a tempo di esecuzione, migliorando significativamente le prestazioni del codice.
+Le prime due righe usano la istruzione "*constexpr*" per motivi di ottimizzazione del codice. Con <a href="https://en.cppreference.com/w/cpp/language/constexpr" target="_blank">constexpr</a> possiamo assegnare il valore di espressioni (anche complesse) nel momento della compilazione, anziché a tempo di esecuzione, migliorando significativamente le prestazioni del codice.
 
 Le cinque righe successive assomigliano a delle normali dichiarazioni di variabili, ma sono variabili di un tipo specifico e cioè "*IPAddress*" specifico per interfacciarsi con la libreria Wifi. Per fortuna non dobbiamo ridefinire e modificare il loro "tipo", ci basta seguire il formato ideato dagli sviluppatori e inserire i quattro parametri di un classico indirizzo IP.
 
@@ -120,19 +120,19 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>)rawliteral";
 ```
 
-La prima riga crea la "istanza" dell'oggetto AsyncWebServer definendo al contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il protocollo http mentre il valore "443" viene riservato a quello https. Il nome dell'oggetto creato sarà semplicemente "server" e la cosa non è priva di vantaggi: Se decidiamo di camboare libreria non avremo bisogno di camboare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
+La prima riga crea la "istanza" dell'oggetto AsyncWebServer definendo al contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il protocollo http mentre il valore "443" viene riservato a quello https. Il nome dell'oggetto creato sarà semplicemente "server" e la cosa non è priva di vantaggi: Se decidiamo di cambiare libreria non avremo bisogno di modificare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
 
 ```bash
 AsyncWebServer server(80);
-```bash
+```
 
 in 
 
 ```bash
 WebServer server(80);
-```bash
+```
 
-La riga successiva (si tratta di una singola riga) 
+La riga successiva (si tratta di una singola riga!) crea un oggetto statico "*index_html*" con tutte le istruzioni HTML per un sito web minimalistico ma corretto.
 
 > In C++ con Arduino, la parola chiave R"()" (raw string literal) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa.Ad esempio, considera il seguente codice:cpp
 Copy code
