@@ -32,7 +32,9 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Perchè implementare un server web con ESP32
 
-Poter leggere i valori dei sensori collegati ad ESP32 attraverso il "Monitor Seriale" di Arduino IDe o PlatformIO è un passaggio obbligato nella crescita di un programmatore IoT. Presto però la esigenza di condividere in rete i valori rilevati conduce alla creazione di un "sito" web da condividere in LAN o magari su Internet. In questa sezione vedremo quali sono le strutture dati e le funzioni per creare un server HTML minimale. Lo stesso programma verrà quindi "inglobato" nella versione evoluta della Centralina Multi-sensore che userà contemporaneamente HTML, Javascript, JSON, CSS e il protocollo di rete ESP-NOW per creare un prodotto finale valido anche commercialmente.
+Un progetto che esibisca i dati di un sensore sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione per hobbysti con degli ovvi limiti. Per realizzare applicazioni davvero professionali nasce il bisogno di condividere i dati rilevati o magari di integrarli in qualche App per Android/Ios. In defnitiva dobbiamo imparare - nuove tecniche di networking in generale - l'uso corretto del server HTTP.
+
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale: Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati dei sensori sfruttando il protocollo di rete HTTP, e su di esso costruire un sito dinamico con HTML, Javascript e JSON. La presenza del protocollo JSON è utile per acquisire in modo dinamico (cioè senza premere *refresh*) i dati fornito dal protocollo di rete ESP-NOW. Se vorrete costruire la nostra centralina con il programma che vi presentiamo potete davvero realizzare un prodotto dalla valenza commerciale.
 
 ## Cosa è un server WEB
 
