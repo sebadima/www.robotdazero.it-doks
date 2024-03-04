@@ -1,7 +1,7 @@
 ---
-title:        "Come funziona un server Web con ESP32"
-description:  "Come funziona un server Web con ESP32"
-excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server Web con ESP32 - La prima parte della guida completa per creare e gestire un Server Web Utilizzando la potente piattaforma ESP32!..."
+title:        "Come funziona un server web con ESP32"
+description:  "Come funziona un server web con ESP32"
+excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server web con ESP32 - La prima parte della guida completa per creare e gestire un Server web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:20:42+01:00
 lastmod:      2024-03-01T01:20:42+01:00
 draft:        false
@@ -33,15 +33,15 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 
 
-## Cosa è un server Web
+## Cosa è un server web
 
-Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
+Un server web (server HTTP) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
 
 - Fornire un'interfaccia web che gestisca un dispositivo,
 - Restituire dati in formato JSON o XML per l'analisi,
 - Ricevere comandi da client remoti.
 
-### Perchè usare un server Web con ESP32
+### Perchè usare un server web con ESP32
 
 Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
@@ -55,11 +55,11 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 ##### "Se vorrete costruire la nostra centralina con le modifiche che vi presentiamo potrete realizzare a basso costo un efficiente prodotto IoT dalla reale valenza commerciale."
 
-## Come usare un server Web con ESP32
+## Come usare un server web con ESP32
 
-ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
+ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/webServer" target="_blank">webServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
-Per i tuo progetti "basici" IoT puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 con il sistema asincrono AJAX e il rendering dei valori in background, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>, asincrona come suggerisce il nome e specifica per l'ESP32.
+Per i tuo progetti "basici" IoT puoi tranquillamente usare "*webServer*", ma per il nostro server ESP32 con il sistema asincrono AJAX e il rendering dei valori in background, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncwebServer" target="_blank">ESPAsyncwebServer</a>, asincrona come suggerisce il nome e specifica per l'ESP32.
 
 ### Il codice
 
@@ -82,10 +82,10 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 #### Ecco dunque gli header del programma:
 
 ```bash
-#include "ESPAsyncWebServer.h"
+#include "ESPAsyncwebServer.h"
 #include <WiFi.h>
 ```    
-Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo mette a disposizione del codice tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
+Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncwebServer", mentre il secondo mette a disposizione del codice tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
 
 
 #### Le "variabili" statiche:
@@ -111,7 +111,7 @@ Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tr
 #### Le istruzioni per creare il server web:
 
 ```bash
-AsyncWebServer server(80);
+AsyncwebServer server(80);
 
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
@@ -124,19 +124,19 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>)rawliteral";
 ```
 
-La prima riga crea la "istanza" dell'oggetto AsyncWebServer assegnando nel contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il normale protocollo http mentre il valore "443" viene riservato a quello http(s). Il nome dell'oggetto creato sarà un generico "server" e la cosa non è casuale: Se decidiamo di cambiare tipo di server e libreria collegata non avremo bisogno di modificare tutte le istruzioni nel codice, ma ci basta cambiare la riga:
+La prima riga crea la "istanza" dell'oggetto AsyncwebServer assegnando nel contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il normale protocollo http mentre il valore "443" viene riservato a quello http(s). Il nome dell'oggetto creato sarà un generico "server" e la cosa non è casuale: Se decidiamo di cambiare tipo di server e libreria collegata non avremo bisogno di modificare tutte le istruzioni nel codice, ma ci basta cambiare la riga:
 
 ```bash
-AsyncWebServer server(80);
+AsyncwebServer server(80);
 ```
 
 in 
 
 ```bash
-WebServer server(80);
+webServer server(80);
 ```
 
-La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le istruzioni successive nella zona di memoria flash di ESP32. 
+La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncwebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le istruzioni successive nella zona di memoria flash di ESP32. 
 
 Si tratta dunque di un trucco specifico per l'ESP32: Nel caso attualeo, vista la ridotta lunghezza della stringa, potevamo fare a meno di usarlo, ma ti ricordo che stiamo solo illustrando il funzionamento di un server HTTP minimale. Nella versione completa che useremo nella Centralina Multi-sensore, l'accorgimento di usare la memoria flash diventerà indispensabile per compilare il programma. Nella nota seguente cercheremo di chiarire l'altro comando *misterioso* della riga e cioè il costrutto sintattico "R()".
 
@@ -189,7 +189,7 @@ void setup() {
   Serial.begin(115200);
   initWiFi();
 
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+  server.on("/", HTTP_GET, [](AsyncwebServerRequest *request){
     request->send_P(200, "text/html", index_html);
   });
    
@@ -198,7 +198,7 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Lo puoi considerare una zona di *buffer* dove sono conservate e manipolate moltissime informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncwebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncwebServerRequest. Lo puoi considerare una zona di *buffer* dove sono conservate e manipolate moltissime informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
 
 <br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
