@@ -4,7 +4,7 @@ description:  "Come scrivere un server web con ESP32"
 excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server web con ESP32 - La prima parte della guida completa per creare e gestire un Server web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:20:42+01:00
 lastmod:      2024-03-01T01:20:42+01:00
-draft:        false
+draft:        true
 weight:       50
 images:       ["header.jpeg"]
 categories:   ["News"]
