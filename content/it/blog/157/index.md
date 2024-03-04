@@ -44,10 +44,13 @@ Un server HTTP è un software che gestisce le richieste HTTP (Hypertext Transfer
 
 ## Come usare un server web con ESP32
 
-ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e per questa chi ha familiarità con la piattaforma non dovrà reinventare la ruota e apprendere nuovi comandi di programmazione. In generale per dei compiti complessi come la creazione di un server http conviene appoggiarsi a delle librerie già esistenti come la libreria "*WiFiServer*"" inclusa nell'IDE di Arduino. 
-Per i tuo progetti "basici" IoT con Arduino puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 e la necessita di inglobare via JSON i valori forniti dalla rete ESP-NOW di Espressif abbiamo preferito utilizzare la più "*potente*" libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>. Si tratta di una versione evoluta del server di base con la capacità di eseguire dei compiti in background. 
+ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con la piattaforma non dovrà imparare nuovi concetti di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http conviene appoggiarsi a delle librerie già esistenti. In questo caso potevamo usare, ad esempio la libreria "*WiFiServer*"" inclusa nell'IDE di Arduino. 
 
-Per iniziare vediamo come caricare le librerie che ci servono e usiamo le prime due linee del codice per caricare gli *header* delle 2 librerie che ci servono:
+Per i tuo progetti "basici" IoT puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 con la necessità di inglobare via JSON i valori forniti dalla rete ESP-NOW, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>, meglio adatta ad eseguire dei compiti in background.
+
+## Il codice
+
+Per iniziare con il codice vediamo come caricare le librerie che ci servono e lo faremo nelle prime due linee per caricare gli **header** di due librerie.
 
 > I file header, o file di intestazione, sono file di testo con estensione .h che contengono informazioni utili per la compilazione del codice C++. <br>Le funzioni dei file header sono :<br>- Dichiarazioni di funzioni: Prototipi di funzioni che definiscono il nome, il tipo di ritorno e i parametri, 
 <br>- Dichiarazioni di classi: Struttura e membri di classi C++.
@@ -55,9 +58,11 @@ Per iniziare vediamo come caricare le librerie che ci servono e usiamo le prime 
 <br>- Inclusione di librerie: Collegamento del codice con librerie esterne.
 Ma in questo caso useremo i fil header per include due librerie, della prima abbiamo gia parato mentre la seconda "*WiFi.h*" serve a caricare le funzioni per collegarsi alla rete Wi-Fi.
 
+Per chi inizia con il C++, aggiungere altre istruzioni solo per dichiarare "quello" che vogliamo fare nel resto del programma può sembrare una complicazione inutile, ma non è così.
+
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>I Vantaggi dell'utilizzo dei file header:</strong><br><br>
-Aggiungere altre istruzioni solo per dichiarare "quello" che vogliamo fare nel resto del programma sembra una complicazione inutile, ma nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librerie sia una pratica vantaggiosa per migliorare la qualità del codice in questi settori:
+<strong>I Vantaggi dell'utilizzo dei file header:</strong><br>
+Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librerie sia una pratica vantaggiosa per migliorare la qualità del codice in questi settori:
 <br><br><strong>Modularità</strong>, perchè permettono di dividere il codice in moduli separati e riutilizzabili - <strong>Organizzazione</strong>, in quanto migliorano la leggibilità e la manutenibilità del codice - <strong>Condivisione del codice</strong> perchè facilitano la condivisione di funzioni e librerie con altri sviluppatori.
 </div>
 
