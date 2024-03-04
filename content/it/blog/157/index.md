@@ -211,7 +211,7 @@ I server HTTP per ESP32 e Arduino offrono una serie di grandi vantaggi nello svi
 - Comunicazione dati: Facilitano la comunicazione di dati tra dispositivi IoT e server remoti.
 - Flessibilità: Offrono una piattaforma flessibile per creare applicazioni IoT personalizzate.
 
-Capire questo versione minimale del programma saraà di grande aito nell'affrontare software più sofisticato.
+Capire questo versione minimale del programma sarà di grande aiuto nell'affrontare progetti software più sofisticati.
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.2.1</p>
