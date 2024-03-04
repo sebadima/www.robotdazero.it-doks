@@ -176,30 +176,8 @@ void initWiFi() {
 ```bash
 ```
 
-#### Il programma con il monitor seriale
-
-```bash
---- forcing DTR inactive
---- forcing RTS inactive
---- Terminal on /dev/ttyUSB0 | 115200 8-N-1
---- Available filters and text transformations: colorize, debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
---- More details at https://bit.ly/pio-monitor-filters
---- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
-ets Jul 29 2019 12:21:46
-
-rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-configsip: 0, SPIWP:0xee
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-mode:DIO, clock div:2
-load:0x3fff0030,len:1184
-load:0x40078000,len:13232
-load:0x40080400,len:3028
-entry 0x400805e4
-In connessione a D-Link-3D1BBF000 .....
-```     
-
-
+## Conclusioni
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.0.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.2.1</p>
