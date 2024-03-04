@@ -101,10 +101,10 @@ Le prime due righe usano la istruzione "*constexpr*" per motivi di ottimizzazion
 
 Le cinque righe successive assomigliano a delle normali dichiarazioni di variabili, ma sono variabili di un tipo specifico e cioè "*IPAddress*" specifico per interfacciarsi con la libreria Wifi. Per fortuna non dobbiamo ridefinire e modificare il loro "tipo", ci basta seguire il formato ideato dagli sviluppatori e inserire i quattro parametri di un classico indirizzo IP.
 
-Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tratta di valori che vengono definiti "una tantum" nel momento della creazione: Si tratta di parametri per le funzioni "Object Oriented" della libreria WiFi, ma dal punto di vista della teoria della programmazioni sono comunque cinque variabili con un tipo dati creato ad hoc.
+Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tratta di valori che vengono definiti "una tantum" nel momento della creazione: Sono i parametri per le funzioni "Object Oriented" della libreria WiFi, ma dal punto di vista della teoria della programmazioni sono comunque cinque variabili con un tipo dati creato ad hoc.
 
 
-### Le variabili per il server web
+### Le "variabili" per il server web
 
 ```bash
 AsyncWebServer server(80);
@@ -120,7 +120,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>)rawliteral";
 ```
 
-La prima riga crea la "istanza" dell'oggetto AsyncWebServer definendo al contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il protocollo http mentre il valore "443" viene riservato a quello https. Il nome dell'oggetto creato sarà semplicemente "server" e la cosa non è priva di vantaggi: Se decidiamo di cambiare libreria non avremo bisogno di modificare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
+La prima riga crea la "istanza" dell'oggetto AsyncWebServer assegnando nel contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il protocollo http mentre il valore "443" viene riservato a quello https. Il nome dell'oggetto creato sarà semplicemente "server" e la cosa non è priva di vantaggi: Se decidiamo di cambiare libreria non avremo bisogno di modificare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
 
 ```bash
 AsyncWebServer server(80);
@@ -132,11 +132,11 @@ in
 WebServer server(80);
 ```
 
-La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";"<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le prossime istruzioni nella memoria flash di ESP32. 
+La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le prossime istruzioni nella memoria flash di ESP32. 
 
-> Nel C++ di Arduino, la parola chiave R"()" (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
+> Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
 
-Inoltre invece della parola "rawliteral" puoi usare qualsiasi altra parola come delimitatore.
+Inoltre invece della parola "<strong>rawliteral</strong>" puoi usare qualsiasi altra parola come delimitatore.
 
 
 ### La connessione al WI-Fi
