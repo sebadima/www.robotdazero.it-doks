@@ -1,6 +1,6 @@
 ---
-title:        "Come funziona un server web con ESP32"
-description:  "Come funziona un server web con ESP32"
+title:        "Come funziona un server Web con ESP32"
+description:  "Come funziona un server Web con ESP32"
 excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server Web con ESP32 - La prima parte della guida completa per creare e gestire un Server Web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:20:42+01:00
 lastmod:      2024-03-01T01:20:42+01:00
@@ -33,7 +33,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 
 
-## Cosa è un server HTTP
+## Cosa è un server Web
 
 Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
 
@@ -41,7 +41,7 @@ Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hyper
 - Restituire dati in formato JSON o XML per l'analisi,
 - Ricevere comandi da client remoti.
 
-### Perchè usare un server HTTP con ESP32
+### Perchè usare un server Web con ESP32
 
 Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
@@ -55,7 +55,7 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 ##### "Se vorrete costruire la nostra centralina con le modifiche che vi presentiamo potrete realizzare a basso costo un efficiente prodotto IoT dalla reale valenza commerciale."
 
-## Come usare un server HTTP con ESP32
+## Come usare un server Web con ESP32
 
 ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
