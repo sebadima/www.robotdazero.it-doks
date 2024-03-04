@@ -85,7 +85,7 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 #include "ESPAsyncwebServer.h"
 #include <WiFi.h>
 ```    
-Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncwebServer", mentre il secondo mette a disposizione del codice tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
+Il primo include "carica" la libreria fondamentale e cioè "*ESPAsyncwebServer*", mentre il secondo mette a disposizione del codice tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
 
 
 #### Le "variabili" statiche:
@@ -136,9 +136,9 @@ in
 webServer server(80);
 ```
 
-La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncwebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le istruzioni successive nella zona di memoria flash di ESP32. 
+La riga successiva: <br>*const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral*"<br> (si tratta di una singola riga!) crea un oggetto String "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncwebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per caricare le istruzioni successive nella zona di memoria flash di ESP32. 
 
-Si tratta dunque di un trucco specifico per l'ESP32: Nel caso attualeo, vista la ridotta lunghezza della stringa, potevamo fare a meno di usarlo, ma ti ricordo che stiamo solo illustrando il funzionamento di un server HTTP minimale. Nella versione completa che useremo nella Centralina Multi-sensore, l'accorgimento di usare la memoria flash diventerà indispensabile per compilare il programma. Nella nota seguente cercheremo di chiarire l'altro comando *misterioso* della riga e cioè il costrutto sintattico "R()".
+Si tratta dunque di un trucco specifico per l'ESP32: Nel caso in questione, vista la ridotta lunghezza della stringa, potevamo fare a meno di usarlo, ma ti ricordo che stiamo solo illustrando il funzionamento di un server HTTP minimale. Nella versione completa che useremo nella Centralina Multi-sensore, l'accorgimento invece diventerà indispensabile per compilare il programma. Nella nota seguente cercheremo di chiarire l'altro comando *misterioso* della riga e cioè il costrutto sintattico "R()".
 
 > Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono i caratteri "slash" e "back-slash" onnipresenti nei tag del codice HTML e XML.
 
@@ -167,20 +167,18 @@ void initWiFi() {
     Serial.printf("Canale: %u\n", WiFi.channel());
     Serial.printf("IP: %u.%u.%u.%u\n", ip & 0xff, (ip >> 8) & 0xff, (ip >> 16) & 0xff, ip >> 24);
 }
-
-
 ```
 
-La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni, destinata ad essere invocata dal "setup()" del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". 
+La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' una pura sequenza di istruzioni, destinata ad essere invocata dal "*setup()*" del programma. Una funzione di questo tipo, senza parametri in ingresso cioè e senza valore di uscita, potrebbe essere *meglio* chiamata una "procedura". 
 
-- La prima istruzione che incontriamo è:<br> "WiFi.mode(WIFI_MODE_STA);"<br> che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
+- La prima istruzione che incontriamo è:<br> "*WiFi.mode(WIFI_MODE_STA);*"<br> che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
 
-- La chiamata di funzione<br>"WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)"<br> serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
+- La chiamata di funzione<br>"*WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)*"<br> serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
 
 
-- Le istruzioni<br> "while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }"<br> mettono in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". <br>La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
+- Le istruzioni<br> "*while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }*"<br> mettono in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". <br>La istruzione "*IPAddress ip = WiFi.localIP();*" serve a settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
 
-- Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
+- Una istruzione interessante è "*Serial.printf("Canale: %u\n", WiFi.channel());*" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
 
 #### La funzione setup() e la funzione loop()
 
@@ -198,7 +196,8 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncwebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncwebServerRequest. Lo puoi considerare una zona di *buffer* dove sono conservate e manipolate moltissime informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "*setup()*" presenta una importante chiamata di funzione e cioè<br> "*server.on("/", HTTP_GET, [](AsyncwebServerRequest *request){
+    request->send_P(200, "text/html", index_html);*"<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo *AsyncwebServerRequest*. Lo puoi considerare una zona di *buffer* dove sono conservate e manipolate moltissime informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
 
 <br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
