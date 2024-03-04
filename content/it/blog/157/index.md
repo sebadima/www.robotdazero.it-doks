@@ -32,13 +32,15 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Perchè implementare un server web con ESP32
 
-Un progetto che esibisca i dati di un sensore sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione per hobbysti con degli ovvi limiti. Per realizzare applicazioni davvero professionali nasce il bisogno di condividere i dati rilevati o magari di integrarli in qualche App per Android/Ios. In defnitiva dobbiamo imparare - nuove tecniche di networking in generale - l'uso corretto del server HTTP.
+Un progetto che esibisca i dati di un sensore sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di condividere i dati rilevati e magari inviarli a qualche App che giri su smartphone. Per realizzare questo salto di qualità dobbiamo imparare delle semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
-In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale: Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati dei sensori sfruttando il protocollo di rete HTTP, e su di esso costruire un sito dinamico con HTML, Javascript e JSON. La presenza del protocollo JSON è utile per acquisire in modo dinamico (cioè senza premere *refresh*) i dati fornito dal protocollo di rete ESP-NOW. Se vorrete costruire la nostra centralina con il programma che vi presentiamo potete davvero realizzare un prodotto dalla valenza commerciale.
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale: Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati dei sensori sfruttando il protocollo di rete HTTP, e su di esso costruire un sito dinamico con HTML, Javascript e JSON. La presenza del protocollo JSON è utile per acquisire in modo dinamico (cioè senza premere *refresh* sul browser) i dati forniti ogni secondo dal sistema di comunicazione "ESP-NOW". 
 
-## Cosa è un server WEB
+Se vorrete costruire la nostra centralina con il programma che vi presentiamo potrete realizzare a basso costo un prodotto IoT dalla reale valenza commerciale...
 
-Un server HTTP è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni.In ambito IoT, un server HTTP può essere implementato su un dispositivo Arduino per:
+## Cosa è un server HTTP
+
+Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni.In ambito IoT, un server HTTP può essere implementato su un dispositivo Arduino per:
 
 - Fornire un'interfaccia web per controllare il dispositivo.
 - Restituire dati in formato JSON o XML per l'analisi.
