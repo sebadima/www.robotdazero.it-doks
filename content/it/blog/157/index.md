@@ -175,10 +175,10 @@ La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in 
 
 - La prima istruzione che incontriamo è:<br> "WiFi.mode(WIFI_MODE_STA);"<br> che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
 
-- La chiamata di funzione<br>"if(!WiFi.config(local_IP, gateway ..."<br> serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
+- La chiamata di funzione<br>"WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)"<br> serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
 
 
-- Le istruzioni<br> "while (WiFi.status() != WL_CONNECTED)..."<br> e successive mettono in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". <br>La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
+- Le istruzioni<br> "while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }"<br> mettono in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". <br>La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
 
 - Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
 
