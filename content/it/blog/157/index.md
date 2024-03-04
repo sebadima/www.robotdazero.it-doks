@@ -144,7 +144,7 @@ Si tratta dunque di un trucco specifico per l'ESP32: Nel caso attualeo, vista la
 
 > Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono i caratteri "slash" e "back-slash" onnipresenti nei tag del codice HTML e XML.
 
-La parola <strong>rawliteral</strong>" non ha un valore particolare e viene usata solo per consuetudine: puoi usare qualsiasi altra parola come delimitatore.
+La parola <strong>rawliteral</strong> non ha un valore particolare e viene usata solo per consuetudine: puoi usare qualsiasi altra parola come delimitatore.
 
 
 #### La connessione al WI-Fi:
@@ -175,10 +175,12 @@ void initWiFi() {
 
 La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni, destinata ad essere invocata dal "setup()" del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". La prima istruzione che incontriamo è: "WiFi.mode(WIFI_MODE_STA);" che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
 
-La chiamata "if(!WiFi.config(local_IP, gateway ..." serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipo dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
+La chiamata "if(!WiFi.config(local_IP, gateway ..." serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
 
 
-Le istruzioni "while (WiFi.status() != WL_CONNECTED)..." e successive servono a mettere in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè ermette di leggere il valore el canale Wi-Fi su cui opera la connessione, un dato fondamentale per lavorare con il protocollo ESP-NOW.
+Le istruzioni "while (WiFi.status() != WL_CONNECTED)..." e successive servono a mettere in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
+
+Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
 
 #### Il setup() e la funzioneloop()
 
@@ -196,7 +198,7 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè "server.on("/", HTTP_GET, [](AsyncWebServerRequest..." che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest; Un ambiente chiuso dove sono conservate molte informazioni come il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", Intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Questo è un ambiente chiuso dove sono conservate molte informazioni come il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", Intestazioni HTTP e moltissime altre informazioni. 
 
 ## Conclusioni
 
