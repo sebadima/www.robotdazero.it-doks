@@ -54,7 +54,7 @@ Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hyper
 
 ### Come usare un server web con ESP32
 
-ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*"" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
+ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
 Per i tuo progetti "basici" IoT puoi tranquillamente usare "*WebServer*", ma per il nostro server ESP32 con il sistema asincrono AJAX e il rendering dei valori in background, abbiamo preferito utilizzare la più *potente* libreria <a href="https://github.com/me-no-dev/ESPAsyncWebServer" target="_blank">ESPAsyncWebServer</a>, asincrona come suggerisce il nome e specifica per l'ESP32.
 
@@ -120,7 +120,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>)rawliteral";
 ```
 
-La prima riga crea la "istanza" dell'oggetto AsyncWebServer assegnando nel contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il protocollo http mentre il valore "443" viene riservato a quello https. Il nome dell'oggetto creato sarà semplicemente "server" e la cosa non è priva di vantaggi: Se decidiamo di cambiare libreria non avremo bisogno di modificare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
+La prima riga crea la "istanza" dell'oggetto AsyncWebServer assegnando nel contempo il valore "80" come porta da usare nella applicazione. Il valore "80" viene usato per il normale protocollo http mentre il valore "443" viene riservato a quello http(s). Il nome dell'oggetto creato sarà semplicemente un generico "server" e la cosa non è priva di vantaggi: Se decidiamo di cambiare tipo di server e libreria collegata non avremo bisogno di modificare decine o centinaia di istruzioni nel codice, ci basta cambiare la riga:
 
 ```bash
 AsyncWebServer server(80);
@@ -132,9 +132,11 @@ in
 WebServer server(80);
 ```
 
-La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le prossime istruzioni nella memoria flash di ESP32. 
+La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le istruzioni successive nella zona di memoria flash di ESP32. 
 
-> Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
+Si tratta dunque di un trucco specifico per l'ESP32. Nel nostro caso specifico, vista la ridotta lunghezza della variabile, potevamo fare a meno di usarlo, ma ti ricordo che questa versione del programma serve a spiegarne il funzionamento, mentre nella versione finale da usare nella nostra Centralina Multisensore tale accorgimento sarà necessario per compilare il programma. Nella nota seguente cercheremo di chiare l'atro aspetto misterioso della riga e cioè il costrutto sintattico "R()".
+
+> Nel C++ di Arduino, la parola chiave <strong>R"()"</strong> (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono percorsi file o i caratteri "slash" onnipresenti nei tag del codice HTML.
 
 Inoltre invece della parola "<strong>rawliteral</strong>" puoi usare qualsiasi altra parola come delimitatore.
 
