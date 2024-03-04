@@ -34,7 +34,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
-In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati usando un sito web dinamico con HTML, Javascript e JSON. Il protocollo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>.
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con tale innesto la centralina potrà condividere i dati usando un sito web dinamico con HTML, Javascript e JSON. Il protocollo aggiuntivo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>.
 
 > AJAX (Asynchronous JavaScript and XML) è una tecnica di sviluppo web che permette di aggiornare una pagina web in modo dinamico, senza ricaricare l'intera pagina e senza cliccare sul tasto *Aggiorna* del browser.<br><strong>Come funziona Ajax</strong><br>Il meccanismo software si può dividere per semplicità in tre parti:<br>- Richiesta: L'utente invia una richiesta al server tramite JavaScript. <br>- Elaborazione: Il server elabora la richiesta e restituisce una risposta in formato XML, JSON o testo.
 <br>- Aggiornamento: Il client JavaScript aggiorna la pagina web in base alla risposta ricevuta.
@@ -44,7 +44,9 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 ##### "Se vorrete costruire la nostra centralina con le modifiche che vi presentiamo potrete realizzare a basso costo un efficiente prodotto IoT dalla reale valenza commerciale."
 
-### Cosa è un server HTTP
+<br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
+
+## Cosa è un server HTTP
 
 Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
 
@@ -77,7 +79,7 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 <br><br><strong>Modularità</strong>, perchè permettono di dividere il codice in moduli separati e riutilizzabili - <strong>Organizzazione</strong>, in quanto migliorano la leggibilità e la manutenibilità del codice - <strong>Condivisione del codice</strong> perchè facilitano la condivisione di funzioni e librerie con altri sviluppatori.
 </div>
 
-#### Gli header del programma
+#### Gli header del programma:
 
 ```bash
 #include "ESPAsyncWebServer.h"
@@ -86,7 +88,7 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo serve a *caricare* tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
 
 
-#### Le "variabili" statiche
+#### Le "variabili" statiche:
 
 ```bash
 constexpr char WIFI_SSID[] = "Cambia-il-nome";
@@ -106,7 +108,7 @@ Le cinque righe successive assomigliano a delle normali dichiarazioni di variabi
 Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tratta di valori che vengono definiti "una tantum" nel momento della creazione: Sono i parametri per le funzioni "Object Oriented" della libreria WiFi, ma dal punto di vista della teoria della programmazione sono comunque cinque variabili con un tipo dati creato ad hoc.
 
 
-### Le istruzioni per creare il server web
+#### Le istruzioni per creare il server web:
 
 ```bash
 AsyncWebServer server(80);
@@ -143,7 +145,7 @@ Si tratta dunque di un trucco specifico per l'ESP32: Nel nostro caso specifico, 
 Invece della parola "<strong>rawliteral</strong>" puoi usare qualsiasi altra parola come delimitatore.
 
 
-### La connessione al WI-Fi
+#### La connessione al WI-Fi:
 
 ```bash
 void initWiFi() {
@@ -169,13 +171,12 @@ void initWiFi() {
 
 ```
 
-### Il setup() e la funzioneloop()
+#### Il setup() e la funzioneloop()
 
 ```bash
 ```
-<br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
-### Il programma con il monitor seriale
+#### Il programma con il monitor seriale
 
 ```bash
 --- forcing DTR inactive
