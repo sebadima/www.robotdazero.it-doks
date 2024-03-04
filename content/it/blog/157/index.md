@@ -214,4 +214,4 @@ I server web (server http) per ESP32 e Arduino offrono una serie di grandi vanta
 Capire questo versione minimale del programma sarà di grande aiuto nell'affrontare progetti software più sofisticati.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.4.1</p>
