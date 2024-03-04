@@ -49,7 +49,7 @@ Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grand
 
 <br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
-## Cosa è un server HTTP
+### Cosa è un server HTTP
 
 Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hypertext Transfer Protocol) da client come web browser o applicazioni. In ambito IoT, un server HTTP può essere implementato su un dispositivo ESP32 per:
 
@@ -57,7 +57,7 @@ Un server HTTP (server web) è un software che gestisce le richieste HTTP (Hyper
 - Restituire dati in formato JSON o XML per l'analisi,
 - Ricevere comandi da client remoti.
 
-### Come usare un server web con ESP32
+## Come usare un server web con ESP32
 
 ESP32 utilizza (per fortuna) la sterminata libreria di Arduino e chi ha familiarità con questa piattaforma non dovrà imparare alcun nuovo concetto di programmazione. Come avviene con Arduino, per risolvere dei compiti complessi come la creazione di un server http, conviene appoggiarsi a del software già esistente. In questo caso potevamo usare, ad esempio la libreria "*<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer" target="_blank">WebServer</a>*" inclusa nell'IDE di Arduino e adottata da <a href="https://github.com/espressif" target="_blank">Espressif</a> per l'ESP32. 
 
