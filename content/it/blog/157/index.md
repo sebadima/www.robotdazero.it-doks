@@ -132,13 +132,11 @@ in
 WebServer server(80);
 ```
 
-La riga successiva (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le prossime istruzioni nella memoria flash di ESP32. 
+La riga successiva: <br>const char index_html[] PROGMEM = R"rawliteral(... ...)rawliteral";"<br> (si tratta di una singola riga!) crea un oggetto statico "*index_html*" che usa il "modificatore di variabile" <a href="https://github.com/me-no-dev/ESPAsyncWebServer#send-large-webpage-from-progmem-containing-templates" target="_blank">PROGMEM</a> per inserire le prossime istruzioni nella memoria flash di ESP32. 
 
-> Nel C++ di Arduino, la parola chiave R"()" (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. Questo è particolarmente utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
+> Nel C++ di Arduino, la parola chiave R"()" (rawliteral) consente di definire stringhe letterali senza interpretare caratteri di escape come \n o \t. Questo significa che i caratteri di escape vengono trattati come caratteri letterali all'interno della stringa. <br> La cosa è molto utile quando si tratta di stringhe che includono percorsi file o espressioni regolari, in cui la presenza di caratteri di escape potrebbe rendere complicata la loro lettura o manipolazione.
 
-Utilizzando rawliteral, è possibile fare a meno di inserire doppie barre invertite (\\) per rappresentare una singola barra invertita (\) nei percorsi file di Windows. 
-
-##### Invece della parola "rawliteral" puoi usare qualsiasi altra parola come delimitatore.
+Inoltre invece della parola "rawliteral" puoi usare qualsiasi altra parola come delimitatore.
 
 
 ### La connessione al WI-Fi
