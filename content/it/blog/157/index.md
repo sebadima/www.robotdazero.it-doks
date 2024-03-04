@@ -1,6 +1,6 @@
 ---
-title:        "Come implementare un server web con ESP32"
-description:  "Come implementare un server web con ESP32"
+title:        "Come funziona un server web con ESP32"
+description:  "Come funziona un server web con ESP32"
 excerpt:      "Espandi le tue abilità nel mondo IoT: Scopri come implementare un Server Web con ESP32 - La prima parte della guida completa per creare e gestire un Server Web Utilizzando la potente piattaforma ESP32!..."
 date:         2024-03-01T01:20:42+01:00
 lastmod:      2024-03-01T01:20:42+01:00
@@ -32,15 +32,15 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Perchè implementare un server web con ESP32
 
-Un progetto che esibisca i dati di un sensore sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di condividere i dati rilevati e magari inviarli a qualche App su Android. Per compiere questo salto di qualità dobbiamo imparare delle semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
+Un progetto che si limiti a presentare i valori dei sensori sul "Monitor Seriale" di Arduino IDE è una tappa inevitabile per un programmatore IoT, ma si tratta di una applicazione amatoriale e gravata da ovvi limiti. Per realizzare applicazioni professionali abbiamo bisogno di *condividere* i dati rilevati e magari inviarli a qualche App su Android. Per fare questo salto di qualità dobbiamo imparare delle nuove, semplici tecniche di networking (nulla di complicato) e usare un programma fondamentale nel mondo IoT: Il "server" HTTP.
 
-In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con questo innesto la centralina potrà condividere i dati dei sensori e azionare un sito dinamico con HTML, Javascript e JSON. Il protocollo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a> e aggiornare i dati in modo dinamico (cioè senza premere *refresh* sul browser).
+In questo paragrafo vedremo quali sono le strutture dati e le funzioni per creare un server HTTP minimale. Lo stesso codice verrà quindi "incorporato" nella versione evoluta della nostra Centralina Multi-sensore. Con questo innesto la centralina potrà condividere i dati usando un sito web dinamico con HTML, Javascript e JSON. Il protocollo JSON è necessario per implementare il sistema <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank">AJAX</a>.
 
-> AJAX (Asynchronous JavaScript and XML) è una tecnica di sviluppo web che permette di aggiornare una pagina web in modo dinamico, senza ricaricare l'intera pagina.<br><strong>Come funziona Ajax</strong><br>- Richiesta: L'utente invia una richiesta al server tramite JavaScript. <br>- Elaborazione: Il server elabora la richiesta e restituisce una risposta in formato XML, JSON o testo.
+> AJAX (Asynchronous JavaScript and XML) è una tecnica di sviluppo web che permette di aggiornare una pagina web in modo dinamico, senza ricaricare l'intera pagina e senza cliccare sul tasto *Aggiorna* del browser.<br><strong>Come funziona Ajax</strong><br>Il meccanismo software si può dividere per semplicità in tre parti:<br>Richiesta: L'utente invia una richiesta al server tramite JavaScript. <br>- Elaborazione: Il server elabora la richiesta e restituisce una risposta in formato XML, JSON o testo.
 <br>- Aggiornamento: Il client JavaScript aggiorna la pagina web in base alla risposta ricevuta.
-Vantaggi di AJAX:
 
-Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per grandi i benefici che apporta nella esperienza utente (Le pagine web sono più fluide e reattive), ma anche per la riduzione del traffico da e verso l'ESP32. Seppure i moderni microcontroller siano molto superiori ad Arduino versione UNO R3, le loro capacità di elaborazioni sono tuttora molto lontane dalle CPU Celeron/I3 etc...
+
+Una applicazione IoT moderna dovrebbe necessariamente includere AJAX per i grandi benefici che apporta nella esperienza utente (Le pagine web sono più fluide e reattive), ma anche per la riduzione del traffico da e verso l'ESP32. Seppure i moderni microcontroller siano molto superiori ad Arduino versione UNO, le loro capacità di elaborazioni sono lontane dalle normali CPU per Desktop.
 
 ##### Se vorrete costruire la nostra centralina con le modifiche che vi presentiamo potrete realizzare a basso costo un prodotto IoT dalla reale valenza commerciale.
 
@@ -157,7 +157,7 @@ void initWiFi() {
 
 ```bash
 ```
-<br><br><img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
+<br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
 ### Il programma con il monitor seriale
 
