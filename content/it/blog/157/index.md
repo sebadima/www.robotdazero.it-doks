@@ -18,6 +18,9 @@ mermaid:      true
 
 
 <!-- 
+
+https://rntlab.com/question/web-servers-with-the-esp32-and-esp8266-1-1-hello-world-web-server/
+
 <img width="300" class="x figure-img img-fluid lazyload blur-up"  src="/images/154.png" alt="schema connessioni">
 <strong>1</strong>. <span style="background-color:#eeeeee"> Controllo delle versioni</span>:
 img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
@@ -85,7 +88,7 @@ Nella pratica del C++ è emerso come dichiarare esplicitamente funzioni e librer
 #include "ESPAsyncWebServer.h"
 #include <WiFi.h>
 ```    
-Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo serve a *caricare* tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
+Il primo include "carica" la libreria fondamentale e cioè "ESPAsyncWebServer", mentre il secondo mette a disposizione del codice tutte le funzioni per il wireless offerte dalla libreria <a href="https://www.arduino.cc/reference/en/libraries/wifi/" target="_blank">Wifi</a> di Arduino.
 
 
 #### Le "variabili" statiche:
@@ -105,7 +108,7 @@ Le prime due righe usano la istruzione "*constexpr*" per motivi di ottimizzazion
 
 Le cinque righe successive assomigliano a delle normali dichiarazioni di variabili, ma sono variabili di un tipo particolare e cioè "*IPAddress*" specifico per interfacciarsi con la libreria Wifi. Per fortuna non dobbiamo ridefinire e modificare il loro "tipo", ci basta seguire il formato ideato dagli sviluppatori e inserire i quattro numeri di un classico indirizzo IP.
 
-Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tratta di valori che vengono definiti "una tantum" nel momento della creazione: Sono i parametri per le funzioni "Object Oriented" della libreria WiFi, ma dal punto di vista della teoria della programmazione sono comunque cinque variabili con un tipo dati creato ad hoc.
+Parlare di variabili in queste instruzioni è un poco ingannevole, perchè si tratta di valori che vengono definiti "una tantum" nel momento della creazione: Sono i parametri per le funzioni OOP della libreria WiFi, ma per semplificare la spiegazione potete pensarle come cinque variabili con un tipo dati creato ad hoc.
 
 
 #### Le istruzioni per creare il server web:
@@ -171,12 +174,39 @@ void initWiFi() {
 
 ```
 
+La funzione "*initWiFi()*" viene definita dal nostro codice e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni senza parametro, destinata ad essere invocata dal setup del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". La prima chiamata di funzione che incontriamo è: "Fi.mode(WIFI_MODE_STA);" che assegna alla radio di ESP32 la funzione "STATION" per collegarsi al Wi-Fi. Esistono altre modalita ad esempio di tipo misto "APSTA" ma ce ne occuperemo solo in seguito.
+
+La chiamata "if(!WiFi.config(local_IP, gateway ..." serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipo dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
+
+
+Le istruzioni "while (WiFi.status() != WL_CONNECTED)..." e successive servono a mettere in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè ermette di leggere il valore el canale Wi-Fi su cui opera la connessione, un dato fondamentale per lavorare con il protocollo ESP-NOW.
+
 #### Il setup() e la funzioneloop()
 
 ```bash
+void setup() {
+  Serial.begin(115200);
+  initWiFi();
+
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/html", index_html);
+  });
+   
+  server.begin();
+}
+ 
+void loop() {} 
 ```
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè "server.on("/", HTTP_GET, [](AsyncWebServerRequest..." che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest , un *ambiente chiuso dove sono conservate molte informazioni come: Metodo HTTP utilizzato (GET, POST, ecc.), URL richiesto, Parametri passati nella query string, Intestazioni HTTP e moltissime altre informazioni. 
 
 ## Conclusioni
+
+I server HTTP per Arduino offrono una serie di vantaggi per lo sviluppo di applicazioni IoT:
+
+- Controllo e monitoraggio remoti: Permettono di controllare e monitorare i dispositivi IoT da qualsiasi luogo con un dispositivo connesso a internet.
+- Interfacce utente web: Consentono di creare interfacce utente web per interagire con i dispositivi IoT.
+- Comunicazione dati: Facilitano la comunicazione di dati tra dispositivi IoT e server remoti.
+- Flessibilità: Offrono una piattaforma flessibile per creare applicazioni IoT personalizzate.
 
 <br>
 <br>
