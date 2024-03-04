@@ -197,11 +197,11 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè "server.on("/", HTTP_GET, [](AsyncWebServerRequest..." che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest , un *ambiente chiuso dove sono conservate molte informazioni come: Metodo HTTP utilizzato (GET, POST, ecc.), URL richiesto, Parametri passati nella query string, Intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè "server.on("/", HTTP_GET, [](AsyncWebServerRequest..." che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest; Un ambiente chiuso dove sono conservate molte informazioni come il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", Intestazioni HTTP e moltissime altre informazioni. 
 
 ## Conclusioni
 
-I server HTTP per Arduino offrono una serie di vantaggi per lo sviluppo di applicazioni IoT:
+I server HTTP per ESP32 e Arduino offrono una serie di grandi vantaggi nello sviluppo di applicazioni IoT:
 
 - Controllo e monitoraggio remoti: Permettono di controllare e monitorare i dispositivi IoT da qualsiasi luogo con un dispositivo connesso a internet.
 - Interfacce utente web: Consentono di creare interfacce utente web per interagire con i dispositivi IoT.
