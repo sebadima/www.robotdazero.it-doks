@@ -173,16 +173,18 @@ void initWiFi() {
 
 ```
 
-La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni, destinata ad essere invocata dal "setup()" del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". La prima istruzione che incontriamo è: "WiFi.mode(WIFI_MODE_STA);" che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
+La funzione "*initWiFi()*" è una nostra funzione utente, priva di parametri in ingresso e non presenta "sottigliezze" particolari: E' solo una sequenza di istruzioni, destinata ad essere invocata dal "setup()" del programma. Una funzione di questo tipo, senza parametro cioè, potrebbe essere chiamata una "procedura". 
 
-La chiamata "if(!WiFi.config(local_IP, gateway ..." serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
+- La prima istruzione che incontriamo è:<br> "WiFi.mode(WIFI_MODE_STA);"<br> che assegna alla sezione radio di ESP32 la modalità "STATION" per collegarsi al Wi-Fi. Esistono altre modalità, ad esempio di tipo misto come "APSTA" di cui ci occuperemo in seguito.
+
+- La chiamata di funzione<br>"if(!WiFi.config(local_IP, gateway ..."<br> serve a configurare l'oggetto Wifi con i parametri definiti in precedenza. L'operatore "." è tipico dei linguaggi di programmazione OOP. In caso di errore scrive sul monitor seriale un messaggio di errore.
 
 
-Le istruzioni "while (WiFi.status() != WL_CONNECTED)..." e successive servono a mettere in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
+- Le istruzioni<br> "while (WiFi.status() != WL_CONNECTED)..."<br> e successive mettono in loop il programma in attesa che lo stato della connessione sia = "WL_CONNECTED". <br>La istruzione "IPAddress ip = WiFi.localIP();" serve ovviamente e settare l'indirizzo IP statico che avevamo definito ad inizio programma. 
 
-Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
+- Una istruzione interessante è "Serial.printf("Canale: %u\n", WiFi.channel());" perchè permette di leggere il valore del canale Wi-Fi su cui opera la connessione: un dato fondamentale per lavorare con il protocollo ESP-NOW.
 
-#### Il setup() e la funzioneloop()
+#### La funzione setup() e la funzione loop()
 
 ```bash
 void setup() {
@@ -198,7 +200,7 @@ void setup() {
  
 void loop() {} 
 ```
-La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta solo una chiamata di funzione utile al nostro scopo e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che attiva l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Questo è un ambiente chiuso dove sono conservate molte informazioni come il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", Intestazioni HTTP e moltissime altre informazioni. 
+La funzione loop è vuota perchè stiamo considerando solo la struttura minima di un server http, mentre la funzione "setup()" presenta una importante chiamata di funzione e cioè<br> "server.on("/", HTTP_GET, [](AsyncWebServerRequest..."<br> che mappa sulla RAM l'oggetto "server" (ricordate il nome molto generico?). L'oggetto request rappresenta un oggetto di tipo AsyncWebServerRequest. Lo puoi considerare una zona di *buffer* sono conservate e aggiornate molte informazioni quali ad esempio: il metodo HTTP utilizzato (GET, POST, ecc.), l'URL richiesto, i parametri passati nella "query string", le intestazioni HTTP e moltissime altre informazioni. 
 
 ## Conclusioni
 
@@ -209,6 +211,7 @@ I server HTTP per ESP32 e Arduino offrono una serie di grandi vantaggi nello svi
 - Comunicazione dati: Facilitano la comunicazione di dati tra dispositivi IoT e server remoti.
 - Flessibilità: Offrono una piattaforma flessibile per creare applicazioni IoT personalizzate.
 
+Capire questo versione minimale del programma saraà di grande aito nell'affrontare software più sofisticato.
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.2.1</p>
