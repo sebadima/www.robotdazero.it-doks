@@ -1,10 +1,10 @@
 ---
 title:        "I sensori compatibili con l'ESP32"
 description:  "I sensori compatibili con l'ESP32"
-excerpt:      "I sensori compatibili con l'ESP32..."
+excerpt:      "Sfrutta la potenza dell'ESP32 per interfacciarti a una vasta gamma di sensori e realizzare progetti di elettronica avanzati. Dalle semplici letture di temperatura ai sistemi di domotica avanzati, questa guida ti mostrerà passo passo come collegare e utilizzare i sensori con l'ESP32...."
 date:         2024-03-04T01:20:42+01:00
 lastmod:      2024-03-04T01:20:42+01:00
-draft:        true
+draft:        false
 weight:       50
 images:       ["header.jpeg"]
 categories:   ["News"]
@@ -256,4 +256,4 @@ Se stai cercando un microcontrollore versatile e potente per il tuo prossimo pro
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.1.0.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.1.1.0</p>
