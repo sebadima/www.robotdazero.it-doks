@@ -256,4 +256,4 @@ Se stai cercando un microcontrollore versatile e potente per il tuo prossimo pro
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.1.1.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.1.2.1</p>
