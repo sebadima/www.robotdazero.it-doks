@@ -245,4 +245,4 @@ La funzione digitalRead() legge il valore del pin GPIO.
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.0.0.5</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.158.0.5.1</p>
