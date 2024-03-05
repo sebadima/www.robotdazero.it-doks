@@ -1,7 +1,7 @@
 ---
-title:        "I sensori compatibili con l'ESP32"
-description:  "I sensori compatibili con l'ESP32"
-excerpt:      "Sfrutta la potenza dell'ESP32 per interfacciarti a una vasta gamma di sensori e realizzare progetti di elettronica avanzati. Dalle semplici letture di temperatura ai sistemi di domotica avanzati, questa guida ti mostrerà passo passo come collegare e utilizzare i sensori con l'ESP32...."
+title:        "I sensori compatibili con ESP32"
+description:  "I sensori compatibili con ESP32"
+excerpt:      "Sfrutta la potenza di ESP32 per interfacciarti a una vasta gamma di sensori e realizzare progetti di elettronica avanzati. Dalle semplici letture di temperatura ai sistemi di domotica avanzati, questa guida ti mostrerà passo passo come collegare e utilizzare i sensori con ESP32...."
 date:         2024-03-04T01:20:42+01:00
 lastmod:      2024-03-04T01:20:42+01:00
 draft:        false
