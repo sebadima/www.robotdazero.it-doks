@@ -33,21 +33,25 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 Per essere collegato ad ESP32, un sensore elettronico deve avere le seguenti caratteristiche:
 
-1. Tensione di alimentazione:
+- Tensione di alimentazione compatibile:
+Il sensore *dovrebbe* in linea di massima usare la stessa tensione di alimentazione di ESP32, che è di 3,3V. Se il sensore richiede una tensione diversa, è necessario utilizzare un convertitore di tensione. In genere i convertitori di yensione sono dei dispositivi molto economici ma la loro presenza tende a complicare il progetto complessivo. Nel dubbio sarebbe meglio evitare sensori con alimentazione fuori dal range 3.3~5.0 V.
 
-Il sensore deve essere compatibile con la tensione di alimentazione di ESP32, che è di 3,3V. Se il sensore richiede una tensione diversa, è necessario utilizzare un convertitore di tensione.
-2. Livello di segnale:
-
+- Livello di segnale ben definito:
 Il sensore deve fornire segnali digitali o analogici compatibili con l'ESP32.
 Per i segnali digitali, il sensore deve utilizzare una tensione di 3,3V per indicare "1" e 0V per indicare "0".
 Per i segnali analogici, il sensore deve fornire una tensione compresa tra 0V e 3,3V che rappresenta il valore misurato.
-3. Interfaccia di comunicazione:
+Segnali fuori range possono rovinare i GPIO usati come input e segnali troppo bassi o oscilanti richiedono necessariamente delle resistenze di "pull-up" o "pull-down".
 
 ### I canali di comunicazione disponibili
 
 Il sensore deve utilizzare un'interfaccia di comunicazione compatibile con l'ESP32, come:
 
 - I2C: Interfaccia di comunicazione seriale a due fili.
+
+> L'<strong>I2C</strong> (Inter-Integrated Circuit) è un'interfaccia di comunicazione seriale sincrona a due fili utilizzata per collegare dispositivi a un microcontrollore, come l'ESP32. I due fili sono:
+SDA (Serial Data): Bidirezionale per la trasmissione e la ricezione di dati.
+SCL (Serial Clock): Fornisce un segnale di clock per sincronizzare la comunicazione.
+
 - SPI: Interfaccia di comunicazione seriale a quattro fili.
 
 > <strong>SPI</strong> (Serial Peripheral Interface) è un'interfaccia di comunicazione seriale sincrona a quattro fili utilizzata per collegare dispositivi a un microcontrollore, come l'ESP32.
@@ -58,24 +62,32 @@ SCK (Serial Clock): Il master fornisce un segnale di clock per sincronizzare la 
 SS (Slave Select): Il master seleziona lo slave con cui comunicare.
 
 - UART: Interfaccia di comunicazione seriale asincrona.
+
+> L'<strong>UART</strong> (Universal Asynchronous Receiver Transmitter) è un'interfaccia di comunicazione seriale asincrona che utilizza un solo filo per la trasmissione dati e uno per la ricezione.
 - GPIO: Ingressi/Uscite Generici a Proprio Uso.
 
-4. Libreria software:
+### Librerie di comunicazione software per ESP32
 
-Per utilizzare il sensore con l'ESP32, è necessaria una libreria software che gestisca la comunicazione con il sensore e fornisca le funzioni per leggere i dati.
-Esistono molte librerie disponibili online per diversi tipi di sensori.
-Alcune considerazioni aggiuntive:
+- I2C:
 
-Compatibilità con la scheda di sviluppo:
+Libreria Wire: Libreria ufficiale Espressif per la comunicazione I2C. Semplice da usare e compatibile con la maggior parte dei dispositivi I2C.
+Adafruit_I2C: Libreria Adafruit con molte funzioni avanzate per la comunicazione I2C, come la scansione dei dispositivi e la gestione di più bus I2C.
 
-Assicurarsi che il sensore sia compatibile con la specifica scheda di sviluppo ESP32 che si sta utilizzando.
-Alcune schede di sviluppo potrebbero avere pin GPIO con funzionalità diverse.
-Protezione contro le sovratensioni:
+- SPI:
 
-Se il sensore è alimentato da una tensione esterna, è consigliabile utilizzare un diodo di protezione per evitare danni da sovratensioni.
-In generale, è consigliabile consultare la documentazione del sensore e dell'ESP32 per assicurarsi della compatibilità e per ottenere informazioni specifiche su come collegare e utilizzare il sensore.
+Libreria SPI: Libreria ufficiale Espressif per la comunicazione SPI. Semplice da usare e compatibile con la maggior parte dei dispositivi SPI.
+Adafruit_SPIDevice: Libreria Adafruit che facilita la comunicazione con dispositivi SPI specifici, come display LCD e schede SD.
 
-Inoltre, è possibile trovare molti tutorial online che mostrano come collegare e utilizzare diversi tipi di sensori con ESP32.
+- UART:
+
+SoftwareSerial: Libreria ufficiale Espressif per la comunicazione UART software. Permette di utilizzare i pin GPIO per la comunicazione UART.
+HardwareSerial: Libreria ufficiale Espressif per la comunicazione UART hardware. Permette di utilizzare le porte UART integrate dell'ESP32.
+Librerie aggiuntive:
+
+PubSubClient: Libreria per la comunicazione con broker MQTT.
+WiFiManager: Libreria per la gestione della connessione Wi-Fi.
+AsyncTCP: Libreria per la comunicazione TCP/IP asincrona.
+
 
 
 
@@ -97,7 +109,7 @@ Aprire l'IDE di Arduino e andare su Strumenti > Gestisci librerie.
 Cercare la libreria "Wire" e installarla.
 3. Scrivere il codice:
 
-C++
+```bash
 #include <Wire.h>
 
 void setup() {
@@ -149,11 +161,10 @@ void loop() {
   uint8_t data = SPI.read();
 
   // ...
-}```
-
+}
+```
 
 ### Come utilizzare ESP32 per leggere i valori che giungono da UART
-
 
 
 Per leggere i valori che giungono da UART con ESP32, è necessario seguire questi passaggi:
@@ -196,19 +207,16 @@ void loop() {
 }
 ```
 
+### Leggere segnali direttamente con i pin GPIO
 
-
-### Come leggere segnali dei sensori digitali con i pin GPIO
-Per leggere i segnali dei sensori digitali attraverso i pin GPIO con ESP32, è necessario seguire questi passaggi:
+In questo caso dobbiamo
 
 1. Collegare il sensore all'ESP32:
-
-Collegare il pin di uscita del sensore a un pin GPIO dell'ESP32.
-Collegare il pin GND del sensore al pin GND dell'ESP32.
+  Collegare il pin di uscita del sensore a un pin GPIO dell'ESP32.
+  Collegare il pin GND del sensore al pin GND dell'ESP32.
 2. Configurare il pin GPIO:
-
-Impostare il pin GPIO come input.
-Impostare il pin GPIO come pull-up o pull-down (opzionale).
+  Impostare il pin GPIO come input.
+  Impostare il pin GPIO come pull-up o pull-down (opzionale).
 3. Scrivere il codice:
 
 ```bash
