@@ -17,9 +17,15 @@ mermaid: true
 
 
 
-<!-- https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/ -->
+<!-- https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/ 
 
-## Introduzione
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/201.jpg" alt="">
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/202.jpg" alt="">
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/203.jpg" alt="">
+
+-->
+
+## Introduzione +++ mettere nuove foto!!!
 
 L'avvento dell'Internet of Things (IoT) ha rivoluzionato il modo in cui interagiamo con la nostra casa. La domotica, in particolare, ha portato all'introduzione di dispositivi intelligenti in grado di automatizzare diverse funzioni e di monitorare l'ambiente domestico.
 
