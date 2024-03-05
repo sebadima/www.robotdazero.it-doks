@@ -25,7 +25,7 @@ mermaid: true
 
 -->
 
-## Introduzione +++ mettere nuove foto!!!
+## Introduzione
 
 L'avvento dell'Internet of Things (IoT) ha rivoluzionato il modo in cui interagiamo con la nostra casa. La domotica, in particolare, ha portato all'introduzione di dispositivi intelligenti in grado di automatizzare diverse funzioni e di monitorare l'ambiente domestico.
 
