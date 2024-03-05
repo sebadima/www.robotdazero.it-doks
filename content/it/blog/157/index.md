@@ -8,7 +8,7 @@ draft:        false
 weight:       50
 images:       ["header.jpeg"]
 categories:   ["News"]
-tags:         ["ESP32", "Sensori"]
+tags:         ["ESP32", "software", "web server", "sensori"]
 contributors: ["sebadima"]
 pinned:       false
 homepage:     false
@@ -213,4 +213,4 @@ I server web (server HTTP) per ESP32 e Arduino offrono una serie di grandi oppor
 Capire questo versione minimale del Server Web ti sarà di grande aiuto nell'affrontare altri progetti software più sofisticati.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.4.4</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.157.1.4.5</p>
