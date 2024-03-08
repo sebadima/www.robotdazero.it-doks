@@ -4,7 +4,7 @@ description: "La connessione simultanea tra WIFI ed ESPNOW"
 excerpt: "Il problema della connessione simultanea WIFI ed ESPNOW..."
 date: 2024-02-26T01:19:42+01:00
 lastmod: 2024-02-26T01:19:42+01:00
-draft: true
+draft: false
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
