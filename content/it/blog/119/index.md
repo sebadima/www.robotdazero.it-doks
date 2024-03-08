@@ -161,13 +161,27 @@ Segui questi tre passaggi in sequenza:
 python -m esptool --chip esp32 erase_flash
 ```
 
-**4** - Tieni premuto il pulsante di avvio dell'ESP32 (BOOT)
+**4** - Premi "ENTER" o "INVIO" sulla tastiera del PC
 
-**5** - Premi "ENTER" o "INVIO" sulla tastiera del PC
-
-**6** - Dopo l'inizio della "procedura" lascia andare il pulsante BOOT.
 
 <br>
+
+```bash
+esptool.py v4.7.0
+Found 1 serial ports
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:a3:b3:97:83:e8
+Uploading stub...
+Running stub...
+Stub running...
+Erasing flash (this may take a while)...
+Chip erase completed successfully in 10.4s
+Hard resetting via RTS pin...
+```
 
 In pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
 <br>
