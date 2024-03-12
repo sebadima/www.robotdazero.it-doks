@@ -50,9 +50,30 @@ Fornire consigli utili per evitare errori durante l'assemblaggio.
 
 ## Configurazione software
 
-Spiegare come installare l'IDE di Arduino e le librerie necessarie.
-Fornire il codice C++ completo della centralina, commentando le varie parti del codice.
-Spiegare come configurare il software per la specifica configurazione hardware utilizzata.
+### Introduzione
+
+Descrivere i componenti hardware utilizzati, incluso l'ESP32.
+Accennare brevemente al software che verrà configurato.
+
+### Configurazione dell'IDE
+
+- Specificare l'IDE utilizzato (es. Arduino IDE).
+- Spiegare come installare le librerie necessarie.
+- Fornire il codice sorgente per la configurazione del sensore di temperatura e umidità.
+- Mostrare come configurare il sensore di pressione atmosferica.
+- Illustrare la configurazione del sensore di gas nocivi.
+
+### Gestione dei dati
+
+- Descrivere come acquisire i dati dai sensori.
+- Spiegare come memorizzare i dati su scheda SD o EEPROM.
+- Mostrare come inviare i dati ad un server remoto.
+- Visualizzazione dei dati:
+
+- Presentare diverse opzioni per la visualizzazione dei dati, come un grafico o un pannello di controllo.
+- Fornire il codice sorgente per la visualizzazione dei dati sul display LCD.
+- Mostrare come creare un'interfaccia web per la visualizzazione dei dati.
+- KASPIAN??????
 
 <br><img width="80" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
