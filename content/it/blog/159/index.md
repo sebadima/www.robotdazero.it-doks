@@ -54,6 +54,8 @@ Spiegare come installare l'IDE di Arduino e le librerie necessarie.
 Fornire il codice C++ completo della centralina, commentando le varie parti del codice.
 Spiegare come configurare il software per la specifica configurazione hardware utilizzata.
 
+<br><img width="80" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
+
 ## Funzionalità e utilizzo
 
 Descrivere le funzionalità della centralina meteo: rilevazione di temperatura, umidità, pressione atmosferica, gas nocivi.
@@ -65,9 +67,6 @@ Mostrare un esempio di come i dati possono essere visualizzati e utilizzati.
 Riassumere i vantaggi della centralina meteo realizzata con ESP32 e C++.
 Suggerire possibili miglioramenti e future implementazioni.
 Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande.
-
-
-<br><img width="96" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
 
 <br>
