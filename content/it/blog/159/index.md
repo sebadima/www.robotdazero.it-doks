@@ -1,7 +1,7 @@
 ---
 title:        "Una centralina meteo con ESP32, ESP-NOW e Wi-Fi"
 description:  "Una centralina meteo con ESP32, ESP-NOW e Wi-Fi"
-excerpt:      "Una centralina meteo con ESP32, ESP-NOW e Wi-Fi"
+excerpt:      "Trasforma il tuo ESP32 in una potente centralina meteo! Crea una rete di sensori wireless con ESP-NOW e monitora in tempo reale: Temperatura - Qualità dell'aria - Metano - Monossido di Carbonio e altri parametri ambientali. Con il Wi-Fi invia i dati a un server web per l'analisi e la visualizzazione..."
 date:         2024-03-07T01:20:42+01:00
 lastmod:      2024-03-07T01:20:42+01:00
 draft:        true
@@ -135,12 +135,12 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 
 
+<br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
 
 
 
-
-## Gestione dei dati
+## Il server WEB
 
 - Descrivere come acquisire i dati dai sensori.
 - Spiegare come memorizzare i dati su scheda SD o EEPROM.
@@ -152,7 +152,6 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 - Mostrare come creare un'interfaccia web per la visualizzazione dei dati.
 - KASPIAN??????
 
-<br><img width="80" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
 ## Troubleshooting
 
