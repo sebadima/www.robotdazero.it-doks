@@ -33,13 +33,13 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra Centralina Meteo con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche, tra cui anche i fumi di combustione e visualizzare temperatura e umidità dell'aria su un qualunque dispositivo dotato di brpwser Web.
+La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche, tra cui i fumi di combustione e visualizzare concentrazione di gas, temperatura e umidità dell'aria su qualunque dispositivo dotato di browser Web.
 
 ### Le scelte di progetto
 
-Il progetto usa una trasmittente separata da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: In questo modo puoi controllare gas e parametri di edifici o luoghi distanti da 100 metri fino a 1.5 chilometri! <br> Per ottenere questi valori abbiamo accoppiato il protocollo proprietario ESP-NOW alla normale rete Wi-Fi.
-
-Abbiamo selezionato dei componenti come il *controller* ESP32 e due tipi di sensori molto precisi (MQ2 e MQ135) per ottenere delle rilevazioni consistenti ma con un costo relativamente contenuto e con la possibilità di assemblare il prototipo su una normale breadboard per hobbysti.
+Il progetto usa una o più trasmittenti separate da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: Usando il protocollo ESP-NOW la centralina può rilevare gas e temperatura in luoghi distanti fino a 1.5 chilometri! <br>
+  
+Abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ma ad un un costo contenuto, ed essendo dotati di connettori standard 2.54 mm permettono di assemblare il prototipo su una normale breadboard per montaggi elettronici.
 
 > Il progetto è facilmente estensibile per leggere il valore di quattro trasmettitori separati senza modifiche software particolare. Il software viene fornito in modalità "Open Source" e quindi completamente gratuito e modificabile.
 
@@ -144,7 +144,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 
 
-## Il server WEB
+## Il server Web
 
 - Descrivere come acquisire i dati dai sensori.
 - Spiegare come memorizzare i dati su scheda SD o EEPROM.
