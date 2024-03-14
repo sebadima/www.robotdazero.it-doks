@@ -33,7 +33,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra Centralina Meteo con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche compresi i fumi di combustione e visualizzare temperatura e umidità dell'aria su un qualunque dispositivo collegato alla rete Wi-Fi! 
+La nostra Centralina Meteo con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche, tra cui anche i fumi di combustione e visualizzare temperatura e umidità dell'aria su un qualunque dispositivo dotato di brpwser Web.
 
 ### Le scelte di progetto
 
