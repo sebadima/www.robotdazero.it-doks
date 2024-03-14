@@ -33,24 +33,24 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche, tra cui i fumi di combustione e visualizzare concentrazione di gas, temperatura e umidità dell'aria su qualunque dispositivo dotato di browser Web.
+La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di oltre 25 sostanze tossiche, tra cui metano e propano e visualizzare le concentrazioni di gas, temperatura e umidità dell'aria su un qualunque dispositivo dotato di browser Web.
 
 ### Le scelte di progetto
 
-Il progetto usa una o più trasmittenti separate da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: Usando il protocollo ESP-NOW la centralina può rilevare gas e temperatura in luoghi distanti fino a 1.5 chilometri! <br>
+Il progetto usa una o più trasmittenti separate da collocare anche in zone lontane e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può rilevare gas e temperatura in luoghi distanti fino a 1.5 chilometri! <br>
   
-Abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ma ad un un costo contenuto, ed essendo dotati di connettori standard 2.54 mm permettono di assemblare il prototipo su una normale breadboard per montaggi elettronici.
+Per la centralina abbiamo selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ma ad un un costo contenuto, ed essendo dotati di connettori standard 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
 
-> Il progetto è facilmente estensibile per leggere il valore di quattro trasmettitori separati senza modifiche software particolare. Il software viene fornito in modalità "Open Source" e quindi completamente gratuito e modificabile.
+> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati senza modifiche software particolari. Il software viene infatti distribuito in modalità "Open Source", e quindi completamente gratuito e modificabile.
 
 #### Utilizzo in ambienti "chiusi"
 
-Puoi ad esempio controllare la qualità dell'aria nella tua casa e rilevare gas come CO, metano, GPL e fumi per un ambiente sicuro e confortevole. Il sensore MQ2 diventa un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni etc. La centralina può aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale
+Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione: In questo modo potresti ottenere un ambiente sicuro e confortevole. Il sensore MQ2 potrebbe diventare un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni a metano. La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale.
 
 
 #### Utilizzo in ambienti "aperti"
 
-Negli spazi aperti la centralina può controllare la qualità dell'aria in giardini, parchi o durante campeggi a condizione di avere una sorgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bank*). Può certamente monitorare  l'inquinamento atmosferico e infatti riesce a rilevare la presenza di una vasta gamme di gas nocivi in aree urbane o industriali.
+Negli spazi aperti la centralina può controllare la qualità dell'aria in giardini, parchi e camping a condizione di avere una sorgente di alimentazione stabile a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Può certamente monitorare l'inquinamento atmosferico e rilevare la presenza di alcuni gas nocivi di origine industriale.
 
 La centralina esibisce buone doti di connettività e ti consente di leggere via WEB usando l'*hotspot* del tuo telefonino quando sei all'aperto con aggiornamento automatico e in tempo reale di temperatura, pressione, gas nocivi (MQ2 e MQ135).
 
