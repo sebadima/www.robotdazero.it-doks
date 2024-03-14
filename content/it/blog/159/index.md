@@ -60,7 +60,7 @@ Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di que
 
 ## Componenti e materiali
 
-### Il trasmettitore 1111111111111111111111111111111111111111
+## Il trasmettitore 1111111111111111111111111111111111111111
 
 Pe realizzare il primo elemento della centralna vi servono questi materiali:
 
@@ -80,7 +80,7 @@ Per costruire il trasmettitore ti basterà usare i connettori Dupont seguendo lo
 
 Per la compilazione di questo proogetto puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compil
 
-### Configurazione di Arduino IDE
+#### Compilazione con Arduino IDE
 
 - Specificare l'IDE utilizzato (es. Arduino IDE).
 - Spiegare come installare le librerie necessarie.
@@ -93,7 +93,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
-### Configurazione di PlatformIO
+####  Compilazione con PlatformIO
 
 - Mostrare come configurare il sensore di pressione atmosferica.
 - Illustrare la configurazione del sensore di gas nocivi.
@@ -102,7 +102,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 
 
-### Il ricevitore 22222222222222222222222
+## Il ricevitore 22222222222222222222222
 
 
 
@@ -116,7 +116,7 @@ minimo assemblaggio
 
 Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compil
 
-### Configurazione di Arduino IDE
+####  Compilazione con Arduino IDE
 
 - Specificare l'IDE utilizzato (es. Arduino IDE).
 - Spiegare come installare le librerie necessarie.
@@ -129,7 +129,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
-### Configurazione di PlatformIO
+#### Compilazione con PlatformIO
 
 - Mostrare come configurare il sensore di pressione atmosferica.
 - Illustrare la configurazione del sensore di gas nocivi.
