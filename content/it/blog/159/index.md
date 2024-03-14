@@ -25,15 +25,39 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 ```bash
 ```     
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
+<iframe  width="800" height="1200" src="https://robotdazero.ck.page/posts/000002" title="W3Schools Free Online Web Tutorials"></iframe>
+
 -->
 
 
 
 ## Introduzione
 
-Presentare il progetto: cos'è la centralina meteo, a cosa serve e quali sono le sue caratteristiche principali.
-Accennare al problema dei gas nocivi e all'importanza di monitorare la loro presenza.
-Spiegare perché si è scelto di utilizzare ESP32 e C++ per realizzare la centralina.
+### A cosa serve la centralina "meteo"
+
+La nostra Centralina Meteo ESP32 con ESP-NOW e sensori di gas nocivi riesce a monitorare l'aria in Tempo Reale!
+Puoi creare da zero la tua personalissima centralina meteo usando due ESP32 e tre sensori di qualità. Questo progetto combina la potenza di ESP32 con sensori di temperatura, pressione e gas nocivi (MQ2 e MQ135) per un monitoraggio completo dell'ambiente in tempo reale.
+
+#### Ambienti Chiusi
+
+Puoi ad esempio controllare la qualità dell'aria nella tua casa e rilevare gas come CO, metano, GPL e fumi per un ambiente sicuro e confortevole. Il sensore MQ2 diventa un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni etc. La centralina può aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale
+
+
+#### Ambienti Aperti
+
+Negli spazi aperti la centraline può controllare la qualità dell'aria in giardini, parchi o durante campeggi a condizione di avere una sprgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bankl*. Può certamente monitorare  l'inquinamento atmosferico e infatti riesce a rilevare la pesenza di una vasta gamme di gas nocivi in aree urbane o industriali.
+
+La centralina possiede buone doti di connettivià e ti consente di leggere i valori usando ad esempio l'*hotspot* del tuo telefonino quando sei all'aperto (o la normale Wi-Fi in casa) con aggiornamento auromatico e in tempo reale di temperatura, pressione, gas nocivi (MQ2 e MQ135) con estrema accuratezza.
+
+### Icampi applicati della centralina
+
+Puoi usarlo in vari contesti e, vista la disponibilità del codice sorgente puoi adattarlo ad applicazione come quelle inerenti questi settori:
+
+Domotica: Puoi integra la centralina nel tuo sistema domotico per un controllo completo dell'ambiente domestico.
+Giardinaggio: Serve a monitoraree le condizioni climatiche per ottimizzare la crescita delle tue piante.
+Industria: Assicura la sicurezza dei lavoratori e la conformità alle normative ambientali.
+
+Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di questa scheda: la rete ESP-NOW specifica per ESP32 consente di porre la stazione *trasmittente* ad oltre 150 metri dalla *ricevente*, una feature impossibile da ottenere con la copertura del Router Wi-Fi.
 
 ## Componenti e materiali
 
