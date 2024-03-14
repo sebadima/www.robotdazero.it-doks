@@ -60,7 +60,7 @@ Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di que
 
 ## Componenti e materiali
 
-## Il trasmettitore 1111111111111111111111111111111111111111
+## #1 - Il trasmettitore
 
 Pe realizzare il primo elemento della centralna vi servono questi materiali:
 
@@ -102,8 +102,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 
 
-## Il ricevitore 22222222222222222222222
-
+## #2 - Il ricevitore 
 
 
 ### Assemblaggio del ricevitore
@@ -155,11 +154,9 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 <br><img width="80" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br>
 
-## Funzionalità e utilizzo
+## Troubleshooting
 
-Descrivere le funzionalità della centralina meteo: rilevazione di temperatura, umidità, pressione atmosferica, gas nocivi.
-Spiegare come la centralina invia i dati ad un server o ad un dispositivo mobile.
-Mostrare un esempio di come i dati possono essere visualizzati e utilizzati.
+riprendere da altri post
 
 ## Conclusioni
 
