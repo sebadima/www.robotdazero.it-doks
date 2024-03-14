@@ -33,9 +33,13 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-### A cosa serve la centralina "meteo"
+La nostra Centralina Meteo con sensori di gas nocivi può catturare in tempo reale la presenza di oltre oltre 25 sostanze tossiche compresi i fumi di combustione e visualizzare temperatura e umidità dell'aria su un qualunque dispositivo collegato alla rete Wi-Fi! 
 
-Con la nostra Centralina Meteo con sensori di gas nocivi puoi catturare in tempo reale la presenza di +25 sostanze tossiche, di fumi di combustione e leggere i classici parametri di temperatura e umidità! Il progetto usa una trasmittente separata da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: In questo modo puoi controllare gas e parametri di edifici o luoghi distanti da 100 metri fino a 1.5 chilometri! La centralina usa la scheda ESP32 e due modelli di sensori molto affidabili (MQ2 e MQ135) oltre all'immancabile DHT11.
+### Le scelte di progetto
+
+Il progetto usa una trasmittente separata da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: In questo modo puoi controllare gas e parametri di edifici o luoghi distanti da 100 metri fino a 1.5 chilometri! <br> Per ottenere questi valori abbiamo accoppiato il protocollo proprietario ESP-NOW alla normale rete Wi-Fi.
+
+Abbiamo selezionato dei componenti come il *controller* ESP32 e due tipi di sensori molto precisi (MQ2 e MQ135) per ottenere delle rilevazioni consistenti ma con un costo relativamente contenuto e con la possibilità di assemblare il prototipo su una normale breadboard per hobbysti.
 
 > Il progetto è facilmente estensibile per leggere il valore di quattro trasmettitori separati senza modifiche software particolare. Il software viene fornito in modalità "Open Source" e quindi completamente gratuito e modificabile.
 
@@ -46,14 +50,14 @@ Puoi ad esempio controllare la qualità dell'aria nella tua casa e rilevare gas 
 
 #### Utilizzo in ambienti "aperti"
 
-Negli spazi aperti la centralina può controllare la qualità dell'aria in giardini, parchi o durante campeggi a condizione di avere una sorgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bank*). Può certamente monitorare  l'inquinamento atmosferico e infatti riesce a rilevare la pesenza di una vasta gamme di gas nocivi in aree urbane o industriali.
+Negli spazi aperti la centralina può controllare la qualità dell'aria in giardini, parchi o durante campeggi a condizione di avere una sorgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bank*). Può certamente monitorare  l'inquinamento atmosferico e infatti riesce a rilevare la presenza di una vasta gamme di gas nocivi in aree urbane o industriali.
 
-La centralina possiede buone doti di connettivià e ti consente di leggere i valori usando ad esempio l'*hotspot* del tuo telefonino quando sei all'aperto (o la normale Wi-Fi in casa) con aggiornamento auromatico e in tempo reale di temperatura, pressione, gas nocivi (MQ2 e MQ135) con estrema accuratezza.
+La centralina esibisce buone doti di connettività e ti consente di leggere via WEB usando l'*hotspot* del tuo telefonino quando sei all'aperto con aggiornamento automatico e in tempo reale di temperatura, pressione, gas nocivi (MQ2 e MQ135).
 
 ### Gli utilizzi professionali della centralina
 
-Domotica: Puoi integra la centralina nel tuo sistema domotico per un controllo completo dell'ambiente domestico.
-Giardinaggio: Serve a monitoraree le condizioni climatiche per ottimizzare la crescita delle tue piante.
+Domotica: Puoi integrare la centralina nel tuo sistema domotico per un controllo completo dell'ambiente domestico.
+Giardinaggio: Serve a monitorare le condizioni climatiche per ottimizzare la crescita delle tue piante.
 Industria: Assicura la sicurezza dei lavoratori e la conformità alle normative ambientali.
 
 Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di questa scheda: la rete ESP-NOW specifica per ESP32 consente di porre la stazione *trasmittente* ad oltre 150 metri dalla *ricevente*, una feature impossibile da ottenere con la copertura del Router Wi-Fi. In versioni future della centralina useremo gli stessi sensori e le schede LoRa per consentire la trasmissione fino a 3/4 chilometri in ambiente urbano.
