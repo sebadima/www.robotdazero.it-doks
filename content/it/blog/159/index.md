@@ -39,22 +39,20 @@ La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo r
 
 Il progetto usa una o più trasmittenti separate da collocare anche in zone lontane e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può rilevare gas e temperatura in luoghi distanti fino a 1.5 chilometri! <br>
   
-Per la centralina abbiamo selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ma ad un un costo contenuto, ed essendo dotati di connettori standard 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
+Per la centralina abbiamo selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ad un un costo molto contenuto, ed essendo dotati di connettori standard da 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
 
-> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati senza modifiche software particolari. Il software viene infatti distribuito in modalità "Open Source", e quindi completamente gratuito e modificabile.
+> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati con minime modifiche ai programmi . A tale scopo tutto il software viene distribuito in modalità "Open Source" e cioè gratuito e modificabile.
 
 #### Utilizzo in ambienti "chiusi"
 
-Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione: In questo modo potresti ottenere un ambiente sicuro e confortevole. Il sensore MQ2 potrebbe diventare un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni a metano. La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale.
+Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro e confortevole. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni a gas. <br>La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale.
 
 
 #### Utilizzo in ambienti "aperti"
 
-Negli spazi aperti la centralina può controllare la qualità dell'aria in giardini, parchi e camping a condizione di avere una sorgente di alimentazione stabile a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Può certamente monitorare l'inquinamento atmosferico e rilevare la presenza di alcuni gas nocivi di origine industriale.
+All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie al sensore MQ135. Per avere questo è necessario avere una sorgente di alimentazione stabile a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Al di fuori della Wi-Fi casalinga la centralina riesce comunque  quw auwqu  a fare un efficace lavoro a ed esibisce buone doti di connettività e ti consente di far funzionare il leggerissimo server Web anche usando l'*hotspot* del tuo telefonino. 
 
-La centralina esibisce buone doti di connettività e ti consente di leggere via WEB usando l'*hotspot* del tuo telefonino quando sei all'aperto con aggiornamento automatico e in tempo reale di temperatura, pressione, gas nocivi (MQ2 e MQ135).
-
-### Gli utilizzi professionali della centralina
+### Gli utilizzi professionali della nostra centralina
 
 Domotica: Puoi integrare la centralina nel tuo sistema domotico per un controllo completo dell'ambiente domestico.
 Giardinaggio: Serve a monitorare le condizioni climatiche per ottimizzare la crescita delle tue piante.
