@@ -35,7 +35,7 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ### A cosa serve la centralina "meteo"
 
-Con la nostra Centralina Meteo ESP32 con ESP-NOW e sensori di gas nocivi puoi monitorare oltre 20 parametri dell'aria in tempo reale! Il progetto usa una trasmittente separata da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: In questo modo puoi realmente controllare l'aria di edifici o luoghi distanti da 100 metri fino a 1.5 chilometri. La centralina meteo usao due ESP32 e due sensori di gas molto affidabili (MQ2 e MQ135). In aggiunta potrai leggere il valore di temperatura e umidità grazie al DHT11.
+Con la nostra Centralina Meteo con sensori di gas nocivi puoi catturare in tempo reale la presenza di +25 sostanze tossiche, di fumi di combustione e leggere i classici parametri di temperatura e umidità! Il progetto usa una trasmittente separata da piazzare anche in zone lontane e non coperte dal segnale Wi-Fi: In questo modo puoi controllare gas e parametri di edifici o luoghi distanti da 100 metri fino a 1.5 chilometri! La centralina usa la scheda ESP32 e due modelli di sensori molto affidabili (MQ2 e MQ135) oltre all'immancabile DHT11.
 
 > Il progetto è facilmente estensibile per leggere il valore di quattro trasmettitori separati senza modifiche software particolare. Il software viene fornito in modalità "Open Source" e quindi completamente gratuito e modificabile.
 
