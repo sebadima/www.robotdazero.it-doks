@@ -33,34 +33,37 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di +25 sostanze tossiche, tra cui metano e propano e visualizzare la concentrazioni dei gas, la temperatura e l'umidità dell'aria su un qualunque dispositivo dotato di browser Web.
+La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di +25 sostanze tossiche, tra cui ammoniaca e ossidi di azoto e visualizzare la concentrazioni dei gas, la temperatura e l'umidità dell'aria su un qualunque dispositivo dotato di browser Web.
 
 ### Le scelte di progetto
 
 Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 1.5 chilometri di distanza!<br>
   
-Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori standard da 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
+Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori standard da 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard e senza effettuare saldature.
 
-> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati con minime modifiche ai programmi . A tale scopo **tutto** il software viene distribuito in modalità "Open Source" e cioè gratuito e modificabile.
+> Il progetto è facilmente estensibile per leggere il valore di otto diversi trasmettitori con minime modifiche ai programmi. A tale scopo **tutto** il software viene distribuito in modalità "Open Source" e quindi gratuito e modificabile.
 
 #### Utilizzo della centralina in ambienti "chiusi"
 
-Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro e confortevole in più stanze. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe, cucine e scaldabagni a gas. <br>
+Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo potresti ottenere ambiente più sicuro e confortevole in tutte le stanze compresi gabbiotti e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe e scaldabagni a gas.
 
-> La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale grazie al sensore incorporato MQ135.
+> La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come gli ossidi di azoto e i fumi di ammoniaca e trielina. 
 
 
 #### Utilizzo della centralina in ambienti "aperti"
 
-All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Ti servirà solo una sorgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Anche senza una rete Wi-Fi disponibile la centralina funziona normalmente con il solo '*hotspot* del telefonino e con un consumo di dati ridottissimo. 
+All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Avrai solo bisogno di una sorgente di alimentazione a 5V (in pratica ti basteranno dei normalissimi *power bank*).<br>Per quanto riguarda la trasmissione dei dati, la centralina funziona egregiamente sfruttando il solo *hotspot* del telefonino e con un consumo di dati molto ridotto grazie alla tecnologia di programmazione "AJAX". 
 
 ### Gli utilizzi professionali della nostra centralina
 
-Domotica: Puoi integrare la centralina nel tuo sistema domotico per un controllo completo dell'ambiente domestico.
-Giardinaggio: Serve a monitorare le condizioni climatiche per ottimizzare la crescita delle tue piante.
-Industria: Assicura la sicurezza dei lavoratori e la conformità alle normative ambientali.
+Nell'ambito della domotica potresti integrare la centralina nel tuo sistema domestico per un controllo completo dell'aria e dei gas. Nel giardinaggio potresti monitorare a basso costo le condizioni climatiche delle tue piante direttamente sul terreno e lontano dalla rete Wi-Fi. Nel campo della industria (limitatamente alla qualità dell'aria), il dispositivo potrebbe controllare la conformità delle aziende alle normative ambientali. 
 
-Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di questa scheda: la rete ESP-NOW specifica per ESP32 consente di porre la stazione *trasmittente* ad oltre 150 metri dalla *ricevente*, una feature impossibile da ottenere con la copertura del Router Wi-Fi. In versioni future della centralina useremo gli stessi sensori e le schede LoRa per consentire la trasmissione fino a 3/4 chilometri in ambiente urbano.
+#### Perchè proprio ESP32 e non Arduino
+
+Abbiamo scelto ESP32 rispetto ad Arduino per la formidabile connettività di questa scheda: la rete ESP-NOW specifica per ESP32 consente di porre la stazione *trasmittente* ad oltre 1500 metri dalla *ricevente*, una prestazione impossibile da ottenere con la copertura del migliore Router Wi-Fi. I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza antenne particolari, ma a patto di sistemare la trasmittente in una posizione abbastanza elevata e prova di interferenze in linea ottica.
+
+
+In versioni future della centralina useremo gli stessi sensori e le schede LoRa per consentire la trasmissione fino a 3/4 chilometri in ambiente urbano e 10/15 chilometri su zone agricole.
 
 ## Componenti e materiali
 
