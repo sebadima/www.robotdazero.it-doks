@@ -37,37 +37,37 @@ La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo r
 
 ### Le scelte di progetto
 
-Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 1.5 chilometri di distanza!<br>
+Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 400 metri di distanza!<br>
   
 Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori con passo di 2.54 mm permettono di assemblare tutto il prototipo su una classica breadboard da 830 punti.
 
-> Il progetto è facilmente estensibile per leggere il valore di otto diversi trasmettitori con minime modifiche ai programmi. A tale scopo **tutto** il software viene distribuito in modalità "Open Source" e quindi gratuito e personalizzabile.
+> *Il progetto è facilmente estensibile per leggere il valore di otto diversi trasmettitori con minime modifiche ai programmi. A tale scopo **tutto** il software viene distribuito in modalità "Open Source" e quindi completamente gratuito e personalizzabile.*
 
 #### Utilizzo della centralina in ambienti "chiusi"
 
 Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo potresti ottenere un ambiente più sicuro e confortevole in tutte le stanze compresi gabbiotti e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe e scaldabagni a gas.
 
-> La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come gli ossidi di azoto e i *vapori* di ammoniaca e trielina. 
+> *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come gli ossidi di azoto e i pericolosi "vapori" di ammoniaca e trielina.* 
 
 
 #### Utilizzo della centralina in ambienti "aperti"
 
-All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Avrai solo bisogno di una sorgente di alimentazione a 5V (in pratica ti basteranno dei normalissimi *power bank*).<br>Per quanto riguarda la trasmissione dei dati, la centralina funziona egregiamente sfruttando il solo *hotspot* del telefonino e con un consumo di dati molto ridotto grazie alla tecnologia di programmazione "AJAX". 
+All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Avrai solo bisogno di una sorgente di alimentazione a 5V con attacco USB, una esigenza che puoi assolvere con degli economici *power bank* per telefonia mobile.<br>Per quanto riguarda i dati e il server Web, la centralina funziona egregiamente sfruttando il solo *hotspot* del telefonino e con un consumo di dati molto ridotto grazie alla tecnologia di programmazione "AJAX". 
 
 ### Gli utilizzi professionali della nostra centralina
 
-Nell'ambito della domotica potresti integrare la centralina nel tuo sistema domestico per un controllo completo dell'aria e dei gas. Nel giardinaggio potresti monitorare a basso costo le condizioni climatiche delle tue piante direttamente sul terreno e lontano dalla rete Wi-Fi. Nel campo della industria e limitatamente alla qualità dell'aria, il dispositivo potrebbe controllare la conformità delle aziende alle normative ambientali. 
+Nell'ambito della domotica potresti integrare la centralina nel tuo sistema domestico, per offrire *anche* il controllo completo dell'aria e dei gas.<br>Nel giardinaggio potresti monitorare a basso costo le condizioni climatiche delle tue piante direttamente sul terreno e lontano dalla rete Wi-Fi. <br>E nel campo della industria e limitatamente alla qualità dell'aria, il dispositivo potrebbe controllare la conformità delle aziende alle normative ambientali. 
 
 #### Perchè proprio ESP32 e non Arduino
 
-Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 1500 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con Arduino e la normale copertura del Wi-Fi.
+Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 400 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
- I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza dotazione di antenne speciali, ma sempre a patto di posizionare la trasmittente in posizione abbastanza elevata e lontana da interferenze fisiche (muri, palazzi, alberi).</div>
+ I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza dotazione di antenne speciali. I dispositivi possono **sicuramente** raggiungere queste portate, ma solo a patto di posizionare la trasmittente in posizione elevata e lontana da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
-<br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati LoRa per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
+<br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
 
 ## Componenti e materiali
 
@@ -171,7 +171,6 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 - Presentare diverse opzioni per la visualizzazione dei dati, come un grafico o un pannello di controllo.
 - Fornire il codice sorgente per la visualizzazione dei dati sul display LCD.
 - Mostrare come creare un'interfaccia web per la visualizzazione dei dati.
-- KASPIAN??????
 
 
 ## Troubleshooting
