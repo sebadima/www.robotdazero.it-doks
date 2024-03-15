@@ -64,7 +64,7 @@ Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disp
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
- I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionare i dispositivi in posizioni elevate e lontane da interferenze fisiche (muri, palazzi, alberi).</div>
+ I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali o amplificatori RF. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionare i dispositivi in posizioni elevate e lontane da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
 <br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
