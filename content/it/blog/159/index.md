@@ -37,7 +37,7 @@ La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo r
 
 ### Le scelte di progetto
 
-Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 500 metri di distanza!<br>
+Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 1000 metri di distanza!<br>
   
 Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori con passo di 2.54 mm permettono di assemblare tutto il prototipo su una classica breadboard da 830 punti.
 
@@ -47,24 +47,24 @@ Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregi
 
 Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo potresti ottenere un ambiente più sicuro e confortevole in tutte le stanze compresi gabbiotti e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe e scaldabagni a gas.
 
-> *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come gli ossidi di azoto e i pericolosi "vapori" di ammoniaca e trielina.* 
+> *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come il benzene e gli ossidi di azoto e i pericolosi "vapori" di ammoniaca e trielina.* 
 
 
 #### Utilizzo della centralina in ambienti "aperti"
 
-All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Avrai solo bisogno di una sorgente di alimentazione a 5V con attacco USB, una esigenza che puoi assolvere con degli economici *power bank* per telefonia mobile.<br>Per quanto riguarda i dati e il server Web, la centralina funziona egregiamente sfruttando il solo *hotspot* del telefonino e con un consumo di dati molto ridotto grazie alla tecnologia di programmazione "AJAX". 
+All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Avrai solo bisogno di una sorgente di alimentazione a 5V con attacco USB, una esigenza che puoi assolvere facilmente con degli economici *power bank* per telefonia mobile.<br>Per quanto riguarda i dati e il server Web, la centralina funziona egregiamente sfruttando il solo *hotspot* del telefonino e con un consumo di dati molto ridotto grazie alla tecnologia di programmazione "AJAX". 
 
 ### Gli utilizzi professionali della nostra centralina
 
-Nell'ambito della domotica potresti integrare la centralina nel tuo sistema domestico, per offrire *anche* il controllo completo dell'aria e dei gas.<br>Nel giardinaggio potresti monitorare a basso costo le condizioni climatiche delle tue piante direttamente sul terreno e lontano dalla rete Wi-Fi. <br>E nel campo della industria e limitatamente alla qualità dell'aria, il dispositivo potrebbe controllare la conformità delle aziende alle normative ambientali. 
+Nell'ambito della domotica potresti integrare la centralina nel tuo sistema domestico, per offrire *anche* il controllo completo dell'aria e dei gas pericolosi.<br>Nel giardinaggio potresti monitorare a basso costo le condizioni climatiche delle tue piante direttamente sul terreno e lontano dalla rete Wi-Fi. <br>E nel campo della industria e limitatamente alla qualità dell'aria, il dispositivo potrebbe controllare la conformità delle aziende alle normative ambientali. 
 
 #### Perchè proprio ESP32 e non Arduino
 
-Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 500 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
+Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller*, permette di porre i sensori ad oltre 1000 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
- I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza dotazione di antenne speciali. I dispositivi possono **sicuramente** raggiungere queste portate, ma solo a patto di posizionare la trasmittente in posizione elevata e lontana da interferenze fisiche (muri, palazzi, alberi).</div>
+ I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionare i dispositivi in posizione abbastanza elevata e lontano da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
 <br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
@@ -79,11 +79,11 @@ Pe realizzare il trasmettitore ti serviranno questi materiali:
 - Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
 - Sensore DHT11 - vedi su <a href="https://amzn.to/49f2fqF" target="_blank">Amazon</a>
 - Scheda ESP32 - vedi su <a href="https://amzn.to/49Gig8Q" target="_blank">Amazon</a>
-- Breadboard per montaggi elettronici (oppure 2 breadboard unite lungo la linea di mezzeria)
+- Breadboard per montaggi elettronici
 
 ### Assemblaggio del trasmettitore
 
-Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti connettere in sensori con la filatura  già sistemata. Inoltre non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione altamente "portatile" con accumulatori al litio.
+Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti inserire i sensori con la filatura  già pronta. Non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione altamente "portatile" con accumulatori al litio.
 
 <br>
 
