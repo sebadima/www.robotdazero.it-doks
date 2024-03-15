@@ -60,20 +60,20 @@ Nell'ambito della domotica potresti integrare la centralina nel tuo sistema dome
 
 #### Perchè proprio ESP32 e non Arduino
 
-Abbiamo scelto ESP32 per la formidabile connettività di questa scheda: la rete ESP-NOW specifica per questo controller consente di porre la *trasmittente* ad oltre 1500 metri dalla *ricevente*, una prestazione impossibile da ottenere con Arduino e la normale copertura del Wi-Fi.
+Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 1500 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con Arduino e la normale copertura del Wi-Fi.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
- I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza dotazione di antenne speciali: Ma sempre a patto di posizionare la trasmittente in posizione elevata e senza interferenze in linea ottica.</div>
+ I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW e senza dotazione di antenne speciali, ma sempre a patto di posizionare la trasmittente in posizione abbastanza elevata e lontana da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
-<br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati LoRa per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in zone agricole.
+<br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati LoRa per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
 
 ## Componenti e materiali
 
 ## #1 - Il trasmettitore
 
-Pe realizzare il trasmettitore vi serviranno questi materiali:
+Pe realizzare il trasmettitore ti serviranno questi materiali:
 
 - Sensore MQ-2 - vedi su <a href="https://amzn.to/49pwhrF" target="_blank">Amazon</a>
 - Sensore MQ-135 - vedi su <a href="https://amzn.to/48qeoaT" target="_blank">Amazon</a>
@@ -83,7 +83,7 @@ Pe realizzare il trasmettitore vi serviranno questi materiali:
 
 ### Assemblaggio del trasmettitore
 
-Per costruire il trasmettitore ti basterà usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e poi i connettori verso i sensori. Dopo puoi connettere in sensori con la circuitazione già pronta. Non devi fare nessuna saldatura e meno che tu non voglia vendere a terzi questo progetto il tuo progetto o usarlo in una installazione portatile.
+Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti connettere in sensori con la filatura  già sistemata. Inoltre non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione altamente "portatile" con accumulatori al litio.
 
 <br>
 
@@ -91,11 +91,10 @@ Per costruire il trasmettitore ti basterà usare i connettori Dupont seguendo lo
 
 ### Configurazione software del trasmettitore 
 
-Per la compilazione di questo proogetto puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compil
+Per la compilazione di questo progetto puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compilare i programmi e cioè usare PlatformIO integrato in Visual Studio Code; ma per il momento ti forniremo istruzioni dettagliate solo per le prime due opzioni.
 
 #### Compilazione con Arduino IDE
 
-- Specificare l'IDE utilizzato (es. Arduino IDE).
 - Spiegare come installare le librerie necessarie.
 - Fornire il codice sorgente per la configurazione del sensore di temperatura e umidità.
 
@@ -111,8 +110,12 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 - Mostrare come configurare il sensore di pressione atmosferica.
 - Illustrare la configurazione del sensore di gas nocivi.
 
-
-
+```bash
+git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
+cd corso-ESP32-centralina-meteo-trasmettitore
+make upload
+platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
+```     
 
 
 ## #2 - Il ricevitore 
@@ -147,10 +150,15 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 - Illustrare la configurazione del sensore di gas nocivi.
 
 
+```bash
+git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
+cd corso-ESP32-centralina-meteo-trasmettitore
+make upload
+platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
+```     
+
 
 <br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
-
-
 
 
 ## Il server Web
