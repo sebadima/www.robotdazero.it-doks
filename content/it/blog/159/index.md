@@ -33,24 +33,26 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di oltre 25 sostanze tossiche, tra cui metano e propano e visualizzare le concentrazioni di gas, temperatura e umidità dell'aria su un qualunque dispositivo dotato di browser Web.
+La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di +25 sostanze tossiche, tra cui metano e propano e visualizzare la concentrazioni dei gas, la temperatura e l'umidità dell'aria su un qualunque dispositivo dotato di browser Web.
 
 ### Le scelte di progetto
 
-Il progetto usa una o più trasmittenti separate da collocare anche in zone lontane e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può rilevare gas e temperatura in luoghi distanti fino a 1.5 chilometri! <br>
+Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 1.5 chilometri di distanza!<br>
   
-Per la centralina abbiamo selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135: Questi dispositivi garantiscono delle rilevazioni consistenti ad un un costo molto contenuto, ed essendo dotati di connettori standard da 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
+Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori standard da 2.54 mm permettono di assemblare tutto il prototipo su una normale breadboard.
 
-> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati con minime modifiche ai programmi . A tale scopo tutto il software viene distribuito in modalità "Open Source" e cioè gratuito e modificabile.
+> Il progetto è facilmente estensibile per leggere il valore di otto trasmettitori separati con minime modifiche ai programmi . A tale scopo **tutto** il software viene distribuito in modalità "Open Source" e cioè gratuito e modificabile.
 
-#### Utilizzo in ambienti "chiusi"
+#### Utilizzo della centralina in ambienti "chiusi"
 
-Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro e confortevole. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per rilevare con anticipo problemi all'impianto del metano o ai tubi di stufe, cucine, scaldabagni a gas. <br>La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale.
+Potresti ad esempio controllare la qualità dell'aria nella tua casa e tenere sotto controllo svariati gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro e confortevole in più stanze. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe, cucine e scaldabagni a gas. <br>
+
+> La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria ideale grazie al sensore incorporato MQ135.
 
 
-#### Utilizzo in ambienti "aperti"
+#### Utilizzo della centralina in ambienti "aperti"
 
-All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie al sensore MQ135. Per avere questo è necessario avere una sorgente di alimentazione stabile a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Al di fuori della Wi-Fi casalinga la centralina riesce comunque  quw auwqu  a fare un efficace lavoro a ed esibisce buone doti di connettività e ti consente di far funzionare il leggerissimo server Web anche usando l'*hotspot* del tuo telefonino. 
+All'aperto la centralina può controllare la qualità dell'aria in giardini, parchi e camping grazie ai due sensori MQ. Ti servirà solo una sorgente di alimentazione a 5V (in pratica basta usare dei normalissimi *power bank* per telefonino). Anche senza una rete Wi-Fi disponibile la centralina funziona normalmente con il solo '*hotspot* del telefonino e con un consumo di dati ridottissimo. 
 
 ### Gli utilizzi professionali della nostra centralina
 
