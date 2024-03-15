@@ -33,11 +33,11 @@ img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.
 
 ## Introduzione
 
-La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di +25 sostanze tossiche, tra cui ammoniaca e ossidi di azoto e visualizzare la concentrazioni dei gas, la temperatura e l'umidità dell'aria su un qualunque dispositivo dotato di browser Web.
+La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo reale la presenza di +25 sostanze tossiche, tra cui idrocarburi  e ossidi di azoto e visualizzare la concentrazione dei gas, la temperatura e l'umidità dell'aria su un qualunque dispositivo dotato di browser Web.
 
 ### Le scelte di progetto
 
-Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 1000 metri di distanza!<br>
+Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 800 metri di distanza!<br>
   
 Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori con passo di 2.54 mm permettono di assemblare tutto il prototipo su una classica breadboard da 830 punti.
 
@@ -45,7 +45,7 @@ Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregi
 
 #### Utilizzo della centralina in ambienti "chiusi"
 
-Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo potresti ottenere un ambiente più sicuro e confortevole in tutte le stanze compresi gabbiotti e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, ai tubi di stufe e scaldabagni a gas.
+Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro in tutti locali compresi box e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, a stufe e scaldabagni a gas.
 
 > *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come il benzene e gli ossidi di azoto e i pericolosi "vapori" di ammoniaca e trielina.* 
 
@@ -60,11 +60,11 @@ Nell'ambito della domotica potresti integrare la centralina nel tuo sistema dome
 
 #### Perchè proprio ESP32 e non Arduino
 
-Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller*, permette di porre i sensori ad oltre 1000 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
+Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disponibile solo su questo *controller*, permette di porre i sensori ad oltre 800 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
- I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionare i dispositivi in posizione abbastanza elevata e lontano da interferenze fisiche (muri, palazzi, alberi).</div>
+ I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionare i dispositivi in posizioni elevate e lontane da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
 <br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
