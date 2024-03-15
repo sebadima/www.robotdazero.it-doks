@@ -37,7 +37,7 @@ La nostra centralina "meteo" con sensori di gas nocivi può catturare in tempo r
 
 ### Le scelte di progetto
 
-Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 400 metri di distanza!<br>
+Il progetto usa stazioni trasmittenti multiple, da collocare in zone anche distanti e non coperte dal segnale Wi-Fi: Sfruttando il protocollo ESP-NOW di Espressif la centralina può visualizzare i dati dei sensori posti fino a 500 metri di distanza!<br>
   
 Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregio, come i due sensori di gas MQ2 e MQ135. Questi dispositivi garantiscono delle misurazioni affidabili  ad un un costo contenuto, ed essendo dotati di connettori con passo di 2.54 mm permettono di assemblare tutto il prototipo su una classica breadboard da 830 punti.
 
@@ -60,7 +60,7 @@ Nell'ambito della domotica potresti integrare la centralina nel tuo sistema dome
 
 #### Perchè proprio ESP32 e non Arduino
 
-Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 400 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
+Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW disponibile solo su questo *controller* permette di porre la trasmittente ad oltre 500 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
