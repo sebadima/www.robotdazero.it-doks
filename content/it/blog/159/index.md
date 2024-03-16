@@ -67,7 +67,7 @@ Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disp
  I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali o amplificatori RF. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionarli in posizioni elevate e lontane da interferenze fisiche (muri, palazzi, alberi).</div>
 
 
-<br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
+<br>Nelle versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
 
 ## i componenti e il software
 
@@ -83,7 +83,7 @@ Pe realizzare il trasmettitore ti serviranno questi materiali:
 
 ### Assemblaggio del trasmettitore
 
-Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti inserire i sensori con la filatura  già pronta. Non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione *altamente* portatile magari con accumulatori al litio.
+Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema elettrico che vedi in basso. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori per i sensori e l'alimentazione. Solo "**dopo**" dovresti inserire i sensori con il vantaggio di avere la filatura già pronta. <br>Per montare il trasmettitore non serve alcuna saldatura a meno che tu non voglia creare un prodotto molto robusto da distribuire commercialmente: Anche in questo caso, comunque potresti ridurre al minimo le saldature utilizzando la scheda multifunzione disponibile nel nostro <a href="/docs/ecommerce/multifunzione/">ecommerce</a>. 
 
 <br>
 
@@ -95,12 +95,12 @@ Per la compilazione di questo progetto puoi usare Arduino Ide o il compilatore a
 
 #### Compilazione con Arduino IDE
 
-Per ottenere il codice sorgente specifico per il trasmettitore ti basta lanciare il comando GIT seguito dall'indirizzo del repository "corso-ESP32-centralina-meteo-trasmettitore" preparato per il nostro corso on line. Puoi fare copia e incolla degli esempio in basso, avendo la accortezza di cambiare il nome delle directory per adeguarle a quelle che usi normalmente.
+Per ottenere il codice sorgente specifico per il trasmettitore ti basta lanciare il comando GIT seguito dall'indirizzo del repository "corso-ESP32-centralina-meteo-trasmettitore" preparato per il nostro corso on line. Puoi fare copia e incolla dagli esempio in basso, modificando se vuoi il nome della directory.
 
 ##### su Windows con PowerShell:
 ```bash
 md c:\Progetti_Arduino
-cd c:\Arduino\Progetti
+cd c:\Progetti_Arduino
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
 ```     
 
@@ -112,28 +112,27 @@ cd Progetti_Arduino
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
 ```     
 
-Fatto ciò potresti compilare il programma ma otterresti subito degli errori relativi alle librerie mancanti: Ad esemoio potrebbero mancare la libreria #include "esp_now" o la libreria "DHT" per la lettura del sensore DHT11.
+Fatto questo puoi aprire il file con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di rinominare la directory. Potresti teoricamente compilare subito il programma, ma probabilmente solo degli errori relativi alle librerie mancanti. Ad esemoio potrebbero mancare la libreria #include "esp_now" o la libreria "DHT" per la gestione del sensore DHT11.
 
 ##### Come installare le librerie su Arduino IDE
 
-Per compilare correttamente dunque devi installare le librerie necessarie e per fare questo procedi in questo modo:
+Per compilare correttamente devi dunque installare le librerie necessarie e per fare questo procedi in questo modo:
 
 - Apri Arduino IDE
 - Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
 - Nella casella di ricerca, digita il nome della libreria mancante.
 - Clicc sul pulsante "Installa" accanto alla libreria desiderata.
 
-ad esempio per installare DHT puoi eseguire gli stessi passi digitando: "DHT"
+Ad esempio per installare la libreria del DHT11 puoi eseguire gli stessi passi digitando: "DHT":
 
-Vedrai sulla sinistra un elenco delle librerie possibili e nel nostro caso vogliamo usare la libreria "DHT Sensor Lybrary" di Adafruit nella versione 1.4.6. Clicca su "INSTALL" e potrai rilanciare la compilazione dello sketch. Purtroppo dovrai eseguire questi passaggi per ogni libreria mancante fino a quando il programma verrà compilato correttamente. Dopo di ciò potrai fare l'upload sulla ESP32 cliccando su "Sketch"->"Upload".
+Vedrai sulla sinistra un elenco delle librerie possibili e nel nostro caso scegliamo la libreria "DHT Sensor Lybrary" di Adafruit nella versione 1.4.6. Clicca su "INSTALL" e potrai rilanciare la compilazione dello sketch. Purtroppo dovrai eseguire questi passaggi per ogni libreria mancante fino a quando il programma verrà compilato correttamente. Dopo di ciò potrai fare l'upload sulla ESP32 cliccando su "Sketch"->"Upload".
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="installazione della libreria DHT di Adafruit su Arduino IDE">
 
 
 ####  Compilazione con PlatformIO
 
-- Mostrare come configurare il sensore di pressione atmosferica.
-- Illustrare la configurazione del sensore di gas nocivi.
+La compilazione con Platformio è molto più diretta perchè questo software provvede a installare le librerie leggendo il file "platformio.ini" che abbiamo inserito su Github e quindi puoi procedere semplicemente faccndo copia e incolla dei comandi sottostanti:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
@@ -141,6 +140,8 @@ cd corso-ESP32-centralina-meteo-trasmettitore
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
+
+Dopo la compilazione il comando "platformio device monitor" provvede a lanciare il monitor seriale sulla porta ttyUSB0; se non dovesse corrispondere con la porta del tuo sistema Linux o Windows dovresti rilanciare la ultima riga con la porta realmente in uso.
 
 ```bash
 #include <Arduino.h>
@@ -408,4 +409,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.3.0</p>
