@@ -112,11 +112,11 @@ cd Progetti_Arduino
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
 ```     
 
-Fatto questo puoi aprire il file con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di rinominare la directory. Potresti teoricamente compilare subito il programma, ma probabilmente solo degli errori relativi alle librerie mancanti. Ad esemoio potrebbero mancare la libreria #include "esp_now" o la libreria "DHT" per la gestione del sensore DHT11.
+Fatto questo puoi aprire il programma con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di spostare la directory o il "file main.ino". Potresti teoricamente compilare subito il programma, ma otterresti solo degli errori relativi alle librerie mancanti. Ad esempio potrebbero mancare due librerie come la "esp_now" o la "DHT" dedicata al sensore DHT11. <br>Detto ciò vediamo come risolvere il problema delle librerie mancanti...
 
 ##### Come installare le librerie su Arduino IDE
 
-Per compilare correttamente devi dunque installare le librerie necessarie e per fare questo procedi in questo modo:
+Per installare le librerie mancanti puoi procedere in questo modo:
 
 - Apri Arduino IDE
 - Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
@@ -125,14 +125,16 @@ Per compilare correttamente devi dunque installare le librerie necessarie e per 
 
 Ad esempio per installare la libreria del DHT11 puoi eseguire gli stessi passi digitando: "DHT":
 
-Vedrai sulla sinistra un elenco delle librerie possibili e nel nostro caso scegliamo la libreria "DHT Sensor Lybrary" di Adafruit nella versione 1.4.6. Clicca su "INSTALL" e potrai rilanciare la compilazione dello sketch. Purtroppo dovrai eseguire questi passaggi per ogni libreria mancante fino a quando il programma verrà compilato correttamente. Dopo di ciò potrai fare l'upload sulla ESP32 cliccando su "Sketch"->"Upload".
+Vedrai sulla sinistra un elenco delle librerie possibili e nel nostro caso puoi scegliere la libreria "DHT Sensor Lybrary" di Adafruit nella versione 1.4.6.<br>Clicca su "INSTALL" e potrai rilanciare la compilazione dello sketch. Purtroppo dovrai eseguire questi passaggi per ogni libreria mancante fino a quando il programma verrà compilato correttamente. Dopo di ciò potrai fare l'upload sulla ESP32 cliccando su "Sketch"->"Upload".
+
+<br>
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="installazione della libreria DHT di Adafruit su Arduino IDE">
 
 
 ####  Compilazione con PlatformIO
 
-La compilazione con Platformio è molto più diretta perchè questo software provvede a installare le librerie leggendo il file "platformio.ini" che abbiamo inserito su Github e quindi puoi procedere semplicemente faccndo copia e incolla dei comandi sottostanti:
+La compilazione con Platformio è molto più diretta perchè questo software provvede a installare le librerie leggendo il file "platformio.ini" che abbiamo inserito su Github. Per compilare puoi procedere semplicemente facendo copia e incolla dei comandi sottostanti:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
@@ -141,7 +143,9 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
-Dopo la compilazione il comando "platformio device monitor" provvede a lanciare il monitor seriale sulla porta ttyUSB0; se non dovesse corrispondere con la porta del tuo sistema Linux o Windows dovresti rilanciare la ultima riga con la porta realmente in uso.
+Dopo la compilazione il comando "**platformio device monitor**" provvede a lanciare il monitor seriale sulla porta *ttyUSB0*. Se questo valore non dovesse corrispondere con la porta del tuo sistema Linux o Windows dovresti rilanciare la ultima riga con la porta realmente in uso.
+
+### Il codice sorgente del trasmettitore
 
 ```bash
 #include <Arduino.h>
@@ -339,6 +343,82 @@ void loop() {
   delay(2000);
 }
 ```     
+
+### Un breve commento al programma
+
+
+##### Il nome della rete
+
+Per usare il programma con la tua rete Wi-Fi o hotspot devi modificare la riga #9:
+
+```bash
+constexpr char WIFI_SSID[] = "SSID-da-modificare";
+```
+e inserire il SSID (il nome) della tua rete fissa o mobile.
+
+
+##### L'indirizzo MAC per ESP-NOW
+
+Per funzionare la rete ESP-NOW *pretende* di sapere l'indirizzo MAC  univoco della scheda ESP.
+
+> Un indirizzo MAC (Media Access Control) è un identificativo univoco assegnato a ogni scheda di rete (NIC) presente in un dispositivo informatico. È un numero di 12 cifre esadecimali, solitamente rappresentato in gruppi di due coppie separate da due punti (ad esempio, 00:11:22:33:44:55).
+
+```bash
+// indirizzo MAC di destinazione: A0:A3:B3:97:83:E8
+constexpr uint8_t ESP_NOW_RECEIVER[] = { 0xA0, 0xA3, 0xB3, 0x97, 0x83, 0xE8 };
+```
+Per ottenere il valore MAC della scheda abbiamo usato il programma descritto nella sezione #7.2 del nostro corso e quindi ti rimandiamo alle istruzioni lì pubblicate. Dopo avere ottenuto l'indirizzo MAC della tua scheda dovrai ovviamente inserirlo nel programma mantendendo la forma di scrittura 0x00.
+
+
+##### La struttura dati
+
+```bash
+// Struct per definire il formato dei dati
+typedef struct struct_messaggio {
+  char a[32];
+  int   umidita;
+  float temperatura;
+  float gas_1;
+  float gas_2;
+  int contatore;
+} struct_messaggio;
+```
+
+I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct "struct_messaggio" definisce solamente il formato del tipo senza realmente creare spazio nell'area delle variabili.
+
+La istruzione successiva e cioè "struct_messaggio Dati;" crea realmente lo spazio nella RAM del controller per contenere i valori dei sensori a il contatore. 
+
+La prossima istruzione (contenuta all'interno della funzione loop) utilizza i dati prelevandoli con il *puntatore* "&Dati" e li fornisce alla funzione "esp_now_send()" che provvede ad inviarli alla scheda ricevente. Notare che la maggior parte della complessità viene gestita dalla librerie di Espressif, per cui il programma risulta alla fine abbastanza semplice e ben leggibile
+
+```bash
+esp_err_t result = esp_now_send(0, (uint8_t *) &Dati, sizeof(Dati));"
+```
+
+
+111111111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### #2 - Il ricevitore 
