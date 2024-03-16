@@ -95,12 +95,40 @@ Per la compilazione di questo progetto puoi usare Arduino Ide o il compilatore a
 
 #### Compilazione con Arduino IDE
 
-- Spiegare come installare le librerie necessarie.
-- Fornire il codice sorgente per la configurazione del sensore di temperatura e umidità.
+Per ottenere il codice sorgente specifico per il trasmettitore ti basta lanciare il comando GIT seguito dall'indirizzo del repository "corso-ESP32-centralina-meteo-trasmettitore" preparato per il nostro corso on line. Puoi fare copia e incolla degli esempio in basso, avendo la accortezza di cambiare il nome delle directory per adeguarle a quelle che usi normalmente.
 
+##### su Windows con PowerShell:
 ```bash
+md c:\Progetti_Arduino
+cd c:\Arduino\Progetti
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
 ```     
+
+##### sul Terminale di Linux:
+```bash
+cd 
+mkdir Progetti_Arduino
+cd Progetti_Arduino
+git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
+```     
+
+Fatto ciò potresti compilare il programma ma otterresti subito degli errori relativi alle librerie mancanti: Ad esemoio potrebbero mancare la libreria #include "esp_now" o la libreria "DHT" per la lettura del sensore DHT11.
+
+##### Come installare le librerie su Arduino IDE
+
+Per compilare correttamente dunque devi installare le librerie necessarie e per fare questo procedi in questo modo:
+
+- Apri Arduino IDE
+- Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
+- Nella casella di ricerca, digita il nome della libreria mancante.
+- Clicc sul pulsante "Installa" accanto alla libreria desiderata.
+
+ad esempio per installare DHT puoi eseguire gli stessi passi digitando: "DHT"
+
+Vedrai sulla sinistra un elenco delle librerie possibili e nel nostro caso vogliamo usare la libreria "DHT Sensor Lybrary" di Adafruit nella versione 1.4.6. Clicca su "INSTALL" e potrai rilanciare la compilazione dello sketch. Purtroppo dovrai eseguire questi passaggi per ogni libreria mancante fino a quando il programma verrà compilato correttamente. Dopo di ciò potrai fare l'upload sulla ESP32 cliccando su "Sketch"->"Upload".
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/101.png" alt="installazione della libreria DHT di Adafruit su Arduino IDE">
+
 
 ####  Compilazione con PlatformIO
 
@@ -380,4 +408,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.1.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.2.1</p>
