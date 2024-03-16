@@ -69,9 +69,9 @@ Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disp
 
 <br>In versioni future della centralina useremo gli stessi sensori e le schede di comunicazione dati "LoRa" per consentire la trasmissione fino a 2/3 chilometri in ambiente urbano e 10/15 chilometri in aria libera.
 
-## Componenti e materiali
+## i componenti e il software
 
-## #1 - Il trasmettitore
+### #1 - Il trasmettitore
 
 Pe realizzare il trasmettitore ti serviranno questi materiali:
 
@@ -83,7 +83,7 @@ Pe realizzare il trasmettitore ti serviranno questi materiali:
 
 ### Assemblaggio del trasmettitore
 
-Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti inserire i sensori con la filatura  già pronta. Non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione altamente "portatile" con accumulatori al litio.
+Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema fornito. Ti suggerisco di inserire innanzitutto la scheda ESP32 e quindi i connettori verso i sensori. Solo DOPO dovresti inserire i sensori con la filatura  già pronta. Non serve alcuna saldatura a meno che tu non voglia assemblare il progetto per venderlo a terzi o magari farne una versione *altamente* portatile magari con accumulatori al litio.
 
 <br>
 
@@ -118,7 +118,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
 
-## #2 - Il ricevitore 
+### #2 - Il ricevitore 
 
 
 ### Assemblaggio del ricevitore
@@ -158,7 +158,7 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
 
-<br><br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
+<br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
 
 ## Il server Web
