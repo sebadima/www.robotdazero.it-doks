@@ -186,4 +186,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.0.3.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.0.1</p>
