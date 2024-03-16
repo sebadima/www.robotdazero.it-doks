@@ -357,9 +357,9 @@ constexpr char WIFI_SSID[] = "SSID-da-modificare";
 e inserire il SSID (il nome) della tua rete fissa o mobile.
 
 
-##### L'indirizzo MAC per ESP-NOW
+##### L'indirizzo MAC della "ricevente"
 
-Per funzionare la rete ESP-NOW *pretende* di sapere l'indirizzo MAC  univoco della scheda ESP.
+Per funzionare la rete ESP-NOW *pretende* di sapere l'indirizzo MAC  univoco della scheda ESP32 di destinazione.
 
 > Un indirizzo MAC (Media Access Control) è un identificativo univoco assegnato a ogni scheda di rete (NIC) presente in un dispositivo informatico. È un numero di 12 cifre esadecimali, solitamente rappresentato in gruppi di due coppie separate da due punti (ad esempio, 00:11:22:33:44:55).
 
@@ -398,6 +398,42 @@ La prossima istruzione (contenuta all'interno della funzione loop) utilizza le v
 
 <br>
 
+##### Il reset automatico
+
+Il programma utilizza delle funzioni avanzate di ESP32 per resettare la scheda dopo 15 pacchetti dati persi. Come in ogni applicazione IoT non poassiamo pensare di stare al computer per monitorare il comportamento dei dispositivi e dobbiamo prevedere delle istruzione di "recupero" automatico della connessione in caso di problemi.
+
+
+```bash
+#define DELAY_RECONNECT 600 // intervallo in secondi per forzare il reboot
+volatile int interruptCounter;
+int totalInterruptCounter;
+hw_timer_t * timer = NULL;
+portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
+
+
+void IRAM_ATTR onTimer() 
+{
+  portENTER_CRITICAL_ISR(&timerMux);
+  interruptCounter++;
+  if (lost_packages >=15) {
+    ESP.restart(); // Riesegui la connessione al nuovo canale WIFI
+  }
+  portEXIT_CRITICAL_ISR(&timerMux);
+}
+
+```
+
+La configurazione dell'interrupt viene completato dentro la funzione "setup()"
+
+```bash
+  timer = timerBegin(0, 80, true);
+  timerAttachInterrupt(timer, &onTimer, true);
+  timerAlarmWrite(timer, DELAY_RECONNECT * 1000000, true);
+  timerAlarmEnable(timer);
+```
+
+
+Le prime cinque righe impostano la struttura dati suggerista da Espressif per la gestione degli interrupt mentre la successiva funzione "onTimer()" viene richiamata automaticamente dal sistema 
 
 111111111
 
