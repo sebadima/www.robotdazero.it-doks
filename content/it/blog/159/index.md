@@ -384,15 +384,19 @@ typedef struct struct_messaggio {
 } struct_messaggio;
 ```
 
-I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct è un costrutto sintattico che si limita a definire soltanto il "typedef" senza realmente creare spazio nell'area delle variabili nella RAM.
+I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct è un costrutto sintattico che si limita a definire soltanto il "typedef" (il formato) senza realmente creare spazio nella zona  variabili della RAM.
 
-La istruzione successiva e cioè "struct_messaggio Dati;" crea effettivamente uno spazio nella RAM del controller e gli assegna il valore prescelto e nel nostro caso semplicemente "Dati", che useremo per gestire e trasmettere le letture dei sensori a il contatore numerico. 
+La istruzione successiva e cioè "struct_messaggio Dati;" crea effettivamente uno spazio nella RAM del controller e gli assegna il valore prescelto: Nel nostro caso semplicemente "Dati", che useremo per gestire e trasmettere le letture dei sensori e il contatore numerico. 
 
-La prossima istruzione (contenuta all'interno della funzione loop) utilizza le variabili prelevandole con il *puntatore* "&Dati" e li fornisce alla funzione "esp_now_send()". Questa istruzione effettua una chiamata alla libreria Espressif per trasmettere i dati alla scheda ricevente. Anche se il tutto non appare proprio semplicissimo, potrai apprezzare come la trasmissione fisica sia gestita in toto dalla libreria con una sola itruzione. La maggior parte della complessità viene gestita dalla libreria esterna, per cui il programma risulta alla fine abbastanza semplice e breve.
+La prossima istruzione (contenuta all'interno della funzione loop) utilizza le variabili prelevandole con il *puntatore* "&Dati" e li fornisce alla funzione **"esp_now_send()"**. 
 
-```bash
-esp_err_t result = esp_now_send(0, (uint8_t *) &Dati, sizeof(Dati));"
-```
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+<strong>La "esp_now_send()" effettua una chiamata alla libreria Espressif per </strong>trasmettere i dati alla scheda ricevente. Anche se il tutto non appare proprio semplicissimo, potrai apprezzare come la trasmissione fisica sia gestita in toto dalla libreria con una singola istruzione. La maggior parte della complessità viene gestita dalla libreria esterna, per cui il programma risulta alla fine abbastanza semplice e breve.</div> 
+
+
+
+<br>
 
 
 111111111
@@ -489,4 +493,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.3.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.3.2</p>
