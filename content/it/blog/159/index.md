@@ -370,7 +370,7 @@ constexpr uint8_t ESP_NOW_RECEIVER[] = { 0xA0, 0xA3, 0xB3, 0x97, 0x83, 0xE8 };
 Per ottenere il valore MAC della scheda abbiamo usato il programma descritto nella sezione #7.2 del nostro corso e quindi ti rimandiamo alle istruzioni lì pubblicate. Dopo avere ottenuto l'indirizzo MAC della tua scheda dovrai ovviamente inserirlo nel programma mantendendo la forma di scrittura 0x00.
 
 
-##### La struttura dati
+##### La struttura dati: "struct_messaggio"
 
 ```bash
 // Struct per definire il formato dei dati
@@ -384,11 +384,11 @@ typedef struct struct_messaggio {
 } struct_messaggio;
 ```
 
-I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct "struct_messaggio" definisce solamente il formato del tipo senza realmente creare spazio nell'area delle variabili.
+I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct è un costrutto sintattico che si limita a definire soltanto il "typedef" senza realmente creare spazio nell'area delle variabili nella RAM.
 
-La istruzione successiva e cioè "struct_messaggio Dati;" crea realmente lo spazio nella RAM del controller per contenere i valori dei sensori a il contatore. 
+La istruzione successiva e cioè "struct_messaggio Dati;" crea effettivamente uno spazio nella RAM del controller e gli assegna il valore prescelto e nel nostro caso semplicemente "Dati", che useremo per gestire e trasmettere le letture dei sensori a il contatore numerico. 
 
-La prossima istruzione (contenuta all'interno della funzione loop) utilizza i dati prelevandoli con il *puntatore* "&Dati" e li fornisce alla funzione "esp_now_send()" che provvede ad inviarli alla scheda ricevente. Notare che la maggior parte della complessità viene gestita dalla librerie di Espressif, per cui il programma risulta alla fine abbastanza semplice e ben leggibile
+La prossima istruzione (contenuta all'interno della funzione loop) utilizza le variabili prelevandole con il *puntatore* "&Dati" e li fornisce alla funzione "esp_now_send()". Questa istruzione effettua una chiamata alla libreria Espressif per trasmettere i dati alla scheda ricevente. Anche se il tutto non appare proprio semplicissimo, potrai apprezzare come la trasmissione fisica sia gestita in toto dalla libreria con una sola itruzione. La maggior parte della complessità viene gestita dalla libreria esterna, per cui il programma risulta alla fine abbastanza semplice e breve.
 
 ```bash
 esp_err_t result = esp_now_send(0, (uint8_t *) &Dati, sizeof(Dati));"
