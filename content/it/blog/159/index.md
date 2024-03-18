@@ -342,7 +342,7 @@ void loop() {
 }
 ```     
 
-### Un breve commento al programma
+#### Un breve commento al programma
 
 
 ##### Il nome della rete
@@ -772,10 +772,102 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
 
+#### Un breve commento al programma
+
+
+
+##### commento 1
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+
+
+```bash
+```
+
+
+##### commento 1
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+
+
+```bash
+```
+
+
+##### commento 1
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+
+
+```bash
+```
+
+
+##### commento 1
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+
+
+```bash
+```
+
+
+
+
+
+
 <br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Il server Web
+
 
 - Descrivere come acquisire i dati dai sensori.
 - Spiegare come memorizzare i dati su scheda SD o EEPROM.
@@ -785,6 +877,43 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 - Presentare diverse opzioni per la visualizzazione dei dati, come un grafico o un pannello di controllo.
 - Fornire il codice sorgente per la visualizzazione dei dati sul display LCD.
 - Mostrare come creare un'interfaccia web per la visualizzazione dei dati.
+
+
+
+
+##### commento 1
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+
+
+```bash
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Troubleshooting
