@@ -37,8 +37,13 @@ In casi di freezing o anomalie occasionali dell'ESP32 esiste un modo rapido per 
 Dopo la pressione del tasto la scheda si riavvierà ed eseguirà il codice dal <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/bootloader.html" target="_blank" rel="noopener">bootloader</a> interno: è la stessa procedura che avviene quando la colleghi alla alimentazione o fai l'upload di un nuovo codice per Arduino.
 
 
-
-
+> *Premendo il pulsante RST dell'ESP32 si esegue un reset completo del chip. Questo significa che:
+Tutte le variabili e i dati in memoria vengono cancellati.
+Il programma in esecuzione viene arrestato e ricomincia dall'inizio.
+Tutte le periferiche dell'ESP32 vengono ripristinate al loro stato iniziale.
+<br><strong>Perché si dovrebbe premere il pulsante RST?</strong>
+Esistono diversi motivi per cui si potrebbe premere il pulsante RST:
+Per risolvere un problema con l'ESP32. Se l'ESP32 non funziona correttamente, un reset può risolvere il problema.*
 
 
 
