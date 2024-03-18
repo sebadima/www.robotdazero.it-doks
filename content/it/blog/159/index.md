@@ -69,7 +69,7 @@ Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disp
 
 ## i componenti e il software
 
-### #1 - Il trasmettitore
+## #1 - Il trasmettitore
 
 Pe realizzare il trasmettitore ti serviranno questi materiali:
 
@@ -488,7 +488,7 @@ void suInvioDati(const uint8_t *mac_addr, esp_now_send_status_t status) {
 
 
 
-### #2 - Il ricevitore 
+## #2 - Il ricevitore 
 
 
 ### Assemblaggio del ricevitore
@@ -929,4 +929,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.4.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.6.0</p>
