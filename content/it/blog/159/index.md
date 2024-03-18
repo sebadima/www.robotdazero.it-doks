@@ -4,7 +4,7 @@ description:  "Una centralina meteo con ESP32, ESP-NOW e Wi-Fi"
 excerpt:      "Trasforma il tuo ESP32 in una potente centralina meteo! Crea una rete di sensori wireless con ESP-NOW e monitora in tempo reale: Temperatura - Qualità dell'aria - Metano - Monossido di Carbonio e altri parametri ambientali. Con il Wi-Fi invia i dati a un server web per l'analisi e la visualizzazione..."
 date:         2024-03-07T01:20:42+01:00
 lastmod:      2024-03-07T01:20:42+01:00
-draft:        true
+draft:        false
 weight:       50
 images:       ["header.jpeg"]
 categories:   ["News"]
