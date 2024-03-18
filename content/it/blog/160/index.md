@@ -18,16 +18,18 @@ mermaid:       true
 
 Questo è il driver del motore più semplice che potrebbe essere costruito utilizzando un solo transistor NPN, che è controllato e guidato dalla scheda micro controller ESP32.
 
-Fase 1: Materiali e strumenti
-Materiali e strumenti
-Microcontrollore ESP32
-Motore di CC
-Transistor NPN-BC337
-Resistenza 100Ω
-Diodo - N4148 Uso generale
-Fili tagliere
-Breadboard'
+## Materiali e strumenti
+
+- Microcontrollore ESP32
+- Motore di CC
+- Transistor NPN-BC337
+- Resistenza 100Ω
+- Diodo - N4148 Uso generale
+- connettori Dupont
+- Breadboard
 2x ponticello
+
+
 Fase 2: Collegamento del segnale
 Collegamento del segnale
 Collegare una resistenza da 100Ω al pin di base (centrale) del transistor NPN per proteggere la scheda EPS32 da sovratensione, quindi collegarla in serie a D5
