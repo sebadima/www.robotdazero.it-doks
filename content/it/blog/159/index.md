@@ -501,29 +501,24 @@ Il ricevitore non necessita realmente di una fase di assemblaggio a parte la sal
 
 ### Configurazione software del ricevitore 
 
-Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compil
+Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Noi in genere preferiamo Platformio ma ciò non significa che il programma non possa esere compilato con Arduino IDE o che il codice oggetto sia *migliore*: semplicemente preferiamo installare le librerie in automatico come riesce a fare comodamente PlatformIO.
 
 ####  Compilazione con Arduino IDE
 
-Per scaricare il codi sorgente del trasmettitore puoi andare nella linea di comando di Windows usando la PowerShell o nel terminale di Lunux e digitare:
+Per scaricare il codice sorgente del ricevitore puoi andare nella linea di comando di Windows usando la PowerShell o nel terminale di Lunux e digitare o fare copia e incolla di:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo_ricevitore.git
 ```     
 
-Fatto questo puoi aprire il programma con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di spostare la directory o il "file main.ino". Potresti teoricamente compilare subito il programma, ma otterresti solo degli errori relativi alle librerie mancanti. Ad esempio potrebbero mancare due librerie come la "esp_now" o la "DHT" dedicata al sensore DHT11. <br>Detto ciò vediamo come risolvere il problema delle librerie mancanti...
-
-##### Come installare le librerie su Arduino IDE
-
-Per installare le librerie mancanti puoi procedere in questo modo:
+Fatto questo puoi aprire il programma con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di spostare la directory o il "file main.ino". Per installare le librerie mancanti. Per installare le librerie mancanti puoi procedere in questo modo:
 
 - Apri Arduino IDE
 - Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
 - Nella casella di ricerca, digita il nome della libreria mancante.
 - Clicc sul pulsante "Installa" accanto alla libreria desiderata.
 
-Se non vuoi usare Gitub puoi fare copia e incolla del programma sottostante e procedere allo stesso modo:
-
+Se non vuoi usare Github puoi fare copia e incolla del programma sottostante e procedere allo stesso modo:
 
 ### Il codice sorgente del ricevitore
 
@@ -785,7 +780,7 @@ Questa è forse la parte più importante el programma e usa la istruzione "if (l
 ```
 
 
-##### commento 1
+##### commento 2
 
 Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
 
@@ -794,7 +789,7 @@ Questa è forse la parte più importante el programma e usa la istruzione "if (l
 ```
 
 
-##### commento 1
+##### commento 3
 
 Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
 
@@ -803,7 +798,7 @@ Questa è forse la parte più importante el programma e usa la istruzione "if (l
 ```
 
 
-##### commento 1
+##### commento 4
 
 Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
 
