@@ -994,15 +994,30 @@ La istruzione "var source = new EventSource('/events');" aggiunge un una routine
 
 ## Troubleshooting
 
-riprendere da altri post
+Se il progetto sembra non funzionare correttamente le cause degli errori potrebbero essere in ordine di probabilità:
 
-## Conclusioni
+un errato collegamento dei connettori,
+un problema grave come la rottura del sensore,
+un problema alla tensione della USB del computer,
+un cavo USB difettoso e cioè parzialmente spezzato all’interno.
+Come fare il troubleshooting per un progetto con ESP32 
+1. Identificare il problema:
 
-Riassumere i vantaggi della centralina meteo realizzata con ESP32 e C++.
-Suggerire possibili miglioramenti e future implementazioni.
-Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande.
+Il primo passo è identificare il problema che si sta verificando con il progetto. Quali sono i sintomi del problema? Quando si verifica il problema? C’è un componente specifico che sembra essere la causa del problema?
+
+2. Controllare i collegamenti:
+
+Una volta identificato il problema, è necessario controllare i collegamenti. Assicurati che tutti i collegamenti siano ben saldi e che non ci siano fili allentati o danneggiati. Controlla che i componenti siano collegati correttamente all’ESP32.
+
+3. Testare i componenti:
+
+È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti. È possibile anche utilizzare un oscilloscopio per testare i segnali elettrici dei componenti.
+
+4. Sostituire i componenti danneggiati:
+
+Se un componente è danneggiato, è necessario sostituirlo. Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale. Puoi usare i nostri link su Amazon o se preferisci puoi acquistare i componenti da siti alternativi come Aliexpress.
 
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.8.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.2.0.2</p>
