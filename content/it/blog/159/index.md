@@ -987,23 +987,31 @@ if (!!window.EventSource) {
 
 ```
 
-Nelle sezioji precenti abbianmo già parlato di come implementare un server Web e quindi in questo caso ci concnstriam oprattutoo sulle novota e sul funzionamenti di AJAX. 
+Nelle sezioni precenti abbiamo già parlato di come implementare un server Web e quindi in questo caso ci concentriamo soprattutto sulle novità e sul funzionamenti di AJAX. 
 
-La istruzione "var source = new EventSource('/events');" aggiunge un una routine asicncrona che viene attivata dall'arrivo dei nuovi dati e scrive con "console.log("new_readings", e.data);" l'evento sul file di *log* ma soprattutto provvede a modificare il documento HTML con la istruzione: <br>"document.getElementById("h1").innerHTML = obj.v1;"
+La istruzione "var source = new EventSource('/events');" aggiunge un una routine asincrona che viene attivata dall'arrivo dei nuovi dati e lo segnale sul monitor seriale con "console.log("new_readings", e.data);" ma soprattutto provvede a modificare il documento HTML con la istruzione: <br>"document.getElementById("h1").innerHTML = obj.v1;".
 
 
 ## Troubleshooting
 
-Le cause di un malfunzionamento possono essere molte, ma ricadono fonamentalmente in queste tre tipologie:
+Le cause di un malfunzionamento possono essere molte, ma ricadono fondamentalmente in queste tre tipologie:
 
 - un errato collegamento dei connettori:
-Il diagramma che ti forniamo rappresenta fedelmente il progetto realizzato da Robotdazero. ma ciò non garantisce che alcune versioni commerciali del DHT11 non possano avere diverse disposizioni del connettore dati. Se i pind di slimentazione sembrano restare *coerenti* nelle varie versioni in commercio, il pind dati potrebbe essere collegato a uno qualiasi dei du pin liberi. Il prpoble comnuqque facilemnte risolvibile facendo un poco di attenzione e ricontrollando "a vista" i connettori. Per facilitare il lavori di controllo ti consigliamo di adottare sempre colori ner e rosso per la alimentazione e verde o giallo per il segnale dati. in tal modi capire se il pin dati e stato collegato correttamente diventa uqsi banale.
+Il diagramma che ti forniamo rappresenta fedelmente il progetto realizzato da Robotdazero. ma ciò non garantisce che alcune versioni commerciali del DHT11 non possano avere diverse disposizioni del connettore dati. Se i pin di alimentazione sembrano restare *coerenti* nelle varie versioni in commercio, il pin dati potrebbe essere collegato a uno qualiasi dei du pin liberi. Il problema comunque facilmente risolvibile facendo un poco di attenzione e ricontrollando "a vista" i connettori. Per facilitare il lavori di controllo ti consigliamo di adottare sempre colori nero e rosso per la alimentazione e verde o giallo per il segnale dati, in tal modi capire se il pin dati e stato collegato correttamente diventa quasi banale.
 
 - un problema alla alimentazione fornita dalla USB:
-La tensione fornito dalla USB in conizioni ideali riesce ad erogare la minima corrente richiesta dall'ESP32 e dai sensori, parliamo di mezzo di 500mA in genere, ma su alcuni piccoli laptop o desktop danneggiati anche tale carico potrebbe rappresentare un problema. Inoltre ricorda che gli HUB per USB non sono sempre *trasparenti* alla corrente e potrebbero assorbirne una parte per il loro funzionamento. Inoltre, nel caso peggiore, l'UHB potrebbe avere difficoltà a mantenere la tensione costante se troppi dispositivi assorbono corrente nello stesso momento.
+La tensione fornito dalla USB in condizioni ideali riesce ad erogare la minima corrente richiesta dall'ESP32 e dai sensori, parliamo di mezzo di 350mA al massimo, ma su alcuni piccoli laptop o desktop danneggiati anche tale carico potrebbe rappresentare un problema. Inoltre ricorda che gli HUB per USB non sono sempre *trasparenti* alla corrente e potrebbero assorbirne una parte per il loro funzionamento. Inoltre, nel caso peggiore, l'UHB potrebbe avere difficoltà a mantenere la tensione costante se troppi dispositivi assorbono corrente nello stesso momento.
 
 - un problema hardware:
-Ad esempio la rottura di uno dei sensori, un connettore Dupont spezzato solo all'interno, la sezione radio dell'ESP32 danneggiata perchè hai collegato due antenne "troppo" vicine, un piedino rotto dell'ESP32, una breadboard difettosaun cavo USB difettoso e cioè parzialmente spezzato all’interno.
+Ad esempio il sistema potrebbe non funzionare per la rottura di uno dei sensori, un connettore Dupont spezzato (magari solo all'interno), la sezione radio dell'ESP32 danneggiata perchè hai collegato due antenne "troppo" vicine, un piedino rotto dell'ESP32, una breadboard difettosa, un cavo USB difettoso (un caso molto comune).
+
+## Conclusioni 
+
+In questo articolo, abbiamo esplorato le potenzialità dell'IoT per la casa e il lavoro, utilizzando un ESP32 con sensori di qualità dell'aria e gas pericolosi come esempio pratico.
+
+A livello domestico, l'implementazione di un sistema di monitoraggio IoT può portare a una maggiore sicurezza e comfort. La capacità di monitorare la qualità dell'aria e la temperatura può aiutare a creare un ambiente più sano e confortevole per la propria famiglia. Inoltre, la rilevazione di gas pericolosi può fornire un avvertimento tempestivo in caso di emergenza.
+
+In ambito lavorativo, l'IoT può migliorare l'efficienza e la produttività. I sensori possono essere utilizzati per monitorare le condizioni ambientali in un singolo ufficio o in molteplici locali, garantendo un ambiente di lavoro sicuro e confortevole.
 
 <br>
 <br>
