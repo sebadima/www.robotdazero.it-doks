@@ -994,29 +994,16 @@ La istruzione "var source = new EventSource('/events');" aggiunge un una routine
 
 ## Troubleshooting
 
-Se il progetto sembra non funzionare correttamente le cause degli errori potrebbero essere in ordine di probabilità:
+Le cause di un malfunzionamento possono essere molte, ma ricadono fonamentalmente in queste tre tipologie:
 
-un errato collegamento dei connettori,
-un problema grave come la rottura del sensore,
-un problema alla tensione della USB del computer,
-un cavo USB difettoso e cioè parzialmente spezzato all’interno.
-Come fare il troubleshooting per un progetto con ESP32 
-1. Identificare il problema:
+- un errato collegamento dei connettori:
+Il diagramma che ti forniamo rappresenta fedelmente il progetto realizzato da Robotdazero. ma ciò non garantisce che alcune versioni commerciali del DHT11 non possano avere diverse disposizioni del connettore dati. Se i pind di slimentazione sembrano restare *coerenti* nelle varie versioni in commercio, il pind dati potrebbe essere collegato a uno qualiasi dei du pin liberi. Il prpoble comnuqque facilemnte risolvibile facendo un poco di attenzione e ricontrollando "a vista" i connettori. Per facilitare il lavori di controllo ti consigliamo di adottare sempre colori ner e rosso per la alimentazione e verde o giallo per il segnale dati. in tal modi capire se il pin dati e stato collegato correttamente diventa uqsi banale.
 
-Il primo passo è identificare il problema che si sta verificando con il progetto. Quali sono i sintomi del problema? Quando si verifica il problema? C’è un componente specifico che sembra essere la causa del problema?
+- un problema alla alimentazione fornita dalla USB:
+La tensione fornito dalla USB in conizioni ideali riesce ad erogare la minima corrente richiesta dall'ESP32 e dai sensori, parliamo di mezzo di 500mA in genere, ma su alcuni piccoli laptop o desktop danneggiati anche tale carico potrebbe rappresentare un problema. Inoltre ricorda che gli HUB per USB non sono sempre *trasparenti* alla corrente e potrebbero assorbirne una parte per il loro funzionamento. Inoltre, nel caso peggiore, l'UHB potrebbe avere difficoltà a mantenere la tensione costante se troppi dispositivi assorbono corrente nello stesso momento.
 
-2. Controllare i collegamenti:
-
-Una volta identificato il problema, è necessario controllare i collegamenti. Assicurati che tutti i collegamenti siano ben saldi e che non ci siano fili allentati o danneggiati. Controlla che i componenti siano collegati correttamente all’ESP32.
-
-3. Testare i componenti:
-
-È possibile utilizzare un multimetro per testare la tensione, la corrente e la resistenza dei componenti. È possibile anche utilizzare un oscilloscopio per testare i segnali elettrici dei componenti.
-
-4. Sostituire i componenti danneggiati:
-
-Se un componente è danneggiato, è necessario sostituirlo. Assicurati di utilizzare un componente con le stesse caratteristiche del componente originale. Puoi usare i nostri link su Amazon o se preferisci puoi acquistare i componenti da siti alternativi come Aliexpress.
-
+- un problema hardware:
+Ad esempio la rottura di uno dei sensori, un connettore Dupont spezzato solo all'interno, la sezione radio dell'ESP32 danneggiata perchè hai collegato due antenne "troppo" vicine, un piedino rotto dell'ESP32, una breadboard difettosaun cavo USB difettoso e cioè parzialmente spezzato all’interno.
 
 <br>
 <br>
