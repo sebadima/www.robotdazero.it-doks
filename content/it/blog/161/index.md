@@ -28,6 +28,8 @@ Analizza il flusso di corrente e tensione in circuiti elettrici composti da resi
 
 > La teoria dei circuiti elettronici è un ramo fondamentale dell'elettronica che studia il comportamento di corrente e tensione in circuiti composti da componenti come resistori, condensatori, induttori e sorgenti di tensione. Essa fornisce le basi per la progettazione e l'analisi di qualsiasi circuito elettrico, sia esso semplice o complesso.
 
+Seppure la elettronica sia comprensibile solo facendo ricorso alla fisica nucleare, le basi pratiche del suo funzionamento sono piuttosto semplici e per iniziare spesso basta conoscre la fondamentale legge di Ohm.
+
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 La legge di Ohm, una delle leggi più importanti dell'elettronica, afferma che la corrente (I) che scorre in un circuito è direttamente proporzionale alla tensione (V) applicata e inversamente proporzionale alla resistenza (R) del circuito. La legge si esprime con la seguente formula:
 <br><br>I = V / R<br><br>
@@ -43,9 +45,9 @@ Comprendere il funzionamento di componenti elettronici come transistor, diodi e 
 
 Oltre alla legge di Ohm, altri principi chiave della teoria dei circuiti includono:
 
-Legge di Kirchhoff delle correnti: La somma delle correnti che entrano in un nodo è uguale alla somma delle correnti che escono dallo stesso nodo.
-Legge di Kirchhoff delle tensioni: La somma delle tensioni attorno a un circuito chiuso è uguale a zero.
-Teorema di Thevenin e Norton: Per semplificare l'analisi di circuiti complessi, è possibile sostituire una parte di circuito con un circuito equivalente più semplice.
+- Legge di Kirchhoff delle correnti: La somma delle correnti che entrano in un nodo è uguale alla somma delle correnti che escono dallo stesso nodo.
+- Legge di Kirchhoff delle tensioni: La somma delle tensioni attorno a un circuito chiuso è uguale a zero.
+- Teorema di Thevenin e Norton: Per semplificare l'analisi di circuiti complessi, è possibile sostituire una parte di circuito con un circuito equivalente più semplice.
 
 ### Elettromagnetismo 
 Studia l'interazione tra campi elettrici e magnetici, fondamentale per il funzionamento di motori, generatori e altri dispositivi.
