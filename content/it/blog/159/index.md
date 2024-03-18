@@ -194,7 +194,6 @@ portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR onTimer() 
 {
-  // https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Timer/RepeatTimer/RepeatTimer.ino
   portENTER_CRITICAL_ISR(&timerMux);
   interruptCounter++;
   if (lost_packages >=15) {
@@ -538,7 +537,7 @@ constexpr char WIFI_PASS[] = "PASSWORD-da-modificare";
 
 // Setta un indirizzo IP Fisso
 IPAddress local_IP(192, 168, 1, 200);
-// Setta l'indirizzo del Gateway
+// Setta indirizzo del Gateway
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 0, 0);
 IPAddress primaryDNS(8, 8, 8, 8); //opzionale
@@ -575,7 +574,6 @@ portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR onTimer() 
 {
-  // https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Timer/RepeatTimer/RepeatTimer.ino
   portENTER_CRITICAL_ISR(&timerMux);
   interruptCounter++;
   if (WiFi.status() != WL_CONNECTED)
@@ -586,7 +584,7 @@ void IRAM_ATTR onTimer()
 }
 
 void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int len) { 
-  // Copi l'indirizzo MAC del mittente
+  // Copia indirizzo MAC del mittente
   char macStr[18];
   Serial.print("Pacchetto ricevuto da: ");
   snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
@@ -771,30 +769,103 @@ platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 
 
 
-##### commento 1
+##### La connessione alla rete Wi-Fi
 
-Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
-
+Poichè il ricevitore si collega effettivamente alla rete Wi-Fi, nelle righe successive dobbiamo impostare le variabili per la connessione. DNon cis sono particolarità da notare a parte la riga "IPAddress local_IP(192, 168, 1, 200);" che si servirà ad impostare l'IP fisso del server Web. Se preferisci puoi cambiarlo per evitare una *collisione* con altri dispositivi collegati.
 
 ```bash
+constexpr char WIFI_SSID[] = "SSID-da-modificare";
+constexpr char WIFI_PASS[] = "PASSWORD-da-modificare";
+
+// Setta un indirizzo IP Fisso
+IPAddress local_IP(192, 168, 1, 200);
+// Setta indirizzo del Gateway
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 0, 0);
+IPAddress primaryDNS(8, 8, 8, 8); //opzionale
+IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
+
+```
+
+Nella funzione "initWiFi()" la radio dell'ESP32 viene inizializzata in modalità *mista* con il comando: "WiFi.mode(WIFI_MODE_APSTA);" per permette l'uso simultaneo di ESP-NOW e Wi-Fi. La instruzione " Serial.printf("Channel: %u\n", WiFi.channel());" serve in modalitò di debug per controllare il canale in cui avviene la connessione. E' importante avere una idea del canale perchè alcuni router potrebbero essere configurati solo con il Wi-Fi a 5Ghz attivato e dare risultati imprevedibili.
+
+```bash
+void initWiFi() {
+    WiFi.mode(WIFI_MODE_APSTA);
+
+    if(!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+      Serial.println("STA Failed to configure");
+    }
+
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+
+    Serial.printf("Connecting to %s .", WIFI_SSID);
+    while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }
+    Serial.println("ok");
+
+    IPAddress ip = WiFi.localIP();
+
+    Serial.printf("SSID: %s\n", WIFI_SSID);
+    Serial.printf("Channel: %u\n", WiFi.channel());
+    Serial.printf("IP: %u.%u.%u.%u\n", ip & 0xff, (ip >> 8) & 0xff, (ip >> 16) & 0xff, ip >> 24);
+}
 ```
 
 
-##### commento 2
 
-Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+##### La struttura dati in ricezione
 
+I dati ricevuti dal trasmettitor devono seguire necessariamente lo stesso formato pena errori imprevedibili o blocco conpleto della trasmissione. Se torni al sorente del trasmettitore vedrai che formato e sequenza delle variabili sono le stesse, mentre teoricamente non è necessario che abbiano lo stesso identificativo.
 
 ```bash
+// Struttura dati, deve corrispondere a quella del mittente
+typedef struct struttura_dati {
+  char  v0[32];
+  int   v1;
+  float v2;
+  float v3;
+  float v4;
+  unsigned int progressivo;
+} struttura_dati;
+
 ```
 
 
-##### commento 3
+##### La lettura dei dati
 
-Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+Dopo avere letto i dati da ESP-NOw dobbiamo usarli nel nostro server Web e quindi li importiamo nella variabile JSON board che abbiamo definito ad inizio programma con "JSONVar board;". I valori v1,v2,v3,v4 verrano poi usati dal server con queste istruzioni: "document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;". 
+
+Poichè si tratta di un argomento un poco complesso lo tratteremo in una sezione successiva. Un altro *pezzo* interessante e la print dell'indirizzo MAC del mittente ottenuta con:
+snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x"
+
+> *snprintf è estremamente simile a sprintf: Dopo tutto, i nomi delle funzioni differiscono solo dal carattere 'n'! Questa è in realtà una convenzione abbastanza comune in C: la funzione con la 'n' richiederà un limite superiore o una dimensione massima come argomento. In genere la versione' n ' delle funzioni è più sicura e meno suscettibile agli overflow del buffer.*
 
 
 ```bash
+void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int len) { 
+  // Copia indirizzo MAC del mittente
+  char macStr[18];
+  Serial.print("Pacchetto ricevuto da: ");
+  snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
+           mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
+  Serial.println(macStr);
+  memcpy(&LettureSensori, incomingData, sizeof(LettureSensori));
+  
+  board["v1"] = LettureSensori.v1;
+  board["v2"] = LettureSensori.v2;
+  board["v3"] = LettureSensori.v3;
+  board["v4"] = LettureSensori.v4;
+  board["progressivo"] = String(LettureSensori.progressivo);
+  String jsonString = JSON.stringify(board);
+  events.send(jsonString.c_str(), "new_readings", millis());
+  
+  Serial.printf("Board ID %u: %u bytes\n", LettureSensori.v1, len);
+  Serial.printf("t valore: %4.2f \n", LettureSensori.v2);
+  Serial.printf("h valore: %4.2f \n", LettureSensori.v3);
+  Serial.printf("Progressivo: %d \n", LettureSensori.progressivo);
+  Serial.println();
+}
+
 ```
 
 
