@@ -944,22 +944,10 @@ void initEspNow() {
 ## Il server Web
 
 
-- Descrivere come acquisire i dati dai sensori.
-- Spiegare come memorizzare i dati su scheda SD o EEPROM.
-- Mostrare come inviare i dati ad un server remoto.
-- Visualizzazione dei dati:
-
-- Presentare diverse opzioni per la visualizzazione dei dati, come un grafico o un pannello di controllo.
-- Fornire il codice sorgente per la visualizzazione dei dati sul display LCD.
-- Mostrare come creare un'interfaccia web per la visualizzazione dei dati.
-
-
-
 
 ##### commento 1
 
-Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
-
+xxxxxxx
 
 ```bash
 ```
@@ -1004,4 +992,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.6.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.8.1</p>
