@@ -18,12 +18,10 @@ mermaid:      true
 
 
 <!-- 
-<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="/images/154.png" alt="schema connessioni">
-<strong>1</strong>. <span style="background-color:#eeeeee"> Controllo delle versioni</span>:
-img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
-
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
-<iframe  width="800" height="1200" src="https://robotdazero.ck.page/posts/000002" title="W3Schools Free Online Web Tutorials"></iframe>
+https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Timer/RepeatTimer/RepeatTimer.ino
+https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/timer.html
+https://randomnerdtutorials.com/esp32-cam-connect-external-antenna/
+https://deepbluembedded.com/esp32-timers-timer-interrupt-tutorial-arduino-ide/
 
 -->
 
