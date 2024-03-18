@@ -943,52 +943,55 @@ void initEspNow() {
 
 ## Il server Web
 
+Il server copo la connessione ad ESP-NOW e alla rete Wi-Fi riesce a mostrare in tempo reale le letture dei sensori: HTML non è adatto a questo tipo di visualizzazione e deve essere necessariamente integrato con la tecnologia Ajax. Ma iniziamo per gradi e vediamo intanto come viene conservato nella ram il codice HTML:
 
-
-##### commento 1
-
-xxxxxxx
 
 ```bash
+const char index_html[] PROGMEM = R"rawliteral(
+<!DOCTYPE HTML><html>
+<head>
+...
+...
+</head>
+
+<body>
+...  
+...  
+</body>
+
+<script>
+if (!!window.EventSource) {
+ var source = new EventSource('/events');
+ 
+ source.addEventListener('open', function(e) {
+  console.log("Events Connected");
+ }, false);
+ source.addEventListener('error', function(e) {
+  if (e.target.readyState != EventSource.OPEN) {
+    console.log("Events Disconnected");
+  }
+ }, false);
+ 
+ source.addEventListener('message', function(e) {
+  console.log("message", e.data);
+ }, false);
+ 
+ source.addEventListener('new_readings', function(e) {
+  console.log("new_readings", e.data);
+  var obj = JSON.parse(e.data);
+  document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;
+  document.getElementById("h1").innerHTML = obj.v1;
+  document.getElementById("t2").innerHTML = obj.v3;
+  document.getElementById("h2").innerHTML = obj.v4;
+ }, false);
+}
+</script>
+
 ```
 
+Nelle sezioji precenti abbianmo già parlato di come implementare un server Web e quindi in questo caso ci concnstriam oprattutoo sulle novota e sul funzionamenti di AJAX. 
 
-##### commento 2
-
-xxxxxxx
-
-```bash
-```
-
-
-##### commento 3
-
-xxxxxxx
-
-```bash
-```
-
-
-##### commento 4
-
-xxxxxxx
-
-```bash
-```
-
-
-##### commento 5
-
-xxxxxxx
-
-```bash
-```
-
-
-
-
-
-
+La istruzione "var source = new EventSource('/events');" aggiunge un una routine asicncrona che viene attivata dall'arrivo dei nuovi dati e scrive con "console.log("new_readings", e.data);" l'evento sul file di *log* ma soprattutto provvede a modificare il documento HTML con la istruzione: <br>"document.getElementById("h1").innerHTML = obj.v1;"
 
 
 ## Troubleshooting
