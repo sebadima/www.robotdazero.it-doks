@@ -22,8 +22,6 @@ mermaid:      true
 <strong>1</strong>. <span style="background-color:#eeeeee"> Controllo delle versioni</span>:
 img width="70" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
 
-```bash
-```     
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑.</div>
 <iframe  width="800" height="1200" src="https://robotdazero.ck.page/posts/000002" title="W3Schools Free Online Web Tutorials"></iframe>
 
@@ -398,10 +396,11 @@ La prossima istruzione (contenuta all'interno della funzione loop) utilizza le v
 
 <br>
 
-##### Il reset automatico
+##### Il reset automatico degli interrupt
 
 Il programma utilizza delle funzioni avanzate di ESP32 per resettare la scheda dopo 15 pacchetti dati persi. Come in ogni applicazione IoT non poassiamo pensare di stare al computer per monitorare il comportamento dei dispositivi e dobbiamo prevedere delle istruzione di "recupero" automatico della connessione in caso di problemi.
 
+> I *controller* ESP32 sono dotati di 4 timer hardware, ognuno dei quali è un contatore up/down a 64 bit generico con un prescaler a 16 bit. Fa eccezione la scheda ESP 32C3 che ha solo 2 timer ognuno dei quali è invece di 54 bit. I timer di ESP32 funzionano in modalità roll e alla fine del conteggio ad esempio 800000 ripartono da zero.
 
 ```bash
 #define DELAY_RECONNECT 600 // intervallo in secondi per forzare il reboot
@@ -433,23 +432,51 @@ La configurazione dell'interrupt viene completato dentro la funzione "setup()"
 ```
 
 
-Le prime cinque righe impostano la struttura dati suggerista da Espressif per la gestione degli interrupt mentre la successiva funzione "onTimer()" viene richiamata automaticamente dal sistema 
-
-111111111
+Le prime cinque righe impostano la struttura dati suggerista da Espressif per la gestione degli interrupt mentre la successiva funzione "onTimer()" viene richiamata automaticamente dal sistema.
 
 
 
 
+##### La ricerca del canale Wi-Fi del ricevitore
+
+Il ricevitore della centraline è collegato alla rete Wi-Fi per fornire in HTML i dati dei sensori, e la necessità di fare convivere ESP-NOW e Wi-Fi impone che il dure operino nello stesso canale. Con il pezzo di programma sotto il trasmettitore legge il nome della *rete* dal parametro passato alla funzione:<br> "getWiFiChannel" con il parametro: "(const char \*ssid)" ed effettua una semplice scansione di tutti i canali.
+
+Per determinare il numero real dei canali disponibili il programma usa la istruzione "int32_t n = WiFi.scanNetworks()" e quindi lancia un ciclo in loop con: "for (uint8_t i=0; i\<n; i++)" dove "i\<n;" serve a limitare il numero di ripetizioni.
+Se la istruzione "strcmp()" rileva il canale con il nome giusto ne ritorna il codice al resto del programma. La funzione "InitWiFi()" userà il codice ottenuto durante la fase di *boot* del controller.
+
+```bash
+int32_t getWiFiChannel(const char *ssid) {
+
+    if (int32_t n = WiFi.scanNetworks()) {
+        for (uint8_t i=0; i<n; i++) {
+            if (!strcmp(ssid, WiFi.SSID(i).c_str())) {
+                return WiFi.channel(i);
+            }
+        }
+    }
+    return 0;
+}
+```
 
 
+##### Come controllare se ESP-NOW è collegato
+
+Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
 
 
-
-
-
-
-
-
+```bash
+void suInvioDati(const uint8_t *mac_addr, esp_now_send_status_t status) {
+  Serial.print("\r\nStatus invio:\t");
+  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Consegna positiva" : "Errore di consegna");
+  if (status != ESP_NOW_SEND_SUCCESS) {
+      lost_packages ++;
+  }
+  if (lost_packages >=15) {
+    Serial.println("ESP restarting on lost packages");
+    ESP.restart(); // Riesegui la connessione al nuovo canale WIFI
+  }
+}
+```
 
 
 
@@ -466,9 +493,11 @@ Le prime cinque righe impostano la struttura dati suggerista da Espressif per la
 
 ### Assemblaggio del ricevitore
 
-minimo assemblaggio 
+Il ricevitore non necessita realmente di una fase di assemblaggio a parte la saldatura di una antenna esterna per ESP32 come vedi nella foto sotto, ma anche questa fase può essere evitata usando una ESP32CAM come ricevitore con la presa per antenna
 
-<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schema elettrico fritzing della centralina multi sensore con ESP32">
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/105.webp" alt="ESP32CAM con antenna per ESPNOW">
+
 
 ### Configurazione software del ricevitore 
 
@@ -476,25 +505,267 @@ Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste un
 
 ####  Compilazione con Arduino IDE
 
-- Specificare l'IDE utilizzato (es. Arduino IDE).
-- Spiegare come installare le librerie necessarie.
-- Fornire il codice sorgente per la configurazione del sensore di temperatura e umidità.
+Per scaricare il codi sorgente del trasmettitore puoi andare nella linea di comando di Windows usando la PowerShell o nel terminale di Lunux e digitare:
 
 ```bash
-git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
-cd corso-ESP32-centralina-meteo-trasmettitore
-make upload
-platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
+git clone git@github.com:sebadima/corso-ESP32-centralina-meteo_ricevitore.git
 ```     
+
+Fatto questo puoi aprire il programma con: "File"-> "Apri" dall'IDE e rispondere alla eventuale richiesta di spostare la directory o il "file main.ino". Potresti teoricamente compilare subito il programma, ma otterresti solo degli errori relativi alle librerie mancanti. Ad esempio potrebbero mancare due librerie come la "esp_now" o la "DHT" dedicata al sensore DHT11. <br>Detto ciò vediamo come risolvere il problema delle librerie mancanti...
+
+##### Come installare le librerie su Arduino IDE
+
+Per installare le librerie mancanti puoi procedere in questo modo:
+
+- Apri Arduino IDE
+- Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
+- Nella casella di ricerca, digita il nome della libreria mancante.
+- Clicc sul pulsante "Installa" accanto alla libreria desiderata.
+
+Se non vuoi usare Gitub puoi fare copia e incolla del programma sottostante e procedere allo stesso modo:
+
+
+### Il codice sorgente del ricevitore
+
+```bash
+#include "ESPAsyncWebServer.h"
+#include <Arduino_JSON.h>
+#include <Arduino.h>
+#include <esp_now.h>
+#include <esp_wifi.h>
+#include <WiFi.h>
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
+#include "BluetoothSerial.h"
+
+constexpr char WIFI_SSID[] = "SSID-da-modificare";
+constexpr char WIFI_PASS[] = "PASSWORD-da-modificare";
+
+// Setta un indirizzo IP Fisso
+IPAddress local_IP(192, 168, 1, 200);
+// Setta l'indirizzo del Gateway
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 0, 0);
+IPAddress primaryDNS(8, 8, 8, 8); //opzionale
+IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
+
+// Struttura dati, deve corrispondere a quella del mittente
+typedef struct struttura_dati {
+  char  v0[32];
+  int   v1;
+  float v2;
+  float v3;
+  float v4;
+  unsigned int progressivo;
+} struttura_dati;
+
+struttura_dati LettureSensori;
+
+#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
+#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
+#endif
+
+BluetoothSerial SerialBT;
+JSONVar board;
+AsyncWebServer server(80);
+AsyncEventSource events("/events");
+
+volatile int interruptCounter;
+int totalInterruptCounter;
+hw_timer_t * timer = NULL;
+portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
+#define DELAY_RECONNECT 60
+
+
+
+void IRAM_ATTR onTimer() 
+{
+  // https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/Timer/RepeatTimer/RepeatTimer.ino
+  portENTER_CRITICAL_ISR(&timerMux);
+  interruptCounter++;
+  if (WiFi.status() != WL_CONNECTED)
+  {
+    ESP.restart();
+  }
+  portEXIT_CRITICAL_ISR(&timerMux);
+}
+
+void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int len) { 
+  // Copi l'indirizzo MAC del mittente
+  char macStr[18];
+  Serial.print("Pacchetto ricevuto da: ");
+  snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
+           mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
+  Serial.println(macStr);
+  memcpy(&LettureSensori, incomingData, sizeof(LettureSensori));
+  
+  board["v1"] = LettureSensori.v1;
+  board["v2"] = LettureSensori.v2;
+  board["v3"] = LettureSensori.v3;
+  board["v4"] = LettureSensori.v4;
+  board["progressivo"] = String(LettureSensori.progressivo);
+  String jsonString = JSON.stringify(board);
+  events.send(jsonString.c_str(), "new_readings", millis());
+  
+  Serial.printf("Board ID %u: %u bytes\n", LettureSensori.v1, len);
+  Serial.printf("t valore: %4.2f \n", LettureSensori.v2);
+  Serial.printf("h valore: %4.2f \n", LettureSensori.v3);
+  Serial.printf("Progressivo: %d \n", LettureSensori.progressivo);
+  Serial.println();
+}
+
+const char index_html[] PROGMEM = R"rawliteral(
+<!DOCTYPE HTML><html>
+<head>
+  <title>Robotdazero - rete "Ambientale" con ESP32</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="data:,">
+  <style>
+    html {font-family: Arial; display: inline-block; text-align: center;}
+    p {  font-size: 1.2rem;}
+    body {  margin: 0;}
+    .topnav { overflow: hidden; background-color: #2f4468; color: white; font-size: 1.7rem; }
+    .content { padding: 20px; }
+    .card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
+    .cards { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .reading { font-size: 2.8rem; }
+    .packet { color: #bebebe; }
+    .card.temperature { color: #fd7e14; }
+    .card.humidity { color: #1b78e2; }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <h3>ROBOTDAZERO - rete "Ambientale" con ESP32</h3>
+  </div>
+  <div class="content">
+    <div class="cards">
+      <div class="card temperature">
+        <h4><i class="fas fa-thermometer-half"></i> SCHEDA #1 - TEMPERATURA</h4><p><span class="reading"><span id="t1"></span> &deg;C</span></p><p class="packet">sensore DHT11: <span id="rt1"></span></p>
+      </div>
+      <div class="card humidity">
+        <h4><i class="fas fa-tint"></i> SCHEDA #1 - UMIDITA'</h4><p><span class="reading"><span id="h1"></span> &percnt;</span></p><p class="packet">sensore DHT11: <span id="rh1"></span></p>
+      </div>
+      <div class="card temperature">
+        <h4><i class="far fa-bell"></i> SCHEDA #1 - Fumo/Metano</h4><p><span class="reading"><span id="t2"></span> ppm</span></p><p class="packet">sensore MQ-2: <span id="rt2"></span></p>
+      </div>
+      <div class="card humidity">
+        <h4><i class="far fa-bell"></i> SCHEDA #1 - Qualita' dell'aria</h4><p><span class="reading"><span id="h2"></span> ppm</span></p><p class="packet">sensore MQ-135: <span id="rh2"></span></p>
+      </div>
+    </div>
+  </div>
+<script>
+if (!!window.EventSource) {
+ var source = new EventSource('/events');
+ 
+ source.addEventListener('open', function(e) {
+  console.log("Events Connected");
+ }, false);
+ source.addEventListener('error', function(e) {
+  if (e.target.readyState != EventSource.OPEN) {
+    console.log("Events Disconnected");
+  }
+ }, false);
+ 
+ source.addEventListener('message', function(e) {
+  console.log("message", e.data);
+ }, false);
+ 
+ source.addEventListener('new_readings', function(e) {
+  console.log("new_readings", e.data);
+  var obj = JSON.parse(e.data);
+  document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;
+  document.getElementById("h1").innerHTML = obj.v1;
+  document.getElementById("t2").innerHTML = obj.v3;
+  document.getElementById("h2").innerHTML = obj.v4;
+ }, false);
+}
+</script>
+</body>
+</html>)rawliteral";
+
+void initBT() {
+  SerialBT.begin("ESP32-sensori");    
+  Serial.println("Dispositivo avviato, puoi accoppiarlo con bluetooth...");
+}
+
+void initWiFi() {
+    WiFi.mode(WIFI_MODE_APSTA);
+
+    if(!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+      Serial.println("STA Failed to configure");
+    }
+
+    WiFi.begin(WIFI_SSID, WIFI_PASS);
+
+    Serial.printf("Connecting to %s .", WIFI_SSID);
+    while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }
+    Serial.println("ok");
+
+    IPAddress ip = WiFi.localIP();
+
+    Serial.printf("SSID: %s\n", WIFI_SSID);
+    Serial.printf("Channel: %u\n", WiFi.channel());
+    Serial.printf("IP: %u.%u.%u.%u\n", ip & 0xff, (ip >> 8) & 0xff, (ip >> 16) & 0xff, ip >> 24);
+}
+
+void initEspNow() {
+    if (esp_now_init() != ESP_OK) {
+        Serial.println("ESP NOW failed to initialize");
+        while (1);
+    }
+    esp_now_register_recv_cb(suDatiRicevuti);
+}
+
+void setup() {
+  Serial.begin(115200);
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disabilita brownout detector
+
+  initWiFi();
+  initEspNow();
+  initBT();
+
+  timer = timerBegin(0, 80, true);
+  timerAttachInterrupt(timer, &onTimer, true);
+  timerAlarmWrite(timer, DELAY_RECONNECT * 1000000, true);
+  timerAlarmEnable(timer);
+
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/html", index_html);
+  });
+   
+  events.onConnect([](AsyncEventSourceClient *client){
+    if(client->lastId()){
+      Serial.printf("Riconnessione! Ultmo messaggio ricevuto: %u\n", client->lastId());
+    }
+    client->send("hello!", NULL, millis(), 10000);
+  });
+  server.addHandler(&events);
+  server.begin();
+}
+ 
+void loop() {
+  static unsigned long lastEventTime = millis();
+  static const unsigned long EVENT_INTERVAL_MS = 5000;
+  if ((millis() - lastEventTime) > EVENT_INTERVAL_MS) {
+    events.send("ping",NULL,millis());
+    lastEventTime = millis();
+  }
+}
+```     
+
+
+
+<br>
+
 
 #### Compilazione con PlatformIO
 
-- Mostrare come configurare il sensore di pressione atmosferica.
-- Illustrare la configurazione del sensore di gas nocivi.
 
 
 ```bash
-git clone git@github.com:sebadima/corso-ESP32-centralina-meteo-trasmettitore.git
+git clone git@github.com:sebadima/corso-ESP32-centralina-meteo_ricevitore.git
 cd corso-ESP32-centralina-meteo-trasmettitore
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
@@ -529,4 +800,4 @@ Ringraziare i lettori per l'attenzione e invitarli a lasciare commenti o domande
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.3.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.1.4.0</p>
