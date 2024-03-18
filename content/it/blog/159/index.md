@@ -838,7 +838,7 @@ Dopo avere letto i dati da ESP-NOw dobbiamo usarli nel nostro server Web e quind
 Poichè si tratta di un argomento un poco complesso lo tratteremo in una sezione successiva. Un altro *pezzo* interessante e la print dell'indirizzo MAC del mittente ottenuta con:
 snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x"
 
-> *snprintf è estremamente simile a sprintf: Dopo tutto, i nomi delle funzioni differiscono solo dal carattere 'n'! Questa è in realtà una convenzione abbastanza comune in C: la funzione con la 'n' richiederà un limite superiore o una dimensione massima come argomento. In genere la versione' n ' delle funzioni è più sicura e meno suscettibile agli overflow del buffer.*
+> *snprintf è estremamente simile a sprintf: Dopo tutto, i nomi delle funzioni differiscono solo dal carattere 'n'! Questa è in realtà una convenzione abbastanza comune in C: la funzione con la 'n' richiede un limite superiore nel nostro caso lo definiamo con "sizeof(macStr)". In genere la versione' n ' delle funzioni è più sicura e meno suscettibile agli overflow del buffer.*
 
 
 ```bash
@@ -869,12 +869,21 @@ void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int l
 ```
 
 
-##### commento 4
+##### La connessione ad ESP-NOW
 
-Questa è forse la parte più importante el programma e usa la istruzione "if (lost_packages >=15)" per attivare la procedura di restart del controller e rilanciare la connessione al canale Wi-Fi esatto.
+In questa sezione è utile notare la funzione "esp_now_register_recv_cb(suDatiRicevuti);" che definesce un *hook* verso "suDatiRicevuti" che verrà invocata in maniera automatica (asincrona) ogni volta che la scheda riceve dei dati. E' importante definire in maniere asincrona le routine di ricezione dati per evitare che la schede sprechi prezioni cicli di clockper controllare continuamente se sono arrivati dei dati.
+
+> *La programmazione asincrona è una tecnica che consente al programma di avviare un'attività potenzialmente di lunga durata e di essere ancora in grado di rispondere ad altri eventi durante l'esecuzione di tale attività, piuttosto che dover attendere che tale attività sia terminata. Una volta che l'attività è terminata, il programma viene presentato con il risultato.*
 
 
 ```bash
+void initEspNow() {
+    if (esp_now_init() != ESP_OK) {
+        Serial.println("ESP NOW failed to initialize");
+        while (1);
+    }
+    esp_now_register_recv_cb(suDatiRicevuti);
+}
 ```
 
 
