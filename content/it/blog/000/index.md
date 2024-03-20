@@ -149,6 +149,22 @@ I sensori sono la parte principale di un impianto IoT perchè determinano le sce
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+## 7.1   Introduzione ad ESPNOW
+
+Abbiamo altre volte sottolineato come la ESP32 rappresenti la scheda controller ideale in progetti dall connettività impegantiva e in questo capitolo vedremo come le peculiarità della cheda cinese (ma di progettazione made in USA) possono risolvere un proble annoso di tuule installazioni IoT, ovvero come comunicare su lunge distanza oltre i 40/50 metri sei normali router Wi-Fi. Il sistema ESP-NOW e il suo prootocollo di trasmissione ci aiuteranno ad amopliare le potenzialitò applicative della sched senza impare troppe cose nuove o perdere la compatibilità con la connessione Wi-Fi. Vedremo inoltre come si possa integrare senza problemi una ESP32CAM (una vesrione dotata di antenna radio) nel nostro progetto pratico senza modificare in alcun modo il programma sorgente.
+
+
+
+7.2   Trovare indirizzo MAC di un ESP32                          - blog/come-iniziare-con-esp32-e-la-rete-mesh-esp-now/
+7.3   Connettere due ESP32 via ESPNOW                            - blog/come-iniziare-con-esp32-e-la-rete-mesh-esp-now/
+7.4   Il problema della connessione simultanea WIFI ed ESPNOW    - blog/la-connessione-simultanea-tra-wifi-ed-espnow/
+
+
+## 7.5   Sommario       
+
+Abbiamo visto come ESP-NOW sia un sistema facile e potente per aggirare le limitazione del Wi-Fi e come esso garantisca prestazioni accettabili lettalmente a costo zero, a parte l'acquisto opzionale di una piccola antenna. Con questa tecnologia specifica per ESP32 ma disponibile in formto sorgente su Github.com, possiamo evitare costi e complicazioni di altre soluzioni come le schede Lo.ra. e i router satellitari.
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
