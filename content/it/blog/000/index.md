@@ -100,6 +100,28 @@ Abbiamo visto in maniera estesa un aspetto estremamente sottovaluto nell'utilizz
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+## 5.1   Introduzione alla programmazione dell'ESP32  
+
+Il cuore di questa pubblicazione è certamente lo sviluppo software in ambiente ESP32. NEl capitolo affronteremo tutte le tematiche e le soluzioni pratiche per agevolare il tuo percorso di crescita. Andremo a fondo nel descrivere i due possibili approcci alla programmazione in ambiente grafico e in modelità testo. fermo restando che si tratta di una utile semplificazione. Nulla impedisce di usare Arduino Ide dalla linea di comando così come PlatformIO funziona egregiamente con Visual Studio Code. Ti presenteremo le due alternative lasciando al lettore la preferenza. Spesso comunque le due modalità di lavoro tendono a divergere e chi preferisce la interfaccia grafica tende a mettere da parte il programma GIT da linea di comando. Secondo noi questo è un errore gravissimo perchè tende alla unga banalizzare l'utilizzo di GIT abbandonando le funzionalità avanzate come branching, merging, rebasing etc che possono fare la differenza nel lavoro di gruppo e non solo. Sta al lettore decidere l'approccio iniziale e sviluppare le sue competenze secondo i gusti e inclinazioni personali.
+
+
+
+5.2   Come installare l'ambiente di sviluppo                     - blog/come-installare-lide-di-arduino/
+5.3   Come eseguire alcuni semplici programmi con Arduino IDE    - breve articolo
+5.4   Installiamo PlatformIO                                     - blog/come-installare-platformio/
+5.5   Come compilare un programma con PlatformIO                 - blog/come-compilare-un-programma-con-platformio/
+5.6   Come installare il programma GIT                           - blog/come-installare-il-programma-git
+5.7   Come funziona il makefile di Platformio                    - blog/come-funziona-il-makefile-di-platformio
+5.8   Alcuni semplici programmi per l'ESP32                      - breve testo
+5.9   Come far lampeggiare il LED interno dell'ESP32             - blog/come-far-lampeggiare-il-led-interno-dellesp32
+5.10  Come collegare un LED esterno ad ESP32                     - blog/come-collegare-un-led-esterno-ad-esp32 
+5.11  Come leggere una porta analogica con ESP32                 - blog/come-leggere-una-porta-analogica-con-esp32/
+
+
+## 5.12  Sommario   
+
+qd
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
