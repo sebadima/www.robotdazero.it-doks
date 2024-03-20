@@ -20,6 +20,9 @@ mermaid:       true
 <hr>
 
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 ## 1.1   Presentazione - "Come programmare con ESP32"               - breve articolo
 
 La automazione elettronica o I.o.T è stata finora un "lusso" per aziende o abitazioni di un certo livello: Seppure sistemi come "Alexa" di Amazon o i dispositivi "SONOFF" abbiano raggiunto livelli di prezzo e diffusione sorprendenti, non possiamo ancora parlare di una vera integrazione dei sistemi o di case robotizzate. I dispositivi commerciali stentano a trovare un procotollo comune di comunicazione e nuovi, migliori sistemi tendono a privilegiare gli algoritmi della AI piuttosto che la pura "esecuzione" di ordini umani.
@@ -47,13 +50,43 @@ L'autore insieme al collega Sergio Rame cura il blog "www.robotdazero.it" attivo
 1.5   Caratteristiche principali dell'ESP32                      - blog/esp32-i-segreti-del-suo-successo/
 1.6   ESP32 vs Arduino                                           - blog/esp32-i-segreti-del-suo-successo/#un-breve...
 
-1.7   Sommario     
+## 1.7   Sommario     
+
+In questo capitolo introduttivo abbiamo visto a fondo le potenzialità dell' ESP32 e accennato ad alcune prerogative di questa sorprendente scheda rispetto ai prodotti concorrenti. Nel resto del libro esploreremo ulteriormente queste peculiarità e vederemo quali accorgimento software sono stati predisposti dalla case madre Espressif per gestire la rete dati lungo raggio ESP-NOW e le modalità di connessione al Wi-Fi
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+     2.1   Qualche breve nozione di elettronica                       - blog/introduzione-alla-elettronica/
+     2.2   La differenza tra corrente e tensione                      - blog/la-differenza-tra-corrente-e-tensione/
+     2.3   Cosa sono le resistenze                                    - blog/cosa-sono-le-resistenze-elettriche/ 
+     2.4   Il codice di colore delle resistenze                       - blog/cosa-sono-le-resistenze-elettriche/ 
+     2.5   I Transistor                                               - blog/introduzione-ai-transistor/
+     2.6   Il TIP120 per pilotare motori e lampade                    - blog/come-pilotare-un-motore-elettrico-usando-ESP32
+     2.7   Sommario                                                   - breve articolo
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
