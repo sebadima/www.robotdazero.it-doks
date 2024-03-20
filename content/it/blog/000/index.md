@@ -128,9 +128,9 @@ Usare Arduino IDE per la programmazione IoT è l'approccio standard alla program
 
 Fino ad ora abbiamo visto quanto può essere immediato leggere un valore di tensione da una resistenza variabile o usare un transistor come un interruttore, ma tali compiti apparentemente misteriosi per un principiante si rivelano di facile soluzione grazie alle librerie standard di ESP32. Spesso la parte "attiva" di tali programmi si riduce ad una sola riga nel "setup()" del codice e una all'interno della funzione "loop()".
 
-Molto diverso è l'approccio software verso i sensori per una serie di motivi. PEr iniziare alcuni funzionano in manoere intelligente e digitale, ma molti forniscono solo un valore di tensione da intrepretare con delle istruzioni non semplicissime. Ad esempio misurare delle distanze con i sensori ad ultrasuoni è un compito tutt'altro che banale perchè coinvolge la velocità del suono al livello del mare. Nei casi più complicati che lasciamo ad altre volumi, il sensore potrebbe leggere distanze ad altezza e temperature dell'aria differenti, fallendo la misurazione precisa.
+Molto diverso è l'approccio software verso i sensori per una serie di motivi. PEr iniziare alcuni funzionano in maniera intelligente e digitale, ma molti forniscono solo un valore di tensione da interpretare con delle istruzioni non semplicissime. Ad esempio misurare delle distanze con i sensori ad ultrasuoni è un compito tutt'altro che banale perchè coinvolge la velocità del suono al livello del mare. Nei casi più complicati che lasciamo ad altre pubblicazioni, il sensore potrebbe essere usato ad altezza e temperature fuori standard, fallendo la misurazione esatta!
 
-In sesori di cui ci occuperemo sono sopratttutto quelli relativi a gas e inquinamento di cui si sente la necessita assoluta nei nostri appartamenti, spesso attrezzati con serbatoi o impianti GPL, metano, propano. Nel capitolo vedremo come risolvere tutta la tematica relativa al loro utilizzo nei nostri programmi e nel progetto conclusivo useremo le conoscenze acquisite per costruire una centralina di controllo dalle caratteristiche professionali.
+In sensori di cui ci occuperemo sono soprattutto quelli relativi a gas e inquinamento di cui si sente la necessita assoluta nei nostri appartamenti, spesso attrezzati con serbatoi o impianti GPL, metano, propano. Nel capitolo vedremo come risolvere tutta la tematica relativa al loro utilizzo nei nostri programmi e nel progetto conclusivo useremo le conoscenze acquisite per costruire una centralina di controllo dalle caratteristiche professionali.
 
 
 
@@ -142,6 +142,9 @@ In sesori di cui ci occuperemo sono sopratttutto quelli relativi a gas e inquina
 
 
 ## 6.6   Sommario
+
+I sensori sono la parte principale di un impianto IoT perchè determinano le scelte che tendiamo a compiere sui comandi e interruttori. In caso di impianti controllati soltanto dalla Intelligenza Artificiale, ipotesi per nulla remota al giorno d'oggi, i sensori sarebbero la parte principale dell'impianto. La loro scelta, lettura e integrazione diventa in questo caso il "core" del programma, su cui spendere le nostre maggiori risorse di tempo, collaudi e controlli.
+
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
