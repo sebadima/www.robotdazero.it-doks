@@ -32,16 +32,16 @@ Se il costo dell'hardware non pare più un problema, anche i sistemi e i siti di
 
 Il panorama del software Open Source ha raggiunto recentemente vette di qualità estrema come testimoniato da programmi Node-RED di IBM o protocolli come MQTT. Il nostro obiettivo è costruire da zero applicazioni mirate per i nostri problemi  e collegarle ad internet fruttando solo dei protocolli "Open". In tal modo non saremo più soggetti alla schiavitù degli aggiornamenti, o alla condivisione forzata dei nostri dati con i colossi americani e non solo.
 
-Abbiamo scelto ESP32 rispetto al più classico Arduino per una seria di motivi; il primo certamente la connettività a tutta prova di questo controller e in seconda battuta per il favorevolissimo rapporto prestazioni/prezzo. Distribuire la elaborazione dati tra dieci ESP32 può costare meno che impiegare una sigola CPU Intel e questo fatto tende a influenzare la topologia dei sistemi IoT: Meno reti e più controller locali, autonomi e integrati.
+Abbiamo scelto ESP32 rispetto al più classico Arduino per una seria di motivi; il primo certamente la connettività a tutta prova di questo controller e in seconda battuta per il favorevolissimo rapporto prestazioni/prezzo. Distribuire la elaborazione dati tra dieci ESP32 può costare meno che impiegare una singola CPU Intel e questo fatto tende a influenzare la topologia dei sistemi IoT: Meno reti e più controller locali, autonomi e integrati.
 
 Seguendo questa filosofia alla fine del libro poterete realizzare una vera centralina di controllo atmosferica con sensori  multipli e condivisione dati via HTML.
 
 
 
+# 1.2   Curriculum                                                 - blog in genere 
 
+L'autore insieme al collega Sergio Rame cura il blog "www.robotdazero.it" attivo dal 2017 e incentrato sulla comune passione per l'IoT e la programmazione in C. Il blog contiene news e articoli introduttivi sull'ESP32 senza trascurare il capostipite Arduino e propone progetti con programmi totalmente free e servizi di elaborazione dati in cloud con il marchio "Kaspian". Il blog si sostenta con la vendita di prodotti stampati in 3D via il nostro ecommerce. Se volete restare aggiornati sulle novità del blog potete iscrivervi alla nostra newsletter e nel contempo usufruire di una agevolazione del 20% sul vostro primo acquisto.
 
-
-1.2   Curriculum                                                 - blog in genere 
 1.3   Introduzione                                               - blog/esp32-i-segreti-del-suo-successo/
 1.4   Cos'è l'ESP32                                              - blog/esp32-i-segreti-del-suo-successo/
 1.5   Caratteristiche principali dell'ESP32                      - blog/esp32-i-segreti-del-suo-successo/
