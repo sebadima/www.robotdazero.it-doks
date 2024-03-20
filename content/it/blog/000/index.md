@@ -62,20 +62,41 @@ In questo capitolo introduttivo abbiamo visto a fondo le potenzialità dell' ESP
 
 ## 2.7   Sommario                                                   - breve articolo
 
-In questo paragrafo abbiamo illustrato le fondamentali nozioni elettronica senza le quali ogni ulteriore progresso sarebbe stato incerto e faticoso. Consigliamo i lettori di rileggere le parti sulla legge di Ohm come un principio fondamentale dell'elettronica. Inoltre sarebbe difficile sopravvalutare il ruolo delle resistenze nei moderni dei circuiti elettronici e per questo motivo i due argomenti sono il necessario passaggio verso la teoria dei semiconduttori. La distinzione tra corrente e tensione, seppure banale in apparenza, riesce sempre ostica non appena si esce dalla teoria e si prova a calcolare le resistenza da utilizzare per limitare la tensione in un circuito reale. 
+In questo paragrafo abbiamo illustrato le fondamentali nozioni elettronica senza le quali ogni ulteriore progresso sarebbe stato incerto e faticoso. Consigliamo i lettori di rileggere le parti sulla legge di Ohm come un principio fondamentale dell'elettronica. Inoltre sarebbe difficile sopravvalutare il ruolo delle resistenze nei moderni dei circuiti elettronici e per questo motivo i due argomenti sono il bagaglio necessario per passare ai circuiti a semiconduttore. La distinzione tra corrente e tensione, seppure banale in apparenza, riesce sempre ostica non appena si esce dalla teoria e si prova a calcolare le resistenza da utilizzare per limitare la tensione in un circuito reale. 
 
 Consiglio vivamente di rileggere questo articolo anche dopo avere intrapreso la "fase" della programmazione in C++. 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-3.1   Come alimentare l'ESP32                                    - breve articolo
+## 3.1   Come alimentare l'ESP32                                    - breve articolo
+
+Quando progettiamo un pur semplice circuito per ESP32 dobbiamo pianificare in anticipo la fonte di alimetazione (singola o lutipla) della scheda. Alcune applicaziojni come sistemi di apertura dei cancelli o axinamento di motorini elettrico possono certamente utilizzare la corrente destinata ai dispositivi ontrollati. Altrettanto semplice è la alimentazione dei dispositivi collegati al nostro PC. Ma non sempre la soluzione è così immediata: Dispositivi mobili come i droni impongono letteralmente l'utilizzo di accumulatori ai polimeri di litio con annessi circuiti di ricarica. Dei sensori a basso consumo possono accontentarsi di un banale *power bank* per smartphone. 
+
+
 3.2   Alimentazione con presa USB                                - blog/esp32-e-la-sua-alimentazione/ 
 3.3   Alimentazione tramite il pin VIN                           - blog/esp32-e-la-sua-alimentazione/
 3.4   Come ridurre il consumo energetico                         - blog/esp32-e-la-sua-alimentazione/
 3.5   La modalità “sleep” dell'ESP32                             - blog/esp32-e-la-sua-alimentazione/
-3.6   Sommario    
+## 3.6   Sommario    
+
+In questo capitolo abbiamo visto principalmente come ridurre il consumo del controller ESP32 e quali tattiche progettuali adottare per lo stesso scopo. In linea di massima consigliamo di provare SEMPRe i vostri progetti con alimentazione USB con un semplice alimentatore per telefonino di buona qualità. Il motivo per cui adottare tale strategia risiede nella semplificazione dello sviluppo: Potete progettare programmi e circuiteria supponendo una tensione stabile a 5V e solo dopo preoccuparvi di integrare il dispositivo con accumulatori al litio o caricabatteria solari.
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+4.1   La manutenzione dell’ESP32                                 - blog/come-resettare-lesp32/
+4.2   Reset immediato                                            - blog/come-resettare-lesp32/
+4.3   Quando resettare completamente                             - blog/come-resettare-lesp32/
+4.4   Come effettuare il reset completo                          - blog/come-resettare-lesp32/
+4.5   Come cancellare la memoria FLASH                           - blog/come-resettare-lesp32/
+
+## 4.6   Sommario    
+
+Abbiamo visto in maniera estesa un aspetto estremamente sottovaluto nell'utilizzo dell'ESP32. La manutenzione di una scheda elettronica appare certamente molto "superflua" se si ignora la complessità di un dispositivi programmabile e le differenti memorie di cui dispone e i loro tipi di funzionamento. Nell'utilizzo reale della scheda infortuni con schede impossibili da programmare sono comuni e aldilà di casi semplici come un cavetto USB difettoso, in certi casi la soluzione migliore può essere il reset completo della scheda. Per i più esperti il controllo con multimetro e oscilloscopio costituisce un ulteriore grado di perizia necessario per un lavoro professionale, noi in questo libro ci siamo limitati ai casi più comuni. Anche la idea di sostutire immediatamente una scheda sospetta è una ipotesi realistica visto il suo bassissimo costo.
+
+
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
