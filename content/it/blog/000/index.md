@@ -167,6 +167,19 @@ Abbiamo visto come ESP-NOW sia un sistema facile e potente per aggirare le limit
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+8.1   La gestione dei sensori ambientali con ESP32               - blog/i-sensori-ambientali-ed-esp32/
+8.2   Come scrivere un server web con ESP32                      - blog/come-scrivere-un-server-web-con-esp32/
+8.3   I sensori compatibili con l'ESP32                          - blog/i-sensori-compatibili-con-esp32/
+8.4   Sensori di temperatura                                     - blog/i-sensori-di-temperatura-per-la-robotica/
+8.5   Sensori di gas tossici                                     - MQ2/MQ135 da /blog/una-centralina-multi-sensore ...
+8.6   Una stazione di monitoraggio ESPNOW + WIFI!!               - blog/una-centralina-meteo-con-esp32-esp-now-e-wi-fi/
+
+## 8.7   Sommario  
+
+In questo capitolo abbiamo visto le differenti categorie di sensori compatibili con ESP32 e come integrare due o più sensori nello stesso progetto. Abbiamo selezionato dei sensori a basso costo e basso consumo: Il progettino finale riesce sorprendentemente ad far funzionare tre sensori e l'ESP32 con una singola USB! Gli insight guadagnati nella lettura del capitolo ti aiuteranno a progettare da solo i tuoi apparati, una soddisfazione maggiore della semplice costruzione dei progetti. Se riuscirai a comprendere appieno questo e il prossimo capitolo (il nono) avrai a disposizione tutto il materiale per estrapolare le tue idee e creare dei dispositivi tuoi e originali.
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
