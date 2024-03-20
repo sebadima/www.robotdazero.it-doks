@@ -36,7 +36,7 @@ Seppure la elettronica sia comprensibile solo facendo ricorso alla fisica nuclea
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 La legge di Ohm, una delle leggi più importanti dell'elettronica, afferma che la corrente (I) che scorre in un circuito è direttamente proporzionale alla tensione (V) applicata e inversamente proporzionale alla resistenza (R) del circuito. La legge si esprime con la seguente formula:
-<br><br>I = V / R<br><br>
+<br><br><strong>I = V / R</strong><br><br>
 Comprendere la teoria dei circuiti e la legge di Ohm è fondamentale per:
 Calcolare la corrente, la tensione e la resistenza in un circuito e per progettare circuiti elettronici con le specifiche desiderate.
 </div>
