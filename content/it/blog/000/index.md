@@ -188,7 +188,7 @@ In questo capitolo abbiamo visto le differenti categorie di sensori compatibili 
 9.3  Scrivere su un display                                      - blog/come-scrivere-su-un-display-lcd-con-esp32/
 9.4  Un Profondimetro digitale impermeabile                      - una-centralina-elettronica-per-controllare ...
 
-## 8.5  Sommario   
+## 9.5  Sommario   
 
 I sensori ad ultrasuoni ormai onnipresenti nelle vetture e in realtà i migliori fra quelli in commercio sono versioni adattate dei sensori per paraurti. Anche le versioni impermeabili derivano stranamente dallo stesso tipo di sensore. Imparare a leggerne e intrpretare il valore ti darà un boost importante nel tuo hobby o nella tua carriera. Per utilizzarli nelle tue creazione ti basterà copiare la parte ade essi dedicata (variabili e istruzione) oppure molto più semlicemente potrai "riciclare" l'intero codice e modificarlo dove ritieni conveniente. L' uso combinato di sensori ad ultrasuino e della modalità "sleep" di ESP32 potrebbe portarti a comode realizzazione ad esempio nella sorveglianza di parchi o ingressi isolati.
 Il sensore ad ultrasuino ad esempio riesce a "risvegliare" ESP32 dalla modalità ad ibernazione e magari inviar eun segnale con ESP-NOW o scattare una foto e salvarla su una Micro-SD. Gli utilizzi pratici di questa utilissime peculiarità di ESP32 sono limitate solo dalla tua fantasia!
@@ -196,11 +196,22 @@ Il sensore ad ultrasuino ad esempio riesce a "risvegliare" ESP32 dalla modalità
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+10.1  Risorse aggiuntive                                          - solo il titolo
+10.2  Link utili                                                  - migliori siti stranieri per IOT ma generici e basta
+10.3  Il nostro account GITHUB                                    - breve articolo e link
+10.4  Aiutaci a crescere sui social                               - breve articolo con link "X" e Linkedin
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+## 11.1  Conclusioni
+
+.jkj
+
+11.3  Aggiornamenti futuri dell'ESP32                             - breve articolo
+11.4  In arrivo il nuovo ESP32-P4   
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 
 
