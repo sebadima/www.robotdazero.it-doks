@@ -17,11 +17,7 @@ mermaid:       true
 
 
 
-<hr>
-
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## 1.1   Presentazione - "Come programmare con ESP32"               - breve articolo
 
@@ -55,38 +51,49 @@ L'autore insieme al collega Sergio Rame cura il blog "www.robotdazero.it" attivo
 In questo capitolo introduttivo abbiamo visto a fondo le potenzialità dell' ESP32 e accennato ad alcune prerogative di questa sorprendente scheda rispetto ai prodotti concorrenti. Nel resto del libro esploreremo ulteriormente queste peculiarità e vederemo quali accorgimento software sono stati predisposti dalla case madre Espressif per gestire la rete dati lungo raggio ESP-NOW e le modalità di connessione al Wi-Fi
 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-     2.1   Qualche breve nozione di elettronica                       - blog/introduzione-alla-elettronica/
-     2.2   La differenza tra corrente e tensione                      - blog/la-differenza-tra-corrente-e-tensione/
-     2.3   Cosa sono le resistenze                                    - blog/cosa-sono-le-resistenze-elettriche/ 
-     2.4   Il codice di colore delle resistenze                       - blog/cosa-sono-le-resistenze-elettriche/ 
-     2.5   I Transistor                                               - blog/introduzione-ai-transistor/
-     2.6   Il TIP120 per pilotare motori e lampade                    - blog/come-pilotare-un-motore-elettrico-usando-ESP32
-     2.7   Sommario                                                   - breve articolo
+2.1   Qualche breve nozione di elettronica                       - blog/introduzione-alla-elettronica/
+2.2   La differenza tra corrente e tensione                      - blog/la-differenza-tra-corrente-e-tensione/
+2.3   Cosa sono le resistenze                                    - blog/cosa-sono-le-resistenze-elettriche/ 
+2.4   Il codice di colore delle resistenze                       - blog/cosa-sono-le-resistenze-elettriche/ 
+2.5   I Transistor                                               - blog/introduzione-ai-transistor/
+2.6   Il TIP120 per pilotare motori e lampade                    - blog/come-pilotare-un-motore-elettrico-usando-ESP32
 
+## 2.7   Sommario                                                   - breve articolo
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+In questo paragrafo abbiamo illustrato le fondamentali nozioni elettronica senza le quali ogni ulteriore progresso sarebbe stato incerto e faticoso. Consigliamo i lettori di rileggere le parti sulla legge di Ohm come un principio fondamentale dell'elettronica. Inoltre sarebbe difficile sopravvalutare il ruolo delle resistenze nei moderni dei circuiti elettronici e per questo motivo i due argomenti sono il necessario passaggio verso la teoria dei semiconduttori. La distinzione tra corrente e tensione, seppure banale in apparenza, riesce sempre ostica non appena si esce dalla teoria e si prova a calcolare le resistenza da utilizzare per limitare la tensione in un circuito reale. 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Consiglio vivamente di rileggere questo articolo anche dopo avere intrapreso la "fase" della programmazione in C++. 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3.1   Come alimentare l'ESP32                                    - breve articolo
+3.2   Alimentazione con presa USB                                - blog/esp32-e-la-sua-alimentazione/ 
+3.3   Alimentazione tramite il pin VIN                           - blog/esp32-e-la-sua-alimentazione/
+3.4   Come ridurre il consumo energetico                         - blog/esp32-e-la-sua-alimentazione/
+3.5   La modalità “sleep” dell'ESP32                             - blog/esp32-e-la-sua-alimentazione/
+3.6   Sommario    
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
