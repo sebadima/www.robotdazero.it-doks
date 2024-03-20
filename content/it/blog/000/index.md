@@ -24,24 +24,21 @@ mermaid:       true
 
 La automazione elettronica o I.o.T è stata finora un "lusso" per aziende o abitazioni di un certo livello: Seppure sistemi come "Alexa" di Amazon o i dispositivi "SONOFF" abbiano raggiunto livelli di prezzo e diffusione sorprendenti, non possiamo ancora parlare di una vera integrazione dei sistemi o di case robotizzate. I dispositivi commerciali stentano a trovare un procotollo comune di comunicazione e nuovi, migliori sistemi tendono a privilegiare gli algoritmi della AI piuttosto che la pura "esecuzione" di ordini umani.
 
-Non sappiamo come saranno i nuovi sistemi di automazione ma la disponibilità di scehede come "Arduino" o ESP32 ci permette già adesso di risolvere a costi limitati dei singoli, preziosi compiti per cui non vogliamo aspettare le soluzioni universali di "Google Home", "Alexa" o Samsung "SmartThings".
+Non sappiamo come saranno i nuovi sistemi di automazione ma la disponibilità di schede come "Arduino" o ESP32 ci permette già adesso di risolvere a costi limitati dei singoli, preziosi compiti per cui non vogliamo aspettare le soluzioni universali di "Google Home", "Alexa" o Samsung "SmartThings".
 
 Tutti questi sistemi possono mantenere bassi costi grazie alla produzione in scala massiccia di CPU e controller e sarebbe un peccato lasciare solo alle multinazionali lo sfruttamento di questo promettentissimo sviluppo della tecnologia
 
-Se il costo dell'hardware non parepiù un problema, anche i sistemi e i cocisl di condivsione ipo "Gthub.com" consentono ai singoli o a microazeinde di creare e diffonere programmi a costro sero. In questa pubblicazione vederemo come sia possibili risolvere singoli proble dell Iot usando programmi Open Source o gratis per essere più chiari.
+Se il costo dell'hardware non pare più un problema, anche i sistemi e i siti di condivisione tipo "Github.com" consentono ai singoli e micro aziende di progettare programmi a costo zero. In questo libro vederemo come sia possibile costruire alcune aplicazioni dell' Iot usando solo programmi Open Source o gratis per essere più chiari.
 
-Il panorama del sofware Open Source ha raggiunto recentemente vette di qualità estrema come testimonato da applicazioni come  Node-RED di IBM o Flutter di Google. La nostra idea è costruire da zero applicazioni importamti per i nostri scopi e collegarle ad altri sistemi sfruttando dei procolli "Open" e condivisi. In questo modo non saremo puù soggetti algli aggiornamenti dei grosii produttori o alla condivisione forzata dei nostri dati con i colossi d'oltre ocano e non solo.
+Il panorama del software Open Source ha raggiunto recentemente vette di qualità estrema come testimoniato da programmi Node-RED di IBM o protocolli come MQTT. Il nostro obiettivo è costruire da zero applicazioni mirate per i nostri problemi  e collegarle ad internet fruttando solo dei protocolli "Open". In tal modo non saremo più soggetti alla schiavitù degli aggiornamenti, o alla condivisione forzata dei nostri dati con i colossi americani e non solo.
 
-ESP32. 
-la domotica.
+Abbiamo scelto ESP32 rispetto al più classico Arduino per una seria di motivi; il primo certamente la connettività a tutta prova di questo controller e in seconda battuta per il favorevolissimo rapporto prestazioni/prezzo. Distribuire la elaborazione dati tra dieci ESP32 può costare meno che impiegare una sigola CPU Intel e questo fatto tende a influenzare la topologia dei sistemi IoT: Meno reti e più controller locali, autonomi e integrati.
 
-E il software è duplicabile 
+Seguendo questa filosofia alla fine del libro poterete realizzare una vera centralina di controllo atmosferica con sensori  multipli e condivisione dati via HTML.
 
-ESP32 vs arduino
 
-I costi e la connettivita
 
-ESP32 come portale verso la automazione delle singole case
+
 
 
 1.2   Curriculum                                                 - blog in genere 
