@@ -102,7 +102,7 @@ Abbiamo visto in maniera estesa un aspetto estremamente sottovaluto nell'utilizz
 
 ## 5.1   Introduzione alla programmazione dell'ESP32  
 
-Il cuore di questa pubblicazione è certamente lo sviluppo software in ambiente ESP32. NEl capitolo affronteremo tutte le tematiche e le soluzioni pratiche per agevolare il tuo percorso di crescita. Andremo a fondo nel descrivere i due possibili approcci alla programmazione in ambiente grafico e in modelità testo. fermo restando che si tratta di una utile semplificazione. Nulla impedisce di usare Arduino Ide dalla linea di comando così come PlatformIO funziona egregiamente con Visual Studio Code. Ti presenteremo le due alternative lasciando al lettore la preferenza. Spesso comunque le due modalità di lavoro tendono a divergere e chi preferisce la interfaccia grafica tende a mettere da parte il programma GIT da linea di comando. Secondo noi questo è un errore gravissimo perchè tende alla unga banalizzare l'utilizzo di GIT abbandonando le funzionalità avanzate come branching, merging, rebasing etc che possono fare la differenza nel lavoro di gruppo e non solo. Sta al lettore decidere l'approccio iniziale e sviluppare le sue competenze secondo i gusti e inclinazioni personali.
+Il cuore di questa pubblicazione è certamente lo sviluppo software in ambiente ESP32. NEl capitolo affronteremo tutte le tematiche e le soluzioni pratiche per agevolare il tuo percorso di crescita. Andremo a fondo nel descrivere i due possibili approcci alla programmazione in ambiente grafico e in modalità testo. fermo restando che si tratta di una utile semplificazione. Nulla impedisce di usare Arduino Ide dalla linea di comando così come PlatformIO funziona egregiamente con Visual Studio Code. Ti presenteremo le due alternative lasciando al lettore la preferenza. Spesso comunque le due modalità di lavoro tendono a divergere e chi preferisce la interfaccia grafica tende a mettere da parte il programma GIT da linea di comando. Secondo noi questo è un errore gravissimo perchè tende alla unga banalizzare l'utilizzo di GIT abbandonando le funzionalità avanzate come branching, merging, rebasing etc che possono fare la differenza nel lavoro di gruppo e non solo. Sta al lettore decidere l'approccio iniziale e sviluppare le sue competenze secondo i gusti e inclinazioni personali.
 
 
 
@@ -120,7 +120,7 @@ Il cuore di questa pubblicazione è certamente lo sviluppo software in ambiente 
 
 ## 5.12  Sommario   
 
-qd
+Usare Arduino IDE per la programmazione IoT è l'approccio standard alla programmazione Iot e certamente questo tool ha  grandi doti di flessibilità e potenza. Detto questo, chi volesse usare GIT in maniera estesa vorrà come conseguenza provare anche PlatformIO la interfaccia a linea di comando. con PlatformIO abbiamo il grande vantaggio di "fissare" tipo e versione delle librerie usate dal programma. A tale scopo ci viene in aiuto il file di configurazione platformio.ini. Con platformio.ini possiamo letteralmente installare un programma facendo "copia e incolla" di tre righe di testo. Molte persone potrebbero essere attirate dalla semplicità di questa idea e abbandonare Arduino IDE.
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
