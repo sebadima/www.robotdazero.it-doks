@@ -205,10 +205,12 @@ Il sensore ad ultrasuino ad esempio riesce a "risvegliare" ESP32 dalla modalità
 
 ## 11.1  Conclusioni
 
-.jkj
+In questo libro abbiamo voluto darti le informazuoni necessarie per partire con l'Iot ma soprattutto creare dei progetti originali per il tuo hobby o professione. Il nostro intento non era solo "spiegarti" dei pezzi di codice ma forniri dei programmi gia pronti e formalmente corretti da modificare ed ampliare a tuo piacere. Nn esisytono infatti limiti legali legati al codice fornito con il libro e sei libero di rivenderlo a terzi senza limitazioni.
 
-11.3  Aggiornamenti futuri dell'ESP32                             - breve articolo
-11.4  In arrivo il nuovo ESP32-P4   
+Questa possibilità vale, secondo noi, l'intero prezzo del volume ma...
+Per riuscire nel tuo legittimo intento potresti leggere e rileggere i capitoli tre e cinque dedicati rispettivamente alla alimentazione dell'ESP32 e ai tool di compilazione. Dalla nostra esperienza e per i molti errori che noi stessi abbimo commesso nell'utilizzo di ESP32, possiamo dirti con una qualche certezza che sono questio gli apsetti piu trascurati e insidiodi dell'IOT. In particolare l'amboente di sviluppo grafico o testuale tende a rallentare enormemente lo sviluppo dei programmi se non è stato compreso appieno. Il tempo che uerai per apprendere i tute le teniche di compilazione non sarà mai tempo perso ma risparmiato nella pratica reale. Vogliamo lasciarti con l'augurio di un buon lavoro e di migliori successi con il tuo ESP32!
+
+11.2  In arrivo il nuovo ESP32-P4   
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
