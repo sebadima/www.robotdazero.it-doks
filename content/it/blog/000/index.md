@@ -17,7 +17,7 @@ mermaid:       true
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## 1.1   Presentazione - "Come programmare con ESP32"               - breve articolo
 
@@ -51,7 +51,7 @@ L'autore insieme al collega Sergio Rame cura il blog "www.robotdazero.it" attivo
 In questo capitolo introduttivo abbiamo visto a fondo le potenzialità dell' ESP32 e accennato ad alcune prerogative di questa sorprendente scheda rispetto ai prodotti concorrenti. Nel resto del libro esploreremo ulteriormente queste peculiarità e vederemo quali accorgimento software sono stati predisposti dalla case madre Espressif per gestire la rete dati lungo raggio ESP-NOW e le modalità di connessione al Wi-Fi
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 2.1   Qualche breve nozione di elettronica                       - blog/introduzione-alla-elettronica/
 2.2   La differenza tra corrente e tensione                      - blog/la-differenza-tra-corrente-e-tensione/
@@ -66,7 +66,7 @@ In questo paragrafo abbiamo illustrato le fondamentali nozioni elettronica senza
 
 Consiglio vivamente di rileggere questo articolo anche dopo avere intrapreso la "fase" della programmazione in C++. 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## 3.1   Come alimentare l'ESP32                                    - breve articolo
 
@@ -82,7 +82,7 @@ Quando progettiamo un pur semplice circuito per ESP32 dobbiamo pianificare in an
 In questo capitolo abbiamo visto principalmente come ridurre il consumo del controller ESP32 e quali tattiche progettuali adottare per lo stesso scopo. In linea di massima consigliamo di provare SEMPRe i vostri progetti con alimentazione USB con un semplice alimentatore per telefonino di buona qualità. Il motivo per cui adottare tale strategia risiede nella semplificazione dello sviluppo: Potete progettare programmi e circuiteria supponendo una tensione stabile a 5V e solo dopo preoccuparvi di integrare il dispositivo con accumulatori al litio o caricabatteria solari.
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 4.1   La manutenzione dell’ESP32                                 - blog/come-resettare-lesp32/
@@ -98,7 +98,7 @@ Abbiamo visto in maniera estesa un aspetto estremamente sottovaluto nell'utilizz
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## 5.1   Introduzione alla programmazione dell'ESP32  
 
@@ -118,25 +118,45 @@ Il cuore di questa pubblicazione è certamente lo sviluppo software in ambiente 
 5.11  Come leggere una porta analogica con ESP32                 - blog/come-leggere-una-porta-analogica-con-esp32/
 
 
-## 5.12  Sommario   
+## 5.12 Sommario   
 
 Usare Arduino IDE per la programmazione IoT è l'approccio standard alla programmazione Iot e certamente questo tool ha  grandi doti di flessibilità e potenza. Detto questo, chi volesse usare GIT in maniera estesa vorrà come conseguenza provare anche PlatformIO la interfaccia a linea di comando. con PlatformIO abbiamo il grande vantaggio di "fissare" tipo e versione delle librerie usate dal programma. A tale scopo ci viene in aiuto il file di configurazione platformio.ini. Con platformio.ini possiamo letteralmente installare un programma facendo "copia e incolla" di tre righe di testo. Molte persone potrebbero essere attirate dalla semplicità di questa idea e abbandonare Arduino IDE.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## 6.1   Primi passi con i sensori
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Fino ad ora abbiamo visto quanto può essere immediato leggere un valore di tensione da una resistenza variabile o usare un transistor come un interruttore, ma tali compiti apparentemente misteriosi per un principiante si rivelano di facile soluzione grazie alle librerie standard di ESP32. Spesso la parte "attiva" di tali programmi si riduce ad una sola riga nel "setup()" del codice e una all'interno della funzione "loop()".
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Molto diverso è l'approccio software verso i sensori per una serie di motivi. PEr iniziare alcuni funzionano in manoere intelligente e digitale, ma molti forniscono solo un valore di tensione da intrepretare con delle istruzioni non semplicissime. Ad esempio misurare delle distanze con i sensori ad ultrasuoni è un compito tutt'altro che banale perchè coinvolge la velocità del suono al livello del mare. Nei casi più complicati che lasciamo ad altre volumi, il sensore potrebbe leggere distanze ad altezza e temperature dell'aria differenti, fallendo la misurazione precisa.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+In sesori di cui ci occuperemo sono sopratttutto quelli relativi a gas e inquinamento di cui si sente la necessita assoluta nei nostri appartamenti, spesso attrezzati con serbatoi o impianti GPL, metano, propano. Nel capitolo vedremo come risolvere tutta la tematica relativa al loro utilizzo nei nostri programmi e nel progetto conclusivo useremo le conoscenze acquisite per costruire una centralina di controllo dalle caratteristiche professionali.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+6.2   Come leggere un semplice sensore - DHT11                   - blog/come-leggere-il-sensore-dht11-con-esp32/
+6.3   I sensori compatibili con l'ESP32                          - solo breve introduzione
+6.4   Sensori di temperatura                                     - blog/i-sensori-di-temperatura-per-la-robotica/
+6.5   Centralina multi sensore                                   - blog/una-centralina-multi-sensore-con-esp32/
+
+
+## 6.6   Sommario
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
