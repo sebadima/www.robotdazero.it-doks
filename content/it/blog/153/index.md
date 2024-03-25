@@ -126,6 +126,8 @@ A parte la somiglianza con l'MQ-2 e quindi la estrema robustezza del case metall
 
 ## Il sensore DHT11
 
+<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/206.jpg" alt="Sensore di temperatura e umidità DHT11">
+
 Il sensore <a href="/blog/come-leggere-il-sensore-dht11-con-esp32/">DHT11</a> è un <a href="/blog/i-sensori-di-temperatura-per-la-robotica/">sensore</a> digitale che può svolgere il doppio ruolo di rilevazione della temperatura e della umidità: vediamo brevemente come funziona in entrambi i casi.
 
 #### 1 - Sensore di temperatura
