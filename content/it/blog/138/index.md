@@ -239,32 +239,51 @@ La maggior parte di questi pin supporta anche l'uso di pull-up interno (in sosta
 
 ### Come settare i pin digitali in "OUTPUT"
 
-È possibile utilizzare i pin GPIO in OUTPUT per controllare qualsiasi cosa, da dispositivi con minimo assorbimento come un LED, fino a dispositivi di elevato wattaggio utilizzando dei relay o dei tiristori, ecc. Facciamo l'esempio classico in cui vogliamo accendere e spegnere un LED esterno, ovviamente aggiungendo una resistenza di 330 Ohm!
+È possibile utilizzare i pin GPIO in OUTPUT per controllare qualsiasi cosa, da dispositivi con minimo assorbimento come un LED, fino a dispositivi di elevato wattaggio utilizzando dei relay o dei tiristori. Facciamo l'esempio classico in cui vogliamo accendere e spegnere un LED esterno, ovviamente aggiungendo una resistenza di 330 Ohm!
 
-Prima di tutto, è necessario definire il pin GPIO per operare in modalità di output nella funzione "setup()", utilizzando la funzione Arduino "pinMode()" come mostrato di seguito:
+Prima di tutto, è necessario definire il pin GPIO per operare in modalità di output nella funzione "setup()" e useremo la funzione Arduino "pinMode()" come mostrato di seguito:
 
 ```bash
 pinMode(GPIO_pin, OUTPUT);
 ```
-Quindi puoi settare il pin **HIGH** o **LOW** per cambiarne lo stato digitale. Puoi accendere il LED scrivendo HIGH o 1, vengono interpretati allo stesso modo. <br>Per spegnerlo ovviamente puoi scrivere un LOW o 0. In entrambi casi si utilizza la funzione Arduino "digitalWrite()" come vedi in basso:
+Quindi puoi settare il pin **HIGH** o **LOW** per cambiarne lo stato digitale. Puoi accendere il LED scrivendo HIGH o 1: Vengono interpretati allo stesso modo. <br>Per spegnerlo ovviamente puoi scrivere un LOW o 0. In entrambi casi si utilizza la funzione Arduino "digitalWrite()" come vedi in basso:
 
 ```bash
-digitalWrite(GPIO_pin, HIGH); // Accendi 
-digitalWrite(GPIO_pin, LOW);  // Spegni
+digitalWrite(GPIO_pin, HIGH); // Accendi il LED
+digitalWrite(GPIO_pin, LOW);  // Spegni il LED
 ```
 
 
 
 
 
-##### Ingresso solo pin (senza resistente di PULLUP)
 
-- GPIO 34
-- GPIO 35
-- GPIO 36
-- GPIO 39
+### Come settare i pin digitali in "INPUT"
 
-##### Pin con INPUT_PULLUP (dispongono di una resistenza di 10KOhm)
+I pin dell'ESP32 possono essere usati in modalità di INPUT per leggere segnali digitali esterni. I segnali possono provenire da vari dispositivi come un piccolo pulsante, un sensore di prossimità digitale o magari un sensore di gas digitale.
+
+Proprio come per la modalità di OUTPUT, è necessario prima definire il pin GPIO usando la funzione Arduino "pinMode()" come mostrato di seguito:
+
+
+```bash
+pinMode(GPIO_pin, INPUT);
+```
+
+Supponiamo di volere legere un normale tast: Dopo il collegamento elettrico, possiamo leggere il segnale usando la funzione Arduino "digitalRead()" come nella riga successiva.
+
+```bash
+BTN_State = digitalRead(GPIO_pin);
+```
+
+E' questo è tutto! Come vedi la libreria di Arduino trasforma la intera operazione in una singola riga di codice. Il problema, casomai, potrebbe nascere dal punto di vista elettrico perchè il tasto potrebbe richiedere una resistenza di "pull-up" o "pull-down" per stabilizzare la tensione letta dal GPIO del controller.
+
+
+
+> *Lasciare il pin di ingresso digitale **fluttuante** è una pratica estremamente "scorretta": l'ESP32 rileverà molto rumore elettrico e la unità di lettura del chip potrebbe non distinguere tra la tensione a 0 o 1. La soluzione consiste nell'inserire una resistenza da 10 kOhm tra il pin di GPIO e la alimentazione (+3.3V). In questo caso parliamo di resistenza di "pull-up".*
+
+##### Alcuni pin dell'ESP32 sono già forniti di una resistenza di "pull-up" e non necessitano di alcuna resistenza aggiuntiva:
+
+Pin con INPUT_PULL-UP (dispongono di una resistenza di 10KOhm):
 
 - GPIO14
 - GPIO16
@@ -275,7 +294,8 @@ digitalWrite(GPIO_pin, LOW);  // Spegni
 - GPIO22
 - GPIO23
 
-##### Pin senza pull up interno
+##### Altri pin invece non ne sono dotati e richiedono una resistenza esterna:
+
 
 - GPIO13
 - GPIO25
@@ -284,8 +304,10 @@ digitalWrite(GPIO_pin, LOW);  // Spegni
 - GPIO32
 - GPIO33
 
-##### ADC (convertitori analogico-digitali)
-Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utilizzati per interagire con sensori analogici, come i pin analogici di Arduino.
+
+### I pin analogici
+
+Alcuni dei pin elencati nel diagramma di ESP32 possono essere utilizzati per interagire con sensori analogici, come i classici pin analogici di Arduino.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">
 🔑 <strong>I pin analogici dell'ESP32</strong> hanno una risoluzione di 12 bit (0-4096). Se la tensione osservata è <strong>0</strong> il valore rilevato dalla CPU è <strong>0</strong>. Se la tensione arriva sul pin a <strong>3,3V</strong> il valore rilevato diventa <strong>4096</strong>.
@@ -312,12 +334,12 @@ Alcuni dei pin elencati nel diagramma di piedinatura possono anche essere utiliz
 - ADC2_CH8 (GPIO 25)
 - ADC2_CH9 (GPIO 26)
 
-
-#### DAC (Convertitori da digitali ad analogici)
-I segnali PWM sono utilizzati sulla maggior parte delle schede Arduino per generare tensioni analogiche. L'ESP32 ha due convertitori da digitale ad analogico a 8 bit.
-
 ## Il successo commerciale dell'ESP32
-Con queste premesse possiamo capire come la scheda abbia scalato le classifiche di vendita dell'IOT. Seppure venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie. Gli appassionati che vogliono provare il nuovo sistema possono dunque godere delle maggiori prestazioni senza perdere tempo con nuovi software.
+Con una tale *connettività* e potenza possiamo capire come ESP32 abbia scalato le classifiche di vendita dell'IOT. 
+
+> *Seppure la nostra scheda venga percepita come una **alternativa** rispetto ad Arduino, ne eredita moltissimi tools e librerie.*
+
+Gli appassionati che vogliono provare questo controller possono dunque giovarsi delle maggiori prestazioni senza dover imparare nuovi software e tools.
 
 #### Ultimi arrivi della famiglia ESP32
 Il microcontroller <a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a> promette di migliorare ancora le prestazioni della nostra scheda. Con una CPU RISC-V dual-core con clock di 400 MHz e 768KB di SRAM on-chip il nuovo sistema garantisce elevate prestazioni e una più facile connessione di fotocamere ad alta risoluzione con protocollo MIPI-CSI.
