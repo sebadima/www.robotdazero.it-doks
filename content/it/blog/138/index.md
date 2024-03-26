@@ -345,4 +345,4 @@ Gli appassionati che vogliono provare questo controller possono dunque giovarsi 
 Il microcontroller <a href="https://www.robotdazero.it/blog/in-arrivo-il-nuovo-esp32-p4/" target="_blank">ESP32-P4</a> promette di migliorare ancora le prestazioni della nostra scheda. Con una CPU RISC-V dual-core con clock di 400 MHz e 768KB di SRAM on-chip il nuovo sistema garantisce elevate prestazioni e una più facile connessione di fotocamere ad alta risoluzione con protocollo MIPI-CSI.
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.2.4</p>
+<p style="font-size: 0.80em;">Robotdazero.it -  post - R.138.1.3.2</p>
