@@ -231,6 +231,32 @@ La maggior parte di questi pin supporta anche l'uso di pull-up interno (in sosta
 
 > **Il modulo WROOM ESP32 ha 25 pin GPIO** e la corrente massima assorbita per un singolo GPIO è 40mA secondo la sezione "Condizioni operative consigliate" nella scheda tecnica dell'ESP32.
 
+
+
+
+
+
+
+### Come settare i pin digitali in "OUTPUT"
+
+È possibile utilizzare i pin GPIO in OUTPUT per controllare qualsiasi cosa, da dispositivi con minimo assorbimento come un LED, fino a dispositivi di elevato wattaggio utilizzando dei relay o dei tiristori, ecc. Facciamo l'esempio classico in cui vogliamo accendere e spegnere un LED esterno, ovviamente aggiungendo una resistenza di 330 Ohm!
+
+Prima di tutto, è necessario definire il pin GPIO per operare in modalità di output nella funzione "setup()", utilizzando la funzione Arduino "pinMode()" come mostrato di seguito:
+
+```bash
+pinMode(GPIO_pin, OUTPUT);
+```
+Quindi puoi settare il pin **HIGH** o **LOW** per cambiarne lo stato digitale. Puoi accendere il LED scrivendo HIGH o 1, vengono interpretati allo stesso modo. <br>Per spegnerlo ovviamente puoi scrivere un LOW o 0. In entrambi casi si utilizza la funzione Arduino "digitalWrite()" come vedi in basso:
+
+```bash
+digitalWrite(GPIO_pin, HIGH); // Accendi 
+digitalWrite(GPIO_pin, LOW);  // Spegni
+```
+
+
+
+
+
 ##### Ingresso solo pin (senza resistente di PULLUP)
 
 - GPIO 34
