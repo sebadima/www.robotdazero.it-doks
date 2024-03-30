@@ -296,6 +296,12 @@ void loop() {
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/207.jpg" alt="Outuput del programma per controllare la qualità della aria con i sensori di GAS MQ-2 e MQ-135">
 
+<br>
+<br>
+
+<img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/209.png" alt="Secondo Outuput del programma per controllare la qualità della aria">
+
+
 
 ### Come compilare "main.ino" con Arduino IDE
 

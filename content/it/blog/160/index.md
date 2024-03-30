@@ -6,7 +6,7 @@ date:          2024-03-16T09:19:42+01:00
 lastmod:       2024-03-16T09:19:42+01:00
 draft:         false
 weight:        50
-images:        ["header.webp"]
+images:        ["header.jpeg"]
 categories:    ["News"]
 tags:          ["motori", "ESP32", "automazione"]
 contributors:  ["sergio rame"]
@@ -102,8 +102,9 @@ void motorOnThenOff()
   digitalWrite(motorPin, LOW);  
   // delay for offTime milliseconds
   delay(offTime);               
-}```
+}
+```
 
 <br>
 <br>
-<p style="font-size: 0.75em;">R.160.0.21</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.160.0.5.1</p>
