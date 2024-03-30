@@ -1,32 +1,37 @@
 ---
-title: "Usiamo la ESP32 Cam  come una telecamera di sorveglianza"
-description: "Usiamo la ESP32 Cam  come una telecamera di sorveglianza"
-excerpt: "In questo post vedremo come utilizzare la scheda ESP32 Cam per controllare gli angoli nascosti della nostra casa o gli accessi della nostra azienda. La OV2640 Cam è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
+title:       "Usiamo la ESP32 CAM come una telecamera di sorveglianza"
+description: "Usiamo la ESP32 CAM come una telecamera di sorveglianza"
+excerpt: "In questo post vedremo come utilizzare la scheda ESP32 CAM per controllare gli angoli nascosti della nostra casa o gli accessi della nostra azienda. La OV2640 CAM è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
 date:    2024-03-28T09:19:42+01:00
 lastmod: 2024-03-28T09:19:42+01:00
-draft: truee
+draft: true
 weight: 50
 images: ["header.jpeg"]
 categories: ["News"]
-tags: ["OV2640", "ESP32", "sorveglianza", "programmazione"]
-contributors: ["sergio rame"]
+tags: ["OV2640", "ESP32CAM", "ESP32", "sorveglianza", "programmazione"]
+contributors: ["sebadima"]
 pinned: false
 homepage: false
-mermaid: true
+mermaid: false
 ---
 
 
 
 <hr>
 
-## Usiamo la ESP32 Cam per ESP32 per sorvegliare la vettura
+```bash
+https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en&gl=US&pli=1
 
-La ESP32 nella versione con la OV2640 Cam è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare nel link in basso a 12~13 euro su Amazon o prezzi ancora più bassi su Aliexpress.
-Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di auto o accessi. Si può connettere al WI-fi se disponibile o meglio ancora ad un smartphone con connessione dati, ormai disponibile a basso costo. 
+```
 
-Possiamo usarla con una connessione remota via smarphone per controllare la vettura in parcheggio oppure per monitorare qualche angolo nascosto delle nostra cassa/giardino se possiamo usare la connessione Wi-fi. Se volete partire con i componenti da noi utilizzati puoi acquistare il KIT completo sul nostro ecommerce, oppure utilizzare una ESP32-Cam in tuo possesso e caricare il programma free di Robotdazero. 
 
-> **Poiché la registrazione dei video potrebbe** in certi casi scaricare la batteria abbiamo pensato ad una versione *soft* del sistema di monitoraggio, con una serie di accortezze per risparmiare la batteria e avere delle foto ad intervalli di 10 secondi circa.
+## Usiamo la ESP32 Cam per ESP32 per sorvegliare i punti sensibili
+
+La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare su Amazon /trovi il link in basso tra i materiali ncessari) o a prezzi ancora più bassi su Aliexpress. Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di corridoi, accessi, luogi bui perche è dotata di un LED interno autonomo. Si può connettere al WI-fi senza necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
+
+Per sorvegliare zone multiple potete acquistare più esemplari della CAM ed ognuno di essi sarà in grado di ottenere il suo indirizzo IP dal router fino ad un massimo di 128 telecamere. Per installazioni "interne" potete semplicemente adoperare la scheda "al naturale" ma per installazioni su balconi o nel prospetto dei "villini" in campagna ti suggerisco di utilizzare un piccolo box di derivazione tipo eletticista oppure di acquistare nel nostro ecommerce il case in 3D progettato appositamente per ottenere il minimo ingombro e la massima discrezione.
+
+
 
 ### Materiali necessari
 
@@ -102,18 +107,10 @@ Flash: [=====     ]  51.8% (used 1629385 bytes from 3145728 bytes)
 #include <WiFi.h>
 #include <WiFiManager.h>
 
-//
-// WARNING!!! PSRAM IC required for UXGA resolution and high JPEG quality
-//            Ensure ESP32 Wrover Module or other board with PSRAM is selected
-//            Partial images will be transmitted if image exceeds buffer size
-//
-//            You must select partition scheme from the board menu that has at least 3MB APP space.
-//            Face Recognition is DISABLED for ESP32 and ESP32-S2, because it takes up from 15 
-//            seconds to process single frame. Face Detection is ENABLED if PSRAM is enabled as well
-
 // ===================
 // Select camera model
 // ===================
+
 //#define CAMERA_MODEL_WROVER_KIT // Has PSRAM
 //#define CAMERA_MODEL_ESP_EYE // Has PSRAM
 //#define CAMERA_MODEL_ESP32S3_EYE // Has PSRAM
@@ -122,33 +119,19 @@ Flash: [=====     ]  51.8% (used 1629385 bytes from 3145728 bytes)
 //#define CAMERA_MODEL_M5STACK_WIDE // Has PSRAM
 //#define CAMERA_MODEL_M5STACK_ESP32CAM // No PSRAM
 //#define CAMERA_MODEL_M5STACK_UNITCAM // No PSRAM
-#define CAMERA_MODEL_AI_THINKER // Has PSRAM
 //#define CAMERA_MODEL_TTGO_T_JOURNAL // No PSRAM
 //#define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
-// ** Espressif Internal Boards **
 //#define CAMERA_MODEL_ESP32_CAM_BOARD
 //#define CAMERA_MODEL_ESP32S2_CAM_BOARD
 //#define CAMERA_MODEL_ESP32S3_CAM_LCD
 //#define CAMERA_MODEL_DFRobot_FireBeetle2_ESP32S3 // Has PSRAM
 //#define CAMERA_MODEL_DFRobot_Romeo_ESP32S3 // Has PSRAM
-#include "camera_pins.h"
+#define CAMERA_MODEL_AI_THINKER // Has PSRAM
 
-// ===========================
-// Enter your WiFi credentials
-// ===========================
-const char* ssid = "D-Link-3D1BBF";
-const char* password = "p2mxsajrqwkd9c7g";
+#include "camera_pins.h"
 
 void startCameraServer();
 void setupLedFlash(int pin);
-
-// Set your Static IP address
-IPAddress local_IP(192, 168, 1, 201);
-// Set your Gateway IP address
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 0, 0);
-IPAddress primaryDNS(8, 8, 8, 8); //optional
-IPAddress secondaryDNS(8, 8, 4, 4); //optional
 
 
 
@@ -176,19 +159,19 @@ void setup() {
   config.pin_sccb_scl = SIOC_GPIO_NUM;
   config.pin_pwdn = PWDN_GPIO_NUM;
   config.pin_reset = RESET_GPIO_NUM;
-  config.xclk_freq_hz = 20000000;
+  config.xclk_freq_hz = 2000000;
   config.frame_size = FRAMESIZE_UXGA;
   config.pixel_format = PIXFORMAT_JPEG; // for streaming
   //config.pixel_format = PIXFORMAT_RGB565; // for face detection/recognition
   config.grab_mode = CAMERA_GRAB_WHEN_EMPTY;
   config.fb_location = CAMERA_FB_IN_PSRAM;
   config.jpeg_quality = 12;
-  config.fb_count = 1;
-  
+  config.fb_count = 10;
+
   // if PSRAM IC present, init with UXGA resolution and higher JPEG quality
   //                      for larger pre-allocated frame buffer.
-  if(config.pixel_format == PIXFORMAT_JPEG){
-    if(psramFound()){
+  if (config.pixel_format == PIXFORMAT_JPEG) {
+    if (psramFound()) {
       config.jpeg_quality = 10;
       config.fb_count = 2;
       config.grab_mode = CAMERA_GRAB_LATEST;
@@ -200,18 +183,18 @@ void setup() {
   } else {
     // Best option for face detection/recognition
     config.frame_size = FRAMESIZE_240X240;
-#if CONFIG_IDF_TARGET_ESP32S3
+    #if CONFIG_IDF_TARGET_ESP32S3
     config.fb_count = 2;
-#endif
+    #endif
   }
 
-#if defined(CAMERA_MODEL_ESP_EYE)
+  #if defined(CAMERA_MODEL_ESP_EYE)
   pinMode(13, INPUT_PULLUP);
   pinMode(14, INPUT_PULLUP);
-#endif
+  #endif
 
   // camera init
-  esp_err_t err = esp_camera_init(&config);
+  esp_err_t err = esp_camera_init( & config);
   if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x", err);
     return;
@@ -219,71 +202,60 @@ void setup() {
 
   sensor_t * s = esp_camera_sensor_get();
   // initial sensors are flipped vertically and colors are a bit saturated
-  if (s->id.PID == OV3660_PID) {
-    s->set_vflip(s, 1); // flip it back
-    s->set_brightness(s, 1); // up the brightness just a bit
-    s->set_saturation(s, -2); // lower the saturation
+  if (s -> id.PID == OV3660_PID) {
+    s -> set_vflip(s, 1); // flip it back
+    s -> set_brightness(s, 1); // up the brightness just a bit
+    s -> set_saturation(s, -2); // lower the saturation
   }
   // drop down frame size for higher initial frame rate
-  if(config.pixel_format == PIXFORMAT_JPEG){
-    s->set_framesize(s, FRAMESIZE_QVGA); // old value
-    s->set_framesize(s, FRAMESIZE_VGA);
+  if (config.pixel_format == PIXFORMAT_JPEG) {
+    s -> set_framesize(s, FRAMESIZE_QVGA); // old value
+    s -> set_framesize(s, FRAMESIZE_VGA);
   }
 
-#if defined(CAMERA_MODEL_M5STACK_WIDE) || defined(CAMERA_MODEL_M5STACK_ESP32CAM)
-  s->set_vflip(s, 1);
-  s->set_hmirror(s, 1);
-#endif
+  #if defined(CAMERA_MODEL_M5STACK_WIDE) || defined(CAMERA_MODEL_M5STACK_ESP32CAM)
+  s -> set_vflip(s, 1);
+  s -> set_hmirror(s, 1);
+  #endif
 
-#if defined(CAMERA_MODEL_ESP32S3_EYE)
-  s->set_vflip(s, 1);
-#endif
+  #if defined(CAMERA_MODEL_ESP32S3_EYE)
+  s -> set_vflip(s, 1);
+  #endif
 
-// Setup LED FLash if LED pin is defined in camera_pins.h
-#if defined(LED_GPIO_NUM)
+  // Setup LED FLash if LED pin is defined in camera_pins.h
+  #if defined(LED_GPIO_NUM)
   setupLedFlash(LED_GPIO_NUM);
-#endif
+  #endif
 
+  WiFi.mode(WIFI_STA); // explicitly set mode, esp defaults to STA+AP
+  // it is a good practice to make sure your code sets wifi mode how you want it.
 
+  Serial.begin(115200);
 
+  //WiFiManager, Local intialization. Once its business is done, there is no need to keep it around
+  WiFiManager wm;
 
+  // reset settings - wipe stored credentials for testing
+  // these are stored by the esp library
+  // wm.resetSettings();
 
+  // Automatically connect using saved credentials,
+  // if connection fails, it starts an access point with the specified name ( "AutoConnectAP"),
+  // if empty will auto generate SSID, if password is blank it will be anonymous AP (wm.autoConnect())
+  // then goes into a blocking loop awaiting configuration and will return success result
 
+  bool res;
+  // res = wm.autoConnect(); // auto generated AP name from chipid
+  // res = wm.autoConnect("AutoConnectAP"); // anonymous ap
+  res = wm.autoConnect("AutoConnectAP", "password"); // password protected ap
 
-if(!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-  Serial.println("STA Failed to configure");
-}
-
-
-/*
-WiFi.begin(ssid, password);
-*/
-
-
-WiFiManager wm;
- 
-bool res;
- 
-res = wm.autoConnect("AutoConnectAP","password"); // password protected ap
- 
- 
- 
- 
-    if(!res) {
- 
-        Serial.println("Failed to connect");
- 
-        // ESP.restart();
- 
-    }
-  WiFi.setSleep(false);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
+  if (!res) {
+    Serial.println("Failed to connect");
+    // ESP.restart();
+  } else {
+    //if you get here you have connected to the WiFi
+    Serial.println("Connected...yeey :)");
   }
-  Serial.println("");
-  Serial.println("WiFi connected");
 
   startCameraServer();
 
@@ -293,10 +265,7 @@ res = wm.autoConnect("AutoConnectAP","password"); // password protected ap
 }
 
 void loop() {
-  // Do nothing. Everything is done in another task by the web server
-  delay(10000);
 }
-
 ```
 
 
@@ -442,32 +411,6 @@ lib_deps =
 ```
 
 
-### Come formattare la scheda SD-card su Windows 
-
-
-Per formattare una scheda SD-card in Windows usando il filesystem FAT, segui questi passaggi:
-
-
-
-- Collega la scheda SD-card al tuo computer utilizzando un adattatore per schede SD o un lettore di schede.
-- Apri <a href="https://support.microsoft.com/it-it/windows/trovare-e-aprire-esplora-file-ef370130-1cca-9dc5-e0df-2f7416fe1cb1" target="_blank" rel="noopener">Esplora file</a>
- premendo la Windows + E.
-
-<img img width="800" style="border: 2px solid #999;" class="x figure-img img-fluid lazyload blur-up"  src="images/102.png" alt="schermata di Esplora file quando usi Windows 10 e 11">
-
-
-- In Esplora file, seleziona "Questo PC".
-- La scheda SD-card dovrebbe apparire nell'elenco dei dispositivi di archiviazione.
-- Fai clic destro sulla scheda SD-card e seleziona "Formatta".
-- Selezione della scheda SD-card in Esplora fileOpens in a neo window
-
-- Selezione della scheda SD-card in Esplora file
-- Nella finestra di formattazione, seleziona "FAT32" dal menu a discesa "File system".
-- Fai clic su "Avvia" per avviare la formattazione.
-
-> La formattazione della scheda SD-card richiederà alcuni minuti. Al termine, la scheda SD-card sarà formattata in FAT32.
-Attenzione: La formattazione di una scheda SD-card cancella tutti i dati presenti sulla scheda. Assicurati di aver eseguito il backup di tutti i dati importanti prima di formattare la scheda.
-
 
 #### Conclusione
 
@@ -476,4 +419,4 @@ La ESP32 con la camera OV2640 ti permetterà di salvare le immagini dell'esterno
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.0.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.5.0</p>
