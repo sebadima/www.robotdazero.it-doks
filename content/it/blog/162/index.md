@@ -37,7 +37,12 @@ https://www.techrm.com/how-to-create-a-simple-video-surveillance-system-with-esp
 
 ## Usiamo la ESP32 CAM per sorvegliare la nostra abitazione
 
-La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare su Amazon /trovi il link in basso tra i materiali ncessari) o a prezzi ancora più bassi su Aliexpress. Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di corridoi, accessi, luogi bui perche è dotata di un LED interno autonomo. Si può connettere al WI-fi senza necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
+La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È un dispositivo piuttosto economico e la potete trovare su Amazon a prezzi ancora più bassi su Aliexpress. Può essere usata per il monitoraggio di corridoi, accessi o luogi bui perche è dotata di un LED interno autonomo. Si può connettere al WI-Fi senza la necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
+
+<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/ESP32-CAM.jpg" alt="">
+
+<br>
+<br>
 
 Per sorvegliare zone multiple potete acquistare più esemplari della CAM ed ognuno di essi sarà in grado di ottenere il suo indirizzo IP dal router fino ad un massimo di 128 telecamere. Per installazioni "interne" potete semplicemente adoperare la scheda "al naturale" ma per installazioni su balconi o nel prospetto dei "villini" in campagna ti suggerisco di utilizzare un piccolo box di derivazione tipo eletticista oppure di acquistare nel nostro ecommerce il case in 3D progettato appositamente per ottenere il minimo ingombro e la massima discrezione.
 
@@ -51,23 +56,7 @@ Per realizzare il progetto avrai bisogno dei seguenti materiali:
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/201.jpeg" alt="">
 
-### Come usare la scheda
-
-- Formatta la SD-card usando il tuo PC
-- Inserisci la SD-card nella feritoia della Cam
-- Collega la fotocamera alla presa accendisigari della vettura
-- La Cam si accenderà immediatamente
-- Posiziona la fotocamera in modo che possa inquadrare il parabrezza e parte dei finestrini
-
-
-In questo modo le foto della Cam saranno registrate ogni 15 secondi sulla SD-card in una directory chiamata "img". Questo vi permetterà di vedere i movimenti delle persone quando la vettura é parcheggiata. Il programma utilizza alcuni "trucchi" per minimizzare il consumo della ESP32, in particolare utilizza la modalità <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html" target="_blank" rel="noopener">deep sleep</a> della scheda. In questo modo viene disabilito brevemente il WIFI, il Bluetooth e la <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/touch_pad.html" target="_blank" rel="noopener">funzione touchpad</a> di alcuni piedini. In questa modalità l'ESP32 consuma appena 1~2 mA contro i circa 130~150 mA della scheda in condizioni normali.
-
-La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessario per scattare la foto. Senza questo accorgimento probabilmente la batteria della macchina potrebbe scaricarsi. Se non vuoi in nessun caso la batteria della vettura puoi usare un power bank da 20000 mAh, in grado di fare funzionare la Cam per 8/10 ore. 
-
-<img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/206.jpeg" alt="">
-
-<br>
-<br>
+### Compilare con PlatformIO
 
 Se avete installato PlatformIO sul vostro PC potete compilare l'intero ptogramma facendo copia e incolla delle quattro righe sottostanti e premendo il tasto "INVIO" su PowerShell di Windows o sul terminale di Linux
 
@@ -390,38 +379,6 @@ Una volta compilato il programma, è possibile caricarlo sulla scheda. Per fare 
 In Visual Studio Code, è possibile eseguire il comando "PlatformIO Upload" premendo la scorciatoia da tastiera Ctrl+Shift+U.
 
 Una volta caricato il programma sulla scheda, esso inizierà ad eseguire.
-
-
-### Usare PlatformIO dalla linea di comando
-
-Se usate come facciamo noi PlatformIO dalla linea di comando dovrete inserire nel file platformio.ini il seguente codice:
-
-
-```bash
-; PlatformIO Project Configuration File
-;
-;   Build options: build flags, source filter
-;   Upload options: custom upload port, speed and extra flags
-;   Library options: dependencies, extra library storages
-;   Advanced options: extra scripting
-;
-; Please visit documentation for the other options and examples
-; https://docs.platformio.org/page/projectconf.html
-
-[env:esp32cam]
-platform = espressif32
-board = esp32cam
-framework = arduino
-monitor_speed=115200
-lib_ldf_mode=deep
-build_flags =
-   -I../lib/esp32-camera
-
-lib_deps =
-  esp32-camera
-```
-
-
 
 #### Conclusione
 
