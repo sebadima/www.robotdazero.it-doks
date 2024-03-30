@@ -12,6 +12,7 @@ tags: ["LED", "MAX7219", "Progetti", "Arduino"]
 contributors: ["sergio rame "]
 pinned: false
 homepage: false
+mermaid: false
 ---
 * * *
 
