@@ -37,14 +37,14 @@ https://www.techrm.com/how-to-create-a-simple-video-surveillance-system-with-esp
 
 ## Usiamo la ESP32 CAM per sorvegliare la nostra abitazione
 
-La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È un dispositivo piuttosto economico e la potete trovare su Amazon a prezzi ancora più bassi su Aliexpress. Può essere usata per il monitoraggio di corridoi, accessi o luogi bui perche è dotata di un LED interno autonomo. Si può connettere al WI-Fi senza la necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
+La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È un dispositivo piuttosto economico e la potete trovare su Amazon a prezzi ancora più bassi su Aliexpress. Può essere usata per il monitoraggio di corridoi, accessi o luoghi bui perchè dotata di un LED interno autonomo. Si può connettere al WI-Fi senza la necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
 
-<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/ESP32-CAM.jpg" alt="">
+<img width="400" class="x figure-img img-fluid lazyload blur-up"  src="images/ESP32-CAM.jpg" alt="">
 
 <br>
 <br>
 
-Per sorvegliare zone multiple potete acquistare più esemplari della CAM ed ognuno di essi sarà in grado di ottenere il suo indirizzo IP dal router fino ad un massimo di 128 telecamere. Per installazioni "interne" potete semplicemente adoperare la scheda "al naturale" ma per installazioni su balconi o nel prospetto dei "villini" in campagna ti suggerisco di utilizzare un piccolo box di derivazione tipo eletticista oppure di acquistare nel nostro ecommerce il case in 3D progettato appositamente per ottenere il minimo ingombro e la massima discrezione.
+Per sorvegliare zone multiple potete acquistare più esemplari della CAM ed ognuno di essi sarà in grado di ottenere il suo indirizzo IP dal router fino ad un massimo di 128 telecamere. Per installazioni "interne" potete semplicemente adoperare la scheda "al naturale" ma per installazioni su balconi o nel prospetto dei "villini" in campagna ti suggerisco di utilizzare un piccolo box di derivazione tipo elettricista oppure di acquistare nel nostro ecommerce il case in 3D progettato appositamente per ottenere il minimo ingombro e la massima discrezione.
 
 ### Materiali necessari
 
@@ -58,7 +58,7 @@ Per realizzare il progetto avrai bisogno dei seguenti materiali:
 
 ### Compilare con PlatformIO
 
-Se avete installato PlatformIO sul vostro PC potete compilare l'intero ptogramma facendo copia e incolla delle quattro righe sottostanti e premendo il tasto "INVIO" su PowerShell di Windows o sul terminale di Linux
+Se avete installato PlatformIO sul vostro PC potete compilare l'intero programma facendo copia e incolla delle quattro righe sottostanti e premendo il tasto "INVIO" su PowerShell di Windows o sul terminale di Linux
 
 ```bash
 git clone git@github.com:sebadima/spyder-cam.git
