@@ -1,33 +1,37 @@
 ---
 title:       "Usiamo la ESP32 CAM come una telecamera di sorveglianza"
 description: "Usiamo la ESP32 CAM come una telecamera di sorveglianza"
-excerpt: "In questo post vedremo come utilizzare la scheda ESP32 CAM per controllare gli angoli nascosti della nostra casa o gli accessi della nostra azienda. La OV2640 CAM è una fotocamera digitale a colori con risoluzione di 2 megapixel..."
+excerpt:     "Da zero a esperto: I segreti per sfruttare al massimo le potenzialità della ESP32 CAM come telecamera di sorveglianza per la tua casa o ufficio - una guida dettagliata con istruzioni passo-passo, consigli pratici ..."
+
 date:    2024-03-28T09:19:42+01:00
 lastmod: 2024-03-28T09:19:42+01:00
-draft: true
-weight: 50
-images: ["header.jpeg"]
-categories: ["News"]
-tags: ["OV2640", "ESP32CAM", "ESP32", "sorveglianza", "programmazione"]
+draft:   true
+weight:  50
+
+images:       ["header.jpeg"]
+categories:   ["News"]
+tags:         ["OV2640", "ESP32CAM", "ESP32", "sorveglianza", "programmazione"]
 contributors: ["sebadima"]
-pinned: false
+
+pinned:   false
 homepage: false
-mermaid: false
+mermaid:  false
 ---
 
 
 
 <hr>
 
-```bash
+<!--
 https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en&gl=US&pli=1
 https://github.com/sebadima/spyder-cam
 
+~/Arduino/libraries
+git clone su git@github.com:tzapu/WiFiManager.git
+
 Tratto da:
-
 https://www.techrm.com/how-to-create-a-simple-video-surveillance-system-with-esp32-on-platformio/
-
-```
+--->
 
 
 
@@ -62,15 +66,18 @@ La scheda va a "dormire" per 10 secondi e si risveglia giusto il tempo necessari
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/206.jpeg" alt="">
 
-Se avete installato PltformIO sul vostro PC potete compilare l'intero ptogramma facendo copia e incolla delle quattro righe sottostanti e premendo il tasto "INVIO" su PowerShell di Windows o sul terminale di Linux
+<br>
+<br>
+
+Se avete installato PlatformIO sul vostro PC potete compilare l'intero ptogramma facendo copia e incolla delle quattro righe sottostanti e premendo il tasto "INVIO" su PowerShell di Windows o sul terminale di Linux
 
 ```bash
-git clone https://github.com/sebadima/spyder-cam.git
+git clone git@github.com:sebadima/spyder-cam.git
 cd spyder-cam
 make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```
-se tutto è andato correttamente dovreste vedere il seguente LOG con i passi dettagliati della compilazione 
+Se tutto è andato correttamente dovreste vedere il seguente LOG con i passi dettagliati della compilazione 
 
 ```bash
 Verbose mode can be enabled via `-v, --verbose` option
@@ -258,7 +265,7 @@ void setup() {
     // ESP.restart();
   } else {
     //if you get here you have connected to the WiFi
-    Serial.println("Connected...yeey :)");
+    Serial.println("Connected");
   }
 
   startCameraServer();
@@ -423,4 +430,4 @@ La ESP32 con la camera OV2640 ti permetterà di salvare le immagini dell'esterno
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.5.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.5.3</p>
