@@ -21,17 +21,21 @@ mermaid: false
 
 ```bash
 https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en&gl=US&pli=1
+https://github.com/sebadima/spyder-cam
+
+Tratto da:
+
+https://www.techrm.com/how-to-create-a-simple-video-surveillance-system-with-esp32-on-platformio/
 
 ```
 
 
-## Usiamo la ESP32 Cam per ESP32 per sorvegliare i punti sensibili
+
+## Usiamo la ESP32 CAM per sorvegliare la nostra abitazione
 
 La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È piuttosto economica: la potete trovare su Amazon /trovi il link in basso tra i materiali ncessari) o a prezzi ancora più bassi su Aliexpress. Può essere usata per una vasta gamma di applicazioni, tra cui il monitoraggio di corridoi, accessi, luogi bui perche è dotata di un LED interno autonomo. Si può connettere al WI-fi senza necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.
 
 Per sorvegliare zone multiple potete acquistare più esemplari della CAM ed ognuno di essi sarà in grado di ottenere il suo indirizzo IP dal router fino ad un massimo di 128 telecamere. Per installazioni "interne" potete semplicemente adoperare la scheda "al naturale" ma per installazioni su balconi o nel prospetto dei "villini" in campagna ti suggerisco di utilizzare un piccolo box di derivazione tipo eletticista oppure di acquistare nel nostro ecommerce il case in 3D progettato appositamente per ottenere il minimo ingombro e la massima discrezione.
-
-
 
 ### Materiali necessari
 
@@ -419,4 +423,4 @@ La ESP32 con la camera OV2640 ti permetterà di salvare le immagini dell'esterno
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.5.0</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.162.0.5.1</p>
