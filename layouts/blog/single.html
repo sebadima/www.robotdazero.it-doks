@@ -1,91 +1,86 @@
 {{ define "main" }}
 <article>
-
-
-<style>
-   .col-md-12 > article:nth-child(1) > h1:nth-child(1) {
-   }
-   .lead {
-   padding-top:    5px;
-   padding-bottom: 5px;
-   padding-right: 10px;
-   padding-left:  10px;
-   }
-   body {
-   background-size: cover;
-   background-repeat: no-repeat;
-   margin: 0; 
-   padding: 0;
-   }
-   h5 {
-   font-weight: 700;
-   }
-
-   h2 {
-   text-transform: uppercase;
-   ## color: #F9BD2B;
-   font-family: Verdana !important;
-   }
-   .bz-form {width: 684px; margin: 200px auto 0; }
-   .bz-container {
-   width: 100%;
-   # background-color: #fff;
-   padding: 30px 40px 20px;
-   border-radius: 7px;
-   border: 0px solid #74A1B4;
-   }
-   .bz-btmmargin {
-   margin-bottom: 14px !important;
-   }
-   .bz-topmargin {
-   margin-top: 6px !important;
-   }
-   .bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
-   .bz-right {float: left; width: 49%; min-width: 300px;}
-   .bz-clear {clear: both;}
-   input[type='text'], input[type='email'] {
-   box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   outline: 0;
-   display: block;
-   width: 100%;
-   padding: 7px;
-   border: 0;
-   border-bottom: 1px solid #ddd;
-   background: transparent;
-   margin-bottom: 10px;
-   height: 45px;
-   }
-   input[type='submit'] {
-   float: right;
-   background-color: #007D7E;
-   border: none;
-   color: white;
-   font-size: 18px;
-   text-transform: uppercase;
-   font-weight: 700;
-   text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
-   padding: 12px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   }
-   /* input[type='submit']:hover {
-   background-color: #000000;
-   } */
-   @media only screen and (max-width: 600px) {
-   .bz-container {padding: 10px;}
-   .bz-form {width: 100%;}
-   .bz-left, .bz-right { width: 100%; padding: 0 10px;}
-   input[type='submit'] {margin-left: 10px;}
-   }
-</style>
-
-
+   <style>
+      .col-md-12 > article:nth-child(1) > h1:nth-child(1) {
+      }
+      .lead {
+      padding-top:    5px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+      padding-left:  10px;
+      }
+      body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0; 
+      padding: 0;
+      }
+      h5 {
+      font-weight: 700;
+      }
+      h2 {
+      text-transform: uppercase;
+      ## color: #F9BD2B;
+      font-family: Verdana !important;
+      }
+      .bz-form {width: 684px; margin: 200px auto 0; }
+      .bz-container {
+      width: 100%;
+      # background-color: #fff;
+      padding: 30px 40px 20px;
+      border-radius: 7px;
+      border: 0px solid #74A1B4;
+      }
+      .bz-btmmargin {
+      margin-bottom: 14px !important;
+      }
+      .bz-topmargin {
+      margin-top: 6px !important;
+      }
+      .bz-left {float: left; width: 49%; padding-right: 2%; min-width: 300px;}
+      .bz-right {float: left; width: 49%; min-width: 300px;}
+      .bz-clear {clear: both;}
+      input[type='text'], input[type='email'] {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      outline: 0;
+      display: block;
+      width: 100%;
+      padding: 7px;
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      background: transparent;
+      margin-bottom: 10px;
+      height: 45px;
+      }
+      input[type='submit'] {
+      float: right;
+      background-color: #007D7E;
+      border: none;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.40);
+      padding: 12px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+      /* input[type='submit']:hover {
+      background-color: #000000;
+      } */
+      @media only screen and (max-width: 600px) {
+      .bz-container {padding: 10px;}
+      .bz-form {width: 100%;}
+      .bz-left, .bz-right { width: 100%; padding: 0 10px;}
+      input[type='submit'] {margin-left: 10px;}
+      }
+   </style>
    <style>
       .stripe_box {
       padding-top:    0.0em !important; 
@@ -291,105 +286,114 @@
 <div class="row justify-content-center">
    <div class="col-lg-9 col-xl-8 text-center">
       <br>
-
+      <div id="disqus_thread"></div>
+      <script>
+         /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+         /*
+         var disqus_config = function () {
+         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+         };
+         */
+         (function() { // DON'T EDIT BELOW THIS LINE
+         var d = document, s = d.createElement('script');
+         s.src = 'https://robotdazero-it-1.disqus.com/embed.js';
+         s.setAttribute('data-timestamp', +new Date());
+         (d.head || d.body).appendChild(s);
+         })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       <script async data-uid="9ba1767645" src="https://robotdazero.ck.page/9ba1767645/index.js"></script>
-
       <script async data-uid="56c8594855" src="https://robotdazero.ck.page/56c8594855/index.js"></script>
       <!--
-      <div class="klaviyo-form-RjMjgJ"></div>
-         <h4>Ciao! Siamo Sergio e Seba.</h4>
-         <p class="lead">Vogliamo costruire un'alternativa <strong>indipendente</strong> alle maxi piattaforme che gestiscono i dati dei nostri dispositivi IoT. Se vuoi accompagnarci nel nostro viaggio scoprirai cosa abbiamo imparato strada facendo...
-         <p>
-         
-         <img width="250" src="/124/features-share.svg" alt="logo">
-         
-         <h4>"Non perdere notizie e tutorial sull'ESP32: Iscriviti alla nostra Newsletter!"</h4>
-         
-         <div id="main">
-            <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Iscriviti adesso</a>
-            <a  href="" id="scroller"></a>
-            <br>
-         </div>
-         
-         -->
+         <div class="klaviyo-form-RjMjgJ"></div>
+            <h4>Ciao! Siamo Sergio e Seba.</h4>
+            <p class="lead">Vogliamo costruire un'alternativa <strong>indipendente</strong> alle maxi piattaforme che gestiscono i dati dei nostri dispositivi IoT. Se vuoi accompagnarci nel nostro viaggio scoprirai cosa abbiamo imparato strada facendo...
+            <p>
+            
+            <img width="250" src="/124/features-share.svg" alt="logo">
+            
+            <h4>"Non perdere notizie e tutorial sull'ESP32: Iscriviti alla nostra Newsletter!"</h4>
+            
+            <div id="main">
+               <a  class="btn btn-primary btn-lg px-4 mb-2"  href="" id="link">Iscriviti adesso</a>
+               <a  href="" id="scroller"></a>
+               <br>
+            </div>
+            
+            -->
    </div>
 </div>
 {{ $related := .Site.RegularPages.Related . | first 3 -}}
 {{ with $related -}}
 <div class="related-posts">
-<div class="row justify-content-center">
-   <div class="col">
-      <h2 class="section-title">Articoli collegati</h2>
+   <div class="row justify-content-center">
+      <div class="col">
+         <h2 class="section-title">Articoli collegati</h2>
+      </div>
    </div>
-</div>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-lg-5">
-   {{ range . -}}
-   <div class="col">
-      <div class="card">
-         {{- .Scratch.Set "fillImageCard" "1270x620 Center" -}}
-         {{ partial "content/card-image.html" . }}
-         <div class="card-body">
-            <article>
-               <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-               <p>{{ .Params.excerpt | safeHTML }}</p>
-               {{ partial "main/blog-meta.html" . -}}
-            </article>
+   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-lg-5">
+      {{ range . -}}
+      <div class="col">
+         <div class="card">
+            {{- .Scratch.Set "fillImageCard" "1270x620 Center" -}}
+            {{ partial "content/card-image.html" . }}
+            <div class="card-body">
+               <article>
+                  <h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
+                  <p>{{ .Params.excerpt | safeHTML }}</p>
+                  {{ partial "main/blog-meta.html" . -}}
+               </article>
+            </div>
          </div>
       </div>
+      {{ end -}}
    </div>
-   {{ end -}}
-</div>
-<!-- shop -->
-
-
-<br>
-
-<div style="border:solid 1px; border-color: #eeeeee;" class="bz-container stripe_box">
-
-
-         <article>
-            <h2 >Inizia con sicurezza il tuo viaggio nel mondo IoT</h2>
-            <img class="img-fluid blur-up lazyloaded" src="/prodotti/profondimetro/201.jpg" width="900" alt="">
-            <h4>Costruisci il profondimetro in KIT HW103 e avrai a disposizione un <strong>vero</strong> prodotto industriale da sfruttare per il tuo business.<br><br>Scegli la professione del futuro:<br>in offerta a soli €139.00 - Puoi pagare con carta di credito oppure in tre rate con Paypal e Klarna!</h4>
-            <p>Il software è <strong>totalmente gratuito</strong> <a href="https://github.com/sebadima/corso-esp32-profondimetro-digitale/blob/main/src/main.ino" target="_blank">(link)</a> e la realizzazione del <a href="/blog/una-centralina-elettronica-per-controllare-il-livello-di-un-serbatoio/">KIT</a> alla portata di una persona con 3 mesi di esperienza nella microelettronica. L'intero progetto è disponibile in scatola di montaggio con tutti i componenti,  compresa la scatola semi-impermeabile in ABS e la minuteria per il montaggio. Permette di controllare mediante ultrasuoni il livello di ogni liquido fino alla profondità di <strong>4 mt</strong>. La sonda a ultrasuoni è in resina impermeabile e resiste ai liquidi leggermente corrosivi. Il diametro della sonda è pari a <strong>2.52 cm</strong>, perfetto per tubi e manicotti da un pollice (standard industriale) con gioco di <strong>1 mm</strong> da sigillare con silicone neutro.</p>
-            <h5>I pezzi contrassegnati con l'asterisco sono originali Robotdazero<br> e puoi acquistarli anche singolarmente nel nostro <a href="/docs/ecommerce/">ecommerce</a></h5>
-            <div class="alert alert-doks d-flexflex-shrink-1" role="alert" style="font-size: 0.80em;">
-               <strong>Lista dei materiali</strong> (<a href="https://en.wikipedia.org/wiki/Bill_of_materials" target="_blank">BOM</a>)<br>
-               <br><strong>A.</strong> Modulo display seriale LCD 16X2 carattere blu con retroilluminazione (<strong>pz 1</strong>) - <a href="https://amzn.to/48IckLZ" target="_blank">vedi su Amazon</a>
-               <br><strong>B.</strong> Scheda sviluppo ESP-WROOM-32 (<strong>pz 1</strong>) - <a href="https://amzn.to/3O3FMEi" target="_blank">vedi su Amazon</a>
-               <br><strong>C.</strong> Sensore ad ultrasuoni impermeabile ANGEEK JSN-SR04T (<strong>pz 1</strong>) - <a href="https://amzn.to/3TPjjyI" target="_blank">vedi su Amazon</a>
-               <br><strong>D.</strong> Potenziometro 5 KOhm (<strong>pz 1</strong>) - <a href="https://amzn.to/4aQrBwk" target="_blank">vedi su Amazon</a>
-               <br><strong>E.</strong> Alimentatore USB da muro 2 Porte 5V/2.1A (<strong>pz 1</strong>) - <a href="https://amzn.to/3H5Tvqu" target="_blank">vedi su Amazon</a></a>
-               <br><strong>F.</strong> <strong>*Robotdazero</strong> - Circuito stampato multifunzione “orange” (<strong>pz 1</strong>)</li> - <a href="/docs/ecommerce/multifunzione/">LINK</a>
-               <br><strong>G.</strong> Cavo connessione USB "basic" tipo B per ESP32 (<strong>pz 1</strong>) - <a href="https://amzn.to/48ph8pO" target="_blank">vedi su Amazon</a>
-               <br><strong>H.</strong> Mammut bianchi (<strong>pz 2</strong>) - <a href="https://amzn.to/48m5QTu" target="_blank">vedi su Amazon</a>
-               <br><strong>I.</strong> Matassa fili per bassa tensione &lt;12V (<strong>mt.2</strong>)
-               <br><strong>L.</strong> <strong>*Robotdazero</strong> - Cornice impermeabile "3D printed" in <a href="https://it.wikipedia.org/wiki/Polietilene_tereftalato" target="_blank">PETG</a> per display LCD (<strong>pz 1</strong>) - <a href="/docs/ecommerce/cornice-display/">LINK</a>
-               <br><strong>M.</strong> Scatola Derivazione Esterna dim. 30x22x12cm (<strong>pz 1</strong>) - <a href="https://amzn.to/3HfEeTY" target="_blank">vedi su Amazon</a></a>
-               <br>
-               <br>#pubblicità: I link che rimandano ad Amazon sono link di "affiliazione" che ci permettono <br>di ricavare provvigioni di vendita, senza in alcun modo incidere sul tuo prezzo finale.
-            </div>
+   <!-- shop -->
+   <br>
+   <div style="border:solid 1px; border-color: #eeeeee;" class="bz-container stripe_box">
+      <article>
+         <h2 >Inizia con sicurezza il tuo viaggio nel mondo IoT</h2>
+         <img class="img-fluid blur-up lazyloaded" src="/prodotti/profondimetro/201.jpg" width="900" alt="">
+         <h4>Costruisci il profondimetro in KIT HW103 e avrai a disposizione un <strong>vero</strong> prodotto industriale da sfruttare per il tuo business.<br><br>Scegli la professione del futuro:<br>in offerta a soli €139.00 - Puoi pagare con carta di credito oppure in tre rate con Paypal e Klarna!</h4>
+         <p>Il software è <strong>totalmente gratuito</strong> <a href="https://github.com/sebadima/corso-esp32-profondimetro-digitale/blob/main/src/main.ino" target="_blank">(link)</a> e la realizzazione del <a href="/blog/una-centralina-elettronica-per-controllare-il-livello-di-un-serbatoio/">KIT</a> alla portata di una persona con 3 mesi di esperienza nella microelettronica. L'intero progetto è disponibile in scatola di montaggio con tutti i componenti,  compresa la scatola semi-impermeabile in ABS e la minuteria per il montaggio. Permette di controllare mediante ultrasuoni il livello di ogni liquido fino alla profondità di <strong>4 mt</strong>. La sonda a ultrasuoni è in resina impermeabile e resiste ai liquidi leggermente corrosivi. Il diametro della sonda è pari a <strong>2.52 cm</strong>, perfetto per tubi e manicotti da un pollice (standard industriale) con gioco di <strong>1 mm</strong> da sigillare con silicone neutro.</p>
+         <h5>I pezzi contrassegnati con l'asterisco sono originali Robotdazero<br> e puoi acquistarli anche singolarmente nel nostro <a href="/docs/ecommerce/">ecommerce</a></h5>
+         <div class="alert alert-doks d-flexflex-shrink-1" role="alert" style="font-size: 0.80em;">
+            <strong>Lista dei materiali</strong> (<a href="https://en.wikipedia.org/wiki/Bill_of_materials" target="_blank">BOM</a>)<br>
+            <br><strong>A.</strong> Modulo display seriale LCD 16X2 carattere blu con retroilluminazione (<strong>pz 1</strong>) - <a href="https://amzn.to/48IckLZ" target="_blank">vedi su Amazon</a>
+            <br><strong>B.</strong> Scheda sviluppo ESP-WROOM-32 (<strong>pz 1</strong>) - <a href="https://amzn.to/3O3FMEi" target="_blank">vedi su Amazon</a>
+            <br><strong>C.</strong> Sensore ad ultrasuoni impermeabile ANGEEK JSN-SR04T (<strong>pz 1</strong>) - <a href="https://amzn.to/3TPjjyI" target="_blank">vedi su Amazon</a>
+            <br><strong>D.</strong> Potenziometro 5 KOhm (<strong>pz 1</strong>) - <a href="https://amzn.to/4aQrBwk" target="_blank">vedi su Amazon</a>
+            <br><strong>E.</strong> Alimentatore USB da muro 2 Porte 5V/2.1A (<strong>pz 1</strong>) - <a href="https://amzn.to/3H5Tvqu" target="_blank">vedi su Amazon</a></a>
+            <br><strong>F.</strong> <strong>*Robotdazero</strong> - Circuito stampato multifunzione “orange” (<strong>pz 1</strong>)</li> - <a href="/docs/ecommerce/multifunzione/">LINK</a>
+            <br><strong>G.</strong> Cavo connessione USB "basic" tipo B per ESP32 (<strong>pz 1</strong>) - <a href="https://amzn.to/48ph8pO" target="_blank">vedi su Amazon</a>
+            <br><strong>H.</strong> Mammut bianchi (<strong>pz 2</strong>) - <a href="https://amzn.to/48m5QTu" target="_blank">vedi su Amazon</a>
+            <br><strong>I.</strong> Matassa fili per bassa tensione &lt;12V (<strong>mt.2</strong>)
+            <br><strong>L.</strong> <strong>*Robotdazero</strong> - Cornice impermeabile "3D printed" in <a href="https://it.wikipedia.org/wiki/Polietilene_tereftalato" target="_blank">PETG</a> per display LCD (<strong>pz 1</strong>) - <a href="/docs/ecommerce/cornice-display/">LINK</a>
+            <br><strong>M.</strong> Scatola Derivazione Esterna dim. 30x22x12cm (<strong>pz 1</strong>) - <a href="https://amzn.to/3HfEeTY" target="_blank">vedi su Amazon</a></a>
             <br>
-            <a class="btn btn-primary btn-lg px-4 mb-2" href="https://buy.stripe.com/28oeYmbIjbXvfUQbIV" role="button">Acquista</a>
-            <br><br>
-      </div>
+            <br>#pubblicità: I link che rimandano ad Amazon sono link di "affiliazione" che ci permettono <br>di ricavare provvigioni di vendita, senza in alcun modo incidere sul tuo prezzo finale.
+         </div>
+         <br>
+         <a class="btn btn-primary btn-lg px-4 mb-2" href="https://buy.stripe.com/28oeYmbIjbXvfUQbIV" role="button">Acquista</a>
+         <br><br>
    </div>
-   </article>
-
-
-<!--
-<br>
-
-<p> 
-<a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
-<input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
-</p>
 </div>
-
-<br>
-<br>
--->
-
+</article>
+<!--
+   <br>
+   
+   <p> 
+   <a href="https://www.robotdazero.it/blog/la-guida-definitiva-per-scegliere-il-tuo-arduino/">
+   <input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Leggi la guida Completa 2023 👉"></a>
+   </p>
+   </div>
+   
+   <br>
+   <br>
+   -->
 <!-- shop -->
 <style>
    #popup { display: none; position: fixed; top: 10%; left: 10%; width: 80%; height: 80%; background-color: white; z-index: 10; }
