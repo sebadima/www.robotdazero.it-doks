@@ -85,6 +85,43 @@ Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.png" alt="schema elettrico fritzing della centralina multi sensore con ESP32">
 
+
+### Lo schema a blocchi del trasmettitore
+A parte lo schema con la filatura, ti vogliamo mostrare lo schema a blocchi delle connessioni, usando gli stessi diagrammi che avrai a volte visto nei manuali di programmazione. Nel diagramma puoi leggere i collegamenti *teorici* per ogni dispositivo e come collegare ognuno di essi a ESP32 e breadboard. Facci sapere nei commenti in basso se ti piace questo tipo di aiuto!
+
+<br>
+
+{{< mermaid class="bg-light text-center" >}}
+classDiagram
+    ESP32 <|-- DHT11
+    ESP32 <|-- MQ2
+    ESP32 <|-- MQ135
+    
+    ESP32 : ALIMENTAZIONE diretta da cavo USB
+    ESP32 : pin.GND al negativo della breadboard
+    ESP32 : pin.V5 al positivo della breadboard
+    ESP32 : pin.13 - pin.33 - pin.35 ai sensori
+    class DHT11 {
+        GND  -> [--] Breadboard
+        VIN  -> [+] Breadboard
+        DATA -> pin.13 ESP32
+    }
+    class MQ2 {
+        GND  -> [--] Breadboard
+        VIN  -> [+] Breadboard
+        DATA -> pin.33 ESP32
+        
+
+    }
+    class MQ135 {
+        GND  -> [--] Breadboard
+        VIN  -> [+] Breadboard
+        DATA -> pin.35 ESP32
+    }
+
+{{< /mermaid >}}
+
+
 ### Configurazione software del trasmettitore 
 
 Per la compilazione di questo progetto puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Esiste una terza possibilità per compilare i programmi e cioè usare PlatformIO integrato in Visual Studio Code; ma per il momento ti forniremo istruzioni dettagliate solo per le prime due opzioni.
