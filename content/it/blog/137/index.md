@@ -112,6 +112,3 @@ Fai copia e incolla nell'IDE di Arduino e quindi compila e fai l'upload programm
 <br>
 <br>
 <p style="font-size: 0.80em;">Robotdazero.it -  post - R.137.2.1.0</p>  
-
-
-<script src="https://my.hellobar.com/9583cc514061090d1eea47be63db6588bea78d60.js" type="text/javascript" charset="utf-8" async="async"> </script>
