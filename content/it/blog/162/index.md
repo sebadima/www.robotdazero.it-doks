@@ -34,7 +34,6 @@ https://www.techrm.com/how-to-create-a-simple-video-surveillance-system-with-esp
 --->
 
 
-
 ## Usiamo la ESP32 CAM per sorvegliare la nostra abitazione
 
 La ESP32 nella versione con la OV2640 CAM è una completa fotocamera digitale a colori con risoluzione di 2 megapixel. È un dispositivo piuttosto economico e la potete trovare su Amazon a prezzi ancora più bassi su Aliexpress. Può essere usata per il monitoraggio di corridoi, accessi o luoghi bui perchè dotata di un LED interno autonomo. Si può connettere al WI-Fi senza la necessità di inserire la password nel programma ma usando il Wi-Fi Manager per caricare da interfaccia Web qualunque rete vogliate utilizzare.

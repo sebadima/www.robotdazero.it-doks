@@ -21,7 +21,8 @@ mermaid:       true
 https://www.instructables.com/DIY-Motor-Driver-With-ESP32-Controller/
 -->
 
-
+## aggiungere parte e software con LM398!!
+++++++++++++++++++++++
 
 Questo è il driver del motore più semplice che potrebbe essere costruito utilizzando un solo transistor NPN, che è controllato e guidato dalla scheda micro controller ESP32.
 
