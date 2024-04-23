@@ -60,3 +60,10 @@ Scegli la nostra scheda presaldati ESP32 e svela il tuo potenziale creativo!
 
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/multifunzione/102.webp" alt="">
 <img width="800" class="x figure-img img-fluid lazyload blur-up"  src="/prodotti/multifunzione/103.webp" alt="">
+
+### Acquistalo adesso
+Puoi pagare con carta di credito oppure in tre rate con Paypal e Klarna.
+
+<a class="btn btn-primary btn-lg px-4 mb-2" href="https://buy.stripe.com/bIY03s7s3gdLgYUfZc" role="button">Acquista</a>
+<br>
+<br>
