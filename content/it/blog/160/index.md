@@ -81,28 +81,19 @@ Scegliere ESP32 come la scheda sotto strumenti,e collegarlo. Scegli la porta USB
 const int motorPin = 5;
 void setup()
 {
-  //set motorPin as OUTPUT
   pinMode(motorPin, OUTPUT);
 }
 void loop()
 {
    motorOnThenOff();
 }
-// This function turns the motor on and off like the blinking LED.
-// Try different values to affect the timing.
 void motorOnThenOff()
 {
-  // milliseconds to turn the motor on
   int onTime = 3000;
-  // milliseconds to turn the motor off
   int offTime = 3000; 
-  // turn the motor on (full speed)
   digitalWrite(motorPin, HIGH); 
-  // delay for onTime milliseconds
   delay(onTime);     
-  // turn the motor off
   digitalWrite(motorPin, LOW);  
-  // delay for offTime milliseconds
   delay(offTime);               
 }
 ```
