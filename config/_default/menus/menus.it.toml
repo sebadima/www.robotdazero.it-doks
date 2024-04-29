@@ -36,7 +36,7 @@
   parent = "get-started"
 
 [[main]]
-  name = "Shop"
+  name = "Il nostro Ecommerce"
   weight = 70
   identifier = "shop"
   url = "/shop/"
