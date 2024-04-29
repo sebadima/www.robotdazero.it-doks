@@ -36,10 +36,10 @@
   parent = "get-started"
 
 [[main]]
-  name = "Ecommerce"
+  name = "Shop"
   weight = 70
-  identifier = "ecommerce"
-  url = "/docs/ecommerce/"
+  identifier = "shop"
+  url = "/shop/"
   parent = "get-started"
 
 [[main]]
