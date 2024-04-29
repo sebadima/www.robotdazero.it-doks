@@ -41,13 +41,6 @@
   parent = "get-started"
 
 [[main]]
-  name = "Il nostro Ecommerce"
-  weight = 70
-  identifier = "shop"
-  url = "/shop/"
-  parent = "get-started"
-
-[[main]]
   name = "Profondimetro digitale"
   weight = 80
   identifier = "prondimetro-digitale"
