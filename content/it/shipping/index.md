@@ -39,9 +39,9 @@ Le stime di consegna variano da 2-5 giorni lavorativi una volta spediti. Si preg
 05 Aprile 2024   
 Viale Akradina, 1 – 96100 – Siracusa
 
+<!--
 <img width="400" class="x figure-img img-fluid lazyload blur-up"  src="/hog/107.webp" alt="">
-
-<br><br>
+-->
 
 #### Indirizzo email utilizzato per le spedizioni: 
 spedizioni@robotdazero.it
