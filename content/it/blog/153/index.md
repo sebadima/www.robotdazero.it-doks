@@ -6,7 +6,7 @@ date: 2024-02-08T01:19:42+01:00
 lastmod: 2024-02-08T01:19:42+01:00
 draft: false
 weight: 50
-images: ["header.jpeg"]
+images: ["101-001.jpg"]
 categories: ["News"]
 tags: ["ESP32", "PlatformIO", "DHT11", "sensori", "MQ-2", "MQ-135"]
 contributors: ["sergio rame"]
