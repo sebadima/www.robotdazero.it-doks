@@ -122,48 +122,70 @@ Colore -> Valore
 
 Il codice colore delle resistenze è un sistema semplice e pratico per identificare il valore di resistenza di un componente elettronico. È importante familiarizzare con questo sistema per poter lavorare in modo sicuro con i circuiti elettronici.
 
-### Le resistenze nei circuiti elettrici
+## Le resistenze nei circuiti elettrici
 
 Il compito di un resistore è quello di limitare la corrente che scorre attraverso un circuito elettrico.
 La resistenza è misurata in Ohm e viene indicata dal simbolo Ω.
 
-##### Collegamento "in serie"
+#### Collegamento "in serie"
 
-Quando i resistori sono collegati insieme in una singola linea vengono detti collegati "in serie".
-I resistori collegati in serie hanno una corrente comune che scorre attraverso di loro.
-
-> Corrente Totale = I1 = I2 = I3 = In .... etc
-
-La resistenza totale del circuito dei resistori di serie è uguale a:
-
-> Resistenza Totale = R1 + R2 + R3 + Rn .... etc
-
-La tensione totale del circuito è uguale alla somma di tutte le singole cadute di tensione.
-
-> Tensione Totale = V1 + V2 + V3 + Vn .... etc
-
-La resistenza totale di un circuito collegato in serie sarà sempre maggiore del resistore di valore più alto.
-
-
-##### Collegamento "in parallelo"
-
-Si dice che i resistori che hanno entrambi i rispettivi terminali collegati a ciascun terminale di un altro resistore o resistori siano collegati "in parallelo".
-I resistori paralleli hanno una tensione comune su di essi.
-VS = V1 = V2 = V3 .... ecc
-
-La resistenza totale di un circuito parallelo è uguale a:
-
-<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/resistenza.gif" alt="">
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+Quando i resistori sono collegati insieme in una SINGOLA linea vengono definiti come collegati "in serie".
+</div>	
 
 <br>
+
+I resistori collegati in serie hanno una corrente comune che li attraversa:
+
+<strong>Corrente</strong> Totale = I1 = I2 = I3 = In .... etc
+
+La resistenza totale dei resistori di serie è uguale a:
+
+<strong>Resistenza</strong> Totale = R1 + R2 + R3 + Rn .... etc
+
+E la tensione totale del circuito è uguale alla somma delle cadute di tensione:
+
+<strong>Tensione</strong> Totale = V1 + V2 + V3 + Vn .... etc
+
+
+#### Collegamento "in parallelo"
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+I resistori che hanno ENTRAMBI i terminali collegati ai rispettivi terminali di un altro resistore vengono detti "in parallelo".</div>	
+
 <br>
+
+I resistori in parallelo hanno una tensione comune su di essi:
+
+<strong>Tensione</strong> totale = V1 = V2 = V3 .... etc
+
+
+#### Il calcolo della resistenza in parallelo
+
+Il calcola della resistenza è un poco più complicato di quello delle resistenze in serie: Per calcolare la resistenza complessiva di n resistenze collegate in parallelo, si utilizza la seguente formula:
+
+1/R_totale = 1/R_1 + 1/R_2 + ... + 1/R_n
+
+Dove:
+
+- R_totale è la resistenza complessiva delle resistenze collegate in parallelo 
+- R_1, R_2, ..., R_n sono le singole resistenze collegate in parallelo 
+> In parole semplici, la resistenza complessiva di resistenze in parallelo è pari al reciproco della somma dei reciproci delle singole resistenze.
+
+Esempio:
+
+##### Calcoliamo la resistenza complessiva di tre resistenze collegate in parallelo: 
+R_1 = 10 Ω, R_2 = 20 Ω, e R_3 = 30 Ω.
+
+1/R_totale = 1/10 + 1/20 + 1/30
+
+1/R_totale = 6/60
+
+R_totale = 60/6 = 10 Ω
 
 Il flusso di corrente totale del circuito è uguale alla somma di tutte le singole correnti di ramo sommate.
-Totale = I1 + I2 + I3 .... ecc
 
-La resistenza totale di un circuito parallelo sarà sempre inferiore al valore del resistore più piccolo.
-
-##### La potenza nominale
+### La potenza nominale di un resistore
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 La potenza di una resistenza elettrica, in fisica e ingegneria elettrica, rappresenta la quantità di energia dissipata sotto forma di calore dalla resistenza quando una corrente elettrica la attraversa. <strong>La potenza è misurata in watt (W)</strong>, la stessa unità di misura utilizzata per la potenza elettrica in generale.
@@ -189,4 +211,4 @@ Tutti i resistori hanno una potenza massima: se questo valore viene superato si 
 <br>
 <br>
 
-<p style="font-size: 0.8em;">R.130.2.0.1</p>
+<p style="font-size: 0.8em;">R.130.2.1.2</p>
