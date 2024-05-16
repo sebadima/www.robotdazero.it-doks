@@ -122,6 +122,57 @@ Colore -> Valore
 
 Il codice colore delle resistenze è un sistema semplice e pratico per identificare il valore di resistenza di un componente elettronico. È importante familiarizzare con questo sistema per poter lavorare in modo sicuro con i circuiti elettronici.
 
+### Le resistenze nei circuiti elettrici
+
+Il compito di un resistore è quello di limitare la corrente che scorre attraverso un circuito elettrico.
+La resistenza è misurata in Ohm e viene indicata dal simbolo Ω.
+
+##### Collegamento "in serie"
+
+Quando i resistori sono collegati insieme in una singola linea vengono detti collegati "in serie".
+I resistori collegati in serie hanno una corrente comune che scorre attraverso di loro.
+
+> Corrente Totale = I1 = I2 = I3 = In .... etc
+
+La resistenza totale del circuito dei resistori di serie è uguale a:
+
+> Resistenza Totale = R1 + R2 + R3 + Rn .... etc
+
+La tensione totale del circuito è uguale alla somma di tutte le singole cadute di tensione.
+
+> Tensione Totale = V1 + V2 + V3 + Vn .... etc
+
+La resistenza totale di un circuito collegato in serie sarà sempre maggiore del resistore di valore più alto.
+
+
+##### Collegamento "in parallelo"
+
+Si dice che i resistori che hanno entrambi i rispettivi terminali collegati a ciascun terminale di un altro resistore o resistori siano collegati "in parallelo".
+I resistori paralleli hanno una tensione comune su di essi.
+VS = V1 = V2 = V3 .... ecc
+
+La resistenza totale di un circuito parallelo è uguale a:
+
+<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/resistor-res9.gif" alt="">
+
+<br>
 <br>
 
-<p style="font-size: 0.8em;">R.130.1.8.0</p>
+Il flusso di corrente totale del circuito è uguale alla somma di tutte le singole correnti di ramo sommate.
+Totale = I1 + I2 + I3 .... ecc
+
+La resistenza totale di un circuito parallelo sarà sempre inferiore al valore del resistore più piccolo.
+
+##### Resistenza potenza nominale
+
+Maggiore è la potenza nominale, maggiore è la dimensione fisica del resistore per dissipare il calore.
+Tutti i resistori hanno una potenza massima: se questo valore viene superato si provoca il surriscaldamento del resistore e il suo danneggiamento.
+
+> I valori standard di potenza sono: 1/8 W, 1/4 W, 1/2 W, 1 W e 2 W.
+
+I resistori di potenza a basso valore ohmico sono generalmente utilizzati per applicazioni di rilevamento della corrente o di alimentazione, ad esempio in multimetri e oscilloscopi.
+
+<br>
+<br>
+
+<p style="font-size: 0.8em;">R.130.1.9.1</p>
