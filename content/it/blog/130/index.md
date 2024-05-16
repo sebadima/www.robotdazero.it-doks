@@ -211,4 +211,4 @@ Tutti i resistori hanno una potenza massima: se questo valore viene superato si 
 <br>
 <br>
 
-<p style="font-size: 0.8em;">R.130.2.1.2</p>
+<p style="font-size: 0.8em;">R.130.2.1.3</p>
