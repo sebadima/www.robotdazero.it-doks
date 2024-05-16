@@ -23,7 +23,7 @@ mermaid: true
 
 La resistenza è una misura dell'opposizione di un oggetto al flusso di elettroni. Questo può suona come una brutta cosa, ma in realtà è utile. La resistenza è ciò che rende possibile generare calore e luce, limitare il flusso di corrente elettrica quando necessario, e assicurarsi che la tensione corretta sia fornita a un dispositivo. 
 
-> Ad esempio, quando gli elettroni viaggiano attraverso il filamento di una lampadina incontrano così tanta resistenza che rallentano e si scontrano furiosamente, generando il bagliore che vedi dalla tua lampadina.
+> *Ad esempio, quando gli elettroni viaggiano attraverso il filamento di una lampadina incontrano così tanta resistenza che rallentano e si scontrano furiosamente, generando il bagliore che vedi dalla tua lampadina.*
 
 
 Qualsiasi materiale, anche i migliori conduttori, mostrano una certa resistenza al flusso di elettroni. (In realtà, alcuni materiali, chiamati superconduttori, possono condurre corrente con zero resistenza elettrica ma solo a temperature estremamente basse. Non li incontrerai nella elettronica.) Maggiore è la resistenza, più basso è il flusso di corrente.  
@@ -71,11 +71,11 @@ Nelle immagine sopra avrete certamente notato le bande colorate tracciate sul co
 
 Il <a href="https://it.farnell.com/calcolatore-codici-colore-resistore" target="_blank" rel="noopener">codice di colori</a> delle resistenze è un sistema standardizzato per indicare il valore di resistenza di un resistore. È composto da una serie di bande colorate che vengono applicate sul corpo del resistore.
 
->Il codice colore più diffuso è quello a quattro bande. Le prime due bande rappresentano le prime due cifre del valore nominale della resistenza, la terza banda rappresenta il moltiplicatore e la quarta banda rappresenta la tolleranza.
+>*Il codice colore più diffuso è quello a quattro bande. Le prime due bande rappresentano le prime due cifre del valore nominale della resistenza, la terza banda rappresenta il moltiplicatore e la quarta banda rappresenta la tolleranza.*
 
 ##### I colori delle bande e i corrispondenti valori sono i seguenti:
 
-Colore -> Valore
+Colore / Valore
 - Nero      0
 - Marrone   1
 - Rosso     2
@@ -87,7 +87,9 @@ Colore -> Valore
 - Grigio    8
 - Bianco    9
 
-##### Ad esempio, un resistore con le bande colorate: rossa, arancione e marrone ha un valore nominale di 230 ohm. La banda rossa rappresenta la cifra 2, la banda arancio rappresenta la cifra 3 e la banda marrone rappresenta il moltiplicatore 10.
+> *Ad esempio: un resistore con le bande colorate: rossa, arancione e marrone ha un valore nominale di **230** ohm. La banda rossa rappresenta la cifra **2**, la banda arancio rappresenta la cifra **3** e la banda marrone rappresenta il moltiplicatore **10**.*
+
+<br>
 
 <img img width="800" class="x figure-img img-fluid lazyload blur-up"  src="images/103.jpeg" alt="codice dei colori di una resistenza di 230 ohm">
 
@@ -101,7 +103,7 @@ Esistono anche resistori a cinque bande. In questo caso, la quinta banda rappres
 ##### I colori delle bande e i corrispondenti valori per il coefficiente termico sono i seguenti:
 
 #### Quinta banda delle resistenze
-Colore -> Valore
+Colore / Valore
 - Nero	100 ppm/K
 - Marrone	50 ppm/K
 - Rosso	25 ppm/K
@@ -170,7 +172,7 @@ Dove:
 
 - R_totale è la resistenza complessiva delle resistenze collegate in parallelo 
 - R_1, R_2, ..., R_n sono le singole resistenze collegate in parallelo 
-> In parole semplici, la resistenza complessiva di resistenze in parallelo è pari al reciproco della somma dei reciproci delle singole resistenze.
+> *In parole semplici, la resistenza complessiva di resistenze in parallelo è pari al reciproco della somma dei reciproci delle singole resistenze.*
 
 Esempio:
 
