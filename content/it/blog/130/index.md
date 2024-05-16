@@ -153,7 +153,7 @@ VS = V1 = V2 = V3 .... ecc
 
 La resistenza totale di un circuito parallelo è uguale a:
 
-<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/resistor-res9.gif" alt="">
+<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="images/resistenza.gif" alt="">
 
 <br>
 <br>
@@ -163,16 +163,30 @@ Totale = I1 + I2 + I3 .... ecc
 
 La resistenza totale di un circuito parallelo sarà sempre inferiore al valore del resistore più piccolo.
 
-##### Resistenza potenza nominale
+##### La potenza nominale
+
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
+La potenza di una resistenza elettrica, in fisica e ingegneria elettrica, rappresenta la quantità di energia dissipata sotto forma di calore dalla resistenza quando una corrente elettrica la attraversa. <strong>La potenza è misurata in watt (W)</strong>, la stessa unità di misura utilizzata per la potenza elettrica in generale.
+</div>	
+
+<br>
+
+La formula per calcolare la potenza dissipata da una resistenza è:
+
+> P = V^2 / R
+
+dove:
+
+- P è la potenza dissipata in watt (W)
+- V è la tensione elettrica ai capi della resistenza in volt (V)
+- R è la resistenza elettrica in ohm (Ω)
+
+Secondo la legge di Joule, la potenza dissipata da una resistenza è direttamente proporzionale al quadrato della corrente che la attraversa e alla resistenza stessa. In altre parole, maggiore è la corrente o la resistenza, maggiore sarà la potenza dissipata sotto forma di calore.
 
 Maggiore è la potenza nominale, maggiore è la dimensione fisica del resistore per dissipare il calore.
-Tutti i resistori hanno una potenza massima: se questo valore viene superato si provoca il surriscaldamento del resistore e il suo danneggiamento.
-
-> I valori standard di potenza sono: 1/8 W, 1/4 W, 1/2 W, 1 W e 2 W.
-
-I resistori di potenza a basso valore ohmico sono generalmente utilizzati per applicazioni di rilevamento della corrente o di alimentazione, ad esempio in multimetri e oscilloscopi.
+Tutti i resistori hanno una potenza massima: se questo valore viene superato si provoca il surriscaldamento del resistore e il suo danneggiamento. I valori standard di potenza sono: 1/8 W, 1/4 W, 1/2 W, 1 W.
 
 <br>
 <br>
 
-<p style="font-size: 0.8em;">R.130.1.9.1</p>
+<p style="font-size: 0.8em;">R.130.2.0.1</p>
