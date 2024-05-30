@@ -58,7 +58,6 @@ Nell'ambito della domotica potresti integrare la centralina nel tuo sistema dome
 
 Abbiamo scelto ESP32 per la sua formidabile connettività: la rete ESP-NOW, disponibile solo su questo *controller*, permette di porre i sensori ad oltre 800 metri dalla stazione ricevente: Una prestazione impossibile da ottenere con il solo Arduino e la normale copertura del Wi-Fi.
 
-
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
  I valori da noi indicati si riferiscono alle normali installazioni di ESP-NOW in modalità "<strong>long range</strong>" e senza antenne speciali o amplificatori RF. I dispositivi possono certamente raggiungere queste portate, ma solo a patto di posizionarli in posizioni elevate e lontane da interferenze fisiche (muri, palazzi, alberi).</div>
 
@@ -126,7 +125,7 @@ Per la compilazione di questo progetto puoi usare Arduino Ide o il compilatore a
 
 #### Compilazione con Arduino IDE
 
-Per ottenere il codice sorgente specifico per il trasmettitore ti basta lanciare il comando GIT seguito dall'indirizzo del repository "corso-ESP32-centralina-meteo-trasmettitore" preparato per il nostro corso on line. Puoi fare copia e incolla dagli esempio in basso, modificando se vuoi il nome della directory.
+Per ottenere il codice sorgente specifico per il trasmettitore ti basta lanciare il comando GIT seguito dall'indirizzo del repository "corso-ESP32-centralina-meteo-trasmettitore" preparato per il nostro corso on-line. Puoi fare copia e incolla dagli esempio in basso, modificando se vuoi il nome della directory.
 
 ##### su Windows con PowerShell:
 ```bash
@@ -152,7 +151,7 @@ Per installare le librerie mancanti puoi procedere in questo modo:
 - Apri Arduino IDE
 - Clicca su "Sketch" -> "Includi libreria" -> "Gestisci librerie".
 - Nella casella di ricerca, digita il nome della libreria mancante.
-- Clicc sul pulsante "Installa" accanto alla libreria desiderata.
+- Clicca sul pulsante "Installa" accanto alla libreria desiderata.
 
 Ad esempio per installare la libreria del DHT11 puoi eseguire gli stessi passi digitando: "DHT":
 
@@ -236,7 +235,7 @@ La "esp_now_send()" effettua una chiamata alla libreria Espressif per trasmetter
 
 ##### Il reset automatico degli interrupt
 
-Il programma utilizza delle funzioni avanzate di ESP32 per resettare la scheda dopo 15 pacchetti dati persi. Come in ogni applicazione IoT non poassiamo pensare di stare al computer per monitorare il comportamento dei dispositivi e dobbiamo prevedere delle istruzione di "recupero" automatico della connessione in caso di problemi.
+Il programma utilizza delle funzioni avanzate di ESP32 per resettare la scheda dopo 15 pacchetti dati persi. Come in ogni applicazione IoT non possiamo pensare di stare al computer per monitorare il comportamento dei dispositivi e dobbiamo prevedere delle istruzione di "recupero" automatico della connessione in caso di problemi.
 
 > I *controller* ESP32 sono dotati di 4 timer hardware, ognuno dei quali è un contatore up/down a 64 bit generico con un prescaler a 16 bit. Fa eccezione la scheda ESP 32C3 che ha solo 2 timer ognuno dei quali è invece di 54 bit. I timer di ESP32 funzionano in modalità roll e alla fine del conteggio ad esempio 800000 ripartono da zero.
 
@@ -261,7 +260,7 @@ void IRAM_ATTR onTimer()
 
 ```
 
-La configurazione dell'interrupt viene completato dentro la funzione "setup()"
+La configurazione di interrupt viene completata dentro la funzione "setup()"
 
 ```bash
   timer = timerBegin(0, 80, true);
@@ -270,10 +269,7 @@ La configurazione dell'interrupt viene completato dentro la funzione "setup()"
   timerAlarmEnable(timer);
 ```
 
-
-Le prime cinque righe impostano la struttura dati suggerista da Espressif per la gestione degli interrupt mentre la successiva funzione "onTimer()" viene richiamata automaticamente dal sistema.
-
-
+Le prime cinque righe impostano la struttura dati suggerita da Espressif per la gestione degli interrupt mentre la successiva funzione "onTimer()" viene richiamata automaticamente dal sistema.
 
 
 ##### La ricerca del canale Wi-Fi del ricevitore
@@ -333,11 +329,11 @@ Il ricevitore non necessita realmente di una fase di assemblaggio a parte la sal
 
 ### Configurazione software del ricevitore 
 
-Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Noi in genere preferiamo Platformio ma ciò non significa che il programma non possa esere compilato con Arduino IDE o che il codice oggetto sia *migliore*: semplicemente preferiamo installare le librerie in automatico come riesce a fare comodamente PlatformIO.
+Puoi usare Arduino Ide o il compilatore a linea di Comando PlatformIO. Noi in genere preferiamo Platformio ma ciò non significa che il programma non possa essere compilato con Arduino IDE o che il codice oggetto sia *migliore*: semplicemente preferiamo installare le librerie in automatico come riesce a fare comodamente PlatformIO.
 
 ####  Compilazione con Arduino IDE
 
-Per scaricare il codice sorgente del ricevitore puoi andare nella linea di comando di Windows usando la PowerShell o nel terminale di Lunux e digitare o fare copia e incolla di:
+Per scaricare il codice sorgente del ricevitore puoi andare nella linea di comando di Windows usando la PowerShell o nel terminale di Linux e digitare o fare copia e incolla di:
 
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo_ricevitore.git
@@ -361,7 +357,6 @@ Se non vuoi usare Github puoi fare copia e incolla del programma sottostante e p
 #### Compilazione con PlatformIO
 
 
-
 ```bash
 git clone git@github.com:sebadima/corso-ESP32-centralina-meteo_ricevitore.git
 cd corso-ESP32-centralina-meteo-trasmettitore
@@ -369,9 +364,7 @@ make upload
 platformio device monitor --baud 115200  --rts 0 --dtr 0 --port /dev/ttyUSB0
 ```     
 
-
 #### Un breve commento al programma
-
 
 
 ##### La connessione alla rete Wi-Fi
@@ -392,7 +385,7 @@ IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
 
 ```
 
-Nella funzione "initWiFi()" la radio dell'ESP32 viene inizializzata in modalità *mista* con il comando: "WiFi.mode(WIFI_MODE_APSTA);" per permette l'uso simultaneo di ESP-NOW e Wi-Fi. La instruzione " Serial.printf("Channel: %u\n", WiFi.channel());" serve in modalitò di debug per controllare il canale in cui avviene la connessione. E' importante avere una idea del canale perchè alcuni router potrebbero essere configurati solo con il Wi-Fi a 5Ghz attivato e dare risultati imprevedibili.
+Nella funzione "initWiFi()" la radio dell'ESP32 viene inizializzata in modalità *mista* con il comando: "WiFi.mode(WIFI_MODE_APSTA);" per permette l'uso simultaneo di ESP-NOW e Wi-Fi. La istruzione " Serial.printf("Channel: %u\n", WiFi.channel());" serve in modalità di debug per controllare il canale in cui avviene la connessione. E' importante avere una idea del canale perchè alcuni router potrebbero essere configurati solo con il Wi-Fi a 5Ghz attivato e dare risultati imprevedibili.
 
 ```bash
 void initWiFi() {
@@ -417,10 +410,9 @@ void initWiFi() {
 ```
 
 
-
 ##### La struttura dati in ricezione
 
-I dati ricevuti dal trasmettitor devono seguire necessariamente lo stesso formato pena errori imprevedibili o blocco conpleto della trasmissione. Se torni al sorente del trasmettitore vedrai che formato e sequenza delle variabili sono le stesse, mentre teoricamente non è necessario che abbiano lo stesso identificativo.
+I dati ricevuti dal trasmettitore devono seguire necessariamente lo stesso formato pena errori imprevedibili o blocco completo della trasmissione. Se torni al sorgente del trasmettitore vedrai che formato e sequenza delle variabili sono le stesse, mentre teoricamente non è necessario che abbiano lo stesso identificativo.
 
 ```bash
 // Struttura dati, deve corrispondere a quella del mittente
@@ -480,9 +472,9 @@ void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int l
 
 ##### La connessione ad ESP-NOW
 
-In questa sezione è utile notare la funzione "esp_now_register_recv_cb(suDatiRicevuti);" che definesce un *hook* verso "suDatiRicevuti" che verrà invocata in maniera automatica (asincrona) ogni volta che la scheda riceve dei dati. E' importante definire in maniere asincrona le routine di ricezione dati per evitare che la schede sprechi prezioni cicli di clockper controllare continuamente se sono arrivati dei dati.
+In questa sezione è utile notare la funzione "esp_now_register_recv_cb(suDatiRicevuti);" che definisce un *hook* verso "suDatiRicevuti" che verrà invocata in maniera automatica (asincrona) ogni volta che la scheda riceve dei dati. E' importante definire in maniere asincrona le routine di ricezione dati per evitare che la schede sprechi preziosi cicli di clock per controllare continuamente se sono arrivati dei dati.
 
-> *La programmazione asincrona è una tecnica che consente al programma di avviare un'attività potenzialmente di lunga durata e di essere ancora in grado di rispondere ad altri eventi durante l'esecuzione di tale attività, piuttosto che dover attendere che tale attività sia terminata. Una volta che l'attività è terminata, il programma viene presentato con il risultato.*
+> *La **programmazione asincrona** è una tecnica che consente al programma di avviare un'attività potenzialmente di lunga durata e di essere ancora in grado di rispondere ad altri eventi durante l'esecuzione di tale attività, piuttosto che dover attendere che tale attività sia terminata. Una volta che l'attività è terminata, il programma viene presentato con il risultato.*
 
 
 ```bash
@@ -497,56 +489,7 @@ void initEspNow() {
 
 
 
-
-
-
 <br><img width="48" class="x figure-img img-fluid lazyload blur-up"  src="/hog/inter.svg" alt="logo sezione"><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -598,7 +541,7 @@ if (!!window.EventSource) {
 
 ```
 
-Nelle sezioni precenti abbiamo già parlato di come implementare un server Web e quindi in questo caso ci concentriamo soprattutto sulle novità e sul funzionamenti di AJAX. 
+Nelle sezioni precedenti abbiamo già parlato di come implementare un server Web e quindi in questo caso ci concentriamo soprattutto sulle novità e sul funzionamenti di AJAX. 
 
 La istruzione "var source = new EventSource('/events');" aggiunge un una routine asincrona che viene attivata dall'arrivo dei nuovi dati e lo segnale sul monitor seriale con "console.log("new_readings", e.data);" ma soprattutto provvede a modificare il documento HTML con la istruzione: <br>"document.getElementById("h1").innerHTML = obj.v1;".
 
@@ -608,7 +551,7 @@ La istruzione "var source = new EventSource('/events');" aggiunge un una routine
 Le cause di un malfunzionamento possono essere molte, ma ricadono fondamentalmente in queste tre tipologie:
 
 - un errato collegamento dei connettori:
-Il diagramma che ti forniamo rappresenta fedelmente il progetto realizzato da Robotdazero. ma ciò non garantisce che alcune versioni commerciali del DHT11 non possano avere diverse disposizioni del connettore dati. Se i pin di alimentazione sembrano restare *coerenti* nelle varie versioni in commercio, il pin dati potrebbe essere collegato a uno qualiasi dei du pin liberi. Il problema comunque facilmente risolvibile facendo un poco di attenzione e ricontrollando "a vista" i connettori. Per facilitare il lavori di controllo ti consigliamo di adottare sempre colori nero e rosso per la alimentazione e verde o giallo per il segnale dati, in tal modi capire se il pin dati e stato collegato correttamente diventa quasi banale.
+Il diagramma che ti forniamo rappresenta fedelmente il progetto realizzato da Robotdazero. ma ciò non garantisce che alcune versioni commerciali del DHT11 non possano avere diverse disposizioni del connettore dati. Se i pin di alimentazione sembrano restare *coerenti* nelle varie versioni in commercio, il pin dati potrebbe essere collegato a uno qualsiasi dei due pin liberi. Il problema comunque facilmente risolvibile facendo un poco di attenzione e ricontrollando "a vista" i connettori. Per facilitare il lavori di controllo ti consigliamo di adottare sempre colori nero e rosso per la alimentazione e verde o giallo per il segnale dati, in tal modi capire se il pin dati e stato collegato correttamente diventa quasi banale.
 
 - un problema alla alimentazione fornita dalla USB:
 La tensione fornito dalla USB in condizioni ideali riesce ad erogare la minima corrente richiesta dall'ESP32 e dai sensori, parliamo di mezzo di 350mA al massimo, ma su alcuni piccoli laptop o desktop danneggiati anche tale carico potrebbe rappresentare un problema. Inoltre ricorda che gli HUB per USB non sono sempre *trasparenti* alla corrente e potrebbero assorbirne una parte per il loro funzionamento. Inoltre, nel caso peggiore, l'UHB potrebbe avere difficoltà a mantenere la tensione costante se troppi dispositivi assorbono corrente nello stesso momento.
@@ -626,4 +569,4 @@ In ambito lavorativo, l'IoT può migliorare l'efficienza e la produttività. I s
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.3.1.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.3.2.1</p>
