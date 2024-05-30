@@ -180,200 +180,7 @@ Dopo la compilazione il comando "**platformio device monitor**" provvede a lanci
 
 ### Il codice sorgente del trasmettitore
 
-{{< highlight js "linenos=table" >}}
-    #include <Arduino.h>
-    #include <esp_now.h>
-    #include <WiFi.h>
-    #include <esp_wifi.h> 
-    #include "DHT.h"
-    #include "soc/soc.h"
-    #include "soc/rtc_cntl_reg.h"
-
-    constexpr char WIFI_SSID[] = "SSID-da-modificare";
-
-    // Indirizzi MAC dei dispositivi di destinazione
-    // trovati con la utility apposita
-    // indirizzo MAC di destinazione: A0:A3:B3:97:83:E8
-    constexpr uint8_t ESP_NOW_RECEIVER[] = { 0xA0, 0xA3, 0xB3, 0x97, 0x83, 0xE8 };
-
-    // Struct per definire il formato dei dati
-    typedef struct struct_messaggio {
-      char a[32];
-      int   umidita;
-      float temperatura;
-      float gas_1;
-      float gas_2;
-      int contatore;
-    } struct_messaggio;
-
-    struct_messaggio Dati;
-    esp_now_peer_info_t peerInfo;
-
-    #define DHTPIN 13
-    #define DHTTYPE DHT11
-
-    DHT dht(DHTPIN, DHTTYPE);
-    float t, h, g_1, g_2;
-    int lost_packages;
-    int ix;
-    int Gas_1 = 33;
-    int Gas_2 = 35;
-
-    #define DELAY_RECONNECT 600 
-    // intervallo in secondi per forzare il reboot
-    volatile int interruptCounter;
-    int totalInterruptCounter;
-    hw_timer_t * timer = NULL;
-    portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-
-
-    void IRAM_ATTR onTimer() 
-    {
-      portENTER_CRITICAL_ISR(&timerMux);
-      interruptCounter++;
-      if (lost_packages >=15) {
-        ESP.restart(); // Riesegui la connessione al nuovo canale WIFI
-      }
-      portEXIT_CRITICAL_ISR(&timerMux);
-    }
-
-
-    int32_t getWiFiChannel(const char *ssid) {
-        if (int32_t n = WiFi.scanNetworks()) {
-            for (uint8_t i=0; i<n; i++) {
-                if (!strcmp(ssid, WiFi.SSID(i).c_str())) {
-                    return WiFi.channel(i);
-                }
-            }
-        }
-
-        return 0;
-    }
-
-
-    void initWiFi() {
-
-        WiFi.mode(WIFI_MODE_STA);
-
-        // acquisice il canale usato dalla WIFI
-        int32_t channel = getWiFiChannel(WIFI_SSID);
-
-        esp_wifi_set_promiscuous(true);
-        esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
-        esp_wifi_set_promiscuous(false);
-
-        Serial.printf("SSID: %s\n", WIFI_SSID);
-        Serial.printf("Channel: %u\n", WiFi.channel());
-    }
-
-
-    void initEspNow() {
-
-        if (esp_now_init() != ESP_OK) {
-            Serial.println("ESP NOW failed to initialize");
-            while (1);
-        }
-
-        memcpy(peerInfo.peer_addr, ESP_NOW_RECEIVER, 6);
-        peerInfo.ifidx   =  WIFI_IF_STA;
-        peerInfo.encrypt = false;
-
-        if (esp_now_add_peer(&peerInfo) != ESP_OK) {
-            Serial.println("ESP NOW pairing failure");
-            while (1);
-        }
-    }
-
-
-    void suInvioDati(const uint8_t *mac_addr, esp_now_send_status_t status) {
-      Serial.print("\r\nStatus invio:\t");
-      Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Consegna positiva" : "Errore di consegna");
-      if (status != ESP_NOW_SEND_SUCCESS) {
-          lost_packages ++;
-      }
-      if (lost_packages >=15) {
-        Serial.println("ESP restarting on lost packages");
-        ESP.restart(); // Riesegui la connessione al nuovo canale WIFI
-      }
-    }
-
-
-    void setup() {
-      Serial.begin(115200);
-      WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
-      //disable brownout detector
-
-      initWiFi();
-      initEspNow();
-
-      timer = timerBegin(0, 80, true);
-      timerAttachInterrupt(timer, &onTimer, true);
-      timerAlarmWrite(timer, DELAY_RECONNECT * 1000000, true);
-      timerAlarmEnable(timer);
-
-      dht.begin();
-      pinMode(Gas_1, INPUT);
-      pinMode(Gas_2, INPUT);
-
-      esp_now_register_send_cb(suInvioDati);
-      ix = 1;
-    }
-
-
-    void loop() {
-      
-      h   = dht.readHumidity();
-      t   = dht.readTemperature();
-      g_1 = analogRead(Gas_1);
-      g_2 = analogRead(Gas_2);
-
-      if (isnan(g_1) )
-      {
-        Serial.println(F("Non riesco a leggere dal sensore di GAS 1!"));
-        return;
-      }
-
-      if (isnan(g_2) )
-      {
-        Serial.println(F("Non riesco a leggere dal sensore di GAS 2!"));
-        return;
-      }
-     
-      if (isnan(t) ) 
-      {
-        Serial.println(F("Non riesco a leggere dal sensore DHT!"));
-        return;
-      }
-
-      Serial.print("Temperatura: ");
-      Serial.println(t);
-      Serial.print("Umidità: ");
-      Serial.println(h);
-      Serial.print("Gas_1: ");
-      Serial.println(g_1);
-      Serial.print("Gas_2: ");
-      Serial.println(g_2);
-
-      strcpy(Dati.a, "Rilevazioni DHT11");
-      Dati.umidita     = (int) h;
-      Dati.temperatura = t;
-      Dati.gas_1       = g_1;
-      Dati.gas_2       = g_2;
-      Dati.contatore   = ix;
-
-      // invio del messaggio a ESP1
-      esp_err_t result = esp_now_send(0, (uint8_t *) &Dati, sizeof(Dati));
-      if (result == ESP_OK) {
-        Serial.println("Messaggio inviato con successo");
-      }
-      else {
-        Serial.println("Errore di invio");
-      }
-      ix = ix + 1;
-      delay(2000);
-    }
-{{< / highlight >}}
-
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-trasmettitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 #### Un breve commento al programma
 
 
@@ -382,7 +189,7 @@ Dopo la compilazione il comando "**platformio device monitor**" provvede a lanci
 Per usare il programma con la tua rete Wi-Fi o hotspot devi modificare la riga #9:
 
 ```bash
-9   constexpr char WIFI_SSID[] = "SSID-da-modificare";
+constexpr char WIFI_SSID[] = "SSID-da-modificare";
 ```
 e inserire il SSID (il nome) della tua rete fissa o mobile.
 
@@ -394,10 +201,8 @@ Per funzionare la rete ESP-NOW *pretende* di sapere l'indirizzo MAC  univoco del
 > Un indirizzo MAC (Media Access Control) è un identificativo univoco assegnato a ogni scheda di rete (NIC) presente in un dispositivo informatico. È un numero di 12 cifre esadecimali, solitamente rappresentato in gruppi di due coppie separate da due punti (ad esempio, 00:11:22:33:44:55).
 
 ```bash
-11   // indirizzo MAC di destinazione: A0:A3:B3:97:83:E8
-...
-14   constexpr uint8_t ESP_NOW_RECEIVER[] = 
-      { 0xA0, 0xA3, 0xB3, 0x97, 0x83, 0xE8 };
+// indirizzo MAC di destinazione: A0:A3:B3:97:83:E8
+constexpr uint8_t ESP_NOW_RECEIVER[] = { 0xA0, 0xA3, 0xB3, 0x97, 0x83, 0xE8 };
 ```
 
 Per ottenere il valore MAC della scheda abbiamo usato il programma descritto nella sezione #7.2 del nostro corso e quindi ti rimandiamo alle istruzioni lì pubblicate. Dopo avere ottenuto l'indirizzo MAC della tua scheda dovrai ovviamente inserirlo nel programma mantendendo la forma di scrittura 0x00.
@@ -406,15 +211,15 @@ Per ottenere il valore MAC della scheda abbiamo usato il programma descritto nel
 ##### La struttura dati: "struct_messaggio"
 
 ```bash
-16   // Struct per definire il formato dei dati
-17   typedef struct struct_messaggio {
-18   char a[32];
-19   int   umidita;
-20   float temperatura;
-21   float gas_1;
-22   float gas_2;
-23   int contatore;
-24   } struct_messaggio;
+// Struct per definire il formato dei dati
+typedef struct struct_messaggio {
+char a[32];
+int   umidita;
+float temperatura;
+float gas_1;
+float gas_2;
+int contatore;
+} struct_messaggio;
 ```
 
 I dati dei sensori non vengono comunicati separatamente ma sono raggruppati in una *struct* del linguaggio C++. La struct è un costrutto sintattico che si limita a definire soltanto il "typedef" (il formato) senza realmente creare spazio nella zona  variabili della RAM.
@@ -424,10 +229,9 @@ La istruzione successiva e cioè "struct_messaggio Dati;" crea effettivamente un
 La prossima istruzione (contenuta all'interno della funzione loop) utilizza le variabili prelevandole con il *puntatore* "&Dati" e li fornisce alla funzione **"esp_now_send()"**. 
 
 
-<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
-<strong>La "esp_now_send()" effettua una chiamata alla libreria Espressif per </strong>trasmettere i dati alla scheda ricevente. Anche se il tutto non appare proprio semplicissimo, potrai apprezzare come la trasmissione fisica sia gestita in toto dalla libreria con una singola istruzione. La maggior parte della complessità viene gestita dalla libreria esterna, per cui il programma risulta alla fine abbastanza semplice e breve.</div> 
-
-
+<div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑<br>
+La "esp_now_send()" effettua una chiamata alla libreria Espressif per trasmettere i dati alla scheda ricevente. Anche se il tutto non appare proprio semplicissimo, potrai apprezzare come la trasmissione fisica sia gestita in toto dalla libreria con una singola istruzione. La maggior parte della complessità viene gestita dalla libreria esterna, per cui il programma risulta alla fine abbastanza semplice e breve.
+</div> 
 
 <br>
 
@@ -514,14 +318,7 @@ void suInvioDati(const uint8_t *mac_addr, esp_now_send_status_t status) {
 }
 ```
 
-
-
-
-
-
-
-
-
+<br>
 
 
 ## #2 - Il ricevitore 
@@ -558,237 +355,9 @@ Se non vuoi usare Github puoi fare copia e incolla del programma sottostante e p
 
 ### Il codice sorgente del ricevitore
 
-```bash
-#include "ESPAsyncWebServer.h"
-#include <Arduino_JSON.h>
-#include <Arduino.h>
-#include <esp_now.h>
-#include <esp_wifi.h>
-#include <WiFi.h>
-#include "soc/soc.h"
-#include "soc/rtc_cntl_reg.h"
-#include "BluetoothSerial.h"
-
-constexpr char WIFI_SSID[] = "SSID-da-modificare";
-constexpr char WIFI_PASS[] = "PASSWORD-da-modificare";
-
-// Setta un indirizzo IP Fisso
-IPAddress local_IP(192, 168, 1, 200);
-// Setta indirizzo del Gateway
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 0, 0);
-IPAddress primaryDNS(8, 8, 8, 8); //opzionale
-IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
-
-// Struttura dati, deve corrispondere a quella del mittente
-typedef struct struttura_dati {
-  char  v0[32];
-  int   v1;
-  float v2;
-  float v3;
-  float v4;
-  unsigned int progressivo;
-} struttura_dati;
-
-struttura_dati LettureSensori;
-
-#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
-#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
-#endif
-
-BluetoothSerial SerialBT;
-JSONVar board;
-AsyncWebServer server(80);
-AsyncEventSource events("/events");
-
-volatile int interruptCounter;
-int totalInterruptCounter;
-hw_timer_t * timer = NULL;
-portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-#define DELAY_RECONNECT 60
-
-
-
-void IRAM_ATTR onTimer() 
-{
-  portENTER_CRITICAL_ISR(&timerMux);
-  interruptCounter++;
-  if (WiFi.status() != WL_CONNECTED)
-  {
-    ESP.restart();
-  }
-  portEXIT_CRITICAL_ISR(&timerMux);
-}
-
-void suDatiRicevuti(const uint8_t * mac_addr, const uint8_t *incomingData, int len) { 
-  // Copia indirizzo MAC del mittente
-  char macStr[18];
-  Serial.print("Pacchetto ricevuto da: ");
-  snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x",
-           mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
-  Serial.println(macStr);
-  memcpy(&LettureSensori, incomingData, sizeof(LettureSensori));
-  
-  board["v1"] = LettureSensori.v1;
-  board["v2"] = LettureSensori.v2;
-  board["v3"] = LettureSensori.v3;
-  board["v4"] = LettureSensori.v4;
-  board["progressivo"] = String(LettureSensori.progressivo);
-  String jsonString = JSON.stringify(board);
-  events.send(jsonString.c_str(), "new_readings", millis());
-  
-  Serial.printf("Board ID %u: %u bytes\n", LettureSensori.v1, len);
-  Serial.printf("t valore: %4.2f \n", LettureSensori.v2);
-  Serial.printf("h valore: %4.2f \n", LettureSensori.v3);
-  Serial.printf("Progressivo: %d \n", LettureSensori.progressivo);
-  Serial.println();
-}
-
-const char index_html[] PROGMEM = R"rawliteral(
-<!DOCTYPE HTML><html>
-<head>
-  <title>Robotdazero - rete "Ambientale" con ESP32</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="icon" href="data:,">
-  <style>
-    html {font-family: Arial; display: inline-block; text-align: center;}
-    p {  font-size: 1.2rem;}
-    body {  margin: 0;}
-    .topnav { overflow: hidden; background-color: #2f4468; color: white; font-size: 1.7rem; }
-    .content { padding: 20px; }
-    .card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
-    .cards { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .reading { font-size: 2.8rem; }
-    .packet { color: #bebebe; }
-    .card.temperature { color: #fd7e14; }
-    .card.humidity { color: #1b78e2; }
-  </style>
-</head>
-<body>
-  <div class="topnav">
-    <h3>ROBOTDAZERO - rete "Ambientale" con ESP32</h3>
-  </div>
-  <div class="content">
-    <div class="cards">
-      <div class="card temperature">
-        <h4><i class="fas fa-thermometer-half"></i> SCHEDA #1 - TEMPERATURA</h4><p><span class="reading"><span id="t1"></span> &deg;C</span></p><p class="packet">sensore DHT11: <span id="rt1"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="fas fa-tint"></i> SCHEDA #1 - UMIDITA'</h4><p><span class="reading"><span id="h1"></span> &percnt;</span></p><p class="packet">sensore DHT11: <span id="rh1"></span></p>
-      </div>
-      <div class="card temperature">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Fumo/Metano</h4><p><span class="reading"><span id="t2"></span> ppm</span></p><p class="packet">sensore MQ-2: <span id="rt2"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Qualita' dell'aria</h4><p><span class="reading"><span id="h2"></span> ppm</span></p><p class="packet">sensore MQ-135: <span id="rh2"></span></p>
-      </div>
-    </div>
-  </div>
-<script>
-if (!!window.EventSource) {
- var source = new EventSource('/events');
- 
- source.addEventListener('open', function(e) {
-  console.log("Events Connected");
- }, false);
- source.addEventListener('error', function(e) {
-  if (e.target.readyState != EventSource.OPEN) {
-    console.log("Events Disconnected");
-  }
- }, false);
- 
- source.addEventListener('message', function(e) {
-  console.log("message", e.data);
- }, false);
- 
- source.addEventListener('new_readings', function(e) {
-  console.log("new_readings", e.data);
-  var obj = JSON.parse(e.data);
-  document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;
-  document.getElementById("h1").innerHTML = obj.v1;
-  document.getElementById("t2").innerHTML = obj.v3;
-  document.getElementById("h2").innerHTML = obj.v4;
- }, false);
-}
-</script>
-</body>
-</html>)rawliteral";
-
-void initBT() {
-  SerialBT.begin("ESP32-sensori");    
-  Serial.println("Dispositivo avviato, puoi accoppiarlo con bluetooth...");
-}
-
-void initWiFi() {
-    WiFi.mode(WIFI_MODE_APSTA);
-
-    if(!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-      Serial.println("STA Failed to configure");
-    }
-
-    WiFi.begin(WIFI_SSID, WIFI_PASS);
-
-    Serial.printf("Connecting to %s .", WIFI_SSID);
-    while (WiFi.status() != WL_CONNECTED) { Serial.print("."); delay(200); }
-    Serial.println("ok");
-
-    IPAddress ip = WiFi.localIP();
-
-    Serial.printf("SSID: %s\n", WIFI_SSID);
-    Serial.printf("Channel: %u\n", WiFi.channel());
-    Serial.printf("IP: %u.%u.%u.%u\n", ip & 0xff, (ip >> 8) & 0xff, (ip >> 16) & 0xff, ip >> 24);
-}
-
-void initEspNow() {
-    if (esp_now_init() != ESP_OK) {
-        Serial.println("ESP NOW failed to initialize");
-        while (1);
-    }
-    esp_now_register_recv_cb(suDatiRicevuti);
-}
-
-void setup() {
-  Serial.begin(115200);
-  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disabilita brownout detector
-
-  initWiFi();
-  initEspNow();
-  initBT();
-
-  timer = timerBegin(0, 80, true);
-  timerAttachInterrupt(timer, &onTimer, true);
-  timerAlarmWrite(timer, DELAY_RECONNECT * 1000000, true);
-  timerAlarmEnable(timer);
-
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send_P(200, "text/html", index_html);
-  });
-   
-  events.onConnect([](AsyncEventSourceClient *client){
-    if(client->lastId()){
-      Serial.printf("Riconnessione! Ultmo messaggio ricevuto: %u\n", client->lastId());
-    }
-    client->send("hello!", NULL, millis(), 10000);
-  });
-  server.addHandler(&events);
-  server.begin();
-}
- 
-void loop() {
-  static unsigned long lastEventTime = millis();
-  static const unsigned long EVENT_INTERVAL_MS = 5000;
-  if ((millis() - lastEventTime) > EVENT_INTERVAL_MS) {
-    events.send("ping",NULL,millis());
-    lastEventTime = millis();
-  }
-}
-```     
-
-
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-ricevitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
 
 <br>
-
 
 #### Compilazione con PlatformIO
 
