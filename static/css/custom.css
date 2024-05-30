@@ -38,20 +38,20 @@ blockquote {
     padding-top:    21px;
     padding-bottom: 0px;
     padding-right:  60px;
-    padding-left:   26px;
+    padding-left:   25px;
     border-left:     3px solid #51B4E9;
     # non funziona con il black ricordatelo background-color: #F6F6F6;
 }
 
 blockquote:before {
     display: block;
-    font-size: 97%;
+    font-size: 90%;
     color: #4a9fc9;
     font-style: italic;
-    padding-left: 12px;
+    padding-left: 10px;
     content:  "#nota"; 
     height: 10px;
-    margin-left: -0.55em;
+    margin-left: -0.40em;
     position:relative;
     top:-20px;
 }
