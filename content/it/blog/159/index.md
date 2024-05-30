@@ -87,9 +87,7 @@ Per costruire il trasmettitore puoi usare i connettori Dupont seguendo lo schema
 
 
 ### Lo schema a blocchi del trasmettitore
-A parte lo schema con la filatura, ti vogliamo mostrare lo schema a blocchi delle connessioni, usando gli stessi diagrammi che avrai a volte visto nei manuali di programmazione. Nel diagramma puoi leggere i collegamenti *teorici* per ogni dispositivo e come collegare ognuno di essi a ESP32 e breadboard. Facci sapere nei commenti in basso se ti piace questo tipo di aiuto!
-
-<br>
+A parte lo schema con la filatura, ti vogliamo mostrare lo schema a blocchi delle connessioni, usando gli stessi diagrammi che avrai a volte visto nei manuali di programmazione. Nel diagramma puoi leggere i collegamenti *teorici* per ogni dispositivo e come collegare ognuno di essi a ESP32 e breadboard. 
 
 {{< mermaid class="bg-light text-center" >}}
 classDiagram
@@ -442,10 +440,14 @@ typedef struct struttura_dati {
 
 Dopo avere letto i dati da ESP-NOw dobbiamo usarli nel nostro server Web e quindi li importiamo nella variabile JSON board che abbiamo definito ad inizio programma con "JSONVar board;". I valori v1,v2,v3,v4 verrano poi usati dal server con queste istruzioni: "document.getElementById("t1").innerHTML = Math.round(obj.v2 * 100) / 100;". 
 
-Poichè si tratta di un argomento un poco complesso lo tratteremo in una sezione successiva. Un altro *pezzo* interessante e la print dell'indirizzo MAC del mittente ottenuta con:
-snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x"
+Poichè si tratta di un argomento un poco complesso lo tratteremo in una sezione successiva. Un altro *pezzo* interessante è la print dell'indirizzo MAC del mittente ottenuta con:<br>
 
-> *snprintf è estremamente simile a sprintf: Dopo tutto, i nomi delle funzioni differiscono solo dal carattere 'n'! Questa è in realtà una convenzione abbastanza comune in C: la funzione con la 'n' richiede un limite superiore nel nostro caso lo definiamo con "sizeof(macStr)". In genere la versione' n ' delle funzioni è più sicura e meno suscettibile agli overflow del buffer.*
+```bash
+snprintf(macStr, sizeof(macStr), "%02x:%02x:%02x:%02x:%02x:%02x"
+```
+
+
+> ***snprintf** è estremamente simile a sprintf: Dopo tutto, i nomi delle funzioni differiscono solo dal carattere 'n'! Questa è in realtà una convenzione abbastanza comune in C: la funzione con la 'n' richiede un limite superiore nel nostro caso lo definiamo con "sizeof(macStr)". In genere la versione' n ' delle funzioni è più sicura e meno suscettibile agli overflow del buffer.*
 
 
 ```bash
@@ -550,7 +552,7 @@ void initEspNow() {
 
 ## Il server Web
 
-Il server copo la connessione ad ESP-NOW e alla rete Wi-Fi riesce a mostrare in tempo reale le letture dei sensori: HTML non è adatto a questo tipo di visualizzazione e deve essere necessariamente integrato con la tecnologia Ajax. Ma iniziamo per gradi e vediamo intanto come viene conservato nella ram il codice HTML:
+Il server dopo la connessione ad ESP-NOW e alla rete Wi-Fi riesce a mostrare in tempo reale le letture dei sensori: HTML non è adatto a questo tipo di visualizzazione e deve essere necessariamente integrato con la tecnologia Ajax. Ma iniziamo per gradi e vediamo intanto come viene conservato nella ram il codice HTML:
 
 
 ```bash
@@ -624,4 +626,4 @@ In ambito lavorativo, l'IoT può migliorare l'efficienza e la produttività. I s
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.2.0.2</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.3.1.2</p>
