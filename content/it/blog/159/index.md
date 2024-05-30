@@ -180,7 +180,8 @@ Dopo la compilazione il comando "**platformio device monitor**" provvede a lanci
 
 ### Il codice sorgente del trasmettitore
 
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-trasmettitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:4153px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-trasmettitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
 #### Un breve commento al programma
 
 
@@ -355,7 +356,7 @@ Se non vuoi usare Github puoi fare copia e incolla del programma sottostante e p
 
 ### Il codice sorgente del ricevitore
 
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-ricevitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:4819px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fsebadima%2Fcorso-ESP32-centralina-meteo-ricevitore%2Fblob%2Fmaster%2Fsrc%2Fmain.ino&style=arduino-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
 
 <br>
 
