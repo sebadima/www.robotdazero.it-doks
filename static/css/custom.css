@@ -48,7 +48,7 @@ blockquote:before {
     font-size: 90%;
     color: #4a9fc9;
     font-style: italic;
-    padding-left: 10px;
+    padding-left: 2px;
     content:  "#nota"; 
     height: 10px;
     margin-left: -0.40em;
