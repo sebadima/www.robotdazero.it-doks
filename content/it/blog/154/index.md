@@ -42,6 +42,8 @@ Fisicamente sono composti da almeno 4 diversi componenti principali:
 - **Display LCD a matrice attiva**: I display LCD a matrice attiva offrono una migliore qualità dell'immagine e un angolo di visione più ampio rispetto ai display LCD a matrice passiva. Tuttavia, sono anche più costosi.
 
 
+<img width="600" class="x figure-img img-fluid lazyload blur-up"  src="images/101.jpeg" alt="ESP32 e display LCD connessioni">
+
 ### Utilizzo dei display LCD nel mondo IoT
 I display LCD sono ampiamente utilizzati nel mondo dell'Internet of Things (IoT) per visualizzare informazioni e dati in tempo reale da sensori, attuatori e altri dispositivi connessi. Il motivo si può trovare nella efficienza energetica di questo dispositivo che permette la alimentazione a batteria senza gravare sui consumi ma anche nella economicità del prodotto. I display LCD infatti sono diventati accessori comunissimi nei progetti IoT a basso costo, rendendoli il mezzo preferito per la visualizzazione di informazioni testuali e grafiche.
 
