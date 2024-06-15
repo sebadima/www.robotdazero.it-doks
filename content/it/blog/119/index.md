@@ -115,13 +115,14 @@ Tra i sistemi embedded tutte le vettura a guida semi-autonoma come la Tesla usan
 
 Il reset della scheda ESP32 può essere utile in una serie di situazioni più gravi come ad esempio:
 
-**1** - La scheda ESP32 è bloccata o non risponde.
+1. La scheda ESP32 è bloccata o non risponde.
 
-**2** - Vuoi cancellare tutte le configurazioni e i dati dalla scheda.
+2. Vuoi cancellare tutte le configurazioni e i dati dalla scheda.
 
-**3** - Vuoi installare una nuova versione del firmware della scheda.
+3. Vuoi installare una nuova versione del firmware della scheda.
 
 ## COME EFFETTUARE IL RESET
+
 Per eseguire un reset di fabbrica ESP32, useremo <a href="https://github.com/espressif/esptool" target="_blank" rel="noopener">ESPTOOL</a>, una utility basata su Python in grado di comunicare con il bootloader presente nella ROM.
 
 Per usare esptool, è necessario installare prima Python 3.8 o una versione più recente. Puoi scaricare e installare Python dal seguente <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">link</a> ma assicurati di scaricare il pacchetto giusto per il tuo sistema.
@@ -153,20 +154,23 @@ python -m esptool
 
 ##### Adesso non ci resta che cancellare la memoria flash dell'ESP32 per completare il reset di fabbrica. 
 
-### CANCELLARE LA MEMORIA FLASH
+### Come cancellare la Memoria FLASH
 Segui questi tre passaggi in sequenza:
 
-**1** - Collega l'ESP32 al PC
+1. Collega l'ESP32 al PC
 
-**2** - Apri un terminale sul tuo PC
+2. Apri un terminale sul tuo PC
 
-**3** - Digita:
+3. Digita:
 
 ```bash
-python -m esptool --chip esp32 erase_flash
+python -m esptool --chip esp32 --port /dev/ttyUSB0 erase_flash
 ```
 
-**4** - Premi "ENTER" o "INVIO" sulla tastiera del PC
+4. Sostituisci "/dev/ttyUSB0" con la reale porta fisica cui è collegato ESP32;<br> Fai molta attenzione sul MAC perchè saltuariamente il sistema potrebbe fornire due nomi del tipo "/dev/xxxx" di cui solo uno corrisponde all'ESP32.
+
+
+5. Premi "ENTER" o "INVIO" sulla tastiera del PC
 
 
 <br>
