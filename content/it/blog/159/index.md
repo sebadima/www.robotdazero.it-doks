@@ -43,7 +43,7 @@ Per la stazione trasmittente abbiamo inoltre selezionato dei componenti di pregi
 
 Con il dispositivo potresti, ad esempio, controllare la qualità dell'aria nella tua casa e monitorare gas come CO, metano, GPL e fumi di combustione. In questo modo otterresti un ambiente più sicuro in tutti locali compresi box e garage esterni. Inoltre il sensore MQ2 potrebbe diventare un alleato prezioso per anticipare problemi all'impianto del metano, a stufe e scaldabagni a gas.
 
-> *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come il benzene e gli ossidi di azoto e i pericolosi "vapori" di ammoniaca e trielina.* 
+> *La centralina può sicuramente aiutarti a prevenire malanni legati agli sbalzi di temperatura e definire una qualità dell'aria superiore grazie al sensore incorporato MQ135. **Il sensore infatti riesce a tracciare la infiltrazione di molti inquinanti industriali, come il benzene** e gli ossidi di azoto e i dannosi "vapori" di ammoniaca e trielina.* 
 
 
 #### Utilizzo della centralina in ambienti "aperti"
@@ -196,7 +196,7 @@ e inserire il SSID (il nome) della tua rete fissa o mobile.
 
 Per funzionare la rete ESP-NOW *pretende* di sapere l'indirizzo MAC  univoco della scheda ESP32 di destinazione.
 
-> Un indirizzo MAC (Media Access Control) è un identificativo univoco assegnato a ogni scheda di rete (NIC) presente in un dispositivo informatico. È un numero di 12 cifre esadecimali, solitamente rappresentato in gruppi di due coppie separate da due punti (ad esempio, 00:11:22:33:44:55).
+> *Un indirizzo MAC (Media Access Control) è un identificativo univoco assegnato a ogni scheda di rete (NIC) presente in un dispositivo informatico. È un numero di 12 cifre esadecimali, solitamente rappresentato in gruppi di due coppie separate da due punti (ad esempio, 00:11:22:33:44:55).*
 
 ```bash
 // indirizzo MAC di destinazione: A0:A3:B3:97:83:E8
@@ -237,7 +237,7 @@ La "esp_now_send()" effettua una chiamata alla libreria Espressif per trasmetter
 
 Il programma utilizza delle funzioni avanzate di ESP32 per resettare la scheda dopo 15 pacchetti dati persi. Come in ogni applicazione IoT non possiamo pensare di stare al computer per monitorare il comportamento dei dispositivi e dobbiamo prevedere delle istruzione di "recupero" automatico della connessione in caso di problemi.
 
-> I *controller* ESP32 sono dotati di 4 timer hardware, ognuno dei quali è un contatore up/down a 64 bit generico con un prescaler a 16 bit. Fa eccezione la scheda ESP 32C3 che ha solo 2 timer ognuno dei quali è invece di 54 bit. I timer di ESP32 funzionano in modalità roll e alla fine del conteggio ad esempio 800000 ripartono da zero.
+> *I **controller** ESP32 sono dotati di 4 timer hardware, ognuno dei quali è un contatore up/down a 64 bit generico con un prescaler a 16 bit. Fa eccezione la scheda ESP 32C3 che ha solo 2 timer ognuno dei quali è invece di 54 bit. I timer di ESP32 funzionano in modalità roll e alla fine del conteggio ad esempio 800000 ripartono da zero.*
 
 ```bash
 #define DELAY_RECONNECT 600 
