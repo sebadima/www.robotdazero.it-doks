@@ -195,4 +195,4 @@ Hard resetting via RTS pin...
 In pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
 <br>
 <br>
-<p style="font-size: 0.75em;">R.119.1.6.1</p>
+<p style="font-size: 0.75em;">R.119.1.8.0</p>
