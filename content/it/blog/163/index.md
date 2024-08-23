@@ -1,7 +1,7 @@
 ---
 title:       "Come correggere Errore 259 sui programmi ESP32 per Bluetooth"
 description: "Come correggere Errore 259 sui programmi ESP32 per Bluetooth"
-excerpt:     "L'esempio di Provisioning delle password Wi-FI via Bluetooth pare non funzionare correttamente su Platformio ed ESP32 nella ultima release delle librerie. Vediamo come correggere velocemente questo errore ..."
+excerpt:     "L'esempio fornito da Espressif per il Provisioning delle password Wi-FI con Bluetooth pare non funzionare correttamente su Platformio nella ultima release delle librerie. Vediamo come correggere velocemente questo errore ..."
 
 date:    2024-06-16T09:19:42+01:00
 lastmod: 2024-06-16T09:19:42+01:00
@@ -66,8 +66,8 @@ Questo rende il seguente blocco di codice in esp32-hal-misc.c un poco sconcertan
 - Trova il file esp32-hal-misc.c 
 - Lancia il tuo editor preferito
 - Trova la riga 266
-- Commenta con "//" la linea  "esp_bt_controller_mem_release(ESP_BT_MODE_BTDM);"
-- Salva il file e ricompila i programmi errati su Platformio
+- Commenta con "//" la linea:  "esp_bt_controller_mem_release(ESP_BT_MODE_BTDM);"
+- Salva il file e ricompila con "Make" i programmi affetti dall'errore **"simple_ble_start enable controller failed 259"**.
 
 ```bash
 

@@ -208,9 +208,9 @@ dove:
 Secondo la legge di Joule, la potenza dissipata da una resistenza è direttamente proporzionale al quadrato della corrente che la attraversa e alla resistenza stessa. In altre parole, maggiore è la corrente o la resistenza, maggiore sarà la potenza dissipata sotto forma di calore.
 
 Maggiore è la potenza nominale, maggiore è la dimensione fisica del resistore per dissipare il calore.
-Tutti i resistori hanno una potenza massima: se questo valore viene superato si provoca il surriscaldamento del resistore e il suo danneggiamento. I valori standard di potenza sono: 1/8 W, 1/4 W, 1/2 W, 1 W.
+Tutti i resistori hanno una potenza massima: se questo valore viene superato si provoca il surriscaldamento del resistore e il suo danneggiamento. I valori standard di potenza sono: 1/8, 1/4, 1/2, 1 e 2 Watt.
 
 <br>
 <br>
 
-<p style="font-size: 0.8em;">R.130.2.1.3</p>
+<p style="font-size: 0.8em;">R.130.2.1.5</p>

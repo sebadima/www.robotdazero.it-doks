@@ -70,7 +70,7 @@ Consiglio vivamente di rileggere questo articolo anche dopo avere intrapreso la 
 
 ## 3.1   Come alimentare l'ESP32                                    - breve articolo
 
-Quando progettiamo un pur semplice circuito per ESP32 dobbiamo pianificare in anticipo la fonte di alimetazione (singola o lutipla) della scheda. Alcune applicaziojni come sistemi di apertura dei cancelli o axinamento di motorini elettrico possono certamente utilizzare la corrente destinata ai dispositivi ontrollati. Altrettanto semplice è la alimentazione dei dispositivi collegati al nostro PC. Ma non sempre la soluzione è così immediata: Dispositivi mobili come i droni impongono letteralmente l'utilizzo di accumulatori ai polimeri di litio con annessi circuiti di ricarica. Dei sensori a basso consumo possono accontentarsi di un banale *power bank* per smartphone. 
+Quando progettiamo un pur semplice circuito per ESP32 dobbiamo pianificare in anticipo la fonte di alimentazione (singola o lutipla) della scheda. Alcune applicaziojni come sistemi di apertura dei cancelli o axinamento di motorini elettrico possono certamente utilizzare la corrente destinata ai dispositivi ontrollati. Altrettanto semplice è la alimentazione dei dispositivi collegati al nostro PC. Ma non sempre la soluzione è così immediata: Dispositivi mobili come i droni impongono letteralmente l'utilizzo di accumulatori ai polimeri di litio con annessi circuiti di ricarica. Dei sensori a basso consumo possono accontentarsi di un banale *power bank* per smartphone. 
 
 
 3.2   Alimentazione con presa USB                                - blog/esp32-e-la-sua-alimentazione/ 
