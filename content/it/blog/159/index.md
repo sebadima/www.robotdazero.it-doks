@@ -573,4 +573,4 @@ In ambito lavorativo, l'IoT può migliorare l'efficienza e la produttività. I s
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.3.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.159.3.2.2</p>
