@@ -138,16 +138,20 @@ Può essere alimentato attraverso un’ampia gamma di fonti di alimentazione, tr
 <div style="border:solid 1px;border-color:green; padding: 5px 1em 0 2em;" class="bz-container">
 <br>
 <img width="40" height="40" src="/115/git-pull-request-24.svg" alt="">
-&nbsp;&nbsp;Scopri la differenza tra tensione e corrente
+&nbsp;&nbsp; In uscita il nostro nuovo libro su ESP32 e IoT
 
-##### Tensione e corrente sono la stessa cosa?
+##### Dove trovare tutti i riferimenti i trucchi per creare applicazioni con ESP32?
 
 > *La differenza tra corrente e tensione spesso riesce a far naufragare la passione di tanti neo appassionati di elettronica. Anche dei calcoli semplicissimi sulla resistenza da collegare ad un LED appaiono misteriosi se non si hanno chiari questi due concetti.*
 
 La tensione è la differenza di “potenziale” tra due punti e la corrente è il numero di cariche elettriche che scorrono tra i due punti in un secondo...
 
 <br>
-<p> <a href="https://www.robotdazero.it/blog/la-differenza-tra-corrente-e-tensione"> <input style="color:white !important;" class="btn btn-primary btn-lg px-4 mb-2" type="submit" value="Scopri la differenza 👉"> </a> </p>
+<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=V9Atnx"></script>
+<div class="klaviyo-form-RjMjgJ"></div>
+<br>
+<br>
+
 </div>
 
 <div class="bz-container">
