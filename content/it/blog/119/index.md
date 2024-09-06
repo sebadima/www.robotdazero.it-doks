@@ -2,8 +2,8 @@
 title: "Come resettare l'ESP32"
 description: "Come resettare l'ESP32"
 excerpt: "Questa è una guida rapida che mostra come cancellare la memoria flash dell'ESP32 per riportarla allo stato originale. \"Flashare\" l'ESP32 potrebbe essere utile se vuoi eliminare eventuali modifiche..."
-date: 2023-10-26T09:19:42+01:00
-lastmod: 2023-26-01T09:19:42+01:00
+date: 2024-09-05T09:19:42+01:00
+lastmod: 2024-09-01T09:19:42+01:00
 draft: false
 weight: 50
 images: ["header.jpeg"]
