@@ -18,6 +18,14 @@ homepage: false
 mermaid:  false
 ---
 
+<style>
+
+img {
+  border: 2px solid #AAA;
+}
+</style>
+
+
 # Preventivo programma "Gestione Commesse"
 
 
