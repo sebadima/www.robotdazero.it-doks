@@ -77,7 +77,7 @@ Report della procedura
 <br>
 <br>
 
-## Analisi della Aggiunte e delle Modifiche alla Procedura Preesistente
+### Analisi della Aggiunte e delle Modifiche alla Procedura Preesistente
 
 Sulla base dei Vs flussi di lavoro come specificati dai seguenti documenti Utip:
 - Analisi dei dati (tipico)
@@ -85,6 +85,35 @@ Sulla base dei Vs flussi di lavoro come specificati dai seguenti documenti Utip:
 - SAC (tipico)
 - Specifiche software di gestione commesse
 - UTIP Gest (tipico)
+
+e sulla base del colloquio informale prezzo Vs sede, ritengo siano da implementare i seguenti punti:
+
+- Flag per identificare se la commessa è una “PS-47”
+- Possibilità di caricare il file pdf dell’ordine
+- Eventuale numero di contratto quadro
+- Possibilità di indicare la percentuale di smart-working per ogni disciplina
+- Compilazione automatica del modulo “SAC
+- Compilazione automatica di n.2 mail da inviare all’apertura di nuove commesse
+- Compilazione “Analisi dei dati” necessaria per il Sistema di Gestione Qualità
+- Interrogazione sul “maturato” della commessa: ore x costo orario (diverso per dipendenti)
+
+## Preventivo Costi
+
+La implementazione delle modifiche precedenti non comporta tempi di realizzazione elevati, tranne nel caso della Reportistica per la Qualità che è totalmente assente e verrà aggiunta sulla base delle vostre specifiche.
+
+Per la Fornitura di 
+
+1. Concessione in licenza della ns 
+2. Implementazione delle modifiche
+
+
+
+
+
+
+
+
+
 
 
 ### Screenshots della Procedura
