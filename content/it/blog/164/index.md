@@ -75,7 +75,6 @@ Report della procedura
 - Scritto in "Visual Basic" con maschere in MS Access 2019: Tutti gli archivi sono esportabili verso Excel per Vs elaborazioni tipo tabelle Pivot etc.
 
 <br>
-<br>
 
 ### Analisi della Aggiunte e delle Modifiche alla Procedura Preesistente
 
@@ -98,7 +97,7 @@ e sulla base del colloquio informale prezzo Vs sede, ritengo siano da implementa
 - Compilazione “Analisi dei dati” necessaria per il Sistema di Gestione Qualità
 - Interrogazione sul “maturato” della commessa: ore x costo orario (diverso per dipendenti)
 
-## Preventivo Costi
+## Proposta Commerciale
 
 La implementazione delle modifiche precedenti non comporta tempi di realizzazione elevati, tranne nel caso della Reportistica per la Qualità che è totalmente assente e verrà aggiunta sulla base delle vostre specifiche.
 
@@ -113,14 +112,29 @@ Per la Fornitura di:
 
 Totale Euro 2200.0 euro da fatturare nella seguente modalità:
 
+## Fatturazione
+
+La fatturazione del progetto sarà gestita con la seguente modalità:
+
 - 25% all'ordine,
 - 25% a completamento delle modifiche minori,
 - 40% alla consegna, installazione e operatività della procedura,
 - 10% dopo Vs collaudo complessivo
 
+## Pagamenti
+
+- Tramite Bonifico Bancario a emissione fattura 
 
 
-
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
