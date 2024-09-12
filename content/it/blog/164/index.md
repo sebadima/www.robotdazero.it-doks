@@ -117,7 +117,7 @@ Report "Scadenza Pagamento Clienti"
 <img src="images/114.jpg" alt="Flowers in Chania">
 <br>
 
-Report Excel like "Documenti Emessi"
+Report "Documenti Emessi" in stile excel
 <img src="images/115.jpg" alt="Flowers in Chania">
 <br>
 
@@ -125,28 +125,44 @@ Maschera "Gestione Documenti"
 <img src="images/116.jpg" alt="Flowers in Chania">
 <br>
 
+Menu di secondo livello della Procedura
 <img src="images/117.jpg" alt="Flowers in Chania">
 <br>
 
+Report "Sal e Pagamenti" stile Excel 
 <img src="images/118.jpg" alt="Flowers in Chania">
 
+Report Analitico "Contabilità per Singola Commessa"
 <img src="images/119.jpg" alt="Flowers in Chania">
 
 
+Report "Scadenze Aperte per Fornitore"
 <img src="images/120.jpg" alt="Flowers in Chania">
 
-<img src="images/121.jpg" alt="Flowers in Chania">
-
+Maschera "Gestione Analitica delle Attività"
 <img src="images/122.jpg" alt="Flowers in Chania">
 
+
+
+
+Report "Riepilogo Preventivi Aperti"
 <img src="images/123.jpg" alt="Flowers in Chania">
 
+Esempio di Menu Limitato per "Funzionario Intermedio"
 <img src="images/124.jpg" alt="Flowers in Chania">
 
 
 
 
+Parte superiore del Report "Ore Mensili per Dipendente"
+<img src="images/2001.jpeg" alt="Flowers in Chania">
+<br>
+<br>
 
+Parte inferiore del Report "Ore Mensili per Dipendente"
+<img src="images/2002.jpeg" alt="Flowers in Chania">
+<br>
+<br>
 
 
 
