@@ -29,7 +29,7 @@ img {
 # Preventivo programma "Gestione Commesse"
 
 
-## Descrizione sintetica del Programma
+## Descrizione sintetica del Programma preesistente
 
 Tabelle Archivi Principali:
 1. Archivio Clienti
@@ -69,17 +69,23 @@ Report della procedura
 
 
 - Gestione personalizzata dei Menu, separati per tre livelli di sicurezza,
-
 - Funzionamento già sperimentato con RDS (Accesso Remoto) con Windows server,
-
 - Procedura molto leggera, installabile su PC a di prestazioni modeste,
-
 - Possibilità di migrare gli archivi verso MS SQL server in caso di utilizzo massivo,
-
-- Scritto in "Visual Basic" con Maschere in Access 2019: Tutti gli archivi sono esportabili verso Excel per successive elaborazioni personali tipo tabelle Pivot e simili.
+- Scritto in "Visual Basic" con Maschere in Access 2019: Tutti gli archivi sono esportabili verso Excel per successive elaborazioni tipo tabelle Pivot etc.
 
 <br>
 <br>
+
+## Analisi della Aggiunte e delle Modifiche alla Procedura Preesistente
+
+Sulla base dei Vs flussi di lavoro come specificati dai seguenti documenti Utip:
+- Analisi dei dati (tipico)
+- Registro Proposal (tipico)
+- SAC (tipico)
+- Specifiche software di gestione commesse
+- UTIP Gest (tipico)
+
 
 ### Screenshots della Procedura
 
