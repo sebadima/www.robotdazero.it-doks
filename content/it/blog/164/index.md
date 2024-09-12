@@ -29,7 +29,7 @@ img {
 # Preventivo programma "Gestione Commesse"
 
 
-## Descrizione sintetica dell’applicativo
+## Descrizione sintetica del Programma
 
 Tabelle Archivi Principali:
 1. Archivio Clienti
@@ -55,18 +55,33 @@ Movimenti per commessa
 12. Descrizione della lavorazione
 
 Report della procedura
-1. Controllo SAL
+1. Commesse Aperte
+2. Stato Ordini
+3. Scadenze Pagamenti Clienti 
+4. Documenti Emesse
+5. "Sal" e Pagamenti
+6. Contabilità per Commessa
+7. Scadenze Aperte per Fornitore
+8. Riepilogo Preventivi Aperti
+9. Report Ore Mensili per Dipendenti - valido per il consulente del lavoro
 
-Menu separati per X livelli di sicurezza
-1. Gestione delle password solo per Admin
-2. Menu e Livelli di sicurezza definibili a piacere
-3. Gestione delle password solo per Admin
+### Plus della Procedura
 
 
+- Gestione personalizzata dei Menu, separati per tre livelli di sicurezza,
 
+- Funzionamento già sperimentato con RDS (Accesso Remoto) con Windows server,
 
+- Procedura molto leggera, installabile su PC a di prestazioni modeste,
 
+- Possibilità di migrare gli archivi verso MS SQL server in caso di utilizzo massivo,
 
+- Scritto in "Visual Basic" con Maschere in Access 2019: Tutti gli archivi sono esportabili verso Excel per successive elaborazioni personali tipo tabelle Pivot e simili.
+
+<br>
+<br>
+
+### Screenshots della Procedura
 
 Menu iniziale della procedura
 <img src="images/101.jpg" alt="Flowers in Chania">
@@ -78,27 +93,27 @@ Maschera "Gestione Commesse"
 <br>
 <br>
 
-Maschera Inserimento Angrafiche partners
+Maschera "Inserimento Anagrafiche Partners"
 <img src="images/103.jpg" alt="Flowers in Chania">
 <br>
 <br>
 
-Maschera Inserimento Ore
+Maschera "Inserimento Ore"
 <img src="images/104.jpg" alt="Flowers in Chania">
 <br>
 <br>
 
-Maschara Inserimenro Ordini a Fornitori
+Maschera "Inserimento Ordini a Fornitori"
 <img src="images/105.jpg" alt="Flowers in Chania">
 <br>
 <br>
 
-Maschera Inserimento Ordini a Clienti
+Maschera "Inserimento Ordini a Clienti"
 <img src="images/106.jpg" alt="Flowers in Chania">
 <br>
 <br>
 
-Inserimento Ore Dipendenti
+Maschera "Inserimento Ore Dipendenti"
 <img src="images/107.jpg" alt="Flowers in Chania">
 <br>
 <br>
@@ -115,12 +130,12 @@ Report "Stato Ordini"
 <br>
 <br>
 
-"Anagrafica Dipendente"
+Maschera "Anagrafica Dipendente"
 <img src="images/112.jpg" alt="Flowers in Chania">
 <br>
 <br>
 
-Gestione delle Password
+Maschara per la "Gestione di Account e Password"
 <img src="images/113.jpg" alt="Flowers in Chania">
 <br>
 <br>
