@@ -72,14 +72,15 @@ Report della procedura
 - Funzionamento già sperimentato con RDS (Accesso Remoto) con Windows server,
 - Procedura molto leggera, installabile su PC a di prestazioni modeste,
 - Possibilità di migrare gli archivi verso MS SQL server in caso di utilizzo massivo,
-- Scritto in "Visual Basic" con Maschere in Access 2019: Tutti gli archivi sono esportabili verso Excel per successive elaborazioni tipo tabelle Pivot etc.
+- Scritto in "Visual Basic" con maschere in MS Access 2019: Tutti gli archivi sono esportabili verso Excel per Vs elaborazioni tipo tabelle Pivot etc.
 
 <br>
 <br>
 
 ### Analisi della Aggiunte e delle Modifiche alla Procedura Preesistente
 
-Sulla base dei Vs flussi di lavoro come specificati dai seguenti documenti Utip:
+Sulla base dei Vs flussi di lavoro come specificati nei Vs seguenti documenti:
+
 - Analisi dei dati (tipico)
 - Registro Proposal (tipico)
 - SAC (tipico)
@@ -101,11 +102,21 @@ e sulla base del colloquio informale prezzo Vs sede, ritengo siano da implementa
 
 La implementazione delle modifiche precedenti non comporta tempi di realizzazione elevati, tranne nel caso della Reportistica per la Qualità che è totalmente assente e verrà aggiunta sulla base delle vostre specifiche.
 
-Per la Fornitura di 
+Per la Fornitura di: 
 
-1. Concessione in licenza della ns 
-2. Implementazione delle modifiche
+1. ns Programma "Gestione Commesse" in licenza d'uso, 
+2. Canone di Assistenza gratuito per il primo anno,
+2. Implementazione delle modifiche minori alla procedura,
+3. Analisi e realizzazione del modulo "Gestione Quailità"
+4. Conversione dei vostri archivi preesistenti in Excel,
+4. Installazione e Collaudo.
 
+Totale Euro 2200.0 euro da fatturare nella seguente modalità:
+
+- 25% all'ordine,
+- 25% a completamento delle modifiche minori,
+- 40% alla consegna, installazione e operatività della procedura,
+- 10% dopo Vs collaudo complessivo
 
 
 
