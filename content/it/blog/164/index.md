@@ -5,7 +5,7 @@ excerpt:     "L'esempio fornito da Espressif per il Provisioning delle password 
 
 date:    2024-09-08T09:19:42+01:00
 lastmod: 2024-09-08T09:19:42+01:00
-draft:   truee
+draft:   true
 weight:  50
 
 images:       ["header.webp"]
