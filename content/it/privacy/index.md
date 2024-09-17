@@ -12,7 +12,7 @@ Robotdazero.it – Viale Acradina 1 – 96100 – Siracusa
 Indirizzo email del Titolare: info@robotdazero.it
 
 
-<img width="0" class="x figure-img img-fluid lazyload blur-up"  src="/hog/107.webp" alt="">
+<img width="300" class="x figure-img img-fluid lazyload blur-up"  src="/hog/107.webp" alt="immagine hero">
 
 
 ### Tipologie di Dati raccolti
