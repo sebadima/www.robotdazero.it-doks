@@ -39,14 +39,14 @@ blockquote {
     padding-bottom: 0px;
     padding-right:  60px;
     padding-left:   25px;
-    border-left:     3px solid #51B4E9;
+    border-left:     3px solid #DD0000;
     # non funziona con il black ricordatelo background-color: #F6F6F6;
 }
 
 blockquote:before {
     display: block;
     font-size: 90%;
-    color: #4a9fc9;
+    color: #e56b6b;
     font-style: italic;
     padding-left: 2px;
     content:  "#nota"; 
