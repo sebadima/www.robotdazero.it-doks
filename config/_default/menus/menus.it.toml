@@ -76,3 +76,8 @@
   name = "Contatti"
   url = "/contatti/"
   weight = 10
+
+[[footer]]
+  name = "Mastodon"
+  url = "https://mastodon.social/@robotdazero"
+  weight = 30
