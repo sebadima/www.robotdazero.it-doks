@@ -35,21 +35,22 @@ text-decoration: none;
 }
 
 blockquote {
-    padding-top:    21px;
-    padding-bottom: 0px;
+    padding-top:    35px;
+    padding-bottom: 04px;
     padding-right:  60px;
     padding-left:   25px;
-    border-left:     3px solid #DD0000;
+    border-left:     3px solid #62BFE7;
+    background-color: #D7EDFA;
     # non funziona con il black ricordatelo background-color: #F6F6F6;
 }
 
 blockquote:before {
     display: block;
     font-size: 90%;
-    color: #e56b6b;
-    font-style: italic;
+    color: #111111;
+    font-weight: bold;
     padding-left: 2px;
-    content:  "#nota"; 
+    content:  "Nota:"; 
     height: 10px;
     margin-left: -0.40em;
     position:relative;
