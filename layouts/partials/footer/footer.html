@@ -1,78 +1,72 @@
 <footer class="footer text-muted">
    <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}">
-      <div class="row">
-         <div class="col-lg-8 order-last order-lg-first">
-            <ul class="list-inline">
-               <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
-            </ul>
-         </div>
-         <div class="col-lg-8 order-first order-lg-last text-lg-end">
-            <ul class="list-inline">
-               {{ range .Site.Menus.footer -}}
-               <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-               {{ end -}}
-            </ul>
-         </div>
+   <div class="row">
+      <div class="col-lg-8 order-last order-lg-first">
+         <ul class="list-inline">
+            <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
+         </ul>
       </div>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-
-
-<div class="text-center">
-<div style="font-size: 80%;">
-<img src="/logo/logo-white.svg" width="34" height="34" alt="logo">
-<br>
-<br>
- © 2024 Robotdazero.it - P.IVA IT00378808885 <br> Proudly made in the EU 🇪🇺
-<br>
-info@robotdazero.it
-</div>
-<br>
-
-<table class="tg"><tbody>
-  <tr>
-    <td class="tg-c3ow">CHI SIAMO</td>
-    <td class="tg-c3ow">PERCHÉ ROBOTDAZERO</td>
-    <td class="tg-c3ow">CONFRONTI</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="/privacy/">Privacy policy</a></td>
-    <td class="tg-c3ow"><a href="/docs/piattaforma/cloud/">Piattaforma autogestita</a></td>
-    <td class="tg-c3ow"><a href="https://cloud.arduino.cc/plans/">Arduno cloud</a></td>
-</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="/cookie-policy/">Cookie policy</a></td>
-    <td class="tg-c3ow"><a href="/docs/ecommerce/multifunzione/">Scheda multisensore</a></td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="/contatti">Contatti</a></td>
-    <td class="tg-c3ow"><a href="/tags/esp32/">ESP32 invece di Arduino</a></td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="/shop">Shop</a></td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="https://github.com/sebadima">Programmi free</a></td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow"><a href="/blog">Blog</a></td>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"></td>
-  </tr>
-</tbody>
-</table>
+      <div class="col-lg-8 order-first order-lg-last text-lg-end">
+         <ul class="list-inline">
+            {{ range .Site.Menus.footer -}}
+            <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end -}}
+         </ul>
+      </div>
+   </div>
+   <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+      .tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+   </style>
+   <div class="text-center">
+      <table class="tg">
+         <tbody>
+            <tr>
+               <td class="tg-c3ow">CHI SIAMO</td>
+               <td class="tg-c3ow">PERCHÉ SCEGLIERCI</td>
+               <td class="tg-c3ow">© 2024 Robotdazero.it</td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="/privacy/">Privacy policy</a></td>
+               <td class="tg-c3ow"><a href="/docs/piattaforma/cloud/">Piattaforma autogestita</a></td>
+               <td class="tg-c3ow">P.IVA IT00378808885</td>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="/cookie-policy/">Cookie policy</a></td>
+               <td class="tg-c3ow"><a href="/docs/ecommerce/multifunzione/">Scheda multisensore</a></td>
+               <td class="tg-c3ow">info@robotdazero.it</td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="/contatti">Contatti</a></td>
+               <td class="tg-c3ow"><a href="/tags/esp32/">Progetti con ESP32</a></td>
+               <td class="tg-c3ow">Proudly made in the EU 🇪🇺</td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="/shop">Shop</a></td>
+               <td class="tg-c3ow"></td>
+               <td class="tg-c3ow"><img src="/logo.svg" width="34" height="34" alt="logo"></td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="https://github.com/sebadima">Programmi free</a></td>
+               <td class="tg-c3ow"></td>
+               <td class="tg-c3ow"></td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="/blog">Il nostro Blog</a></td>
+               <td class="tg-c3ow"></td>
+               <td class="tg-c3ow"></td>
+            </tr>
+            <tr>
+               <td class="tg-c3ow"><a href="https://mastodon.social/@robotdazero">Mastodon</a></td>
+               <td class="tg-c3ow"></td>
+               <td class="tg-c3ow"></td>
+            </tr>
+         </tbody>
+      </table>
    </div>
 </footer>
