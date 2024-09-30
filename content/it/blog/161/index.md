@@ -32,7 +32,7 @@ Analizza il flusso di corrente e tensione in circuiti elettrici composti da resi
 
 > La teoria dei circuiti elettronici è un ramo fondamentale dell'elettronica che studia il comportamento di corrente e tensione in circuiti composti da componenti come resistori, condensatori, induttori e sorgenti di tensione. Essa fornisce le basi per la progettazione e l'analisi di qualsiasi circuito elettrico, sia esso semplice o complesso.
 
-Seppure la elettronica sia comprensibile solo facendo ricorso alla fisica nucleare, le basi pratiche del suo funzionamento sono piuttosto semplici e per iniziare spesso basta conoscre la fondamentale legge di Ohm.
+Seppure la elettronica sia comprensibile solo facendo ricorso alla fisica nucleare, le basi pratiche del suo funzionamento sono piuttosto semplici e per iniziare spesso basta conoscere la fondamentale legge di Ohm.
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
 La legge di Ohm, una delle leggi più importanti dell'elettronica, afferma che la corrente (I) che scorre in un circuito è direttamente proporzionale alla tensione (V) applicata e inversamente proporzionale alla resistenza (R) del circuito. La legge si esprime con la seguente formula:
@@ -64,10 +64,10 @@ L'elettronica trova applicazioni in una vastità di settori:
 
 ## ESP32 e ARDUINO
 
-L'avvento di microcontrollori come Arduino e ESP32 ha rivoluzionato il mondo dell'elettronica, aprendo nuove possibilità a hobbisti, maker e ingegneri. Questi dispositivi offrono:
+L'avvento di microcontrollori come Arduino e ESP32 ha rivoluzionato il mondo dell'elettronica, aprendo nuove possibilità a hobbyisti, "maker" e ingegneri. Questi dispositivi offrono:
 
 Facilità d'uso: Piattaforme di sviluppo intuitive e linguaggi di programmazione semplici.
-Costo accessibile: Prezzi contenuti che favoriscono la sperimentazione e la prototipazione.
+Costo accessibile: Prezzi contenuti che favoriscono la sperimentazione e la costruzione di prototipi.
 Flessibilità: Ampia gamma di funzionalità e possibilità di interfacciamento con sensori, attuatori e altri dispositivi.
 Robotica:
 
@@ -111,7 +111,7 @@ L'IoT apre nuove opportunità per la creazione di nuovi prodotti, servizi e mode
 ### Intelligenza artificiale (AI)
 
 Principali vantaggi dell'intelligenza artificiale rispetto ai vecchi sistemi di automazione:
-1. Capacità di apprendimento e adattamento: L'IA è in grado di apprendere da dati ed esperienze, migliorando continuamente le proprie prestazioni e adattandosi a nuovi scenari. I sistemi di automazione tradizionali, basati su regole predefinite, non possiedono questa flessibilità.
+1. Capacità di apprendimento e adattamento: L'IA è in grado di apprendere da dati ed esperienze, migliorando continuamente le proprie prestazioni e adattandosi a nuovi scenari. I sistemi di automazione tradizionali, basati su regole predefinite, non hanno questa flessibilità.
 
 2. Migliore efficienza e produttività: L'IA può automatizzare compiti complessi e ripetitivi, liberando tempo e risorse per attività più strategiche. Inoltre, l'analisi intelligente dei dati può ottimizzare processi e decisioni, aumentando l'efficienza complessiva.
 
@@ -127,4 +127,4 @@ La elettronica è una disciplina fondamentale che permea la nostra vita quotidia
 
 <br>
 <br>
-<p style="font-size: 0.80em;">Robotdazero.it - post - R.161.0.2.1</p>
+<p style="font-size: 0.80em;">Robotdazero.it - post - R.161.0.4.2</p>
