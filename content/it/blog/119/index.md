@@ -92,7 +92,7 @@ L'RTOS dei microcontrollori ESP32 offre una serie di funzionalità che consenton
 - <strong>Time slicing</strong>: lo scheduler RTOS esegue le task con la stessa priorità in modo alternato, in base a un algoritmo round-robin.
 - <strong>Sincronizzazione</strong>: il kernel RTOS fornisce una serie di primitive per la sincronizzazione delle task, come i semafori, i mutex e i timer.
 
-L'RTOS dell'ESP32 parte immediatamente dopo il reset e seppure venga normalmente usato solo per la sincronizzazione interna della schea, possiamo sfruttarlo per creare una vasta gamma di applicazioni "real time" come: controllo di processi industriali, Sistemi di comunicazione, Sistemi "embedded" etc...
+L'RTOS dell'ESP32 parte immediatamente dopo il reset e seppure venga normalmente usato solo per la sincronizzazione interna della scheda, possiamo sfruttarlo per creare una vasta gamma di applicazioni "real time" come: controllo di processi industriali, Sistemi di comunicazione, Sistemi "embedded" etc...
 
 
 <div class="alert alert-doks d-flexflex-shrink-1" role="alert">🔑
@@ -195,4 +195,4 @@ Hard resetting via RTS pin...
 In pochi secondi la memoria flash dell'ESP32 verrà cancellata. 
 <br>
 <br>
-<p style="font-size: 0.75em;">R.119.1.8.0</p>
+<p style="font-size: 0.75em;">R.119.1.8.2</p>
