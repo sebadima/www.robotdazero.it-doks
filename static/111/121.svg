@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128px"
+   height="128px"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="121.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5633689"
+     inkscape:cx="34.540792"
+     inkscape:cy="63.644607"
+     inkscape:window-width="1482"
+     inkscape:window-height="800"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <title
+     id="title2">Order</title>
+  <defs
+     id="defs9">
+    <linearGradient
+       x1="34.842042"
+       y1="160.59351"
+       x2="115.38077"
+       y2="-29.774163"
+       id="linearGradient-1"
+       gradientTransform="scale(0.97858991,1.0218785)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#AE68FF"
+         offset="0%"
+         id="stop4" />
+      <stop
+         stop-color="#7991FF"
+         offset="100%"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <g
+     id="E-commerce-icons"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="rotate(180,64,64)">
+    <g
+       transform="translate(-737,-908)"
+       id="Order">
+      <g
+         transform="translate(737,908)"
+         id="g14">
+        <rect
+           id="Rectangle"
+           fill-opacity="0"
+           fill="#ffffff"
+           x="0"
+           y="0"
+           width="128"
+           height="128" />
+        <path
+           d="m 101.33333,10.666667 c 8.83656,0 16,7.163444 16,16 v 0 82.759573 c 0,5.89103 -4.77563,10.66666 -10.66666,10.66666 -1.36949,0 -2.72617,-0.26372 -3.99593,-0.77675 v 0 l -16.852463,-6.80908 -17.095287,8.44212 c -2.977052,1.47015 -6.468928,1.47015 -9.44598,0 v 0 l -17.095287,-8.44212 -16.852466,6.80908 c -5.462047,2.20689 -11.678948,-0.43194 -13.885836,-5.89399 -0.513035,-1.26976 -0.776754,-2.62643 -0.776754,-3.99592 v 0 -82.759573 c 0,-8.836556 7.163444,-16 16,-16 v 0 z m 0,10.666666 H 26.666667 c -2.945519,0 -5.333334,2.387815 -5.333334,5.333334 v 0 82.759573 l 16.852465,-6.80908 c 2.819858,-1.13934 5.991967,-1.02078 8.718915,0.32586 v 0 L 64,111.38514 81.095287,102.94302 c 2.726948,-1.34664 5.899057,-1.4652 8.718914,-0.32586 v 0 l 16.852469,6.80908 V 26.666667 c 0,-2.945519 -2.38782,-5.333334 -5.33334,-5.333334 z M 90.666667,64 V 74.666667 H 37.333333 V 64 Z m 0,-21.333333 V 53.333333 H 37.333333 V 42.666667 Z"
+           fill="url(#linearGradient-1)"
+           id="path12"
+           style="fill:url(#linearGradient-1)" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata3268">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Order</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
