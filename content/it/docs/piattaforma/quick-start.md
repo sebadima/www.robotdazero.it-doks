@@ -13,7 +13,7 @@ weight: 110
 toc: true
 ---
 
-
+<br>
 
 Questo documento descrive la installazione completa (lunga) di Kaspian sul tuo server personale: se vuoi partire con la versione cloud (rapida) vai invece a questa <a href="/docs/piattaforma/cloud/">pagina</a>.
 ## Cosa serve prima di iniziare
