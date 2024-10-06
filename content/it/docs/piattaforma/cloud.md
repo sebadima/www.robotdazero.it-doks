@@ -13,9 +13,6 @@ weight: 120
 toc: true
 ---
 
-
-<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="/124/img01002.svg" alt="">
-
 <br>
 
 Puoi preparare da solo la tua infrastruttura per far funzionare la nostra piattaforma ma ti suggeriamo di partire con la versione ospitata sui nostri computer che puoi richiedere gratuitamente visitando questa <a href="/docs/piattaforma/trial/">pagina</a>.
@@ -31,7 +28,7 @@ Con la nostra versione cloud puoi partire senza installare il programma e in poc
 Usando le credenziali che riceverai via email dovrai accedere alla App dal tuo PC e andare subito alla pagina delle impostazioni, premere modifica e inserire le credenziali della tua WIFI (SSID e password). 
 Dopo avere premuto "AGGIORNA" la nostra App dovrebbe apparire come nella immagine sotto. Il resto della configurazione, le API e le password dei servizi associati sono invece inserite automaticamente da noi.
 
-<img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/101.png" alt="">
+<img width="100%" class="x figure-img img-fluid lazyload blur-up" src="/docs/piattaforma/images/201.png" alt="">
 
 ### Come programmare il tuo Arduino
 
