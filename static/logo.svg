@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="128px"
-   height="128px"
-   viewBox="0 0 128 128"
+   id="Layer_2"
+   viewBox="0 0 245.7709455 60.0000321"
    version="1.1"
-   id="svg18"
    sodipodi:docname="logo.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview20"
+     id="namedview21"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -23,33 +19,58 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="2.2109375"
-     inkscape:cx="44.09894"
-     inkscape:cy="48.169611"
+     inkscape:zoom="1.2928705"
+     inkscape:cx="92.816723"
+     inkscape:cy="49.115516"
      inkscape:window-width="1482"
      inkscape:window-height="800"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg18" />
-  <title
-     id="title2">Order</title>
+     inkscape:current-layer="Layer_2" />
   <defs
-     id="defs9">
+     id="defs10">
+    <style
+       id="style2">.cls-1{fill:url(#New_Gradient_Swatch_1);}.cls-1,.cls-2,.cls-3{stroke-width:0px;}.cls-2{fill:url(#New_Gradient_Swatch_1-2);}.cls-3{fill:#1f2961;}</style>
     <linearGradient
-       x1="21.965066%"
-       y1="137.756608%"
-       x2="95.8535512%"
-       y2="-36.8920375%"
-       id="linearGradient-1">
+       id="New_Gradient_Swatch_1"
+       x1="14.8413403"
+       y1="22.5436904"
+       x2="27.4731407"
+       y2="44.6493411"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#909cf7"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#4b38d8"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="New_Gradient_Swatch_1-2"
+       x1="7.9837957"
+       y1="-1.3582919"
+       x2="21.0009873"
+       y2="21.4217935"
+       xlink:href="#New_Gradient_Swatch_1" />
+    <linearGradient
+       x1="34.842042"
+       y1="160.59351"
+       x2="115.38077"
+       y2="-29.774163"
+       id="linearGradient-1"
+       gradientTransform="scale(0.97858991,1.0218785)"
+       gradientUnits="userSpaceOnUse">
       <stop
          stop-color="#AE68FF"
          offset="0%"
-         id="stop4" />
+         id="stop4-7" />
       <stop
          stop-color="#7991FF"
          offset="100%"
-         id="stop6" />
+         id="stop6-9" />
     </linearGradient>
   </defs>
   <g
@@ -57,35 +78,28 @@
      stroke="none"
      stroke-width="1"
      fill="none"
-     fill-rule="evenodd">
+     fill-rule="evenodd"
+     transform="matrix(0.40641731,0,0,0.40641731,-2.7654368,3.9893074)">
     <g
-       transform="translate(-737.000000, -908.000000)"
+       transform="translate(-737,-908)"
        id="Order">
       <g
-         transform="translate(737.000000, 908.000000)"
+         transform="translate(737,908)"
          id="g14">
         <rect
            id="Rectangle"
            fill-opacity="0"
-           fill="#FFFFFF"
+           fill="#ffffff"
            x="0"
            y="0"
            width="128"
            height="128" />
         <path
-           d="M101.333333,10.6666667 C110.169889,10.6666667 117.333333,17.8301107 117.333333,26.6666667 L117.333333,26.6666667 L117.333333,109.426238 C117.333333,115.317275 112.557704,120.092904 106.666667,120.092904 C105.297179,120.092904 103.940503,119.829185 102.670742,119.31615 L102.670742,119.31615 L85.8182773,112.507073 L68.72299,120.94919 C65.7459378,122.41934 62.2540622,122.41934 59.27701,120.94919 L59.27701,120.94919 L42.1817227,112.507073 L25.3292575,119.31615 C19.8672097,121.523038 13.6503089,118.88421 11.4434209,113.422162 C10.9303862,112.152401 10.6666667,110.795726 10.6666667,109.426238 L10.6666667,109.426238 L10.6666667,26.6666667 C10.6666667,17.8301107 17.8301107,10.6666667 26.6666667,10.6666667 L26.6666667,10.6666667 Z M101.333333,21.3333333 L26.6666667,21.3333333 C23.721148,21.3333333 21.3333333,23.721148 21.3333333,26.6666667 L21.3333333,26.6666667 L21.3333333,109.426238 L38.1857985,102.617161 C41.0056558,101.477824 44.1777654,101.596378 46.9047127,102.943018 L46.9047127,102.943018 L64,111.385136 L81.0952873,102.943018 C83.8222346,101.596378 86.9943442,101.477824 89.8142015,102.617161 L89.8142015,102.617161 L106.666667,109.426238 L106.666667,26.6666667 C106.666667,23.721148 104.278852,21.3333333 101.333333,21.3333333 L101.333333,21.3333333 Z M90.6666667,64 L90.6666667,74.6666667 L37.3333333,74.6666667 L37.3333333,64 L90.6666667,64 Z M90.6666667,42.6666667 L90.6666667,53.3333333 L37.3333333,53.3333333 L37.3333333,42.6666667 L90.6666667,42.6666667 Z"
+           d="m 101.33333,10.666667 c 8.83656,0 16,7.163444 16,16 v 0 82.759573 c 0,5.89103 -4.77563,10.66666 -10.66666,10.66666 -1.36949,0 -2.72617,-0.26372 -3.99593,-0.77675 v 0 l -16.852463,-6.80908 -17.095287,8.44212 c -2.977052,1.47015 -6.468928,1.47015 -9.44598,0 v 0 l -17.095287,-8.44212 -16.852466,6.80908 c -5.462047,2.20689 -11.678948,-0.43194 -13.885836,-5.89399 -0.513035,-1.26976 -0.776754,-2.62643 -0.776754,-3.99592 v 0 -82.759573 c 0,-8.836556 7.163444,-16 16,-16 v 0 z m 0,10.666666 H 26.666667 c -2.945519,0 -5.333334,2.387815 -5.333334,5.333334 v 0 82.759573 l 16.852465,-6.80908 c 2.819858,-1.13934 5.991967,-1.02078 8.718915,0.32586 v 0 L 64,111.38514 81.095287,102.94302 c 2.726948,-1.34664 5.899057,-1.4652 8.718914,-0.32586 v 0 l 16.852469,6.80908 V 26.666667 c 0,-2.945519 -2.38782,-5.333334 -5.33334,-5.333334 z M 90.666667,64 V 74.666667 H 37.333333 V 64 Z m 0,-21.333333 V 53.333333 H 37.333333 V 42.666667 Z"
            fill="url(#linearGradient-1)"
-           id="path12" />
+           id="path12"
+           style="fill:url(#linearGradient-1)" />
       </g>
     </g>
   </g>
-  <metadata
-     id="metadata2553">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>Order</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
 </svg>
