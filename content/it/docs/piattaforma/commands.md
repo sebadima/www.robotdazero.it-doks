@@ -13,8 +13,6 @@ weight: 130
 toc: true
 ---
 
-<img width="150" class="x figure-img img-fluid lazyload blur-up"  src="/124/img01003.svg" alt="">
-
 {{< alert icon="💡" text="Ubuntu richiede il comando `sudo` per eseguire codice con i permessi di root!" />}}
 
 ## Flake8
