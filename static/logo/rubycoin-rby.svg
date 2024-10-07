@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128px"
+   height="128px"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="rubycoin-rby.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5633689"
+     inkscape:cx="37.419191"
+     inkscape:cy="63.644607"
+     inkscape:window-width="1482"
+     inkscape:window-height="800"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <title
+     id="title2">Electronics</title>
+  <defs
+     id="defs9">
+    <linearGradient
+       x1="38.859595"
+       y1="159.19751"
+       x2="113.35225"
+       y2="-36.187073"
+       id="linearGradient-1"
+       gradientTransform="scale(0.95346256,1.0488089)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#AE68FF"
+         offset="0%"
+         id="stop4" />
+      <stop
+         stop-color="#7991FF"
+         offset="100%"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       x1="34.842041"
+       y1="160.59351"
+       x2="115.38077"
+       y2="-29.774162"
+       id="linearGradient-1-3"
+       gradientTransform="scale(0.97858991,1.0218785)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#AE68FF"
+         offset="0%"
+         id="stop4-1" />
+      <stop
+         stop-color="#7991FF"
+         offset="100%"
+         id="stop6-4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="E-commerce-icons"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(-174.47568,131.10187)">
+    <g
+       transform="translate(-1022,-908)"
+       id="Electronics">
+      <g
+         transform="translate(1022,908)"
+         id="g14">
+        <rect
+           id="Rectangle"
+           fill-opacity="0"
+           fill="#ffffff"
+           x="0"
+           y="0"
+           width="128"
+           height="128" />
+        <path
+           d="m 106.66667,5.3333333 c 5.89103,0 10.66666,4.7756297 10.66666,10.6666667 v 0 96 c 0,5.89104 -4.77563,10.66667 -10.66666,10.66667 v 0 H 21.333333 c -5.891037,0 -10.666666,-4.77563 -10.666666,-10.66667 v 0 -96 c 0,-5.891037 4.775629,-10.6666667 10.666666,-10.6666667 v 0 z M 106.66667,16 H 21.333333 v 96 H 106.66667 Z M 64,48 C 78.727593,48 90.666667,59.939073 90.666667,74.666667 90.666667,89.39426 78.727593,101.33333 64,101.33333 49.272407,101.33333 37.333333,89.39426 37.333333,74.666667 37.333333,59.939073 49.272407,48 64,48 Z m 0,10.666667 c -8.836556,0 -16,7.163444 -16,16 0,8.836556 7.163444,16 16,16 8.836556,0 16,-7.163444 16,-16 0,-8.836556 -7.163444,-16 -16,-16 z m 32,-32 V 37.333333 H 85.333333 V 26.666667 Z m -42.666667,0 V 37.333333 H 32 V 26.666667 Z"
+           fill="url(#linearGradient-1)"
+           id="path12"
+           style="fill:url(#linearGradient-1)" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata4105">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Electronics</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="E-commerce-icons-6"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="matrix(-0.48293949,0,0,-0.48293949,-23.883393,-3.8197893)">
+    <g
+       transform="translate(-737,-908)"
+       id="Order">
+      <g
+         transform="translate(737,908)"
+         id="g14-9">
+        <rect
+           id="Rectangle-4"
+           fill-opacity="0"
+           fill="#ffffff"
+           x="0"
+           y="0"
+           width="128"
+           height="128" />
+        <path
+           d="m 101.33333,10.666667 c 8.83656,0 16,7.163444 16,16 v 0 82.759573 c 0,5.89103 -4.77563,10.66666 -10.66666,10.66666 -1.36949,0 -2.72617,-0.26372 -3.99593,-0.77675 v 0 l -16.852463,-6.80908 -17.095287,8.44212 c -2.977052,1.47015 -6.468928,1.47015 -9.44598,0 v 0 l -17.095287,-8.44212 -16.852466,6.80908 c -5.462047,2.20689 -11.678948,-0.43194 -13.885836,-5.89399 -0.513035,-1.26976 -0.776754,-2.62643 -0.776754,-3.99592 v 0 -82.759573 c 0,-8.836556 7.163444,-16 16,-16 v 0 z m 0,10.666666 H 26.666667 c -2.945519,0 -5.333334,2.387815 -5.333334,5.333334 v 0 82.759573 l 16.852465,-6.80908 c 2.819858,-1.13934 5.991967,-1.02078 8.718915,0.32586 v 0 L 64,111.38514 81.095287,102.94302 c 2.726948,-1.34664 5.899057,-1.4652 8.718914,-0.32586 v 0 l 16.852469,6.80908 V 26.666667 c 0,-2.945519 -2.38782,-5.333334 -5.33334,-5.333334 z M 90.666667,64 V 74.666667 H 37.333333 V 64 Z m 0,-21.333333 V 53.333333 H 37.333333 V 42.666667 Z"
+           fill="url(#linearGradient-1)"
+           id="path12-2"
+           style="fill:url(#linearGradient-1-3)" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g2432"
+     transform="matrix(0.04637785,0,0,0.04637785,17.600888,19.310335)"
+     style="fill:#ff0000">
+    <g
+       id="Laag_2"
+       style="fill:#ff0000">
+      <path
+         class="st0"
+         d="M 794.6,1792.2 C 352.8,1682.7 83.4,1235.8 192.9,794 266.4,497.4 498,265.8 794.6,192.3 V 20 c -537,109.2 -883.7,633 -774.5,1170 79.4,390.2 384.3,695.2 774.5,774.5 z m 134,-1621.3 c 21.4,-1.7 42.9,-2.8 64.6,-2.8 32.5,0 65,1.9 97.3,5.7 V 4.9 C 1058.1,1.7 1025.7,0.1 993.2,0 971.2,0 950,1 928.6,2.3 Z"
+         id="path6"
+         style="fill:#ff0000" />
+      <path
+         class="st1"
+         d="M 1224.4,27.4 V 201 c 239.6,70.4 434.5,245.2 530.4,475.8 H 1566 C 1391.8,360.6 994.3,245.4 678,419.6 c -316.3,174.2 -431.4,571.7 -257.2,888 174.2,316.3 571.7,431.4 888,257.2 130.2,-71.7 232,-185.6 288.8,-322.9 h 181.3 c -83.4,261.4 -291.1,464.4 -554.4,541.7 v 173.5 C 1757.2,1828.8 2085.1,1293 1956.9,760.3 1869.7,398 1586.8,115.2 1224.5,27.9 Z M 1147.2,1417.1 956,1145.6 H 637.7 V 978.8 h 373.7 c 91.3,0 124.1,-57.2 124.1,-125.3 0,-68.1 -41.3,-130.3 -133.9,-130.3 H 637.8 V 567.4 h 382.9 c 121.3,0 314.1,53.6 314.1,280 0,226.4 -170.4,271.5 -170.4,271.5 l 219.2,298.3 h -235.7 z"
+         id="path8"
+         style="fill:#ff0000" />
+      <path
+         class="st0"
+         d="m 1090.5,1810.7 c -32.3,3.8 -64.8,5.7 -97.3,5.7 -22,0 -43.2,-1.1 -64.6,-2.8 V 1982 c 21.4,1.4 42.9,2.3 64.6,2.3 33.1,0 65.3,-1.7 97.3,-4.9 z"
+         id="path10"
+         style="fill:#ff0000" />
+    </g>
+  </g>
+</svg>
